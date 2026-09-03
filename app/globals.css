@@ -252,6 +252,13 @@ body {
 .history-row b { color: #426a82; }
 .weak-row [data-slot="badge"] { color: #68798a; border-color: #d7e0e7; }
 
+.migration-shell { min-height: 100vh; display: grid; place-items: center; }
+.migration-card { width: min(620px, 100%); padding: clamp(28px, 6vw, 52px); border: 1px solid #d7e0e7; border-radius: 20px; background: #fff; box-shadow: 0 16px 46px rgba(42,62,78,.1); }
+.migration-card h1 { margin: 0; color: #26384a; font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.02; letter-spacing: -.045em; }
+.migration-status { margin: 22px 0 0; color: #69798a; line-height: 1.55; }
+.migration-status.done { color: #356a50; }.migration-status.error { color: #a13e4d; }
+.migration-link { display: inline-flex; margin-top: 24px; padding: 11px 16px; border-radius: 10px; background: #365d76; color: #fff; font-weight: 720; text-decoration: none; }
+
 .quiz-progress { height: 5px; background: #dde5eb; }
 .quiz-progress [data-slot="progress-indicator"] { background: #6f91a8; }
 .quiz-panel, .result-card { border-color: #d7e0e7; border-radius: 20px; background: #fff; box-shadow: 0 16px 46px rgba(42,62,78,.1); }
