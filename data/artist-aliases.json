@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "notes": [
+    "Автоматическая нормализация уже игнорирует регистр, пунктуацию и обычную транслитерацию.",
+    "Здесь перечислены только варианты, которые не совпадают после механической нормализации.",
+    "Исходные написания всегда сохраняются в chart-catalog.json для последующей проверки."
+  ],
+  "artists": [
+    { "canonical": "Скриптонит", "aliases": ["Skryptonite", "Scriptonite"] },
+    { "canonical": "Эндшпиль", "aliases": ["Endspiel", "Andy Panda"] },
+    { "canonical": "Михаил Шуфутинский", "aliases": ["Mikhail Shufutinskiy", "Mikhail Shufutinsky"] },
+    { "canonical": "Егор Крид", "aliases": ["Egor Kreed", "Egor Creed"] },
+    { "canonical": "Мари Краймбрери", "aliases": ["Mari Kraimbrery"] },
+    { "canonical": "Монеточка", "aliases": ["Monetochka"] },
+    { "canonical": "Блестящие", "aliases": ["Blestyashchiye", "Blestyashie"] },
+    { "canonical": "Король и Шут", "aliases": ["Korol I Shut", "Korol' i Shut"] },
+    { "canonical": "Дискотека Авария", "aliases": ["Diskoteka Avariya", "Diskoteka Avaria"] },
+    { "canonical": "Нюша", "aliases": ["Nyusha"] },
+    { "canonical": "Серебро", "aliases": ["Serebro"] },
+    { "canonical": "Тима Белорусских", "aliases": ["Tima Belorusskih", "Tima Belorusskikh"] },
+    { "canonical": "Клава Кока", "aliases": ["Klava Koka"] },
+    { "canonical": "Моя Мишель", "aliases": ["Moya Mishel", "Moya Michelle"] },
+    { "canonical": "Руки Вверх!", "aliases": ["Ruki Vverh", "Ruki Vverkh"] },
+    { "canonical": "Глюкоза", "aliases": ["Glukoza", "Gluk'oZa"] },
+    { "canonical": "ВИА Гра", "aliases": ["Viagra", "VIA Gra"] },
+    { "canonical": "София Ротару", "aliases": ["Sophia Rotaru", "Sofia Rotaru"] },
+    { "canonical": "Артик и Асти", "aliases": ["Artik & Asti", "ARTIK & ASTI"] },
+    { "canonical": "Мияги", "aliases": ["Miyagi", "MiyaGi"] },
+    { "canonical": "Рем Дигга", "aliases": ["Rem Digga"] },
+    { "canonical": "Баста", "aliases": ["Basta"] },
+    { "canonical": "Гуф", "aliases": ["Guf", "GUF"] },
+    { "canonical": "Дора", "aliases": ["Dora"] },
+    { "canonical": "Мот", "aliases": ["Mot", "MOT"] },
+    { "canonical": "Макс Барских", "aliases": ["Max Barskih", "MAX BARSKIH"] },
+    { "canonical": "Black Eyed Peas", "aliases": ["The Black Eyed Peas"] }
+  ]
+}

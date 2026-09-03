@@ -1,0 +1,984 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-03T22:15:05.402Z",
+  "part": 41,
+  "trackCount": 25,
+  "tracks": [
+    {
+      "id": "chart-04001",
+      "artist": "DJ PORTU",
+      "title": "Holy War Hospital (Tiktok Version)",
+      "artistAliases": [
+        "DJ PORTU"
+      ],
+      "titleAliases": [
+        "Holy War Hospital (Tiktok Version)"
+      ],
+      "normalizedArtist": {
+        "primary": "djportu",
+        "participants": [
+          "djportu"
+        ]
+      },
+      "normalizedTitle": "holywarhospitaltiktokversion",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 31,
+          "bestRank": 70,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 70,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 2,
+          "minReportedPeak": 45,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 85775,
+          "sourceScore": 75.1
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 75.1,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04002",
+      "artist": "Rafs Perfume",
+      "title": "Доля воровская (На разных языках)",
+      "artistAliases": [
+        "Rafs Perfume"
+      ],
+      "titleAliases": [
+        "Доля воровская (На разных языках)"
+      ],
+      "normalizedArtist": {
+        "primary": "rafsperfume",
+        "participants": [
+          "rafsperfume"
+        ]
+      },
+      "normalizedTitle": "dolyavorovskayanaraznyhyazykah",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 30,
+          "bestRank": 71,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 71,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 1,
+          "minReportedPeak": 71,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 85220,
+          "sourceScore": 74.41
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 74.41,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04003",
+      "artist": "Марьяна Локель",
+      "title": "Ивана Купала",
+      "artistAliases": [
+        "Марьяна Локель"
+      ],
+      "titleAliases": [
+        "Ивана Купала"
+      ],
+      "normalizedArtist": {
+        "primary": "maryanalokel",
+        "participants": [
+          "maryanalokel"
+        ]
+      },
+      "normalizedTitle": "ivanakupala",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 28,
+          "bestRank": 73,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 73,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 9,
+          "minReportedPeak": 9,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 83380,
+          "sourceScore": 72.96
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 72.96,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04004",
+      "artist": "Post Malone",
+      "title": "Sunflower",
+      "artistAliases": [
+        "Post Malone"
+      ],
+      "titleAliases": [
+        "Sunflower"
+      ],
+      "normalizedArtist": {
+        "primary": "postmalone",
+        "participants": [
+          "postmalone"
+        ]
+      },
+      "normalizedTitle": "sunflower",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 27,
+          "bestRank": 74,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 74,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 2,
+          "minReportedPeak": 59,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 83185,
+          "sourceScore": 72.2
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 72.2,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04005",
+      "artist": "Фара Ночи",
+      "title": "Богиня красоты",
+      "artistAliases": [
+        "Фара Ночи"
+      ],
+      "titleAliases": [
+        "Богиня красоты"
+      ],
+      "normalizedArtist": {
+        "primary": "faranochi",
+        "participants": [
+          "faranochi"
+        ]
+      },
+      "normalizedTitle": "boginyakrasoty",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 23,
+          "bestRank": 78,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 78,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 10,
+          "minReportedPeak": 48,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 81411,
+          "sourceScore": 68.86
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 68.86,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04006",
+      "artist": "HotTik",
+      "title": "CallingYou",
+      "artistAliases": [
+        "HotTik"
+      ],
+      "titleAliases": [
+        "CallingYou"
+      ],
+      "normalizedArtist": {
+        "primary": "hottik",
+        "participants": [
+          "hottik"
+        ]
+      },
+      "normalizedTitle": "callingyou",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 22,
+          "bestRank": 79,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 79,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 2,
+          "minReportedPeak": 44,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 81279,
+          "sourceScore": 67.94
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 67.94,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04007",
+      "artist": "Oasis Deep",
+      "title": "Чёрные Вороны",
+      "artistAliases": [
+        "Oasis Deep"
+      ],
+      "titleAliases": [
+        "Чёрные Вороны"
+      ],
+      "normalizedArtist": {
+        "primary": "oasisdeep",
+        "participants": [
+          "oasisdeep"
+        ]
+      },
+      "normalizedTitle": "chernyevorony",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 20,
+          "bestRank": 81,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 81,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 4,
+          "minReportedPeak": 59,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 81078,
+          "sourceScore": 65.97
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 65.97,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04008",
+      "artist": "Paizo",
+      "title": "MONTAGEM DOMER (Super Slowed)",
+      "artistAliases": [
+        "Paizo"
+      ],
+      "titleAliases": [
+        "MONTAGEM DOMER (Super Slowed)"
+      ],
+      "normalizedArtist": {
+        "primary": "paizo",
+        "participants": [
+          "paizo"
+        ]
+      },
+      "normalizedTitle": "montagemdomersuperslowed",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 19,
+          "bestRank": 82,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 82,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 16,
+          "minReportedPeak": 13,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 80328,
+          "sourceScore": 64.91
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 64.91,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04009",
+      "artist": "Айшат Махметмурзаева",
+      "title": "Де Дийне Маьл Дели",
+      "artistAliases": [
+        "Айшат Махметмурзаева"
+      ],
+      "titleAliases": [
+        "Де Дийне Маьл Дели"
+      ],
+      "normalizedArtist": {
+        "primary": "aishatmahmetmurzaeva",
+        "participants": [
+          "aishatmahmetmurzaeva"
+        ]
+      },
+      "normalizedTitle": "dediinemaldeli",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 18,
+          "bestRank": 83,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 83,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 19,
+          "minReportedPeak": 30,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 80270,
+          "sourceScore": 63.8
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 63.8,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04010",
+      "artist": "Gulinur",
+      "title": "Do'stni sotar",
+      "artistAliases": [
+        "Gulinur"
+      ],
+      "titleAliases": [
+        "Do'stni sotar (feat. Ajiniyaz Xojambergenov)"
+      ],
+      "normalizedArtist": {
+        "primary": "gulinur",
+        "participants": [
+          "ajiniyazxojambergenov",
+          "gulinur"
+        ]
+      },
+      "normalizedTitle": "dostnisotar",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 17,
+          "bestRank": 84,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 84,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 16,
+          "minReportedPeak": 47,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 80196,
+          "sourceScore": 62.63
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 62.63,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04011",
+      "artist": "DJ KVNXD",
+      "title": "MONTAGEM ONE MORE GAME",
+      "artistAliases": [
+        "DJ KVNXD"
+      ],
+      "titleAliases": [
+        "MONTAGEM ONE MORE GAME"
+      ],
+      "normalizedArtist": {
+        "primary": "djkvnxd",
+        "participants": [
+          "djkvnxd"
+        ]
+      },
+      "normalizedTitle": "montagemonemoregame",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 16,
+          "bestRank": 85,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 85,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 8,
+          "minReportedPeak": 14,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 80187,
+          "sourceScore": 61.39
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 61.39,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04012",
+      "artist": "ROCKET",
+      "title": "Думаю о тебе",
+      "artistAliases": [
+        "ROCKET"
+      ],
+      "titleAliases": [
+        "Думаю о тебе"
+      ],
+      "normalizedArtist": {
+        "primary": "rocket",
+        "participants": [
+          "rocket"
+        ]
+      },
+      "normalizedTitle": "dumayuotebe",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 15,
+          "bestRank": 86,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 86,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 1,
+          "minReportedPeak": 86,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 79811,
+          "sourceScore": 60.08
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 60.08,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04013",
+      "artist": "Кулиев Рамазан",
+      "title": "Когда звучит дамбур",
+      "artistAliases": [
+        "Кулиев Рамазан"
+      ],
+      "titleAliases": [
+        "Когда звучит дамбур"
+      ],
+      "normalizedArtist": {
+        "primary": "kulievramazan",
+        "participants": [
+          "kulievramazan"
+        ]
+      },
+      "normalizedTitle": "kogdazvuchitdambur",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 14,
+          "bestRank": 87,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 87,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 8,
+          "minReportedPeak": 68,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 79616,
+          "sourceScore": 58.68
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 58.68,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04014",
+      "artist": "Ленинград",
+      "title": "24/7",
+      "artistAliases": [
+        "Ленинград"
+      ],
+      "titleAliases": [
+        "24/7"
+      ],
+      "normalizedArtist": {
+        "primary": "leningrad",
+        "participants": [
+          "leningrad"
+        ]
+      },
+      "normalizedTitle": "247",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 13,
+          "bestRank": 88,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 88,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 2,
+          "minReportedPeak": 88,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 79080,
+          "sourceScore": 57.18
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 57.18,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04015",
+      "artist": "wharoxmane",
+      "title": "SCREAM AND DANCE TEKK (Ultra Slowed)",
+      "artistAliases": [
+        "wharoxmane"
+      ],
+      "titleAliases": [
+        "SCREAM AND DANCE TEKK (Ultra Slowed)"
+      ],
+      "normalizedArtist": {
+        "primary": "wharoxmane",
+        "participants": [
+          "wharoxmane"
+        ]
+      },
+      "normalizedTitle": "screamanddancetekkultraslowed",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 12,
+          "bestRank": 89,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 89,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 1,
+          "minReportedPeak": 89,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 78852,
+          "sourceScore": 55.58
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 55.58,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04016",
+      "artist": "LE SSERAFIM",
+      "title": "ICONIC BY MISTAKE",
+      "artistAliases": [
+        "LE SSERAFIM"
+      ],
+      "titleAliases": [
+        "ICONIC BY MISTAKE"
+      ],
+      "normalizedArtist": {
+        "primary": "lesserafim",
+        "participants": [
+          "lesserafim"
+        ]
+      },
+      "normalizedTitle": "iconicbymistake",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 11,
+          "bestRank": 90,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 90,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 11,
+          "minReportedPeak": 14,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 78062,
+          "sourceScore": 53.84
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 53.84,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04017",
+      "artist": "Ислам Итляшев",
+      "title": "На нервах",
+      "artistAliases": [
+        "Ислам Итляшев"
+      ],
+      "titleAliases": [
+        "На нервах"
+      ],
+      "normalizedArtist": {
+        "primary": "islamitlyashev",
+        "participants": [
+          "islamitlyashev"
+        ]
+      },
+      "normalizedTitle": "nanervah",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 10,
+          "bestRank": 91,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 91,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 1,
+          "minReportedPeak": 91,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 77490,
+          "sourceScore": 51.96
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 51.96,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04018",
+      "artist": "ENZRO",
+      "title": "Ночи я не боюсь",
+      "artistAliases": [
+        "ENZRO"
+      ],
+      "titleAliases": [
+        "Ночи я не боюсь"
+      ],
+      "normalizedArtist": {
+        "primary": "enzro",
+        "participants": [
+          "enzro"
+        ]
+      },
+      "normalizedTitle": "nochiyaneboyus",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 9,
+          "bestRank": 92,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 92,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 1,
+          "minReportedPeak": 92,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 77445,
+          "sourceScore": 49.89
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 49.89,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04019",
+      "artist": "Anette Aghabekyan",
+      "title": "Erkusov",
+      "artistAliases": [
+        "Anette Aghabekyan"
+      ],
+      "titleAliases": [
+        "Erkusov"
+      ],
+      "normalizedArtist": {
+        "primary": "anetteaghabekyan",
+        "participants": [
+          "anetteaghabekyan"
+        ]
+      },
+      "normalizedTitle": "erkusov",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 8,
+          "bestRank": 93,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 93,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 18,
+          "minReportedPeak": 14,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 76935,
+          "sourceScore": 47.61
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 47.61,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04020",
+      "artist": "Mollie Elizabeth",
+      "title": "Run Rabbit",
+      "artistAliases": [
+        "Mollie Elizabeth"
+      ],
+      "titleAliases": [
+        "Run Rabbit"
+      ],
+      "normalizedArtist": {
+        "primary": "mollieelizabeth",
+        "participants": [
+          "mollieelizabeth"
+        ]
+      },
+      "normalizedTitle": "runrabbit",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 7,
+          "bestRank": 94,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 94,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 1,
+          "minReportedPeak": 94,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 76850,
+          "sourceScore": 45.06
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 45.06,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04021",
+      "artist": "SHAMI",
+      "title": "Сердце забрала",
+      "artistAliases": [
+        "SHAMI"
+      ],
+      "titleAliases": [
+        "Сердце забрала"
+      ],
+      "normalizedArtist": {
+        "primary": "shami",
+        "participants": [
+          "shami"
+        ]
+      },
+      "normalizedTitle": "serdtsezabrala",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 6,
+          "bestRank": 95,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 95,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 3,
+          "minReportedPeak": 67,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 76770,
+          "sourceScore": 42.16
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 42.16,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04022",
+      "artist": "Klava Koka",
+      "title": "Журавли",
+      "artistAliases": [
+        "Klava Koka"
+      ],
+      "titleAliases": [
+        "Журавли"
+      ],
+      "normalizedArtist": {
+        "primary": "klavakoka",
+        "participants": [
+          "klavakoka"
+        ]
+      },
+      "normalizedTitle": "zhuravli",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 5,
+          "bestRank": 96,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 96,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 1,
+          "minReportedPeak": 96,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 76243,
+          "sourceScore": 38.82
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 38.82,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04023",
+      "artist": "Cuntsniffer Archive",
+      "title": "Meant To Be",
+      "artistAliases": [
+        "Cuntsniffer Archive"
+      ],
+      "titleAliases": [
+        "Meant To Be"
+      ],
+      "normalizedArtist": {
+        "primary": "cuntsnifferarchive",
+        "participants": [
+          "cuntsnifferarchive"
+        ]
+      },
+      "normalizedTitle": "meanttobe",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 3,
+          "bestRank": 98,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 98,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 7,
+          "minReportedPeak": 33,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 75245,
+          "sourceScore": 30.04
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 30.04,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04024",
+      "artist": "Mirjalol Nematov",
+      "title": "Qaro ko'z",
+      "artistAliases": [
+        "Mirjalol Nematov"
+      ],
+      "titleAliases": [
+        "Qaro ko'z"
+      ],
+      "normalizedArtist": {
+        "primary": "mirjalolnematov",
+        "participants": [
+          "mirjalolnematov"
+        ]
+      },
+      "normalizedTitle": "qarokoz",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 2,
+          "bestRank": 99,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 99,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 16,
+          "minReportedPeak": 54,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 74662,
+          "sourceScore": 23.8
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 23.8,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-04025",
+      "artist": "ONDA ANDAR",
+      "title": "type london",
+      "artistAliases": [
+        "ONDA ANDAR"
+      ],
+      "titleAliases": [
+        "type london"
+      ],
+      "normalizedArtist": {
+        "primary": "ondaandar",
+        "participants": [
+          "ondaandar"
+        ]
+      },
+      "normalizedTitle": "typelondon",
+      "explicit": false,
+      "sources": {
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 1,
+          "bestRank": 100,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 100,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 2,
+          "minReportedPeak": 86,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 74275,
+          "sourceScore": 15.02
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 15.02,
+      "quizEligible": true
+    }
+  ]
+}

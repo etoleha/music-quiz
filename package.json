@@ -9,7 +9,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "npm run build"
+    "test": "npm run test:charts && npm run build",
+    "test:charts": "node scripts/test-chart-normalization.mjs",
+    "monitor:charts": "node scripts/monitor-charts.mjs"
   },
   "dependencies": {
     "class-variance-authority": "0.7.1",

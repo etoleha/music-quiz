@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "checkedAt": "2026-09-03",
+  "sources": [
+    {
+      "id": "spotify-ru-daily-history",
+      "name": "Spotify Daily Chart — Russia",
+      "kind": "historical-aggregate",
+      "cadence": "daily",
+      "period": "2020-07-15…2022-04-07",
+      "url": "https://kworb.net/spotify/country/ru_daily_totals.html",
+      "status": "imported",
+      "automatic": true
+    },
+    {
+      "id": "europa-plus-annual",
+      "name": "Европа Плюс — годовой чарт",
+      "kind": "historical-list",
+      "cadence": "annual",
+      "period": "2007…2025",
+      "url": "https://europaplus.ru/year-chart",
+      "status": "imported",
+      "automatic": true
+    },
+    {
+      "id": "youtube-ru-weekly",
+      "name": "YouTube Russia",
+      "kind": "current-snapshot",
+      "cadence": "weekly",
+      "url": "https://kworb.net/youtube/insights/ru.html",
+      "status": "monitored",
+      "automatic": true
+    },
+    {
+      "id": "shazam-ru",
+      "name": "Shazam Russia Top 200",
+      "kind": "current-snapshot",
+      "cadence": "weekly",
+      "url": "https://kworb.net/charts/shazam/ru.html",
+      "officialUrl": "https://www.shazam.com/ru-ru/charts/top-200/russia",
+      "status": "monitored",
+      "automatic": true
+    },
+    {
+      "id": "apple-music-ru",
+      "name": "Apple Music Top Songs — Russia",
+      "kind": "current-snapshot",
+      "cadence": "daily",
+      "url": "https://rss.marketingtools.apple.com/api/v2/ru/music/most-played/100/songs.json",
+      "status": "monitored",
+      "automatic": true
+    },
+    {
+      "id": "deezer-ru",
+      "name": "Deezer Top Songs — Russia",
+      "kind": "current-snapshot",
+      "cadence": "daily",
+      "url": "https://kworb.net/charts/deezer/ru.html",
+      "status": "monitored",
+      "automatic": true
+    },
+    {
+      "id": "top40-russia-weekly",
+      "name": "Russia Top 20",
+      "kind": "historical-list",
+      "cadence": "weekly",
+      "period": "с 2004 года",
+      "url": "https://top40-charts.com/chart.php?cid=45",
+      "status": "blocked-server-side",
+      "automatic": false,
+      "note": "Публичные страницы доступны в браузере, но автоматический запрос получает HTTP 403. Нужен разрешённый экспорт или ручной импорт."
+    },
+    {
+      "id": "tophit-ru",
+      "name": "TopHit Russia",
+      "kind": "historical-list",
+      "cadence": "weekly-monthly-annual",
+      "period": "примерно с 2003 года",
+      "url": "https://tophit.com/chart/top/radio/hits/ru/weekly",
+      "status": "blocked-server-side",
+      "automatic": false,
+      "note": "Автоматический запрос получает HTTP 403; расширенные отчёты могут требовать подписку."
+    },
+    {
+      "id": "yandex-music-ru",
+      "name": "Яндекс Музыка — чарт",
+      "kind": "current-snapshot",
+      "cadence": "weekly",
+      "url": "https://music.yandex.ru/chart",
+      "status": "watchlist",
+      "automatic": false,
+      "note": "Официального открытого исторического экспорта не найдено; можно начать собственные снимки после проверки стабильного публичного ответа."
+    }
+  ]
+}

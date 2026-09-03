@@ -1,0 +1,4484 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-03T22:15:05.402Z",
+  "part": 38,
+  "trackCount": 100,
+  "tracks": [
+    {
+      "id": "chart-03701",
+      "artist": "VILLIAN & madk1d",
+      "title": "ДИНАСТИЯ",
+      "artistAliases": [
+        "VILLIAN",
+        "VILLIAN & madk1d"
+      ],
+      "titleAliases": [
+        "ДИНАСТИЯ"
+      ],
+      "normalizedArtist": {
+        "primary": "villian",
+        "participants": [
+          "madk1d",
+          "villian"
+        ]
+      },
+      "normalizedTitle": "dinastiya",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 91,
+          "bestRank": 10,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 10,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6793620672",
+          "url": "https://music.apple.com/ru/album/%D0%B4%D0%B8%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%8F/6793617802?i=6793620672",
+          "sourceScore": 88.88
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 83,
+          "bestRank": 35,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 35,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 96.01
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 96,
+          "bestRank": 5,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 5,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 5,
+          "minReportedPeak": 3,
+          "maxReportedNumberOneWeeks": 3,
+          "latestStreams": 284113,
+          "sourceScore": 99.12
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 284.01,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03702",
+      "artist": "Баста & Гуф",
+      "title": "В сигаретном дыму",
+      "artistAliases": [
+        "Баста & Гуф",
+        "Basta & Guf"
+      ],
+      "titleAliases": [
+        "В сигаретном дыму"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "basta",
+          "guf"
+        ]
+      },
+      "normalizedTitle": "vsigaretnomdymu",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 90,
+          "bestRank": 11,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 11,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1893417723",
+          "url": "https://music.apple.com/ru/album/%D0%B2-%D1%81%D0%B8%D0%B3%D0%B0%D1%80%D0%B5%D1%82%D0%BD%D0%BE%D0%BC-%D0%B4%D1%8B%D0%BC%D1%83/1893417528?i=1893417723",
+          "sourceScore": 88.66
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 80,
+          "bestRank": 41,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 41,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 95.22
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 183.88,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03703",
+      "artist": "Imael Angel",
+      "title": "Bad Times (Extended Version)",
+      "artistAliases": [
+        "Imael Angel"
+      ],
+      "titleAliases": [
+        "Bad Times (Extended Version)"
+      ],
+      "normalizedArtist": {
+        "primary": "imaelangel",
+        "participants": [
+          "imaelangel"
+        ]
+      },
+      "normalizedTitle": "badtimesextendedversion",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 89,
+          "bestRank": 12,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 12,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1890913669",
+          "url": "https://music.apple.com/ru/album/bad-times-extended-version/1890913668?i=1890913669",
+          "sourceScore": 88.45
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 99.5,
+          "bestRank": 2,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 2,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 99.89
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 188.34,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03704",
+      "artist": "Баста & Моя Мишель",
+      "title": "Если я буду танцевать",
+      "artistAliases": [
+        "Баста & Моя Мишель",
+        "Basta & Moya Mishel"
+      ],
+      "titleAliases": [
+        "Если я буду танцевать"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "basta",
+          "moyamishel"
+        ]
+      },
+      "normalizedTitle": "esliyabudutantsevat",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 88,
+          "bestRank": 13,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 13,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6791142755",
+          "url": "https://music.apple.com/ru/album/%D0%B5%D1%81%D0%BB%D0%B8-%D1%8F-%D0%B1%D1%83%D0%B4%D1%83-%D1%82%D0%B0%D0%BD%D1%86%D0%B5%D0%B2%D0%B0%D1%82%D1%8C/6791142754?i=6791142755",
+          "sourceScore": 88.23
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 97,
+          "bestRank": 7,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 7,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 99.35
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 187.58,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03705",
+      "artist": "MIA BOYKA",
+      "title": "ЭКСПОНАТ",
+      "artistAliases": [
+        "Mia Boyka",
+        "MIA BOYKA"
+      ],
+      "titleAliases": [
+        "ЭКСПОНАТ"
+      ],
+      "normalizedArtist": {
+        "primary": "miaboyka",
+        "participants": [
+          "miaboyka"
+        ]
+      },
+      "normalizedTitle": "eksponat",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 87,
+          "bestRank": 14,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 14,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6768974712",
+          "url": "https://music.apple.com/ru/album/%D1%8D%D0%BA%D1%81%D0%BF%D0%BE%D0%BD%D0%B0%D1%82/6768974708?i=6768974712",
+          "sourceScore": 88
+        },
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 4.167,
+          "bestRank": 47,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 47,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 35.58
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 79.5,
+          "bestRank": 42,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 42,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 95.08
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 100,
+          "bestRank": 1,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 1,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 15,
+          "minReportedPeak": 1,
+          "maxReportedNumberOneWeeks": 14,
+          "latestStreams": 980328,
+          "sourceScore": 100
+        }
+      },
+      "sourceCount": 4,
+      "combinedScore": 318.66,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03706",
+      "artist": "SAYAN",
+      "title": "Мальборо",
+      "artistAliases": [
+        "SAYAN"
+      ],
+      "titleAliases": [
+        "Мальборо"
+      ],
+      "normalizedArtist": {
+        "primary": "sayan",
+        "participants": [
+          "sayan"
+        ]
+      },
+      "normalizedTitle": "malboro",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 86,
+          "bestRank": 15,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 15,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1891317599",
+          "url": "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D1%80%D0%BE/1891317598?i=1891317599",
+          "sourceScore": 87.78
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 76,
+          "bestRank": 49,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 49,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 94.12
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 93,
+          "bestRank": 8,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 8,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 20,
+          "minReportedPeak": 1,
+          "maxReportedNumberOneWeeks": 4,
+          "latestStreams": 216910,
+          "sourceScore": 98.44
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 280.34,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03707",
+      "artist": "HOLLYFLAME",
+      "title": "Тону",
+      "artistAliases": [
+        "HOLLYFLAME"
+      ],
+      "titleAliases": [
+        "Тону"
+      ],
+      "normalizedArtist": {
+        "primary": "hollyflame",
+        "participants": [
+          "hollyflame"
+        ]
+      },
+      "normalizedTitle": "tonu",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 85,
+          "bestRank": 16,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 16,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1873935806",
+          "url": "https://music.apple.com/ru/album/%D1%82%D0%BE%D0%BD%D1%83/1873935805?i=1873935806",
+          "sourceScore": 87.55
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 65.5,
+          "bestRank": 70,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 70,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 90.94
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 178.49,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03708",
+      "artist": "Icegergert & Zivert",
+      "title": "БАНК",
+      "artistAliases": [
+        "Icegergert",
+        "Icegergert & Zivert"
+      ],
+      "titleAliases": [
+        "БАНК"
+      ],
+      "normalizedArtist": {
+        "primary": "icegergert",
+        "participants": [
+          "icegergert",
+          "zivert"
+        ]
+      },
+      "normalizedTitle": "bank",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 84,
+          "bestRank": 17,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 17,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6770545724",
+          "url": "https://music.apple.com/ru/album/%D0%B1%D0%B0%D0%BD%D0%BA/6770545723?i=6770545724",
+          "sourceScore": 87.32
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 70,
+          "bestRank": 61,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 61,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 92.36
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 66,
+          "bestRank": 35,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 35,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 5,
+          "minReportedPeak": 29,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 115734,
+          "sourceScore": 91.11
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 270.79,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03709",
+      "artist": "IOWA",
+      "title": "МЫ",
+      "artistAliases": [
+        "IOWA"
+      ],
+      "titleAliases": [
+        "МЫ"
+      ],
+      "normalizedArtist": {
+        "primary": "iowa",
+        "participants": [
+          "iowa"
+        ]
+      },
+      "normalizedTitle": "my",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 83,
+          "bestRank": 18,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 18,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6780772607",
+          "url": "https://music.apple.com/ru/album/%D0%BC%D1%8B/6780772606?i=6780772607",
+          "sourceScore": 87.09
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 88,
+          "bestRank": 25,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 25,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 97.26
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 184.35,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03710",
+      "artist": "Баста & AMCHI",
+      "title": "Буду всегда с тобой",
+      "artistAliases": [
+        "Баста & AMCHI",
+        "Basta & AMCHI"
+      ],
+      "titleAliases": [
+        "Буду всегда с тобой"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "amchi",
+          "basta"
+        ]
+      },
+      "normalizedTitle": "buduvsegdastoboi",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 82,
+          "bestRank": 19,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 19,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6800014097",
+          "url": "https://music.apple.com/ru/album/%D0%B1%D1%83%D0%B4%D1%83-%D0%B2%D1%81%D0%B5%D0%B3%D0%B4%D0%B0-%D1%81-%D1%82%D0%BE%D0%B1%D0%BE%D0%B9/6800014094?i=6800014097",
+          "sourceScore": 86.86
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 49.5,
+          "bestRank": 102,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 102,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 84.98
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 171.84,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03711",
+      "artist": "Zivert, Эвер & directoreels",
+      "title": "Давай на самый верх",
+      "artistAliases": [
+        "Zivert, Эвер & directoreels"
+      ],
+      "titleAliases": [
+        "Давай на самый верх"
+      ],
+      "normalizedArtist": {
+        "primary": "zivert",
+        "participants": [
+          "directoreels",
+          "ever",
+          "zivert"
+        ]
+      },
+      "normalizedTitle": "davainasamyiverh",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 81,
+          "bestRank": 20,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 20,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6791894951",
+          "url": "https://music.apple.com/ru/album/%D0%B4%D0%B0%D0%B2%D0%B0%D0%B9-%D0%BD%D0%B0-%D1%81%D0%B0%D0%BC%D1%8B%D0%B9-%D0%B2%D0%B5%D1%80%D1%85/6791894950?i=6791894951",
+          "sourceScore": 86.62
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 75,
+          "bestRank": 51,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 51,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 93.84
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 180.46,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03712",
+      "artist": "ARTIK & ASTI",
+      "title": "Лампочки",
+      "artistAliases": [
+        "ARTIK & ASTI"
+      ],
+      "titleAliases": [
+        "Лампочки",
+        "Lampochki"
+      ],
+      "normalizedArtist": {
+        "primary": "artikiasti",
+        "participants": [
+          "artikiasti"
+        ]
+      },
+      "normalizedTitle": "lampochki",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 80,
+          "bestRank": 21,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 21,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1575451599",
+          "url": "https://music.apple.com/ru/album/%D0%BB%D0%B0%D0%BC%D0%BF%D0%BE%D1%87%D0%BA%D0%B8/1575451535?i=1575451599",
+          "sourceScore": 86.38
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 92.5,
+          "bestRank": 16,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 16,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 98.33
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 82,
+          "bestRank": 19,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 19,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 5,
+          "minReportedPeak": 19,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 152168,
+          "sourceScore": 95.75
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 280.46,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03713",
+      "artist": "Kimo Sounds",
+      "title": "Rise Slow",
+      "artistAliases": [
+        "Kimo Sounds"
+      ],
+      "titleAliases": [
+        "Rise Slow"
+      ],
+      "normalizedArtist": {
+        "primary": "kimosounds",
+        "participants": [
+          "kimosounds"
+        ]
+      },
+      "normalizedTitle": "riseslow",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 79,
+          "bestRank": 22,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 22,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6789752112",
+          "url": "https://music.apple.com/ru/album/rise-slow/6789752111?i=6789752112",
+          "sourceScore": 86.13
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 99,
+          "bestRank": 3,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 3,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 99.78
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 25,
+          "bestRank": 76,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 76,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 3,
+          "minReportedPeak": 57,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 81915,
+          "sourceScore": 70.6
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 256.51,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03714",
+      "artist": "Егор Крид",
+      "title": "Мало 2.0",
+      "artistAliases": [
+        "Егор Крид",
+        "Egor Kreed"
+      ],
+      "titleAliases": [
+        "Мало 2.0 (feat. OG Buda, Toxi$, Мэйби Бэйби, Baby Cute, Дора, madk1d & тёмный принц)",
+        "Malo 2.0"
+      ],
+      "normalizedArtist": {
+        "primary": "egorkrid",
+        "participants": [
+          "babycute",
+          "dora",
+          "egorkrid",
+          "madk1d",
+          "meibibeibi",
+          "ogbuda",
+          "temnyiprints",
+          "toxi"
+        ]
+      },
+      "normalizedTitle": "malo20",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 78,
+          "bestRank": 23,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 23,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6786283077",
+          "url": "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BB%D0%BE-2-0-feat-og-buda-toxi%24-%D0%BC%D1%8D%D0%B9%D0%B1%D0%B8-%D0%B1%D1%8D%D0%B9%D0%B1%D0%B8-baby-cute-%D0%B4%D0%BE%D1%80%D0%B0/6786283076?i=6786283077",
+          "sourceScore": 85.88
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 25.5,
+          "bestRank": 150,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 150,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 71.01
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 91,
+          "bestRank": 10,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 10,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 8,
+          "minReportedPeak": 2,
+          "maxReportedNumberOneWeeks": 1,
+          "latestStreams": 188106,
+          "sourceScore": 97.98
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 254.87,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03715",
+      "artist": "By Индия",
+      "title": "спектакль",
+      "artistAliases": [
+        "By Индия"
+      ],
+      "titleAliases": [
+        "спектакль"
+      ],
+      "normalizedArtist": {
+        "primary": "byindiya",
+        "participants": [
+          "byindiya"
+        ]
+      },
+      "normalizedTitle": "spektakl",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 77,
+          "bestRank": 24,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 24,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6800319032",
+          "url": "https://music.apple.com/ru/album/%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B0%D0%BA%D0%BB%D1%8C/6800318933?i=6800319032",
+          "sourceScore": 85.63
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 56.5,
+          "bestRank": 88,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 88,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 87.79
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 173.42,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03716",
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "artistAliases": [
+        "Michael Jackson"
+      ],
+      "titleAliases": [
+        "Billie Jean"
+      ],
+      "normalizedArtist": {
+        "primary": "michaeljackson",
+        "participants": [
+          "michaeljackson"
+        ]
+      },
+      "normalizedTitle": "billiejean",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 76,
+          "bestRank": 25,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 25,
+          "latestPeriod": "2026-09-03",
+          "platformId": "269573364",
+          "url": "https://music.apple.com/ru/album/billie-jean/269572838?i=269573364",
+          "sourceScore": 85.38
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 53,
+          "bestRank": 95,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 95,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 86.43
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 67,
+          "bestRank": 34,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 34,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 18,
+          "minReportedPeak": 17,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 116936,
+          "sourceScore": 91.43
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 263.24,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03717",
+      "artist": "Полка & YASMI",
+      "title": "Омут",
+      "artistAliases": [
+        "Полка",
+        "Полка & YASMI"
+      ],
+      "titleAliases": [
+        "Омут"
+      ],
+      "normalizedArtist": {
+        "primary": "polka",
+        "participants": [
+          "polka",
+          "yasmi"
+        ]
+      },
+      "normalizedTitle": "omut",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 75,
+          "bestRank": 26,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 26,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6773151857",
+          "url": "https://music.apple.com/ru/album/%D0%BE%D0%BC%D1%83%D1%82/6773151856?i=6773151857",
+          "sourceScore": 85.12
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 59,
+          "bestRank": 83,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 83,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 88.72
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 34,
+          "bestRank": 67,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 67,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 1,
+          "minReportedPeak": 67,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 88940,
+          "sourceScore": 77.04
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 250.88,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03718",
+      "artist": "Jakone & Kiliana",
+      "title": "Асфальт",
+      "artistAliases": [
+        "Jakone & Kiliana"
+      ],
+      "titleAliases": [
+        "Асфальт"
+      ],
+      "normalizedArtist": {
+        "primary": "jakone",
+        "participants": [
+          "jakone",
+          "kiliana"
+        ]
+      },
+      "normalizedTitle": "asfalt",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 72,
+          "bestRank": 29,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 29,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1752856088",
+          "url": "https://music.apple.com/ru/album/%D0%B0%D1%81%D1%84%D0%B0%D0%BB%D1%8C%D1%82/1752855885?i=1752856088",
+          "sourceScore": 84.33
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 84.33,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03719",
+      "artist": "Монеточка",
+      "title": "Монополия",
+      "artistAliases": [
+        "Монеточка",
+        "Monetochka"
+      ],
+      "titleAliases": [
+        "Монополия"
+      ],
+      "normalizedArtist": {
+        "primary": "monetochka",
+        "participants": [
+          "monetochka"
+        ]
+      },
+      "normalizedTitle": "monopoliya",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 71,
+          "bestRank": 30,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 30,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1811655549",
+          "url": "https://music.apple.com/ru/album/%D0%BC%D0%BE%D0%BD%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%8F/1811655341?i=1811655549",
+          "sourceScore": 84.06
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 69,
+          "bestRank": 63,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 63,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 92.06
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 52,
+          "bestRank": 49,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 49,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 4,
+          "minReportedPeak": 18,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 105736,
+          "sourceScore": 86.03
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 262.15,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03720",
+      "artist": "Imael Angel",
+      "title": "BAD TIMES",
+      "artistAliases": [
+        "Imael Angel"
+      ],
+      "titleAliases": [
+        "BAD TIMES"
+      ],
+      "normalizedArtist": {
+        "primary": "imaelangel",
+        "participants": [
+          "imaelangel"
+        ]
+      },
+      "normalizedTitle": "badtimes",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 70,
+          "bestRank": 31,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 31,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1894224409",
+          "url": "https://music.apple.com/ru/album/bad-times/1894224408?i=1894224409",
+          "sourceScore": 83.79
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 43.5,
+          "bestRank": 114,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 114,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 82.24
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 77,
+          "bestRank": 24,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 24,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 7,
+          "minReportedPeak": 24,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 125972,
+          "sourceScore": 94.4
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 260.43,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03721",
+      "artist": "HOLLYFLAME",
+      "title": "Нежность",
+      "artistAliases": [
+        "HOLLYFLAME"
+      ],
+      "titleAliases": [
+        "Нежность"
+      ],
+      "normalizedArtist": {
+        "primary": "hollyflame",
+        "participants": [
+          "hollyflame"
+        ]
+      },
+      "normalizedTitle": "nezhnost",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 69,
+          "bestRank": 32,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 32,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1841008383",
+          "url": "https://music.apple.com/ru/album/%D0%BD%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C/1841008382?i=1841008383",
+          "sourceScore": 83.51
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 76.5,
+          "bestRank": 48,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 48,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 94.26
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 177.77,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03722",
+      "artist": "The Chemical Brothers",
+      "title": "Go",
+      "artistAliases": [
+        "The Chemical Brothers"
+      ],
+      "titleAliases": [
+        "Go",
+        "Go (feat. Q-Tip)"
+      ],
+      "normalizedArtist": {
+        "primary": "thechemicalbrothers",
+        "participants": [
+          "qtip",
+          "thechemicalbrothers"
+        ]
+      },
+      "normalizedTitle": "go",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 68,
+          "bestRank": 33,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 33,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1440859161",
+          "url": "https://music.apple.com/ru/album/go-feat-q-tip/1440859085?i=1440859161",
+          "sourceScore": 83.22
+        },
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 68.75,
+          "bestRank": 16,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 16,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 91.98
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 86,
+          "bestRank": 29,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 29,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 96.77
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 271.97,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03723",
+      "artist": "Баста",
+      "title": "Сансара",
+      "artistAliases": [
+        "Баста"
+      ],
+      "titleAliases": [
+        "Сансара (feat. Диана Арбенина, Александр Ф. Скляр, Сергей Бобунец, SUNSAY, Скриптонит & АНТ)"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "aleksandrfsklyar",
+          "ant",
+          "basta",
+          "dianaarbenina",
+          "sergeibobunets",
+          "skriptonit",
+          "sunsay"
+        ]
+      },
+      "normalizedTitle": "sansara",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 67,
+          "bestRank": 34,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 34,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6778730185",
+          "url": "https://music.apple.com/ru/album/%D1%81%D0%B0%D0%BD%D1%81%D0%B0%D1%80%D0%B0-feat-%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0-%D0%B0%D1%80%D0%B1%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D1%84-%D1%81%D0%BA%D0%BB%D1%8F%D1%80-%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9/6778730184?i=6778730185",
+          "sourceScore": 82.94
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 82.94,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03724",
+      "artist": "ЕВА ВЛАСОВА",
+      "title": "Вчера (Cover)",
+      "artistAliases": [
+        "ЕВА ВЛАСОВА"
+      ],
+      "titleAliases": [
+        "Вчера (Cover)"
+      ],
+      "normalizedArtist": {
+        "primary": "evavlasova",
+        "participants": [
+          "evavlasova"
+        ]
+      },
+      "normalizedTitle": "vcheracover",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 66,
+          "bestRank": 35,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 35,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6786210544",
+          "url": "https://music.apple.com/ru/album/%D0%B2%D1%87%D0%B5%D1%80%D0%B0-cover/6786210542?i=6786210544",
+          "sourceScore": 82.65
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 74,
+          "bestRank": 53,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 53,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 93.55
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 176.2,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03725",
+      "artist": "Michael Jackson",
+      "title": "Beat It",
+      "artistAliases": [
+        "Michael Jackson"
+      ],
+      "titleAliases": [
+        "Beat It"
+      ],
+      "normalizedArtist": {
+        "primary": "michaeljackson",
+        "participants": [
+          "michaeljackson"
+        ]
+      },
+      "normalizedTitle": "beatit",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 65,
+          "bestRank": 36,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 36,
+          "latestPeriod": "2026-09-03",
+          "platformId": "269573341",
+          "url": "https://music.apple.com/ru/album/beat-it/269572838?i=269573341",
+          "sourceScore": 82.35
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 32.5,
+          "bestRank": 136,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 136,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 76.09
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 26,
+          "bestRank": 75,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 75,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 13,
+          "minReportedPeak": 27,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 82253,
+          "sourceScore": 71.41
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 229.85,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03726",
+      "artist": "Zivert",
+      "title": "Beverly Hills",
+      "artistAliases": [
+        "Zivert"
+      ],
+      "titleAliases": [
+        "Beverly Hills"
+      ],
+      "normalizedArtist": {
+        "primary": "zivert",
+        "participants": [
+          "zivert"
+        ]
+      },
+      "normalizedTitle": "beverlyhills",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 64,
+          "bestRank": 37,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 37,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1477600310",
+          "url": "https://music.apple.com/ru/album/beverly-hills/1477600049?i=1477600310",
+          "sourceScore": 82.05
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 82.05,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03727",
+      "artist": "Баста",
+      "title": "На заре",
+      "artistAliases": [
+        "Баста"
+      ],
+      "titleAliases": [
+        "На заре"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "basta"
+        ]
+      },
+      "normalizedTitle": "nazare",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 63,
+          "bestRank": 38,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 38,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6784265769",
+          "url": "https://music.apple.com/ru/album/%D0%BD%D0%B0-%D0%B7%D0%B0%D1%80%D0%B5/6784265768?i=6784265769",
+          "sourceScore": 81.75
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 81.75,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03728",
+      "artist": "Баста & Гуф",
+      "title": "Улицам нужен твой огонь",
+      "artistAliases": [
+        "Баста & Гуф"
+      ],
+      "titleAliases": [
+        "Улицам нужен твой огонь"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "basta",
+          "guf"
+        ]
+      },
+      "normalizedTitle": "ulitsamnuzhentvoiogon",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 62,
+          "bestRank": 39,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 39,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1893417718",
+          "url": "https://music.apple.com/ru/album/%D1%83%D0%BB%D0%B8%D1%86%D0%B0%D0%BC-%D0%BD%D1%83%D0%B6%D0%B5%D0%BD-%D1%82%D0%B2%D0%BE%D0%B9-%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C/1893417528?i=1893417718",
+          "sourceScore": 81.44
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 81.44,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03729",
+      "artist": "Ваня Дмитриенко & Аня Пересильд",
+      "title": "Силуэт (из к/ф «Алиса в Стране Чудес»)",
+      "artistAliases": [
+        "Ваня Дмитриенко & Аня Пересильд"
+      ],
+      "titleAliases": [
+        "Силуэт (из к/ф «Алиса в Стране Чудес»)"
+      ],
+      "normalizedArtist": {
+        "primary": "vanyadmitrienko",
+        "participants": [
+          "anyaperesild",
+          "vanyadmitrienko"
+        ]
+      },
+      "normalizedTitle": "siluetizkfalisavstranechudes",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 60,
+          "bestRank": 41,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 41,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1842815805",
+          "url": "https://music.apple.com/ru/album/%D1%81%D0%B8%D0%BB%D1%83%D1%8D%D1%82-%D0%B8%D0%B7-%D0%BA-%D1%84-%D0%B0%D0%BB%D0%B8%D1%81%D0%B0-%D0%B2-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5-%D1%87%D1%83%D0%B4%D0%B5%D1%81/1842815799?i=1842815805",
+          "sourceScore": 80.8
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 80.8,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03730",
+      "artist": "Дискотека Авария",
+      "title": "КУКЛА [Remix 2026]",
+      "artistAliases": [
+        "Дискотека Авария",
+        "Diskoteka Avariya"
+      ],
+      "titleAliases": [
+        "КУКЛА (feat. VONAMOUR) [Remix 2026]"
+      ],
+      "normalizedArtist": {
+        "primary": "diskotekaavariya",
+        "participants": [
+          "diskotekaavariya",
+          "vonamour"
+        ]
+      },
+      "normalizedTitle": "kuklaremix2026",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 59,
+          "bestRank": 42,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 42,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1881499588",
+          "url": "https://music.apple.com/ru/album/%D0%BA%D1%83%D0%BA%D0%BB%D0%B0-feat-vonamour-remix-2026/1881499587?i=1881499588",
+          "sourceScore": 80.48
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 58.5,
+          "bestRank": 84,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 84,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 88.53
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 169.01,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03731",
+      "artist": "Zivert",
+      "title": "Credo",
+      "artistAliases": [
+        "Zivert"
+      ],
+      "titleAliases": [
+        "Credo"
+      ],
+      "normalizedArtist": {
+        "primary": "zivert",
+        "participants": [
+          "zivert"
+        ]
+      },
+      "normalizedTitle": "credo",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 58,
+          "bestRank": 43,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 43,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1477600528",
+          "url": "https://music.apple.com/ru/album/credo/1477600049?i=1477600528",
+          "sourceScore": 80.15
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 80.15,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03732",
+      "artist": "Zivert",
+      "title": "Зелёные волны",
+      "artistAliases": [
+        "Zivert"
+      ],
+      "titleAliases": [
+        "Зелёные волны"
+      ],
+      "normalizedArtist": {
+        "primary": "zivert",
+        "participants": [
+          "zivert"
+        ]
+      },
+      "normalizedTitle": "zelenyevolny",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 57,
+          "bestRank": 44,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 44,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1362068937",
+          "url": "https://music.apple.com/ru/album/%D0%B7%D0%B5%D0%BB%D1%91%D0%BD%D1%8B%D0%B5-%D0%B2%D0%BE%D0%BB%D0%BD%D1%8B/1362068933?i=1362068937",
+          "sourceScore": 79.81
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 79.81,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03733",
+      "artist": "XOLIDAYBOY",
+      "title": "Пожары",
+      "artistAliases": [
+        "XOLIDAYBOY"
+      ],
+      "titleAliases": [
+        "Пожары"
+      ],
+      "normalizedArtist": {
+        "primary": "xolidayboy",
+        "participants": [
+          "xolidayboy"
+        ]
+      },
+      "normalizedTitle": "pozhary",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 55,
+          "bestRank": 46,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 46,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1731327366",
+          "url": "https://music.apple.com/ru/album/%D0%BF%D0%BE%D0%B6%D0%B0%D1%80%D1%8B/1731327365?i=1731327366",
+          "sourceScore": 79.12
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 10,
+          "bestRank": 181,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 181,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 51.96
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 131.08,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03734",
+      "artist": "TAKETAKE",
+      "title": "baby my type",
+      "artistAliases": [
+        "TAKETAKE"
+      ],
+      "titleAliases": [
+        "baby my type"
+      ],
+      "normalizedArtist": {
+        "primary": "taketake",
+        "participants": [
+          "taketake"
+        ]
+      },
+      "normalizedTitle": "babymytype",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 54,
+          "bestRank": 47,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 47,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1893064964",
+          "url": "https://music.apple.com/ru/album/baby-my-type/1893064963?i=1893064964",
+          "sourceScore": 78.77
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 77,
+          "bestRank": 47,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 47,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 94.4
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 173.17,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03735",
+      "artist": "Akmal'",
+      "title": "Любовная",
+      "artistAliases": [
+        "Akmal'"
+      ],
+      "titleAliases": [
+        "Любовная"
+      ],
+      "normalizedArtist": {
+        "primary": "akmal",
+        "participants": [
+          "akmal"
+        ]
+      },
+      "normalizedTitle": "lyubovnaya",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 52,
+          "bestRank": 49,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 49,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6787881444",
+          "url": "https://music.apple.com/ru/album/%D0%BB%D1%8E%D0%B1%D0%BE%D0%B2%D0%BD%D0%B0%D1%8F/6787881443?i=6787881444",
+          "sourceScore": 78.04
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 85.5,
+          "bestRank": 30,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 30,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 96.64
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 174.68,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03736",
+      "artist": "Марго Нуар, Александра Чистякова & Лилия Вайн",
+      "title": "Возраст - это просто пин-код",
+      "artistAliases": [
+        "Марго Нуар",
+        "Марго Нуар, Александра Чистякова & Лилия Вайн"
+      ],
+      "titleAliases": [
+        "Возраст - это просто пин-код"
+      ],
+      "normalizedArtist": {
+        "primary": "margonuar",
+        "participants": [
+          "aleksandrachistyakova",
+          "liliyavain",
+          "margonuar"
+        ]
+      },
+      "normalizedTitle": "vozrastetoprostopinkod",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 51,
+          "bestRank": 50,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 50,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6794150906",
+          "url": "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82-%D1%8D%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D0%BF%D0%B8%D0%BD-%D0%BA%D0%BE%D0%B4/6794150904?i=6794150906",
+          "sourceScore": 77.66
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 85,
+          "bestRank": 31,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 31,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 96.52
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 4,
+          "bestRank": 97,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 97,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 3,
+          "minReportedPeak": 97,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 75559,
+          "sourceScore": 34.87
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 209.05,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03737",
+      "artist": "Баста, Icegergert, МАКСИ ГРИН & Onative",
+      "title": "Возле дома твоего",
+      "artistAliases": [
+        "Баста, Icegergert, МАКСИ ГРИН & Onative"
+      ],
+      "titleAliases": [
+        "Возле дома твоего"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "basta",
+          "icegergert",
+          "maksigrin",
+          "onative"
+        ]
+      },
+      "normalizedTitle": "vozledomatvoego",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 50,
+          "bestRank": 51,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 51,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6795563322",
+          "url": "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5-%D0%B4%D0%BE%D0%BC%D0%B0-%D1%82%D0%B2%D0%BE%D0%B5%D0%B3%D0%BE/6795563321?i=6795563322",
+          "sourceScore": 77.28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 77.28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03738",
+      "artist": "GAYAZOV$ BROTHER$",
+      "title": "Санта Лючия",
+      "artistAliases": [
+        "GAYAZOV$ BROTHER$"
+      ],
+      "titleAliases": [
+        "Санта Лючия"
+      ],
+      "normalizedArtist": {
+        "primary": "gayazovbrother",
+        "participants": [
+          "gayazovbrother"
+        ]
+      },
+      "normalizedTitle": "santalyuchiya",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 49,
+          "bestRank": 52,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 52,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6782062375",
+          "url": "https://music.apple.com/ru/album/%D1%81%D0%B0%D0%BD%D1%82%D0%B0-%D0%BB%D1%8E%D1%87%D0%B8%D1%8F/6782062374?i=6782062375",
+          "sourceScore": 76.89
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 89,
+          "bestRank": 23,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 23,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 97.5
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 174.39,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03739",
+      "artist": "Женя Трофимов & Комната культуры",
+      "title": "Поезда",
+      "artistAliases": [
+        "Женя Трофимов & Комната культуры"
+      ],
+      "titleAliases": [
+        "Поезда"
+      ],
+      "normalizedArtist": {
+        "primary": "zhenyatrofimov",
+        "participants": [
+          "komnatakultury",
+          "zhenyatrofimov"
+        ]
+      },
+      "normalizedTitle": "poezda",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 48,
+          "bestRank": 53,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 53,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1716731276",
+          "url": "https://music.apple.com/ru/album/%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4%D0%B0/1716731275?i=1716731276",
+          "sourceScore": 76.5
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 76.5,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03740",
+      "artist": "Егор Крид & ARTIK & ASTI",
+      "title": "KARMA",
+      "artistAliases": [
+        "Егор Крид & ARTIK & ASTI"
+      ],
+      "titleAliases": [
+        "KARMA"
+      ],
+      "normalizedArtist": {
+        "primary": "egorkrid",
+        "participants": [
+          "artik",
+          "asti",
+          "egorkrid"
+        ]
+      },
+      "normalizedTitle": "karma",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 46,
+          "bestRank": 55,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 55,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6763072322",
+          "url": "https://music.apple.com/ru/album/karma/1895149222?i=6763072322",
+          "sourceScore": 75.68
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 75.68,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03741",
+      "artist": "СДП",
+      "title": "Сыпь, гармоника! (First Take Master)",
+      "artistAliases": [
+        "СДП"
+      ],
+      "titleAliases": [
+        "Сыпь, гармоника! (First Take Master)"
+      ],
+      "normalizedArtist": {
+        "primary": "sdp",
+        "participants": [
+          "sdp"
+        ]
+      },
+      "normalizedTitle": "sypgarmonikafirsttakemaster",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 45,
+          "bestRank": 56,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 56,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1878101401",
+          "url": "https://music.apple.com/ru/album/%D1%81%D1%8B%D0%BF%D1%8C-%D0%B3%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B0-first-take-master/1878101400?i=1878101401",
+          "sourceScore": 75.25
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 22.5,
+          "bestRank": 156,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 156,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 68.41
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 143.66,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03742",
+      "artist": "Michael Jackson",
+      "title": "Dirty Diana",
+      "artistAliases": [
+        "Michael Jackson"
+      ],
+      "titleAliases": [
+        "Dirty Diana"
+      ],
+      "normalizedArtist": {
+        "primary": "michaeljackson",
+        "participants": [
+          "michaeljackson"
+        ]
+      },
+      "normalizedTitle": "dirtydiana",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 44,
+          "bestRank": 57,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 57,
+          "latestPeriod": "2026-09-03",
+          "platformId": "159294485",
+          "url": "https://music.apple.com/ru/album/dirty-diana/159292399?i=159294485",
+          "sourceScore": 74.82
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 74.82,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03743",
+      "artist": "Jakone & Kiliana",
+      "title": "Жиганская",
+      "artistAliases": [
+        "Jakone",
+        "Jakone & Kiliana"
+      ],
+      "titleAliases": [
+        "Жиганская"
+      ],
+      "normalizedArtist": {
+        "primary": "jakone",
+        "participants": [
+          "jakone",
+          "kiliana"
+        ]
+      },
+      "normalizedTitle": "zhiganskaya",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 43,
+          "bestRank": 58,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 58,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1848001063",
+          "url": "https://music.apple.com/ru/album/%D0%B6%D0%B8%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F/1848001062?i=1848001063",
+          "sourceScore": 74.38
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 78,
+          "bestRank": 23,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 23,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 44,
+          "minReportedPeak": 2,
+          "maxReportedNumberOneWeeks": 1,
+          "latestStreams": 127375,
+          "sourceScore": 94.68
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 169.06,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03744",
+      "artist": "BEARWOLF",
+      "title": "Валькирия",
+      "artistAliases": [
+        "bearWOLF",
+        "BEARWOLF"
+      ],
+      "titleAliases": [
+        "Валькирия"
+      ],
+      "normalizedArtist": {
+        "primary": "bearwolf",
+        "participants": [
+          "bearwolf"
+        ]
+      },
+      "normalizedTitle": "valkiriya",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 42,
+          "bestRank": 59,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 59,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1768737252",
+          "url": "https://music.apple.com/ru/album/%D0%B2%D0%B0%D0%BB%D1%8C%D0%BA%D0%B8%D1%80%D0%B8%D1%8F/1768737251?i=1768737252",
+          "sourceScore": 73.93
+        },
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 100,
+          "bestRank": 1,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 1,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 100
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 0.5,
+          "bestRank": 200,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 200,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 8.79
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 182.72,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03745",
+      "artist": "ANNA ASTI",
+      "title": "Царица",
+      "artistAliases": [
+        "ANNA ASTI"
+      ],
+      "titleAliases": [
+        "Царица"
+      ],
+      "normalizedArtist": {
+        "primary": "annaasti",
+        "participants": [
+          "annaasti"
+        ]
+      },
+      "normalizedTitle": "tsaritsa",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 41,
+          "bestRank": 60,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 60,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1695852450",
+          "url": "https://music.apple.com/ru/album/%D1%86%D0%B0%D1%80%D0%B8%D1%86%D0%B0/1695852449?i=1695852450",
+          "sourceScore": 73.47
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 73.47,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03746",
+      "artist": "Michael Jackson",
+      "title": "Bad (2012 Remaster)",
+      "artistAliases": [
+        "Michael Jackson"
+      ],
+      "titleAliases": [
+        "Bad (2012 Remaster)"
+      ],
+      "normalizedArtist": {
+        "primary": "michaeljackson",
+        "participants": [
+          "michaeljackson"
+        ]
+      },
+      "normalizedTitle": "bad2012remaster",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 40,
+          "bestRank": 61,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 61,
+          "latestPeriod": "2026-09-03",
+          "platformId": "559334751",
+          "url": "https://music.apple.com/ru/album/bad-2012-remaster/559334659?i=559334751",
+          "sourceScore": 72.99
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 72.99,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03747",
+      "artist": "Police in Paris & Ida Galich",
+      "title": "БИЗИ",
+      "artistAliases": [
+        "Police in Paris & Ida Galich"
+      ],
+      "titleAliases": [
+        "БИЗИ"
+      ],
+      "normalizedArtist": {
+        "primary": "policeinparis",
+        "participants": [
+          "idagalich",
+          "policeinparis"
+        ]
+      },
+      "normalizedTitle": "bizi",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 39,
+          "bestRank": 62,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 62,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6781004465",
+          "url": "https://music.apple.com/ru/album/%D0%B1%D0%B8%D0%B7%D0%B8/6781004118?i=6781004465",
+          "sourceScore": 72.51
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 83.5,
+          "bestRank": 34,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 34,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 96.14
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 168.65,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03748",
+      "artist": "MONA",
+      "title": "Иордан",
+      "artistAliases": [
+        "MONA"
+      ],
+      "titleAliases": [
+        "Иордан"
+      ],
+      "normalizedArtist": {
+        "primary": "mona",
+        "participants": [
+          "mona"
+        ]
+      },
+      "normalizedTitle": "iordan",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 38,
+          "bestRank": 63,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 63,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1777205296",
+          "url": "https://music.apple.com/ru/album/%D0%B8%D0%BE%D1%80%D0%B4%D0%B0%D0%BD/1777205288?i=1777205296",
+          "sourceScore": 72.01
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 72.01,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03749",
+      "artist": "Женя Трофимов",
+      "title": "Самолеты",
+      "artistAliases": [
+        "Женя Трофимов"
+      ],
+      "titleAliases": [
+        "Самолеты"
+      ],
+      "normalizedArtist": {
+        "primary": "zhenyatrofimov",
+        "participants": [
+          "zhenyatrofimov"
+        ]
+      },
+      "normalizedTitle": "samolety",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 36,
+          "bestRank": 65,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 65,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1649654272",
+          "url": "https://music.apple.com/ru/album/%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5%D1%82%D1%8B/1649654271?i=1649654272",
+          "sourceScore": 70.97
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 24.5,
+          "bestRank": 152,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 152,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 70.18
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 141.15,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03750",
+      "artist": "Temper City",
+      "title": "Self Aware",
+      "artistAliases": [
+        "Temper City"
+      ],
+      "titleAliases": [
+        "Self Aware"
+      ],
+      "normalizedArtist": {
+        "primary": "tempercity",
+        "participants": [
+          "tempercity"
+        ]
+      },
+      "normalizedTitle": "selfaware",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 34,
+          "bestRank": 67,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 67,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1877803360",
+          "url": "https://music.apple.com/ru/album/self-aware/1877803357?i=1877803360",
+          "sourceScore": 69.88
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 95.5,
+          "bestRank": 10,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 10,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 99.01
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 168.89,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03751",
+      "artist": "Баста",
+      "title": "Выпускной (Медлячок)",
+      "artistAliases": [
+        "Баста"
+      ],
+      "titleAliases": [
+        "Выпускной (Медлячок)"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "basta"
+        ]
+      },
+      "normalizedTitle": "vypusknoimedlyachok",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 33,
+          "bestRank": 68,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 68,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1112971495",
+          "url": "https://music.apple.com/ru/album/%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%BD%D0%BE%D0%B9-%D0%BC%D0%B5%D0%B4%D0%BB%D1%8F%D1%87%D0%BE%D0%BA/1112971476?i=1112971495",
+          "sourceScore": 69.31
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 69.31,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03752",
+      "artist": "madk1d & VILLIAN",
+      "title": "8 миля",
+      "artistAliases": [
+        "madk1d & VILLIAN"
+      ],
+      "titleAliases": [
+        "8 миля"
+      ],
+      "normalizedArtist": {
+        "primary": "madk1d",
+        "participants": [
+          "madk1d",
+          "villian"
+        ]
+      },
+      "normalizedTitle": "8milya",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 32,
+          "bestRank": 69,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 69,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1876651877",
+          "url": "https://music.apple.com/ru/album/8-%D0%BC%D0%B8%D0%BB%D1%8F/1876651874?i=1876651877",
+          "sourceScore": 68.73
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 68.73,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03753",
+      "artist": "Aarne, Toxi$ & Big Baby Tape",
+      "title": "NOBODY",
+      "artistAliases": [
+        "Aarne, Toxi$ & Big Baby Tape"
+      ],
+      "titleAliases": [
+        "NOBODY"
+      ],
+      "normalizedArtist": {
+        "primary": "aarne",
+        "participants": [
+          "aarne",
+          "bigbabytape",
+          "toxi"
+        ]
+      },
+      "normalizedTitle": "nobody",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 31,
+          "bestRank": 70,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 70,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1850117925",
+          "url": "https://music.apple.com/ru/album/nobody/1850117224?i=1850117925",
+          "sourceScore": 68.12
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 68.12,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03754",
+      "artist": "Michael Jackson",
+      "title": "Smooth Criminal",
+      "artistAliases": [
+        "Michael Jackson"
+      ],
+      "titleAliases": [
+        "Smooth Criminal"
+      ],
+      "normalizedArtist": {
+        "primary": "michaeljackson",
+        "participants": [
+          "michaeljackson"
+        ]
+      },
+      "normalizedTitle": "smoothcriminal",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 30,
+          "bestRank": 71,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 71,
+          "latestPeriod": "2026-09-03",
+          "platformId": "159294551",
+          "url": "https://music.apple.com/ru/album/smooth-criminal/159292399?i=159294551",
+          "sourceScore": 67.5
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 67.5,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03755",
+      "artist": "SABI & MIA BOYKA",
+      "title": "Базовый минимум",
+      "artistAliases": [
+        "Sabi",
+        "SABI & MIA BOYKA"
+      ],
+      "titleAliases": [
+        "Базовый минимум"
+      ],
+      "normalizedArtist": {
+        "primary": "sabi",
+        "participants": [
+          "miaboyka",
+          "sabi"
+        ]
+      },
+      "normalizedTitle": "bazovyiminimum",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 29,
+          "bestRank": 72,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 72,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6773334417",
+          "url": "https://music.apple.com/ru/album/%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BC%D0%B8%D0%BD%D0%B8%D0%BC%D1%83%D0%BC/6773334414?i=6773334417",
+          "sourceScore": 66.85
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 98,
+          "bestRank": 3,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 3,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 8,
+          "minReportedPeak": 2,
+          "maxReportedNumberOneWeeks": 6,
+          "latestStreams": 424844,
+          "sourceScore": 99.57
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 166.42,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03756",
+      "artist": "МОТ",
+      "title": "Намёк на нас",
+      "artistAliases": [
+        "МОТ"
+      ],
+      "titleAliases": [
+        "Намёк на нас"
+      ],
+      "normalizedArtist": {
+        "primary": "mot",
+        "participants": [
+          "mot"
+        ]
+      },
+      "normalizedTitle": "nameknanas",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 27,
+          "bestRank": 74,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 74,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1875919217",
+          "url": "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%BC%D1%91%D0%BA-%D0%BD%D0%B0-%D0%BD%D0%B0%D1%81/1875919216?i=1875919217",
+          "sourceScore": 65.5
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 65.5,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03757",
+      "artist": "Татьяна Куртукова",
+      "title": "Матушка",
+      "artistAliases": [
+        "Татьяна Куртукова"
+      ],
+      "titleAliases": [
+        "Матушка"
+      ],
+      "normalizedArtist": {
+        "primary": "tatyanakurtukova",
+        "participants": [
+          "tatyanakurtukova"
+        ]
+      },
+      "normalizedTitle": "matushka",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 26,
+          "bestRank": 75,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 75,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1732006589",
+          "url": "https://music.apple.com/ru/album/%D0%BC%D0%B0%D1%82%D1%83%D1%88%D0%BA%D0%B0/1732006588?i=1732006589",
+          "sourceScore": 64.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 64.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03758",
+      "artist": "Dua Lipa",
+      "title": "Training Season",
+      "artistAliases": [
+        "Dua Lipa"
+      ],
+      "titleAliases": [
+        "Training Season"
+      ],
+      "normalizedArtist": {
+        "primary": "dualipa",
+        "participants": [
+          "dualipa"
+        ]
+      },
+      "normalizedTitle": "trainingseason",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 23,
+          "bestRank": 78,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 78,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1751266030",
+          "url": "https://music.apple.com/ru/album/training-season/1751265357?i=1751266030",
+          "sourceScore": 62.47
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 62.47,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03759",
+      "artist": "МОТ",
+      "title": "Абсолютно всё",
+      "artistAliases": [
+        "МОТ"
+      ],
+      "titleAliases": [
+        "Абсолютно всё (feat. Бьянка)"
+      ],
+      "normalizedArtist": {
+        "primary": "mot",
+        "participants": [
+          "byanka",
+          "mot"
+        ]
+      },
+      "normalizedTitle": "absolyutnovse",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 22,
+          "bestRank": 79,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 79,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1045967145",
+          "url": "https://music.apple.com/ru/album/%D0%B0%D0%B1%D1%81%D0%BE%D0%BB%D1%8E%D1%82%D0%BD%D0%BE-%D0%B2%D1%81%D1%91-feat-%D0%B1%D1%8C%D1%8F%D0%BD%D0%BA%D0%B0/1045967143?i=1045967145",
+          "sourceScore": 61.63
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 61.63,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03760",
+      "artist": "Женя Трофимов & Комната культуры",
+      "title": "Привет",
+      "artistAliases": [
+        "Женя Трофимов & Комната культуры"
+      ],
+      "titleAliases": [
+        "Привет"
+      ],
+      "normalizedArtist": {
+        "primary": "zhenyatrofimov",
+        "participants": [
+          "komnatakultury",
+          "zhenyatrofimov"
+        ]
+      },
+      "normalizedTitle": "privet",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 21,
+          "bestRank": 80,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 80,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1775723213",
+          "url": "https://music.apple.com/ru/album/%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82/1775722937?i=1775723213",
+          "sourceScore": 60.76
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 60.76,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03761",
+      "artist": "ANNA ASTI",
+      "title": "По барам",
+      "artistAliases": [
+        "ANNA ASTI"
+      ],
+      "titleAliases": [
+        "По барам"
+      ],
+      "normalizedArtist": {
+        "primary": "annaasti",
+        "participants": [
+          "annaasti"
+        ]
+      },
+      "normalizedTitle": "pobaram",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 20,
+          "bestRank": 81,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 81,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1626967340",
+          "url": "https://music.apple.com/ru/album/%D0%BF%D0%BE-%D0%B1%D0%B0%D1%80%D0%B0%D0%BC/1626967330?i=1626967340",
+          "sourceScore": 59.84
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 59.84,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03762",
+      "artist": "Хаски",
+      "title": "Бит шатает голову",
+      "artistAliases": [
+        "Хаски"
+      ],
+      "titleAliases": [
+        "Бит шатает голову"
+      ],
+      "normalizedArtist": {
+        "primary": "haski",
+        "participants": [
+          "haski"
+        ]
+      },
+      "normalizedTitle": "bitshataetgolovu",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 19,
+          "bestRank": 82,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 82,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1216632554",
+          "url": "https://music.apple.com/ru/album/%D0%B1%D0%B8%D1%82-%D1%88%D0%B0%D1%82%D0%B0%D0%B5%D1%82-%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D1%83/1216632142?i=1216632554",
+          "sourceScore": 58.88
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 58.88,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03763",
+      "artist": "Icegergert & SKY RAE",
+      "title": "Наследство",
+      "artistAliases": [
+        "Icegergert & SKY RAE"
+      ],
+      "titleAliases": [
+        "Наследство"
+      ],
+      "normalizedArtist": {
+        "primary": "icegergert",
+        "participants": [
+          "icegergert",
+          "skyrae"
+        ]
+      },
+      "normalizedTitle": "nasledstvo",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 18,
+          "bestRank": 83,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 83,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6770545324",
+          "url": "https://music.apple.com/ru/album/%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%BE/6770545323?i=6770545324",
+          "sourceScore": 57.87
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 57.87,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03764",
+      "artist": "Jakone & MACAN",
+      "title": "Purosangue",
+      "artistAliases": [
+        "Jakone",
+        "Jakone & MACAN"
+      ],
+      "titleAliases": [
+        "Purosangue"
+      ],
+      "normalizedArtist": {
+        "primary": "jakone",
+        "participants": [
+          "jakone",
+          "macan"
+        ]
+      },
+      "normalizedTitle": "purosangue",
+      "explicit": true,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 17,
+          "bestRank": 84,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 84,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1891389043",
+          "url": "https://music.apple.com/ru/album/purosangue/1891389031?i=1891389043",
+          "sourceScore": 56.81
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 13.5,
+          "bestRank": 174,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 174,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 57.94
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 21,
+          "bestRank": 80,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 80,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 15,
+          "minReportedPeak": 29,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 81210,
+          "sourceScore": 66.98
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 181.73,
+      "quizEligible": false
+    },
+    {
+      "id": "chart-03765",
+      "artist": "Jakone & Kiliana",
+      "title": "Была, не была",
+      "artistAliases": [
+        "Jakone & Kiliana"
+      ],
+      "titleAliases": [
+        "Была, не была"
+      ],
+      "normalizedArtist": {
+        "primary": "jakone",
+        "participants": [
+          "jakone",
+          "kiliana"
+        ]
+      },
+      "normalizedTitle": "bylanebyla",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 16,
+          "bestRank": 85,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 85,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6803095967",
+          "url": "https://music.apple.com/ru/album/%D0%B1%D1%8B%D0%BB%D0%B0-%D0%BD%D0%B5-%D0%B1%D1%8B%D0%BB%D0%B0/6803095966?i=6803095967",
+          "sourceScore": 55.69
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 94,
+          "bestRank": 13,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 13,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 98.67
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 154.36,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03766",
+      "artist": "BTS",
+      "title": "SWIM",
+      "artistAliases": [
+        "BTS"
+      ],
+      "titleAliases": [
+        "SWIM"
+      ],
+      "normalizedArtist": {
+        "primary": "bts",
+        "participants": [
+          "bts"
+        ]
+      },
+      "normalizedTitle": "swim",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 15,
+          "bestRank": 86,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 86,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1868862384",
+          "url": "https://music.apple.com/ru/album/swim/1868862375?i=1868862384",
+          "sourceScore": 54.5
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 54.5,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03767",
+      "artist": "David Tavaré",
+      "title": "Call Me Baby (If You Don’t Know My Name)",
+      "artistAliases": [
+        "David Tavaré"
+      ],
+      "titleAliases": [
+        "Call Me Baby (If You Don’t Know My Name) [feat. Ruth]"
+      ],
+      "normalizedArtist": {
+        "primary": "davidtavare",
+        "participants": [
+          "davidtavare",
+          "ruth"
+        ]
+      },
+      "normalizedTitle": "callmebabyifyoudontknowmyname",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 13,
+          "bestRank": 88,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 88,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1570153637",
+          "url": "https://music.apple.com/ru/album/call-me-baby-if-you-dont-know-my-name-feat-ruth/1570153604?i=1570153637",
+          "sourceScore": 51.87
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 72,
+          "bestRank": 57,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 57,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 92.97
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 144.84,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03768",
+      "artist": "Баста",
+      "title": "Моя Вселенная",
+      "artistAliases": [
+        "Баста"
+      ],
+      "titleAliases": [
+        "Моя Вселенная (feat. Тати)"
+      ],
+      "normalizedArtist": {
+        "primary": "basta",
+        "participants": [
+          "basta",
+          "tati"
+        ]
+      },
+      "normalizedTitle": "moyavselennaya",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 12,
+          "bestRank": 89,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 89,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6801163513",
+          "url": "https://music.apple.com/ru/album/%D0%BC%D0%BE%D1%8F-%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-feat-%D1%82%D0%B0%D1%82%D0%B8/6801163508?i=6801163513",
+          "sourceScore": 50.42
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 50.42,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03769",
+      "artist": "Бонд с кнопкой",
+      "title": "Кухни",
+      "artistAliases": [
+        "Бонд с кнопкой"
+      ],
+      "titleAliases": [
+        "Кухни"
+      ],
+      "normalizedArtist": {
+        "primary": "bondsknopkoi",
+        "participants": [
+          "bondsknopkoi"
+        ]
+      },
+      "normalizedTitle": "kuhni",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 11,
+          "bestRank": 90,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 90,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1795795647",
+          "url": "https://music.apple.com/ru/album/%D0%BA%D1%83%D1%85%D0%BD%D0%B8/1795795646?i=1795795647",
+          "sourceScore": 48.84
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 7.5,
+          "bestRank": 186,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 186,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 46.37
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 95.21,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03770",
+      "artist": "Каспийский груз & Баста",
+      "title": "Доедешь - пиши",
+      "artistAliases": [
+        "Каспийский груз & Баста",
+        "Kaspiyskiy Gruz & Basta"
+      ],
+      "titleAliases": [
+        "Доедешь - пиши"
+      ],
+      "normalizedArtist": {
+        "primary": "kaspiiskiigruz",
+        "participants": [
+          "basta",
+          "kaspiiskiigruz"
+        ]
+      },
+      "normalizedTitle": "doedeshpishi",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 9,
+          "bestRank": 92,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 92,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6769036798",
+          "url": "https://music.apple.com/ru/album/%D0%B4%D0%BE%D0%B5%D0%B4%D0%B5%D1%88%D1%8C-%D0%BF%D0%B8%D1%88%D0%B8/6769036789?i=6769036798",
+          "sourceScore": 45.26
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 15.5,
+          "bestRank": 170,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 170,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 60.74
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 106,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03771",
+      "artist": "Michael Jackson",
+      "title": "Human Nature",
+      "artistAliases": [
+        "Michael Jackson"
+      ],
+      "titleAliases": [
+        "Human Nature"
+      ],
+      "normalizedArtist": {
+        "primary": "michaeljackson",
+        "participants": [
+          "michaeljackson"
+        ]
+      },
+      "normalizedTitle": "humannature",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 8,
+          "bestRank": 93,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 93,
+          "latestPeriod": "2026-09-03",
+          "platformId": "269573405",
+          "url": "https://music.apple.com/ru/album/human-nature/269572838?i=269573405",
+          "sourceScore": 43.19
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 11,
+          "bestRank": 179,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 179,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 53.84
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 97.03,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03772",
+      "artist": "MACAN",
+      "title": "ASPHALT 8",
+      "artistAliases": [
+        "MACAN"
+      ],
+      "titleAliases": [
+        "ASPHALT 8"
+      ],
+      "normalizedArtist": {
+        "primary": "macan",
+        "participants": [
+          "macan"
+        ]
+      },
+      "normalizedTitle": "asphalt8",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 7,
+          "bestRank": 94,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 94,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1679628216",
+          "url": "https://music.apple.com/ru/album/asphalt-8/1679628035?i=1679628216",
+          "sourceScore": 40.87
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 40.87,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03773",
+      "artist": "Фара Ночи",
+      "title": "Богиня моря",
+      "artistAliases": [
+        "Фара Ночи"
+      ],
+      "titleAliases": [
+        "Богиня моря"
+      ],
+      "normalizedArtist": {
+        "primary": "faranochi",
+        "participants": [
+          "faranochi"
+        ]
+      },
+      "normalizedTitle": "boginyamorya",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 6,
+          "bestRank": 95,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 95,
+          "latestPeriod": "2026-09-03",
+          "platformId": "6776332549",
+          "url": "https://music.apple.com/ru/album/%D0%B1%D0%BE%D0%B3%D0%B8%D0%BD%D1%8F-%D0%BC%D0%BE%D1%80%D1%8F/6776332548?i=6776332549",
+          "sourceScore": 38.25
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 91.5,
+          "bestRank": 18,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 18,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 98.1
+        },
+        "youtube-ru-weekly": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 92,
+          "bestRank": 9,
+          "firstSeen": "2026-08-27",
+          "lastSeen": "2026-08-27",
+          "latestRank": 9,
+          "latestPeriod": "2026-08-27",
+          "maxReportedWeeks": 9,
+          "minReportedPeak": 4,
+          "maxReportedNumberOneWeeks": 0,
+          "latestStreams": 209350,
+          "sourceScore": 98.21
+        }
+      },
+      "sourceCount": 3,
+      "combinedScore": 234.56,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03774",
+      "artist": "Король и Шут",
+      "title": "Лесник",
+      "artistAliases": [
+        "Король и Шут"
+      ],
+      "titleAliases": [
+        "Лесник"
+      ],
+      "normalizedArtist": {
+        "primary": "korolishut",
+        "participants": [
+          "korolishut"
+        ]
+      },
+      "normalizedTitle": "lesnik",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 5,
+          "bestRank": 96,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 96,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1723344398",
+          "url": "https://music.apple.com/ru/album/%D0%BB%D0%B5%D1%81%D0%BD%D0%B8%D0%BA/1723344391?i=1723344398",
+          "sourceScore": 35.22
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 35.22,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03775",
+      "artist": "Три дня дождя & MONA",
+      "title": "Прощание",
+      "artistAliases": [
+        "Три дня дождя & MONA"
+      ],
+      "titleAliases": [
+        "Прощание"
+      ],
+      "normalizedArtist": {
+        "primary": "tridnyadozhdya",
+        "participants": [
+          "mona",
+          "tridnyadozhdya"
+        ]
+      },
+      "normalizedTitle": "proschanie",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 4,
+          "bestRank": 97,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 97,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1712677225",
+          "url": "https://music.apple.com/ru/album/%D0%BF%D1%80%D0%BE%D1%89%D0%B0%D0%BD%D0%B8%D0%B5/1712676700?i=1712677225",
+          "sourceScore": 31.63
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 31.63,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03776",
+      "artist": "MONA",
+      "title": "Воин и дракон (Из к/с «Ониксовый шторм»)",
+      "artistAliases": [
+        "MONA"
+      ],
+      "titleAliases": [
+        "Воин и дракон (Из к/с «Ониксовый шторм»)"
+      ],
+      "normalizedArtist": {
+        "primary": "mona",
+        "participants": [
+          "mona"
+        ]
+      },
+      "normalizedTitle": "voinidrakonizksoniksovyishtorm",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 3,
+          "bestRank": 98,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 98,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1814090517",
+          "url": "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%B8%D0%BD-%D0%B8-%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD-%D0%B8%D0%B7-%D0%BA-%D1%81-%D0%BE%D0%BD%D0%B8%D0%BA%D1%81%D0%BE%D0%B2%D1%8B%D0%B9-%D1%88%D1%82%D0%BE%D1%80%D0%BC/1814090516?i=1814090517",
+          "sourceScore": 27.25
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 27.25,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03777",
+      "artist": "Sting",
+      "title": "Desert Rose",
+      "artistAliases": [
+        "Sting"
+      ],
+      "titleAliases": [
+        "Desert Rose",
+        "Desert Rose (feat. Cheb Mami)"
+      ],
+      "normalizedArtist": {
+        "primary": "sting",
+        "participants": [
+          "sting"
+        ]
+      },
+      "normalizedTitle": "desertrose",
+      "explicit": false,
+      "sources": {
+        "apple-music-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 2,
+          "bestRank": 99,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 99,
+          "latestPeriod": "2026-09-03",
+          "platformId": "1440863652",
+          "url": "https://music.apple.com/ru/album/desert-rose/1440863519?i=1440863652",
+          "sourceScore": 21.59
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 14.5,
+          "bestRank": 172,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 172,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 59.39
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 80.98,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03778",
+      "artist": "Leona Lewis",
+      "title": "Collide (Radio Edit)",
+      "artistAliases": [
+        "Leona Lewis"
+      ],
+      "titleAliases": [
+        "Collide (Radio Edit)"
+      ],
+      "normalizedArtist": {
+        "primary": "leonalewis",
+        "participants": [
+          "leonalewis"
+        ]
+      },
+      "normalizedTitle": "collideradioedit",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 97.917,
+          "bestRank": 2,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 2,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 99.55
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 99.55,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03779",
+      "artist": "Руслан Набиев",
+      "title": "По ресторанам (Dj Fat Maxx Remix)",
+      "artistAliases": [
+        "Руслан Набиев"
+      ],
+      "titleAliases": [
+        "По ресторанам (Dj Fat Maxx Remix)"
+      ],
+      "normalizedArtist": {
+        "primary": "ruslannabiev",
+        "participants": [
+          "ruslannabiev"
+        ]
+      },
+      "normalizedTitle": "porestoranamdjfatmaxxremix",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 95.833,
+          "bestRank": 3,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 3,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 99.09
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 99.09,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03780",
+      "artist": "Essie Jain",
+      "title": "Opening",
+      "artistAliases": [
+        "Essie Jain"
+      ],
+      "titleAliases": [
+        "Opening"
+      ],
+      "normalizedArtist": {
+        "primary": "essiejain",
+        "participants": [
+          "essiejain"
+        ]
+      },
+      "normalizedTitle": "opening",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 93.75,
+          "bestRank": 4,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 4,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 98.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 98.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03781",
+      "artist": "DJ Drez",
+      "title": "Nectar Drop",
+      "artistAliases": [
+        "DJ Drez"
+      ],
+      "titleAliases": [
+        "Nectar Drop"
+      ],
+      "normalizedArtist": {
+        "primary": "djdrez",
+        "participants": [
+          "djdrez"
+        ]
+      },
+      "normalizedTitle": "nectardrop",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 91.667,
+          "bestRank": 5,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 5,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 98.13
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 98.13,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03782",
+      "artist": "Mandy Moore",
+      "title": "Someday We'll Know (Album Version)",
+      "artistAliases": [
+        "Mandy Moore"
+      ],
+      "titleAliases": [
+        "Someday We'll Know (Album Version)"
+      ],
+      "normalizedArtist": {
+        "primary": "mandymoore",
+        "participants": [
+          "mandymoore"
+        ]
+      },
+      "normalizedTitle": "somedaywellknowalbumversion",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 89.583,
+          "bestRank": 6,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 6,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 97.64
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 97.64,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03783",
+      "artist": "Luca Carboni",
+      "title": "Le ragazze",
+      "artistAliases": [
+        "Luca Carboni"
+      ],
+      "titleAliases": [
+        "Le ragazze"
+      ],
+      "normalizedArtist": {
+        "primary": "lucacarboni",
+        "participants": [
+          "lucacarboni"
+        ]
+      },
+      "normalizedTitle": "leragazze",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 87.5,
+          "bestRank": 7,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 7,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 97.14
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 97.14,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03784",
+      "artist": "Tokio Hotel",
+      "title": "Monsoon",
+      "artistAliases": [
+        "Tokio Hotel"
+      ],
+      "titleAliases": [
+        "Monsoon"
+      ],
+      "normalizedArtist": {
+        "primary": "tokiohotel",
+        "participants": [
+          "tokiohotel"
+        ]
+      },
+      "normalizedTitle": "monsoon",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 85.417,
+          "bestRank": 8,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 8,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 96.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 96.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03785",
+      "artist": "P!nk",
+      "title": "So What (Main Version)",
+      "artistAliases": [
+        "P!nk"
+      ],
+      "titleAliases": [
+        "So What (Main Version)"
+      ],
+      "normalizedArtist": {
+        "primary": "pnk",
+        "participants": [
+          "pnk"
+        ]
+      },
+      "normalizedTitle": "sowhatmainversion",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 83.333,
+          "bestRank": 9,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 9,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 96.09
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 96.09,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03786",
+      "artist": "P!nk",
+      "title": "Who Knew (Edit)",
+      "artistAliases": [
+        "P!nk"
+      ],
+      "titleAliases": [
+        "Who Knew (Edit)"
+      ],
+      "normalizedArtist": {
+        "primary": "pnk",
+        "participants": [
+          "pnk"
+        ]
+      },
+      "normalizedTitle": "whoknewedit",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 81.25,
+          "bestRank": 10,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 10,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 95.55
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 95.55,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03787",
+      "artist": "Kanye West",
+      "title": "Runaway",
+      "artistAliases": [
+        "Kanye West"
+      ],
+      "titleAliases": [
+        "Runaway"
+      ],
+      "normalizedArtist": {
+        "primary": "kanyewest",
+        "participants": [
+          "kanyewest"
+        ]
+      },
+      "normalizedTitle": "runaway",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 79.167,
+          "bestRank": 11,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 11,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 94.99
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 94.99,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03788",
+      "artist": "Pitbull",
+      "title": "International Love",
+      "artistAliases": [
+        "Pitbull"
+      ],
+      "titleAliases": [
+        "International Love (feat. Chris Brown)"
+      ],
+      "normalizedArtist": {
+        "primary": "pitbull",
+        "participants": [
+          "chrisbrown",
+          "pitbull"
+        ]
+      },
+      "normalizedTitle": "internationallove",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 77.083,
+          "bestRank": 12,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 12,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 94.42
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 94.42,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03789",
+      "artist": "Road Band",
+      "title": "Baby I Love You Way",
+      "artistAliases": [
+        "Road Band"
+      ],
+      "titleAliases": [
+        "Baby I Love You Way"
+      ],
+      "normalizedArtist": {
+        "primary": "roadband",
+        "participants": [
+          "roadband"
+        ]
+      },
+      "normalizedTitle": "babyiloveyouway",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 75,
+          "bestRank": 13,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 13,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 93.84
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 93.84,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03790",
+      "artist": "Patrick Swayze",
+      "title": "She's Like the Wind (From \"Dirty Dancing\" Soundtrack)",
+      "artistAliases": [
+        "Patrick Swayze"
+      ],
+      "titleAliases": [
+        "She's Like the Wind (feat. Wendy Fraser) (From \"Dirty Dancing\" Soundtrack)"
+      ],
+      "normalizedArtist": {
+        "primary": "patrickswayze",
+        "participants": [
+          "patrickswayze",
+          "wendyfraser"
+        ]
+      },
+      "normalizedTitle": "sheslikethewindfromdirtydancingsoundtrack",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 72.917,
+          "bestRank": 14,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 14,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 93.24
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 93.24,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03791",
+      "artist": "Artik & Asti",
+      "title": "Nikomu Ne Otdam",
+      "artistAliases": [
+        "Artik & Asti"
+      ],
+      "titleAliases": [
+        "Nikomu Ne Otdam"
+      ],
+      "normalizedArtist": {
+        "primary": "artikiasti",
+        "participants": [
+          "artikiasti"
+        ]
+      },
+      "normalizedTitle": "nikomuneotdam",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 70.833,
+          "bestRank": 15,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 15,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 92.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 92.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03792",
+      "artist": "Alvaro Soler",
+      "title": "El Mismo Sol (Jan Leyk Remix)",
+      "artistAliases": [
+        "Alvaro Soler"
+      ],
+      "titleAliases": [
+        "El Mismo Sol (Jan Leyk Remix)"
+      ],
+      "normalizedArtist": {
+        "primary": "alvarosoler",
+        "participants": [
+          "alvarosoler"
+        ]
+      },
+      "normalizedTitle": "elmismosoljanleykremix",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 66.667,
+          "bestRank": 17,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 17,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 91.32
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 91.32,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03793",
+      "artist": "Полина Гагарина",
+      "title": "Навек",
+      "artistAliases": [
+        "Полина Гагарина"
+      ],
+      "titleAliases": [
+        "Навек"
+      ],
+      "normalizedArtist": {
+        "primary": "polinagagarina",
+        "participants": [
+          "polinagagarina"
+        ]
+      },
+      "normalizedTitle": "navek",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 64.583,
+          "bestRank": 18,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 18,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 90.64
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 90.64,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03794",
+      "artist": "Serebro",
+      "title": "Отпусти меня",
+      "artistAliases": [
+        "Serebro"
+      ],
+      "titleAliases": [
+        "Отпусти меня"
+      ],
+      "normalizedArtist": {
+        "primary": "serebro",
+        "participants": [
+          "serebro"
+        ]
+      },
+      "normalizedTitle": "otpustimenya",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 62.5,
+          "bestRank": 19,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 19,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 89.94
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 89.94,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03795",
+      "artist": "The Rudenko Project",
+      "title": "Destination (Radio Edit)",
+      "artistAliases": [
+        "The Rudenko Project"
+      ],
+      "titleAliases": [
+        "Destination (Radio Edit)"
+      ],
+      "normalizedArtist": {
+        "primary": "therudenkoproject",
+        "participants": [
+          "therudenkoproject"
+        ]
+      },
+      "normalizedTitle": "destinationradioedit",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 60.417,
+          "bestRank": 20,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 20,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 89.22
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 89.22,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03796",
+      "artist": "ВИА ГРА",
+      "title": "Биология",
+      "artistAliases": [
+        "ВИА ГРА"
+      ],
+      "titleAliases": [
+        "Биология"
+      ],
+      "normalizedArtist": {
+        "primary": "viagra",
+        "participants": [
+          "viagra"
+        ]
+      },
+      "normalizedTitle": "biologiya",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 54.167,
+          "bestRank": 23,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 23,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 86.9
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 86.9,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03797",
+      "artist": "Shakira",
+      "title": "Chantaje",
+      "artistAliases": [
+        "Shakira"
+      ],
+      "titleAliases": [
+        "Chantaje (feat. Maluma)"
+      ],
+      "normalizedArtist": {
+        "primary": "shakira",
+        "participants": [
+          "maluma",
+          "shakira"
+        ]
+      },
+      "normalizedTitle": "chantaje",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 52.083,
+          "bestRank": 24,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 24,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 86.06
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 86.06,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03798",
+      "artist": "Manuel Turizo",
+      "title": "Esperándote",
+      "artistAliases": [
+        "Manuel Turizo"
+      ],
+      "titleAliases": [
+        "Esperándote"
+      ],
+      "normalizedArtist": {
+        "primary": "manuelturizo",
+        "participants": [
+          "manuelturizo"
+        ]
+      },
+      "normalizedTitle": "esperandote",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 50,
+          "bestRank": 25,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 25,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 85.19
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 85.19,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03799",
+      "artist": "DJ SMASH",
+      "title": "Между небом и землёй",
+      "artistAliases": [
+        "DJ SMASH"
+      ],
+      "titleAliases": [
+        "Между небом и землёй"
+      ],
+      "normalizedArtist": {
+        "primary": "djsmash",
+        "participants": [
+          "djsmash"
+        ]
+      },
+      "normalizedTitle": "mezhdunebomizemlei",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 47.917,
+          "bestRank": 26,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 26,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 84.29
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 84.29,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-03800",
+      "artist": "Руки Вверх",
+      "title": "18 Мне уже",
+      "artistAliases": [
+        "Руки Вверх"
+      ],
+      "titleAliases": [
+        "18 Мне уже"
+      ],
+      "normalizedArtist": {
+        "primary": "rukivverh",
+        "participants": [
+          "rukivverh"
+        ]
+      },
+      "normalizedTitle": "18mneuzhe",
+      "explicit": false,
+      "sources": {
+        "deezer-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 45.833,
+          "bestRank": 27,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 27,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 83.35
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 83.35,
+      "quizEligible": true
+    }
+  ]
+}

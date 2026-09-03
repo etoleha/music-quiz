@@ -1,0 +1,3734 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-03T22:15:05.402Z",
+  "part": 15,
+  "trackCount": 100,
+  "tracks": [
+    {
+      "id": "chart-01401",
+      "artist": "Mary Gu",
+      "title": "Кислород",
+      "artistAliases": [
+        "Mary Gu"
+      ],
+      "titleAliases": [
+        "Кислород"
+      ],
+      "normalizedArtist": {
+        "primary": "marygu",
+        "participants": [
+          "marygu"
+        ]
+      },
+      "normalizedTitle": "kislorod",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 56,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 151563,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "49OBGUpe4nBaaE4kb349BE",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01402",
+      "artist": "Stray Kids",
+      "title": "Any",
+      "artistAliases": [
+        "Stray Kids"
+      ],
+      "titleAliases": [
+        "Any"
+      ],
+      "normalizedArtist": {
+        "primary": "straykids",
+        "participants": [
+          "straykids"
+        ]
+      },
+      "normalizedTitle": "any",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 28,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 98533,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "5ETic3o5BP0VbGLZYQjxfZ",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01403",
+      "artist": "FACE",
+      "title": "Невзаимное Падение",
+      "artistAliases": [
+        "FACE"
+      ],
+      "titleAliases": [
+        "Невзаимное Падение"
+      ],
+      "normalizedArtist": {
+        "primary": "face",
+        "participants": [
+          "face"
+        ]
+      },
+      "normalizedTitle": "nevzaimnoepadenie",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 32,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 111394,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0oB081WMen6jRiC3TteaiF",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01404",
+      "artist": "LSP",
+      "title": "Нежный зверь",
+      "artistAliases": [
+        "LSP"
+      ],
+      "titleAliases": [
+        "Нежный зверь"
+      ],
+      "normalizedArtist": {
+        "primary": "lsp",
+        "participants": [
+          "lsp"
+        ]
+      },
+      "normalizedTitle": "nezhnyizver",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 29,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 99827,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0R5g0ciofFnPMfzX9rj8Yf",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01405",
+      "artist": "BTS",
+      "title": "Filter",
+      "artistAliases": [
+        "BTS"
+      ],
+      "titleAliases": [
+        "Filter"
+      ],
+      "normalizedArtist": {
+        "primary": "bts",
+        "participants": [
+          "bts"
+        ]
+      },
+      "normalizedTitle": "filter",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 37,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 74287,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0ono6UCNVZ1XqOm6j78Blu",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01406",
+      "artist": "IsaacMusic",
+      "title": "Pink Narwhal",
+      "artistAliases": [
+        "IsaacMusic"
+      ],
+      "titleAliases": [
+        "Pink Narwhal"
+      ],
+      "normalizedArtist": {
+        "primary": "isaacmusic",
+        "participants": [
+          "isaacmusic"
+        ]
+      },
+      "normalizedTitle": "pinknarwhal",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 11,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 102805,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "7IavvfrF6iMZ17gTF4kw4C",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01407",
+      "artist": "Kanye West",
+      "title": "Junya",
+      "artistAliases": [
+        "Kanye West"
+      ],
+      "titleAliases": [
+        "Junya"
+      ],
+      "normalizedArtist": {
+        "primary": "kanyewest",
+        "participants": [
+          "kanyewest"
+        ]
+      },
+      "normalizedTitle": "junya",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 22,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 145883,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "1aF9TeHZbe6OVo9dtjPuzK",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01408",
+      "artist": "347aidan",
+      "title": "Dancing in My Room",
+      "artistAliases": [
+        "347aidan"
+      ],
+      "titleAliases": [
+        "Dancing in My Room"
+      ],
+      "normalizedArtist": {
+        "primary": "347aidan",
+        "participants": [
+          "347aidan"
+        ]
+      },
+      "normalizedTitle": "dancinginmyroom",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 12,
+          "rawPoints": 12,
+          "bestRank": 115,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 130682,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6Pgmqg15yVexuOgtzuxwoX",
+          "sourceScore": 36.91
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 36.91,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01409",
+      "artist": "Marshmello",
+      "title": "Be Kind",
+      "artistAliases": [
+        "Marshmello"
+      ],
+      "titleAliases": [
+        "Be Kind"
+      ],
+      "normalizedArtist": {
+        "primary": "marshmello",
+        "participants": [
+          "marshmello"
+        ]
+      },
+      "normalizedTitle": "bekind",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 9,
+          "rawPoints": 9,
+          "bestRank": 75,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 100736,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3Z8FwOEN59mRMxDCtb8N0A",
+          "sourceScore": 33.13
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 33.13,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01410",
+      "artist": "Klava Koka",
+      "title": "Сошла с ума",
+      "artistAliases": [
+        "Klava Koka"
+      ],
+      "titleAliases": [
+        "Сошла с ума"
+      ],
+      "normalizedArtist": {
+        "primary": "klavakoka",
+        "participants": [
+          "klavakoka"
+        ]
+      },
+      "normalizedTitle": "soshlasuma",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 8,
+          "rawPoints": 8,
+          "bestRank": 65,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 110476,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2hwjX3zfCpjekD9Mm5eEPD",
+          "sourceScore": 31.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 31.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01411",
+      "artist": "Belly",
+      "title": "Better Believe",
+      "artistAliases": [
+        "Belly"
+      ],
+      "titleAliases": [
+        "Better Believe"
+      ],
+      "normalizedArtist": {
+        "primary": "belly",
+        "participants": [
+          "belly"
+        ]
+      },
+      "normalizedTitle": "betterbelieve",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 52,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 114026,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3zs87EV3EZSh2UpiXxT52Y",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01412",
+      "artist": "SQWOZ BAB",
+      "title": "DISNEY",
+      "artistAliases": [
+        "SQWOZ BAB"
+      ],
+      "titleAliases": [
+        "DISNEY"
+      ],
+      "normalizedArtist": {
+        "primary": "sqwozbab",
+        "participants": [
+          "sqwozbab"
+        ]
+      },
+      "normalizedTitle": "disney",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 64,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 169827,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "79O2CSKdprIjcYzQhiMZBW",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01413",
+      "artist": "Skryptonite",
+      "title": "Эминэм",
+      "artistAliases": [
+        "Skryptonite"
+      ],
+      "titleAliases": [
+        "Эминэм"
+      ],
+      "normalizedArtist": {
+        "primary": "skriptonit",
+        "participants": [
+          "skriptonit"
+        ]
+      },
+      "normalizedTitle": "eminem",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 35,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 109771,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3MfQ6mJkUloZpUSMhJhw0n",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01414",
+      "artist": "Kanye West",
+      "title": "Heaven and Hell",
+      "artistAliases": [
+        "Kanye West"
+      ],
+      "titleAliases": [
+        "Heaven and Hell"
+      ],
+      "normalizedArtist": {
+        "primary": "kanyewest",
+        "participants": [
+          "kanyewest"
+        ]
+      },
+      "normalizedTitle": "heavenandhell",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 24,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 144191,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2ZUJsR8HEktit58X6FuPQM",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01415",
+      "artist": "Husky",
+      "title": "Комната скомкана",
+      "artistAliases": [
+        "Husky"
+      ],
+      "titleAliases": [
+        "Комната скомкана"
+      ],
+      "normalizedArtist": {
+        "primary": "husky",
+        "participants": [
+          "husky"
+        ]
+      },
+      "normalizedTitle": "komnataskomkana",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 35,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 109446,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6fBWyagvjLlsye0PmBBt6c",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01416",
+      "artist": "Juice WRLD",
+      "title": "Bad Boy",
+      "artistAliases": [
+        "Juice WRLD"
+      ],
+      "titleAliases": [
+        "Bad Boy"
+      ],
+      "normalizedArtist": {
+        "primary": "juicewrld",
+        "participants": [
+          "juicewrld"
+        ]
+      },
+      "normalizedTitle": "badboy",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 9,
+          "rawPoints": 9,
+          "bestRank": 80,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 111476,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "43CIWpJaJHRcI4mUSjqgc2",
+          "sourceScore": 33.13
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 33.13,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01417",
+      "artist": "DEAD BLONDE",
+      "title": "Ах, Россия-матушка!",
+      "artistAliases": [
+        "DEAD BLONDE"
+      ],
+      "titleAliases": [
+        "Ах, Россия-матушка!"
+      ],
+      "normalizedArtist": {
+        "primary": "deadblonde",
+        "participants": [
+          "deadblonde"
+        ]
+      },
+      "normalizedTitle": "ahrossiyamatushka",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 57,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 126805,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4yenrR9Y848OpLlDhXIfPn",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01418",
+      "artist": "Selena Gomez",
+      "title": "De Una Vez",
+      "artistAliases": [
+        "Selena Gomez"
+      ],
+      "titleAliases": [
+        "De Una Vez"
+      ],
+      "normalizedArtist": {
+        "primary": "selenagomez",
+        "participants": [
+          "selenagomez"
+        ]
+      },
+      "normalizedTitle": "deunavez",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 49,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 95460,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0HC6S4VpCGAZvyxTdrMRIQ",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01419",
+      "artist": "Drake",
+      "title": "No Friends In The Industry",
+      "artistAliases": [
+        "Drake"
+      ],
+      "titleAliases": [
+        "No Friends In The Industry"
+      ],
+      "normalizedArtist": {
+        "primary": "drake",
+        "participants": [
+          "drake"
+        ]
+      },
+      "normalizedTitle": "nofriendsintheindustry",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 44,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 138070,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2tUL6dZf1mywCj5WvCPZw6",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01420",
+      "artist": "Oxxxymiron",
+      "title": "Погружение",
+      "artistAliases": [
+        "Horus",
+        "Oxxxymiron"
+      ],
+      "titleAliases": [
+        "Погружение",
+        "Погружение (feat. Oxxxymiron)"
+      ],
+      "normalizedArtist": {
+        "primary": "oxxxymiron",
+        "participants": [
+          "oxxxymiron"
+        ]
+      },
+      "normalizedTitle": "pogruzhenie",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 47,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 151804,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "5pn9hC9aetpv936NAUZp2z",
+          "sourceScore": 28
+        },
+        "shazam-ru": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 62.5,
+          "bestRank": 76,
+          "firstSeen": "2026-09-03",
+          "lastSeen": "2026-09-03",
+          "latestRank": 76,
+          "latestPeriod": "2026-09-03",
+          "sourceScore": 89.94
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 117.94,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01421",
+      "artist": "Scally Milano",
+      "title": "Я хочу тебя трахать",
+      "artistAliases": [
+        "Scally Milano"
+      ],
+      "titleAliases": [
+        "Я хочу тебя трахать"
+      ],
+      "normalizedArtist": {
+        "primary": "scallymilano",
+        "participants": [
+          "scallymilano"
+        ]
+      },
+      "normalizedTitle": "yahochutebyatrahat",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 39,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 114884,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "5TK74MJYRmwU5NIAjGRvRq",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01422",
+      "artist": "Miley Cyrus",
+      "title": "Plastic Hearts",
+      "artistAliases": [
+        "Miley Cyrus"
+      ],
+      "titleAliases": [
+        "Plastic Hearts"
+      ],
+      "normalizedArtist": {
+        "primary": "mileycyrus",
+        "participants": [
+          "mileycyrus"
+        ]
+      },
+      "normalizedTitle": "plastichearts",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 52,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 101893,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6qCsKKS7Ol63SJW3LOIX5R",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01423",
+      "artist": "TAEMIN",
+      "title": "Advice",
+      "artistAliases": [
+        "TAEMIN"
+      ],
+      "titleAliases": [
+        "Advice"
+      ],
+      "normalizedArtist": {
+        "primary": "taemin",
+        "participants": [
+          "taemin"
+        ]
+      },
+      "normalizedTitle": "advice",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 9,
+          "rawPoints": 9,
+          "bestRank": 87,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 127334,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4rOODw637hsmsq0uzT0DN3",
+          "sourceScore": 33.13
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 33.13,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01424",
+      "artist": "HammAli & Navai",
+      "title": "Друг или враг",
+      "artistAliases": [
+        "HammAli & Navai"
+      ],
+      "titleAliases": [
+        "Друг или враг"
+      ],
+      "normalizedArtist": {
+        "primary": "hammali",
+        "participants": [
+          "hammali",
+          "navai"
+        ]
+      },
+      "normalizedTitle": "drugilivrag",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 24,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 128658,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4qGbCY0pWYZA4Lxa3umiI8",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01425",
+      "artist": "MUKKA",
+      "title": "Малолетки",
+      "artistAliases": [
+        "MUKKA"
+      ],
+      "titleAliases": [
+        "Малолетки"
+      ],
+      "normalizedArtist": {
+        "primary": "mukka",
+        "participants": [
+          "mukka"
+        ]
+      },
+      "normalizedTitle": "maloletki",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 58,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 120845,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "1lCf3PY3IiekcmOcWSHIAl",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01426",
+      "artist": "PHARAOH",
+      "title": "На луне",
+      "artistAliases": [
+        "PHARAOH"
+      ],
+      "titleAliases": [
+        "На луне"
+      ],
+      "normalizedArtist": {
+        "primary": "pharaoh",
+        "participants": [
+          "pharaoh"
+        ]
+      },
+      "normalizedTitle": "nalune",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 16,
+          "rawPoints": 16,
+          "bestRank": 174,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 259225,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "7JBQPFOBszYYGk4lUIfmfA",
+          "sourceScore": 40.77
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 40.77,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01427",
+      "artist": "Noize MC",
+      "title": "чайлдфри",
+      "artistAliases": [
+        "Noize MC"
+      ],
+      "titleAliases": [
+        "чайлдфри"
+      ],
+      "normalizedArtist": {
+        "primary": "noizemc",
+        "participants": [
+          "noizemc"
+        ]
+      },
+      "normalizedTitle": "chaildfri",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 16,
+          "rawPoints": 16,
+          "bestRank": 157,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 145176,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4wfurYo0toYwxVHZUw6oBw",
+          "sourceScore": 40.77
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 40.77,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01428",
+      "artist": "Kanye West",
+      "title": "No Child Left Behind",
+      "artistAliases": [
+        "Kanye West"
+      ],
+      "titleAliases": [
+        "No Child Left Behind"
+      ],
+      "normalizedArtist": {
+        "primary": "kanyewest",
+        "participants": [
+          "kanyewest"
+        ]
+      },
+      "normalizedTitle": "nochildleftbehind",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 27,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 140471,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3onYsG7nB3FwEVHYYWCrIM",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01429",
+      "artist": "SODA LUV",
+      "title": "КОТЬ КОТЬ [Prod. by swaggo, Juvy Cather, 22Cartel, Neet.ro]",
+      "artistAliases": [
+        "SODA LUV"
+      ],
+      "titleAliases": [
+        "КОТЬ КОТЬ [Prod. by swaggo, Juvy Cather, 22Cartel, Neet.ro]"
+      ],
+      "normalizedArtist": {
+        "primary": "sodaluv",
+        "participants": [
+          "sodaluv"
+        ]
+      },
+      "normalizedTitle": "kotkotprodbyswaggojuvycather22cartelneetro",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 19,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 106597,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2XtJGrizHUUKABZ61mLKIO",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01430",
+      "artist": "ATL",
+      "title": "25 недель",
+      "artistAliases": [
+        "ATL"
+      ],
+      "titleAliases": [
+        "25 недель"
+      ],
+      "normalizedArtist": {
+        "primary": "atl",
+        "participants": [
+          "atl"
+        ]
+      },
+      "normalizedTitle": "25nedel",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 50,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 158675,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2MhGnMiZSiFIQ7mu6AGI3D",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01431",
+      "artist": "Stray Kids",
+      "title": "SSICK",
+      "artistAliases": [
+        "Stray Kids"
+      ],
+      "titleAliases": [
+        "SSICK"
+      ],
+      "normalizedArtist": {
+        "primary": "straykids",
+        "participants": [
+          "straykids"
+        ]
+      },
+      "normalizedTitle": "ssick",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 24,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 125450,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0CIJjPU8FDKijaWmTjU6iG",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01432",
+      "artist": "Travis Scott",
+      "title": "The Plan",
+      "artistAliases": [
+        "Travis Scott"
+      ],
+      "titleAliases": [
+        "The Plan"
+      ],
+      "normalizedArtist": {
+        "primary": "travisscott",
+        "participants": [
+          "travisscott"
+        ]
+      },
+      "normalizedTitle": "theplan",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 10,
+          "rawPoints": 10,
+          "bestRank": 93,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 101719,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "551xyaSJsg8hILXFq9JdST",
+          "sourceScore": 34.5
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 34.5,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01433",
+      "artist": "Pretty Scream",
+      "title": "Ревность",
+      "artistAliases": [
+        "Pretty Scream"
+      ],
+      "titleAliases": [
+        "Ревность"
+      ],
+      "normalizedArtist": {
+        "primary": "prettyscream",
+        "participants": [
+          "prettyscream"
+        ]
+      },
+      "normalizedTitle": "revnost",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 60,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 121241,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4ZOc7tUkd0GmejDjs13tFG",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01434",
+      "artist": "uglystephan",
+      "title": "Беспорядок",
+      "artistAliases": [
+        "uglystephan"
+      ],
+      "titleAliases": [
+        "Беспорядок"
+      ],
+      "normalizedArtist": {
+        "primary": "uglystephan",
+        "participants": [
+          "uglystephan"
+        ]
+      },
+      "normalizedTitle": "besporyadok",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 9,
+          "rawPoints": 9,
+          "bestRank": 101,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 186150,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0gBENVRtP2xAYt3JcXQ55t",
+          "sourceScore": 33.13
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 33.13,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01435",
+      "artist": "Ramil'",
+      "title": "Аромат",
+      "artistAliases": [
+        "Ramil'"
+      ],
+      "titleAliases": [
+        "Аромат"
+      ],
+      "normalizedArtist": {
+        "primary": "ramil",
+        "participants": [
+          "ramil"
+        ]
+      },
+      "normalizedTitle": "aromat",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 8,
+          "rawPoints": 8,
+          "bestRank": 69,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 97516,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4kAxdSrryyQhLzzDf686eq",
+          "sourceScore": 31.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 31.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01436",
+      "artist": "THRILL PILL",
+      "title": "Умираю!",
+      "artistAliases": [
+        "THRILL PILL"
+      ],
+      "titleAliases": [
+        "Умираю!"
+      ],
+      "normalizedArtist": {
+        "primary": "thrillpill",
+        "participants": [
+          "thrillpill"
+        ]
+      },
+      "normalizedTitle": "umirayu",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 71,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 167467,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "70mXAxEf7DFxdsRtYS16ls",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01437",
+      "artist": "Dua Lipa",
+      "title": "Love Again - Imanbek Remix",
+      "artistAliases": [
+        "Dua Lipa"
+      ],
+      "titleAliases": [
+        "Love Again - Imanbek Remix"
+      ],
+      "normalizedArtist": {
+        "primary": "dualipa",
+        "participants": [
+          "dualipa"
+        ]
+      },
+      "normalizedTitle": "loveagainimanbekremix",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 10,
+          "rawPoints": 10,
+          "bestRank": 113,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 181390,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6ZRggnBqbwyZ5Uu9qwxU2r",
+          "sourceScore": 34.5
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 34.5,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01438",
+      "artist": "ITZY",
+      "title": "LOCO",
+      "artistAliases": [
+        "ITZY"
+      ],
+      "titleAliases": [
+        "LOCO"
+      ],
+      "normalizedArtist": {
+        "primary": "itzy",
+        "participants": [
+          "itzy"
+        ]
+      },
+      "normalizedTitle": "loco",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 10,
+          "rawPoints": 10,
+          "bestRank": 114,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 186735,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "59c0HrzmHfyQs6LgDw5cHe",
+          "sourceScore": 34.5
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 34.5,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01439",
+      "artist": "Платина",
+      "title": "Булки",
+      "artistAliases": [
+        "Платина"
+      ],
+      "titleAliases": [
+        "Булки"
+      ],
+      "normalizedArtist": {
+        "primary": "platina",
+        "participants": [
+          "platina"
+        ]
+      },
+      "normalizedTitle": "bulki",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 26,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 120187,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3kiMoZkwXEFn95JYXV8cJB",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01440",
+      "artist": "Rilès",
+      "title": "Pesetas",
+      "artistAliases": [
+        "Rilès"
+      ],
+      "titleAliases": [
+        "Pesetas"
+      ],
+      "normalizedArtist": {
+        "primary": "riles",
+        "participants": [
+          "riles"
+        ]
+      },
+      "normalizedTitle": "pesetas",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 11,
+          "rawPoints": 11,
+          "bestRank": 116,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 136621,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0Ei1aBiIELwXmUcIZDETOi",
+          "sourceScore": 35.75
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 35.75,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01441",
+      "artist": "Noize MC",
+      "title": "Лига легенд",
+      "artistAliases": [
+        "Noize MC"
+      ],
+      "titleAliases": [
+        "Лига легенд"
+      ],
+      "normalizedArtist": {
+        "primary": "noizemc",
+        "participants": [
+          "noizemc"
+        ]
+      },
+      "normalizedTitle": "ligalegend",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 31,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 73627,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3q87GBQENP99pAUOwfetzg",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01442",
+      "artist": "SODA LUV",
+      "title": "ГЕРМАФРОДИТ [prod. by gob wants nothing, Wex]",
+      "artistAliases": [
+        "SODA LUV"
+      ],
+      "titleAliases": [
+        "ГЕРМАФРОДИТ [prod. by gob wants nothing, Wex]"
+      ],
+      "normalizedArtist": {
+        "primary": "sodaluv",
+        "participants": [
+          "sodaluv"
+        ]
+      },
+      "normalizedTitle": "germafroditprodbygobwantsnothingwex",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 22,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 103464,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0NhMMAk4RVcdjy9L98wrB2",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01443",
+      "artist": "FEDUK",
+      "title": "Фак опс",
+      "artistAliases": [
+        "FEDUK"
+      ],
+      "titleAliases": [
+        "Фак опс"
+      ],
+      "normalizedArtist": {
+        "primary": "feduk",
+        "participants": [
+          "feduk"
+        ]
+      },
+      "normalizedTitle": "fakops",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 54,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 91201,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "5EWkqPIR8tJr1dEUkKVR5c",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01444",
+      "artist": "MONEYKEN",
+      "title": "ВИТОН 2",
+      "artistAliases": [
+        "MONEYKEN"
+      ],
+      "titleAliases": [
+        "ВИТОН 2"
+      ],
+      "normalizedArtist": {
+        "primary": "moneyken",
+        "participants": [
+          "moneyken"
+        ]
+      },
+      "normalizedTitle": "viton2",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 8,
+          "rawPoints": 8,
+          "bestRank": 88,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 173142,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6PVBusNqOXiLIxub7C5Hzm",
+          "sourceScore": 31.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 31.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01445",
+      "artist": "Мари Краймбрери",
+      "title": "Если устал",
+      "artistAliases": [
+        "Мари Краймбрери",
+        "Mari Kraimbrery"
+      ],
+      "titleAliases": [
+        "Если устал"
+      ],
+      "normalizedArtist": {
+        "primary": "marikraimbreri",
+        "participants": [
+          "marikraimbreri"
+        ]
+      },
+      "normalizedTitle": "esliustal",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 72,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 165648,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3g1TxVrtM2tZXgTTR6tIPY",
+          "sourceScore": 29.92
+        },
+        "europa-plus-annual": {
+          "observations": 1,
+          "appearances": 1,
+          "rawPoints": 58.98,
+          "bestRank": 21,
+          "firstSeen": "2022",
+          "lastSeen": "2022",
+          "annualAppearances": 1,
+          "totalWeeklyAppearances": 1,
+          "sourceScore": 84.22
+        }
+      },
+      "sourceCount": 2,
+      "combinedScore": 114.14,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01446",
+      "artist": "OG Buda",
+      "title": "Даёт",
+      "artistAliases": [
+        "OG Buda"
+      ],
+      "titleAliases": [
+        "Даёт"
+      ],
+      "normalizedArtist": {
+        "primary": "ogbuda",
+        "participants": [
+          "ogbuda"
+        ]
+      },
+      "normalizedTitle": "daet",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 42,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 104303,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6lKgj6e4lJXtN4oXrJ81iM",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01447",
+      "artist": "Kanye West",
+      "title": "God Breathed",
+      "artistAliases": [
+        "Kanye West"
+      ],
+      "titleAliases": [
+        "God Breathed"
+      ],
+      "normalizedArtist": {
+        "primary": "kanyewest",
+        "participants": [
+          "kanyewest"
+        ]
+      },
+      "normalizedTitle": "godbreathed",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 4,
+          "rawPoints": 4,
+          "bestRank": 11,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 148386,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "1dPNJDYuW9QAtkOpK3eBvO",
+          "sourceScore": 23.16
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 23.16,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01448",
+      "artist": "Husky",
+      "title": "Птицы",
+      "artistAliases": [
+        "Husky"
+      ],
+      "titleAliases": [
+        "Птицы"
+      ],
+      "normalizedArtist": {
+        "primary": "husky",
+        "participants": [
+          "husky"
+        ]
+      },
+      "normalizedTitle": "ptitsy",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 42,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 103070,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "25IfLOvP9DUpcLluLHg3hc",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01449",
+      "artist": "My",
+      "title": "Остров",
+      "artistAliases": [
+        "My"
+      ],
+      "titleAliases": [
+        "Остров"
+      ],
+      "normalizedArtist": {
+        "primary": "my",
+        "participants": [
+          "my"
+        ]
+      },
+      "normalizedTitle": "ostrov",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 16,
+          "rawPoints": 16,
+          "bestRank": 162,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 143498,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0uhI1APF1D4scWNrOUCMIw",
+          "sourceScore": 40.77
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 40.77,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01450",
+      "artist": "Husky",
+      "title": "Ода Ничему",
+      "artistAliases": [
+        "Husky"
+      ],
+      "titleAliases": [
+        "Ода Ничему"
+      ],
+      "normalizedArtist": {
+        "primary": "husky",
+        "participants": [
+          "husky"
+        ]
+      },
+      "normalizedTitle": "odanichemu",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 43,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 105969,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "1O5mSNngk0EMSFqRSZYUag",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01451",
+      "artist": "pyrokinesis",
+      "title": "Альма-матер",
+      "artistAliases": [
+        "pyrokinesis"
+      ],
+      "titleAliases": [
+        "Альма-матер"
+      ],
+      "normalizedArtist": {
+        "primary": "pyrokinesis",
+        "participants": [
+          "pyrokinesis"
+        ]
+      },
+      "normalizedTitle": "almamater",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 40,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 94086,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4EJTLBmTIDMcpgw7ez9qro",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01452",
+      "artist": "LSP",
+      "title": "Дюны",
+      "artistAliases": [
+        "LSP"
+      ],
+      "titleAliases": [
+        "Дюны"
+      ],
+      "normalizedArtist": {
+        "primary": "lsp",
+        "participants": [
+          "lsp"
+        ]
+      },
+      "normalizedTitle": "dyuny",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 40,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 93992,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "7nF7DegmRQs6iTh2LnZPaO",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01453",
+      "artist": "T-Fest",
+      "title": "Я тоже",
+      "artistAliases": [
+        "T-Fest"
+      ],
+      "titleAliases": [
+        "Я тоже"
+      ],
+      "normalizedArtist": {
+        "primary": "tfest",
+        "participants": [
+          "tfest"
+        ]
+      },
+      "normalizedTitle": "yatozhe",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 8,
+          "rawPoints": 8,
+          "bestRank": 76,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 110301,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "04uesu48IduenmrkbtNDRa",
+          "sourceScore": 31.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 31.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01454",
+      "artist": "Платина",
+      "title": "Бригада",
+      "artistAliases": [
+        "Платина"
+      ],
+      "titleAliases": [
+        "Бригада"
+      ],
+      "normalizedArtist": {
+        "primary": "platina",
+        "participants": [
+          "platina"
+        ]
+      },
+      "normalizedTitle": "brigada",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 29,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 121797,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2d7vK6m69cyq29nK1eDUCL",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01455",
+      "artist": "ROCKET",
+      "title": "Left, Right",
+      "artistAliases": [
+        "ROCKET"
+      ],
+      "titleAliases": [
+        "Left, Right"
+      ],
+      "normalizedArtist": {
+        "primary": "rocket",
+        "participants": [
+          "rocket"
+        ]
+      },
+      "normalizedTitle": "leftright",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 36,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 80623,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "5WRUJJ6eGJrx093T6UoQJG",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01456",
+      "artist": "Max Korzh",
+      "title": "Заправка",
+      "artistAliases": [
+        "Max Korzh"
+      ],
+      "titleAliases": [
+        "Заправка"
+      ],
+      "normalizedArtist": {
+        "primary": "maxkorzh",
+        "participants": [
+          "maxkorzh"
+        ]
+      },
+      "normalizedTitle": "zapravka",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 37,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 157903,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "1f1hDwHzgF9NW4z1B05pDv",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01457",
+      "artist": "Joji",
+      "title": "Run",
+      "artistAliases": [
+        "Joji"
+      ],
+      "titleAliases": [
+        "Run"
+      ],
+      "normalizedArtist": {
+        "primary": "joji",
+        "participants": [
+          "joji"
+        ]
+      },
+      "normalizedTitle": "run",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 60,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 101974,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6p8eEdiZLKJH8tcjGZuNTK",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01458",
+      "artist": "OG Buda",
+      "title": "Дабстэп",
+      "artistAliases": [
+        "OG Buda"
+      ],
+      "titleAliases": [
+        "Дабстэп"
+      ],
+      "normalizedArtist": {
+        "primary": "ogbuda",
+        "participants": [
+          "ogbuda"
+        ]
+      },
+      "normalizedTitle": "dabstep",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 45,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 105784,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0NJqJviW4Wkx0N2n3flZM4",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01459",
+      "artist": "MORGENSHTERN",
+      "title": "СКИТ ОТ @VSBATTLEVIDEO",
+      "artistAliases": [
+        "MORGENSHTERN"
+      ],
+      "titleAliases": [
+        "СКИТ ОТ @VSBATTLEVIDEO"
+      ],
+      "normalizedArtist": {
+        "primary": "morgenshtern",
+        "participants": [
+          "morgenshtern"
+        ]
+      },
+      "normalizedTitle": "skitotvsbattlevideo",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 30,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 120827,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "1RxiRx3WgDZPBh6Dc64vsR",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01460",
+      "artist": "ROCKET",
+      "title": "Go!",
+      "artistAliases": [
+        "ROCKET"
+      ],
+      "titleAliases": [
+        "Go!"
+      ],
+      "normalizedArtist": {
+        "primary": "rocket",
+        "participants": [
+          "rocket"
+        ]
+      },
+      "normalizedTitle": "go",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 25,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 101581,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4PeIyJqqTRniRDBcYGHPGw",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01461",
+      "artist": "JEEMBO",
+      "title": "Run For My Dogs",
+      "artistAliases": [
+        "JEEMBO"
+      ],
+      "titleAliases": [
+        "Run For My Dogs"
+      ],
+      "normalizedArtist": {
+        "primary": "jeembo",
+        "participants": [
+          "jeembo"
+        ]
+      },
+      "normalizedTitle": "runformydogs",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 15,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 72347,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "11LvzydIsU5wbkyQplxuoT",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01462",
+      "artist": "JONY",
+      "title": "Ты пари",
+      "artistAliases": [
+        "JONY"
+      ],
+      "titleAliases": [
+        "Ты пари"
+      ],
+      "normalizedArtist": {
+        "primary": "jony",
+        "participants": [
+          "jony"
+        ]
+      },
+      "normalizedTitle": "typari",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 8,
+          "rawPoints": 8,
+          "bestRank": 74,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 97030,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "7t1CJFGZcC5jXU3PJCucn2",
+          "sourceScore": 31.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 31.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01463",
+      "artist": "MAYOT",
+      "title": "21 (Prod. by Sqweezey x Renzy)",
+      "artistAliases": [
+        "MAYOT"
+      ],
+      "titleAliases": [
+        "21 (Prod. by Sqweezey x Renzy)"
+      ],
+      "normalizedArtist": {
+        "primary": "mayot",
+        "participants": [
+          "mayot"
+        ]
+      },
+      "normalizedTitle": "21prodbysqweezeyxrenzy",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 61,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 101884,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4nfACCaFwwEHResgM5UP6Z",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01464",
+      "artist": "Juice WRLD",
+      "title": "Righteous",
+      "artistAliases": [
+        "Juice WRLD"
+      ],
+      "titleAliases": [
+        "Righteous"
+      ],
+      "normalizedArtist": {
+        "primary": "juicewrld",
+        "participants": [
+          "juicewrld"
+        ]
+      },
+      "normalizedTitle": "righteous",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 54,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 79941,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0OyQns5ayNK2OVaES0Vb8t",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01465",
+      "artist": "Kanye West",
+      "title": "Moon",
+      "artistAliases": [
+        "Kanye West"
+      ],
+      "titleAliases": [
+        "Moon"
+      ],
+      "normalizedArtist": {
+        "primary": "kanyewest",
+        "participants": [
+          "kanyewest"
+        ]
+      },
+      "normalizedTitle": "moon",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 34,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 134995,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2Rd4eJ4KwXQQn2sMSToyUM",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01466",
+      "artist": "Zemfira",
+      "title": "Почта",
+      "artistAliases": [
+        "Zemfira"
+      ],
+      "titleAliases": [
+        "Почта"
+      ],
+      "normalizedArtist": {
+        "primary": "zemfira",
+        "participants": [
+          "zemfira"
+        ]
+      },
+      "normalizedTitle": "pochta",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 63,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 106545,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "5PhZGKBLkd5wLoxttLa0XH",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01467",
+      "artist": "T-Fest",
+      "title": "Время догонит нас - Баста 41",
+      "artistAliases": [
+        "T-Fest"
+      ],
+      "titleAliases": [
+        "Время догонит нас - Баста 41"
+      ],
+      "normalizedArtist": {
+        "primary": "tfest",
+        "participants": [
+          "tfest"
+        ]
+      },
+      "normalizedTitle": "vremyadogonitnasbasta41",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 60,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 96297,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4jrgil1jSfm4IRtizIyhw1",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01468",
+      "artist": "Dzharakhov",
+      "title": "Радоваться мелочам",
+      "artistAliases": [
+        "Dzharakhov"
+      ],
+      "titleAliases": [
+        "Радоваться мелочам"
+      ],
+      "normalizedArtist": {
+        "primary": "dzharakhov",
+        "participants": [
+          "dzharakhov"
+        ]
+      },
+      "normalizedTitle": "radovatsyamelocham",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 67,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 121522,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6YRAMlrzckadOPtNLgjeyO",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01469",
+      "artist": "Muse",
+      "title": "Won’t Stand Down",
+      "artistAliases": [
+        "Muse"
+      ],
+      "titleAliases": [
+        "Won’t Stand Down"
+      ],
+      "normalizedArtist": {
+        "primary": "muse",
+        "participants": [
+          "muse"
+        ]
+      },
+      "normalizedTitle": "wontstanddown",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 56,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 142595,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6hIr2IDeBDXfRFk0rYe5Tz",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01470",
+      "artist": "Leat'eq",
+      "title": "Tokyo",
+      "artistAliases": [
+        "Leat'eq"
+      ],
+      "titleAliases": [
+        "Tokyo"
+      ],
+      "normalizedArtist": {
+        "primary": "leateq",
+        "participants": [
+          "leateq"
+        ]
+      },
+      "normalizedTitle": "tokyo",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 10,
+          "rawPoints": 10,
+          "bestRank": 105,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 111055,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "5GRf6zSrCi8gErdN6CyRJT",
+          "sourceScore": 34.5
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 34.5,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01471",
+      "artist": "Husky",
+      "title": "Владыка слов",
+      "artistAliases": [
+        "Husky"
+      ],
+      "titleAliases": [
+        "Владыка слов"
+      ],
+      "normalizedArtist": {
+        "primary": "husky",
+        "participants": [
+          "husky"
+        ]
+      },
+      "normalizedTitle": "vladykaslov",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 46,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 100971,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "44hm3AbBqbvB5q3jfSrwdo",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01472",
+      "artist": "Klava Koka",
+      "title": "Химия",
+      "artistAliases": [
+        "Klava Koka"
+      ],
+      "titleAliases": [
+        "Химия"
+      ],
+      "normalizedArtist": {
+        "primary": "klavakoka",
+        "participants": [
+          "klavakoka"
+        ]
+      },
+      "normalizedTitle": "himiya",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 11,
+          "rawPoints": 11,
+          "bestRank": 112,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 97929,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2XgnZdIFwtbZbtZHW85AqM",
+          "sourceScore": 35.75
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 35.75,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01473",
+      "artist": "OneRepublic",
+      "title": "Someday",
+      "artistAliases": [
+        "OneRepublic"
+      ],
+      "titleAliases": [
+        "Someday"
+      ],
+      "normalizedArtist": {
+        "primary": "onerepublic",
+        "participants": [
+          "onerepublic"
+        ]
+      },
+      "normalizedTitle": "someday",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 72,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 136998,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6aDsgHPZsMztSbZernzlF8",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01474",
+      "artist": "Zemfira",
+      "title": "снег идёт",
+      "artistAliases": [
+        "Zemfira"
+      ],
+      "titleAliases": [
+        "снег идёт"
+      ],
+      "normalizedArtist": {
+        "primary": "zemfira",
+        "participants": [
+          "zemfira"
+        ]
+      },
+      "normalizedTitle": "snegidet",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 29,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 103851,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4OmHmSn0uzTwAPklMtXv6T",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01475",
+      "artist": "Skryptonite",
+      "title": "Плохие привычки",
+      "artistAliases": [
+        "Skryptonite"
+      ],
+      "titleAliases": [
+        "Плохие привычки"
+      ],
+      "normalizedArtist": {
+        "primary": "skriptonit",
+        "participants": [
+          "skriptonit"
+        ]
+      },
+      "normalizedTitle": "plohieprivychki",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 28,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 100715,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "09ZNdFeWhlTFMTbFhF2J8k",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01476",
+      "artist": "SODA LUV",
+      "title": "PON PON",
+      "artistAliases": [
+        "SODA LUV"
+      ],
+      "titleAliases": [
+        "PON PON"
+      ],
+      "normalizedArtist": {
+        "primary": "sodaluv",
+        "participants": [
+          "sodaluv"
+        ]
+      },
+      "normalizedTitle": "ponpon",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 4,
+          "rawPoints": 4,
+          "bestRank": 16,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 143516,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3p10tSGpNwEO0DQTo7brsb",
+          "sourceScore": 23.16
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 23.16,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01477",
+      "artist": "Linkin Park",
+      "title": "She Couldn't",
+      "artistAliases": [
+        "Linkin Park"
+      ],
+      "titleAliases": [
+        "She Couldn't"
+      ],
+      "normalizedArtist": {
+        "primary": "linkinpark",
+        "participants": [
+          "linkinpark"
+        ]
+      },
+      "normalizedTitle": "shecouldnt",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 34,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 63600,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "11LguGpEjOklkNQr70nrHQ",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01478",
+      "artist": "GSPD",
+      "title": "ЭЛЕКТРОКЛУБ",
+      "artistAliases": [
+        "GSPD"
+      ],
+      "titleAliases": [
+        "ЭЛЕКТРОКЛУБ"
+      ],
+      "normalizedArtist": {
+        "primary": "gspd",
+        "participants": [
+          "gspd"
+        ]
+      },
+      "normalizedTitle": "elektroklub",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 8,
+          "rawPoints": 8,
+          "bestRank": 78,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 97793,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3VuGGttgTX8oDGmcD8Ea8P",
+          "sourceScore": 31.62
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 31.62,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01479",
+      "artist": "Anacondaz",
+      "title": "Когда-нибудь",
+      "artistAliases": [
+        "Anacondaz"
+      ],
+      "titleAliases": [
+        "Когда-нибудь"
+      ],
+      "normalizedArtist": {
+        "primary": "anacondaz",
+        "participants": [
+          "anacondaz"
+        ]
+      },
+      "normalizedTitle": "kogdanibud",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 43,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 85495,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "54dfCEWnsWtL50eJXshMAM",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01480",
+      "artist": "kizaru",
+      "title": "Intro",
+      "artistAliases": [
+        "kizaru"
+      ],
+      "titleAliases": [
+        "Intro"
+      ],
+      "normalizedArtist": {
+        "primary": "kizaru",
+        "participants": [
+          "kizaru"
+        ]
+      },
+      "normalizedTitle": "intro",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 29,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 101428,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0H6vAgqSWChcAjLNSuAb88",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01481",
+      "artist": "OG Buda",
+      "title": "Дзагоев",
+      "artistAliases": [
+        "OG Buda"
+      ],
+      "titleAliases": [
+        "Дзагоев"
+      ],
+      "normalizedArtist": {
+        "primary": "ogbuda",
+        "participants": [
+          "ogbuda"
+        ]
+      },
+      "normalizedTitle": "dzagoev",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 49,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 103433,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "72qOWQCKc2eDXci6enicKt",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01482",
+      "artist": "MGMT",
+      "title": "Little Dark Age",
+      "artistAliases": [
+        "MGMT"
+      ],
+      "titleAliases": [
+        "Little Dark Age"
+      ],
+      "normalizedArtist": {
+        "primary": "mgmt",
+        "participants": [
+          "mgmt"
+        ]
+      },
+      "normalizedTitle": "littledarkage",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 14,
+          "rawPoints": 14,
+          "bestRank": 168,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 235421,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "2Y0iGXY6m6immVb2ktbseM",
+          "sourceScore": 38.97
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 38.97,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01483",
+      "artist": "ATL",
+      "title": "RESET",
+      "artistAliases": [
+        "ATL"
+      ],
+      "titleAliases": [
+        "RESET"
+      ],
+      "normalizedArtist": {
+        "primary": "atl",
+        "participants": [
+          "atl"
+        ]
+      },
+      "normalizedTitle": "reset",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 38,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 135158,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6DSLMZxxGueTgj2JlZjOKH",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01484",
+      "artist": "The Limba",
+      "title": "Лед на шее",
+      "artistAliases": [
+        "The Limba"
+      ],
+      "titleAliases": [
+        "Лед на шее"
+      ],
+      "normalizedArtist": {
+        "primary": "thelimba",
+        "participants": [
+          "thelimba"
+        ]
+      },
+      "normalizedTitle": "lednashee",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 70,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 119707,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0Dub9U8hUFpPVJkTrpAwIM",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01485",
+      "artist": "Dzharakhov",
+      "title": "Вокзал",
+      "artistAliases": [
+        "Dzharakhov"
+      ],
+      "titleAliases": [
+        "Вокзал"
+      ],
+      "normalizedArtist": {
+        "primary": "dzharakhov",
+        "participants": [
+          "dzharakhov"
+        ]
+      },
+      "normalizedTitle": "vokzal",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 61,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 153559,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "52NKf6pVq2PZnPVUb2Hdgc",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01486",
+      "artist": "GUF",
+      "title": "Лето на ветер",
+      "artistAliases": [
+        "GUF"
+      ],
+      "titleAliases": [
+        "Лето на ветер"
+      ],
+      "normalizedArtist": {
+        "primary": "guf",
+        "participants": [
+          "guf"
+        ]
+      },
+      "normalizedTitle": "letonaveter",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 40,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 72569,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "5EGqVNNOy1yv1xpQI05qwq",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01487",
+      "artist": "CMH",
+      "title": "паранойя",
+      "artistAliases": [
+        "CMH"
+      ],
+      "titleAliases": [
+        "паранойя"
+      ],
+      "normalizedArtist": {
+        "primary": "cmh",
+        "participants": [
+          "cmh"
+        ]
+      },
+      "normalizedTitle": "paranoiya",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 77,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 143510,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "1pEJZXVtK3KLi3uIkiDbyn",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01488",
+      "artist": "163ONMYNECK",
+      "title": "БЕСЕДА",
+      "artistAliases": [
+        "163ONMYNECK"
+      ],
+      "titleAliases": [
+        "БЕСЕДА"
+      ],
+      "normalizedArtist": {
+        "primary": "163onmyneck",
+        "participants": [
+          "163onmyneck"
+        ]
+      },
+      "normalizedTitle": "beseda",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 42,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 146059,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6oi5b59yCSe1gPvDnPyBYp",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01489",
+      "artist": "PHARAOH",
+      "title": "5 минут назад",
+      "artistAliases": [
+        "PHARAOH"
+      ],
+      "titleAliases": [
+        "5 минут назад"
+      ],
+      "normalizedArtist": {
+        "primary": "pharaoh",
+        "participants": [
+          "pharaoh"
+        ]
+      },
+      "normalizedTitle": "5minutnazad",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 11,
+          "rawPoints": 11,
+          "bestRank": 119,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 107089,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "10pXYKoJOxNAWkeGkNeNnH",
+          "sourceScore": 35.75
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 35.75,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01490",
+      "artist": "FACE",
+      "title": "Истерика",
+      "artistAliases": [
+        "FACE"
+      ],
+      "titleAliases": [
+        "Истерика"
+      ],
+      "normalizedArtist": {
+        "primary": "face",
+        "participants": [
+          "face"
+        ]
+      },
+      "normalizedTitle": "isterika",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 29,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 92961,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "40sStBDIvTxZaj1b5dnH7i",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01491",
+      "artist": "VisaGangBeatz",
+      "title": "Гринч",
+      "artistAliases": [
+        "VisaGangBeatz"
+      ],
+      "titleAliases": [
+        "Гринч"
+      ],
+      "normalizedArtist": {
+        "primary": "visagangbeatz",
+        "participants": [
+          "visagangbeatz"
+        ]
+      },
+      "normalizedTitle": "grinch",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 13,
+          "rawPoints": 13,
+          "bestRank": 159,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 213803,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3T24uF4zo7ISTUQnGC9JMT",
+          "sourceScore": 37.97
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 37.97,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01492",
+      "artist": "System Of A Down",
+      "title": "Protect The Land",
+      "artistAliases": [
+        "System Of A Down"
+      ],
+      "titleAliases": [
+        "Protect The Land"
+      ],
+      "normalizedArtist": {
+        "primary": "systemofadown",
+        "participants": [
+          "systemofadown"
+        ]
+      },
+      "normalizedTitle": "protecttheland",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 43,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 77310,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "11ajcVj3qSyyMPUpTJUP3y",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01493",
+      "artist": "Gjon's Tears",
+      "title": "Tout l'univers",
+      "artistAliases": [
+        "Gjon's Tears"
+      ],
+      "titleAliases": [
+        "Tout l'univers"
+      ],
+      "normalizedArtist": {
+        "primary": "gjonstears",
+        "participants": [
+          "gjonstears"
+        ]
+      },
+      "normalizedTitle": "toutlunivers",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 54,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 111535,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "3MvY2XbGYFi6p2dgmdcOYG",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01494",
+      "artist": "21 Savage",
+      "title": "Glock In My Lap",
+      "artistAliases": [
+        "21 Savage"
+      ],
+      "titleAliases": [
+        "Glock In My Lap"
+      ],
+      "normalizedArtist": {
+        "primary": "21savage",
+        "participants": [
+          "21savage"
+        ]
+      },
+      "normalizedTitle": "glockinmylap",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 30,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 94660,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "6pcywuOeGGWeOQzdUyti6k",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01495",
+      "artist": "OG Buda",
+      "title": "hu3ta (VJLink)",
+      "artistAliases": [
+        "OG Buda"
+      ],
+      "titleAliases": [
+        "hu3ta (VJLink)"
+      ],
+      "normalizedArtist": {
+        "primary": "ogbuda",
+        "participants": [
+          "ogbuda"
+        ]
+      },
+      "normalizedTitle": "hu3tavjlink",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 31,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 96835,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "0gxHZ2Lg5kzWfDk9uWcBxn",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01496",
+      "artist": "Zemfira",
+      "title": "мама",
+      "artistAliases": [
+        "Zemfira"
+      ],
+      "titleAliases": [
+        "мама"
+      ],
+      "normalizedArtist": {
+        "primary": "zemfira",
+        "participants": [
+          "zemfira"
+        ]
+      },
+      "normalizedTitle": "mama",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 32,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 99473,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "7yP7a7N0SkGIwKBReDN2Ap",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01497",
+      "artist": "Krovostok",
+      "title": "Делают",
+      "artistAliases": [
+        "Krovostok"
+      ],
+      "titleAliases": [
+        "Делают"
+      ],
+      "normalizedArtist": {
+        "primary": "krovostok",
+        "participants": [
+          "krovostok"
+        ]
+      },
+      "normalizedTitle": "delayut",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 5,
+          "rawPoints": 5,
+          "bestRank": 30,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 93521,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4mdZ70B8UvXgblCczntHp5",
+          "sourceScore": 25.78
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 25.78,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01498",
+      "artist": "OG Buda",
+      "title": "Грусть",
+      "artistAliases": [
+        "OG Buda"
+      ],
+      "titleAliases": [
+        "Грусть"
+      ],
+      "normalizedArtist": {
+        "primary": "ogbuda",
+        "participants": [
+          "ogbuda"
+        ]
+      },
+      "normalizedTitle": "grust",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 52,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 100802,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "1SJ4B5Gzccig5AGbxlKREX",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01499",
+      "artist": "SQWOZ BAB",
+      "title": "PUSSY SULTAN",
+      "artistAliases": [
+        "SQWOZ BAB"
+      ],
+      "titleAliases": [
+        "PUSSY SULTAN"
+      ],
+      "normalizedArtist": {
+        "primary": "sqwozbab",
+        "participants": [
+          "sqwozbab"
+        ]
+      },
+      "normalizedTitle": "pussysultan",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 7,
+          "rawPoints": 7,
+          "bestRank": 68,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 98817,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "540SUNOl0JhejZuuUZ4wSe",
+          "sourceScore": 29.92
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 29.92,
+      "quizEligible": true
+    },
+    {
+      "id": "chart-01500",
+      "artist": "Anacondaz",
+      "title": "Серым",
+      "artistAliases": [
+        "Anacondaz"
+      ],
+      "titleAliases": [
+        "Серым"
+      ],
+      "normalizedArtist": {
+        "primary": "anacondaz",
+        "participants": [
+          "anacondaz"
+        ]
+      },
+      "normalizedTitle": "serym",
+      "explicit": false,
+      "sources": {
+        "spotify-ru-daily-history": {
+          "observations": 1,
+          "appearances": 6,
+          "rawPoints": 6,
+          "bestRank": 48,
+          "firstSeen": "2020-07-15",
+          "lastSeen": "2022-04-07",
+          "totalStreams": 87484,
+          "top10Days": 0,
+          "numberOneDays": 0,
+          "platformId": "4xZjH6Kg2aUo6cu08lLHOJ",
+          "sourceScore": 28
+        }
+      },
+      "sourceCount": 1,
+      "combinedScore": 28,
+      "quizEligible": true
+    }
+  ]
+}
