@@ -1,0 +1,7 @@
+[Unit]
+Description=Publish the newest music quiz version
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/music-quiz/source/deploy/update.sh

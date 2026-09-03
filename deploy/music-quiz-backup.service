@@ -1,0 +1,6 @@
+[Unit]
+Description=Back up music quiz statistics
+
+[Service]
+Type=oneshot
+ExecStart=/opt/music-quiz/source/deploy/backup.sh

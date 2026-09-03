@@ -1,0 +1,23 @@
+[Unit]
+Description=Music quiz website
+After=network.target
+
+[Service]
+Type=simple
+User=musicquiz
+Group=musicquiz
+WorkingDirectory=/opt/music-quiz/current
+Environment=NODE_ENV=production
+Environment=HOSTNAME=127.0.0.1
+Environment=PORT=3100
+Environment=QUIZ_DB_PATH=/var/lib/music-quiz/quiz.sqlite
+ExecStart=/usr/bin/node /opt/music-quiz/current/server.js
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/music-quiz
+
+[Install]
+WantedBy=multi-user.target
