@@ -60,9 +60,10 @@ type MusicQuizProps = {
     maxScore: number;
     answers: Array<{ trackKey: string; points: number; loadFailed: boolean }>;
   } | null;
+  excludedTrackKeys?: string[];
 };
 
-export default function MusicQuiz({ initialQuizId, guestMode = false, comparison = null }: MusicQuizProps = {}) {
+export default function MusicQuiz({ initialQuizId, guestMode = false, comparison = null, excludedTrackKeys = [] }: MusicQuizProps = {}) {
   const [screen, setScreen] = useState<"home" | "quiz" | "result">("home");
   const [activeQuiz, setActiveQuiz] = useState<Quiz | null>(null);
   const [order, setOrder] = useState<Track[]>([]);
@@ -209,9 +210,12 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     if (!guestMode || guestStarted.current || !initialQuizId) return;
     const quiz = getQuiz(initialQuizId);
     if (!quiz) return;
+    const excluded = new Set(excludedTrackKeys);
+    const guestQuiz = excluded.size ? { ...quiz, tracks: quiz.tracks.filter((track) => !excluded.has(track.key)) } : quiz;
+    if (!guestQuiz.tracks.length) return;
     guestStarted.current = true;
-    begin(quiz);
-  }, [guestMode, initialQuizId]);
+    begin(guestQuiz);
+  }, [excludedTrackKeys, guestMode, initialQuizId]);
 
   const shareQuiz = async (quiz: Quiz) => {
     try {

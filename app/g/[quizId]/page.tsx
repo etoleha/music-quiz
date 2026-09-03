@@ -6,5 +6,5 @@ export default async function GuestQuizPage({ params }: { params: Promise<{ quiz
   const { quizId: token } = await params;
   const share = getGuestShare(token);
   if (!share) notFound();
-  return <MusicQuiz initialQuizId={share.quizId} guestMode comparison={share.comparison} />;
+  return <MusicQuiz initialQuizId={share.quizId} guestMode comparison={share.comparison} excludedTrackKeys={share.excludedTrackKeys} />;
 }

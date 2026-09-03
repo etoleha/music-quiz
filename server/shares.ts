@@ -1,4 +1,5 @@
 import { randomBytes } from "node:crypto";
+import { getUnresolvedFragmentReportKeys } from "./feedback";
 import { getLocalDb } from "./local-db";
 
 export type GuestComparison = {
@@ -24,14 +25,11 @@ export function getGuestShare(token: string) {
   const share = database.prepare("SELECT quiz_id AS quizId FROM quiz_shares WHERE token = ?")
     .get(token) as { quizId: string } | undefined;
   if (!share) return null;
+  const excludedTrackKeys = getUnresolvedFragmentReportKeys(database, share.quizId);
 
-  const attempt = database.prepare(`SELECT id, score, max_score AS maxScore
+  const attempt = database.prepare(`SELECT id
     FROM attempts WHERE user_id = 'owner' AND quiz_id = ?
-    ORDER BY created_at DESC LIMIT 1`).get(share.quizId) as {
-      id: string;
-      score: number;
-      maxScore: number;
-    } | undefined;
+    ORDER BY created_at DESC LIMIT 1`).get(share.quizId) as { id: string } | undefined;
 
   let comparison: GuestComparison | null = null;
   if (attempt) {
@@ -42,12 +40,15 @@ export function getGuestShare(token: string) {
         points: number;
         loadFailed: number;
       }>;
+    const visibleAnswers = answers
+      .filter((answer) => !excludedTrackKeys.has(answer.trackKey))
+      .map((answer) => ({ ...answer, loadFailed: Boolean(answer.loadFailed) }));
     comparison = {
-      score: attempt.score,
-      maxScore: attempt.maxScore,
-      answers: answers.map((answer) => ({ ...answer, loadFailed: Boolean(answer.loadFailed) })),
+      score: visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : answer.points), 0),
+      maxScore: visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : 2), 0),
+      answers: visibleAnswers,
     };
   }
 
-  return { quizId: share.quizId, comparison };
+  return { quizId: share.quizId, comparison, excludedTrackKeys: [...excludedTrackKeys] };
 }
