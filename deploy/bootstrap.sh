@@ -14,7 +14,7 @@ if [[ ! "$domain" =~ ^[a-zA-Z0-9.-]+$ ]]; then
 fi
 
 apt-get update
-apt-get install -y ca-certificates curl git nginx apache2-utils sqlite3
+apt-get install -y ca-certificates curl git nginx apache2-utils sqlite3 certbot python3-certbot-nginx
 
 node_major=0
 if command -v node >/dev/null 2>&1; then
@@ -56,5 +56,6 @@ systemctl enable music-quiz.service music-quiz-update.timer music-quiz-backup.ti
 nginx -t
 systemctl reload nginx
 systemctl start music-quiz-update.timer music-quiz-backup.timer
+certbot --nginx -d "$domain" --redirect
 
 echo "Сайт установлен. После настройки DNS открой: https://$domain"
