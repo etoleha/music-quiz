@@ -42,4 +42,4 @@ next-env.d.ts
 /work/
 /data/*
 !/data/README.md
-!/data/song-pool.json
+!/data/song-pool*.json
