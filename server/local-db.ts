@@ -47,10 +47,26 @@ function createDatabase() {
       created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
     );
 
+    CREATE TABLE IF NOT EXISTS fragment_reports (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      attempt_id TEXT NOT NULL REFERENCES attempts(id) ON DELETE CASCADE,
+      quiz_id TEXT NOT NULL,
+      track_key TEXT NOT NULL,
+      artist TEXT NOT NULL,
+      title TEXT NOT NULL,
+      youtube_id TEXT NOT NULL,
+      clip_start INTEGER NOT NULL,
+      clip_duration INTEGER NOT NULL,
+      created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(attempt_id, track_key)
+    );
+
     CREATE INDEX IF NOT EXISTS idx_attempts_user_created
       ON attempts(user_id, created_at DESC);
     CREATE INDEX IF NOT EXISTS idx_attempt_answers_attempt
       ON attempt_answers(attempt_id);
+    CREATE INDEX IF NOT EXISTS idx_fragment_reports_track
+      ON fragment_reports(track_key, created_at DESC);
     PRAGMA optimize;
   `);
   return database;

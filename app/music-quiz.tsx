@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BarChart3, Check, ChevronRight, CirclePlay, ExternalLink, Headphones, History, Info, Library, Music2, RotateCcw, Share2, TriangleAlert, Volume2 } from "lucide-react";
+import { BarChart3, Check, ChevronRight, CirclePlay, ExternalLink, Flag, Headphones, History, Info, Library, Music2, RotateCcw, Share2, TriangleAlert, Volume2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -85,6 +85,9 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   const [weakTracks, setWeakTracks] = useState<WeakTrack[]>([]);
   const [artistInfo, setArtistInfo] = useState<Record<string, ArtistInfo>>({});
   const [expandedArtist, setExpandedArtist] = useState<string | null>(null);
+  const [badFragments, setBadFragments] = useState<Set<string>>(() => new Set());
+  const [fragmentFeedbackPending, setFragmentFeedbackPending] = useState<Set<string>>(() => new Set());
+  const [fragmentFeedbackError, setFragmentFeedbackError] = useState(false);
   const player = useRef<Player | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const triesRef = useRef(2);
@@ -199,7 +202,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     playingRef.current = false; triesRef.current = 2; answersRef.current = [];
     submissionLocked.current = false; autoplayedTrack.current = null;
     setActiveQuiz(quiz); setOrder(shuffle(quiz.tracks)); setIndex(0); setAnswers([]);
-    setArtist(""); setTitle(""); setTries(2); setReview([]); setReviewIndex(0); setReviewPlayingKey(null); setExpandedArtist(null); setCurrentAttemptId(null); setSaveState("idle"); setScreen("quiz");
+    setArtist(""); setTitle(""); setTries(2); setReview([]); setReviewIndex(0); setReviewPlayingKey(null); setExpandedArtist(null); setBadFragments(new Set()); setFragmentFeedbackPending(new Set()); setFragmentFeedbackError(false); setCurrentAttemptId(null); setSaveState("idle"); setScreen("quiz");
   };
 
   useEffect(() => {
@@ -416,6 +419,39 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     }
   };
 
+  const toggleBadFragment = async (trackKey: string) => {
+    if (!currentAttemptId || fragmentFeedbackPending.has(trackKey)) return;
+    const wasReported = badFragments.has(trackKey);
+    setFragmentFeedbackError(false);
+    setBadFragments((items) => {
+      const next = new Set(items);
+      if (wasReported) next.delete(trackKey); else next.add(trackKey);
+      return next;
+    });
+    setFragmentFeedbackPending((items) => new Set(items).add(trackKey));
+    try {
+      const response = await fetch("/api/fragment-feedback", {
+        method: wasReported ? "DELETE" : "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ attemptId: currentAttemptId, trackKey }),
+      });
+      if (!response.ok) throw new Error("feedback failed");
+    } catch {
+      setBadFragments((items) => {
+        const next = new Set(items);
+        if (wasReported) next.add(trackKey); else next.delete(trackKey);
+        return next;
+      });
+      setFragmentFeedbackError(true);
+    } finally {
+      setFragmentFeedbackPending((items) => {
+        const next = new Set(items);
+        next.delete(trackKey);
+        return next;
+      });
+    }
+  };
+
   const submit = (options: { loadFailed?: boolean; artistAnswer?: string; titleAnswer?: string } = {}) => {
     if (!current || submissionLocked.current) return;
     submissionLocked.current = true;
@@ -512,6 +548,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     return <main className="shell"><header className="topbar">{guestMode ? <div className="wordmark">НЕ ПО ПРИПЕВУ</div> : <button className="wordmark" onClick={() => setScreen("home")}>НЕ ПО ПРИПЕВУ</button>}<Badge variant="outline">результат</Badge></header>
       <section className="result-card"><div className={`result-summary ${comparison ? "has-comparison" : ""}`}><div><small>{comparison ? "Ты" : ""}</small><div className="result-score">{score.value} <span>/ {score.max}</span></div></div>{comparison && <div className="owner-result"><small>Алексей</small><strong>{comparison.score} <span>/ {comparison.maxScore}</span></strong></div>}</div>
         {!guestMode && saveState === "error" && <p className="save-state error">Не удалось сохранить изменение</p>}
+        {!guestMode && fragmentFeedbackError && <p className="save-state error">Не удалось сохранить отметку о фрагменте</p>}
         <div className="review-list">{review.map((item, itemIndex) => {
           const points = item.artistPoint + item.titlePoint;
           const ownerAnswer = ownerAnswers.get(item.track.key);
@@ -527,6 +564,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
               <a className="youtube-link" href={`https://www.youtube.com/watch?v=${item.track.youtubeId}`} target="_blank" rel="noreferrer" aria-label={`Открыть ${item.track.artist} — ${item.track.title} на YouTube`}><ExternalLink /> YouTube</a>
               <a className="spotify-link" href={spotifyArtistUrl(item.track.artist)} target="_blank" rel="noreferrer" aria-label={`Найти ${item.track.artist} в Spotify`}><Music2 /> Spotify</a>
               <Button size="sm" variant="ghost" className="artist-info-button" aria-expanded={infoOpen} onClick={() => void showArtistInfo(item.track)}><Info /> {infoOpen ? "Скрыть" : "Подробнее"}</Button>
+              {!guestMode && <Button size="sm" variant="ghost" className={`bad-fragment-button ${badFragments.has(item.trackKey) ? "is-reported" : ""}`} disabled={!currentAttemptId || fragmentFeedbackPending.has(item.trackKey)} aria-pressed={badFragments.has(item.trackKey)} onClick={() => void toggleBadFragment(item.trackKey)}><Flag /> {badFragments.has(item.trackKey) ? "Отмечено" : "Плохой фрагмент"}</Button>}
               {!guestMode && <><Button size="sm" variant="ghost" disabled={!currentAttemptId} onClick={() => void correctResult(item.trackKey, { annulled: !item.loadFailed })}>{item.loadFailed ? "Вернуть" : "Аннулировать"}</Button><div className="score-picker" role="group" aria-label={`Баллы за ${item.track.artist} — ${item.track.title}`}>{[0, 1, 2].map((value) => <button type="button" key={value} className={!item.loadFailed && points === value ? "is-selected" : ""} aria-pressed={!item.loadFailed && points === value} disabled={!currentAttemptId} onClick={() => void correctResult(item.trackKey, { points: value })}>{value}</button>)}</div></>}
             </div>
             {infoOpen && <div className={`artist-info ${info?.status ?? "loading"}`}>{!info || info.status === "loading" ? "Загружаю справку…" : info.status === "error" ? "Короткую справку найти не удалось." : <><strong>{info.name}</strong><span>{[item.track.artistForm, info.country, info.activeYears].filter(Boolean).join(" · ")}</span>{info.url && <a href={info.url} target="_blank" rel="noreferrer">Карточка MusicBrainz <ExternalLink /></a>}</>}</div>}
