@@ -40,4 +40,6 @@ next-env.d.ts
 /.sites-runtime/
 /outputs/
 /work/
-/data/
+/data/*
+!/data/README.md
+!/data/song-pool.json
