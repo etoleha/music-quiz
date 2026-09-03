@@ -56,6 +56,6 @@ systemctl enable music-quiz.service music-quiz-update.timer music-quiz-backup.ti
 nginx -t
 systemctl reload nginx
 systemctl start music-quiz-update.timer music-quiz-backup.timer
-certbot --nginx -d "$domain" --redirect
+certbot --nginx -d "$domain" --redirect --non-interactive --agree-tos --register-unsafely-without-email
 
 echo "Сайт установлен. После настройки DNS открой: https://$domain"
