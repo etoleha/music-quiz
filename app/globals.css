@@ -356,3 +356,19 @@ body { background: #f5f7f9; }
   .result-summary { gap: 16px; }
   .owner-result { padding-left: 16px; }
 }
+
+/* Guest isolation and result references */
+.guest-loading { min-height: 100vh; }
+.guest-loading > section { margin-top: 18vh; padding: 26px; border: 1px solid #dce3e9; border-radius: 14px; background: #fff; }
+.guest-loading h1 { margin: 0; color: #26384a; font-size: clamp(1.8rem, 6vw, 3rem); font-weight: 680; letter-spacing: -.035em; }
+.spotify-link { display: inline-flex; align-items: center; gap: 5px; height: 28px; padding: 0 8px; border-radius: 7px; color: #287a4d; font-size: .82rem; font-weight: 540; text-decoration: none; }
+.spotify-link:hover, .spotify-link:focus-visible { color: #1e663f; background: #e3f3e9; outline: 2px solid #68a77f; outline-offset: 1px; }
+.spotify-link svg, .artist-info-button svg { width: 14px; }
+.artist-info-button { color: #53687a !important; }
+.artist-info { grid-column: 2 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; padding: 9px 11px; border-radius: 8px; background: #f0f4f6; color: #657786; font-size: .82rem; }
+.artist-info strong { color: #30495b; }.artist-info a { display: inline-flex; align-items: center; gap: 4px; color: #426a82; text-decoration: none; }.artist-info a svg { width: 13px; }.artist-info.error { color: #a13e4d; }
+
+@media (max-width: 680px) {
+  .spotify-link { padding-inline: 6px; }
+  .artist-info { grid-column: 2; align-items: flex-start; flex-direction: column; }
+}
