@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BarChart3, Check, ChevronRight, CirclePlay, ExternalLink, Flag, Headphones, History, Info, Library, Music2, RotateCcw, Share2, TriangleAlert, Volume2 } from "lucide-react";
+import { BarChart3, Check, ChevronRight, CirclePlay, ExternalLink, Flag, Headphones, History, Library, Music2, RotateCcw, Share2, TriangleAlert, Volume2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -106,7 +106,6 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   const [attempts, setAttempts] = useState<Attempt[]>([]);
   const [weakTracks, setWeakTracks] = useState<WeakTrack[]>([]);
   const [artistInfo, setArtistInfo] = useState<Record<string, ArtistInfo>>({});
-  const [expandedArtist, setExpandedArtist] = useState<string | null>(null);
   const [badFragments, setBadFragments] = useState<Set<string>>(() => new Set());
   const [fragmentFeedbackPending, setFragmentFeedbackPending] = useState<Set<string>>(() => new Set());
   const [fragmentFeedbackError, setFragmentFeedbackError] = useState(false);
@@ -126,6 +125,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   const pendingCorrections = useRef(0);
   const statsRefreshTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const guestStarted = useRef(false);
+  const requestedTrackInfo = useRef(new Set<string>());
   const current = order[index];
 
   const stopClipClock = useCallback((complete = false) => {
@@ -255,7 +255,6 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     playingRef.current = false;
     setPlaying(false);
     setReviewPlayingKey(null);
-    setExpandedArtist(null);
     setScreen("home");
   }, [stopClipClock]);
 
@@ -265,7 +264,9 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     playingRef.current = false; triesRef.current = 2; answersRef.current = [];
     submissionLocked.current = false; autoplayedTrack.current = null;
     setActiveQuiz(quiz); setOrder(shuffle(quiz.tracks)); setIndex(0); setAnswers([]);
-    setArtist(""); setTitle(""); setTries(2); setReview([]); setReviewIndex(0); setReviewPlayingKey(null); setExpandedArtist(null); setBadFragments(new Set()); setFragmentFeedbackPending(new Set()); setFragmentFeedbackError(false); setCurrentAttemptId(null); setSaveState("idle"); setScreen("quiz");
+    requestedTrackInfo.current.clear();
+    setArtistInfo({});
+    setArtist(""); setTitle(""); setTries(2); setReview([]); setReviewIndex(0); setReviewPlayingKey(null); setBadFragments(new Set()); setFragmentFeedbackPending(new Set()); setFragmentFeedbackError(false); setCurrentAttemptId(null); setSaveState("idle"); setScreen("quiz");
   };
 
   useEffect(() => {
@@ -299,13 +300,9 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     } catch { /* The native share sheet may be dismissed. */ }
   };
 
-  const showArtistInfo = async (track: Track) => {
-    if (expandedArtist === track.key) {
-      setExpandedArtist(null);
-      return;
-    }
-    setExpandedArtist(track.key);
-    if (artistInfo[track.key]) return;
+  const loadTrackInfo = useCallback(async (track: Track) => {
+    if (requestedTrackInfo.current.has(track.key)) return;
+    requestedTrackInfo.current.add(track.key);
     setArtistInfo((items) => ({ ...items, [track.key]: { status: "loading" } }));
     try {
       const params = new URLSearchParams({ key: track.key, artist: track.artist, title: track.title });
@@ -319,7 +316,12 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     } catch {
       setArtistInfo((items) => ({ ...items, [track.key]: { status: "error" } }));
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    if (screen !== "result") return;
+    for (const item of review) void loadTrackInfo(item.track);
+  }, [loadTrackInfo, review, screen]);
 
   const mistakeTracks = useMemo(() => {
     const weakKeys = new Set(weakTracks.map((item) => item.trackKey));
@@ -384,7 +386,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   };
 
   const correctResult = async (trackKey: string, change: { points?: number; annulled?: boolean }) => {
-    if (!currentAttemptId) return;
+    if (!currentAttemptId && !guestMode) return;
     const previousReview = review;
     const version = (correctionVersions.current[trackKey] ?? 0) + 1;
     correctionVersions.current[trackKey] = version;
@@ -405,6 +407,10 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       max: (optimisticReview.length - optimisticSkipped) * 2,
       skipped: optimisticSkipped,
     });
+    if (guestMode) {
+      setSaveState("idle");
+      return;
+    }
     pendingCorrections.current += 1;
     setSaveState("saving");
     let failed = false;
@@ -587,7 +593,6 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
           const ownerAnswer = ownerAnswers.get(item.track.key);
           const isPlaying = reviewPlayingKey === item.track.key;
           const info = artistInfo[item.track.key];
-          const infoOpen = expandedArtist === item.track.key;
           return <article className={`review-row ${item.loadFailed ? "is-annulled" : ""} ${reviewIndex === itemIndex ? "is-selected" : ""}`} key={item.track.key}>
             <b>{String(itemIndex + 1).padStart(2, "0")}</b>
             <div><strong>{item.track.artist} — {item.track.title}</strong>{item.track.releaseYear && <span className="review-track-meta">{item.track.releaseYear} год{item.track.album ? ` · альбом «${item.track.album.title}»` : ""}</span>}<small>{item.loadFailed ? "Аннулирован" : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small></div>
@@ -597,11 +602,10 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
               {clipPlayback?.trackKey === item.track.key && clipPlayback.context === "review" && <ClipTimeline playback={clipPlayback} duration={item.track.duration} compact />}
               <a className="youtube-link" href={`https://www.youtube.com/watch?v=${item.track.youtubeId}`} target="_blank" rel="noreferrer" aria-label={`Открыть ${item.track.artist} — ${item.track.title} на YouTube`}><ExternalLink /> YouTube</a>
               <a className="spotify-link" href={spotifyArtistUrl(item.track.artist)} target="_blank" rel="noreferrer" aria-label={`Найти ${item.track.artist} в Spotify`}><Music2 /> Spotify</a>
-              <Button size="sm" variant="ghost" className="artist-info-button" aria-expanded={infoOpen} onClick={() => void showArtistInfo(item.track)}><Info /> {infoOpen ? "Скрыть справку" : "Альбом и справка"}</Button>
               {!guestMode && <Button size="sm" variant="ghost" className={`bad-fragment-button ${badFragments.has(item.trackKey) ? "is-reported" : ""}`} disabled={!currentAttemptId || fragmentFeedbackPending.has(item.trackKey)} aria-pressed={badFragments.has(item.trackKey)} onClick={() => void toggleBadFragment(item.trackKey)}><Flag /> {badFragments.has(item.trackKey) ? "Отмечено" : "Плохой фрагмент"}</Button>}
-              {!guestMode && <><Button size="sm" variant="ghost" disabled={!currentAttemptId} onClick={() => void correctResult(item.trackKey, { annulled: !item.loadFailed })}>{item.loadFailed ? "Вернуть" : "Аннулировать"}</Button><div className="score-picker" role="group" aria-label={`Баллы за ${item.track.artist} — ${item.track.title}`}>{[0, 1, 2].map((value) => <button type="button" key={value} className={!item.loadFailed && points === value ? "is-selected" : ""} aria-pressed={!item.loadFailed && points === value} disabled={!currentAttemptId} onClick={() => void correctResult(item.trackKey, { points: value })}>{value}</button>)}</div></>}
+              <Button size="sm" variant="ghost" disabled={!currentAttemptId && !guestMode} onClick={() => void correctResult(item.trackKey, { annulled: !item.loadFailed })}>{item.loadFailed ? "Вернуть" : "Аннулировать"}</Button><div className="score-picker" role="group" aria-label={`Баллы за ${item.track.artist} — ${item.track.title}`}>{[0, 1, 2].map((value) => <button type="button" key={value} className={!item.loadFailed && points === value ? "is-selected" : ""} aria-pressed={!item.loadFailed && points === value} disabled={!currentAttemptId && !guestMode} onClick={() => void correctResult(item.trackKey, { points: value })}>{value}</button>)}</div>
             </div>
-            {infoOpen && <div className={`artist-info ${info?.status ?? "loading"}`}>{!info || info.status === "loading" ? "Загружаю год, альбом и справку…" : info.status === "error" ? "Проверенную справку пока найти не удалось." : <><div className="artist-info-media">{info.image?.url && <figure><img src={info.image.url} alt={`Фото: ${info.name || item.track.artist}`} loading="lazy" />{info.image.sourceUrl && <figcaption><a href={info.image.sourceUrl} target="_blank" rel="noreferrer">{info.image.attribution || "Фото"}</a>{info.image.license && <> · {info.image.licenseUrl ? <a href={info.image.licenseUrl} target="_blank" rel="noreferrer">{info.image.license}</a> : info.image.license}</>}</figcaption>}</figure>}{info.album?.coverUrl && <figure><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><figcaption>Обложка</figcaption></figure>}</div><div className="artist-info-copy"><strong>{info.name}</strong><span>{[item.track.artistForm, info.country, info.activeYears].filter(Boolean).join(" · ")}</span>{info.releaseYear && <span>{info.releaseYearStatus === "candidate" ? "Предположительно " : ""}{info.releaseYear} год{info.album ? ` · ${info.album.kind === "album" ? "альбом" : "релиз"} «${info.album.title}»` : ""}</span>}{info.members?.length ? <span><b>Состав:</b> {info.members.map((member) => member.name).join(", ")}</span> : null}{info.facts?.map((fact) => <span className="artist-fact" key={fact.text}>{fact.text}{fact.sourceUrl && <a href={fact.sourceUrl} target="_blank" rel="noreferrer" aria-label="Источник факта"><ExternalLink /></a>}</span>)}{info.artistUrl && <a href={info.artistUrl} target="_blank" rel="noreferrer">Источники и идентификаторы <ExternalLink /></a>}</div></>}</div>}
+            <div className={`artist-info ${info?.status ?? "loading"}`}>{!info || info.status === "loading" ? <span className="artist-info-placeholder">Подбираю альбом, обложку и сведения…</span> : info.status === "error" ? <span className="artist-info-placeholder">Дополнительная справка для этой песни пока готовится.</span> : <><div className="artist-info-media">{info.image?.url && <figure><img src={info.image.url} alt={`Фото: ${info.name || item.track.artist}`} loading="lazy" />{info.image.sourceUrl && <figcaption><a href={info.image.sourceUrl} target="_blank" rel="noreferrer">{info.image.attribution || "Фото"}</a>{info.image.license && <> · {info.image.licenseUrl ? <a href={info.image.licenseUrl} target="_blank" rel="noreferrer">{info.image.license}</a> : info.image.license}</>}</figcaption>}</figure>}{info.album?.coverUrl && <figure><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><figcaption>Обложка альбома</figcaption></figure>}</div><div className="artist-info-copy"><strong>{info.name}</strong><span>{[item.track.artistForm, info.country, info.activeYears].filter(Boolean).join(" · ")}</span>{info.releaseYear && <span>{info.releaseYearStatus === "candidate" ? "Примерно " : ""}{info.releaseYear} год{info.album ? ` · ${info.album.kind === "album" ? "альбом" : "релиз"} «${info.album.title}»` : ""}</span>}{info.members?.length ? <span><b>Состав:</b> {info.members.map((member) => member.name).join(", ")}</span> : null}{info.facts?.map((fact) => <span className="artist-fact" key={fact.text}>{fact.text}{fact.sourceUrl && <a href={fact.sourceUrl} target="_blank" rel="noreferrer" aria-label="Источник факта"><ExternalLink /></a>}</span>)}{info.artistUrl && <a href={info.artistUrl} target="_blank" rel="noreferrer">Источники <ExternalLink /></a>}</div></>}</div>
           </article>;
         })}</div>
         <div className="result-actions">{!guestMode && <Button variant="outline" onClick={leaveResults}><Library /> Все квизы · Esc</Button>}{!guestMode && activeQuiz && <Button variant="outline" onClick={() => void shareQuiz(activeQuiz)}><Share2 /> {sharedQuizId === activeQuiz.id ? "Ссылка скопирована" : "Поделиться"}</Button>}<Button onClick={() => activeQuiz && begin(activeQuiz)}><RotateCcw /> Ещё раз · Alt+R</Button></div>

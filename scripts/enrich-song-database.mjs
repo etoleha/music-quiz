@@ -15,8 +15,10 @@ import {
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
-const resolverVersion = 1;
+const resolverVersion = 3;
 const limit = Math.max(1, Number(process.env.ENRICH_LIMIT || 60));
+const targetQuizId = String(process.env.ENRICH_QUIZ_ID || "").trim();
+const readyOnly = process.env.ENRICH_READY_ONLY === "1";
 const userAgent = "LamtyuginMusicQuiz/1.0 (https://quiz.lamtyugin.com)";
 const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
@@ -150,7 +152,7 @@ const wikidataDetails = async (qid) => {
 
 const enrichArtist = async (musicBrainzArtistId, fallbackName) => {
   const existing = cache.artists[musicBrainzArtistId];
-  if (existing?.resolverVersion === resolverVersion && existing.status === "matched") return existing;
+  if (existing?.status === "matched") return existing;
   const artist = await musicBrainz(`artist/${musicBrainzArtistId}?inc=artist-rels+url-rels`);
   if (!artist) return null;
   const wikidataQid = qidFromRelations(artist.relations);
@@ -207,15 +209,34 @@ const searchRecording = async (song) => {
     const match = chooseRecording(song, recordings, aliasIndex, { exactIsrc: true });
     if (match.status === "matched") return { ...match, method: "exact-isrc", isrc };
   }
-  const query = encodeURIComponent(`recording:"${String(song.title).replaceAll('"', "")}" AND artist:"${String(song.artist).replaceAll('"', "")}"`);
-  const result = await musicBrainz(`recording?query=${query}&limit=8`);
-  return { ...chooseRecording(song, result?.recordings || [], aliasIndex), method: "search" };
+  const unique = (values) => [...new Set(values.filter(Boolean).map((value) => String(value).trim()).filter(Boolean))];
+  const artists = unique([song.artist, ...(song.artistAliases || [])]).slice(0, 4);
+  const titles = unique([song.title, ...(song.titleAliases || [])]).slice(0, 4);
+  const pairs = unique([
+    JSON.stringify([artists[0], titles[0]]),
+    ...artists.slice(1).map((artist) => JSON.stringify([artist, titles[0]])),
+    ...titles.slice(1).map((title) => JSON.stringify([artists[0], title])),
+  ]).map((pair) => JSON.parse(pair)).slice(0, 6);
+  let best = null;
+  for (let index = 0; index < pairs.length; index += 1) {
+    const [artist, title] = pairs[index];
+    const query = encodeURIComponent(`recording:"${title.replaceAll('"', "")}" AND artist:"${artist.replaceAll('"', "")}"`);
+    const result = await musicBrainz(`recording?query=${query}&limit=8`);
+    const candidate = { ...chooseRecording(song, result?.recordings || [], aliasIndex), method: index ? "alias-search" : "search" };
+    if (candidate.status === "matched") return candidate;
+    if (!best || (candidate.score || 0) > (best.score || 0)) best = candidate;
+  }
+  return best || { status: "not-found", method: "search", alternatives: [] };
 };
 
 const enrichSong = async (song) => {
   const sourceFingerprint = inputFingerprint(song);
   const match = await searchRecording(song);
-  if (match.status !== "matched") return {
+  const usableCandidate = match.status === "ambiguous"
+    && match.score >= 0.88
+    && match.title >= 0.95
+    && match.artists >= 0.85;
+  if (match.status !== "matched" && !usableCandidate) return {
     resolverVersion,
     sourceFingerprint,
     status: match.status,
@@ -234,13 +255,13 @@ const enrichSong = async (song) => {
   for (const credit of credits) await enrichArtist(credit.musicBrainzArtistId, credit.name);
   const earliestChartYear = Math.min(...(song.chart?.years || []).map(Number).filter(Number.isFinite), Infinity);
   const yearConflict = release.firstReleaseYear && Number.isFinite(earliestChartYear) && release.firstReleaseYear > earliestChartYear + 1;
-  const verified = match.method === "exact-isrc" && !yearConflict;
+  const verified = match.status === "matched" && match.method === "exact-isrc" && !yearConflict;
   return {
     resolverVersion,
     sourceFingerprint,
     status: "matched",
     overallState: verified ? "verified" : yearConflict ? "conflict" : "candidate",
-    method: match.method,
+    method: usableCandidate ? `${match.method}-candidate` : match.method,
     confidence: Number(match.score.toFixed(4)),
     runnerUpDelta: match.runnerUpDelta === null ? null : Number(match.runnerUpDelta.toFixed(4)),
     recordingMbid: recording.id,
@@ -254,7 +275,10 @@ const enrichSong = async (song) => {
     versionType: extractVersionType(recording.title),
     album: release.album,
     sources: [{ provider: "musicbrainz", entityId: recording.id, url: `https://musicbrainz.org/recording/${recording.id}` }],
-    issues: yearConflict ? ["release-year-after-chart"] : [],
+    issues: [
+      ...(yearConflict ? ["release-year-after-chart"] : []),
+      ...(usableCandidate ? ["ambiguous-recording-choice"] : []),
+    ],
     retrievedAt: new Date().toISOString(),
   };
 };
@@ -264,11 +288,13 @@ const eligibleForEnrichment = (song) => song.status?.language === "russian"
   && (song.readyForCuration || song.readyForUniqueArtistQuiz || song.quizRefs?.length);
 const queue = database.songs
   .filter(eligibleForEnrichment)
+  .filter((song) => !targetQuizId || song.quizRefs?.some(({ quizId }) => quizId === targetQuizId))
+  .filter((song) => !readyOnly || song.readyForPublication)
   .filter((song) => {
     const existing = cache.songs[song.id];
+    if (existing?.status === "matched") return false;
     const fingerprintMatches = existing?.sourceFingerprint === inputFingerprint(song) && existing?.resolverVersion === resolverVersion;
     if (!fingerprintMatches) return true;
-    if (existing.status === "matched") return false;
     return !existing.retryAfter || Date.parse(existing.retryAfter) <= now;
   })
   .sort(compareEnrichmentPriority)

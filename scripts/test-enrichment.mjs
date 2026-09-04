@@ -67,7 +67,7 @@ assert.equal(inferArtistForm({ type: "Person", gender: "Female" }), "Испол�
 const nearReady = { id: "near", quizRefs: [], readyForUniqueArtistQuiz: true, status: { languageConfidence: "high" }, artistIdentityResolution: "registry", publicationBlockers: ["youtube-video"], externalIds: { isrc: ["X"] }, release: { candidateYears: [{ year: 2020 }] }, chart: { sourceCount: 2 }, candidateScore: 10 };
 const far = { ...nearReady, id: "far", publicationBlockers: ["release-year", "youtube-video", "fragment-review"], externalIds: {}, release: { candidateYears: [] }, candidateScore: 100 };
 const published = { ...nearReady, id: "published", quizRefs: [{ quizId: "old" }] };
-assert.deepEqual([published, far, nearReady].sort(compareEnrichmentPriority).map(({ id }) => id), ["near", "far", "published"]);
+assert.deepEqual([published, far, nearReady].sort(compareEnrichmentPriority).map(({ id }) => id), ["published", "near", "far"]);
 
 const databaseIndex = JSON.parse(fs.readFileSync(new URL("../data/song-database.json", import.meta.url), "utf8"));
 const full = fs.readFileSync(new URL(`../data/${databaseIndex.archive}`, import.meta.url));

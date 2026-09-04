@@ -41,7 +41,7 @@ const catalogArchive = catalogIndex.archive
   : null;
 const catalogTracks = catalogArchive?.tracks
   || (catalogIndex.parts || []).flatMap((file) => readJson(dataPath(file)).tracks || []);
-const poolFiles = fs.readdirSync(dataPath()).filter((file) => /^song-pool(?:-(?:\d+|soviet))?\.json$/.test(file)).sort();
+const poolFiles = fs.readdirSync(dataPath()).filter((file) => /^song-pool(?:-(?:\d+|soviet|90s))?\.json$/.test(file)).sort();
 
 const unique = (values) => [...new Set(values.filter(Boolean).map(String))];
 const uniqueNumbers = (values) => [...new Set(values.filter(validYear).map(Number))];
@@ -441,6 +441,9 @@ const archive = {
 const compressedArchive = zlib.gzipSync(Buffer.from(JSON.stringify(archive)), { level: 9 });
 const archiveSha256 = crypto.createHash("sha256").update(compressedArchive).digest("hex");
 fs.writeFileSync(dataPath(archiveName), compressedArchive);
+for (const oldPart of fs.readdirSync(dataPath()).filter((file) => /^song-database\.json\.gz\.part-\d+$/.test(file))) {
+  fs.unlinkSync(dataPath(oldPart));
+}
 const archiveParts = [];
 for (let offset = 0, part = 1; offset < compressedArchive.length; offset += archivePartSize, part += 1) {
   const partName = `${archiveName}.part-${String(part).padStart(2, "0")}`;

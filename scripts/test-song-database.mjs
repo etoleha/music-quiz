@@ -7,16 +7,14 @@ const index = JSON.parse(fs.readFileSync(new URL("song-database.json", dataUrl),
 const database = JSON.parse(zlib.gunzipSync(fs.readFileSync(new URL(index.archive, dataUrl))).toString("utf8"));
 
 assert.equal(database.songs.length, index.stats.songs);
-assert.equal(index.stats.poolPositions, 3020);
-assert.equal(index.stats.quizTrackPositions, 420);
-assert.equal(index.stats.publishedQuizSongs, 420);
+assert.equal(index.stats.poolPositions, database.songs.reduce((sum, song) => sum + song.poolRefs.length, 0));
+assert.equal(index.stats.quizTrackPositions, database.songs.reduce((sum, song) => sum + song.quizRefs.length, 0));
+assert.equal(index.stats.publishedQuizSongs, database.songs.filter((song) => song.quizRefs.length).length);
 assert.ok(index.stats.chartSongs > 9000);
 assert.ok(index.stats.quizCandidates > 1000);
 assert.ok(index.stats.readyForCuration > 1000);
 assert.ok(index.stats.readyForUniqueArtistQuiz > 500);
 assert.ok(index.stats.usedArtists > 100);
-assert.equal(index.stats.readyForPublication, 100);
-assert.equal(index.stats.readyForAutomaticQuiz, 100);
 
 const hiFi = database.songs.find(({ artistAliases, titleAliases }) =>
   artistAliases.includes("Hi-Fi") && titleAliases.includes("Беспризорник"));
@@ -52,23 +50,33 @@ for (const song of quizCandidates.candidates) {
 }
 
 const readyPool = JSON.parse(fs.readFileSync(new URL("quiz-ready-songs.json", dataUrl), "utf8"));
-assert.equal(readyPool.songs.length, 100);
-assert.deepEqual(readyPool.stats.eraCounts, { soviet: 10, "1990s": 16, "2000s": 39, "2010s": 25, "2020s": 10 });
-assert.equal(new Set(readyPool.songs.map(({ songId }) => songId)).size, 100);
-assert.equal(new Set(readyPool.songs.map(({ youtube }) => youtube.videoId)).size, 100);
-const readyArtistIds = new Set();
+assert.ok(readyPool.songs.length >= 1000);
+assert.equal(readyPool.songs.length, readyPool.policy.targetTotal);
+assert.equal(Object.values(readyPool.stats.eraCounts).reduce((sum, count) => sum + count, 0), readyPool.songs.length);
+assert.equal(new Set(readyPool.songs.map(({ songId }) => songId)).size, readyPool.songs.length);
+assert.equal(new Set(readyPool.songs.map(({ youtube }) => youtube.videoId)).size, readyPool.songs.length);
+assert.equal(readyPool.stats.newArtistSongs + readyPool.stats.previousArtistOverflowSongs, readyPool.songs.length);
+assert.ok(index.stats.readyForPublication >= readyPool.stats.newArtistSongs);
+assert.ok(index.stats.readyForAutomaticQuiz >= readyPool.stats.newArtistSongs);
+const readyArtistCounts = new Map();
 for (const prepared of readyPool.songs) {
   assert.equal(prepared.readyForQuiz, true);
+  assert.ok(["new-artist", "previously-used-artist"].includes(prepared.artistNovelty));
   assert.match(prepared.youtube.videoId, /^[A-Za-z0-9_-]{11}$/);
   assert.ok(prepared.youtube.durationSeconds >= 90 && prepared.youtube.durationSeconds <= 480);
   assert.ok(prepared.clip.duration >= 5 && prepared.clip.duration <= 20);
   assert.ok(prepared.clip.start >= 0 && prepared.clip.start + prepared.clip.duration <= prepared.youtube.durationSeconds);
   for (const artistId of prepared.artistIds) {
-    assert.equal(readyArtistIds.has(artistId), false, `artist repeated in ready pool: ${prepared.artist}`);
-    readyArtistIds.add(artistId);
+    const count = (readyArtistCounts.get(artistId) || 0) + 1;
+    readyArtistCounts.set(artistId, count);
+    assert.ok(count <= readyPool.policy.maxSongsPerArtistInInventory, `artist over inventory limit: ${prepared.artist}`);
   }
   const databaseSong = database.songs.find(({ id }) => id === prepared.songId);
-  assert.equal(databaseSong?.readyForAutomaticQuiz, true, `database song is not ready: ${prepared.artist} — ${prepared.title}`);
+  assert.ok(databaseSong, `database song is missing: ${prepared.artist} — ${prepared.title}`);
+  assert.equal(databaseSong.status.workflow, "waiting", `published song leaked into ready inventory: ${prepared.artist} — ${prepared.title}`);
+  if (prepared.artistNovelty === "new-artist") {
+    assert.equal(databaseSong.readyForAutomaticQuiz, true, `new-artist song is not ready: ${prepared.artist} — ${prepared.title}`);
+  }
 }
 
 console.log("song database tests passed");

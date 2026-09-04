@@ -136,7 +136,8 @@ export const inferArtistForm = ({ type, gender, memberCount } = {}) => {
 };
 
 export const enrichmentPriority = (song) => [
-  Number(!song.quizRefs?.length),
+  Number(Boolean(song.quizRefs?.length)),
+  Number(Boolean(song.readyForPublication)),
   Number(song.readyForUniqueArtistQuiz),
   Number(song.status?.languageConfidence === "high" || song.status?.languageConfidence === "manual"),
   Number(song.artistIdentityResolution === "registry"),

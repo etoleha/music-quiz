@@ -53,8 +53,7 @@ next-env.d.ts
 !/data/chart-merge-review.json
 !/data/song-database.json
 !/data/song-database.json.gz
-!/data/song-database.json.gz.part-01
-!/data/song-database.json.gz.part-02
+!/data/song-database.json.gz.part-*
 !/data/song-database-review.json
 !/data/song-status-overrides.json
 !/data/song-enrichment-overrides.json

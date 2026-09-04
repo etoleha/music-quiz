@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T13:08:21.348Z",
+  "generatedAt": "2026-09-04T15:52:16.583Z",
   "totalNeedsReview": 5936,
   "shown": 500,
   "songs": [
@@ -69,7 +69,9 @@
       "artistIds": [
         "ruslannabiev"
       ],
-      "usedArtistIds": [],
+      "usedArtistIds": [
+        "ruslannabiev"
+      ],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -1998,7 +2000,9 @@
       "artistIds": [
         "chrisyank"
       ],
-      "usedArtistIds": [],
+      "usedArtistIds": [
+        "chrisyank"
+      ],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -2535,7 +2539,9 @@
         "eldzhei",
         "eraistrefi"
       ],
-      "usedArtistIds": [],
+      "usedArtistIds": [
+        "eldzhei"
+      ],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
