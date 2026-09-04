@@ -20,6 +20,11 @@ sameArtist("Баста", "Basta");
 sameArtist("Моя Мишель", "Moya Mishel");
 sameArtist("Михаил Шуфутинский", "Mikhail Shufutinskiy");
 sameArtist("Артик и Асти", "Artik & Asti");
+sameArtist("Hi-Fi", "хай фай");
+
+const permanentGroup = normalizeArtist("Король и Шут", aliasIndex);
+assert.deepEqual(permanentGroup.participants, ["korolishut"]);
+assert.equal(permanentGroup.primary, "korolishut");
 
 const collaborationA = normalizeArtist("Artist A & Artist B", aliasIndex);
 const collaborationB = normalizeArtist("Artist B и Artist A", aliasIndex);

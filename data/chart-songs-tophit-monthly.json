@@ -1,0 +1,1427 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-04T01:32:42.182Z",
+  "source": {
+    "id": "tophit-ru-monthly-history",
+    "name": "TopHit — Top Radio Hits Russia Monthly",
+    "chart": "Top Radio Hits Russia Monthly",
+    "cadence": "monthly",
+    "periodStart": "2003-11",
+    "periodEnd": "2026-08",
+    "url": "https://tophit.com/chart/top/radio/hits/ru/monthly",
+    "importedFile": "tophit_monthly_backup_2003-11_2026-08.json"
+  },
+  "rowCount": 27399,
+  "trackCount": 5844,
+  "archive": "chart-songs-tophit-monthly.json.gz",
+  "isrcQuality": {
+    "directRows": 8456,
+    "recoveredFromRightsHolderRows": 15435,
+    "matchableTrackCount": 4495,
+    "collisionCodeCount": 175,
+    "collisionTrackCount": 525,
+    "rule": "ISRC is matchable only when it maps to exactly one TopHit track_id; colliding codes are retained but never auto-merged."
+  },
+  "isrcCollisions": [
+    {
+      "isrc": "USSM12200612",
+      "topHitTrackIds": [
+        "464",
+        "1336",
+        "2095",
+        "2161",
+        "2173",
+        "2603",
+        "2950",
+        "3045",
+        "3059",
+        "3077",
+        "3215",
+        "3497",
+        "3713",
+        "4009",
+        "4012",
+        "4048",
+        "4094",
+        "4567",
+        "4678",
+        "4961",
+        "5071",
+        "5167",
+        "5336",
+        "5353",
+        "5413",
+        "5474",
+        "5544",
+        "5642",
+        "5999",
+        "6006",
+        "6111",
+        "6329",
+        "8387",
+        "12343",
+        "12872",
+        "14066",
+        "14877",
+        "15113",
+        "15532",
+        "15973",
+        "16243",
+        "16935",
+        "17454",
+        "18229",
+        "18236",
+        "18445",
+        "18514",
+        "18582",
+        "18711",
+        "18957",
+        "18971",
+        "19520",
+        "19531",
+        "19682",
+        "20901",
+        "22260",
+        "23892",
+        "24144",
+        "25043",
+        "25322",
+        "25490",
+        "26098",
+        "26168",
+        "26202",
+        "26278",
+        "26494",
+        "26861",
+        "28234",
+        "28437",
+        "29879",
+        "29954",
+        "30804",
+        "30869",
+        "31147",
+        "31238",
+        "31345",
+        "31468",
+        "31650",
+        "32097",
+        "33261",
+        "33511",
+        "53773",
+        "58801",
+        "58890",
+        "79132",
+        "82649",
+        "86055",
+        "86990",
+        "88935",
+        "90597",
+        "91381",
+        "91587",
+        "91862",
+        "91915",
+        "93317",
+        "93329",
+        "93367",
+        "93853",
+        "94096",
+        "94589",
+        "94721",
+        "94893",
+        "95692",
+        "95712",
+        "96159",
+        "96884",
+        "97398",
+        "100215",
+        "101318",
+        "102384",
+        "102800",
+        "103114",
+        "103764",
+        "106018",
+        "123742",
+        "131135",
+        "135175",
+        "136129",
+        "141074",
+        "141615",
+        "141677",
+        "141884",
+        "143884",
+        "144846",
+        "145062",
+        "149511"
+      ]
+    },
+    {
+      "isrc": "FR10S1618848",
+      "topHitTrackIds": [
+        "279",
+        "508",
+        "557",
+        "17997",
+        "37717"
+      ]
+    },
+    {
+      "isrc": "FRX201614525",
+      "topHitTrackIds": [
+        "70",
+        "1779",
+        "7021",
+        "22677",
+        "45567"
+      ]
+    },
+    {
+      "isrc": "QZHZ32082553",
+      "topHitTrackIds": [
+        "3892",
+        "15451",
+        "18198",
+        "89056",
+        "95610"
+      ]
+    },
+    {
+      "isrc": "RUB421304964",
+      "topHitTrackIds": [
+        "1534",
+        "13928",
+        "25664",
+        "69891",
+        "149188"
+      ]
+    },
+    {
+      "isrc": "TCAEK1901230",
+      "topHitTrackIds": [
+        "426",
+        "495",
+        "5074",
+        "35816",
+        "64934"
+      ]
+    },
+    {
+      "isrc": "FRX451593920",
+      "topHitTrackIds": [
+        "1959",
+        "9855",
+        "21778",
+        "23605"
+      ]
+    },
+    {
+      "isrc": "QM4TX2027772",
+      "topHitTrackIds": [
+        "1584",
+        "31678",
+        "104960",
+        "135792"
+      ]
+    },
+    {
+      "isrc": "RUB421302891",
+      "topHitTrackIds": [
+        "552",
+        "55926",
+        "60935",
+        "76537"
+      ]
+    },
+    {
+      "isrc": "RUB421303067",
+      "topHitTrackIds": [
+        "807",
+        "3293",
+        "15450",
+        "20063"
+      ]
+    },
+    {
+      "isrc": "RUB421401323",
+      "topHitTrackIds": [
+        "463",
+        "1129",
+        "2073",
+        "5335"
+      ]
+    },
+    {
+      "isrc": "RUB731508909",
+      "topHitTrackIds": [
+        "9767",
+        "14261",
+        "87365",
+        "141942"
+      ]
+    },
+    {
+      "isrc": "DGA082241215",
+      "topHitTrackIds": [
+        "7322",
+        "16421",
+        "31121"
+      ]
+    },
+    {
+      "isrc": "FR2X41879107",
+      "topHitTrackIds": [
+        "481",
+        "568",
+        "18201"
+      ]
+    },
+    {
+      "isrc": "FR59R2129619",
+      "topHitTrackIds": [
+        "5631",
+        "18392",
+        "20707"
+      ]
+    },
+    {
+      "isrc": "FR6V81568434",
+      "topHitTrackIds": [
+        "868",
+        "6630",
+        "48662"
+      ]
+    },
+    {
+      "isrc": "FR96X1510014",
+      "topHitTrackIds": [
+        "646",
+        "1162",
+        "1770"
+      ]
+    },
+    {
+      "isrc": "FR96X1732266",
+      "topHitTrackIds": [
+        "29293",
+        "38707",
+        "83301"
+      ]
+    },
+    {
+      "isrc": "FRX201637301",
+      "topHitTrackIds": [
+        "9128",
+        "10891",
+        "16233"
+      ]
+    },
+    {
+      "isrc": "FRX451593948",
+      "topHitTrackIds": [
+        "1607",
+        "1799",
+        "4184"
+      ]
+    },
+    {
+      "isrc": "QMPU51206276",
+      "topHitTrackIds": [
+        "13570",
+        "16568",
+        "59049"
+      ]
+    },
+    {
+      "isrc": "QMPU51284565",
+      "topHitTrackIds": [
+        "190",
+        "9250",
+        "76194"
+      ]
+    },
+    {
+      "isrc": "QMPU51507622",
+      "topHitTrackIds": [
+        "37634",
+        "140774",
+        "148124"
+      ]
+    },
+    {
+      "isrc": "RUA1D2268227",
+      "topHitTrackIds": [
+        "1921",
+        "13801",
+        "36435"
+      ]
+    },
+    {
+      "isrc": "RUA322200026",
+      "topHitTrackIds": [
+        "7485",
+        "7673",
+        "150508"
+      ]
+    },
+    {
+      "isrc": "RUA322203775",
+      "topHitTrackIds": [
+        "11959",
+        "13140",
+        "159439"
+      ]
+    },
+    {
+      "isrc": "RUACR2000117",
+      "topHitTrackIds": [
+        "4975",
+        "16145",
+        "119468"
+      ]
+    },
+    {
+      "isrc": "RUACR2000286",
+      "topHitTrackIds": [
+        "14776",
+        "65770",
+        "129281"
+      ]
+    },
+    {
+      "isrc": "RUB311101607",
+      "topHitTrackIds": [
+        "3190",
+        "3960",
+        "isrc:RUB311101607"
+      ]
+    },
+    {
+      "isrc": "RUB421202122",
+      "topHitTrackIds": [
+        "600",
+        "2630",
+        "23764"
+      ]
+    },
+    {
+      "isrc": "RUB421303314",
+      "topHitTrackIds": [
+        "23188",
+        "36033",
+        "48744"
+      ]
+    },
+    {
+      "isrc": "RUB421306373",
+      "topHitTrackIds": [
+        "3352",
+        "9833",
+        "52037"
+      ]
+    },
+    {
+      "isrc": "RUB731422440",
+      "topHitTrackIds": [
+        "844",
+        "1471",
+        "isrc:RUB731422440"
+      ]
+    },
+    {
+      "isrc": "RUB731530078",
+      "topHitTrackIds": [
+        "81755",
+        "95221",
+        "isrc:RUB731530078"
+      ]
+    },
+    {
+      "isrc": "RUUM71900731",
+      "topHitTrackIds": [
+        "23765",
+        "27350",
+        "44944"
+      ]
+    },
+    {
+      "isrc": "USLF20500242",
+      "topHitTrackIds": [
+        "6144",
+        "6724",
+        "90808"
+      ]
+    },
+    {
+      "isrc": "CH4881000515",
+      "topHitTrackIds": [
+        "29175",
+        "36331"
+      ]
+    },
+    {
+      "isrc": "DEA410500401",
+      "topHitTrackIds": [
+        "7782",
+        "19362"
+      ]
+    },
+    {
+      "isrc": "DEA622200532",
+      "topHitTrackIds": [
+        "64350",
+        "150789"
+      ]
+    },
+    {
+      "isrc": "DEAX10500025",
+      "topHitTrackIds": [
+        "2524",
+        "3328"
+      ]
+    },
+    {
+      "isrc": "DEN060401581",
+      "topHitTrackIds": [
+        "1322",
+        "16523"
+      ]
+    },
+    {
+      "isrc": "DGA062249468",
+      "topHitTrackIds": [
+        "48137",
+        "161869"
+      ]
+    },
+    {
+      "isrc": "FR10S1481135",
+      "topHitTrackIds": [
+        "5742",
+        "9876"
+      ]
+    },
+    {
+      "isrc": "FR10S1600136",
+      "topHitTrackIds": [
+        "1059",
+        "32645"
+      ]
+    },
+    {
+      "isrc": "FR10S1618849",
+      "topHitTrackIds": [
+        "724",
+        "9153"
+      ]
+    },
+    {
+      "isrc": "FR10S1618858",
+      "topHitTrackIds": [
+        "3749",
+        "61680"
+      ]
+    },
+    {
+      "isrc": "FR10S1640229",
+      "topHitTrackIds": [
+        "15619",
+        "62640"
+      ]
+    },
+    {
+      "isrc": "FR10S1642191",
+      "topHitTrackIds": [
+        "809",
+        "955"
+      ]
+    },
+    {
+      "isrc": "FR10S2025588",
+      "topHitTrackIds": [
+        "410",
+        "104489"
+      ]
+    },
+    {
+      "isrc": "FR10S2259632",
+      "topHitTrackIds": [
+        "79335",
+        "147818"
+      ]
+    },
+    {
+      "isrc": "FR2X41618696",
+      "topHitTrackIds": [
+        "1107",
+        "8934"
+      ]
+    },
+    {
+      "isrc": "FR2X42334806",
+      "topHitTrackIds": [
+        "2114",
+        "3974"
+      ]
+    },
+    {
+      "isrc": "FR4E42227000",
+      "topHitTrackIds": [
+        "6022",
+        "8196"
+      ]
+    },
+    {
+      "isrc": "FR59R1654958",
+      "topHitTrackIds": [
+        "34103",
+        "37498"
+      ]
+    },
+    {
+      "isrc": "FR59R1655032",
+      "topHitTrackIds": [
+        "6407",
+        "13038"
+      ]
+    },
+    {
+      "isrc": "FR59R1728856",
+      "topHitTrackIds": [
+        "7005",
+        "81455"
+      ]
+    },
+    {
+      "isrc": "FR59R1744348",
+      "topHitTrackIds": [
+        "8858",
+        "106147"
+      ]
+    },
+    {
+      "isrc": "FR59R1795897",
+      "topHitTrackIds": [
+        "82799",
+        "131952"
+      ]
+    },
+    {
+      "isrc": "FR59R1890537",
+      "topHitTrackIds": [
+        "632",
+        "17565"
+      ]
+    },
+    {
+      "isrc": "FR59R1929820",
+      "topHitTrackIds": [
+        "3336",
+        "96612"
+      ]
+    },
+    {
+      "isrc": "FR59R2120729",
+      "topHitTrackIds": [
+        "2598",
+        "3231"
+      ]
+    },
+    {
+      "isrc": "FR6V81477469",
+      "topHitTrackIds": [
+        "18902",
+        "isrc:FR6V81477469"
+      ]
+    },
+    {
+      "isrc": "FR6V81484349",
+      "topHitTrackIds": [
+        "5126",
+        "isrc:FR6V81484349"
+      ]
+    },
+    {
+      "isrc": "FR6V81568787",
+      "topHitTrackIds": [
+        "3748",
+        "5255"
+      ]
+    },
+    {
+      "isrc": "FR6V81644116",
+      "topHitTrackIds": [
+        "4586",
+        "81966"
+      ]
+    },
+    {
+      "isrc": "FR6V81698343",
+      "topHitTrackIds": [
+        "474",
+        "35141"
+      ]
+    },
+    {
+      "isrc": "FR6V82021377",
+      "topHitTrackIds": [
+        "498",
+        "32859"
+      ]
+    },
+    {
+      "isrc": "FR6V82651052",
+      "topHitTrackIds": [
+        "4017",
+        "5817"
+      ]
+    },
+    {
+      "isrc": "FR96X1751207",
+      "topHitTrackIds": [
+        "654",
+        "4857"
+      ]
+    },
+    {
+      "isrc": "FR96X1884161",
+      "topHitTrackIds": [
+        "37465",
+        "79541"
+      ]
+    },
+    {
+      "isrc": "FR9W11515482",
+      "topHitTrackIds": [
+        "60219",
+        "67433"
+      ]
+    },
+    {
+      "isrc": "FRS182098755",
+      "topHitTrackIds": [
+        "126199",
+        "126202"
+      ]
+    },
+    {
+      "isrc": "FRW241761041",
+      "topHitTrackIds": [
+        "80197",
+        "82058"
+      ]
+    },
+    {
+      "isrc": "FRX201937653",
+      "topHitTrackIds": [
+        "36410",
+        "103623"
+      ]
+    },
+    {
+      "isrc": "FRX201957285",
+      "topHitTrackIds": [
+        "19583",
+        "103056"
+      ]
+    },
+    {
+      "isrc": "FRX282028375",
+      "topHitTrackIds": [
+        "14185",
+        "isrc:FRX282028375"
+      ]
+    },
+    {
+      "isrc": "FRX451585584",
+      "topHitTrackIds": [
+        "4713",
+        "7569"
+      ]
+    },
+    {
+      "isrc": "FRX451585611",
+      "topHitTrackIds": [
+        "1410",
+        "1699"
+      ]
+    },
+    {
+      "isrc": "FRX761504158",
+      "topHitTrackIds": [
+        "58163",
+        "62482"
+      ]
+    },
+    {
+      "isrc": "FRX762263870",
+      "topHitTrackIds": [
+        "80612",
+        "85391"
+      ]
+    },
+    {
+      "isrc": "FRX872125524",
+      "topHitTrackIds": [
+        "2747",
+        "129570"
+      ]
+    },
+    {
+      "isrc": "FRZ041500700",
+      "topHitTrackIds": [
+        "70968",
+        "71904"
+      ]
+    },
+    {
+      "isrc": "FRZID1000210",
+      "topHitTrackIds": [
+        "13707",
+        "19831"
+      ]
+    },
+    {
+      "isrc": "GB28K1100036",
+      "topHitTrackIds": [
+        "9676",
+        "34210"
+      ]
+    },
+    {
+      "isrc": "GBAAA0400524",
+      "topHitTrackIds": [
+        "1666",
+        "1887"
+      ]
+    },
+    {
+      "isrc": "GBARL0400683",
+      "topHitTrackIds": [
+        "1448",
+        "1479"
+      ]
+    },
+    {
+      "isrc": "GBARL1400567",
+      "topHitTrackIds": [
+        "59071",
+        "83833"
+      ]
+    },
+    {
+      "isrc": "GBARL1401201",
+      "topHitTrackIds": [
+        "60420",
+        "167638"
+      ]
+    },
+    {
+      "isrc": "GBARL2300119",
+      "topHitTrackIds": [
+        "10930",
+        "isrc:GBARL2300119"
+      ]
+    },
+    {
+      "isrc": "GBLFP1605819",
+      "topHitTrackIds": [
+        "1846",
+        "78192"
+      ]
+    },
+    {
+      "isrc": "GBUM71806915",
+      "topHitTrackIds": [
+        "12437",
+        "29989"
+      ]
+    },
+    {
+      "isrc": "QM4TW2259038",
+      "topHitTrackIds": [
+        "564",
+        "1460"
+      ]
+    },
+    {
+      "isrc": "QM4TX1936589",
+      "topHitTrackIds": [
+        "94937",
+        "95380"
+      ]
+    },
+    {
+      "isrc": "QM6MZ1784463",
+      "topHitTrackIds": [
+        "1777",
+        "82135"
+      ]
+    },
+    {
+      "isrc": "QM6N21730008",
+      "topHitTrackIds": [
+        "473",
+        "484"
+      ]
+    },
+    {
+      "isrc": "QM6N21769305",
+      "topHitTrackIds": [
+        "731",
+        "918"
+      ]
+    },
+    {
+      "isrc": "QM6N22289335",
+      "topHitTrackIds": [
+        "1700",
+        "1953"
+      ]
+    },
+    {
+      "isrc": "QM7282064271",
+      "topHitTrackIds": [
+        "118858",
+        "119197"
+      ]
+    },
+    {
+      "isrc": "QMLA71400326",
+      "topHitTrackIds": [
+        "20610",
+        "91683"
+      ]
+    },
+    {
+      "isrc": "QMPU51212043",
+      "topHitTrackIds": [
+        "1665",
+        "47213"
+      ]
+    },
+    {
+      "isrc": "QMPU51249180",
+      "topHitTrackIds": [
+        "870",
+        "1401"
+      ]
+    },
+    {
+      "isrc": "QMPU51257345",
+      "topHitTrackIds": [
+        "55717",
+        "95859"
+      ]
+    },
+    {
+      "isrc": "QMPU51271023",
+      "topHitTrackIds": [
+        "790",
+        "3673"
+      ]
+    },
+    {
+      "isrc": "QMPU51284796",
+      "topHitTrackIds": [
+        "685",
+        "1361"
+      ]
+    },
+    {
+      "isrc": "QZLQR2127502",
+      "topHitTrackIds": [
+        "176",
+        "1415"
+      ]
+    },
+    {
+      "isrc": "QZW9M2234990",
+      "topHitTrackIds": [
+        "6319",
+        "isrc:QZW9M2234990"
+      ]
+    },
+    {
+      "isrc": "ROR0T1313101",
+      "topHitTrackIds": [
+        "40794",
+        "51430"
+      ]
+    },
+    {
+      "isrc": "ROROT1007301",
+      "topHitTrackIds": [
+        "27138",
+        "30868"
+      ]
+    },
+    {
+      "isrc": "RUA011600010",
+      "topHitTrackIds": [
+        "76091",
+        "137414"
+      ]
+    },
+    {
+      "isrc": "RUA011900810",
+      "topHitTrackIds": [
+        "6477",
+        "103065"
+      ]
+    },
+    {
+      "isrc": "RUA071200011",
+      "topHitTrackIds": [
+        "21317",
+        "25289"
+      ]
+    },
+    {
+      "isrc": "RUA1D1611728",
+      "topHitTrackIds": [
+        "39089",
+        "69798"
+      ]
+    },
+    {
+      "isrc": "RUA1D1804745",
+      "topHitTrackIds": [
+        "1268",
+        "1545"
+      ]
+    },
+    {
+      "isrc": "RUA1D1807595",
+      "topHitTrackIds": [
+        "31934",
+        "35146"
+      ]
+    },
+    {
+      "isrc": "RUA1D2029761",
+      "topHitTrackIds": [
+        "117256",
+        "147052"
+      ]
+    },
+    {
+      "isrc": "RUA1D2067891",
+      "topHitTrackIds": [
+        "108269",
+        "130055"
+      ]
+    },
+    {
+      "isrc": "RUA1D2117031",
+      "topHitTrackIds": [
+        "5307",
+        "134677"
+      ]
+    },
+    {
+      "isrc": "RUA1D2259876",
+      "topHitTrackIds": [
+        "18786",
+        "isrc:RUA1D2259876"
+      ]
+    },
+    {
+      "isrc": "RUA1D2274846",
+      "topHitTrackIds": [
+        "457",
+        "157862"
+      ]
+    },
+    {
+      "isrc": "RUA1D2300653",
+      "topHitTrackIds": [
+        "82113",
+        "165652"
+      ]
+    },
+    {
+      "isrc": "RUA320600008",
+      "topHitTrackIds": [
+        "7589",
+        "130467"
+      ]
+    },
+    {
+      "isrc": "RUA322203525",
+      "topHitTrackIds": [
+        "156843",
+        "161411"
+      ]
+    },
+    {
+      "isrc": "RUA582001835",
+      "topHitTrackIds": [
+        "308",
+        "504"
+      ]
+    },
+    {
+      "isrc": "RUA582100203",
+      "topHitTrackIds": [
+        "10352",
+        "131683"
+      ]
+    },
+    {
+      "isrc": "RUA582105503",
+      "topHitTrackIds": [
+        "19770",
+        "139925"
+      ]
+    },
+    {
+      "isrc": "RUA590300061",
+      "topHitTrackIds": [
+        "1404",
+        "1552"
+      ]
+    },
+    {
+      "isrc": "RUA591800591",
+      "topHitTrackIds": [
+        "59870",
+        "90471"
+      ]
+    },
+    {
+      "isrc": "RUA591900328",
+      "topHitTrackIds": [
+        "94844",
+        "145313"
+      ]
+    },
+    {
+      "isrc": "RUA7C1805067",
+      "topHitTrackIds": [
+        "4037",
+        "7687"
+      ]
+    },
+    {
+      "isrc": "RUACR2000015",
+      "topHitTrackIds": [
+        "115385",
+        "isrc:RUACR2000015"
+      ]
+    },
+    {
+      "isrc": "RUB182055701",
+      "topHitTrackIds": [
+        "4942",
+        "7700"
+      ]
+    },
+    {
+      "isrc": "RUB421201045",
+      "topHitTrackIds": [
+        "854",
+        "2794"
+      ]
+    },
+    {
+      "isrc": "RUB421201809",
+      "topHitTrackIds": [
+        "691",
+        "2062"
+      ]
+    },
+    {
+      "isrc": "RUB421201828",
+      "topHitTrackIds": [
+        "811",
+        "1731"
+      ]
+    },
+    {
+      "isrc": "RUB421202243",
+      "topHitTrackIds": [
+        "189",
+        "708"
+      ]
+    },
+    {
+      "isrc": "RUB421303493",
+      "topHitTrackIds": [
+        "16765",
+        "20599"
+      ]
+    },
+    {
+      "isrc": "RUB421400755",
+      "topHitTrackIds": [
+        "2155",
+        "71301"
+      ]
+    },
+    {
+      "isrc": "RUB421401232",
+      "topHitTrackIds": [
+        "11411",
+        "60116"
+      ]
+    },
+    {
+      "isrc": "RUB421500025",
+      "topHitTrackIds": [
+        "6305",
+        "7484"
+      ]
+    },
+    {
+      "isrc": "RUB421500450",
+      "topHitTrackIds": [
+        "6458",
+        "7271"
+      ]
+    },
+    {
+      "isrc": "RUB421601552",
+      "topHitTrackIds": [
+        "11739",
+        "39982"
+      ]
+    },
+    {
+      "isrc": "RUB421701154",
+      "topHitTrackIds": [
+        "82798",
+        "83775"
+      ]
+    },
+    {
+      "isrc": "RUB421900948",
+      "topHitTrackIds": [
+        "95665",
+        "104167"
+      ]
+    },
+    {
+      "isrc": "RUB421901094",
+      "topHitTrackIds": [
+        "6997",
+        "10398"
+      ]
+    },
+    {
+      "isrc": "RUB421901329",
+      "topHitTrackIds": [
+        "81850",
+        "99010"
+      ]
+    },
+    {
+      "isrc": "RUB421901994",
+      "topHitTrackIds": [
+        "51740",
+        "102977"
+      ]
+    },
+    {
+      "isrc": "RUB422001558",
+      "topHitTrackIds": [
+        "115998",
+        "161833"
+      ]
+    },
+    {
+      "isrc": "RUB422101321",
+      "topHitTrackIds": [
+        "39628",
+        "128771"
+      ]
+    },
+    {
+      "isrc": "RUB422101402",
+      "topHitTrackIds": [
+        "7752",
+        "80735"
+      ]
+    },
+    {
+      "isrc": "RUB731434318",
+      "topHitTrackIds": [
+        "61316",
+        "93501"
+      ]
+    },
+    {
+      "isrc": "RUB731511713",
+      "topHitTrackIds": [
+        "29423",
+        "110323"
+      ]
+    },
+    {
+      "isrc": "RUB731518498",
+      "topHitTrackIds": [
+        "165479",
+        "isrc:RUB731518498"
+      ]
+    },
+    {
+      "isrc": "RUB731575007",
+      "topHitTrackIds": [
+        "89531",
+        "92221"
+      ]
+    },
+    {
+      "isrc": "RUUM71300411",
+      "topHitTrackIds": [
+        "17137",
+        "36895"
+      ]
+    },
+    {
+      "isrc": "RUUM72101195",
+      "topHitTrackIds": [
+        "146591",
+        "150796"
+      ]
+    },
+    {
+      "isrc": "SE2VK2100401",
+      "topHitTrackIds": [
+        "29307",
+        "133196"
+      ]
+    },
+    {
+      "isrc": "SEPQA0751904",
+      "topHitTrackIds": [
+        "11315",
+        "13706"
+      ]
+    },
+    {
+      "isrc": "SMRUS0063989",
+      "topHitTrackIds": [
+        "113408",
+        "135572"
+      ]
+    },
+    {
+      "isrc": "SMRUS0069926",
+      "topHitTrackIds": [
+        "41124",
+        "143661"
+      ]
+    },
+    {
+      "isrc": "TCACI1523711",
+      "topHitTrackIds": [
+        "12083",
+        "32874"
+      ]
+    },
+    {
+      "isrc": "TCACK1557510",
+      "topHitTrackIds": [
+        "19397",
+        "27554"
+      ]
+    },
+    {
+      "isrc": "TCAGQ2293758",
+      "topHitTrackIds": [
+        "24164",
+        "35356"
+      ]
+    },
+    {
+      "isrc": "US83W0500051",
+      "topHitTrackIds": [
+        "1986",
+        "2116"
+      ]
+    },
+    {
+      "isrc": "USA561332113",
+      "topHitTrackIds": [
+        "7699",
+        "145501"
+      ]
+    },
+    {
+      "isrc": "USAT20705841",
+      "topHitTrackIds": [
+        "17059",
+        "isrc:USAT20705841"
+      ]
+    },
+    {
+      "isrc": "USAT20803620",
+      "topHitTrackIds": [
+        "24753",
+        "30922"
+      ]
+    },
+    {
+      "isrc": "USCA20801738",
+      "topHitTrackIds": [
+        "13605",
+        "14693"
+      ]
+    },
+    {
+      "isrc": "USHM91619208",
+      "topHitTrackIds": [
+        "602",
+        "7047"
+      ]
+    },
+    {
+      "isrc": "USIR10400024",
+      "topHitTrackIds": [
+        "581",
+        "713"
+      ]
+    },
+    {
+      "isrc": "USJI10801081",
+      "topHitTrackIds": [
+        "16616",
+        "34603"
+      ]
+    },
+    {
+      "isrc": "USSD11800343",
+      "topHitTrackIds": [
+        "95684",
+        "isrc:USSD11800343"
+      ]
+    },
+    {
+      "isrc": "USSM10505826",
+      "topHitTrackIds": [
+        "3963",
+        "4419"
+      ]
+    },
+    {
+      "isrc": "USTB10602328",
+      "topHitTrackIds": [
+        "5383",
+        "10743"
+      ]
+    },
+    {
+      "isrc": "USUM70972068",
+      "topHitTrackIds": [
+        "22160",
+        "65390"
+      ]
+    },
+    {
+      "isrc": "USUR10300602",
+      "topHitTrackIds": [
+        "37709",
+        "isrc:USUR10300602"
+      ]
+    }
+  ]
+}

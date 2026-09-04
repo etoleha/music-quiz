@@ -71,15 +71,15 @@
       "note": "Публичные страницы доступны в браузере, но автоматический запрос получает HTTP 403. Нужен разрешённый экспорт или ручной импорт."
     },
     {
-      "id": "tophit-ru",
-      "name": "TopHit Russia",
+      "id": "tophit-ru-monthly-history",
+      "name": "TopHit — Top Radio Hits Russia Monthly",
       "kind": "historical-list",
-      "cadence": "weekly-monthly-annual",
-      "period": "примерно с 2003 года",
-      "url": "https://tophit.com/chart/top/radio/hits/ru/weekly",
-      "status": "blocked-server-side",
+      "cadence": "monthly",
+      "period": "2003-11…2026-08",
+      "url": "https://tophit.com/chart/top/radio/hits/ru/monthly",
+      "status": "imported",
       "automatic": false,
-      "note": "Автоматический запрос получает HTTP 403; расширенные отчёты могут требовать подписку."
+      "note": "Серверный запрос получает HTTP 403, поэтому история импортируется из разрешённого пользовательского экспорта. Новые выгрузки объединяются по track_id; ISRC используется только при однозначном соответствии."
     },
     {
       "id": "yandex-music-ru",

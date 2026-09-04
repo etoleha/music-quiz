@@ -1,6 +1,7 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
 import {
   artistsOverlap,
   buildAliasIndex,
@@ -22,6 +23,18 @@ const aliasIndex = buildAliasIndex(aliases);
 const sourceRegistry = JSON.parse(fs.readFileSync(dataPath("chart-sources.json"), "utf8"));
 const spotify = JSON.parse(fs.readFileSync(dataPath("chart-songs-spotify-ru.json"), "utf8"));
 const europaPlus = JSON.parse(fs.readFileSync(dataPath("chart-songs-europa-plus.json"), "utf8"));
+const topHitPath = dataPath("chart-songs-tophit-monthly.json");
+const topHitIndex = fs.existsSync(topHitPath)
+  ? JSON.parse(fs.readFileSync(topHitPath, "utf8"))
+  : {};
+const topHitArchive = topHitIndex.archive
+  ? JSON.parse(zlib.gunzipSync(fs.readFileSync(dataPath(topHitIndex.archive))).toString("utf8"))
+  : null;
+const topHit = {
+  ...topHitIndex,
+  tracks: topHitIndex.tracks || topHitArchive?.tracks || (topHitIndex.parts || []).flatMap((file) =>
+    JSON.parse(fs.readFileSync(dataPath(file), "utf8")).tracks || []),
+};
 const observationsPath = dataPath("chart-observations.json");
 const observations = fs.existsSync(observationsPath)
   ? JSON.parse(fs.readFileSync(observationsPath, "utf8"))
@@ -203,14 +216,44 @@ if (!rebuildOnly) {
 
 const tracks = [];
 const exactTitleIndex = new Map();
+const externalIdIndex = new Map();
 let nextTrackId = 1;
+
+const externalIdKey = (namespace, value) => `${namespace}:${fingerprint(value)}`;
+
+const normalizedExternalIds = (externalIds = {}) => Object.fromEntries(
+  Object.entries(externalIds)
+    .map(([namespace, values]) => [namespace, [...new Set((values || []).filter(Boolean).map(String))]])
+    .filter(([, values]) => values.length),
+);
+
+const attachExternalIds = (track, externalIds = {}) => {
+  track.externalIds ||= {};
+  for (const [namespace, values] of Object.entries(normalizedExternalIds(externalIds))) {
+    track.externalIds[namespace] ||= [];
+    for (const value of values) {
+      if (!track.externalIds[namespace].includes(value)) track.externalIds[namespace].push(value);
+      externalIdIndex.set(externalIdKey(namespace, value), track);
+    }
+    track.externalIds[namespace].sort((left, right) => left.localeCompare(right));
+  }
+};
 
 const addIndex = (track) => {
   if (!exactTitleIndex.has(track.normalizedTitle)) exactTitleIndex.set(track.normalizedTitle, []);
   exactTitleIndex.get(track.normalizedTitle).push(track);
 };
 
-const findTrack = (normalized) => {
+const findTrack = (normalized, externalIds = {}) => {
+  const identifierMatches = new Set();
+  for (const [namespace, values] of Object.entries(normalizedExternalIds(externalIds))) {
+    for (const value of values) {
+      const match = externalIdIndex.get(externalIdKey(namespace, value));
+      if (match) identifierMatches.add(match);
+    }
+  }
+  if (identifierMatches.size === 1) return [...identifierMatches][0];
+
   const exact = exactTitleIndex.get(normalized.titleKey) || [];
   const exactArtist = exact.find((track) => artistsOverlap(track.normalizedArtist, normalized.artist));
   if (exactArtist) return exactArtist;
@@ -224,9 +267,9 @@ const findTrack = (normalized) => {
   return best?.track || null;
 };
 
-const createOrResolveTrack = (entry) => {
+const createOrResolveTrack = (entry, externalIds = {}) => {
   const normalized = normalizeObservation(entry, aliasIndex);
-  let track = findTrack(normalized);
+  let track = findTrack(normalized, externalIds);
   if (!track) {
     track = {
       id: `chart-${String(nextTrackId).padStart(5, "0")}`,
@@ -236,6 +279,7 @@ const createOrResolveTrack = (entry) => {
       titleAliases: [],
       normalizedArtist: normalized.artist,
       normalizedTitle: normalized.titleKey,
+      externalIds: {},
       explicit: false,
       sources: {},
     };
@@ -248,6 +292,7 @@ const createOrResolveTrack = (entry) => {
   if (!/[а-яё]/iu.test(track.artist) && /[а-яё]/iu.test(entry.artist || "")) track.artist = entry.artist;
   if (!/[а-яё]/iu.test(track.title) && /[а-яё]/iu.test(normalized.cleanTitle)) track.title = normalized.cleanTitle;
   if (fingerprint(entry.contentAdvisoryRating).startsWith("explic")) track.explicit = true;
+  attachExternalIds(track, externalIds);
   return track;
 };
 
@@ -268,7 +313,8 @@ const mergeSourceStats = (track, sourceId, values) => {
   if (values.lastSeen && (!stats.lastSeen || values.lastSeen > stats.lastSeen)) stats.lastSeen = values.lastSeen;
   for (const [key, value] of Object.entries(values.extra || {})) {
     if (value == null) continue;
-    if (key.startsWith("max")) stats[key] = Math.max(stats[key] || 0, value);
+    if (Array.isArray(value)) stats[key] = [...new Set([...(stats[key] || []), ...value])].sort();
+    else if (key.startsWith("max")) stats[key] = Math.max(stats[key] || 0, value);
     else if (key.startsWith("min")) stats[key] = stats[key] == null ? value : Math.min(stats[key], value);
     else stats[key] = value;
   }
@@ -276,7 +322,7 @@ const mergeSourceStats = (track, sourceId, values) => {
 };
 
 for (const entry of spotify.tracks) {
-  const track = createOrResolveTrack(entry);
+  const track = createOrResolveTrack(entry, { spotify: [entry.spotifyTrackId] });
   mergeSourceStats(track, "spotify-ru-daily-history", {
     observations: 1,
     appearances: entry.appearancesDays,
@@ -310,10 +356,36 @@ for (const entry of europaPlus.tracks) {
   });
 }
 
+for (const entry of topHit.tracks) {
+  const track = createOrResolveTrack(entry, {
+    tophit: [entry.topHitTrackId],
+    isrc: [entry.matchableIsrc],
+  });
+  mergeSourceStats(track, "tophit-ru-monthly-history", {
+    observations: 1,
+    appearances: entry.appearancesMonths,
+    rawPoints: entry.chartPoints,
+    rank: entry.bestPosition,
+    firstSeen: entry.firstMonth,
+    lastSeen: entry.lastMonth,
+    extra: {
+      top10Months: entry.top10Months,
+      numberOneMonths: entry.numberOneMonths,
+      topHitTrackIds: [entry.topHitTrackId].filter(Boolean),
+      isrcs: entry.reportedIsrcs,
+      matchableIsrcs: [entry.matchableIsrc].filter(Boolean),
+      trackUrls: entry.trackUrls,
+      releaseDates: entry.releaseDates,
+      genres: entry.genres,
+      rightsHolders: entry.rightsHolders,
+    },
+  });
+}
+
 for (const snapshot of observations.snapshots) {
   const chartSize = snapshot.entries.length;
   for (const entry of snapshot.entries) {
-    const track = createOrResolveTrack(entry);
+    const track = createOrResolveTrack(entry, entry.platformId ? { [snapshot.sourceId]: [entry.platformId] } : {});
     const percentilePoints = ((chartSize + 1 - entry.rank) / chartSize) * 100;
     mergeSourceStats(track, snapshot.sourceId, {
       appearances: 1,
@@ -386,35 +458,20 @@ for (const sameTitleTracks of byTitle.values()) {
   }
 }
 
-const catalogPartsDirectory = dataPath("chart-catalog-parts");
-fs.mkdirSync(catalogPartsDirectory, { recursive: true });
-for (const file of fs.readdirSync(catalogPartsDirectory)) {
-  if (/^part-\d+\.json$/.test(file)) fs.unlinkSync(path.join(catalogPartsDirectory, file));
-}
-
-const tracksPerPart = 100;
 const stableTracks = [...tracks].sort((a, b) => a.id.localeCompare(b.id));
-const partFiles = [];
-for (let offset = 0; offset < stableTracks.length; offset += tracksPerPart) {
-  const partNumber = Math.floor(offset / tracksPerPart) + 1;
-  const file = `part-${String(partNumber).padStart(3, "0")}.json`;
-  const partTracks = stableTracks.slice(offset, offset + tracksPerPart);
-  fs.writeFileSync(path.join(catalogPartsDirectory, file), `${JSON.stringify({
-    version: 1,
-    generatedAt,
-    part: partNumber,
-    trackCount: partTracks.length,
-    tracks: partTracks,
-  }, null, 2)}\n`);
-  partFiles.push(`chart-catalog-parts/${file}`);
-}
+const catalogArchiveName = "chart-catalog.json.gz";
+fs.writeFileSync(dataPath(catalogArchiveName), zlib.gzipSync(Buffer.from(JSON.stringify({
+  version: 1,
+  generatedAt,
+  trackCount: stableTracks.length,
+  tracks: stableTracks,
+})), { level: 9 }));
 
 const catalog = {
   version: 1,
   generatedAt,
   trackCount: tracks.length,
-  tracksPerPart,
-  parts: partFiles,
+  archive: catalogArchiveName,
   sourceCount: sourceRegistry.sources.filter(({ status }) => status === "imported" || status === "monitored").length,
   snapshotCount: observations.snapshots.length,
   scoring: {
@@ -441,4 +498,7 @@ console.log(JSON.stringify({
   tracks: catalog.trackCount,
   multiSourceTracks: tracks.filter(({ sourceCount }) => sourceCount > 1).length,
   reviewAliases: potentialArtistAliases.length,
+  topHitTracks: topHit.tracks.length,
+  topHitCatalogTracks: tracks.filter(({ sources }) => sources["tophit-ru-monthly-history"]).length,
+  topHitMultiSourceTracks: tracks.filter(({ sources, sourceCount }) => sources["tophit-ru-monthly-history"] && sourceCount > 1).length,
 }, null, 2));

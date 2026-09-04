@@ -105,9 +105,17 @@ const manualTitleAliases: Record<string, string[]> = {
 
 const unique = (values: string[]) => [...new Set(values.filter(Boolean))];
 
+// «и» не всегда разделяет участников: в названиях постоянных групп оно может
+// быть обычной частью имени. Такие имена нельзя превращать в допустимые ответы
+// по отдельным словам («Король» / «Шут»).
+const atomicArtistNames = new Set([
+  "Король и Шут",
+]);
+
 const extraTrack = (youtubeId: string, artist: string, title: string, start: number, duration = 15): Track => {
-  const collaboration = /(?:\bfeat\.?\b|\bft\.?\b|\s[иx&]\s|,)/i.test(artist);
-  const parts = artist.split(/\s+(?:feat\.?|ft\.?|и|x|&)\s+|,\s*/i);
+  const atomicArtist = atomicArtistNames.has(artist);
+  const collaboration = !atomicArtist && /(?:\bfeat\.?\b|\bft\.?\b|\s[иx&]\s|,)/i.test(artist);
+  const parts = atomicArtist ? [artist] : artist.split(/\s+(?:feat\.?|ft\.?|и|x|&)\s+|,\s*/i);
   return {
     key: `${artist}—${title}`.toLowerCase(),
     youtubeId,

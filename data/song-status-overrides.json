@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "notes": [
+    "Ручные решения имеют приоритет над автоматической классификацией.",
+    "Ключ может быть id из song-database или строкой normalizedArtist:normalizedTitle.",
+    "workflowStatus: waiting | used | rejected; language: russian | foreign | mixed | unknown; reviewStatus: verified | needs-review; fragmentStatus: good | bad | not-checked."
+  ],
+  "songs": {}
+}
