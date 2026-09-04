@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-04T03:27:27.140Z",
+  "archive": "song-database.json.gz",
+  "stats": {
+    "songs": 11286,
+    "chartSongs": 9239,
+    "poolPositions": 3000,
+    "poolSongs": 2969,
+    "publishedQuizSongs": 420,
+    "quizTrackPositions": 420,
+    "quizCandidates": 3654,
+    "readyForAutomaticQuiz": 3518,
+    "workflow": {
+      "rejected": 13,
+      "used": 420,
+      "waiting": 10853
+    },
+    "language": {
+      "foreign": 1448,
+      "russian": 4083,
+      "unknown": 5755
+    },
+    "review": {
+      "needs-review": 6118,
+      "verified": 5168
+    },
+    "fragment": {
+      "good": 420,
+      "not-checked": 10866
+    }
+  },
+  "statusDimensions": {
+    "workflow": [
+      "waiting",
+      "used",
+      "rejected"
+    ],
+    "language": [
+      "russian",
+      "foreign",
+      "mixed",
+      "unknown"
+    ],
+    "review": [
+      "verified",
+      "needs-review"
+    ],
+    "fragment": [
+      "good",
+      "bad",
+      "not-checked"
+    ]
+  }
+}

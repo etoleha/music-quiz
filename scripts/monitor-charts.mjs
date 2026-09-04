@@ -458,35 +458,20 @@ for (const sameTitleTracks of byTitle.values()) {
   }
 }
 
-const catalogPartsDirectory = dataPath("chart-catalog-parts");
-fs.mkdirSync(catalogPartsDirectory, { recursive: true });
-for (const file of fs.readdirSync(catalogPartsDirectory)) {
-  if (/^part-\d+\.json$/.test(file)) fs.unlinkSync(path.join(catalogPartsDirectory, file));
-}
-
-const tracksPerPart = 100;
 const stableTracks = [...tracks].sort((a, b) => a.id.localeCompare(b.id));
-const partFiles = [];
-for (let offset = 0; offset < stableTracks.length; offset += tracksPerPart) {
-  const partNumber = Math.floor(offset / tracksPerPart) + 1;
-  const file = `part-${String(partNumber).padStart(3, "0")}.json`;
-  const partTracks = stableTracks.slice(offset, offset + tracksPerPart);
-  fs.writeFileSync(path.join(catalogPartsDirectory, file), `${JSON.stringify({
-    version: 1,
-    generatedAt,
-    part: partNumber,
-    trackCount: partTracks.length,
-    tracks: partTracks,
-  }, null, 2)}\n`);
-  partFiles.push(`chart-catalog-parts/${file}`);
-}
+const catalogArchiveName = "chart-catalog.json.gz";
+fs.writeFileSync(dataPath(catalogArchiveName), zlib.gzipSync(Buffer.from(JSON.stringify({
+  version: 1,
+  generatedAt,
+  trackCount: stableTracks.length,
+  tracks: stableTracks,
+})), { level: 9 }));
 
 const catalog = {
   version: 1,
   generatedAt,
   trackCount: tracks.length,
-  tracksPerPart,
-  parts: partFiles,
+  archive: catalogArchiveName,
   sourceCount: sourceRegistry.sources.filter(({ status }) => status === "imported" || status === "monitored").length,
   snapshotCount: observations.snapshots.length,
   scoring: {

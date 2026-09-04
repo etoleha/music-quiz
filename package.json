@@ -10,9 +10,10 @@
     "build": "next build",
     "start": "next start",
     "test": "npm run test:charts && npm run build",
-    "test:charts": "node scripts/test-chart-normalization.mjs && node scripts/test-tophit-import.mjs",
+    "test:charts": "node scripts/test-chart-normalization.mjs && node scripts/test-tophit-import.mjs && node scripts/test-song-database.mjs",
     "import:tophit": "node scripts/import-tophit-monthly.mjs",
-    "monitor:charts": "node scripts/monitor-charts.mjs"
+    "monitor:charts": "node scripts/monitor-charts.mjs",
+    "build:song-database": "node scripts/build-song-database.mjs"
   },
   "dependencies": {
     "class-variance-authority": "0.7.1",

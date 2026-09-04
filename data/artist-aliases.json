@@ -3,7 +3,7 @@
   "notes": [
     "Автоматическая нормализация уже игнорирует регистр, пунктуацию и обычную транслитерацию.",
     "Здесь перечислены только варианты, которые не совпадают после механической нормализации.",
-    "Исходные написания всегда сохраняются в chart-catalog.json для последующей проверки."
+    "Исходные написания всегда сохраняются в полном архиве chart-catalog.json.gz для последующей проверки."
   ],
   "artists": [
     { "canonical": "Скриптонит", "aliases": ["Skryptonite", "Scriptonite"] },
@@ -37,6 +37,7 @@
     { "canonical": "P!nk", "aliases": ["Pink"] },
     { "canonical": "Дмитрий Колдун", "aliases": ["Dmitriy Koldun"] },
     { "canonical": "Юлия Паршута", "aliases": ["Yulya Parshuta"] },
-    { "canonical": "Александр Рыбак", "aliases": ["Alexander Rybak"] }
+    { "canonical": "Александр Рыбак", "aliases": ["Alexander Rybak"] },
+    { "canonical": "Hi-Fi", "aliases": ["HI-FI", "Hi Fi", "хай фай"] }
   ]
 }
