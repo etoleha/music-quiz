@@ -1,3 +1,5 @@
+import { extraQuizzes } from "./quiz-data-extra";
+
 export type Track = {
   key: string;
   youtubeId: string;
@@ -188,6 +190,7 @@ const track = (
 });
 
 export const quizzes: Quiz[] = [
+  ...extraQuizzes,
   {
     id: "hard-10",
     title: "Квиз X",
