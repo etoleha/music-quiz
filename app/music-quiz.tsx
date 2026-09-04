@@ -323,7 +323,8 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     setArtistInfo((items) => ({ ...items, [track.key]: { status: "loading" } }));
     try {
       const params = new URLSearchParams({ key: track.key, artist: track.artist, title: track.title, youtubeId: track.youtubeId });
-      const response = await fetch(`/api/track-info?${params}`);
+      const endpoint = guestMode ? "/g/track-info" : "/api/track-info";
+      const response = await fetch(`${endpoint}?${params}`);
       if (!response.ok) throw new Error("artist lookup failed");
       const data = await response.json() as Omit<ArtistInfo, "status">;
       setArtistInfo((items) => ({
@@ -333,7 +334,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     } catch {
       setArtistInfo((items) => ({ ...items, [track.key]: { status: "error" } }));
     }
-  }, []);
+  }, [guestMode]);
 
   useEffect(() => {
     if (screen !== "result") return;
