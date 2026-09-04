@@ -127,6 +127,37 @@
       "artistIds": ["markul", "oxxxymiron"],
       "externalIds": { "youtube": ["d8e9sw6_oec"] },
       "notes": ["Полный credit восстановлен; один из участников уже использован в опубликованном квизе."]
+    },
+    "pool-4fe3def82207": {
+      "workflowStatus": "rejected",
+      "language": "foreign",
+      "reviewStatus": "verified",
+      "notes": ["Ивритоязычная песня израильских исполнителей; отдельные русские слова не делают её подходящей для русского квиза."]
+    },
+    "pool-23da8d66b554": {
+      "artistCredit": "Ю.Г. feat. Nonamerz & Мандр",
+      "artistIds": ["yug", "nonamerz", "mandr"],
+      "notes": ["Восстановлен полный исполнительский кредит записи «Ещё один день, часть 2»."]
+    },
+    "pool-0b580ea98706": {
+      "artistCredit": "Наташа Королёва & Ника Анаскина",
+      "artistIds": ["natashakoroleva", "nikanaskina"],
+      "notes": ["В исходной карточке была пропущена вторая исполнительница."]
+    },
+    "pool-295ad4f4aeac": {
+      "artistCredit": "Гости из будущего",
+      "artistIds": ["gostiizbudushchego"],
+      "notes": ["Песня относится к группе «Гости из будущего», а не к сольному проекту Евы Польны."]
+    },
+    "pool-6ed69148d362": {
+      "artistCredit": "Ксения Ларина",
+      "artistIds": ["kseniyalarina"],
+      "notes": ["Нормализовано полное имя исполнительницы вместо уменьшительной формы."]
+    },
+    "pool-156a117938ab": {
+      "artistCredit": "L'ONE feat. Варвара Визбор",
+      "artistIds": ["lone", "varvaravizbor"],
+      "notes": ["Исправлено написание L'ONE и восстановлен полный исполнительский кредит."]
     }
   }
 }

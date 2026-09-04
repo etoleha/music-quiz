@@ -305,7 +305,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     requestedTrackInfo.current.add(track.key);
     setArtistInfo((items) => ({ ...items, [track.key]: { status: "loading" } }));
     try {
-      const params = new URLSearchParams({ key: track.key, artist: track.artist, title: track.title });
+      const params = new URLSearchParams({ key: track.key, artist: track.artist, title: track.title, youtubeId: track.youtubeId });
       const response = await fetch(`/api/track-info?${params}`);
       if (!response.ok) throw new Error("artist lookup failed");
       const data = await response.json() as Omit<ArtistInfo, "status">;

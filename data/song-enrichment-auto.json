@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "resolverVersion": 3,
-  "generatedAt": "2026-09-04T15:40:55.944Z",
+  "resolverVersion": 4,
+  "generatedAt": "2026-09-04T17:14:40.647Z",
   "stats": {
-    "attempted": 1050,
-    "matched": 482,
-    "ambiguous": 157,
-    "notFound": 371,
-    "temporaryError": 40
+    "attempted": 1072,
+    "matched": 493,
+    "ambiguous": 167,
+    "notFound": 380,
+    "temporaryError": 32
   },
   "songs": {
     "chart-00091": {
@@ -1446,12 +1446,49 @@
       "retrievedAt": "2026-09-04T09:19:17.546Z"
     },
     "chart-07066": {
-      "resolverVersion": 1,
-      "sourceFingerprint": "c238119bf709174e4e4ca023ddb40a04b3f9acb1ef39988ff1304a522495cae6",
-      "status": "temporary-error",
-      "error": "400 Bad Request",
-      "retrievedAt": "2026-09-04T09:19:23.671Z",
-      "retryAfter": "2026-09-04T09:29:23.671Z"
+      "resolverVersion": 4,
+      "sourceFingerprint": "e4c58f9073c3d0a8590bba6710c0d161b906aa96beb009a9704d061ce13b5a42",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.99,
+      "runnerUpDelta": null,
+      "recordingMbid": "c7a7c500-686d-4a26-b34f-7303e4befcdb",
+      "recordingTitle": "Black",
+      "artistCredits": [
+        {
+          "name": "GAZIROVKA",
+          "musicBrainzArtistId": "38d83dc2-1156-4f11-8d87-64eadc9ace08",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "38d83dc2-1156-4f11-8d87-64eadc9ace08"
+      ],
+      "isrcs": [
+        "RUA591800446"
+      ],
+      "releaseYear": 2017,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2017-11-27",
+      "versionType": "original",
+      "album": {
+        "title": "NEBOBLAKA",
+        "year": 2018,
+        "releaseGroupMbid": "15f3231b-165d-4694-82aa-75168ba439b0",
+        "coverUrl": "http://coverartarchive.org/release/8576da71-748d-466a-8006-39d4352e9d8e/21673404064-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/15f3231b-165d-4694-82aa-75168ba439b0",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "c7a7c500-686d-4a26-b34f-7303e4befcdb",
+          "url": "https://musicbrainz.org/recording/c7a7c500-686d-4a26-b34f-7303e4befcdb"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:06:49.415Z"
     },
     "chart-00025": {
       "resolverVersion": 3,
@@ -7490,15 +7527,15 @@
       "retryAfter": "2027-03-03T15:00:59.498Z"
     },
     "chart-01345": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "17fe50e25ab1a5870ff38071c462631eff9491e2d1a274b59a063686f1df3fc3",
+      "resolverVersion": 4,
+      "sourceFingerprint": "7b25459d9e9bf9cc7bd252dd90f84d404e2f653c54fc8eab1e6d8ca3f8bd6e89",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:01:04.404Z",
-      "retryAfter": "2027-03-03T15:01:04.404Z"
+      "retrievedAt": "2026-09-04T17:10:28.462Z",
+      "retryAfter": "2027-03-03T17:10:28.462Z"
     },
     "chart-00376": {
       "resolverVersion": 3,
@@ -20339,12 +20376,46 @@
       "retrievedAt": "2026-09-04T15:15:10.889Z"
     },
     "pool-6c235e43bba1": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "a7f5d7479a83d0ff1ca0b6072ab0d4b658f45de7b34cfb3a612dbda6f776dceb",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:15:14.063Z",
-      "retryAfter": "2026-09-04T15:25:14.063Z"
+      "resolverVersion": 4,
+      "sourceFingerprint": "98840cb9a959943cb7ec1d448548d57ecb95692a339026c7bc804ecd5cc174e8",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": null,
+      "recordingMbid": "6feab9ec-024d-46f2-8f7e-783840306a5b",
+      "recordingTitle": "До рассвета",
+      "artistCredits": [
+        {
+          "name": "Сати Казанова",
+          "musicBrainzArtistId": "c66ea219-2424-49f8-9d99-445dbdf8716f",
+          "joinPhrase": " feat. "
+        },
+        {
+          "name": "Arsenium",
+          "musicBrainzArtistId": "f3e9b4dd-f1c6-468a-8808-9747f5a0f23b",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "c66ea219-2424-49f8-9d99-445dbdf8716f",
+        "f3e9b4dd-f1c6-468a-8808-9747f5a0f23b"
+      ],
+      "isrcs": [],
+      "releaseYear": 2014,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2014",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "6feab9ec-024d-46f2-8f7e-783840306a5b",
+          "url": "https://musicbrainz.org/recording/6feab9ec-024d-46f2-8f7e-783840306a5b"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:02:32.520Z"
     },
     "pool-a422278444c5": {
       "resolverVersion": 3,
@@ -20434,26 +20505,26 @@
       "retrievedAt": "2026-09-04T15:15:26.970Z"
     },
     "pool-80819227ce68": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "83d51b4524e6d6bb3106f07ee538a9d7a68bed9bc05712e89cb928a638bef145",
+      "resolverVersion": 4,
+      "sourceFingerprint": "b3455a53e7d98bf9e53efaf1ba25cd07c9f4961951332a14cd54969c49b88c0f",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:15:28.092Z",
-      "retryAfter": "2027-03-03T15:15:28.092Z"
+      "retrievedAt": "2026-09-04T17:02:32.635Z",
+      "retryAfter": "2027-03-03T17:02:32.635Z"
     },
     "pool-914b928576c6": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "de2a87f8d12d998d5b07c603e00c9598452c26d706557f47fd28da6dbb0d777b",
+      "resolverVersion": 4,
+      "sourceFingerprint": "aec6ea4de92fa9b49896c2d27fe8b0445433349cbe494b7aa600855ceec3b0d9",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:15:28.462Z",
-      "retryAfter": "2027-03-03T15:15:28.462Z"
+      "retrievedAt": "2026-09-04T17:02:55.360Z",
+      "retryAfter": "2027-03-03T17:02:55.360Z"
     },
     "pool-c02a93147a2a": {
       "resolverVersion": 3,
@@ -20550,15 +20621,15 @@
       "retrievedAt": "2026-09-04T15:15:37.329Z"
     },
     "pool-ad2056f5fd90": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "77919f3d58f4244a04d7a8e2088464933a3ff5036a3a8e56205e9904ee345363",
+      "resolverVersion": 4,
+      "sourceFingerprint": "952afccb1c31839521681114468e8bf10afa21c2f2df437ba7fb74a0bd4c703c",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:15:38.439Z",
-      "retryAfter": "2027-03-03T15:15:38.439Z"
+      "retrievedAt": "2026-09-04T17:10:28.709Z",
+      "retryAfter": "2027-03-03T17:10:28.709Z"
     },
     "pool-32344b6b0b87": {
       "resolverVersion": 3,
@@ -21913,15 +21984,15 @@
       "retrievedAt": "2026-09-04T15:25:41.348Z"
     },
     "pool-ecd187364300": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "84137910590972540fcfb245226236e7f43235b77a2db0bced99870bba7fa7b3",
+      "resolverVersion": 4,
+      "sourceFingerprint": "c823700db2c0e080e70550eae01c920f618884fcef40b972b6e7280af7de20ee",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:25:43.369Z",
-      "retryAfter": "2027-03-03T15:25:43.369Z"
+      "retrievedAt": "2026-09-04T17:10:29.680Z",
+      "retryAfter": "2027-03-03T17:10:29.680Z"
     },
     "pool-39e561fe12db": {
       "resolverVersion": 3,
@@ -21935,12 +22006,15 @@
       "retryAfter": "2027-03-03T15:25:45.590Z"
     },
     "pool-c0a3fd7cb1c9": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "5688812d2204665f4299a2a52947e54fa069c27c5efd82f28117ad440ba9cbd1",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:25:48.876Z",
-      "retryAfter": "2026-09-04T15:35:48.876Z"
+      "resolverVersion": 4,
+      "sourceFingerprint": "5eebdb8826ff9fa5549b7624c4c98a4891dce243d191af72b0f4d73c1208c57b",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:02:56.348Z",
+      "retryAfter": "2027-03-03T17:02:56.348Z"
     },
     "pool-590dcdf62122": {
       "resolverVersion": 3,
@@ -22049,12 +22123,15 @@
       "retrievedAt": "2026-09-04T15:26:07.541Z"
     },
     "pool-c370d77ec6c1": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "63fd2c1d24b76cd4c38cc631b527b2d76fa16da7eb866dda267e45a46733b72c",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:26:10.839Z",
-      "retryAfter": "2026-09-04T15:36:10.839Z"
+      "resolverVersion": 4,
+      "sourceFingerprint": "8698c62a179695c9858098abc85ffec527f7d6912ca8798ff5fe633989c2dbd0",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:02:57.716Z",
+      "retryAfter": "2027-03-03T17:02:57.716Z"
     },
     "pool-3e4510c7c17d": {
       "resolverVersion": 3,
@@ -22366,15 +22443,15 @@
       "retrievedAt": "2026-09-04T15:26:48.178Z"
     },
     "pool-23da8d66b554": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "2b12f0d5940a8ee5fec5ac78c80beab46a0a0487058768dcb44ea0970e49fc85",
+      "resolverVersion": 4,
+      "sourceFingerprint": "219e006bd67a84401b2c49a177019b51ea5a9dfeec3a53334c1406a4228d2a73",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:26:49.286Z",
-      "retryAfter": "2027-03-03T15:26:49.286Z"
+      "retrievedAt": "2026-09-04T17:10:45.955Z",
+      "retryAfter": "2027-03-03T17:10:45.955Z"
     },
     "pool-279ceabbd02f": {
       "resolverVersion": 3,
@@ -22442,15 +22519,15 @@
       "retrievedAt": "2026-09-04T15:27:00.002Z"
     },
     "pool-8f16ef90d62d": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "e6ed60784d08a1c693c6dd0fea23e28d851fe6b5cd23721d59a1b89759c55f04",
+      "resolverVersion": 4,
+      "sourceFingerprint": "8e07236e0aafb90d4dff61875362ff6a3cb75d69cc947774db90aeb992ec5fd7",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:27:00.310Z",
-      "retryAfter": "2027-03-03T15:27:00.310Z"
+      "retrievedAt": "2026-09-04T17:10:59.212Z",
+      "retryAfter": "2027-03-03T17:10:59.212Z"
     },
     "pool-981ff56bd7f1": {
       "resolverVersion": 3,
@@ -22592,15 +22669,15 @@
       "retrievedAt": "2026-09-04T15:27:15.798Z"
     },
     "pool-05b53f36e25d": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "7e10e9f6644f830f598d406187bf64970bb8928a802b914e7a1f1644e288f1e8",
+      "resolverVersion": 4,
+      "sourceFingerprint": "8ceb0d752c98520c7d027e7439c21567f50c93fada21937ce57148936307d14d",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:27:17.424Z",
-      "retryAfter": "2027-03-03T15:27:17.424Z"
+      "retrievedAt": "2026-09-04T17:10:59.678Z",
+      "retryAfter": "2027-03-03T17:10:59.678Z"
     },
     "pool-2573218f836b": {
       "resolverVersion": 3,
@@ -22870,23 +22947,26 @@
       "retryAfter": "2027-03-03T15:28:00.681Z"
     },
     "pool-aca5fe7b24e4": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "82f04b710a47e1c425e4633d843d297f810534c05203f5c3a58def849bec45ab",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:28:02.974Z",
-      "retryAfter": "2026-09-04T15:38:02.974Z"
-    },
-    "pool-899720f5fc2b": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "8ee990991c8687a8c72de6b21b51d68eb6fb62a5af22dd80bd42d2925cc0131a",
+      "resolverVersion": 4,
+      "sourceFingerprint": "a3f407239e545d03a3f9f71f799dfd841bfceba82cf5dc9bcdb9cd0f54c0ca5e",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:04.110Z",
-      "retryAfter": "2027-03-03T15:28:04.110Z"
+      "retrievedAt": "2026-09-04T17:02:58.578Z",
+      "retryAfter": "2027-03-03T17:02:58.578Z"
+    },
+    "pool-899720f5fc2b": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "9f54100c5cac27f42daf80cb2a64f7cc9571d971f8de9ce33c83f47d085d5883",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:03:23.392Z",
+      "retryAfter": "2027-03-03T17:03:23.392Z"
     },
     "pool-223cbd64444d": {
       "resolverVersion": 3,
@@ -22900,15 +22980,15 @@
       "retryAfter": "2027-03-03T15:28:06.411Z"
     },
     "pool-27e74f81f39f": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "c9fedb281a9c8bae5c74e6e2bf4cf2b7f5800b614f3ad69da5e5bc8175566419",
+      "resolverVersion": 4,
+      "sourceFingerprint": "5c35defdb78c327cc9eaca76b9b553d87cf60f403b459ae1743790857b4a06d2",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:06.532Z",
-      "retryAfter": "2027-03-03T15:28:06.532Z"
+      "retrievedAt": "2026-09-04T17:03:24.621Z",
+      "retryAfter": "2027-03-03T17:03:24.621Z"
     },
     "pool-e9f95a54ed24": {
       "resolverVersion": 3,
@@ -22960,26 +23040,26 @@
       "retrievedAt": "2026-09-04T15:28:15.091Z"
     },
     "pool-b732c830aaa1": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "b97a5d36835ef810e0133bf32ce97adf40ee312dc98d29ef0a8566dc4198fd25",
+      "resolverVersion": 4,
+      "sourceFingerprint": "0b72f95d7ecbfe14e48a021f138e978686fa791d32beb216fd289df83343f60d",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:15.193Z",
-      "retryAfter": "2027-03-03T15:28:15.193Z"
+      "retrievedAt": "2026-09-04T17:03:40.581Z",
+      "retryAfter": "2027-03-03T17:03:40.581Z"
     },
     "pool-bbd8b883ace1": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "feaf10be279fa037353f093d486c19b90a1ea042b3d24f8cfd155b26f39bce32",
+      "resolverVersion": 4,
+      "sourceFingerprint": "217722c79fefefb50999839f6ddc37922fd73d638c87759b1aa423ae391816c0",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:17.872Z",
-      "retryAfter": "2027-03-03T15:28:17.872Z"
+      "retrievedAt": "2026-09-04T17:04:03.976Z",
+      "retryAfter": "2027-03-03T17:04:03.976Z"
     },
     "pool-f68615087cd8": {
       "resolverVersion": 3,
@@ -23031,26 +23111,26 @@
       "retrievedAt": "2026-09-04T15:28:23.844Z"
     },
     "pool-c557e73251bb": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "00b59a079dfb3b36e832774767b837c06b63ce423a79aaa3fe81b6496f8bd26c",
+      "resolverVersion": 4,
+      "sourceFingerprint": "446c1c1db7d9364be2449812fe310802ee17f19f01d739f13e9a21ba2dd303f0",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:27.156Z",
-      "retryAfter": "2027-03-03T15:28:27.156Z"
+      "retrievedAt": "2026-09-04T17:11:04.301Z",
+      "retryAfter": "2027-03-03T17:11:04.301Z"
     },
     "pool-156a117938ab": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "85849ab7314969daf5214f1156f7b37a948b7e394daf251777a095925b554d84",
+      "resolverVersion": 4,
+      "sourceFingerprint": "133c2f6abf172f9c21a7797c51fd18b098c2db6d9689523396ca4199bbb767cc",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:28.266Z",
-      "retryAfter": "2027-03-03T15:28:28.266Z"
+      "retrievedAt": "2026-09-04T17:11:04.407Z",
+      "retryAfter": "2027-03-03T17:11:04.407Z"
     },
     "pool-31ec7de809b1": {
       "resolverVersion": 3,
@@ -23149,12 +23229,40 @@
       "retrievedAt": "2026-09-04T15:28:37.803Z"
     },
     "pool-55625a777269": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "6e8833dce24f71a87ae2b8f5078507ef56038c61b472584ab1f8c8d2a4635bf5",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:28:41.084Z",
-      "retryAfter": "2026-09-04T15:38:41.084Z"
+      "resolverVersion": 4,
+      "sourceFingerprint": "148f78a681e8abd4aa650d4de56d36290790721aad39300c159d8e0a46450a8c",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": null,
+      "recordingMbid": "36f652ac-0fe9-4ce4-b756-85727c7dcee7",
+      "recordingTitle": "Персона V.I.P.",
+      "artistCredits": [
+        {
+          "name": "Dress Code",
+          "musicBrainzArtistId": "03c6e056-4ece-40dc-aac3-7fa2f3818c74",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "03c6e056-4ece-40dc-aac3-7fa2f3818c74"
+      ],
+      "isrcs": [],
+      "releaseYear": 2009,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2009",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "36f652ac-0fe9-4ce4-b756-85727c7dcee7",
+          "url": "https://musicbrainz.org/recording/36f652ac-0fe9-4ce4-b756-85727c7dcee7"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:04:50.866Z"
     },
     "pool-a46f999b9632": {
       "resolverVersion": 3,
@@ -23289,15 +23397,15 @@
       "retryAfter": "2027-03-03T15:28:57.862Z"
     },
     "pool-4531e31fb06c": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "3ff1a08feb8c1cab4a3bd33ebfca296f9013cde779268a40996c99c4e3d5ad8a",
+      "resolverVersion": 4,
+      "sourceFingerprint": "04f493bf0aa965395d89d1a870c985b41185c46e998d67ff2f10fcc97b6d7015",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:58.250Z",
-      "retryAfter": "2027-03-03T15:28:58.250Z"
+      "retrievedAt": "2026-09-04T17:04:51.988Z",
+      "retryAfter": "2027-03-03T17:04:51.988Z"
     },
     "pool-658fd4023ae6": {
       "resolverVersion": 3,
@@ -23360,12 +23468,26 @@
       "retryAfter": "2027-03-03T15:29:05.754Z"
     },
     "pool-a41ef3921054": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "afe3ec7b0fa55f651d2d56db9d466670973dd0e17bfe9d05db4f086d123d0353",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:29:09.025Z",
-      "retryAfter": "2026-09-04T15:39:09.025Z"
+      "resolverVersion": 4,
+      "sourceFingerprint": "d8fb9137a6a629813e35e7d6f9446504c44a0008aaed762e62da6debc64b4a0d",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.99,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "c7961ef8-d0cf-4bbf-a003-6c650a90f4f1",
+          "title": "На восток",
+          "score": 0.99
+        },
+        {
+          "id": "582e1674-adaf-4dcb-a51a-7cdfa66e4ff8",
+          "title": "На восток",
+          "score": 0.99
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:04:53.162Z",
+      "retryAfter": "2027-09-04T17:04:53.162Z"
     },
     "pool-ff9600e258ad": {
       "resolverVersion": 3,
@@ -23649,15 +23771,15 @@
       "retrievedAt": "2026-09-04T15:29:51.080Z"
     },
     "pool-c2ff0ac802c9": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "0f67e953d80d50b9b4676176ac1f95c6e0330daceeba84e5ec48a0fcae40e48c",
+      "resolverVersion": 4,
+      "sourceFingerprint": "af93e028615fbd2c534be2cfbedb30a90a0e1a63b29465eda697428994b6973a",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:29:51.965Z",
-      "retryAfter": "2027-03-03T15:29:51.965Z"
+      "retrievedAt": "2026-09-04T17:04:54.180Z",
+      "retryAfter": "2027-03-03T17:04:54.180Z"
     },
     "pool-cc6906a2ae8b": {
       "resolverVersion": 3,
@@ -23917,15 +24039,15 @@
       "retrievedAt": "2026-09-04T15:30:24.484Z"
     },
     "pool-966cabc10a5d": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "d37189f0bc2b742ecdd2079aba0908a5cb9d82f910960d3994a75061fd3d1faf",
+      "resolverVersion": 4,
+      "sourceFingerprint": "99444707b0112afe4b0501612f10c0afcbebb6fad1aca1b47356ec21b9851878",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:30:26.346Z",
-      "retryAfter": "2027-03-03T15:30:26.346Z"
+      "retrievedAt": "2026-09-04T17:11:06.450Z",
+      "retryAfter": "2027-03-03T17:11:06.450Z"
     },
     "pool-af5f364d0166": {
       "resolverVersion": 3,
@@ -24235,15 +24357,15 @@
       "retrievedAt": "2026-09-04T15:31:25.258Z"
     },
     "pool-98666eeb290c": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "3e4d540c90fc910c336be6c0d3d8123c00e379b85f568aae36788ac3b9d18f53",
+      "resolverVersion": 4,
+      "sourceFingerprint": "198221282c4f0849a9bd0a7c6bcea4cde8fea747d476dd568412b24f5a6eddd8",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:31:25.368Z",
-      "retryAfter": "2027-03-03T15:31:25.368Z"
+      "retrievedAt": "2026-09-04T17:11:06.632Z",
+      "retryAfter": "2027-03-03T17:11:06.632Z"
     },
     "pool-e04c1ff5a366": {
       "resolverVersion": 3,
@@ -24273,15 +24395,15 @@
       "retryAfter": "2026-09-04T15:41:34.199Z"
     },
     "pool-351f34d94dd8": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "a6853b657c26549169c237caa4675b8cedc8365c66a19202e4fdfe38844f2778",
+      "resolverVersion": 4,
+      "sourceFingerprint": "baf1e073de501cc636da91aa07a872306e598aca29ca2ce6ea73880a12265a9e",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:31:35.663Z",
-      "retryAfter": "2027-03-03T15:31:35.664Z"
+      "retrievedAt": "2026-09-04T17:11:23.176Z",
+      "retryAfter": "2027-03-03T17:11:23.176Z"
     },
     "pool-c1bec78fa859": {
       "resolverVersion": 3,
@@ -24462,15 +24584,15 @@
       "retryAfter": "2027-03-03T15:31:59.684Z"
     },
     "pool-295ad4f4aeac": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "101d5a4fbaa5735b7413a97b5454552c864bc35cebfccb1c96f8a7941cfd5014",
+      "resolverVersion": 4,
+      "sourceFingerprint": "3d3c5b27fe7ffb8168edb5b547c0ee6565a9362da3f0eef0a6247221e90bf82d",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:32:02.096Z",
-      "retryAfter": "2027-03-03T15:32:02.096Z"
+      "retrievedAt": "2026-09-04T17:11:23.432Z",
+      "retryAfter": "2027-03-03T17:11:23.432Z"
     },
     "pool-327675889310": {
       "resolverVersion": 3,
@@ -24799,15 +24921,15 @@
       "retrievedAt": "2026-09-04T15:32:47.354Z"
     },
     "pool-6ed69148d362": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "2c424ca90f1348563bcb4201e6cdf400891c1ef3f747982a866140cdecf57ebb",
+      "resolverVersion": 4,
+      "sourceFingerprint": "0ff1c90b52b4a3d42803a6d2d09273561497db2d614a0ff04cf5fb93c53af926",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:32:47.468Z",
-      "retryAfter": "2027-03-03T15:32:47.468Z"
+      "retrievedAt": "2026-09-04T17:11:24.381Z",
+      "retryAfter": "2027-03-03T17:11:24.381Z"
     },
     "pool-200d0b738166": {
       "resolverVersion": 3,
@@ -26089,34 +26211,53 @@
       "retryAfter": "2027-03-03T15:35:26.934Z"
     },
     "pool-b5b6942ada07": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "fbb99bb9982a2e8fcbdee5c31fb2b06852813001bdb53d1c6e54caa9889cc069",
+      "resolverVersion": 4,
+      "sourceFingerprint": "766d50564ff895b2cb48b18102567e36e6992b7d6aac2196e47ead87f6fcf774",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:35:28.044Z",
-      "retryAfter": "2027-03-03T15:35:28.044Z"
+      "retrievedAt": "2026-09-04T17:04:56.396Z",
+      "retryAfter": "2027-03-03T17:04:56.396Z"
     },
     "pool-5628b5893bff": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "2829b88a7283e097687563e30e1979703746c06f1f076cdd5b6677c5f85a7100",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:35:31.321Z",
-      "retryAfter": "2026-09-04T15:45:31.321Z"
+      "resolverVersion": 4,
+      "sourceFingerprint": "36f6132dd9f51563e0afa894c95e37d94a88ff96e3cbe4136075d10e1bad0051",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "3ee405bd-7bd4-486c-9e4d-ccfacdaf9ff5",
+          "title": "За тобой",
+          "score": 1
+        },
+        {
+          "id": "c2999282-7472-4d38-9bd7-f3ad0069f7e7",
+          "title": "За тобой",
+          "score": 1
+        },
+        {
+          "id": "ef6564cb-5066-4dc1-b31e-feb0baf9d98c",
+          "title": "За тобой",
+          "score": 1
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:04:59.747Z",
+      "retryAfter": "2027-09-04T17:04:59.747Z"
     },
     "pool-a6e6ebf36ac5": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "8db64c45fbcd79cc0ac8a0f82eebb4e2ef6ae821ccc364dc65a155006d806055",
+      "resolverVersion": 4,
+      "sourceFingerprint": "dc708e7498289699db471ec18521ac8c2034442cd89b26e6fa1b92f74be6aa36",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:35:33.579Z",
-      "retryAfter": "2027-03-03T15:35:33.579Z"
+      "retrievedAt": "2026-09-04T17:11:40.672Z",
+      "retryAfter": "2027-03-03T17:11:40.672Z"
     },
     "pool-b13e57f4e412": {
       "resolverVersion": 3,
@@ -26242,12 +26383,31 @@
       "retrievedAt": "2026-09-04T15:35:48.052Z"
     },
     "pool-0b8aec73c435": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "7a06957d71fde2932141db9bae26093937f028bbbed181d3226b6fcc6d3e5932",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:35:51.353Z",
-      "retryAfter": "2026-09-04T15:45:51.353Z"
+      "resolverVersion": 4,
+      "sourceFingerprint": "c8b27418391d5e9093cfbe08001b2a9e58b6de80887019071305cfcd389253e4",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": 0.01,
+      "alternatives": [
+        {
+          "id": "cb360a68-e33e-4310-83fb-37f4708b1719",
+          "title": "Берега мечты",
+          "score": 1
+        },
+        {
+          "id": "270d9957-6a53-41f8-b4bf-687bf704c216",
+          "title": "Берега мечты",
+          "score": 0.99
+        },
+        {
+          "id": "785543a0-1953-45d3-b429-00e48ffae430",
+          "title": "Берега мечты",
+          "score": 0.99
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:05:00.950Z",
+      "retryAfter": "2027-09-04T17:05:00.950Z"
     },
     "pool-26725c501796": {
       "resolverVersion": 3,
@@ -26410,15 +26570,15 @@
       "retryAfter": "2027-03-03T15:36:14.709Z"
     },
     "pool-509efede4735": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "0f3535fc40d422972aedec96e8b69259d8955003d19147246412217db17afd79",
+      "resolverVersion": 4,
+      "sourceFingerprint": "1e6f66e6e72e31ba51dc7fd8d5d3f643226abd73c6672cf6cfc60b27912820b7",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:15.935Z",
-      "retryAfter": "2027-03-03T15:36:15.935Z"
+      "retrievedAt": "2026-09-04T17:11:40.812Z",
+      "retryAfter": "2027-03-03T17:11:40.812Z"
     },
     "pool-83b83ee70297": {
       "resolverVersion": 3,
@@ -26470,15 +26630,15 @@
       "retryAfter": "2027-03-03T15:36:20.165Z"
     },
     "pool-d90971653303": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "44a4dadbd434ad9cd68d1450968401d5e4bd0e3ea30dc94c18f7a5783b53a411",
+      "resolverVersion": 4,
+      "sourceFingerprint": "49fa9d7ce8c2da0c6b3b55ebe14556b2a50bfab74d833e78ff8bc441de7b3244",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:24.845Z",
-      "retryAfter": "2027-03-03T15:36:24.845Z"
+      "retrievedAt": "2026-09-04T17:11:41.884Z",
+      "retryAfter": "2027-03-03T17:11:41.884Z"
     },
     "pool-4203914cfee9": {
       "resolverVersion": 3,
@@ -26539,26 +26699,26 @@
       "retryAfter": "2027-03-03T15:36:41.503Z"
     },
     "pool-f9fc286411ff": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "45a49df5bf09804f70d455916cde57462867b28fe0cc2df02f68fcb45a0cbf13",
+      "resolverVersion": 4,
+      "sourceFingerprint": "6d6c9c6d2585a2854dcc550f6831f7b7c01b1229f5fe3f39922f5b2eeed742d4",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:42.892Z",
-      "retryAfter": "2027-03-03T15:36:42.892Z"
+      "retrievedAt": "2026-09-04T17:05:01.952Z",
+      "retryAfter": "2027-03-03T17:05:01.952Z"
     },
     "pool-0b580ea98706": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "96cf03e295f0b539f5ad9902f5fdd6b76419a7c7e4f2e5379add7d534736c4aa",
+      "resolverVersion": 4,
+      "sourceFingerprint": "6b6aab201307816a8cefcaf4fb1528d35c35f174eb9653b681c0a9801779392d",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:45.432Z",
-      "retryAfter": "2027-03-03T15:36:45.432Z"
+      "retrievedAt": "2026-09-04T17:11:42.998Z",
+      "retryAfter": "2027-03-03T17:11:42.998Z"
     },
     "pool-189d996239f5": {
       "resolverVersion": 3,
@@ -26713,15 +26873,15 @@
       "retryAfter": "2027-03-03T15:37:12.027Z"
     },
     "pool-3fca67daa52f": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "8e1ba92e136b52b0c001601611a29195385accb72e7eb29926c8948511fd40f4",
+      "resolverVersion": 4,
+      "sourceFingerprint": "119ec3161ac6ee44209062e784412ead1cfe8e2030a6fd477e6a40fd1b0a0bf1",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:37:17.060Z",
-      "retryAfter": "2027-03-03T15:37:17.060Z"
+      "retrievedAt": "2026-09-04T17:11:57.721Z",
+      "retryAfter": "2027-03-03T17:11:57.721Z"
     },
     "pool-58b0d041555e": {
       "resolverVersion": 3,
@@ -26762,15 +26922,15 @@
       "retrievedAt": "2026-09-04T15:37:40.821Z"
     },
     "pool-710108fb087b": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "7a2eaa1d2f9f97adb2ac68a2b38590a83a553b6cb94e002f763abeda287161d9",
+      "resolverVersion": 4,
+      "sourceFingerprint": "9ded0bc2b1504adb2a4b065be7ed83cebcc7e587beff7529df1490744121d096",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:37:40.925Z",
-      "retryAfter": "2027-03-03T15:37:40.925Z"
+      "retrievedAt": "2026-09-04T17:11:58.296Z",
+      "retryAfter": "2027-03-03T17:11:58.296Z"
     },
     "pool-85c30475ef48": {
       "resolverVersion": 3,
@@ -27418,6 +27578,582 @@
         "ambiguous-recording-choice"
       ],
       "retrievedAt": "2026-09-04T15:40:55.934Z"
+    },
+    "pool-e997aeaab848": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "34cb75c7e5235b7ef042994386650ecb637203802ece2864570470d1a1a3b9e4",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": null,
+      "recordingMbid": "95c5c607-57cd-4e64-b17f-7bda1f3b7e55",
+      "recordingTitle": "Секрет",
+      "artistCredits": [
+        {
+          "name": "The Limba",
+          "musicBrainzArtistId": "f5c676c9-5cf5-49ff-acfe-62020bb31cbf",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "f5c676c9-5cf5-49ff-acfe-62020bb31cbf"
+      ],
+      "isrcs": [],
+      "releaseYear": 2022,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2022-05-20",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "95c5c607-57cd-4e64-b17f-7bda1f3b7e55",
+          "url": "https://musicbrainz.org/recording/95c5c607-57cd-4e64-b17f-7bda1f3b7e55"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:03:22.300Z"
+    },
+    "pool-886b2d52fbe9": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "ed7ca00f4ccc078cf253832a142b282a1e07c943f2bf1d6ad4f7d3bbd4b4719f",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": null,
+      "recordingMbid": "be484eee-464c-48af-8a0f-26f6bba0351f",
+      "recordingTitle": "Быстрая походка",
+      "artistCredits": [
+        {
+          "name": "Чугунный скороход",
+          "musicBrainzArtistId": "5ca9519f-e1b2-438b-a6a3-f23223bb798a",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "5ca9519f-e1b2-438b-a6a3-f23223bb798a"
+      ],
+      "isrcs": [],
+      "releaseYear": 1999,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "1999",
+      "versionType": "original",
+      "album": {
+        "title": "Быстрая походка",
+        "year": 1999,
+        "releaseGroupMbid": "2983bf89-bebc-4eb2-a4ff-dcdf998edcee",
+        "coverUrl": null,
+        "sourceUrl": "https://musicbrainz.org/release-group/2983bf89-bebc-4eb2-a4ff-dcdf998edcee",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "be484eee-464c-48af-8a0f-26f6bba0351f",
+          "url": "https://musicbrainz.org/recording/be484eee-464c-48af-8a0f-26f6bba0351f"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:05:06.037Z"
+    },
+    "pool-4232b240ad1c": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "46eea8ee5c7efeb80797261e79fb595d95da36847308cc475c2374927ecf8c84",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": 0.01,
+      "alternatives": [
+        {
+          "id": "805c22cc-7239-46ea-9e11-f44ee2ac904d",
+          "title": "Трасса Е-95",
+          "score": 1
+        },
+        {
+          "id": "fd43c05a-1efe-4c30-9702-5cde65d9c00d",
+          "title": "Трасса Е-95",
+          "score": 0.99
+        },
+        {
+          "id": "d4be017f-d91e-44ef-8fe1-b725742b18db",
+          "title": "Трасса Е-95",
+          "score": 0.975
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:05:06.458Z",
+      "retryAfter": "2027-09-04T17:05:06.458Z"
+    },
+    "pool-5625bf3ded51": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "b32e1b1dd35103e4f8f4f8ad53040c27606d9ad61a63c9f531371b40c037632e",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.987,
+      "runnerUpDelta": 0.012,
+      "alternatives": [
+        {
+          "id": "8cb4101c-5064-4706-9cd4-791d1fee595e",
+          "title": "Лесной олень",
+          "score": 0.987
+        },
+        {
+          "id": "67aa772f-f7ab-4070-ab8e-231e37033fb5",
+          "title": "Лесной Олень",
+          "score": 0.975
+        },
+        {
+          "id": "22310583-ee3e-440d-9867-6cc5f9c86057",
+          "title": "Лесной Олень",
+          "score": 0.95
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:05:09.721Z",
+      "retryAfter": "2027-09-04T17:05:09.721Z"
+    },
+    "pool-701a5362af6e": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "e1cd42ae701322c818f9cd432313827234145a8773e86e8e38f6cd50bcf0c8d1",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:05:32.427Z",
+      "retryAfter": "2027-03-03T17:05:32.427Z"
+    },
+    "pool-9b768ad51421": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "24e5c6e30edf99916ff6417f50c9b154fe35399e08e323d7ec75b9a0c898f594",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "a4a67268-b438-431b-a3c8-76e094c73532",
+          "title": "Семь морей",
+          "score": 1
+        },
+        {
+          "id": "54cbb721-c40b-4bea-9dda-0f1258e0b6fb",
+          "title": "Семь морей",
+          "score": 1
+        },
+        {
+          "id": "dbe04ada-3bb2-49e3-9240-570b5766bde8",
+          "title": "Семь Морей",
+          "score": 1
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:05:33.438Z",
+      "retryAfter": "2027-09-04T17:05:33.438Z"
+    },
+    "pool-ccbbd75725d7": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "3291fc0f56d12f3fae59db0aa8b6361014315cf025f6a57a3dcb1c202e45076e",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": 0.01,
+      "alternatives": [
+        {
+          "id": "09d2f2ab-3858-4ebc-a199-11fe385322e3",
+          "title": "Страна Лимония",
+          "score": 1
+        },
+        {
+          "id": "a2b210d1-6886-4d27-ad5f-95672e31b39c",
+          "title": "Страна Лимония",
+          "score": 0.99
+        },
+        {
+          "id": "81cd9a54-996f-4a71-82cd-c94195a851e4",
+          "title": "Страна Лимония",
+          "score": 0.95
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:05:34.539Z",
+      "retryAfter": "2027-09-04T17:05:34.539Z"
+    },
+    "pool-ce212e6f31b2": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "d38009659e052124927fad26023dfd8361c2703d57c7b5a87d5ecc99d12d30f6",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.97,
+      "runnerUpDelta": 0.021,
+      "alternatives": [
+        {
+          "id": "77c9c3d6-4c9e-4059-9794-cfc58e6a4304",
+          "title": "Трус не играет в хоккей",
+          "score": 0.97
+        },
+        {
+          "id": "01273fba-bcc4-4354-a388-04b732f1a911",
+          "title": "Трус не играет в хоккей",
+          "score": 0.949
+        },
+        {
+          "id": "3ef8f527-0d3b-4e1a-8a04-743be9eaf623",
+          "title": "Трус не играет в хоккей",
+          "score": 0.949
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:06:20.283Z",
+      "retryAfter": "2027-09-04T17:06:20.283Z"
+    },
+    "pool-e0aafde996b6": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "1044dfe60ab512c33d44a173b64052f6b4f3d8b73de34ea60a2eced357da8725",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.99,
+      "runnerUpDelta": null,
+      "recordingMbid": "98b27598-0c8b-4f8f-aa73-76af19c48363",
+      "recordingTitle": "Плачет девушка в автомате...",
+      "artistCredits": [
+        {
+          "name": "Евгений Осин",
+          "musicBrainzArtistId": "5b8e1722-7e21-4623-80d7-216359be9416",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "5b8e1722-7e21-4623-80d7-216359be9416"
+      ],
+      "isrcs": [],
+      "releaseYear": 1994,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "1994",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "98b27598-0c8b-4f8f-aa73-76af19c48363",
+          "url": "https://musicbrainz.org/recording/98b27598-0c8b-4f8f-aa73-76af19c48363"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:06:22.407Z"
+    },
+    "pool-d2837ac277eb": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "954b02a6aba443b40ef5c309ff9bc9d5b46871e692e66985c826b128c1672fdd",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:06:54.172Z",
+      "retryAfter": "2027-03-03T17:06:54.172Z"
+    },
+    "pool-4fe3def82207": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "03caa34b05d18415b19428d40ad2954ffcf912cbec9e2ec8cd38501df2dbe5d2",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:06:54.322Z",
+      "retryAfter": "2027-03-03T17:06:54.322Z"
+    },
+    "pool-2ae595eb32c4": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "04353a2e54c95f01d97dcbba48dcc71936288845c053b69fb39f68f1ba621d0f",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:12:12.153Z",
+      "retryAfter": "2027-03-03T17:12:12.153Z"
+    },
+    "pool-f456b59a033e": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "1e69d8e2c619935ae608e99566c1e2e952d251a2ff5b4d168f73729e28b4bd55",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": null,
+      "recordingMbid": "88709a1c-9390-42bf-a276-08b97ad97bdd",
+      "recordingTitle": "Мало не много",
+      "artistCredits": [
+        {
+          "name": "Таня Буланова",
+          "musicBrainzArtistId": "a255e270-e602-48aa-8381-356988a81d59",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "a255e270-e602-48aa-8381-356988a81d59"
+      ],
+      "isrcs": [],
+      "releaseYear": 1999,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "1999",
+      "versionType": "original",
+      "album": {
+        "title": "Стая",
+        "kind": "album",
+        "year": 1999,
+        "releaseGroupMbid": "1ed0c8da-cff5-428e-8d7f-6c601e24e1d4",
+        "coverUrl": "https://coverartarchive.org/release/3fc5962f-f321-4eae-9875-be73711755a0/45731004919-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/1ed0c8da-cff5-428e-8d7f-6c601e24e1d4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "88709a1c-9390-42bf-a276-08b97ad97bdd",
+          "url": "https://musicbrainz.org/recording/88709a1c-9390-42bf-a276-08b97ad97bdd"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:12:18.420Z"
+    },
+    "pool-10e3a723f9ab": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "99815b6b10e0d7b6741915bfc69a321c3a61278adfd8964b7def555e0fc9a7cd",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:12:33.081Z",
+      "retryAfter": "2027-03-03T17:12:33.081Z"
+    },
+    "pool-33de1c40f224": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "8695074302018a9cfb98b171997d7318f6121fd9ad3a4bb0cc97be94be5fc306",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "85fb606f-c221-4e52-9077-b0563ad19a9b",
+      "recordingTitle": "Одинокий волк",
+      "artistCredits": [
+        {
+          "name": "Лариса Черникова",
+          "musicBrainzArtistId": "355942f4-1bf3-45eb-9f49-20f972d59b86",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "355942f4-1bf3-45eb-9f49-20f972d59b86"
+      ],
+      "isrcs": [
+        "RUB731518709"
+      ],
+      "releaseYear": 2017,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2017-07-18",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "85fb606f-c221-4e52-9077-b0563ad19a9b",
+          "url": "https://musicbrainz.org/recording/85fb606f-c221-4e52-9077-b0563ad19a9b"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:12:36.232Z"
+    },
+    "pool-8a2c35eef676": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "4b8c83c4ab13f455a1ac658455eade94312e284db2868d8a46d1dedddf86dc1a",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": 0.025,
+      "alternatives": [
+        {
+          "id": "98160741-0261-41a3-8f72-4f0dc5fa2a05",
+          "title": "Ты уйдешь",
+          "score": 1
+        },
+        {
+          "id": "7e476eed-1722-4772-a8b3-9694a9b17f66",
+          "title": "Ты уйдёшь",
+          "score": 0.975
+        },
+        {
+          "id": "d8eed95f-b9fa-4ade-93d7-1175e1a32bc4",
+          "title": "Ты уйдешь",
+          "score": 0.95
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:12:36.516Z",
+      "retryAfter": "2027-09-04T17:12:36.516Z"
+    },
+    "pool-9f6c02007589": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "7dd636f653eaaa7280b238f30a5c29074abea9cee0f2deef5b369624f46283d5",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.99,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "e5cb75ad-13ac-44f0-8bfb-b8f50f1254fa",
+          "title": "Стою на полустаночке",
+          "score": 0.99
+        },
+        {
+          "id": "865ad3f4-ffb8-4e59-875d-eeb71e529bde",
+          "title": "Стою на полустаночке",
+          "score": 0.99
+        },
+        {
+          "id": "c2faf572-9df0-4d8f-9832-7ed138d1ab8f",
+          "title": "Стою на полустаночке",
+          "score": 0.97
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:12:37.686Z",
+      "retryAfter": "2027-09-04T17:12:37.686Z"
+    },
+    "pool-a3ba38bdfcf1": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "a7290c6b32a70dfafb42543874a40784cc48e22d33b5883b710459c67a657861",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.97,
+      "runnerUpDelta": null,
+      "recordingMbid": "862fa7ea-a58f-4be9-8d1f-2149efeee3c2",
+      "recordingTitle": "Далеко",
+      "artistCredits": [
+        {
+          "name": "Ирина Климова",
+          "musicBrainzArtistId": "2410d2dc-a2f0-4650-8f77-7b366d4870de",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "2410d2dc-a2f0-4650-8f77-7b366d4870de"
+      ],
+      "isrcs": [],
+      "releaseYear": 1998,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "1998",
+      "versionType": "original",
+      "album": {
+        "title": "Я так устала ждать",
+        "kind": "album",
+        "year": 1998,
+        "releaseGroupMbid": "73446015-9cff-4367-ab68-7b16027978ec",
+        "coverUrl": "http://coverartarchive.org/release/7f45dd64-5613-4925-a6e3-881130f255f8/4854015161-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/73446015-9cff-4367-ab68-7b16027978ec",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "862fa7ea-a58f-4be9-8d1f-2149efeee3c2",
+          "url": "https://musicbrainz.org/recording/862fa7ea-a58f-4be9-8d1f-2149efeee3c2"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:13:17.710Z"
+    },
+    "pool-f3ad8d3565ad": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "f4742fd4ac1a197cd8a62f1d8597b4ac205579a12bc5916772e41345d66b59be",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "4a39489a-0abf-4c8b-99aa-91fc84680680",
+      "recordingTitle": "Самба с Марадоной",
+      "artistCredits": [
+        {
+          "name": "Анне Вески",
+          "musicBrainzArtistId": "05c8ba8b-39e9-4087-a0b9-d796e640a1c9",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "05c8ba8b-39e9-4087-a0b9-d796e640a1c9"
+      ],
+      "isrcs": [],
+      "releaseYear": 1994,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "1994",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "4a39489a-0abf-4c8b-99aa-91fc84680680",
+          "url": "https://musicbrainz.org/recording/4a39489a-0abf-4c8b-99aa-91fc84680680"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:14:34.799Z"
+    },
+    "pool-b954c959de4f": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "58a5b87ad23b2adb8fa955bd2be3a2572ef93183addc634fcbb75abb922c06df",
+      "status": "temporary-error",
+      "error": "503 Service Temporarily Unavailable",
+      "retrievedAt": "2026-09-04T17:14:37.105Z",
+      "retryAfter": "2026-09-04T17:24:37.105Z"
+    },
+    "pool-1ec84821e60d": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "66a7e58d98a326b632430d478b3874b85dab3c860e12019f0ed007bbff59a6f9",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T17:14:38.809Z",
+      "retryAfter": "2027-03-03T17:14:38.809Z"
+    },
+    "pool-9d64b2c2f15c": {
+      "resolverVersion": 4,
+      "sourceFingerprint": "dcd9e32e778f6949c7859984ca392105e8669507dc0f6ddd9f23edc06ec67187",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.99,
+      "runnerUpDelta": null,
+      "recordingMbid": "052f44b9-0893-4dde-bc9f-1ecfb2c59003",
+      "recordingTitle": "BLACK SIEMENS -",
+      "artistCredits": [
+        {
+          "name": "Pharaoh",
+          "musicBrainzArtistId": "ce910111-f540-4b88-b1b6-52b68cc1a718",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "ce910111-f540-4b88-b1b6-52b68cc1a718"
+      ],
+      "isrcs": [],
+      "releaseYear": 2016,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2016-01-01",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "052f44b9-0893-4dde-bc9f-1ecfb2c59003",
+          "url": "https://musicbrainz.org/recording/052f44b9-0893-4dde-bc9f-1ecfb2c59003"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T17:14:40.638Z"
     }
   },
   "artists": {
@@ -37494,6 +38230,366 @@
         }
       ],
       "retrievedAt": "2026-09-04T15:40:35.871Z",
+      "partialError": null
+    },
+    "f3e9b4dd-f1c6-468a-8808-9747f5a0f23b": {
+      "resolverVersion": 4,
+      "status": "matched",
+      "name": "Arsenium",
+      "musicBrainzArtistId": "f3e9b4dd-f1c6-468a-8808-9747f5a0f23b",
+      "wikidataQid": "Q365400",
+      "artistForm": "Исполнитель",
+      "country": "Moldova",
+      "activeYears": {
+        "since": 1983,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [
+        {
+          "kind": "participation",
+          "text": "Среди заметных событий — участие в проекте «Евровидение-2006».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q365400",
+          "state": "candidate"
+        }
+      ],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "f3e9b4dd-f1c6-468a-8808-9747f5a0f23b",
+          "url": "https://musicbrainz.org/artist/f3e9b4dd-f1c6-468a-8808-9747f5a0f23b"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q365400",
+          "url": "https://www.wikidata.org/wiki/Q365400"
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:02:32.520Z",
+      "partialError": null
+    },
+    "03c6e056-4ece-40dc-aac3-7fa2f3818c74": {
+      "resolverVersion": 4,
+      "status": "matched",
+      "name": "Dress Code",
+      "musicBrainzArtistId": "03c6e056-4ece-40dc-aac3-7fa2f3818c74",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": null,
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "03c6e056-4ece-40dc-aac3-7fa2f3818c74",
+          "url": "https://musicbrainz.org/artist/03c6e056-4ece-40dc-aac3-7fa2f3818c74"
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:04:50.866Z",
+      "partialError": null
+    },
+    "5ca9519f-e1b2-438b-a6a3-f23223bb798a": {
+      "resolverVersion": 4,
+      "status": "matched",
+      "name": "Чугунный скороход",
+      "musicBrainzArtistId": "5ca9519f-e1b2-438b-a6a3-f23223bb798a",
+      "wikidataQid": "Q32361772",
+      "artistForm": "Группа",
+      "country": "Russia",
+      "activeYears": null,
+      "members": {
+        "current": [
+          {
+            "name": "Anton Neumark",
+            "musicBrainzArtistId": "609ef5a8-7109-4a30-9205-5428a029e34b",
+            "roles": [],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/5ca9519f-e1b2-438b-a6a3-f23223bb798a"
+          }
+        ],
+        "former": [],
+        "state": "candidate"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "5ca9519f-e1b2-438b-a6a3-f23223bb798a",
+          "url": "https://musicbrainz.org/artist/5ca9519f-e1b2-438b-a6a3-f23223bb798a"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q32361772",
+          "url": "https://www.wikidata.org/wiki/Q32361772"
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:05:06.037Z",
+      "partialError": null
+    },
+    "38d83dc2-1156-4f11-8d87-64eadc9ace08": {
+      "resolverVersion": 4,
+      "status": "matched",
+      "name": "GAZIROVKA",
+      "musicBrainzArtistId": "38d83dc2-1156-4f11-8d87-64eadc9ace08",
+      "wikidataQid": "Q62079591",
+      "artistForm": "Группа",
+      "country": null,
+      "activeYears": null,
+      "members": {
+        "current": [
+          {
+            "name": "Макс Ивашин",
+            "musicBrainzArtistId": "c12b606f-a290-431c-9316-a4da0db3f074",
+            "roles": [],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/38d83dc2-1156-4f11-8d87-64eadc9ace08"
+          },
+          {
+            "name": "Никита Юрьевич",
+            "musicBrainzArtistId": "43bfb1ff-f355-4538-852e-ebb0fc54a991",
+            "roles": [],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/38d83dc2-1156-4f11-8d87-64eadc9ace08"
+          }
+        ],
+        "former": [],
+        "state": "candidate"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "38d83dc2-1156-4f11-8d87-64eadc9ace08",
+          "url": "https://musicbrainz.org/artist/38d83dc2-1156-4f11-8d87-64eadc9ace08"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q62079591",
+          "url": "https://www.wikidata.org/wiki/Q62079591"
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:06:49.415Z",
+      "partialError": null
+    },
+    "a255e270-e602-48aa-8381-356988a81d59": {
+      "resolverVersion": 4,
+      "status": "matched",
+      "name": "Татьяна Буланова",
+      "musicBrainzArtistId": "a255e270-e602-48aa-8381-356988a81d59",
+      "wikidataQid": "Q467118",
+      "artistForm": "Исполнительница",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1969,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [
+        {
+          "kind": "award",
+          "text": "Среди наград — «заслуженный артист Российской Федерации».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q467118",
+          "state": "candidate"
+        },
+        {
+          "kind": "award",
+          "text": "Среди наград — «премия «Овация»».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q467118",
+          "state": "candidate"
+        },
+        {
+          "kind": "award",
+          "text": "Среди наград — «Золотой граммофон».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q467118",
+          "state": "candidate"
+        }
+      ],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "a255e270-e602-48aa-8381-356988a81d59",
+          "url": "https://musicbrainz.org/artist/a255e270-e602-48aa-8381-356988a81d59"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q467118",
+          "url": "https://www.wikidata.org/wiki/Q467118"
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:12:18.420Z",
+      "partialError": null
+    },
+    "355942f4-1bf3-45eb-9f49-20f972d59b86": {
+      "resolverVersion": 4,
+      "status": "matched",
+      "name": "Лариса Черникова",
+      "musicBrainzArtistId": "355942f4-1bf3-45eb-9f49-20f972d59b86",
+      "wikidataQid": "Q4513624",
+      "artistForm": "Исполнительница",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1977,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "355942f4-1bf3-45eb-9f49-20f972d59b86",
+          "url": "https://musicbrainz.org/artist/355942f4-1bf3-45eb-9f49-20f972d59b86"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q4513624",
+          "url": "https://www.wikidata.org/wiki/Q4513624"
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:12:36.232Z",
+      "partialError": null
+    },
+    "2410d2dc-a2f0-4650-8f77-7b366d4870de": {
+      "resolverVersion": 4,
+      "status": "matched",
+      "name": "Ирина Климова",
+      "musicBrainzArtistId": "2410d2dc-a2f0-4650-8f77-7b366d4870de",
+      "wikidataQid": "Q4223755",
+      "artistForm": "Исполнительница",
+      "country": "Moscow",
+      "activeYears": {
+        "since": 1967,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Irina_Klimova_2006.jpg/500px-Irina_Klimova_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irina_Klimova_2006.jpg",
+        "attribution": "АНО «Музыкальное сердце театра»",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T17:13:17.710Z"
+      },
+      "facts": [
+        {
+          "kind": "award",
+          "text": "Среди наград — «заслуженный артист Российской Федерации».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q4223755",
+          "state": "candidate"
+        }
+      ],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "2410d2dc-a2f0-4650-8f77-7b366d4870de",
+          "url": "https://musicbrainz.org/artist/2410d2dc-a2f0-4650-8f77-7b366d4870de"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q4223755",
+          "url": "https://www.wikidata.org/wiki/Q4223755"
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:13:17.710Z",
+      "partialError": null
+    },
+    "05c8ba8b-39e9-4087-a0b9-d796e640a1c9": {
+      "resolverVersion": 4,
+      "status": "matched",
+      "name": "Anne Veski",
+      "musicBrainzArtistId": "05c8ba8b-39e9-4087-a0b9-d796e640a1c9",
+      "wikidataQid": "Q450134",
+      "artistForm": "Исполнительница",
+      "country": "Estonia",
+      "activeYears": {
+        "since": 1956,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Estraadilaulja_Anne_Veski.JPG/500px-Estraadilaulja_Anne_Veski.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Estraadilaulja_Anne_Veski.JPG",
+        "attribution": "Malle Elvet",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T17:14:34.799Z"
+      },
+      "facts": [
+        {
+          "kind": "award",
+          "text": "Среди наград — «орден Дружбы».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q450134",
+          "state": "candidate"
+        },
+        {
+          "kind": "award",
+          "text": "Среди наград — «Заслуженный артист Эстонской ССР».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q450134",
+          "state": "candidate"
+        },
+        {
+          "kind": "award",
+          "text": "Среди наград — «орден Белой звезды 5-го класса».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q450134",
+          "state": "candidate"
+        }
+      ],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "05c8ba8b-39e9-4087-a0b9-d796e640a1c9",
+          "url": "https://musicbrainz.org/artist/05c8ba8b-39e9-4087-a0b9-d796e640a1c9"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q450134",
+          "url": "https://www.wikidata.org/wiki/Q450134"
+        }
+      ],
+      "retrievedAt": "2026-09-04T17:14:34.799Z",
       "partialError": null
     }
   }

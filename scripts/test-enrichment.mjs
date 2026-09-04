@@ -39,12 +39,15 @@ assert.equal(recordingArtistCredits(recording).length, 2, "all featured performe
 
 const wrongArtist = { ...recording, id: "wrong", "artist-credit": [{ artist: { id: "artist-x", name: "Другой артист" } }] };
 assert.equal(chooseRecording(song, [wrongArtist], aliasIndex).status, "not-found", "same-title song by another artist must be rejected");
+const missingFeaturedArtist = { ...recording, id: "partial", "artist-credit": [{ artist: { id: "artist-1", name: "Би-2" } }] };
+assert.equal(chooseRecording(song, [missingFeaturedArtist], aliasIndex).status, "not-found", "all explicitly named performers must match");
 
 const duplicate = { ...recording, id: "recording-2" };
 assert.equal(chooseRecording(song, [recording, duplicate], aliasIndex, { exactIsrc: true }).status, "ambiguous", "an ISRC collision needs review");
 
 assert.equal(extractVersionType("Песня (Live)"), "live");
 assert.equal(extractVersionType("Песня — acoustic version"), "acoustic");
+assert.equal(extractVersionType("Песня (Original Mix)"), "original");
 assert.equal(extractVersionType("Песня"), "original");
 
 const release = selectReleaseInfo({

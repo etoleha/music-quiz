@@ -1,7 +1,7 @@
 import { fingerprint, normalizeArtist, textSimilarity } from "./chart-normalization.mjs";
 
 const VERSION_PATTERNS = [
-  ["remix", /\b(remix|mix|rmx|ремикс)\b/iu],
+  ["remix", /\b(remix|rmx|ремикс)\b/iu],
   ["live", /\b(live|concert|жив(?:ь|о|ой)|концерт)\b/iu],
   ["acoustic", /\b(acoustic|акустическ)\w*/iu],
   ["edit", /\b(edit|radio edit|версия)\b/iu],
@@ -37,6 +37,8 @@ const artistCoverage = (song, recording, aliasIndex) => {
   }));
 };
 
+const expectedArtistCount = (song, aliasIndex) => Math.max(0, ...artistParticipantSets(song, aliasIndex).map((set) => set.size));
+
 const titleSimilarity = (song, recording) => {
   const remote = fingerprint(recording.title || "");
   return Math.max(0, ...[song.title, ...(song.titleAliases || [])]
@@ -64,12 +66,13 @@ export const scoreRecording = (song, recording, aliasIndex, { exactIsrc = false 
   const artists = artistCoverage(song, recording, aliasIndex);
   const remote = Math.max(0, Math.min(1, Number(recording.score || 0) / 100));
   const year = yearCompatibility(song, recording);
-  const localVersion = extractVersionType(`${song.title} ${(song.titleAliases || []).join(" ")}`);
+  const localVersion = extractVersionType(song.title);
   const remoteVersion = extractVersionType(recording.title || "");
   const versionCompatible = localVersion === remoteVersion || (localVersion === "original" && remoteVersion === "edit");
   const score = title * 0.45 + artists * 0.35 + remote * 0.1 + year * 0.05 + (versionCompatible ? 0.05 : 0);
+  const minimumArtistCoverage = exactIsrc ? 0.5 : expectedArtistCount(song, aliasIndex) > 1 ? 0.8 : 0.66;
   const eligible = title >= (exactIsrc ? 0.88 : 0.84)
-    && artists >= (exactIsrc ? 0.5 : 0.66)
+    && artists >= minimumArtistCoverage
     && versionCompatible;
   return { score, title, artists, year, versionCompatible, eligible, exactIsrc };
 };
@@ -111,6 +114,7 @@ export const selectReleaseInfo = (recording = {}) => {
     firstReleaseDate: recording["first-release-date"] || earliest?.date || null,
     album: albumGroup ? {
       title: albumGroup.title || albumRelease.title,
+      kind: "album",
       year: yearFrom(albumGroup["first-release-date"] || albumRelease.date),
       releaseGroupMbid: albumGroup.id,
       coverUrl: `https://coverartarchive.org/release-group/${albumGroup.id}/front-500`,

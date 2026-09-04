@@ -3,6 +3,11 @@ import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
 import { rankYouTubeResults, searchYouTubeVideos } from "./youtube-search.mjs";
+import {
+  applyArtistCreditOverride,
+  artistIdentityFromStatusOverride,
+  validateSongStatusOverrides,
+} from "./song-status-overrides.mjs";
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
@@ -33,10 +38,28 @@ if (databaseIndex.archiveSha256 && crypto.createHash("sha256").update(compressed
   throw new Error("Song database archive checksum mismatch");
 }
 const database = JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
-const usedArtistIds = new Set(database.songs.filter((song) => song.quizRefs?.length).flatMap((song) => song.artistIds));
+const statusOverrides = readJson(dataPath("song-status-overrides.json"));
+validateSongStatusOverrides(statusOverrides);
+const statusOverrideFor = (song) => statusOverrides.songs?.[song.id]
+  || statusOverrides.songs?.[`${song.normalizedArtist?.primary}:${song.normalizedTitle}`]
+  || {};
+
+// The database and the ready pool are mutually derived. Apply identity/status
+// corrections here as well so a new manual override can bootstrap both files in
+// one rebuild instead of being rejected as a stale ready-pool snapshot.
+for (const song of database.songs) {
+  const manual = statusOverrideFor(song);
+  const identity = artistIdentityFromStatusOverride(manual, `status override for ${song.id}`);
+  applyArtistCreditOverride(song, identity);
+  if (identity) song.artistIds = [...identity.artistIds];
+  if (manual.workflowStatus) song.status.workflow = manual.workflowStatus;
+  if (manual.language) song.status.language = manual.language;
+}
 const artistIdOverlaps = (artistId, collection) => [...collection].some((other) =>
   artistId === other || (Math.min(artistId.length, other.length) >= 5 && (artistId.includes(other) || other.includes(artistId))));
 const anyArtistOverlaps = (artistIds, collection) => artistIds.some((artistId) => artistIdOverlaps(artistId, collection));
+const usedArtistIds = new Set(database.songs.filter((song) => song.quizRefs?.length).flatMap((song) => song.artistIds));
+for (const song of database.songs) song.allArtistsUnused = !anyArtistOverlaps(song.artistIds, usedArtistIds);
 const songsByPoolId = new Map();
 for (const song of database.songs) {
   for (const reference of song.poolRefs || []) songsByPoolId.set(reference.id, song);
@@ -125,7 +148,7 @@ const suspiciousMetadata = (track, song) => knownBadPoolIds.has(track.id)
 const buildCandidateQueues = ({ requireUnusedArtists }) => Object.fromEntries(Object.keys(scaledTargets).map((era) => [era, orderCandidates(poolTracks.filter((track) => {
     const song = songsByPoolId.get(track.id);
     if (eraFor(track, song) !== era || suspiciousMetadata(track, song) || !eligibleSourceFor(track, song)) return false;
-    if (!song?.readyForCuration || song.quizRefs?.length) return false;
+    if (!song?.readyForCuration || song.status?.workflow !== "waiting" || song.quizRefs?.length) return false;
     return !requireUnusedArtists || (song.allArtistsUnused && !anyArtistOverlaps(song.artistIds, usedArtistIds));
   }))]));
 

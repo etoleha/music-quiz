@@ -13,7 +13,7 @@ type AutoSong = {
   artistMbids?: string[];
   releaseYear?: number | null;
   releaseYearState?: "verified" | "candidate" | "conflict";
-  album?: { title: string; year?: number | null; coverUrl?: string; sourceUrl?: string; rightsStatus?: string } | null;
+  album?: { title: string; kind?: "album" | "single" | "soundtrack" | "release"; year?: number | null; coverUrl?: string; sourceUrl?: string; rightsStatus?: string } | null;
   sources?: Array<{ provider: string; url: string }>;
 };
 
@@ -35,10 +35,12 @@ type CatalogSong = {
   title: string;
   artistAliases: string[];
   titleAliases: string[];
+  quizRefs?: Array<{ youtubeId?: string }>;
+  quizPreparation?: { youtube?: { videoId?: string } } | null;
   release?: {
     releaseYear?: number | null;
     releaseYearStatus?: "verified" | "candidate" | "missing";
-    album?: { title: string; year?: number | null; coverUrl?: string; sourceUrl?: string; rightsStatus?: string } | null;
+    album?: { title: string; kind?: "album" | "single" | "soundtrack" | "release"; year?: number | null; coverUrl?: string; sourceUrl?: string; rightsStatus?: string } | null;
   };
   enrichment?: {
     artistForm?: string | null;
@@ -72,13 +74,15 @@ function load() {
   return loaded;
 }
 
-export function getPersistedTrackInfo(artist: string, title: string) {
+export function getPersistedTrackInfo(artist: string, title: string, youtubeId?: string) {
   const data = load();
   const artistKey = fingerprint(artist);
   const titleKey = fingerprint(title);
-  const song = data.songs.find((item) =>
-    [item.artist, ...(item.artistAliases || [])].some((value) => fingerprint(value) === artistKey)
-    && [item.title, ...(item.titleAliases || [])].some((value) => fingerprint(value) === titleKey));
+  const exactVideoSong = youtubeId ? data.songs.find((item) => item.quizPreparation?.youtube?.videoId === youtubeId
+    || item.quizRefs?.some((reference) => reference.youtubeId === youtubeId)) : undefined;
+  const song = exactVideoSong || data.songs.find((item) =>
+      [item.artist, ...(item.artistAliases || [])].some((value) => fingerprint(value) === artistKey)
+      && [item.title, ...(item.titleAliases || [])].some((value) => fingerprint(value) === titleKey));
   if (!song) return null;
   const enrichment = data.enrichment.songs[song.id];
   if (!enrichment || enrichment.status !== "matched") {
@@ -89,7 +93,7 @@ export function getPersistedTrackInfo(artist: string, title: string) {
       facts: (song.enrichment?.facts || []).filter((fact) => fact.state !== "candidate").slice(0, 3),
       releaseYear: song.release?.releaseYear || undefined,
       releaseYearStatus: song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
-      album: song.release?.album ? { ...song.release.album, kind: "album" } : undefined,
+      album: song.release?.album ? { ...song.release.album, kind: song.release.album.kind || "album" } : undefined,
       sources: (song.enrichment?.sources || []).map((url) => ({ provider: "catalog", url })),
     };
   }
@@ -116,7 +120,7 @@ export function getPersistedTrackInfo(artist: string, title: string) {
     recordingTitle: enrichment.recordingTitle,
     releaseYear: enrichment.releaseYear || song.release?.releaseYear || undefined,
     releaseYearStatus: enrichment.releaseYearState === "verified" || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
-    album: enrichment.album ? { ...enrichment.album, kind: "album" } : song.release?.album ? { ...song.release.album, kind: "album" } : undefined,
+    album: enrichment.album ? { ...enrichment.album, kind: enrichment.album.kind || "album" } : song.release?.album ? { ...song.release.album, kind: song.release.album.kind || "album" } : undefined,
     sources: [
       ...(enrichment.sources || []),
       ...profiles.flatMap((profile) => profile.sources || []),
