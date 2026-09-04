@@ -2,6 +2,7 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
+import crypto from "node:crypto";
 
 type CatalogSong = {
   id: string;
@@ -34,6 +35,9 @@ function loadArchive() {
   const compressed = Array.isArray(index.archiveParts) && index.archiveParts.length
     ? Buffer.concat(index.archiveParts.map((part: string) => fs.readFileSync(path.join(dataDirectory, part))))
     : fs.readFileSync(path.join(dataDirectory, index.archive));
+  if (index.archiveSha256 && crypto.createHash("sha256").update(compressed).digest("hex") !== index.archiveSha256) {
+    throw new Error("Song database archive checksum mismatch");
+  }
   archive = JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
   return archive!;
 }

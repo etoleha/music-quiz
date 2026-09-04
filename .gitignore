@@ -58,5 +58,6 @@ next-env.d.ts
 !/data/song-database-review.json
 !/data/song-status-overrides.json
 !/data/song-enrichment-overrides.json
+!/data/song-enrichment-auto.json
 !/data/quiz-generation-policy.json
 !/data/quiz-candidates.json

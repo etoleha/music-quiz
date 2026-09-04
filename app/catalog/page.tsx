@@ -24,6 +24,7 @@ export default async function CatalogPage({ searchParams }: { searchParams: Prom
       <article><strong>{Number(result.stats.readyForCuration).toLocaleString("ru-RU")}</strong><span>готовы к отбору</span></article>
       <article><strong>{Number(result.stats.readyForUniqueArtistQuiz).toLocaleString("ru-RU")}</strong><span>с новыми исполнителями</span></article>
       <article><strong>{Number(result.stats.withCandidateReleaseYear).toLocaleString("ru-RU")}</strong><span>есть кандидат года</span></article>
+      <article><strong>{Number(result.stats.withAutomaticEnrichment || 0).toLocaleString("ru-RU")}</strong><span>найдена подробная справка</span></article>
       <article><strong>{Number(result.stats.readyForPublication).toLocaleString("ru-RU")}</strong><span>полностью готовы</span></article>
     </section>
     <form className="catalog-filters">

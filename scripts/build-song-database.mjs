@@ -20,6 +20,7 @@ const aliasIndex = buildAliasIndex(aliases);
 const canonicalArtistNames = new Map(aliases.artists.map(({ canonical }) => [fingerprint(canonical), canonical]));
 const overrides = readJson(dataPath("song-status-overrides.json"));
 const enrichmentOverrides = readJson(dataPath("song-enrichment-overrides.json"));
+const enrichmentAuto = readJson(dataPath("song-enrichment-auto.json"));
 const catalogIndex = readJson(dataPath("chart-catalog.json"));
 const catalogArchive = catalogIndex.archive
   ? JSON.parse(zlib.gunzipSync(fs.readFileSync(dataPath(catalogIndex.archive))).toString("utf8"))
@@ -29,11 +30,12 @@ const catalogTracks = catalogArchive?.tracks
 const poolFiles = fs.readdirSync(dataPath()).filter((file) => /^song-pool(?:-\d+)?\.json$/.test(file)).sort();
 
 const unique = (values) => [...new Set(values.filter(Boolean).map(String))];
+const uniqueNumbers = (values) => [...new Set(values.filter(validYear).map(Number))];
 const externalKey = (namespace, value) => `${namespace}:${fingerprint(value)}`;
 const identityKey = (normalizedArtist, normalizedTitle) => `${normalizedArtist.primary}:${normalizedTitle}`;
 const hasCyrillic = (value) => /[а-яёіїєґ]/iu.test(value || "");
 const validYear = (value) => Number.isInteger(Number(value)) && Number(value) >= 1900 && Number(value) <= 2100;
-const yearsFromValues = (values) => unique(values.flatMap((value) => String(value || "").match(/(?:19|20)\d{2}/g) || []).filter(validYear).map(Number)).sort();
+const yearsFromValues = (values) => uniqueNumbers(values.flatMap((value) => String(value || "").match(/(?:19|20)\d{2}/g) || [])).sort();
 
 const splitArguments = (source) => {
   const values = [];
@@ -250,6 +252,10 @@ const enrichmentFor = (entry) => enrichmentOverrides.songs?.[entry.id]
   || enrichmentOverrides.songs?.[identityKey(entry.normalizedArtist, entry.normalizedTitle)]
   || {};
 
+const automaticEnrichmentFor = (entry) => enrichmentAuto.songs?.[entry.id]
+  || enrichmentAuto.songs?.[identityKey(entry.normalizedArtist, entry.normalizedTitle)]
+  || {};
+
 for (const entry of entries) {
   const resolvedArtistIds = unique(entry.artistAliases.flatMap((value) => normalizeArtist(value, aliasIndex).participants)).sort();
   entry.artistIdentityResolved = resolvedArtistIds.length > 0;
@@ -265,6 +271,7 @@ const usedArtistIds = new Set(entries.filter(({ quizRefs }) => quizRefs.length).
 for (const entry of entries) {
   const manual = overrideFor(entry);
   const enrichment = enrichmentFor(entry);
+  const automaticEnrichment = automaticEnrichmentFor(entry);
   const automaticLanguage = classifyLanguage(entry);
   const language = manual.language || automaticLanguage.value;
   const workflowStatus = manual.workflowStatus || (entry.quizRefs.length ? "used" : entry.explicit ? "rejected" : "waiting");
@@ -290,30 +297,44 @@ for (const entry of entries) {
   entry.quizCandidate = workflowStatus === "waiting" && !entry.explicit && language === "russian" && fragmentStatus !== "bad";
   entry.usedArtistIds = entry.artistIds.filter((artistId) => usedArtistIds.has(artistId));
   entry.allArtistsUnused = entry.usedArtistIds.length === 0;
-  const candidateReleaseYears = entry.releaseYearCandidates || [];
+  const candidateReleaseYears = [
+    ...(entry.releaseYearCandidates || []),
+    ...(validYear(automaticEnrichment.releaseYear) ? [{
+      year: Number(automaticEnrichment.releaseYear),
+      source: automaticEnrichment.releaseYearState === "verified" ? "musicbrainz-isrc" : "musicbrainz-search",
+    }] : []),
+  ].filter((candidate, index, candidates) => candidates.findIndex(({ year }) => Number(year) === Number(candidate.year)) === index);
   const automaticReleaseYear = candidateReleaseYears.length === 1 ? candidateReleaseYears[0].year : null;
+  const identifierReleaseYear = automaticEnrichment.releaseYearState === "verified" && validYear(automaticEnrichment.releaseYear)
+    ? Number(automaticEnrichment.releaseYear)
+    : null;
   entry.release = {
-    releaseYear: validYear(enrichment.releaseYear) ? Number(enrichment.releaseYear) : automaticReleaseYear,
-    releaseYearStatus: validYear(enrichment.releaseYear) ? "verified" : automaticReleaseYear ? "candidate" : "missing",
+    releaseYear: validYear(enrichment.releaseYear) ? Number(enrichment.releaseYear) : identifierReleaseYear || automaticReleaseYear,
+    releaseYearStatus: validYear(enrichment.releaseYear) || identifierReleaseYear ? "verified" : automaticReleaseYear ? "candidate" : "missing",
     versionYear: validYear(enrichment.versionYear) ? Number(enrichment.versionYear) : null,
-    versionType: enrichment.versionType || "original",
-    album: enrichment.album || null,
+    versionType: enrichment.versionType || automaticEnrichment.versionType || "original",
+    album: enrichment.album || automaticEnrichment.album || null,
     candidateYears: candidateReleaseYears,
   };
+  const artistProfiles = (automaticEnrichment.artistMbids || []).map((id) => enrichmentAuto.artists?.[id]).filter(Boolean);
   entry.enrichment = {
-    artistForm: enrichment.artistForm || null,
-    performers: enrichment.performers || [],
-    artistImage: enrichment.artistImage || null,
-    facts: enrichment.facts || [],
-    sources: enrichment.sources || [],
-    review: enrichment.review || (entry.release.releaseYearStatus === "verified" ? "verified" : entry.release.candidateYears.length === 1 ? "candidate" : "needs-review"),
+    artistForm: enrichment.artistForm || artistProfiles[0]?.artistForm || null,
+    performers: enrichment.performers || automaticEnrichment.artistCredits || [],
+    artistImage: enrichment.artistImage || artistProfiles.find(({ photo }) => photo)?.photo || null,
+    facts: enrichment.facts || artistProfiles.flatMap(({ facts = [] }) => facts).slice(0, 3),
+    sources: enrichment.sources || unique([
+      ...(automaticEnrichment.sources || []).map(({ url }) => url),
+      ...artistProfiles.flatMap(({ sources = [] }) => sources.map(({ url }) => url)),
+    ]),
+    review: enrichment.review || automaticEnrichment.overallState || (entry.release.releaseYearStatus === "verified" ? "verified" : entry.release.candidateYears.length === 1 ? "candidate" : "needs-review"),
   };
   entry.readyForCuration = entry.quizCandidate && reviewStatus === "verified" && entry.artistIdentityResolved;
   entry.readyForUniqueArtistQuiz = entry.readyForCuration && entry.allArtistsUnused;
   entry.readyForPublication = entry.readyForCuration
     && Boolean(entry.externalIds.youtube?.length)
     && fragmentStatus === "good"
-    && entry.release.releaseYearStatus === "verified";
+    && entry.release.releaseYearStatus === "verified"
+    && entry.enrichment.review === "verified";
   entry.readyForAutomaticQuiz = entry.readyForPublication && entry.allArtistsUnused;
   if (manual.notes) entry.notes = unique(Array.isArray(manual.notes) ? manual.notes : [manual.notes]);
   delete entry.releaseYearCandidates;
@@ -345,6 +366,7 @@ const stats = {
   usedArtists: usedArtistIds.size,
   withReleaseYear: entries.filter(({ release }) => release.releaseYear).length,
   withCandidateReleaseYear: entries.filter(({ release }) => release.candidateYears.length).length,
+  withAutomaticEnrichment: entries.filter(({ enrichment }) => enrichment.sources.length).length,
   workflow: countBy(({ status }) => status.workflow),
   language: countBy(({ status }) => status.language),
   review: countBy(({ status }) => status.review),
@@ -360,6 +382,7 @@ const archive = {
   songs: entries,
 };
 const compressedArchive = zlib.gzipSync(Buffer.from(JSON.stringify(archive)), { level: 9 });
+const archiveSha256 = crypto.createHash("sha256").update(compressedArchive).digest("hex");
 fs.writeFileSync(dataPath(archiveName), compressedArchive);
 const archiveParts = [];
 for (let offset = 0, part = 1; offset < compressedArchive.length; offset += archivePartSize, part += 1) {
@@ -372,6 +395,7 @@ fs.writeFileSync(dataPath("song-database.json"), `${JSON.stringify({
   generatedAt,
   archive: archiveName,
   archiveParts,
+  archiveSha256,
   stats,
   statusDimensions: {
     workflow: ["waiting", "used", "rejected"],

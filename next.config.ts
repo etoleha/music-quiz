@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       "./data/song-database.json.gz",
       "./data/song-database.json.gz.part-01",
       "./data/song-database.json.gz.part-02",
+      "./data/song-enrichment-auto.json",
     ],
   },
 };

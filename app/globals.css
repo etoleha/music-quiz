@@ -401,7 +401,7 @@ body { background: #f5f7f9; }
 .catalog-back { color: #54748a; font-size: .9rem; text-decoration: none; }
 .catalog-count { color: #426a82; font-size: 2.8rem; line-height: .9; font-weight: 720; text-align: right; }
 .catalog-count small { display: block; margin-top: 9px; color: #83909e; font-size: .75rem; font-weight: 520; }
-.catalog-stats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-bottom: 12px; }
+.catalog-stats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin-bottom: 12px; }
 .catalog-stats article { min-height: 104px; padding: 16px; border: 1px solid #dce3e9; border-radius: 13px; background: #fff; }
 .catalog-stats strong, .catalog-stats span { display: block; }.catalog-stats strong { color: #365d76; font-size: 1.75rem; }.catalog-stats span { margin-top: 9px; color: #718096; font-size: .82rem; }
 .catalog-filters { display: grid; grid-template-columns: minmax(190px, 1.5fr) repeat(5, minmax(125px, 1fr)) auto auto; align-items: end; gap: 8px; margin-bottom: 12px; padding: 12px; border: 1px solid #dce3e9; border-radius: 13px; background: #fff; }
