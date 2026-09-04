@@ -105,6 +105,22 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
     ? primary.activeYears?.ended ? `${since}–${until || "?"}` : `с ${since}`
     : undefined;
   const artistUrl = enrichment.artistMbids?.[0] ? `https://musicbrainz.org/artist/${enrichment.artistMbids[0]}` : undefined;
+  const catalogYear = song.release?.releaseYear || undefined;
+  const verifiedEnrichmentYear = enrichment.releaseYearState === "verified"
+    ? enrichment.releaseYear || undefined
+    : undefined;
+  const releaseYear = verifiedEnrichmentYear || catalogYear || enrichment.releaseYear || undefined;
+  const enrichmentAlbumYear = enrichment.album?.year || enrichment.releaseYear || undefined;
+  const enrichmentAlbumMatchesCatalog = !catalogYear || !enrichmentAlbumYear
+    || Math.abs(catalogYear - enrichmentAlbumYear) <= 2;
+  const catalogAlbumYear = song.release?.album?.year || undefined;
+  const catalogAlbumMatchesYear = !catalogYear || !catalogAlbumYear
+    || Math.abs(catalogYear - catalogAlbumYear) <= 2;
+  const album = enrichment.album && (verifiedEnrichmentYear || enrichmentAlbumMatchesCatalog)
+    ? { ...enrichment.album, kind: enrichment.album.kind || "album" }
+    : song.release?.album && catalogAlbumMatchesYear
+      ? { ...song.release.album, kind: song.release.album.kind || "album" }
+      : undefined;
   return {
     name: primary?.name || enrichment.artistCredits?.map(({ name, joinPhrase = "" }) => `${name}${joinPhrase}`).join("").trim() || artist,
     artistForm: primary?.artistForm || song.enrichment?.artistForm || undefined,
@@ -118,9 +134,9 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
     ].filter((fact) => fact.state === "verified").slice(0, 3),
     artistUrl,
     recordingTitle: enrichment.recordingTitle,
-    releaseYear: enrichment.releaseYear || song.release?.releaseYear || undefined,
-    releaseYearStatus: enrichment.releaseYearState === "verified" || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
-    album: enrichment.album ? { ...enrichment.album, kind: enrichment.album.kind || "album" } : song.release?.album ? { ...song.release.album, kind: song.release.album.kind || "album" } : undefined,
+    releaseYear,
+    releaseYearStatus: verifiedEnrichmentYear || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
+    album,
     sources: [
       ...(enrichment.sources || []),
       ...profiles.flatMap((profile) => profile.sources || []),

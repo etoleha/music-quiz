@@ -112,8 +112,9 @@ const readQuizTracks = () => {
       const artistAliases = isExtra ? [artist] : (literal(args[2]) || []);
       const title = literal(args[isExtra ? 2 : 3]);
       const titleAliases = isExtra ? [title] : (literal(args[4]) || []);
+      const releaseYear = isExtra ? literal(args[5]) : null;
       if (!youtubeId || !artist || !title || !quizId) throw new Error(`Cannot read quiz track: ${file}: ${line.trim()}`);
-      tracks.push({ quizId, youtubeId, artist, title, artistAliases, titleAliases });
+      tracks.push({ quizId, youtubeId, artist, title, artistAliases, titleAliases, releaseYear });
     }
   }
   return tracks;
@@ -200,6 +201,7 @@ const newEntry = ({ id, artist, title, artistAliases = [], titleAliases = [], ex
     chart: null,
     poolRefs: [],
     quizRefs: [],
+    quizReleaseYears: [],
     publishedArtistCredits: [],
   };
   entries.push(entry);
@@ -290,6 +292,7 @@ for (const track of readQuizTracks()) {
   attachExternalIds(entry, ids);
   entry.publishedArtistCredits = unique([...(entry.publishedArtistCredits || []), track.artist]);
   entry.quizRefs.push({ quizId: track.quizId, youtubeId: track.youtubeId });
+  if (validYear(track.releaseYear)) entry.quizReleaseYears = uniqueNumbers([...(entry.quizReleaseYears || []), track.releaseYear]);
 }
 
 const classifyLanguage = (entry) => {
@@ -403,6 +406,7 @@ for (const entry of entries) {
   entry.allArtistsUnused = entry.usedArtistIds.length === 0;
   const candidateReleaseYears = [
     ...(entry.releaseYearCandidates || []),
+    ...(entry.quizReleaseYears || []).map((year) => ({ year: Number(year), source: "published-quiz" })),
     ...(validYear(preparation?.approximateYear) ? [{ year: Number(preparation.approximateYear), source: "quiz-ready-pool" }] : []),
     ...(validYear(automaticEnrichment.releaseYear) ? [{
       year: Number(automaticEnrichment.releaseYear),
@@ -414,12 +418,22 @@ for (const entry of entries) {
     ? Number(automaticEnrichment.releaseYear)
     : null;
   const preparedReleaseYear = validYear(preparation?.approximateYear) ? Number(preparation.approximateYear) : null;
+  const publishedReleaseYear = entry.quizReleaseYears?.length === 1 ? Number(entry.quizReleaseYears[0]) : null;
+  const selectedReleaseYear = validYear(enrichment.releaseYear)
+    ? Number(enrichment.releaseYear)
+    : identifierReleaseYear || preparedReleaseYear || publishedReleaseYear || automaticReleaseYear;
+  const automaticAlbumYear = automaticEnrichment.album?.year || automaticEnrichment.releaseYear || null;
+  const automaticAlbumMatchesRelease = !selectedReleaseYear || !validYear(automaticAlbumYear)
+    || Math.abs(selectedReleaseYear - Number(automaticAlbumYear)) <= 2;
+  const automaticAlbum = automaticEnrichment.releaseYearState === "verified" || automaticAlbumMatchesRelease
+    ? automaticEnrichment.album
+    : null;
   entry.release = {
-    releaseYear: validYear(enrichment.releaseYear) ? Number(enrichment.releaseYear) : identifierReleaseYear || preparedReleaseYear || automaticReleaseYear,
-    releaseYearStatus: validYear(enrichment.releaseYear) || identifierReleaseYear ? "verified" : preparedReleaseYear || automaticReleaseYear ? "candidate" : "missing",
+    releaseYear: selectedReleaseYear,
+    releaseYearStatus: validYear(enrichment.releaseYear) || identifierReleaseYear ? "verified" : preparedReleaseYear || publishedReleaseYear || automaticReleaseYear ? "candidate" : "missing",
     versionYear: validYear(enrichment.versionYear) ? Number(enrichment.versionYear) : null,
     versionType: enrichment.versionType || automaticEnrichment.versionType || "original",
-    album: enrichment.album || automaticEnrichment.album || null,
+    album: enrichment.album || automaticAlbum || null,
     candidateYears: candidateReleaseYears,
   };
   const artistProfiles = (automaticEnrichment.artistMbids || []).map((id) => enrichmentAuto.artists?.[id]).filter(Boolean);
@@ -444,6 +458,7 @@ for (const entry of entries) {
   entry.readyForAutomaticQuiz = entry.readyForPublication && entry.allArtistsUnused;
   if (manual.notes) entry.notes = unique(Array.isArray(manual.notes) ? manual.notes : [manual.notes]);
   delete entry.releaseYearCandidates;
+  delete entry.quizReleaseYears;
 }
 
 entries.sort((left, right) =>

@@ -21,6 +21,12 @@ const hiFi = database.songs.find(({ artistAliases, titleAliases }) =>
 assert.ok(hiFi, "corrected Hi-Fi track must exist");
 assert.equal(database.songs.some(({ artist, title }) => artist === "Hi" && title.startsWith("Fi - ")), false);
 
+const sovietQuizSongs = database.songs.filter(({ quizRefs }) =>
+  quizRefs.some(({ quizId }) => quizId === "soviet-hard-01"));
+assert.equal(sovietQuizSongs.length, 20);
+assert.ok(sovietQuizSongs.every(({ release }) => release.releaseYear >= 1900 && release.releaseYear <= 1991),
+  "годы советского квиза не должны подменяться датами цифровых переизданий");
+
 for (const song of database.songs) {
   assert.ok(["waiting", "used", "rejected"].includes(song.status.workflow));
   assert.ok(["russian", "foreign", "mixed", "unknown"].includes(song.status.language));
