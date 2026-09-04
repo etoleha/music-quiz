@@ -9,6 +9,11 @@ import {
   normalizeArtist,
   normalizeObservation,
 } from "./chart-normalization.mjs";
+import {
+  externalIdsFromStatusOverride,
+  publicationBlockersFor,
+  validateSongStatusOverrides,
+} from "./song-status-overrides.mjs";
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
@@ -19,6 +24,7 @@ const aliases = readJson(dataPath("artist-aliases.json"));
 const aliasIndex = buildAliasIndex(aliases);
 const canonicalArtistNames = new Map(aliases.artists.map(({ canonical }) => [fingerprint(canonical), canonical]));
 const overrides = readJson(dataPath("song-status-overrides.json"));
+validateSongStatusOverrides(overrides);
 const enrichmentOverrides = readJson(dataPath("song-enrichment-overrides.json"));
 const enrichmentAuto = readJson(dataPath("song-enrichment-auto.json"));
 const catalogIndex = readJson(dataPath("chart-catalog.json"));
@@ -265,6 +271,10 @@ const automaticEnrichmentFor = (entry) => enrichmentAuto.songs?.[entry.id]
   || {};
 
 for (const entry of entries) {
+  attachExternalIds(entry, externalIdsFromStatusOverride(overrideFor(entry), `status override for ${entry.id}`));
+}
+
+for (const entry of entries) {
   // Alternate spellings are accepted answers, not additional credited people.
   const creditValues = entry.publishedArtistCredits?.length ? entry.publishedArtistCredits : [entry.artist];
   const resolvedArtistIds = unique(creditValues.flatMap((value) => normalizeArtist(value, aliasIndex).participants)).sort();
@@ -348,16 +358,7 @@ for (const entry of entries) {
   };
   entry.readyForCuration = entry.quizCandidate && reviewStatus === "verified" && entry.artistIdentityResolved;
   entry.readyForUniqueArtistQuiz = entry.readyForCuration && entry.allArtistsUnused;
-  entry.publicationBlockers = [
-    !entry.artistIdentityResolved && "artist-identity",
-    language !== "russian" && "language",
-    reviewStatus !== "verified" && "editorial-review",
-    !entry.allArtistsUnused && "artist-already-used",
-    entry.release.releaseYearStatus !== "verified" && "release-year",
-    !entry.externalIds.youtube?.length && "youtube-video",
-    fragmentStatus !== "good" && "fragment-review",
-    entry.enrichment.review !== "verified" && "enrichment-review",
-  ].filter(Boolean);
+  entry.publicationBlockers = publicationBlockersFor(entry, { language, reviewStatus, fragmentStatus });
   entry.publicationProgress = Number(((8 - entry.publicationBlockers.length) / 8).toFixed(3));
   entry.readyForPublication = entry.readyForCuration
     && !entry.publicationBlockers.some((blocker) => ["release-year", "youtube-video", "fragment-review", "enrichment-review"].includes(blocker));

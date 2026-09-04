@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T10:19:04.307Z",
-  "totalNeedsReview": 5932,
+  "generatedAt": "2026-09-04T10:47:50.700Z",
+  "totalNeedsReview": 5935,
   "shown": 500,
   "songs": [
     {
@@ -3569,6 +3569,61 @@
       ],
       "poolRefs": [],
       "externalIds": {}
+    },
+    {
+      "id": "chart-00091",
+      "artist": "Мияги",
+      "title": "I Got Love",
+      "candidateScore": 378.65,
+      "workflow": "rejected",
+      "language": "russian",
+      "languageEvidence": [
+        "manual-override"
+      ],
+      "releaseYear": 2016,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "miyagi"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "apple-music-ru",
+        "shazam-ru",
+        "spotify-ru-daily-history",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [
+        {
+          "file": "song-pool-3.json",
+          "id": "pool-2061"
+        },
+        {
+          "file": "song-pool.json",
+          "id": "pool-0810"
+        }
+      ],
+      "externalIds": {
+        "spotify": [
+          "43wgyQXc2M9KmTDUqVzugM"
+        ],
+        "tophit": [
+          "80612"
+        ],
+        "apple-music-ru": [
+          "1604435517"
+        ],
+        "youtube": [
+          "nidQCt_HEsY"
+        ]
+      }
     },
     {
       "id": "chart-08619",
@@ -10166,6 +10221,36 @@
         ],
         "isrc": [
           "NLZ542202348"
+        ]
+      }
+    },
+    {
+      "id": "chart-09070",
+      "artist": "ЦУЕФА",
+      "title": "Я ТЕБЯ МОГНУ",
+      "candidateScore": 174.97,
+      "workflow": "rejected",
+      "language": "russian",
+      "languageEvidence": [
+        "manual-override"
+      ],
+      "releaseYear": 2026,
+      "candidateYears": [],
+      "artistIds": [
+        "tsuefa"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "shazam-ru",
+        "youtube-ru-weekly"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "youtube": [
+          "3_S6MxP2NIc"
         ]
       }
     },
@@ -17306,83 +17391,6 @@
       "externalIds": {
         "tophit": [
           "251847"
-        ]
-      }
-    },
-    {
-      "id": "chart-03353",
-      "artist": "Benny Blanco & Calvin Harris",
-      "title": "I Found You",
-      "candidateScore": 162.12,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "bennyblanco",
-        "calvinharris"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "92666"
-        ],
-        "isrc": [
-          "USUM71822027"
-        ]
-      }
-    },
-    {
-      "id": "chart-03175",
-      "artist": "Backstreet Boys",
-      "title": "Inconsolable",
-      "candidateScore": 162.1,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2007,
-      "candidateYears": [
-        {
-          "year": 2007,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "backstreetboys"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "9311"
-        ],
-        "isrc": [
-          "USJI10700559"
         ]
       }
     }

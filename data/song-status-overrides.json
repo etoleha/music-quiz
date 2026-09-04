@@ -3,7 +3,92 @@
   "notes": [
     "Ручные решения имеют приоритет над автоматической классификацией.",
     "Ключ может быть id из song-database или строкой normalizedArtist:normalizedTitle.",
-    "workflowStatus: waiting | used | rejected; language: russian | foreign | mixed | unknown; reviewStatus: verified | needs-review; fragmentStatus: good | bad | not-checked."
+    "workflowStatus: waiting | used | rejected; language: russian | foreign | mixed | unknown; reviewStatus: verified | needs-review; fragmentStatus: good | bad | not-checked.",
+    "Подтверждённые вручную YouTube ID задаются как externalIds.youtube: массив 11-символьных ID, без URL. Это не подтверждает качество фрагмента."
   ],
-  "songs": {}
+  "songs": {
+    "chart-00091": {
+      "workflowStatus": "rejected",
+      "language": "russian",
+      "reviewStatus": "needs-review",
+      "externalIds": { "youtube": ["nidQCt_HEsY"] },
+      "notes": ["Неполный credit: Miyagi & Эндшпиль feat. Рем Дигга. Не публиковать до исправления участников."]
+    },
+    "chart-08951": { "language": "russian", "externalIds": { "youtube": ["ipDp8Ishe3s"] } },
+    "chart-08946": { "language": "russian", "externalIds": { "youtube": ["feGgQxcNYZ0"] } },
+    "chart-08943": { "language": "russian", "externalIds": { "youtube": ["67dU_Zs0ZZI"] } },
+    "chart-08952": { "language": "russian", "externalIds": { "youtube": ["OKzav3aWi4I"] } },
+    "chart-09011": { "language": "russian", "externalIds": { "youtube": ["ngmOMZQZz0s"] } },
+    "chart-03237": {
+      "workflowStatus": "rejected",
+      "language": "foreign",
+      "externalIds": { "youtube": ["CTwiB1uw9sQ"] },
+      "notes": ["Англоязычное исполнение; исключено из русскоязычной очереди."]
+    },
+    "chart-03166": {
+      "workflowStatus": "rejected",
+      "language": "mixed",
+      "externalIds": { "youtube": ["T5Qnipn6cZc"] },
+      "notes": ["Смешанное русско-английское исполнение; прежняя ссылка в пуле ведёт на сборник, а не отдельный трек."]
+    },
+    "chart-08979": { "language": "russian", "externalIds": { "youtube": ["M4ujoE3NZbI"] } },
+    "chart-09075": {
+      "workflowStatus": "rejected",
+      "language": "russian",
+      "externalIds": { "youtube": ["gIALzWNDH64"] },
+      "notes": ["Редакционная маркировка релиза требует исключения из семейного квиза."]
+    },
+    "chart-03593": {
+      "workflowStatus": "rejected",
+      "language": "foreign",
+      "externalIds": { "youtube": ["WXwgZL4zx9o"] },
+      "notes": ["Англоязычное исполнение; исключено из русскоязычной очереди."]
+    },
+    "chart-08945": { "language": "russian", "externalIds": { "youtube": ["1Fx9tZOjTKM"] } },
+    "chart-08953": { "language": "russian", "externalIds": { "youtube": ["ZEX1tsYSygs"] } },
+    "chart-08969": { "language": "russian", "externalIds": { "youtube": ["q4CgIcsJDws"] } },
+    "chart-09070": {
+      "workflowStatus": "rejected",
+      "language": "russian",
+      "reviewStatus": "needs-review",
+      "externalIds": { "youtube": ["3_S6MxP2NIc"] },
+      "notes": ["Неполный credit: feat. Вирсавия, Милана Некрасова, LIZOGUB и Давид Туров. Не публиковать до исправления участников."]
+    },
+    "chart-08978": { "language": "russian" },
+    "chart-08960": { "language": "russian", "externalIds": { "youtube": ["PBmmEWU_3zo"] } },
+    "chart-08985": { "language": "russian", "externalIds": { "youtube": ["vd8o25lRY3A"] } },
+    "chart-00633": { "language": "russian", "externalIds": { "youtube": ["hq3pLeW5qB4"] } },
+    "chart-08989": { "language": "russian", "externalIds": { "youtube": ["naQB3TiEnNs"] } },
+    "chart-03565": { "language": "russian", "externalIds": { "youtube": ["XKP0JN16m88"] } },
+    "chart-08941": { "language": "russian", "externalIds": { "youtube": ["Kv-tbdVOuOA"] } },
+    "chart-03513": {
+      "workflowStatus": "rejected",
+      "language": "mixed",
+      "externalIds": { "youtube": ["aVBe3O12ALk"] },
+      "notes": ["Смешанное русско-английское исполнение; исправить Mario Winnans на Mario Winans."]
+    },
+    "chart-09149": {
+      "workflowStatus": "rejected",
+      "language": "russian",
+      "externalIds": { "youtube": ["QSMQhXAQlgk"] },
+      "notes": ["Редакционная маркировка релиза требует исключения из семейного квиза."]
+    },
+    "chart-08983": { "language": "russian", "externalIds": { "youtube": ["xS2Bk3Qaez8"] } },
+    "chart-03058": {
+      "workflowStatus": "rejected",
+      "language": "foreign",
+      "externalIds": { "youtube": ["7dTk9N1B4RE"] },
+      "notes": ["Англоязычное исполнение; исключено из русскоязычной очереди."]
+    },
+    "chart-08991": { "language": "russian", "externalIds": { "youtube": ["9NhPFQjUbbE"] } },
+    "chart-03135": { "language": "russian", "externalIds": { "youtube": ["wOBnq0Ewz5k"] } },
+    "chart-00050": { "language": "russian", "externalIds": { "youtube": ["5GbSKaFf8Uc"] } },
+    "chart-00414": {
+      "workflowStatus": "rejected",
+      "language": "russian",
+      "reviewStatus": "needs-review",
+      "externalIds": { "youtube": ["d8e9sw6_oec"] },
+      "notes": ["Неполный credit: Markul feat. Oxxxymiron; участник уже использован в опубликованном квизе."]
+    }
+  }
 }

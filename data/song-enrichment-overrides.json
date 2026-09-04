@@ -6,5 +6,36 @@
     "Годы чартов и listYear не используются как год релиза.",
     "Автоматические значения всегда сохраняют источник и могут быть подтверждены вручную."
   ],
-  "songs": {}
+  "songs": {
+    "chart-00091": { "releaseYear": 2016 },
+    "chart-08951": { "releaseYear": 2026 },
+    "chart-08946": { "releaseYear": 2026 },
+    "chart-08943": { "releaseYear": 2026 },
+    "chart-08952": { "releaseYear": 2026 },
+    "chart-09011": { "releaseYear": 2026 },
+    "chart-03237": { "releaseYear": 2017 },
+    "chart-03166": { "releaseYear": 2007 },
+    "chart-08979": { "releaseYear": 2026 },
+    "chart-09075": { "releaseYear": 2026 },
+    "chart-03593": { "releaseYear": 2009 },
+    "chart-08945": { "releaseYear": 2026 },
+    "chart-08953": { "releaseYear": 2026 },
+    "chart-08969": { "releaseYear": 2003, "versionYear": 2026, "versionType": "cover" },
+    "chart-09070": { "releaseYear": 2026 },
+    "chart-08978": { "releaseYear": 2026 },
+    "chart-08960": { "releaseYear": 2026 },
+    "chart-08985": { "releaseYear": 2025 },
+    "chart-00633": { "releaseYear": 2020 },
+    "chart-08989": { "releaseYear": 2026 },
+    "chart-03565": { "releaseYear": 2019, "versionYear": 2019, "versionType": "remix" },
+    "chart-08941": { "releaseYear": 1994 },
+    "chart-03513": { "releaseYear": 2008 },
+    "chart-09149": { "releaseYear": 2026 },
+    "chart-08983": { "releaseYear": 2025, "versionYear": 2025 },
+    "chart-03058": { "releaseYear": 2014 },
+    "chart-08991": { "releaseYear": 2022 },
+    "chart-03135": { "releaseYear": 2017 },
+    "chart-00050": { "releaseYear": 2017 },
+    "chart-00414": { "releaseYear": 2017 }
+  }
 }

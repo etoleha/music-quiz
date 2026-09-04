@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-04T10:19:04.307Z",
+  "generatedAt": "2026-09-04T10:47:50.700Z",
   "archive": "song-database.json.gz",
   "archiveParts": [
     "song-database.json.gz.part-01",
     "song-database.json.gz.part-02"
   ],
-  "archiveSha256": "7df68c16f635243da811a45236dd7009bde0d4336bb3054bc70abe7c5ae1ed62",
+  "archiveSha256": "c4c21840be8b2f06893e423b91c66a88ac862076ac78068f876b4d72daa5a060",
   "stats": {
     "songs": 11290,
     "chartSongs": 9239,
@@ -14,28 +14,29 @@
     "poolSongs": 2969,
     "publishedQuizSongs": 420,
     "quizTrackPositions": 420,
-    "quizCandidates": 3755,
-    "readyForCuration": 3616,
-    "readyForUniqueArtistQuiz": 2016,
+    "quizCandidates": 3745,
+    "readyForCuration": 3606,
+    "readyForUniqueArtistQuiz": 2006,
     "readyForPublication": 0,
     "readyForAutomaticQuiz": 0,
     "usedArtists": 316,
-    "withReleaseYear": 6061,
+    "withReleaseYear": 6082,
     "withCandidateReleaseYear": 6064,
     "withAutomaticEnrichment": 233,
     "workflow": {
-      "rejected": 13,
+      "rejected": 23,
       "used": 420,
-      "waiting": 10857
+      "waiting": 10847
     },
     "language": {
-      "foreign": 1540,
-      "russian": 4184,
+      "foreign": 1543,
+      "mixed": 2,
+      "russian": 4179,
       "unknown": 5566
     },
     "review": {
-      "needs-review": 5932,
-      "verified": 5358
+      "needs-review": 5935,
+      "verified": 5355
     },
     "fragment": {
       "good": 420,
