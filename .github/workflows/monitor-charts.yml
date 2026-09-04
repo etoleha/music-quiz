@@ -25,6 +25,8 @@ jobs:
         run: |
           npm run monitor:charts
           npm run build:song-database
+          npm run build:quiz-candidates
+          npm run test:charts
       - name: Commit new observations
         run: |
           git config user.name "github-actions[bot]"
@@ -36,7 +38,10 @@ jobs:
             data/chart-merge-review.json \
             data/song-database.json \
             data/song-database.json.gz \
-            data/song-database-review.json
+            data/song-database.json.gz.part-01 \
+            data/song-database.json.gz.part-02 \
+            data/song-database-review.json \
+            data/quiz-candidates.json
           if git diff --cached --quiet; then
             exit 0
           fi

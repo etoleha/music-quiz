@@ -9,22 +9,30 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getQuiz, quizzes, type Quiz, type Track } from "./quiz-data";
 import { isAccepted } from "./scoring";
 
-type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; pauseVideo(): void; stopVideo(): void };
+type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void };
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean };
 type Review = Answer & { track: Track; artistPoint: number; titlePoint: number };
 type Attempt = { id: string; quizId: string; quizTitle: string; score: number; maxScore: number; skipped: number; createdAt: string };
 type WeakTrack = { trackKey: string; artist: string; title: string; misses: number };
+type ClipPlayback = { trackKey: string; elapsed: number; duration: number; context: "quiz" | "review" };
+type ActiveClip = ClipPlayback & { start: number; started: boolean };
 type ArtistInfo = {
   status: "loading" | "ready" | "error";
   name?: string;
   country?: string;
   activeYears?: string;
-  url?: string;
+  artistUrl?: string;
+  releaseYear?: number;
+  releaseYearStatus?: "candidate" | "verified";
+  album?: { title: string; kind?: string; year?: number; coverUrl?: string };
+  members?: Array<{ name: string; roles?: string[]; since?: string }>;
+  image?: { url: string; attribution?: string; license?: string; licenseUrl?: string; sourceUrl?: string };
+  facts?: Array<{ text: string; sourceUrl?: string }>;
 };
 
 declare global {
   interface Window {
-    YT?: { Player: new (element: string, options: Record<string, unknown>) => Player; PlayerState: { PLAYING: number } };
+    YT?: { Player: new (element: string, options: Record<string, unknown>) => Player; PlayerState: { ENDED: number; PLAYING: number; PAUSED: number } };
     onYouTubeIframeAPIReady?: () => void;
   }
 }
@@ -49,8 +57,21 @@ const wordForm = (count: number) => {
   return "слов";
 };
 
-const normalizeArtist = (value: string) => value.toLocaleLowerCase("ru-RU").replace(/[^a-zа-яё0-9]+/gi, "");
 const spotifyArtistUrl = (artist: string) => `https://open.spotify.com/search/${encodeURIComponent(artist)}`;
+const formatClipTime = (seconds: number) => {
+  const safeSeconds = Math.max(0, Math.ceil(seconds));
+  return `${Math.floor(safeSeconds / 60)}:${String(safeSeconds % 60).padStart(2, "0")}`;
+};
+
+function ClipTimeline({ playback, duration, compact = false }: { playback?: ClipPlayback; duration: number; compact?: boolean }) {
+  const elapsed = Math.min(duration, playback?.elapsed ?? 0);
+  const remaining = Math.max(0, duration - elapsed);
+  const percentage = duration ? elapsed / duration * 100 : 0;
+  return <div className={`clip-timeline ${compact ? "is-compact" : ""}`} role="progressbar" aria-label="Ход музыкального фрагмента" aria-valuemin={0} aria-valuemax={duration} aria-valuenow={Math.round(elapsed)}>
+    <div className="clip-timeline-track"><span style={{ width: `${percentage}%` }} /></div>
+    <div className="clip-timeline-times"><span>Прошло {formatClipTime(elapsed)}</span><span>Осталось {formatClipTime(remaining)}</span></div>
+  </div>;
+}
 
 type MusicQuizProps = {
   initialQuizId?: string;
@@ -89,8 +110,10 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   const [badFragments, setBadFragments] = useState<Set<string>>(() => new Set());
   const [fragmentFeedbackPending, setFragmentFeedbackPending] = useState<Set<string>>(() => new Set());
   const [fragmentFeedbackError, setFragmentFeedbackError] = useState(false);
+  const [clipPlayback, setClipPlayback] = useState<ClipPlayback | null>(null);
   const player = useRef<Player | null>(null);
-  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const clipAnimationFrame = useRef<number | null>(null);
+  const activeClip = useRef<ActiveClip | null>(null);
   const triesRef = useRef(2);
   const playingRef = useRef(false);
   const answersRef = useRef<Answer[]>([]);
@@ -104,6 +127,44 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   const statsRefreshTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const guestStarted = useRef(false);
   const current = order[index];
+
+  const stopClipClock = useCallback((complete = false) => {
+    if (clipAnimationFrame.current !== null) cancelAnimationFrame(clipAnimationFrame.current);
+    clipAnimationFrame.current = null;
+    activeClip.current = null;
+    if (complete) {
+      setClipPlayback((value) => value ? { ...value, elapsed: value.duration } : value);
+    } else {
+      setClipPlayback(null);
+    }
+  }, []);
+
+  const startClipClock = useCallback((trackKey: string, start: number, duration: number, context: ClipPlayback["context"]) => {
+    if (clipAnimationFrame.current !== null) cancelAnimationFrame(clipAnimationFrame.current);
+    if (activeClip.current) activeClip.current.started = true;
+    const update = () => {
+      if (activeClip.current?.trackKey !== trackKey) return;
+      const playerTime = player.current?.getCurrentTime() ?? start;
+      const elapsed = Math.min(duration, Math.max(0, playerTime - start));
+      setClipPlayback({ trackKey, elapsed, duration, context });
+      if (elapsed < duration) {
+        clipAnimationFrame.current = requestAnimationFrame(update);
+      } else {
+        clipAnimationFrame.current = null;
+        activeClip.current = null;
+        player.current?.pauseVideo();
+        playingRef.current = false;
+        setPlaying(false);
+        if (context === "review") setReviewPlayingKey(null);
+      }
+    };
+    setClipPlayback({ trackKey, elapsed: 0, duration, context });
+    clipAnimationFrame.current = requestAnimationFrame(update);
+  }, []);
+
+  useEffect(() => () => {
+    if (clipAnimationFrame.current !== null) cancelAnimationFrame(clipAnimationFrame.current);
+  }, []);
 
   const loadStats = useCallback(async () => {
     if (guestMode) return;
@@ -145,9 +206,17 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
           if (event.data === window.YT?.PlayerState.PLAYING) {
             playingRef.current = true;
             setPlaying(true);
+            const clip = activeClip.current;
+            if (clip && !clip.started) startClipClock(clip.trackKey, clip.start, clip.duration, clip.context);
+          } else if ((event.data === window.YT?.PlayerState.ENDED || event.data === window.YT?.PlayerState.PAUSED) && activeClip.current?.started) {
+            stopClipClock();
+            playingRef.current = false;
+            setPlaying(false);
+            setReviewPlayingKey(null);
           }
         },
         onError: () => {
+          stopClipClock();
           playingRef.current = false;
           triesRef.current = 0;
           setPlaying(false);
@@ -155,50 +224,43 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         },
       },
     });
-  }, [ready]);
+  }, [ready, stopClipClock]);
 
   const playClip = useCallback(() => {
     if (!current || !player.current || !playerReady || triesRef.current < 1 || playingRef.current) return;
-    if (timer.current) clearTimeout(timer.current);
     triesRef.current -= 1;
     setTries(triesRef.current);
     playingRef.current = true;
     setPlaying(true);
+    stopClipClock();
+    activeClip.current = { trackKey: current.key, start: current.start, elapsed: 0, duration: current.duration, context: "quiz", started: false };
+    setClipPlayback({ trackKey: current.key, elapsed: 0, duration: current.duration, context: "quiz" });
     player.current.loadVideoById({ videoId: current.youtubeId, startSeconds: current.start });
-    timer.current = setTimeout(() => {
-      player.current?.pauseVideo();
-      playingRef.current = false;
-      setPlaying(false);
-    }, current.duration * 1000);
-  }, [current, playerReady]);
+  }, [current, playerReady, stopClipClock]);
 
   const playReviewClip = useCallback((track: Track) => {
     if (!player.current || !playerReady) return;
-    if (timer.current) clearTimeout(timer.current);
     playingRef.current = true;
     setPlaying(true);
     setReviewPlayingKey(track.key);
+    stopClipClock();
+    activeClip.current = { trackKey: track.key, start: track.start, elapsed: 0, duration: track.duration, context: "review", started: false };
+    setClipPlayback({ trackKey: track.key, elapsed: 0, duration: track.duration, context: "review" });
     player.current.loadVideoById({ videoId: track.youtubeId, startSeconds: track.start });
-    timer.current = setTimeout(() => {
-      player.current?.pauseVideo();
-      playingRef.current = false;
-      setPlaying(false);
-      setReviewPlayingKey(null);
-    }, track.duration * 1000);
-  }, [playerReady]);
+  }, [playerReady, stopClipClock]);
 
   const leaveResults = useCallback(() => {
-    if (timer.current) clearTimeout(timer.current);
+    stopClipClock();
     player.current?.stopVideo();
     playingRef.current = false;
     setPlaying(false);
     setReviewPlayingKey(null);
     setExpandedArtist(null);
     setScreen("home");
-  }, []);
+  }, [stopClipClock]);
 
   const begin = (quiz: Quiz) => {
-    if (timer.current) clearTimeout(timer.current);
+    stopClipClock();
     player.current?.stopVideo();
     playingRef.current = false; triesRef.current = 2; answersRef.current = [];
     submissionLocked.current = false; autoplayedTrack.current = null;
@@ -238,58 +300,24 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   };
 
   const showArtistInfo = async (track: Track) => {
-    if (expandedArtist === track.artist) {
+    if (expandedArtist === track.key) {
       setExpandedArtist(null);
       return;
     }
-    setExpandedArtist(track.artist);
-    if (artistInfo[track.artist]) return;
-    setArtistInfo((items) => ({ ...items, [track.artist]: { status: "loading" } }));
+    setExpandedArtist(track.key);
+    if (artistInfo[track.key]) return;
+    setArtistInfo((items) => ({ ...items, [track.key]: { status: "loading" } }));
     try {
-      const query = encodeURIComponent(`artist:\"${track.artist}\"`);
-      const response = await fetch(`https://musicbrainz.org/ws/2/artist?query=${query}&fmt=json&limit=5`, {
-        headers: { Accept: "application/json" },
-      });
+      const params = new URLSearchParams({ key: track.key, artist: track.artist, title: track.title });
+      const response = await fetch(`/api/track-info?${params}`);
       if (!response.ok) throw new Error("artist lookup failed");
-      const data = await response.json() as {
-        artists?: Array<{
-          id: string;
-          name: string;
-          score?: number;
-          country?: string;
-          area?: { name?: string };
-          aliases?: Array<{ name?: string }>;
-          "life-span"?: { begin?: string; end?: string; ended?: boolean };
-        }>;
-      };
-      const acceptedNames = new Set([track.artist, ...track.artistAliases].map(normalizeArtist));
-      const match = data.artists?.find((candidate) =>
-        acceptedNames.has(normalizeArtist(candidate.name)) ||
-        candidate.aliases?.some((alias) => alias.name && acceptedNames.has(normalizeArtist(alias.name))),
-      ) ?? data.artists?.find((candidate) => (candidate.score ?? 0) >= 95);
-      if (!match) throw new Error("artist not found");
-      const span = match["life-span"];
-      const begin = span?.begin?.slice(0, 4);
-      const end = span?.end?.slice(0, 4);
-      const activeYears = begin ? (span?.ended ? `${begin}–${end ?? "?"}` : `с ${begin}`) : undefined;
-      let country = match.area?.name;
-      if (match.country) {
-        try {
-          country = new Intl.DisplayNames(["ru"], { type: "region" }).of(match.country) ?? country;
-        } catch { /* Keep the MusicBrainz area. */ }
-      }
+      const data = await response.json() as Omit<ArtistInfo, "status">;
       setArtistInfo((items) => ({
         ...items,
-        [track.artist]: {
-          status: "ready",
-          name: match.name,
-          country,
-          activeYears,
-          url: `https://musicbrainz.org/artist/${match.id}`,
-        },
+        [track.key]: { status: "ready", ...data },
       }));
     } catch {
-      setArtistInfo((items) => ({ ...items, [track.artist]: { status: "error" } }));
+      setArtistInfo((items) => ({ ...items, [track.key]: { status: "error" } }));
     }
   };
 
@@ -313,7 +341,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
 
   useEffect(() => {
     if (screen !== "quiz" || !current) return;
-    if (timer.current) clearTimeout(timer.current);
+    stopClipClock();
     player.current?.stopVideo();
     playingRef.current = false;
     triesRef.current = 2;
@@ -321,7 +349,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     setArtist(""); setTitle(""); setTries(2); setPlaying(false);
     const focusFrame = requestAnimationFrame(() => artistInput.current?.focus());
     return () => cancelAnimationFrame(focusFrame);
-  }, [current, screen]);
+  }, [current, screen, stopClipClock]);
 
   useEffect(() => {
     if (screen !== "quiz" || !current || !playerReady || autoplayedTrack.current === current.key) return;
@@ -332,7 +360,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
 
   const finish = async (finalAnswers: Answer[]) => {
     if (!activeQuiz) return;
-    player.current?.stopVideo(); if (timer.current) clearTimeout(timer.current);
+    player.current?.stopVideo(); stopClipClock();
     const localReview = order.map((track) => {
       const answer = finalAnswers.find((item) => item.trackKey === track.key) ?? { trackKey: track.key, artistAnswer: "", titleAnswer: "", loadFailed: false };
       return { ...answer, track, artistPoint: answer.loadFailed ? 0 : Number(isAccepted(answer.artistAnswer, track.artistAliases)), titlePoint: answer.loadFailed ? 0 : Number(isAccepted(answer.titleAnswer, track.titleAliases)) };
@@ -536,6 +564,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         <div className={`play-zone ${playing ? "is-playing" : ""}`}>
           <span className="question-number">{String(index + 1).padStart(2, "0")} / {order.length}</span><span className="clip-length">{current.duration} сек.</span>
           <div className="record" aria-hidden="true"><span /></div><div className="equalizer" aria-hidden="true">{Array.from({ length: 9 }).map((_, i) => <i key={i} />)}</div>
+          <ClipTimeline playback={clipPlayback?.trackKey === current.key && clipPlayback.context === "quiz" ? clipPlayback : undefined} duration={current.duration} />
           <Button size="lg" className="play-button" onClick={playClip} disabled={tries < 1 || playing}><CirclePlay /> {playing ? "Играет…" : tries === 1 ? "Включить ещё раз" : tries === 0 ? "Фрагмент прослушан" : `Включить ${current.duration} секунд`}</Button>
           <p className="listen-count">Осталось прослушиваний: {tries} · Ctrl + пробел — повторить</p>
         </div>
@@ -557,21 +586,22 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
           const points = item.artistPoint + item.titlePoint;
           const ownerAnswer = ownerAnswers.get(item.track.key);
           const isPlaying = reviewPlayingKey === item.track.key;
-          const info = artistInfo[item.track.artist];
-          const infoOpen = expandedArtist === item.track.artist;
+          const info = artistInfo[item.track.key];
+          const infoOpen = expandedArtist === item.track.key;
           return <article className={`review-row ${item.loadFailed ? "is-annulled" : ""} ${reviewIndex === itemIndex ? "is-selected" : ""}`} key={item.track.key}>
             <b>{String(itemIndex + 1).padStart(2, "0")}</b>
             <div><strong>{item.track.artist} — {item.track.title}</strong><small>{item.loadFailed ? "Аннулирован" : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small></div>
             <div className="row-scores"><span className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/2`}</span>{comparison && <span className="owner-points">{ownerAnswer?.loadFailed ? "—" : ownerAnswer ? `${ownerAnswer.points}/2` : "—"}</span>}</div>
             <div className="review-controls">
               <Button ref={(element) => { reviewPlayButtons.current[itemIndex] = element; }} size="sm" variant="outline" className="review-play" disabled={!playerReady} aria-label={`Прослушать фрагмент ${item.track.artist} — ${item.track.title}`} onFocus={() => setReviewIndex(itemIndex)} onClick={() => { setReviewIndex(itemIndex); playReviewClip(item.track); }}><Volume2 /> {isPlaying ? "…" : `${item.track.duration} сек.`}</Button>
+              {clipPlayback?.trackKey === item.track.key && clipPlayback.context === "review" && <ClipTimeline playback={clipPlayback} duration={item.track.duration} compact />}
               <a className="youtube-link" href={`https://www.youtube.com/watch?v=${item.track.youtubeId}`} target="_blank" rel="noreferrer" aria-label={`Открыть ${item.track.artist} — ${item.track.title} на YouTube`}><ExternalLink /> YouTube</a>
               <a className="spotify-link" href={spotifyArtistUrl(item.track.artist)} target="_blank" rel="noreferrer" aria-label={`Найти ${item.track.artist} в Spotify`}><Music2 /> Spotify</a>
               <Button size="sm" variant="ghost" className="artist-info-button" aria-expanded={infoOpen} onClick={() => void showArtistInfo(item.track)}><Info /> {infoOpen ? "Скрыть" : "Подробнее"}</Button>
               {!guestMode && <Button size="sm" variant="ghost" className={`bad-fragment-button ${badFragments.has(item.trackKey) ? "is-reported" : ""}`} disabled={!currentAttemptId || fragmentFeedbackPending.has(item.trackKey)} aria-pressed={badFragments.has(item.trackKey)} onClick={() => void toggleBadFragment(item.trackKey)}><Flag /> {badFragments.has(item.trackKey) ? "Отмечено" : "Плохой фрагмент"}</Button>}
               {!guestMode && <><Button size="sm" variant="ghost" disabled={!currentAttemptId} onClick={() => void correctResult(item.trackKey, { annulled: !item.loadFailed })}>{item.loadFailed ? "Вернуть" : "Аннулировать"}</Button><div className="score-picker" role="group" aria-label={`Баллы за ${item.track.artist} — ${item.track.title}`}>{[0, 1, 2].map((value) => <button type="button" key={value} className={!item.loadFailed && points === value ? "is-selected" : ""} aria-pressed={!item.loadFailed && points === value} disabled={!currentAttemptId} onClick={() => void correctResult(item.trackKey, { points: value })}>{value}</button>)}</div></>}
             </div>
-            {infoOpen && <div className={`artist-info ${info?.status ?? "loading"}`}>{!info || info.status === "loading" ? "Загружаю справку…" : info.status === "error" ? "Короткую справку найти не удалось." : <><strong>{info.name}</strong><span>{[item.track.artistForm, info.country, info.activeYears].filter(Boolean).join(" · ")}</span>{info.url && <a href={info.url} target="_blank" rel="noreferrer">Карточка MusicBrainz <ExternalLink /></a>}</>}</div>}
+            {infoOpen && <div className={`artist-info ${info?.status ?? "loading"}`}>{!info || info.status === "loading" ? "Загружаю год, альбом и справку…" : info.status === "error" ? "Проверенную справку пока найти не удалось." : <><div className="artist-info-media">{info.image?.url && <figure><img src={info.image.url} alt={`Фото: ${info.name || item.track.artist}`} loading="lazy" />{info.image.sourceUrl && <figcaption><a href={info.image.sourceUrl} target="_blank" rel="noreferrer">{info.image.license || "Фото"}</a></figcaption>}</figure>}{info.album?.coverUrl && <figure><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><figcaption>Обложка</figcaption></figure>}</div><div className="artist-info-copy"><strong>{info.name}</strong><span>{[item.track.artistForm, info.country, info.activeYears].filter(Boolean).join(" · ")}</span>{info.releaseYear && <span>{info.releaseYearStatus === "candidate" ? "Предположительно " : ""}{info.releaseYear} год{info.album ? ` · ${info.album.kind === "album" ? "альбом" : "релиз"} «${info.album.title}»` : ""}</span>}{info.members?.length ? <span><b>Состав:</b> {info.members.map((member) => member.name).join(", ")}</span> : null}{info.facts?.map((fact) => <span className="artist-fact" key={fact.text}>{fact.text}{fact.sourceUrl && <a href={fact.sourceUrl} target="_blank" rel="noreferrer" aria-label="Источник факта"><ExternalLink /></a>}</span>)}{info.artistUrl && <a href={info.artistUrl} target="_blank" rel="noreferrer">Источники и идентификаторы <ExternalLink /></a>}</div></>}</div>}
           </article>;
         })}</div>
         <div className="result-actions">{!guestMode && <Button variant="outline" onClick={leaveResults}><Library /> Все квизы · Esc</Button>}{!guestMode && activeQuiz && <Button variant="outline" onClick={() => void shareQuiz(activeQuiz)}><Share2 /> {sharedQuizId === activeQuiz.id ? "Ссылка скопирована" : "Поделиться"}</Button>}<Button onClick={() => activeQuiz && begin(activeQuiz)}><RotateCcw /> Ещё раз · Alt+R</Button></div>
@@ -587,7 +617,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     <Tabs defaultValue="quizzes" className="workspace"><TabsList className="nav-tabs"><TabsTrigger value="quizzes"><Library /> Квизы</TabsTrigger><TabsTrigger value="stats"><BarChart3 /> Статистика</TabsTrigger></TabsList>
       <TabsContent value="quizzes" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Коллекция</p><h1>Выбери следующий заход</h1></div><div className="library-total">{quizzes.length}<small>квиза</small></div></div>
         <div className="quiz-grid"><article className="quiz-card mistakes-card"><div className="card-index">↻</div><div className="card-badges"><Badge>персональный</Badge><Badge variant="outline">до 30 треков</Badge></div><h2>Работа над ошибками</h2><p>{mistakeTracks.length ? `Случайная выборка из ${mistakeTracks.length} накопленных песен. При каждом запуске состав меняется.` : "Появится после первых ошибок в обычных квизах."}</p><div className="card-meta"><span><RotateCcw /> Случайный порядок</span></div><Button size="lg" disabled={!mistakeTracks.length} onClick={beginMistakes}>Начать · 0 <ChevronRight /></Button></article>{quizzes.map((quiz, quizIndex) => { const latest = attempts.find((attempt) => attempt.quizId === quiz.id); const min = Math.min(...quiz.tracks.map((item) => item.duration)); const max = Math.max(...quiz.tracks.map((item) => item.duration)); return <article className="quiz-card" key={quiz.id}><div className="card-index">{String(quizzes.length - quizIndex).padStart(2, "0")}</div><div className="card-badges"><Badge>{quiz.level}</Badge><Badge variant="outline">{quiz.tracks.length} трека</Badge></div><h2>{quiz.title}</h2><div className="card-meta"><span><Headphones /> {min}–{max} сек.</span>{latest && <span><Check /> Последний: {latest.score}/{latest.maxScore}</span>}</div><div className="card-actions"><Button size="lg" onClick={() => begin(quiz)}>Начать · {quizIndex + 1} <ChevronRight /></Button><Button size="icon" variant="outline" aria-label={`Поделиться квизом ${quiz.title}`} title="Поделиться" onClick={() => void shareQuiz(quiz)}>{sharedQuizId === quiz.id ? <Check /> : <Share2 />}</Button></div></article>; })}</div>
-        <p className="collection-note">Новые подборки будут появляться здесь отдельными квизами. Старые результаты сохраняются.</p>
+        <p className="collection-note">Новые подборки будут появляться здесь отдельными квизами. Старые результаты сохраняются. <a href="/catalog">Открыть общую базу песен →</a></p>
       </TabsContent>
       <TabsContent value="stats" className="tab-content"><div className="section-heading"><div><p className="eyebrow">За всё время</p><h1>Твоя музыкальная форма</h1></div></div><div className="stats-grid"><article className="stat-card accent"><strong>{percentage}%</strong><span>точность</span></article><article className="stat-card"><strong>{attempts.length}</strong><span>квизов пройдено</span></article><article className="stat-card"><strong>{totalPoints}</strong><span>баллов набрано</span></article></div>
         <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title}</small></div><Badge variant="outline">ошибок: {item.misses}</Badge></div>) : <p className="empty-copy">Здесь накопятся песни, которые стоит повторить.</p>}</section></div>

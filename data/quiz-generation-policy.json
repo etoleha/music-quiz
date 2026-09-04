@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "uniqueArtistsThroughQuiz": 30,
+  "participantRule": "any-participant-blocks-credit",
+  "unknownParticipantRule": "manual-review",
+  "notes": [
+    "До квиза XXX включительно не повторяется ни один участник предыдущих сольных записей и разовых совместных исполнений.",
+    "Постоянная группа или дуэт считается одной самостоятельной исполнительской сущностью."
+  ]
+}

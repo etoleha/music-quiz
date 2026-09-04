@@ -61,12 +61,21 @@ function createDatabase() {
       UNIQUE(attempt_id, track_key)
     );
 
+    CREATE TABLE IF NOT EXISTS track_info_cache (
+      track_key TEXT PRIMARY KEY,
+      payload_json TEXT NOT NULL,
+      updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      expires_at TEXT NOT NULL
+    );
+
     CREATE INDEX IF NOT EXISTS idx_attempts_user_created
       ON attempts(user_id, created_at DESC);
     CREATE INDEX IF NOT EXISTS idx_attempt_answers_attempt
       ON attempt_answers(attempt_id);
     CREATE INDEX IF NOT EXISTS idx_fragment_reports_track
       ON fragment_reports(track_key, created_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_track_info_cache_expiry
+      ON track_info_cache(expires_at);
     PRAGMA optimize;
   `);
   return database;

@@ -57,6 +57,11 @@ const performerForms: Partial<Record<string, Track["artistForm"]>> = {
   "Акула": "Исполнительница",
   "Игорь Корнелюк": "Исполнитель",
   "Монокини": "Исполнительница",
+  "#2Маши": "Дуэт",
+  "Artik & Asti": "Исполнитель + исполнительница",
+  "Dan Balan и Вера Брежнева": "Исполнитель + исполнительница",
+  "HammAli & Navai": "Дуэт",
+  "Потап и Настя Каменских": "Исполнитель + исполнительница",
 };
 
 const manualArtistAliases: Record<string, string[]> = {
@@ -120,7 +125,7 @@ const extraTrack = (youtubeId: string, artist: string, title: string, start: num
     key: `${artist}—${title}`.toLowerCase(),
     youtubeId,
     artist,
-    artistForm: performerForms[artist] ?? (collaboration ? "Проект" : "Группа"),
+    artistForm: performerForms[artist] ?? (collaboration ? "Исполнители" : "Группа"),
     artistAliases: unique([artist, ...parts, ...(manualArtistAliases[artist] ?? [])]),
     title,
     titleAliases: unique([title, ...(manualTitleAliases[`${artist}—${title}`] ?? [])]),

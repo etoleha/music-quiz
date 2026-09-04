@@ -37,3 +37,10 @@ export const fragmentReports = sqliteTable("fragment_reports", {
   clipDuration: integer("clip_duration").notNull(),
   createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
 });
+
+export const trackInfoCache = sqliteTable("track_info_cache", {
+  trackKey: text("track_key").primaryKey(),
+  payloadJson: text("payload_json").notNull(),
+  updatedAt: text("updated_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+  expiresAt: text("expires_at").notNull(),
+});

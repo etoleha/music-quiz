@@ -21,6 +21,7 @@ sameArtist("Моя Мишель", "Moya Mishel");
 sameArtist("Михаил Шуфутинский", "Mikhail Shufutinskiy");
 sameArtist("Артик и Асти", "Artik & Asti");
 sameArtist("Hi-Fi", "хай фай");
+sameArtist("Потап и Настя", "Потап и Настя Каменских");
 
 const permanentGroup = normalizeArtist("Король и Шут", aliasIndex);
 assert.deepEqual(permanentGroup.participants, ["korolishut"]);
@@ -30,6 +31,12 @@ const collaborationA = normalizeArtist("Artist A & Artist B", aliasIndex);
 const collaborationB = normalizeArtist("Artist B и Artist A", aliasIndex);
 assert.deepEqual(collaborationA.participants, collaborationB.participants);
 assert.ok(artistsOverlap(collaborationA, collaborationB));
+
+assert.deepEqual(normalizeArtist("Время и Стекло", aliasIndex).participants, ["vremyaisteklo"]);
+assert.deepEqual(normalizeArtist("Чиж & Co", aliasIndex).participants, ["chizhco"]);
+assert.deepEqual(normalizeArtist("Artik & Asti feat. Артём Качер", aliasIndex).participants, ["artemkacher", "artikiasti"]);
+assert.deepEqual(normalizeArtist("Filatov & Karas feat. Masha", aliasIndex).participants, ["filatovkaras", "masha"]);
+assert.deepEqual(normalizeArtist("AC/DC", aliasIndex).participants, ["acdc"]);
 
 const featured = normalizeObservation({ artist: "Artist A", title: "Song (feat. Artist B)" }, aliasIndex);
 assert.equal(featured.titleKey, "song");

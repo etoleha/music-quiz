@@ -32,7 +32,7 @@ export const buildAliasIndex = (aliasFile) => {
   return index;
 };
 
-const participantSeparators = /\s*(?:&|,|\+|\/|\bfeat\.?\b|\bft\.?\b|\bwith\b|\bx\b)\s*|\s+и\s+/iu;
+const participantSeparators = /(\s*(?:&|,|\+|\s\/\s|\bfeat\.?\b|\bft\.?\b|\bfeaturing\b|\bwith\b|\bx\b|×)\s*|\s+и\s+)/giu;
 
 export const normalizeArtist = (artist, aliasIndex) => {
   const decodedArtist = decodeHtml(artist).trim();
@@ -42,15 +42,27 @@ export const normalizeArtist = (artist, aliasIndex) => {
     return { primary: wholeArtistAlias, participants: [wholeArtistAlias] };
   }
 
-  const rawParticipants = decodedArtist
+  const creditParts = decodedArtist
     .replace(/[()[\]]/g, " ")
     .split(participantSeparators)
-    .map((value) => value.trim())
-    .filter(Boolean);
-  const participants = rawParticipants.map((value) => {
-    const rawKey = fingerprint(value);
-    return aliasIndex.get(rawKey) ?? rawKey;
-  });
+    .filter((value) => value && value.trim());
+  const participants = [];
+  for (let index = 0; index < creditParts.length; index += 2) {
+    let matched = false;
+    for (let end = creditParts.length - 1 - ((creditParts.length - 1 - index) % 2); end >= index; end -= 2) {
+      const candidate = creditParts.slice(index, end + 1).join("").trim();
+      const alias = aliasIndex.get(fingerprint(candidate));
+      if (!alias) continue;
+      participants.push(alias);
+      index = end;
+      matched = true;
+      break;
+    }
+    if (!matched) {
+      const rawKey = fingerprint(creditParts[index]);
+      if (rawKey) participants.push(aliasIndex.get(rawKey) ?? rawKey);
+    }
+  }
   return {
     primary: participants[0] ?? "unknown",
     participants: [...new Set(participants)].sort(),
