@@ -137,7 +137,7 @@ const attachExternalIds = (entry, ids = {}) => {
   }
 };
 
-const findEntry = ({ artist, title }, ids = {}) => {
+const findEntry = ({ artist, title }, ids = {}, { allowManualArtist = false } = {}) => {
   const idMatches = new Set();
   for (const [namespace, values] of Object.entries(ids)) {
     for (const value of unique(Array.isArray(values) ? values : [values])) {
@@ -147,8 +147,17 @@ const findEntry = ({ artist, title }, ids = {}) => {
   }
   if (idMatches.size === 1) return [...idMatches][0];
   const normalized = normalizeObservation({ artist, title }, aliasIndex);
-  return (titleIndex.get(normalized.titleKey) || []).find((entry) =>
-    artistsOverlap(entry.normalizedArtist, normalized.artist)) || null;
+  return (titleIndex.get(normalized.titleKey) || []).find((entry) => {
+    if (artistsOverlap(entry.normalizedArtist, normalized.artist)) return true;
+    if (!allowManualArtist) return false;
+    const manual = overrides.songs?.[entry.id]
+      || overrides.songs?.[identityKey(entry.normalizedArtist, entry.normalizedTitle)];
+    const identity = artistIdentityFromStatusOverride(manual, `status override for ${entry.id}`);
+    return identity ? artistsOverlap({
+      primary: identity.artistIds[0],
+      participants: identity.artistIds,
+    }, normalized.artist) : false;
+  }) || null;
 };
 
 const newEntry = ({ id, artist, title, artistAliases = [], titleAliases = [], externalIds = {}, explicit = false }) => {
@@ -231,7 +240,7 @@ for (const file of poolFiles) {
 
 for (const track of readQuizTracks()) {
   const ids = { youtube: [track.youtubeId] };
-  let entry = findEntry(track, ids);
+  let entry = findEntry(track, ids, { allowManualArtist: true });
   if (!entry) {
     const normalized = normalizeObservation(track, aliasIndex);
     const digest = crypto.createHash("sha1").update(identityKey(normalized.artist, normalized.titleKey)).digest("hex").slice(0, 12);

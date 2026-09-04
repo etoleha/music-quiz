@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T18:30:01.616Z",
+  "generatedAt": "2026-09-04T19:05:40.789Z",
   "totalNeedsReview": 5944,
   "shown": 500,
   "songs": [
@@ -764,7 +764,9 @@
       "artistIds": [
         "thelimba"
       ],
-      "usedArtistIds": [],
+      "usedArtistIds": [
+        "thelimba"
+      ],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -12820,7 +12822,9 @@
       "artistIds": [
         "djsmash"
       ],
-      "usedArtistIds": [],
+      "usedArtistIds": [
+        "djsmash"
+      ],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -13803,7 +13807,9 @@
       "artistIds": [
         "littlebig"
       ],
-      "usedArtistIds": [],
+      "usedArtistIds": [
+        "littlebig"
+      ],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,

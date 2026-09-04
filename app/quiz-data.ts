@@ -6,7 +6,9 @@ export type ArtistForm = SingleArtistForm
   | "Дуэт"
   | "Исполнители"
   | `${SingleArtistForm} + ${LowerArtistForm}`
-  | `${SingleArtistForm} + ${LowerArtistForm} + ${LowerArtistForm}`;
+  | `${SingleArtistForm} + ${LowerArtistForm} + ${LowerArtistForm}`
+  | `Дуэт + ${LowerArtistForm}`
+  | `Дуэт + ${LowerArtistForm} + ${LowerArtistForm}`;
 
 export type Track = {
   key: string;

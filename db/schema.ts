@@ -45,3 +45,15 @@ export const trackInfoCache = sqliteTable("track_info_cache", {
   updatedAt: text("updated_at").notNull().default(sql`CURRENT_TIMESTAMP`),
   expiresAt: text("expires_at").notNull(),
 });
+
+export const mistakeMastery = sqliteTable("mistake_mastery", {
+  trackKey: text("track_key").primaryKey(),
+  artist: text("artist").notNull(),
+  title: text("title").notNull(),
+  successes: integer("successes").notNull().default(0),
+  requiredSuccesses: integer("required_successes").notNull().default(2),
+  misses: integer("misses").notNull().default(0),
+  active: integer("active", { mode: "boolean" }).notNull().default(true),
+  lastErrorAt: text("last_error_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+  updatedAt: text("updated_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+});

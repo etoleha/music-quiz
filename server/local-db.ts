@@ -1,6 +1,7 @@
 import { mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
+import { backfillMistakeMastery } from "./mistake-mastery";
 
 declare global {
   var musicQuizDatabase: DatabaseSync | undefined;
@@ -69,6 +70,18 @@ function createDatabase() {
       expires_at TEXT NOT NULL
     );
 
+    CREATE TABLE IF NOT EXISTS mistake_mastery (
+      track_key TEXT PRIMARY KEY,
+      artist TEXT NOT NULL,
+      title TEXT NOT NULL,
+      successes INTEGER NOT NULL DEFAULT 0,
+      required_successes INTEGER NOT NULL DEFAULT 2,
+      misses INTEGER NOT NULL DEFAULT 0,
+      active INTEGER NOT NULL DEFAULT 1,
+      last_error_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+    );
+
     CREATE INDEX IF NOT EXISTS idx_attempts_user_created
       ON attempts(user_id, created_at DESC);
     CREATE INDEX IF NOT EXISTS idx_attempt_answers_attempt
@@ -77,12 +90,15 @@ function createDatabase() {
       ON fragment_reports(track_key, created_at DESC);
     CREATE INDEX IF NOT EXISTS idx_track_info_cache_expiry
       ON track_info_cache(expires_at);
+    CREATE INDEX IF NOT EXISTS idx_mistake_mastery_active
+      ON mistake_mastery(active, successes, misses DESC);
     PRAGMA optimize;
   `);
   const fragmentReportColumns = database.prepare("PRAGMA table_info(fragment_reports)").all() as Array<{ name: string }>;
   if (!fragmentReportColumns.some(({ name }) => name === "reason")) {
     database.exec("ALTER TABLE fragment_reports ADD COLUMN reason TEXT NOT NULL DEFAULT 'bad-fragment'");
   }
+  backfillMistakeMastery(database);
   return database;
 }
 

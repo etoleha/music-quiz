@@ -1,6 +1,7 @@
 import { getQuiz, quizzes, type Track } from "../../quiz-data";
 import { isAccepted } from "../../scoring";
 import { getLocalDb, inTransaction } from "../../../server/local-db";
+import { applyMistakeResult, rebuildMistakeMasteryForTrack } from "../../../server/mistake-mastery";
 
 export const runtime = "nodejs";
 
@@ -72,6 +73,14 @@ export async function POST(request: Request) {
           item.titlePoint,
           item.loadFailed ? 1 : 0,
         );
+        applyMistakeResult(database, {
+          trackKey: item.track.key,
+          artist: item.track.artist,
+          title: item.track.title,
+          artistPoint: item.artistPoint,
+          titlePoint: item.titlePoint,
+          loadFailed: item.loadFailed,
+        });
         if (item.loadFailed) {
           database.prepare(`INSERT OR IGNORE INTO fragment_reports
             (attempt_id, quiz_id, track_key, artist, title, youtube_id, clip_start, clip_duration, reason)
@@ -153,6 +162,7 @@ export async function PATCH(request: Request) {
           titlePoint: number;
           loadFailed: number;
         };
+      rebuildMistakeMasteryForTrack(database, trackKey);
       return { ...totals, ...answer, loadFailed: Boolean(answer.loadFailed) };
     });
 

@@ -15,13 +15,14 @@ import {
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
-const resolverVersion = 5;
+const resolverVersion = 6;
 const limit = Math.max(1, Number(process.env.ENRICH_LIMIT || 60));
 const targetQuizId = String(process.env.ENRICH_QUIZ_ID || "").trim();
 const targetSongIds = new Set(String(process.env.ENRICH_SONG_IDS || "").split(",").map((value) => value.trim()).filter(Boolean));
 const readyOnly = process.env.ENRICH_READY_ONLY === "1";
 const forceTargeted = process.env.ENRICH_FORCE === "1";
 const appleOnly = process.env.ENRICH_APPLE_ONLY === "1";
+const deezerOnly = process.env.ENRICH_DEEZER_ONLY === "1";
 const userAgent = "LamtyuginMusicQuiz/1.0 (https://quiz.lamtyugin.com)";
 const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
@@ -259,8 +260,54 @@ const searchAppleRecording = async (song) => {
   return best || { status: "not-found", method: "apple-search", provider: "apple", alternatives: [] };
 };
 
+const deezerRecording = (result) => {
+  const contributors = result.contributors?.length ? result.contributors : [result.artist];
+  return {
+    id: `deezer:${result.id}`,
+    title: result.title_short || result.title,
+    score: 100,
+    "first-release-date": result.release_date || null,
+    "artist-credit": contributors.filter(Boolean).map((artist, index) => ({
+      name: artist.name,
+      artist: { name: artist.name },
+      joinphrase: index < contributors.length - 1 ? " & " : "",
+    })),
+    deezer: {
+      trackId: result.id,
+      trackUrl: result.link || `https://www.deezer.com/track/${result.id}`,
+      releaseDate: result.release_date || null,
+      albumTitle: result.album?.title || null,
+      albumId: result.album?.id || null,
+      artworkUrl: result.album?.cover_xl || result.album?.cover_big || null,
+    },
+  };
+};
+
+const searchDeezerRecording = async (song) => {
+  const terms = [...new Set([
+    `${song.artist} ${song.title}`,
+    `${song.artistAliases?.[0] || ""} ${song.titleAliases?.[0] || ""}`,
+  ].map((value) => value.replace(/\s+/gu, " ").trim()).filter(Boolean))];
+  let best = null;
+  for (const term of terms) {
+    const search = await fetchJson(`https://api.deezer.com/search?q=${encodeURIComponent(term)}&limit=5`, { attempts: 2, timeoutMs: 8000 });
+    const details = await Promise.all((search?.data || []).slice(0, 3).map((result) =>
+      fetchJson(`https://api.deezer.com/track/${result.id}`, { attempts: 2, timeoutMs: 8000 }).catch(() => result)));
+    const recordings = details.filter(Boolean).map(deezerRecording);
+    const distinct = [...new Map(recordings.map((recording) => [
+      `${fingerprint(recording.title)}:${recording["artist-credit"].map(({ name }) => fingerprint(name)).join("+")}`,
+      recording,
+    ])).values()];
+    const candidate = { ...chooseRecording(song, distinct, aliasIndex), method: "deezer-search", provider: "deezer" };
+    if (candidate.status === "matched") return candidate;
+    if (!best || (candidate.score || 0) > (best.score || 0)) best = candidate;
+  }
+  return best || { status: "not-found", method: "deezer-search", provider: "deezer", alternatives: [] };
+};
+
 const searchRecording = async (song) => {
   if (appleOnly) return searchAppleRecording(song);
+  if (deezerOnly) return searchDeezerRecording(song);
   for (const isrc of song.externalIds?.isrc || []) {
     const isrcQuery = encodeURIComponent(`isrc:${String(isrc).replace(/[^A-Za-z0-9]/g, "")}`);
     const result = await musicBrainz(`recording?query=${isrcQuery}&limit=8`);
@@ -327,7 +374,7 @@ const enrichSong = async (song) => {
     retrievedAt: new Date().toISOString(),
     retryAfter: new Date(Date.now() + (match.status === "ambiguous" ? 365 : 180) * 24 * 60 * 60 * 1000).toISOString(),
   };
-  const recording = match.provider === "apple"
+  const recording = match.provider === "apple" || match.provider === "deezer"
     ? match.recording
     : await musicBrainz(`recording/${match.recording.id}?inc=artists+isrcs+releases+release-groups`) || match.recording;
   const release = match.provider === "apple" ? {
@@ -339,6 +386,17 @@ const enrichSong = async (song) => {
       year: yearOf(recording.apple.releaseDate),
       coverUrl: recording.apple.artworkUrl,
       sourceUrl: recording.apple.collectionViewUrl || recording.apple.trackViewUrl,
+      rightsStatus: "contextual-only",
+    } : null,
+  } : match.provider === "deezer" ? {
+    firstReleaseYear: yearOf(recording.deezer?.releaseDate),
+    firstReleaseDate: recording.deezer?.releaseDate || null,
+    album: recording.deezer?.albumTitle ? {
+      title: recording.deezer.albumTitle,
+      kind: "album",
+      year: yearOf(recording.deezer.releaseDate),
+      coverUrl: recording.deezer.artworkUrl,
+      sourceUrl: recording.deezer.albumId ? `https://www.deezer.com/album/${recording.deezer.albumId}` : recording.deezer.trackUrl,
       rightsStatus: "contextual-only",
     } : null,
   } : selectReleaseInfo(recording);
@@ -358,7 +416,9 @@ const enrichSong = async (song) => {
   const verified = match.status === "matched" && match.method === "exact-isrc" && !yearConflict;
   const source = match.provider === "apple"
     ? { provider: "apple", entityId: String(recording.apple.trackId), url: recording.apple.trackViewUrl || recording.apple.collectionViewUrl }
-    : { provider: "musicbrainz", entityId: recording.id, url: `https://musicbrainz.org/recording/${recording.id}` };
+    : match.provider === "deezer"
+      ? { provider: "deezer", entityId: String(recording.deezer.trackId), url: recording.deezer.trackUrl }
+      : { provider: "musicbrainz", entityId: recording.id, url: `https://musicbrainz.org/recording/${recording.id}` };
   return {
     resolverVersion,
     sourceFingerprint,
@@ -367,7 +427,7 @@ const enrichSong = async (song) => {
     method: usableCandidate ? `${match.method}-candidate` : match.method,
     confidence: Number(match.score.toFixed(4)),
     runnerUpDelta: match.runnerUpDelta === null ? null : Number(match.runnerUpDelta.toFixed(4)),
-    recordingMbid: match.provider === "apple" ? null : recording.id,
+    recordingMbid: match.provider === "apple" || match.provider === "deezer" ? null : recording.id,
     recordingTitle: recording.title,
     artistCredits: credits,
     artistMbids,

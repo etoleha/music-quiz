@@ -13,7 +13,7 @@ type Player = { loadVideoById(options: { videoId: string; startSeconds: number }
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean };
 type Review = Answer & { track: Track; artistPoint: number; titlePoint: number };
 type Attempt = { id: string; quizId: string; quizTitle: string; score: number; maxScore: number; skipped: number; createdAt: string };
-type WeakTrack = { trackKey: string; artist: string; title: string; misses: number };
+type WeakTrack = { trackKey: string; artist: string; title: string; successes: number; requiredSuccesses: number; misses: number };
 type ClipPlayback = { trackKey: string; elapsed: number; duration: number; context: "quiz" | "review" };
 type ActiveClip = ClipPlayback & { start: number; started: boolean };
 type ArtistInfo = {
@@ -329,9 +329,18 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     return [...uniqueTracks.values()].filter((track) => weakKeys.has(track.key));
   }, [weakTracks]);
 
+  const mistakeProgressByKey = useMemo(() => new Map(weakTracks.map((item) => [item.trackKey, item])), [weakTracks]);
+
   const beginMistakes = () => {
     if (!mistakeTracks.length) return;
-    const tracks = shuffle(mistakeTracks).slice(0, 30);
+    const tracks = shuffle(mistakeTracks)
+      .sort((left, right) => {
+        const leftProgress = mistakeProgressByKey.get(left.key);
+        const rightProgress = mistakeProgressByKey.get(right.key);
+        return (leftProgress?.successes ?? 0) - (rightProgress?.successes ?? 0)
+          || (rightProgress?.misses ?? 0) - (leftProgress?.misses ?? 0);
+      })
+      .slice(0, 30);
     begin({
       id: "mistakes",
       title: "Работа над ошибками",
@@ -620,11 +629,11 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   return <main className="shell"><header className="topbar"><div className="wordmark">НЕ ПО ПРИПЕВУ</div><Badge variant="outline">личная коллекция</Badge></header>
     <Tabs defaultValue="quizzes" className="workspace"><TabsList className="nav-tabs"><TabsTrigger value="quizzes"><Library /> Квизы</TabsTrigger><TabsTrigger value="stats"><BarChart3 /> Статистика</TabsTrigger></TabsList>
       <TabsContent value="quizzes" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Коллекция</p><h1>Выбери следующий заход</h1></div><div className="library-total">{quizzes.length}<small>квиза</small></div></div>
-        <div className="quiz-grid"><article className="quiz-card mistakes-card"><div className="card-index">↻</div><div className="card-badges"><Badge>персональный</Badge><Badge variant="outline">до 30 треков</Badge></div><h2>Работа над ошибками</h2><p>{mistakeTracks.length ? `Случайная выборка из ${mistakeTracks.length} накопленных песен. При каждом запуске состав меняется.` : "Появится после первых ошибок в обычных квизах."}</p><div className="card-meta"><span><RotateCcw /> Случайный порядок</span></div><Button size="lg" disabled={!mistakeTracks.length} onClick={beginMistakes}>Начать · 0 <ChevronRight /></Button></article>{quizzes.map((quiz, quizIndex) => { const latest = attempts.find((attempt) => attempt.quizId === quiz.id); const min = Math.min(...quiz.tracks.map((item) => item.duration)); const max = Math.max(...quiz.tracks.map((item) => item.duration)); return <article className="quiz-card" key={quiz.id}><div className="card-index">{String(quizzes.length - quizIndex).padStart(2, "0")}</div><div className="card-badges"><Badge>{quiz.level}</Badge><Badge variant="outline">{quiz.tracks.length} трека</Badge></div><h2>{quiz.title}</h2><div className="card-meta"><span><Headphones /> {min}–{max} сек.</span>{latest && <span><Check /> Последний: {latest.score}/{latest.maxScore}</span>}</div><div className="card-actions"><Button size="lg" onClick={() => begin(quiz)}>Начать · {quizIndex + 1} <ChevronRight /></Button><Button size="icon" variant="outline" aria-label={`Поделиться квизом ${quiz.title}`} title="Поделиться" onClick={() => void shareQuiz(quiz)}>{sharedQuizId === quiz.id ? <Check /> : <Share2 />}</Button></div></article>; })}</div>
+        <div className="quiz-grid"><article className="quiz-card mistakes-card"><div className="card-index">↻</div><div className="card-badges"><Badge>персональный</Badge><Badge variant="outline">до 30 треков</Badge></div><h2>Работа над ошибками</h2><p>{mistakeTracks.length ? `${mistakeTracks.length} песен ждут повторения.` : "Ошибок для повторения нет — все проблемные песни уже закреплены."} Чтобы закрыть ошибку, нужно полностью угадать песню два раза подряд.</p><div className="card-meta"><span><RotateCcw /> Сначала песни без успешного повтора</span></div><Button size="lg" disabled={!mistakeTracks.length} onClick={beginMistakes}>Начать · 0 <ChevronRight /></Button></article>{quizzes.map((quiz, quizIndex) => { const latest = attempts.find((attempt) => attempt.quizId === quiz.id); const min = Math.min(...quiz.tracks.map((item) => item.duration)); const max = Math.max(...quiz.tracks.map((item) => item.duration)); return <article className="quiz-card" key={quiz.id}><div className="card-index">{String(quizzes.length - quizIndex).padStart(2, "0")}</div><div className="card-badges"><Badge>{quiz.level}</Badge><Badge variant="outline">{quiz.tracks.length} трека</Badge></div><h2>{quiz.title}</h2><div className="card-meta"><span><Headphones /> {min}–{max} сек.</span>{latest && <span><Check /> Последний: {latest.score}/{latest.maxScore}</span>}</div><div className="card-actions"><Button size="lg" onClick={() => begin(quiz)}>Начать · {quizIndex + 1} <ChevronRight /></Button><Button size="icon" variant="outline" aria-label={`Поделиться квизом ${quiz.title}`} title="Поделиться" onClick={() => void shareQuiz(quiz)}>{sharedQuizId === quiz.id ? <Check /> : <Share2 />}</Button></div></article>; })}</div>
         <p className="collection-note">Новые подборки будут появляться здесь отдельными квизами. Старые результаты сохраняются. <a href="/catalog">Открыть общую базу песен →</a></p>
       </TabsContent>
       <TabsContent value="stats" className="tab-content"><div className="section-heading"><div><p className="eyebrow">За всё время</p><h1>Твоя музыкальная форма</h1></div></div><div className="stats-grid"><article className="stat-card accent"><strong>{percentage}%</strong><span>точность</span></article><article className="stat-card"><strong>{attempts.length}</strong><span>квизов пройдено</span></article><article className="stat-card"><strong>{totalPoints}</strong><span>баллов набрано</span></article></div>
-        <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title}</small></div><Badge variant="outline">ошибок: {item.misses}</Badge></div>) : <p className="empty-copy">Здесь накопятся песни, которые стоит повторить.</p>}</section></div>
+        <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title} · ошибок: {item.misses}</small></div><Badge variant="outline">зачётов: {item.successes}/{item.requiredSuccesses}</Badge></div>) : <p className="empty-copy">Очередь пуста: все ошибочные песни угаданы два раза подряд.</p>}</section></div>
       </TabsContent></Tabs>
   </main>;
 }
