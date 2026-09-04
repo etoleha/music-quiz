@@ -42,10 +42,15 @@ for (let index = 0; index < staticClean.length; index += 8) {
       playback = null;
     } else {
       const result = await checkYouTubeVideo(videoId);
-      playback = { ...result, checkedAt: new Date().toISOString() };
-      cache.videos[videoId] = playback;
       checkedNow += 1;
-      if (result.status === "failed" && isTransient(result.reason)) transientFailures += 1;
+      if (result.status === "failed" && isTransient(result.reason)) {
+        transientFailures += 1;
+        playback = null;
+        delete cache.videos[videoId];
+      } else {
+        playback = { ...result, checkedAt: new Date().toISOString() };
+        cache.videos[videoId] = playback;
+      }
     }
     row.playback = playback;
     if (!playback) row.blockers.push({ code: "youtube-not-checked", message: "Нет свежей проверки YouTube." });
@@ -55,6 +60,7 @@ for (let index = 0; index < staticClean.length; index += 8) {
     saveCache();
     console.log(`Предрелизная проверка: ${Math.min(index + batch.length, staticClean.length)}/${staticClean.length}`);
   }
+  if (!offline && index + batch.length < staticClean.length) await new Promise((resolve) => setTimeout(resolve, 150));
 }
 
 if (!offline) saveCache();

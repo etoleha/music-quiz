@@ -1,12 +1,12 @@
 {
   "version": 1,
   "resolverVersion": 6,
-  "generatedAt": "2026-09-04T19:34:31.020Z",
+  "generatedAt": "2026-09-04T22:49:11.406Z",
   "stats": {
     "attempted": 1450,
-    "matched": 717,
-    "ambiguous": 172,
-    "notFound": 489,
+    "matched": 721,
+    "ambiguous": 177,
+    "notFound": 480,
     "temporaryError": 72
   },
   "songs": {
@@ -585,12 +585,12 @@
       "resolverVersion": 6,
       "sourceFingerprint": "bcad88c8a6459aac3de81b705c7cd92941b19a95d7fe47c4f4def428efa375d6",
       "status": "not-found",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T19:01:34.907Z",
-      "retryAfter": "2027-03-03T19:01:34.907Z"
+      "retrievedAt": "2026-09-04T22:44:50.340Z",
+      "retryAfter": "2027-03-03T22:44:50.340Z"
     },
     "chart-07163": {
       "resolverVersion": 1,
@@ -852,19 +852,24 @@
       "sourceFingerprint": "d9a383bc75ebe2a073bf510544ca684ef68a73d595ffea1ce145d18d1d3dc17f",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
-      "recordingTitle": "Танцуйте",
+      "recordingMbid": "3c1b2b1e-4b94-4f04-ac3b-f422c5fff27e",
+      "recordingTitle": "Танцуйте",
       "artistCredits": [
         {
           "name": "ATL",
+          "musicBrainzArtistId": "405d9ac0-034a-4ae5-98e1-fe4fb65421e4",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "405d9ac0-034a-4ae5-98e1-fe4fb65421e4"
+      ],
+      "isrcs": [
+        "TCACZ1740204"
+      ],
       "releaseYear": 2017,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2017-03-22",
@@ -873,38 +878,44 @@
         "title": "Лимб",
         "kind": "album",
         "year": 2017,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a9a8e84abd777da192ec5f7399ca39ea/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/490941745",
+        "releaseGroupMbid": "3fbb62d3-9a69-4a67-bda8-e497445d0714",
+        "coverUrl": "http://coverartarchive.org/release/fe48a661-4408-4ad0-8a34-a646d8c56d6c/24473059540-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/3fbb62d3-9a69-4a67-bda8-e497445d0714",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2465062445",
-          "url": "https://www.deezer.com/track/2465062445"
+          "provider": "musicbrainz",
+          "entityId": "3c1b2b1e-4b94-4f04-ac3b-f422c5fff27e",
+          "url": "https://musicbrainz.org/recording/3c1b2b1e-4b94-4f04-ac3b-f422c5fff27e"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:35.306Z"
+      "retrievedAt": "2026-09-04T22:45:10.603Z"
     },
     "chart-00178": {
       "resolverVersion": 6,
       "sourceFingerprint": "a99112cb5a353d3053544a9823ac62e9e84e648c93e2b6189b6b47e56e63b513",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "44afb2ca-6ec2-4af9-a2d0-f5910cf6ba7d",
       "recordingTitle": "Между нами",
       "artistCredits": [
         {
-          "name": "Lizer",
+          "name": "LIZER",
+          "musicBrainzArtistId": "ec121839-bde8-4812-8dca-7c4148b81749",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "ec121839-bde8-4812-8dca-7c4148b81749"
+      ],
+      "isrcs": [
+        "RUA591900503"
+      ],
       "releaseYear": 2019,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2019-04-19",
@@ -913,19 +924,20 @@
         "title": "Не ангел",
         "kind": "album",
         "year": 2019,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/899a06bf22293e1e2d953d6034593709/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/686614351",
+        "releaseGroupMbid": "c28e377e-b170-467b-b060-65d5d15a5c41",
+        "coverUrl": "http://coverartarchive.org/release/bf4f8aee-7247-414d-8113-ac624749e68e/22943458053-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/c28e377e-b170-467b-b060-65d5d15a5c41",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "3152559171",
-          "url": "https://www.deezer.com/track/3152559171"
+          "provider": "musicbrainz",
+          "entityId": "44afb2ca-6ec2-4af9-a2d0-f5910cf6ba7d",
+          "url": "https://musicbrainz.org/recording/44afb2ca-6ec2-4af9-a2d0-f5910cf6ba7d"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:35.637Z"
+      "retrievedAt": "2026-09-04T22:45:13.513Z"
     },
     "chart-03534": {
       "resolverVersion": 1,
@@ -990,13 +1002,38 @@
     "chart-03583": {
       "resolverVersion": 6,
       "sourceFingerprint": "0035f308757e5d31950a3c39db69990d9405f108b223960919ad9618d50c2099",
-      "status": "not-found",
-      "method": "deezer-search",
-      "confidence": 0,
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.99,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T19:02:50.175Z",
-      "retryAfter": "2027-03-03T19:02:50.175Z"
+      "recordingMbid": "3ab56143-1cae-4706-ab56-d93a37f8fa21",
+      "recordingTitle": "Ближе",
+      "artistCredits": [
+        {
+          "name": "Влад Соколовский",
+          "musicBrainzArtistId": "a7ca8b19-52a0-44a3-a1b2-324b67917965",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "a7ca8b19-52a0-44a3-a1b2-324b67917965"
+      ],
+      "isrcs": [],
+      "releaseYear": 2008,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2008",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "3ab56143-1cae-4706-ab56-d93a37f8fa21",
+          "url": "https://musicbrainz.org/recording/3ab56143-1cae-4706-ab56-d93a37f8fa21"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T22:45:42.443Z"
     },
     "chart-03629": {
       "resolverVersion": 1,
@@ -1567,57 +1604,53 @@
       "sourceFingerprint": "f33afb8fbbbf828a5ca38b98d35cd906cfcdfa3f5424a669a72b3c252617e586",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "4880defb-f8b1-4f54-830f-34c929a76aec",
       "recordingTitle": "Нету интереса",
       "artistCredits": [
         {
           "name": "10AGE",
+          "musicBrainzArtistId": "dd5ec8a2-777b-4f3d-a525-981c65252078",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "dd5ec8a2-777b-4f3d-a525-981c65252078"
+      ],
       "isrcs": [],
       "releaseYear": 2021,
       "releaseYearState": "candidate",
-      "firstReleaseDate": "2021-03-05",
+      "firstReleaseDate": "2021-05-03",
       "versionType": "original",
-      "album": {
-        "title": "Нету интереса",
-        "kind": "album",
-        "year": 2021,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0d5f426c1b45c866a98155b8632c68a7/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/499337561",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2495605921",
-          "url": "https://www.deezer.com/track/2495605921"
+          "provider": "musicbrainz",
+          "entityId": "4880defb-f8b1-4f54-830f-34c929a76aec",
+          "url": "https://musicbrainz.org/recording/4880defb-f8b1-4f54-830f-34c929a76aec"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:36.543Z"
+      "retrievedAt": "2026-09-04T22:45:49.006Z"
     },
     "chart-00042": {
       "resolverVersion": 6,
       "sourceFingerprint": "d061e2fbc2390cef6160080434b1f27a6aa8ef7d7db12a78624685b2b9bdfcf7",
       "status": "ambiguous",
-      "method": "deezer-search",
-      "confidence": 0.8733,
+      "method": "search",
+      "confidence": 0.8833,
       "runnerUpDelta": null,
       "alternatives": [
         {
-          "id": "deezer:1182919902",
+          "id": "afa11139-a193-428c-afe0-07e8157b2d00",
           "title": "Меня не будет",
-          "score": 0.8733
+          "score": 0.8833
         }
       ],
-      "retrievedAt": "2026-09-04T19:01:36.884Z",
-      "retryAfter": "2027-09-04T19:01:36.884Z"
+      "retrievedAt": "2026-09-04T22:45:58.507Z",
+      "retryAfter": "2027-09-04T22:45:58.507Z"
     },
     "chart-00017": {
       "resolverVersion": 1,
@@ -1881,15 +1914,50 @@
       "retryAfter": "2027-03-03T09:20:05.431Z"
     },
     "chart-00076": {
-      "resolverVersion": 1,
-      "sourceFingerprint": "36b4205f0b551abf74ccebd00813d862c4c52e2cb228e35114cf6a89882d8f75",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 6,
+      "sourceFingerprint": "8f0c976e49cecc96c1219f02d1a3aa949470cefe33420341d695a5ab415e3eac",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "alias-search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T09:20:06.525Z",
-      "retryAfter": "2027-03-03T09:20:06.525Z"
+      "recordingMbid": "ecf58875-66ef-4d0c-8d6e-782dfbaef485",
+      "recordingTitle": "Там ревели горы",
+      "artistCredits": [
+        {
+          "name": "Miyagi & Andy Panda",
+          "musicBrainzArtistId": "0b7177a6-9833-47b5-879f-57cde4771102",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "0b7177a6-9833-47b5-879f-57cde4771102"
+      ],
+      "isrcs": [
+        "FRX202043514"
+      ],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-07-17",
+      "versionType": "original",
+      "album": {
+        "title": "YAMAKASI",
+        "kind": "album",
+        "year": 2020,
+        "releaseGroupMbid": "db703109-598e-47e0-9edc-6b4abe1e0b44",
+        "coverUrl": "https://coverartarchive.org/release/f212486a-6901-439e-87db-d1cec392d15d/29281349787-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/db703109-598e-47e0-9edc-6b4abe1e0b44",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "ecf58875-66ef-4d0c-8d6e-782dfbaef485",
+          "url": "https://musicbrainz.org/recording/ecf58875-66ef-4d0c-8d6e-782dfbaef485"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T22:43:27.927Z"
     },
     "chart-00015": {
       "resolverVersion": 3,
@@ -2072,14 +2140,14 @@
       "sourceFingerprint": "a1be6617d8f87650d42668f89d28f94d80f98470b256082c8693b349c4e610e9",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "apple-search",
       "confidence": 1,
       "runnerUpDelta": null,
       "recordingMbid": null,
       "recordingTitle": "Люди",
       "artistCredits": [
         {
-          "name": "Дайте танк (!)",
+          "name": "Дайте Танк (!)",
           "joinPhrase": ""
         }
       ],
@@ -2087,25 +2155,25 @@
       "isrcs": [],
       "releaseYear": 2020,
       "releaseYearState": "candidate",
-      "firstReleaseDate": "2020-10-02",
+      "firstReleaseDate": "2020-02-14T12:00:00Z",
       "versionType": "original",
       "album": {
         "title": "Человеко-часы",
         "kind": "album",
         "year": 2020,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c276ebb317b98d987389e17ef7111770/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/177141902",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ac/91/c5/ac91c578-6758-2344-8741-8b6cbd2d80ef/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%BB%D1%8E%D0%B4%D0%B8/1532722533?i=1532722814&uo=4",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "1097484252",
-          "url": "https://www.deezer.com/track/1097484252"
+          "provider": "apple",
+          "entityId": "1532722814",
+          "url": "https://music.apple.com/ru/album/%D0%BB%D1%8E%D0%B4%D0%B8/1532722533?i=1532722814&uo=4"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:37.454Z"
+      "retrievedAt": "2026-09-04T22:46:07.065Z"
     },
     "chart-00092": {
       "resolverVersion": 6,
@@ -2129,40 +2197,38 @@
       "sourceFingerprint": "7d72e2ba4879e46238d35151f1c1de3b5f141fed75878df188564cb962a88d2d",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "254065de-378e-46d0-a689-5deccf8e5afb",
       "recordingTitle": "Девочка в классе",
       "artistCredits": [
         {
           "name": "Джизус",
+          "musicBrainzArtistId": "c961a9c7-8510-428c-8e7c-eaab62f02dff",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "c961a9c7-8510-428c-8e7c-eaab62f02dff"
+      ],
+      "isrcs": [
+        "FR2X41939181"
+      ],
       "releaseYear": 2019,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2019-04-19",
       "versionType": "original",
-      "album": {
-        "title": "Девочка в классе",
-        "kind": "album",
-        "year": 2019,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/127b65553d5335914014bc5094c0c98c/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/93726112",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "665682212",
-          "url": "https://www.deezer.com/track/665682212"
+          "provider": "musicbrainz",
+          "entityId": "254065de-378e-46d0-a689-5deccf8e5afb",
+          "url": "https://musicbrainz.org/recording/254065de-378e-46d0-a689-5deccf8e5afb"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:38.018Z"
+      "retrievedAt": "2026-09-04T22:46:23.474Z"
     },
     "chart-00061": {
       "resolverVersion": 1,
@@ -2206,43 +2272,37 @@
       "resolverVersion": 6,
       "sourceFingerprint": "5919e6454ed6b6338d0a7c7d3a25d23c7f15d41060d2d3c3bcadb5d57fb551b1",
       "status": "matched",
-      "overallState": "conflict",
-      "method": "deezer-search",
-      "confidence": 0.95,
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.99,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "cf303f18-9eec-4055-8333-5c27e943e8f3",
       "recordingTitle": "Алина Кабаева",
       "artistCredits": [
         {
-          "name": "Игра слов",
+          "name": "Игра Слов",
+          "musicBrainzArtistId": "1d0d2067-789c-47ed-8058-c91e15f970ba",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "1d0d2067-789c-47ed-8058-c91e15f970ba"
+      ],
       "isrcs": [],
-      "releaseYear": 2023,
-      "releaseYearState": "conflict",
-      "firstReleaseDate": "2023-04-28",
+      "releaseYear": 2006,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2006",
       "versionType": "original",
-      "album": {
-        "title": "Людям о людях",
-        "kind": "album",
-        "year": 2023,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/17c45b539ec4e7fde828ea50d7d5a719/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/437161967",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2267300007",
-          "url": "https://www.deezer.com/track/2267300007"
+          "provider": "musicbrainz",
+          "entityId": "cf303f18-9eec-4055-8333-5c27e943e8f3",
+          "url": "https://musicbrainz.org/recording/cf303f18-9eec-4055-8333-5c27e943e8f3"
         }
       ],
-      "issues": [
-        "release-year-after-chart"
-      ],
-      "retrievedAt": "2026-09-04T19:01:34.417Z"
+      "issues": [],
+      "retrievedAt": "2026-09-04T22:44:47.553Z"
     },
     "chart-00044": {
       "resolverVersion": 1,
@@ -2708,40 +2768,36 @@
       "sourceFingerprint": "fcc7c2376f0bd2d67d477b3c3ee14dcac53f5e02a5907575c358efbb6e4114e4",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "99167830-a79b-4eeb-9828-ac0f71cc16b7",
       "recordingTitle": "Пушка",
       "artistCredits": [
         {
           "name": "10AGE",
+          "musicBrainzArtistId": "dd5ec8a2-777b-4f3d-a525-981c65252078",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "dd5ec8a2-777b-4f3d-a525-981c65252078"
+      ],
       "isrcs": [],
       "releaseYear": 2021,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2021-06-18",
       "versionType": "original",
-      "album": {
-        "title": "Пушка",
-        "kind": "album",
-        "year": 2021,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/155a19a97ac4b0b88dd3c2b7b27730ac/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/499337821",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2495606451",
-          "url": "https://www.deezer.com/track/2495606451"
+          "provider": "musicbrainz",
+          "entityId": "99167830-a79b-4eeb-9828-ac0f71cc16b7",
+          "url": "https://musicbrainz.org/recording/99167830-a79b-4eeb-9828-ac0f71cc16b7"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:38.959Z"
+      "retrievedAt": "2026-09-04T22:46:30.597Z"
     },
     "chart-00114": {
       "resolverVersion": 1,
@@ -2929,40 +2985,38 @@
       "sourceFingerprint": "27f1de7cd86e30bef68e58a2b958b5dbd73950f50f878dd5f23414c295023186",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search-candidate",
       "confidence": 1,
-      "runnerUpDelta": 0.1267,
-      "recordingMbid": null,
+      "runnerUpDelta": 0.05,
+      "recordingMbid": "767b1cdc-1f33-4a4f-8e82-c31414a3e18d",
       "recordingTitle": "Без даты",
       "artistCredits": [
         {
           "name": "УННВ",
+          "musicBrainzArtistId": "41dc2ec9-5feb-4d06-bbaf-a4a3a49e9330",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "41dc2ec9-5feb-4d06-bbaf-a4a3a49e9330"
+      ],
       "isrcs": [],
       "releaseYear": 2020,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2020-10-22",
       "versionType": "original",
-      "album": {
-        "title": "Без даты",
-        "kind": "album",
-        "year": 2020,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d37c7cb11100d2323f10237eaac7e4e5/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/210359932",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "1255843552",
-          "url": "https://www.deezer.com/track/1255843552"
+          "provider": "musicbrainz",
+          "entityId": "767b1cdc-1f33-4a4f-8e82-c31414a3e18d",
+          "url": "https://musicbrainz.org/recording/767b1cdc-1f33-4a4f-8e82-c31414a3e18d"
         }
       ],
-      "issues": [],
-      "retrievedAt": "2026-09-04T19:01:39.541Z"
+      "issues": [
+        "ambiguous-recording-choice"
+      ],
+      "retrievedAt": "2026-09-04T22:46:31.830Z"
     },
     "chart-00074": {
       "resolverVersion": 1,
@@ -3291,18 +3345,18 @@
       "resolverVersion": 6,
       "sourceFingerprint": "61a63530742660e9f42d80be4cd9abdab7b377bb38ddbfbda84d34c25de16d1b",
       "status": "ambiguous",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 0.8733,
       "runnerUpDelta": null,
       "alternatives": [
         {
-          "id": "deezer:1463123012",
+          "id": "858969a3-4f6c-41a4-a793-57dc4fe3c041",
           "title": "Веном",
           "score": 0.8733
         }
       ],
-      "retrievedAt": "2026-09-04T19:01:40.204Z",
-      "retryAfter": "2027-09-04T19:01:40.204Z"
+      "retrievedAt": "2026-09-04T22:46:38.713Z",
+      "retryAfter": "2027-09-04T22:46:38.713Z"
     },
     "chart-00101": {
       "resolverVersion": 6,
@@ -3515,40 +3569,46 @@
       "sourceFingerprint": "0efdb5d38773df94ecfd18093acb405da437ea8cdf89ef0601301ea8de44c8f8",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "8735002d-85f6-4699-ab5e-5f9bc2f7519c",
       "recordingTitle": "На грязном (Диана)",
       "artistCredits": [
         {
           "name": "Платина",
+          "musicBrainzArtistId": "5ac4be23-e64a-4497-b375-3cded28995fb",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "5ac4be23-e64a-4497-b375-3cded28995fb"
+      ],
+      "isrcs": [
+        "FRX872016677"
+      ],
       "releaseYear": 2020,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2020-09-30",
       "versionType": "original",
       "album": {
-        "title": "На грязном (Диана)",
+        "title": "Sosa Muzik",
         "kind": "album",
-        "year": 2020,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a84fb8c097306092cbae41ca20cfbde6/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/176465292",
+        "year": 2021,
+        "releaseGroupMbid": "b421e3ce-f804-40b6-84fa-27568b98608e",
+        "coverUrl": "http://coverartarchive.org/release/c547e845-073d-4747-b542-73239f43e929/30220965117-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/b421e3ce-f804-40b6-84fa-27568b98608e",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "1094654322",
-          "url": "https://www.deezer.com/track/1094654322"
+          "provider": "musicbrainz",
+          "entityId": "8735002d-85f6-4699-ab5e-5f9bc2f7519c",
+          "url": "https://musicbrainz.org/recording/8735002d-85f6-4699-ab5e-5f9bc2f7519c"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:40.849Z"
+      "retrievedAt": "2026-09-04T22:46:47.345Z"
     },
     "chart-00141": {
       "resolverVersion": 3,
@@ -3617,18 +3677,21 @@
       "sourceFingerprint": "eb4a43a7f194f6053b5bc452951344cee59d716c2c03406de841821f60793197",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "ad5bd0e1-6bd1-4952-9c58-3fa5a9161ca5",
       "recordingTitle": "Эйя",
       "artistCredits": [
         {
           "name": "Канги",
+          "musicBrainzArtistId": "6f42e563-5348-40c2-84b5-f8fd6fcef658",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "6f42e563-5348-40c2-84b5-f8fd6fcef658"
+      ],
       "isrcs": [],
       "releaseYear": 2021,
       "releaseYearState": "candidate",
@@ -3638,19 +3701,20 @@
         "title": "Том I. «Жить не запретишь»",
         "kind": "album",
         "year": 2021,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/12a78f5286cc5b839060ecf08989d21d/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/499335481",
+        "releaseGroupMbid": "358b9854-6405-45f1-b3d8-9e3f242294fd",
+        "coverUrl": "http://coverartarchive.org/release/8a7c6530-2118-43eb-b057-840e3f87f58c/29583784058-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/358b9854-6405-45f1-b3d8-9e3f242294fd",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2495602241",
-          "url": "https://www.deezer.com/track/2495602241"
+          "provider": "musicbrainz",
+          "entityId": "ad5bd0e1-6bd1-4952-9c58-3fa5a9161ca5",
+          "url": "https://musicbrainz.org/recording/ad5bd0e1-6bd1-4952-9c58-3fa5a9161ca5"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:41.643Z"
+      "retrievedAt": "2026-09-04T22:45:25.508Z"
     },
     "chart-00120": {
       "resolverVersion": 6,
@@ -3882,40 +3946,38 @@
       "sourceFingerprint": "526dc5c29eaf8eb4107c454597ec2796bab9d3bd4c20bef1b762485c68ecb079",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "c4dd97bd-510a-491c-98f0-48cbf0c201a1",
       "recordingTitle": "На твиче",
       "artistCredits": [
         {
           "name": "нексюша",
+          "musicBrainzArtistId": "764405a0-5c58-4790-bd49-0c3a0bc1175c",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "764405a0-5c58-4790-bd49-0c3a0bc1175c"
+      ],
+      "isrcs": [
+        "FRX282021303"
+      ],
       "releaseYear": 2020,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2020-08-28",
       "versionType": "original",
-      "album": {
-        "title": "Осторожно, постмодерн",
-        "kind": "album",
-        "year": 2020,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/763c73c7650c7db9bb13830c4087396f/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/805656731",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "3510802621",
-          "url": "https://www.deezer.com/track/3510802621"
+          "provider": "musicbrainz",
+          "entityId": "c4dd97bd-510a-491c-98f0-48cbf0c201a1",
+          "url": "https://musicbrainz.org/recording/c4dd97bd-510a-491c-98f0-48cbf0c201a1"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:42.184Z"
+      "retrievedAt": "2026-09-04T22:46:48.592Z"
     },
     "chart-00299": {
       "resolverVersion": 1,
@@ -3933,19 +3995,24 @@
       "sourceFingerprint": "36bc132b59848ea30b34dd68e6fe1f46886a1a488927ff7ef59dfacedd790e1d",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
-      "runnerUpDelta": 0.1167,
-      "recordingMbid": null,
+      "runnerUpDelta": 0.1267,
+      "recordingMbid": "40973252-0098-43db-9918-2f9fb553ae3d",
       "recordingTitle": "Сан Ларан",
       "artistCredits": [
         {
           "name": "Платина",
+          "musicBrainzArtistId": "5ac4be23-e64a-4497-b375-3cded28995fb",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "5ac4be23-e64a-4497-b375-3cded28995fb"
+      ],
+      "isrcs": [
+        "FRX282185516"
+      ],
       "releaseYear": 2021,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2021-08-13",
@@ -3954,19 +4021,20 @@
         "title": "Sosa Muzik",
         "kind": "album",
         "year": 2021,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2973bbc0bc1a16daf86be495c59505a3/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/251502782",
+        "releaseGroupMbid": "b421e3ce-f804-40b6-84fa-27568b98608e",
+        "coverUrl": "http://coverartarchive.org/release/c547e845-073d-4747-b542-73239f43e929/30220965117-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/b421e3ce-f804-40b6-84fa-27568b98608e",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "1463122972",
-          "url": "https://www.deezer.com/track/1463122972"
+          "provider": "musicbrainz",
+          "entityId": "40973252-0098-43db-9918-2f9fb553ae3d",
+          "url": "https://musicbrainz.org/recording/40973252-0098-43db-9918-2f9fb553ae3d"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:42.474Z"
+      "retrievedAt": "2026-09-04T22:46:52.757Z"
     },
     "chart-00140": {
       "resolverVersion": 6,
@@ -3990,51 +4058,84 @@
       "sourceFingerprint": "f44168009691c983e966be6c8b7bef6964118b32e5002854aa5a4cc926edf5ff",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "6bdf61dd-bd65-49e5-9df6-297072a3acd8",
       "recordingTitle": "Серпантин",
       "artistCredits": [
         {
           "name": "ATL",
+          "musicBrainzArtistId": "405d9ac0-034a-4ae5-98e1-fe4fb65421e4",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "405d9ac0-034a-4ae5-98e1-fe4fb65421e4"
+      ],
+      "isrcs": [
+        "AEA0Q1960556"
+      ],
       "releaseYear": 2019,
       "releaseYearState": "candidate",
-      "firstReleaseDate": "2019-12-13",
+      "firstReleaseDate": "2019-09-13",
       "versionType": "original",
       "album": {
         "title": "Кривой эфир",
         "kind": "album",
         "year": 2019,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a12d0eb52c6bf7914e2f3b2ac482a9a3/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/486843885",
+        "releaseGroupMbid": "9ac40a6b-4f5a-4cfa-9725-e0db15900b1e",
+        "coverUrl": "http://coverartarchive.org/release/7a19980a-b0b8-4cd7-8f6b-e6deccb7f633/24870654997-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/9ac40a6b-4f5a-4cfa-9725-e0db15900b1e",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2449954205",
-          "url": "https://www.deezer.com/track/2449954205"
+          "provider": "musicbrainz",
+          "entityId": "6bdf61dd-bd65-49e5-9df6-297072a3acd8",
+          "url": "https://musicbrainz.org/recording/6bdf61dd-bd65-49e5-9df6-297072a3acd8"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:42.866Z"
+      "retrievedAt": "2026-09-04T22:47:11.567Z"
     },
     "chart-00268": {
       "resolverVersion": 6,
       "sourceFingerprint": "07fd13043af2a08723499dab5b85ae677782ddaa0a5325544d46e87f604cf37e",
-      "status": "not-found",
-      "method": "deezer-search",
-      "confidence": 0,
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T19:01:43.380Z",
-      "retryAfter": "2027-03-03T19:01:43.380Z"
+      "recordingMbid": "51684336-ea03-49dc-913e-bd6adc798abb",
+      "recordingTitle": "кладбище",
+      "artistCredits": [
+        {
+          "name": "Вышел покурить",
+          "musicBrainzArtistId": "3cd8d54c-a7a3-4c63-a0eb-30c48ab5b9b2",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "3cd8d54c-a7a3-4c63-a0eb-30c48ab5b9b2"
+      ],
+      "isrcs": [
+        "FR10S1958805"
+      ],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-02-19",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "51684336-ea03-49dc-913e-bd6adc798abb",
+          "url": "https://musicbrainz.org/recording/51684336-ea03-49dc-913e-bd6adc798abb"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T22:47:16.401Z"
     },
     "chart-00157": {
       "resolverVersion": 6,
@@ -4056,42 +4157,24 @@
     "chart-00183": {
       "resolverVersion": 6,
       "sourceFingerprint": "22cac568885fa241a163c5fb20083bcc1d1fd5e7fc81d8d3a7ecf2dd02a60d32",
-      "status": "matched",
-      "overallState": "candidate",
-      "method": "deezer-search",
+      "status": "ambiguous",
+      "method": "search",
       "confidence": 1,
-      "runnerUpDelta": null,
-      "recordingMbid": null,
-      "recordingTitle": "Забил",
-      "artistCredits": [
+      "runnerUpDelta": 0.01,
+      "alternatives": [
         {
-          "name": "ATL",
-          "joinPhrase": ""
+          "id": "8ce5aab2-f47f-4563-883b-01689b63d475",
+          "title": "Забил",
+          "score": 1
+        },
+        {
+          "id": "5c9c612f-babb-42a1-ae2b-451e1a7401c5",
+          "title": "Забил",
+          "score": 0.99
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
-      "releaseYear": 2020,
-      "releaseYearState": "candidate",
-      "firstReleaseDate": "2020-08-14",
-      "versionType": "original",
-      "album": {
-        "title": "Забил",
-        "kind": "album",
-        "year": 2020,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4b8ed64c3de30a0fde69d9679ae7293c/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/481273135",
-        "rightsStatus": "contextual-only"
-      },
-      "sources": [
-        {
-          "provider": "deezer",
-          "entityId": "2429256295",
-          "url": "https://www.deezer.com/track/2429256295"
-        }
-      ],
-      "issues": [],
-      "retrievedAt": "2026-09-04T19:01:43.711Z"
+      "retrievedAt": "2026-09-04T22:47:21.917Z",
+      "retryAfter": "2027-09-04T22:47:21.917Z"
     },
     "chart-00172": {
       "resolverVersion": 1,
@@ -4182,12 +4265,12 @@
       "resolverVersion": 6,
       "sourceFingerprint": "712f21528dab9f2843bc00b51f063655d409f6d436e6d625bd91648a0659e335",
       "status": "not-found",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T19:01:44.338Z",
-      "retryAfter": "2027-03-03T19:01:44.338Z"
+      "retrievedAt": "2026-09-04T22:47:22.543Z",
+      "retryAfter": "2027-03-03T22:47:22.543Z"
     },
     "chart-00281": {
       "resolverVersion": 3,
@@ -4440,13 +4523,44 @@
     "chart-01900": {
       "resolverVersion": 6,
       "sourceFingerprint": "f0f547ba69fab89f56879d03e30cad4e57eddf4069132e348d8611527091c355",
-      "status": "not-found",
-      "method": "deezer-search",
-      "confidence": 0,
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "alias-search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T19:01:32.797Z",
-      "retryAfter": "2027-03-03T19:01:32.798Z"
+      "recordingMbid": "549a8de5-4c49-41f0-ad8c-ba3c7141942b",
+      "recordingTitle": "Родная пой",
+      "artistCredits": [
+        {
+          "name": "MiyaGi",
+          "musicBrainzArtistId": "fd827bae-e907-4870-9bff-ff709b94104e",
+          "joinPhrase": " feat. "
+        },
+        {
+          "name": "Kadi",
+          "musicBrainzArtistId": "9237ea77-0700-48cb-ad74-6961413cd00c",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "fd827bae-e907-4870-9bff-ff709b94104e",
+        "9237ea77-0700-48cb-ad74-6961413cd00c"
+      ],
+      "isrcs": [],
+      "releaseYear": 2018,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2018-11-12",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "549a8de5-4c49-41f0-ad8c-ba3c7141942b",
+          "url": "https://musicbrainz.org/recording/549a8de5-4c49-41f0-ad8c-ba3c7141942b"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T22:43:46.009Z"
     },
     "chart-00161": {
       "resolverVersion": 3,
@@ -4726,19 +4840,24 @@
       "sourceFingerprint": "e06b19618c926071351556b7fb7d5f48e041e7b2b07a4b8c2afbdcf81ede879c",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "9edfa064-1f20-45a7-954a-4a363fe9b018",
       "recordingTitle": "Марабу",
       "artistCredits": [
         {
           "name": "ATL",
+          "musicBrainzArtistId": "405d9ac0-034a-4ae5-98e1-fe4fb65421e4",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "405d9ac0-034a-4ae5-98e1-fe4fb65421e4"
+      ],
+      "isrcs": [
+        "TCACJ1538973"
+      ],
       "releaseYear": 2015,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2015-11-04",
@@ -4747,19 +4866,20 @@
         "title": "Марабу",
         "kind": "album",
         "year": 2015,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4f21b1692777392bce02048fff72518d/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/486843875",
+        "releaseGroupMbid": "2caef080-68b7-4fd9-9034-d77979226e13",
+        "coverUrl": "http://coverartarchive.org/release/fc725faa-aa27-4b0d-89e3-938670016f13/24473146417-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/2caef080-68b7-4fd9-9034-d77979226e13",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2449954065",
-          "url": "https://www.deezer.com/track/2449954065"
+          "provider": "musicbrainz",
+          "entityId": "9edfa064-1f20-45a7-954a-4a363fe9b018",
+          "url": "https://musicbrainz.org/recording/9edfa064-1f20-45a7-954a-4a363fe9b018"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:45.083Z"
+      "retrievedAt": "2026-09-04T22:47:26.438Z"
     },
     "chart-00194": {
       "resolverVersion": 1,
@@ -4972,19 +5092,24 @@
       "sourceFingerprint": "0031af860d5b31c7c2e78b3ca735b5e9778c348f3959383be2fc54211c955fcd",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "0a0c2f04-4cf8-4e4c-b135-5e704c82a00b",
       "recordingTitle": "Блэсс гад",
       "artistCredits": [
         {
           "name": "SODA LUV",
+          "musicBrainzArtistId": "894e558b-f223-41b7-a259-4fb110c456da",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "894e558b-f223-41b7-a259-4fb110c456da"
+      ],
+      "isrcs": [
+        "FRX201966212"
+      ],
       "releaseYear": 2019,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2019-12-20",
@@ -4993,19 +5118,20 @@
         "title": "Ничего личного",
         "kind": "album",
         "year": 2019,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6c39534e1d0f87aeab7ff49bc11263f6/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/805642471",
+        "releaseGroupMbid": "ecf0a8b9-41e0-4d6c-b80a-a48fb2f05f15",
+        "coverUrl": "http://coverartarchive.org/release/36341113-bb48-4801-b131-fb64fb3338eb/29723913624-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/ecf0a8b9-41e0-4d6c-b80a-a48fb2f05f15",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "3510768001",
-          "url": "https://www.deezer.com/track/3510768001"
+          "provider": "musicbrainz",
+          "entityId": "0a0c2f04-4cf8-4e4c-b135-5e704c82a00b",
+          "url": "https://musicbrainz.org/recording/0a0c2f04-4cf8-4e4c-b135-5e704c82a00b"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:45.399Z"
+      "retrievedAt": "2026-09-04T22:47:47.216Z"
     },
     "chart-00349": {
       "resolverVersion": 6,
@@ -5185,18 +5311,21 @@
       "sourceFingerprint": "69604d0b48cb88bd922995f68ff869b53cd8763d1a7028779bbfa0c2c98384ce",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
-      "runnerUpDelta": 0.1667,
-      "recordingMbid": null,
-      "recordingTitle": "баночка с окурками",
+      "runnerUpDelta": null,
+      "recordingMbid": "ac41cca0-1ed5-4501-8539-44a712cee831",
+      "recordingTitle": "Баночка с окурками",
       "artistCredits": [
         {
-          "name": "Космонавтов Нет",
+          "name": "КОСМОНАВТОВ НЕТ",
+          "musicBrainzArtistId": "00f2d6d3-8afb-4a2a-8be1-027b8da6bcaa",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "00f2d6d3-8afb-4a2a-8be1-027b8da6bcaa"
+      ],
       "isrcs": [],
       "releaseYear": 2020,
       "releaseYearState": "candidate",
@@ -5206,38 +5335,44 @@
         "title": "1+1=11",
         "kind": "album",
         "year": 2020,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/17dc7ba115a52ff7cc9c2428cfc90823/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/776449061",
+        "releaseGroupMbid": "1b09ef22-a5d2-4c19-9985-2461832df97d",
+        "coverUrl": "http://coverartarchive.org/release/d11115eb-9090-445a-b99e-dea46a33ccb4/30203731692-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/1b09ef22-a5d2-4c19-9985-2461832df97d",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "3425701201",
-          "url": "https://www.deezer.com/track/3425701201"
+          "provider": "musicbrainz",
+          "entityId": "ac41cca0-1ed5-4501-8539-44a712cee831",
+          "url": "https://musicbrainz.org/recording/ac41cca0-1ed5-4501-8539-44a712cee831"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:46.232Z"
+      "retrievedAt": "2026-09-04T22:48:12.521Z"
     },
     "chart-00226": {
       "resolverVersion": 6,
       "sourceFingerprint": "0e3dd4e4468293c01919ff332fa5306769bb9dbd73ef9b809ae087d14d7bfe83",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "a3f168ec-57e5-46bd-b4d2-4c80e85de77b",
       "recordingTitle": "Цветами радуги",
       "artistCredits": [
         {
           "name": "Pyrokinesis",
+          "musicBrainzArtistId": "a6eb7cf4-e0e0-4cae-83f8-a42991cf998f",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "a6eb7cf4-e0e0-4cae-83f8-a42991cf998f"
+      ],
+      "isrcs": [
+        "FR59R1994630"
+      ],
       "releaseYear": 2019,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2019-08-16",
@@ -5246,19 +5381,20 @@
         "title": "Моя милая пустота",
         "kind": "album",
         "year": 2019,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ee9ffdd7629766f0ff118bbfcca354f9/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/841153502",
+        "releaseGroupMbid": "fd709ca5-124f-4542-abbb-82ba230ed805",
+        "coverUrl": "https://coverartarchive.org/release/8f11f652-d64b-422b-aded-e787b3a01fe6/26882115684-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/fd709ca5-124f-4542-abbb-82ba230ed805",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "3611051682",
-          "url": "https://www.deezer.com/track/3611051682"
+          "provider": "musicbrainz",
+          "entityId": "a3f168ec-57e5-46bd-b4d2-4c80e85de77b",
+          "url": "https://musicbrainz.org/recording/a3f168ec-57e5-46bd-b4d2-4c80e85de77b"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:46.485Z"
+      "retrievedAt": "2026-09-04T22:48:15.365Z"
     },
     "chart-00167": {
       "resolverVersion": 6,
@@ -5883,18 +6019,18 @@
       "resolverVersion": 6,
       "sourceFingerprint": "948428f7655332509e03e4f2965d8e6f07e429fc01535641aa2d77c9b910c8a4",
       "status": "ambiguous",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 0.8733,
       "runnerUpDelta": null,
       "alternatives": [
         {
-          "id": "deezer:2217729307",
+          "id": "b178ca8c-8567-4fe1-8385-7cac89d0d524",
           "title": "ВЛЮБИЛАСЬ",
           "score": 0.8733
         }
       ],
-      "retrievedAt": "2026-09-04T19:01:48.212Z",
-      "retryAfter": "2027-09-04T19:01:48.212Z"
+      "retrievedAt": "2026-09-04T22:48:43.117Z",
+      "retryAfter": "2027-09-04T22:48:43.117Z"
     },
     "chart-00252": {
       "resolverVersion": 1,
@@ -6304,12 +6440,12 @@
       "resolverVersion": 6,
       "sourceFingerprint": "45ed4e461ba4c58628d2b59badbc7774d6ced4b5d0ff5a40b1aae19890377a37",
       "status": "not-found",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T19:32:59.932Z",
-      "retryAfter": "2027-03-03T19:32:59.932Z"
+      "retrievedAt": "2026-09-04T22:43:59.200Z",
+      "retryAfter": "2027-03-03T22:43:59.200Z"
     },
     "chart-00237": {
       "resolverVersion": 1,
@@ -6707,40 +6843,36 @@
       "sourceFingerprint": "3c00aff7e60a4429d67dfde8fcbdc84dbd94bc76e2f80d17e48f4065ecf3012e",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "40319f69-5daa-404d-b018-9159fee4c270",
       "recordingTitle": "Я уёбываю в джаз",
       "artistCredits": [
         {
           "name": "Кишлак",
+          "musicBrainzArtistId": "539473a6-9dd6-40d3-bd39-0f3ecae9bad8",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "539473a6-9dd6-40d3-bd39-0f3ecae9bad8"
+      ],
       "isrcs": [],
       "releaseYear": 2021,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2021-10-01",
       "versionType": "original",
-      "album": {
-        "title": "Я уёбываю в джаз",
-        "kind": "album",
-        "year": 2021,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/96673c36f8cb8f4711ea55eaf2bc712c/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/380193157",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2036010307",
-          "url": "https://www.deezer.com/track/2036010307"
+          "provider": "musicbrainz",
+          "entityId": "40319f69-5daa-404d-b018-9159fee4c270",
+          "url": "https://musicbrainz.org/recording/40319f69-5daa-404d-b018-9159fee4c270"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:49.834Z"
+      "retrievedAt": "2026-09-04T22:48:46.966Z"
     },
     "chart-00323": {
       "resolverVersion": 1,
@@ -6811,40 +6943,38 @@
       "sourceFingerprint": "079308e081e6071688c585c10e96aa7379035907f9504ce308850308400479ce",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "34732cd5-d374-4f66-aa6b-19aea49b7b59",
       "recordingTitle": "Евгений Онегин",
       "artistCredits": [
         {
-          "name": "Kizaru",
+          "name": "kizaru",
+          "musicBrainzArtistId": "2f835289-33b8-4cb0-8d35-77d2697e5802",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "2f835289-33b8-4cb0-8d35-77d2697e5802"
+      ],
+      "isrcs": [
+        "RUA011900846"
+      ],
       "releaseYear": 2019,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2019-12-27",
       "versionType": "original",
-      "album": {
-        "title": "SAY NO MO",
-        "kind": "album",
-        "year": 2019,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4a40c91d08514b6f759bae3011fb7d8e/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/367406197",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "1972377857",
-          "url": "https://www.deezer.com/track/1972377857"
+          "provider": "musicbrainz",
+          "entityId": "34732cd5-d374-4f66-aa6b-19aea49b7b59",
+          "url": "https://musicbrainz.org/recording/34732cd5-d374-4f66-aa6b-19aea49b7b59"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:50.240Z"
+      "retrievedAt": "2026-09-04T22:48:49.274Z"
     },
     "chart-00361": {
       "resolverVersion": 3,
@@ -7089,15 +7219,15 @@
       "retrievedAt": "2026-09-04T09:35:02.489Z"
     },
     "chart-00346": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "0da82184465d1cfa30fff00071ca824f236250996f6b70f4a04e09f4a5016d76",
+      "resolverVersion": 6,
+      "sourceFingerprint": "69f1f8a0ceaf904dee78a8c9e7ec75d0aa152fe3f702dfa380079fd79eaec8a2",
       "status": "not-found",
       "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T14:52:59.879Z",
-      "retryAfter": "2027-03-03T14:52:59.879Z"
+      "retrievedAt": "2026-09-04T22:44:01.097Z",
+      "retryAfter": "2027-03-03T22:44:01.098Z"
     },
     "chart-00344": {
       "resolverVersion": 1,
@@ -7442,18 +7572,18 @@
       "resolverVersion": 6,
       "sourceFingerprint": "a78a5325aed4e04744daf1f1bd0d1967f2c7689e80a31fdf9b54f16a14bd6f69",
       "status": "ambiguous",
-      "method": "deezer-search",
-      "confidence": 0.8733,
+      "method": "search",
+      "confidence": 0.8533,
       "runnerUpDelta": null,
       "alternatives": [
         {
-          "id": "deezer:781089652",
+          "id": "548af747-3d19-4b47-aea6-19544dc23173",
           "title": "Бэнтли, Бенз и Бумер",
-          "score": 0.8733
+          "score": 0.8533
         }
       ],
-      "retrievedAt": "2026-09-04T19:01:51.739Z",
-      "retryAfter": "2027-09-04T19:01:51.739Z"
+      "retrievedAt": "2026-09-04T22:48:50.906Z",
+      "retryAfter": "2027-09-04T22:48:50.906Z"
     },
     "chart-00598": {
       "resolverVersion": 3,
@@ -7694,18 +7824,21 @@
       "sourceFingerprint": "578a91cb3971c51754f9efe0dc4e302bc25a09b1fbda041bc06234b21a6ec32d",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "a5eb2d56-f9c6-4b1a-83be-8a8ba4ca41d4",
       "recordingTitle": "Рассвет",
       "artistCredits": [
         {
           "name": "КАКАЯ РАЗНИЦА",
+          "musicBrainzArtistId": "4e906f4f-724f-46b8-a8bb-1e9fe6ec9715",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "4e906f4f-724f-46b8-a8bb-1e9fe6ec9715"
+      ],
       "isrcs": [],
       "releaseYear": 2020,
       "releaseYearState": "candidate",
@@ -7715,19 +7848,20 @@
         "title": "Рассвет",
         "kind": "album",
         "year": 2020,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/234498d5d5312b8d354b2594aba5e679/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/153294462",
+        "releaseGroupMbid": "e6796fe7-f4fd-44a5-bdbb-a6759429af32",
+        "coverUrl": "https://coverartarchive.org/release/270bf392-1aa6-491e-811f-00227bd058e6/44036976468-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/e6796fe7-f4fd-44a5-bdbb-a6759429af32",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "985258442",
-          "url": "https://www.deezer.com/track/985258442"
+          "provider": "musicbrainz",
+          "entityId": "a5eb2d56-f9c6-4b1a-83be-8a8ba4ca41d4",
+          "url": "https://musicbrainz.org/recording/a5eb2d56-f9c6-4b1a-83be-8a8ba4ca41d4"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:52.214Z"
+      "retrievedAt": "2026-09-04T22:48:54.841Z"
     },
     "chart-00288": {
       "resolverVersion": 6,
@@ -7831,40 +7965,38 @@
       "sourceFingerprint": "27eb12cbefb8063fd100d20a959164859c6cd61c0d136bae62f1d1ea4b4ed007",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
-      "runnerUpDelta": 0.1667,
-      "recordingMbid": null,
+      "runnerUpDelta": null,
+      "recordingMbid": "92c9b227-bbce-4a4b-9d92-ec106e901ee7",
       "recordingTitle": "мальчик",
       "artistCredits": [
         {
           "name": "кис-кис",
+          "musicBrainzArtistId": "3b61903c-c441-4bf1-83e4-234cd8781388",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "3b61903c-c441-4bf1-83e4-234cd8781388"
+      ],
+      "isrcs": [
+        "FR96X1928590"
+      ],
       "releaseYear": 2019,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2019-09-13",
       "versionType": "original",
-      "album": {
-        "title": "магазин игрушек для взрослых",
-        "kind": "album",
-        "year": 2019,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/002b89d6150631ea8fbf9eac3d5b5da4/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/805640991",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "3510764021",
-          "url": "https://www.deezer.com/track/3510764021"
+          "provider": "musicbrainz",
+          "entityId": "92c9b227-bbce-4a4b-9d92-ec106e901ee7",
+          "url": "https://musicbrainz.org/recording/92c9b227-bbce-4a4b-9d92-ec106e901ee7"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:52.736Z"
+      "retrievedAt": "2026-09-04T22:48:56.075Z"
     },
     "chart-00362": {
       "resolverVersion": 6,
@@ -8198,40 +8330,36 @@
       "sourceFingerprint": "ebfaac8ce975669aae5aa4846f25616c0211c9f2186ba97af425fdece2688636",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "1b7cb88e-2743-4a58-91ca-ff82e84f1674",
       "recordingTitle": "Седьмой лепесток",
       "artistCredits": [
         {
           "name": "Антон Токарев",
+          "musicBrainzArtistId": "09dfd858-a9a1-4a02-92e7-1bae4b9753f2",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "09dfd858-a9a1-4a02-92e7-1bae4b9753f2"
+      ],
       "isrcs": [],
       "releaseYear": 2021,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2021-12-14",
       "versionType": "original",
-      "album": {
-        "title": "Седьмой лепесток",
-        "kind": "album",
-        "year": 2021,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3395f13600a7ebc46aff1f3165e04df7/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/280420742",
-        "rightsStatus": "contextual-only"
-      },
+      "album": null,
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "1591072882",
-          "url": "https://www.deezer.com/track/1591072882"
+          "provider": "musicbrainz",
+          "entityId": "1b7cb88e-2743-4a58-91ca-ff82e84f1674",
+          "url": "https://musicbrainz.org/recording/1b7cb88e-2743-4a58-91ca-ff82e84f1674"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:52.997Z"
+      "retrievedAt": "2026-09-04T22:49:02.290Z"
     },
     "chart-00503": {
       "resolverVersion": 1,
@@ -8289,13 +8417,19 @@
     "chart-00588": {
       "resolverVersion": 6,
       "sourceFingerprint": "14d6224dc775c5cc207932d4acbb802ab59db399ec571b7d62e76cf702f5784b",
-      "status": "not-found",
-      "method": "deezer-search",
-      "confidence": 0,
+      "status": "ambiguous",
+      "method": "apple-search",
+      "confidence": 0.8733,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T19:01:53.506Z",
-      "retryAfter": "2027-03-03T19:01:53.506Z"
+      "alternatives": [
+        {
+          "id": "apple:1590310483",
+          "title": "Не люблю?",
+          "score": 0.8733
+        }
+      ],
+      "retrievedAt": "2026-09-04T22:49:03.119Z",
+      "retryAfter": "2027-09-04T22:49:03.119Z"
     },
     "chart-00373": {
       "resolverVersion": 3,
@@ -8417,42 +8551,24 @@
     "chart-00457": {
       "resolverVersion": 6,
       "sourceFingerprint": "b9179784ee00946d21136b033b9399676a5757fee3671eb659c4f1db424ad06e",
-      "status": "matched",
-      "overallState": "candidate",
-      "method": "deezer-search",
+      "status": "ambiguous",
+      "method": "search",
       "confidence": 1,
-      "runnerUpDelta": null,
-      "recordingMbid": null,
-      "recordingTitle": "Браслеты",
-      "artistCredits": [
+      "runnerUpDelta": 0.011,
+      "alternatives": [
         {
-          "name": "ATL",
-          "joinPhrase": ""
+          "id": "ccc515ea-945e-4b29-868f-3794ffebb731",
+          "title": "Браслеты",
+          "score": 1
+        },
+        {
+          "id": "02ce5047-6067-4180-a195-1e937d9328a4",
+          "title": "Браслеты",
+          "score": 0.989
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
-      "releaseYear": 2020,
-      "releaseYearState": "candidate",
-      "firstReleaseDate": "2020-10-16",
-      "versionType": "original",
-      "album": {
-        "title": "Браслеты",
-        "kind": "album",
-        "year": 2020,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bb9898a1b251313443a79d85e6b4d2b4/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/480045215",
-        "rightsStatus": "contextual-only"
-      },
-      "sources": [
-        {
-          "provider": "deezer",
-          "entityId": "2424947345",
-          "url": "https://www.deezer.com/track/2424947345"
-        }
-      ],
-      "issues": [],
-      "retrievedAt": "2026-09-04T19:01:53.903Z"
+      "retrievedAt": "2026-09-04T22:49:03.983Z",
+      "retryAfter": "2027-09-04T22:49:03.983Z"
     },
     "chart-00434": {
       "resolverVersion": 3,
@@ -8626,40 +8742,46 @@
       "sourceFingerprint": "cce30b1ffcc0556b0dcf97350311013b2ed3d4c7d622dea367afe3351953f330",
       "status": "matched",
       "overallState": "candidate",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
+      "recordingMbid": "079389e3-71ee-4751-aef5-6cf51454a6f5",
       "recordingTitle": "Сердце для шалав",
       "artistCredits": [
         {
           "name": "Платина",
+          "musicBrainzArtistId": "5ac4be23-e64a-4497-b375-3cded28995fb",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
+      "artistMbids": [
+        "5ac4be23-e64a-4497-b375-3cded28995fb"
+      ],
+      "isrcs": [
+        "FRX282185519"
+      ],
       "releaseYear": 2021,
       "releaseYearState": "candidate",
       "firstReleaseDate": "2021-08-11",
       "versionType": "original",
       "album": {
-        "title": "Сердце для шалав",
+        "title": "Sosa Muzik",
         "kind": "album",
         "year": 2021,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/646ed5f7028f2621ab3803fff555d2c3/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/250937342",
+        "releaseGroupMbid": "b421e3ce-f804-40b6-84fa-27568b98608e",
+        "coverUrl": "http://coverartarchive.org/release/c547e845-073d-4747-b542-73239f43e929/30220965117-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/b421e3ce-f804-40b6-84fa-27568b98608e",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "1460991142",
-          "url": "https://www.deezer.com/track/1460991142"
+          "provider": "musicbrainz",
+          "entityId": "079389e3-71ee-4751-aef5-6cf51454a6f5",
+          "url": "https://musicbrainz.org/recording/079389e3-71ee-4751-aef5-6cf51454a6f5"
         }
       ],
       "issues": [],
-      "retrievedAt": "2026-09-04T19:01:54.202Z"
+      "retrievedAt": "2026-09-04T22:49:07.796Z"
     },
     "chart-00793": {
       "resolverVersion": 3,
@@ -8920,18 +9042,21 @@
       "sourceFingerprint": "e17159b8122dfe4b733749ba1938ff691c58df8fdc68fcc0859bc240f6ab78ec",
       "status": "matched",
       "overallState": "conflict",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 1,
       "runnerUpDelta": null,
-      "recordingMbid": null,
-      "recordingTitle": "Жмурки",
+      "recordingMbid": "365b6af6-ed4e-4460-8e54-fbc010e12a1b",
+      "recordingTitle": "ЖМУРКИ",
       "artistCredits": [
         {
-          "name": "163Onmyneck",
+          "name": "163ONMYNECK",
+          "musicBrainzArtistId": "a2bf7115-f754-4469-befa-7f84c624fc0c",
           "joinPhrase": ""
         }
       ],
-      "artistMbids": [],
+      "artistMbids": [
+        "a2bf7115-f754-4469-befa-7f84c624fc0c"
+      ],
       "isrcs": [],
       "releaseYear": 2022,
       "releaseYearState": "conflict",
@@ -8941,21 +9066,22 @@
         "title": "NO OFFENCE",
         "kind": "album",
         "year": 2022,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a2a09a70a38cee8266a8524b511d8df6/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/513112691",
+        "releaseGroupMbid": "19cbbc96-0086-449d-a10e-e390d955558e",
+        "coverUrl": "https://coverartarchive.org/release/785d82e3-e2a7-426a-a2e8-4dba6f7a1358/45451057979-500.jpg",
+        "sourceUrl": "https://musicbrainz.org/release-group/19cbbc96-0086-449d-a10e-e390d955558e",
         "rightsStatus": "contextual-only"
       },
       "sources": [
         {
-          "provider": "deezer",
-          "entityId": "2544401641",
-          "url": "https://www.deezer.com/track/2544401641"
+          "provider": "musicbrainz",
+          "entityId": "365b6af6-ed4e-4460-8e54-fbc010e12a1b",
+          "url": "https://musicbrainz.org/recording/365b6af6-ed4e-4460-8e54-fbc010e12a1b"
         }
       ],
       "issues": [
         "release-year-after-chart"
       ],
-      "retrievedAt": "2026-09-04T19:01:54.473Z"
+      "retrievedAt": "2026-09-04T22:49:11.406Z"
     },
     "chart-00578": {
       "resolverVersion": 6,
@@ -9903,15 +10029,44 @@
       "retrievedAt": "2026-09-04T09:45:19.801Z"
     },
     "chart-00889": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "1890cb15952b89973fc37acdb0759bfe3c767e704df8c5f06525b14efef6e85b",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 6,
+      "sourceFingerprint": "38ab30cba674a070a8ab72626d80eedf29ae5cfc7d9d01e2d40d6e908bb6eec5",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:02:18.085Z",
-      "retryAfter": "2027-03-03T15:02:18.085Z"
+      "recordingMbid": null,
+      "recordingTitle": "МАЛЬЧИК",
+      "artistCredits": [
+        {
+          "name": "ФОГЕЛЬ",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-05-07T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "МАЛЬЧИК",
+        "kind": "single",
+        "year": 2020,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ab/75/cc/ab75ccfc-cdea-70a4-7745-d220c01dc2c1/190295290405.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA/1510416003?i=1510416396&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1510416396",
+          "url": "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA/1510416003?i=1510416396&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T22:47:38.805Z"
     },
     "chart-00575": {
       "resolverVersion": 1,
@@ -10636,15 +10791,42 @@
       "retrievedAt": "2026-09-04T19:01:59.988Z"
     },
     "chart-00715": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "b04a79a7ba50eedceb053e9ee1994e1c66b10ba5d3a7577f5e8128b245217dfc",
-      "status": "not-found",
+      "resolverVersion": 6,
+      "sourceFingerprint": "acbf08278ac5b010be3c3dfbf248892a1a116e1c76dd2d76638a5d53db1704ba",
+      "status": "matched",
+      "overallState": "conflict",
       "method": "search",
-      "confidence": 0,
+      "confidence": 0.97,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:03:00.575Z",
-      "retryAfter": "2027-03-03T15:03:00.575Z"
+      "recordingMbid": "bd12a32f-15fb-44eb-a919-be7c1d6e8b2b",
+      "recordingTitle": "Плакала",
+      "artistCredits": [
+        {
+          "name": "Леша Свик",
+          "musicBrainzArtistId": "a6f76bc3-8b92-459d-b86d-6b6b0ce2c5f4",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "a6f76bc3-8b92-459d-b86d-6b6b0ce2c5f4"
+      ],
+      "isrcs": [],
+      "releaseYear": 2022,
+      "releaseYearState": "conflict",
+      "firstReleaseDate": "2022-01-07",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "bd12a32f-15fb-44eb-a919-be7c1d6e8b2b",
+          "url": "https://musicbrainz.org/recording/bd12a32f-15fb-44eb-a919-be7c1d6e8b2b"
+        }
+      ],
+      "issues": [
+        "release-year-after-chart"
+      ],
+      "retrievedAt": "2026-09-04T22:48:42.423Z"
     },
     "chart-00708": {
       "resolverVersion": 1,
@@ -11573,15 +11755,44 @@
       "retryAfter": "2027-03-03T19:02:00.789Z"
     },
     "chart-00900": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "aeae27fdce695412f46c5e53f81c0f832d94ae25f3f07048eb601e878bab5832",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 6,
+      "sourceFingerprint": "7ab82707c1731dc7a90ac6db03f4d813ccd48c617767cddb19c92b74ba8b4e1f",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.99,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:18:09.588Z",
-      "retryAfter": "2027-03-03T15:18:09.588Z"
+      "recordingMbid": null,
+      "recordingTitle": "Стреляй",
+      "artistCredits": [
+        {
+          "name": "Леша Свик",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-07-15T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Стреляй",
+        "kind": "single",
+        "year": 2021,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d7/f1/67/d7f16790-b043-ffaf-a053-7e6ea2950d10/190296549953.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D1%8F%D0%B9/1575396168?i=1575396593&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1575396593",
+          "url": "https://music.apple.com/ru/album/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D1%8F%D0%B9/1575396168?i=1575396593&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T22:48:45.208Z"
     },
     "chart-00804": {
       "resolverVersion": 3,
@@ -17182,13 +17393,29 @@
     "chart-04479": {
       "resolverVersion": 6,
       "sourceFingerprint": "2d6d6c03c5294e631199189d9d13bb73f59dd760a035bd32727ed8e13675733e",
-      "status": "not-found",
-      "method": "deezer-search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T19:01:33.847Z",
-      "retryAfter": "2027-03-03T19:01:33.847Z"
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 1,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "85d982fc-eae6-4a85-ae6b-a33e0e7b5c22",
+          "title": "Медляк",
+          "score": 1
+        },
+        {
+          "id": "4aaa3d41-54eb-41b2-9d3d-d7c385343d15",
+          "title": "Медляк",
+          "score": 1
+        },
+        {
+          "id": "9894ac72-daad-4238-9cc7-140bc7621f72",
+          "title": "Медляк",
+          "score": 0.99
+        }
+      ],
+      "retrievedAt": "2026-09-04T22:44:44.934Z",
+      "retryAfter": "2027-09-04T22:44:44.934Z"
     },
     "chart-00633": {
       "resolverVersion": 3,
@@ -20764,42 +20991,24 @@
     "pool-542b5a46e96d": {
       "resolverVersion": 6,
       "sourceFingerprint": "f6687d3b292915105535e3d1f0df7f38f139a86c93780ed7255c5a9fef06c579",
-      "status": "matched",
-      "overallState": "candidate",
-      "method": "deezer-search",
-      "confidence": 0.95,
-      "runnerUpDelta": null,
-      "recordingMbid": null,
-      "recordingTitle": "Третье сентября",
-      "artistCredits": [
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.97,
+      "runnerUpDelta": 0.02,
+      "alternatives": [
         {
-          "name": "Михаил Шуфутинский",
-          "joinPhrase": ""
+          "id": "1339524d-8e3f-4653-a94f-765f5bac4628",
+          "title": "Третье сентября",
+          "score": 0.97
+        },
+        {
+          "id": "d72df5b2-179f-4ff1-981d-88e3764e837f",
+          "title": "Третье сентября",
+          "score": 0.95
         }
       ],
-      "artistMbids": [],
-      "isrcs": [],
-      "releaseYear": 2013,
-      "releaseYearState": "candidate",
-      "firstReleaseDate": "2013-01-01",
-      "versionType": "original",
-      "album": {
-        "title": "50 Лучших Песен (Greatest Hits)",
-        "kind": "album",
-        "year": 2013,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7b410677f12656577afbc58371ea6865/1000x1000-000000-80-0-0.jpg",
-        "sourceUrl": "https://www.deezer.com/album/6937743",
-        "rightsStatus": "contextual-only"
-      },
-      "sources": [
-        {
-          "provider": "deezer",
-          "entityId": "70661963",
-          "url": "https://www.deezer.com/track/70661963"
-        }
-      ],
-      "issues": [],
-      "retrievedAt": "2026-09-04T19:01:33.421Z"
+      "retrievedAt": "2026-09-04T22:44:20.606Z",
+      "retryAfter": "2027-09-04T22:44:20.606Z"
     },
     "chart-01160": {
       "resolverVersion": 3,
@@ -30228,12 +30437,12 @@
       "resolverVersion": 6,
       "sourceFingerprint": "59d6a2895ab8ae1bdcebaacc796cf6c40acbc3ad385c58c158f6555177c89355",
       "status": "not-found",
-      "method": "deezer-search",
+      "method": "search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T19:33:00.304Z",
-      "retryAfter": "2027-03-03T19:33:00.304Z"
+      "retrievedAt": "2026-09-04T22:44:08.644Z",
+      "retryAfter": "2027-03-03T22:44:08.644Z"
     },
     "chart-00455": {
       "resolverVersion": 6,

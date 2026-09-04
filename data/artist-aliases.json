@@ -6,6 +6,7 @@
     "Исходные написания всегда сохраняются в полном архиве chart-catalog.json.gz для последующей проверки."
   ],
   "artists": [
+    { "canonical": "Виктория Дайнеко", "aliases": ["Вика Дайнеко", "Vika Daineko", "Viktoria Daineko"] },
     { "canonical": "Скриптонит", "aliases": ["Skryptonite", "Scriptonite"] },
     { "canonical": "Эндшпиль", "aliases": ["Endspiel", "Andy Panda"] },
     { "canonical": "Михаил Шуфутинский", "aliases": ["Mikhail Shufutinskiy", "Mikhail Shufutinsky"] },

@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
+import { buildAliasIndex } from "./chart-normalization.mjs";
 import { rankYouTubeResults, searchYouTubeVideos } from "./youtube-search.mjs";
 import {
   applyArtistCreditOverride,
@@ -39,6 +40,7 @@ if (databaseIndex.archiveSha256 && crypto.createHash("sha256").update(compressed
   throw new Error("Song database archive checksum mismatch");
 }
 const database = JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
+const aliasIndex = buildAliasIndex(readJson(dataPath("artist-aliases.json")));
 const statusOverrides = readJson(dataPath("song-status-overrides.json"));
 validateSongStatusOverrides(statusOverrides);
 const statusOverrideFor = (song) => statusOverrides.songs?.[song.id]
@@ -53,6 +55,10 @@ for (const song of database.songs) {
   const identity = artistIdentityFromStatusOverride(manual, `status override for ${song.id}`);
   applyArtistCreditOverride(song, identity);
   if (identity) song.artistIds = [...identity.artistIds];
+  else {
+    song.artistIds = [...new Set(song.artistIds.map((artistId) => aliasIndex.get(artistId) || artistId))].sort();
+    song.normalizedArtist = { primary: song.artistIds[0], participants: [...song.artistIds] };
+  }
   if (manual.workflowStatus) song.status.workflow = manual.workflowStatus;
   if (manual.language) song.status.language = manual.language;
 }

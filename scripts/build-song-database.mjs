@@ -25,6 +25,17 @@ const generatedAt = process.env.SONG_DATABASE_GENERATED_AT || new Date().toISOSt
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const aliases = readJson(dataPath("artist-aliases.json"));
 const aliasIndex = buildAliasIndex(aliases);
+const publishedArtistForms = new Map();
+const publishedSingleArtistForms = new Map();
+const artistFormPattern = /^\s*"([^"]+)":\s*"((?:Исполнительница|Исполнитель|Группа|Проект|Дуэт|Исполнители)(?:\s*\+\s*(?:исполнительница|исполнитель|группа|проект|дуэт))*)",/gmu;
+for (const file of ["quiz-data.ts", "quiz-data-extra.ts"]) {
+  const source = fs.readFileSync(path.join(repoRoot, "app", file), "utf8");
+  for (const match of source.matchAll(artistFormPattern)) {
+    const [, artist, form] = match;
+    publishedArtistForms.set(artist, form);
+    if (!form.includes("+")) publishedSingleArtistForms.set(normalizeArtist(artist, aliasIndex).primary, form);
+  }
+}
 const canonicalArtistNames = new Map(aliases.artists.map(({ canonical }) => [fingerprint(canonical), canonical]));
 const overrides = readJson(dataPath("song-status-overrides.json"));
 validateSongStatusOverrides(overrides);
@@ -438,7 +449,11 @@ for (const entry of entries) {
   };
   const artistProfiles = (automaticEnrichment.artistMbids || []).map((id) => enrichmentAuto.artists?.[id]).filter(Boolean);
   entry.enrichment = {
-    artistForm: enrichment.artistForm || artistProfiles[0]?.artistForm || null,
+    artistForm: enrichment.artistForm
+      || artistProfiles[0]?.artistForm
+      || publishedArtistForms.get(entry.artist)
+      || (entry.artistIds.length === 1 ? publishedSingleArtistForms.get(entry.artistIds[0]) : null)
+      || null,
     performers: enrichment.performers || automaticEnrichment.artistCredits || [],
     artistImage: enrichment.artistImage || artistProfiles.find(({ photo }) => photo)?.photo || null,
     facts: enrichment.facts || artistProfiles.flatMap(({ facts = [] }) => facts).slice(0, 3),
