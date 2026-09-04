@@ -158,6 +158,220 @@
       "artistCredit": "L'ONE feat. Варвара Визбор",
       "artistIds": ["lone", "varvaravizbor"],
       "notes": ["Исправлено написание L'ONE и восстановлен полный исполнительский кредит."]
+    },
+    "chart-07163": {
+      "workflowStatus": "rejected",
+      "language": "foreign",
+      "reviewStatus": "verified",
+      "notes": ["Англоязычная песня украинской исполнительницы; не проходит критерий русского квиза."]
+    },
+    "chart-00706": {
+      "workflowStatus": "rejected",
+      "language": "foreign",
+      "reviewStatus": "verified",
+      "artistCredit": "Колос & Фіолет",
+      "artistIds": ["kolos", "fiolet"],
+      "notes": ["Украиноязычная песня украинских исполнителей; также восстановлен полный credit."]
+    },
+    "chart-00917": {
+      "artistCredit": "Ирина Аллегрова & Григорий Лепс",
+      "artistIds": ["irinaallegrova", "grigoriyleps"],
+      "notes": ["Восстановлены исполнители песни «Я тебе не верю» вместо мусорного значения источника."]
+    },
+    "chart-01844": {
+      "artistCredit": "Лариса Долина",
+      "artistIds": ["larisadolina"],
+      "notes": ["Восстановлена исполнительница песни «Три белых коня» вместо мусорного значения источника."]
+    },
+    "chart-01676": {
+      "artistCredit": "39 feat. PHARAOH",
+      "artistIds": ["39", "pharaoh"],
+      "notes": ["Восстановлен полный исполнительский credit по исходному ролику."]
+    },
+    "pool-b7ddecdd8883": {
+      "fragmentStatus": "bad",
+      "reviewStatus": "needs-review",
+      "notes": ["Выбранный ролик XHbL5CdSOSI содержит песню Юрия Антонова, а не запись Юрия Киселёва; карточку не использовать до замены видео."]
+    },
+    "pool-483af28a8c9f": {
+      "artistCredit": "Нурминский",
+      "artistIds": ["nurminskii"],
+      "notes": ["Удалено случайно приклеенное к имени слово «Валим»."]
+    },
+    "pool-13efd221023a": {
+      "artistCredit": "TATARKA feat. LITTLE BIG",
+      "artistIds": ["tatarka", "littlebig"],
+      "notes": ["Восстановлен полный credit приглашённой группы."]
+    },
+    "pool-ec26e47909e7": {
+      "artistCredit": "Ленинград",
+      "artistIds": ["leningrad"],
+      "notes": ["Нормализовано написание названия группы."]
+    },
+    "pool-a556920d76ae": {
+      "artistCredit": "L'ONE",
+      "artistIds": ["lone"],
+      "notes": ["Исправлено написание сценического имени; в исходном названии песни пропущена последняя буква и это оставлено в очереди редакторской правки."]
+    },
+    "pool-9fc5217a6019": {
+      "artistCredit": "Олег Майами",
+      "artistIds": ["olegmaiami"],
+      "notes": ["Исправлена опечатка в фамилии исполнителя."]
+    },
+    "pool-2c18da0e3592": {
+      "artistCredit": "УСПЕШНАЯ ГРУППА, Дима Власкин & Maria Way",
+      "artistIds": ["uspeshnayagruppa", "dimavlaskin", "mariaway"],
+      "notes": ["Восстановлен полный исполнительский credit по выбранному ролику."]
+    },
+    "chart-00451": {
+      "artistCredit": "КУЧЕР & JANAGA",
+      "artistIds": ["kucher", "janaga"],
+      "notes": ["Восстановлен второй исполнитель песни."]
+    },
+    "chart-00217": {
+      "artistCredit": "Анет Сай",
+      "artistIds": ["anetsai"],
+      "notes": ["Нормализовано русское написание имени; текущий ролик содержит обычную, не акустическую версию."]
+    },
+    "chart-00428": {
+      "artistCredit": "Boulevard Depo & SP4K",
+      "artistIds": ["boulevarddepo", "sp4k"],
+      "notes": ["Восстановлен второй исполнитель песни."]
+    },
+    "pool-d9df89bb5019": {
+      "fragmentStatus": "bad",
+      "reviewStatus": "needs-review",
+      "notes": ["Текущий ролик — сторонняя Female Version; до публикации нужен оригинал Милоша Биковича."]
+    },
+    "chart-00584": {
+      "fragmentStatus": "bad",
+      "reviewStatus": "needs-review",
+      "notes": ["Текущий ролик помечен speed up; до публикации нужна оригинальная версия."]
+    },
+    "pool-eece2f105ab4": {
+      "fragmentStatus": "bad",
+      "reviewStatus": "needs-review",
+      "notes": ["Текущий ролик загружен низконадёжным сторонним каналом; требуется устойчивая оригинальная версия."]
+    },
+    "chart-00386": {
+      "artistCredit": "Даня Милохин & Николай Басков",
+      "artistIds": ["danyamilokhin", "nikolaibaskov"],
+      "notes": ["Восстановлен второй исполнитель по выбранному ролику."]
+    },
+    "chart-00629": {
+      "artistCredit": "163ONMYNECK & BUSHIDO ZHO",
+      "artistIds": ["163onmyneck", "bushidozho"],
+      "notes": ["Восстановлен второй исполнитель по выбранному ролику."]
+    },
+    "chart-03967": {
+      "artistCredit": "Smash!! & Earphones",
+      "artistIds": ["smash", "earphones"],
+      "notes": ["Восстановлен второй коллектив записи «Obsession»."]
+    },
+    "pool-c435092fb6c8": {
+      "artistCredit": "Авраам Руссо feat. Кристина Орбакайте",
+      "artistIds": ["avraamrusso", "kristinaorbakaite"],
+      "notes": ["Нормализованы имена исполнителей дуэта."]
+    },
+    "pool-e114acdd2320": {
+      "artistCredit": "Вячеслав Бутусов & Deadушки",
+      "artistIds": ["vyacheslavbutusov", "deadushki"],
+      "notes": ["Восстановлен полный credit записи."]
+    },
+    "pool-9e5d88c560a5": {
+      "artistCredit": "Гости из будущего",
+      "artistIds": ["gostiizbudushchego"],
+      "notes": ["Песня относится к группе, а не к сольному проекту Евы Польны."]
+    },
+    "pool-c04bbdc56b09": {
+      "artistCredit": "Верка Сердючка",
+      "artistIds": ["verkaserdyuchka"],
+      "notes": ["Удалена случайно приклеенная редакторская помета «вручант»."]
+    },
+    "pool-28da92329644": {
+      "artistCredit": "Александр Панайотов & Алексей Чумаков",
+      "artistIds": ["aleksandrpanaiotov", "alekseichumakov"],
+      "notes": ["Раскрыты инициалы и нормализован дуэт."]
+    },
+    "pool-14c536a3a3eb": {
+      "artistCredit": "Инь-Ян",
+      "artistIds": ["inian"],
+      "notes": ["Исправлено ошибочное разделение названия группы между полями artist и title."]
+    },
+    "pool-d93f5c5071ae": {
+      "artistCredit": "Саша Градива",
+      "artistIds": ["sashagradiva"],
+      "notes": ["Уточнена личность исполнительницы вместо неоднозначного Sasha."]
+    },
+    "pool-5936045fa866": {
+      "artistCredit": "Вячеслав Петкун, Александр Голубев & Антон Макарский",
+      "artistIds": ["vyacheslavpetkun", "aleksandrgolubev", "antonmakarskii"],
+      "notes": ["Раскрыты инициалы и сохранён полный состав номера."]
+    },
+    "pool-4cd65d5d98c8": {
+      "artistCredit": "Ирина Тонева & Павел Артемьев",
+      "artistIds": ["irinatoneva", "pavelartemev"],
+      "notes": ["Нормализован порядок и полные имена дуэта."]
+    },
+    "pool-32344b6b0b87": {
+      "artistCredit": "Miyagi & Эндшпиль",
+      "artistIds": ["miyagi", "endshpil"],
+      "notes": ["Восстановлен второй участник записи «#ТАМАДА»."]
+    },
+    "pool-5c49cc11c767": {
+      "artistCredit": "LITTLE BIG feat. DenDerty",
+      "artistIds": ["littlebig", "denderty"],
+      "notes": ["Восстановлен приглашённый исполнитель."]
+    },
+    "pool-51c3c56c4fd5": {
+      "artistCredit": "Enjoykin feat. Диана Шурыгина",
+      "artistIds": ["enjoykin", "dianashurygina"],
+      "notes": ["Восстановлена приглашённая исполнительница."]
+    },
+    "pool-189d996239f5": {
+      "artistCredit": "Саша Тилэкс feat. Антон из Франции",
+      "artistIds": ["sashatileks", "antonizfrantsii"],
+      "notes": ["Нормализованы имена исполнителей."]
+    },
+    "pool-f9bb7845b8d6": {
+      "fragmentStatus": "bad",
+      "reviewStatus": "needs-review",
+      "notes": ["Выбранный ролик — сторонний mashup/remix, требуется оригинальная запись."]
+    },
+    "pool-50b21aaea359": {
+      "fragmentStatus": "bad",
+      "reviewStatus": "needs-review",
+      "notes": ["Нужно подтвердить, что ролик содержит допустимую русскую версию, а не оригинал румынской группы."]
+    },
+    "pool-75310544a546": {
+      "fragmentStatus": "bad",
+      "reviewStatus": "needs-review",
+      "notes": ["Точный ролик помечен 2020 годом и может быть live или перезаписью; требуется сверка версии."]
+    },
+    "pool-253418a54618": {
+      "fragmentStatus": "bad",
+      "reviewStatus": "needs-review",
+      "notes": ["Credit русского состава мюзикла не подтверждён для выбранного видео; не публиковать до сверки."]
+    },
+    "chart-00261": {
+      "artistCredit": "BULA feat. SVNV",
+      "artistIds": ["bula", "svnv"],
+      "externalIds": { "youtube": ["d-HHuVrbPl8"] },
+      "notes": ["Восстановлен второй исполнитель; выбран официальный ролик soyuzmusic вместо сторонней загрузки с 34 просмотрами."]
+    },
+    "pool-92a130b5786b": {
+      "externalIds": { "youtube": ["0-FJINvE0QI"] },
+      "notes": ["Выбран официальный ролик канала ХАБИБ вместо сторонней загрузки."]
+    },
+    "chart-00367": {
+      "artistCredit": "3TERNITY & OG BUDA",
+      "artistIds": ["3ternity", "ogbuda"],
+      "notes": ["Восстановлен второй исполнитель по выбранному ролику."]
+    },
+    "pool-4b4ff7cfa935": {
+      "artistCredit": "ВладиМир",
+      "artistIds": ["vladimir"],
+      "notes": ["Исправлен credit: это сценическое имя Владимира Киселёва-младшего."]
     }
   }
 }

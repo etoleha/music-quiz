@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "resolverVersion": 4,
-  "generatedAt": "2026-09-04T17:14:40.647Z",
+  "resolverVersion": 5,
+  "generatedAt": "2026-09-04T18:02:42.514Z",
   "stats": {
-    "attempted": 1072,
-    "matched": 493,
-    "ambiguous": 167,
-    "notFound": 380,
-    "temporaryError": 32
+    "attempted": 1090,
+    "matched": 509,
+    "ambiguous": 163,
+    "notFound": 341,
+    "temporaryError": 77
   },
   "songs": {
     "chart-00091": {
@@ -1687,15 +1687,15 @@
       "retrievedAt": "2026-09-04T09:19:40.907Z"
     },
     "chart-00347": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "e8ac476a1fc1b9f1eaa7736bb0be46a851fe43d17806725b28b91d29f98208a7",
+      "resolverVersion": 5,
+      "sourceFingerprint": "5b74943fe50221125c3fdd63ca11a32cb211e6e9d1f3da30915b998d4d1c902c",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T14:55:07.145Z",
-      "retryAfter": "2027-03-03T14:55:07.145Z"
+      "retrievedAt": "2026-09-04T18:02:08.669Z",
+      "retryAfter": "2027-03-03T18:02:08.669Z"
     },
     "chart-00024": {
       "resolverVersion": 1,
@@ -3022,15 +3022,15 @@
       "retryAfter": "2027-03-03T09:27:49.726Z"
     },
     "chart-00162": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "8c6a0aec370cfb9244589ec1e7c910170c5c6ca276afd07c3f45e5c7303ca42f",
+      "resolverVersion": 5,
+      "sourceFingerprint": "8c41b0156a849de66cd7750f910fe2d1a48c043776bc0ce97e2b3e76501ef58a",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T14:57:10.491Z",
-      "retryAfter": "2027-03-03T14:57:10.492Z"
+      "retrievedAt": "2026-09-04T18:02:08.775Z",
+      "retryAfter": "2027-03-03T18:02:08.775Z"
     },
     "chart-00113": {
       "resolverVersion": 1,
@@ -3404,26 +3404,44 @@
       "retrievedAt": "2026-09-04T09:28:21.662Z"
     },
     "chart-00185": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "12194c08505548e85244c72ad41a188c54a6b3ef7c289bb99a4d07bc6ce9873d",
-      "status": "ambiguous",
-      "method": "search",
-      "confidence": 0.8733,
-      "runnerUpDelta": 0,
-      "alternatives": [
+      "resolverVersion": 5,
+      "sourceFingerprint": "5dacc8b380fca6611622edb098655eeb885026dc9e2dadc2457fd51015f06d2d",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.99,
+      "runnerUpDelta": null,
+      "recordingMbid": null,
+      "recordingTitle": "Ау",
+      "artistCredits": [
         {
-          "id": "d05d7b5f-0881-48be-8b92-3de2c6f0f9ad",
-          "title": "Ау",
-          "score": 0.8733
-        },
-        {
-          "id": "7eadc9f0-e573-4396-bbfb-f109bb461c3d",
-          "title": "Ау",
-          "score": 0.8733
+          "name": "10AGE",
+          "joinPhrase": ""
         }
       ],
-      "retrievedAt": "2026-09-04T14:57:12.595Z",
-      "retryAfter": "2027-09-04T14:57:12.595Z"
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-03-21T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Ау",
+        "kind": "album",
+        "year": 2019,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/75/a5/c975a57d-1e72-2959-c147-75d8779e9805/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B0%D1%83/1747791008?i=1747791012&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1747791012",
+          "url": "https://music.apple.com/ru/album/%D0%B0%D1%83/1747791008?i=1747791012&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:08.884Z"
     },
     "chart-00187": {
       "resolverVersion": 1,
@@ -4817,15 +4835,15 @@
       "retrievedAt": "2026-09-04T09:30:13.271Z"
     },
     "chart-00217": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "2c06311e3f384af77474cb18c151c9b5d10064d366c6fd74e5ff97b867288572",
+      "resolverVersion": 5,
+      "sourceFingerprint": "032e6e95c5fb47558be4712d8dbc8ad10233ad2e3fe814d6cee026cd986dc030",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T14:58:53.372Z",
-      "retryAfter": "2027-03-03T14:58:53.372Z"
+      "retrievedAt": "2026-09-04T18:02:08.985Z",
+      "retryAfter": "2027-03-03T18:02:08.985Z"
     },
     "chart-00287": {
       "resolverVersion": 3,
@@ -5957,21 +5975,15 @@
       "retryAfter": "2027-03-03T09:33:20.910Z"
     },
     "chart-00519": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "86be278bdae2d3dec2181e2ea7c788e530c507472eac7a11e86c940e10f5fb7c",
-      "status": "ambiguous",
-      "method": "search",
-      "confidence": 0.8533,
+      "resolverVersion": 5,
+      "sourceFingerprint": "260edffe99e9897d09b96ccf7d92d03be0f2ed17709212b4987fe22ca4487d77",
+      "status": "not-found",
+      "method": "apple-search",
+      "confidence": 0,
       "runnerUpDelta": null,
-      "alternatives": [
-        {
-          "id": "ca09fc74-4583-4346-b1c8-602ef3928a87",
-          "title": "Групи",
-          "score": 0.8533
-        }
-      ],
-      "retrievedAt": "2026-09-04T15:00:04.275Z",
-      "retryAfter": "2027-09-04T15:00:04.275Z"
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T18:02:09.096Z",
+      "retryAfter": "2027-03-03T18:02:09.096Z"
     },
     "chart-00228": {
       "resolverVersion": 3,
@@ -6064,21 +6076,15 @@
       "retrievedAt": "2026-09-04T09:33:26.567Z"
     },
     "chart-00261": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "0c68db6ad64ccc61bfc0bda615f3f635d4ad8f8ff0dd9a2a31321a372a856638",
-      "status": "ambiguous",
-      "method": "search",
-      "confidence": 0.8833,
+      "resolverVersion": 5,
+      "sourceFingerprint": "c1c1195b8782b75c54f113cfe9a957e549f8e3b51409e1b38290ee611c95f177",
+      "status": "not-found",
+      "method": "apple-search",
+      "confidence": 0,
       "runnerUpDelta": null,
-      "alternatives": [
-        {
-          "id": "ec2423ff-eb72-4141-aa7a-eae9b28c0aa5",
-          "title": "Тлеет",
-          "score": 0.8833
-        }
-      ],
-      "retrievedAt": "2026-09-04T15:00:06.022Z",
-      "retryAfter": "2027-09-04T15:00:06.022Z"
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T18:02:09.209Z",
+      "retryAfter": "2027-03-03T18:02:09.209Z"
     },
     "chart-00231": {
       "resolverVersion": 1,
@@ -6343,15 +6349,15 @@
       "retryAfter": "2027-03-03T15:16:28.781Z"
     },
     "chart-00368": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "2b7337ecea27e60ba4467a8c3864b88378bceacc2079b30fc9dc164765118cfd",
+      "resolverVersion": 5,
+      "sourceFingerprint": "ca1e9e78e36f195248636de4370e17e8411613574a83ea3ebf98bd339d589830",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:00:07.936Z",
-      "retryAfter": "2027-03-03T15:00:07.936Z"
+      "retrievedAt": "2026-09-04T18:02:09.314Z",
+      "retryAfter": "2027-03-03T18:02:09.314Z"
     },
     "chart-00329": {
       "resolverVersion": 3,
@@ -7061,15 +7067,21 @@
       "retrievedAt": "2026-09-04T09:34:53.731Z"
     },
     "chart-00386": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "5db6d9e8b66c159da7e8d5c496f5158542a457b75ab725c21b48f4660efd416b",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "7b01a7fbc868a582e97206e569784c7e0b4f00381966528a407e235a3467d9cd",
+      "status": "ambiguous",
+      "method": "apple-search",
+      "confidence": 0.8833,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:00:37.355Z",
-      "retryAfter": "2027-03-03T15:00:37.355Z"
+      "alternatives": [
+        {
+          "id": "apple:1725795508",
+          "title": "Дико тусим",
+          "score": 0.8833
+        }
+      ],
+      "retrievedAt": "2026-09-04T18:02:09.405Z",
+      "retryAfter": "2027-09-04T18:02:09.405Z"
     },
     "chart-00594": {
       "resolverVersion": 3,
@@ -7278,15 +7290,21 @@
       "retrievedAt": "2026-09-04T09:35:17.235Z"
     },
     "chart-00451": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "5febcee104284dd212f0e0856a4a0f150e22b8730f89d96f1cd795ffc3fdb810",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "c7d43670cf08515442a1b692a63e53e1df07143d0cfd1a040dcc1a6af5e91ed0",
+      "status": "ambiguous",
+      "method": "apple-search",
+      "confidence": 0.8833,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:00:42.048Z",
-      "retryAfter": "2027-03-03T15:00:42.048Z"
+      "alternatives": [
+        {
+          "id": "apple:1522572105",
+          "title": "По щекам слёзы",
+          "score": 0.8833
+        }
+      ],
+      "retrievedAt": "2026-09-04T18:02:09.512Z",
+      "retryAfter": "2027-09-04T18:02:09.512Z"
     },
     "chart-00427": {
       "resolverVersion": 1,
@@ -7354,15 +7372,15 @@
       "retryAfter": "2027-09-04T09:35:22.547Z"
     },
     "chart-00367": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "edc372d60b4d3b1daa5526e300f56e2d1ac712c22503c5b32ff4ba3f73b5b62c",
+      "resolverVersion": 5,
+      "sourceFingerprint": "3766ea741d9b75a50ea66606af10ff16f9962f135435a065aee05fae1e7ffeb6",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:00:44.021Z",
-      "retryAfter": "2027-03-03T15:00:44.021Z"
+      "retrievedAt": "2026-09-04T18:02:09.608Z",
+      "retryAfter": "2027-03-03T18:02:09.608Z"
     },
     "chart-00335": {
       "resolverVersion": 1,
@@ -7427,15 +7445,44 @@
       "retryAfter": "2027-09-04T15:00:47.347Z"
     },
     "chart-00400": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "943bbe2508b2624eab55391c07c54bf07a299153bac46fc101f28c5007814925",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "a1246859ed1e4d306f511967db533da3ad52828d2d3eb53dd86bfec3a9fb35d1",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.99,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:00:51.752Z",
-      "retryAfter": "2027-03-03T15:00:51.752Z"
+      "recordingMbid": null,
+      "recordingTitle": "Разная дрянь",
+      "artistCredits": [
+        {
+          "name": "Captown",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-02-02T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Разная дрянь",
+        "kind": "single",
+        "year": 2021,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/89/e1/9f/89e19fc8-a6ed-b86c-a9e0-1e45e25db5e0/0.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D1%80%D0%B0%D0%B7%D0%BD%D0%B0%D1%8F-%D0%B4%D1%80%D1%8F%D0%BD%D1%8C/1773627148?i=1773627149&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1773627149",
+          "url": "https://music.apple.com/ru/album/%D1%80%D0%B0%D0%B7%D0%BD%D0%B0%D1%8F-%D0%B4%D1%80%D1%8F%D0%BD%D1%8C/1773627148?i=1773627149&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:09.715Z"
     },
     "chart-00556": {
       "resolverVersion": 1,
@@ -8180,15 +8227,15 @@
       "retrievedAt": "2026-09-04T09:37:42.768Z"
     },
     "chart-00584": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "5b2d6020f1a4eaa63b6adcb2a928a0076f1ad8f9b625cfb7590a0d790e3eb353",
+      "resolverVersion": 5,
+      "sourceFingerprint": "97c35763e74a2a0e8eba60081628b58f04bc1e26b9616ecb534dc3dbd52de580",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:01:17.442Z",
-      "retryAfter": "2027-03-03T15:01:17.442Z"
+      "retrievedAt": "2026-09-04T18:02:09.819Z",
+      "retryAfter": "2027-03-03T18:02:09.819Z"
     },
     "chart-00505": {
       "resolverVersion": 3,
@@ -8751,21 +8798,21 @@
       "retryAfter": "2027-03-03T09:39:24.568Z"
     },
     "chart-00428": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "0edc45d37975ba6d832d3774ed42efbe67b67985d6e7be4c0479b7fcd4913a38",
+      "resolverVersion": 5,
+      "sourceFingerprint": "5983574c28140ba78c60672a79c35f308b33a6134e8422c7aecf5a3bf5a50be9",
       "status": "ambiguous",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0.8733,
       "runnerUpDelta": null,
       "alternatives": [
         {
-          "id": "4bf50c81-743d-4998-a35b-beaf103387b7",
+          "id": "apple:1596299366",
           "title": "Азбука",
           "score": 0.8733
         }
       ],
-      "retrievedAt": "2026-09-04T15:01:35.602Z",
-      "retryAfter": "2027-09-04T15:01:35.602Z"
+      "retrievedAt": "2026-09-04T18:02:09.909Z",
+      "retryAfter": "2027-09-04T18:02:09.910Z"
     },
     "chart-00794": {
       "resolverVersion": 1,
@@ -9115,15 +9162,15 @@
       "retryAfter": "2027-03-03T09:41:03.237Z"
     },
     "chart-00622": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "19ce095506b514bed9bc0d686f4e96134e652e9047b4a11f2f0d47cc849ac2a6",
+      "resolverVersion": 5,
+      "sourceFingerprint": "84feaf19ace56042466d43fef1c7eec0c95808d15d06a80868c5202b4bd60d5d",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:01:55.323Z",
-      "retryAfter": "2027-03-03T15:01:55.323Z"
+      "retrievedAt": "2026-09-04T18:02:10.001Z",
+      "retryAfter": "2027-03-03T18:02:10.001Z"
     },
     "chart-00549": {
       "resolverVersion": 3,
@@ -10076,21 +10123,15 @@
       "retryAfter": "2027-03-03T15:02:30.186Z"
     },
     "chart-00629": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "6015999f99e141311a872c4a9554086f763dba7f0d90b0394804042c9afa452c",
-      "status": "ambiguous",
-      "method": "search",
-      "confidence": 0.8533,
+      "resolverVersion": 5,
+      "sourceFingerprint": "4c37d0d5aa8d0611ed172a70487d38faf19e2a185ad715ab15de5d8a30e80d86",
+      "status": "not-found",
+      "method": "apple-search",
+      "confidence": 0,
       "runnerUpDelta": null,
-      "alternatives": [
-        {
-          "id": "39712843-bad7-4192-a031-cf830777f7c4",
-          "title": "СТОМАТОЛОГИЧКА",
-          "score": 0.8533
-        }
-      ],
-      "retrievedAt": "2026-09-04T15:02:32.167Z",
-      "retryAfter": "2027-09-04T15:02:32.167Z"
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T18:02:10.112Z",
+      "retryAfter": "2027-03-03T18:02:10.112Z"
     },
     "chart-00709": {
       "resolverVersion": 1,
@@ -10309,26 +10350,15 @@
       "retrievedAt": "2026-09-04T09:47:10.613Z"
     },
     "chart-00525": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "b8df12872e216de979fefd1afddffaac5efb2134e693bae1035d1fd3a78a393a",
-      "status": "ambiguous",
-      "method": "search",
-      "confidence": 0.8533,
-      "runnerUpDelta": 0,
-      "alternatives": [
-        {
-          "id": "5c485cd5-28c0-4400-954b-f229fc6c0754",
-          "title": "в темноте",
-          "score": 0.8533
-        },
-        {
-          "id": "f38fa07c-b449-4c68-a8df-02420c9c4a89",
-          "title": "в темноте",
-          "score": 0.8533
-        }
-      ],
-      "retrievedAt": "2026-09-04T15:02:32.297Z",
-      "retryAfter": "2027-09-04T15:02:32.297Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "36742fc7bbb2e01fdb7e82daeb29a027084734ecb95ae40a34a1026c9f1de965",
+      "status": "not-found",
+      "method": "apple-search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T18:02:10.206Z",
+      "retryAfter": "2027-03-03T18:02:10.206Z"
     },
     "chart-00554": {
       "resolverVersion": 1,
@@ -10602,15 +10632,44 @@
       "retryAfter": "2027-03-03T15:02:48.749Z"
     },
     "chart-00859": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "672b95ae127397cc4885fec432c77d08b5242ae7f52f47e0d7fbfc49442c43f8",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "7fa8df4afb2180e510e7bce5025d55b5c4a7e2c47569be981a25b84a11139fe5",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.99,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:03:01.809Z",
-      "retryAfter": "2027-03-03T15:03:01.809Z"
+      "recordingMbid": null,
+      "recordingTitle": "Влюбилась в друга",
+      "artistCredits": [
+        {
+          "name": "Абрикоса",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-02-03T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Влюбилась в друга",
+        "kind": "single",
+        "year": 2021,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/1c/f5/681cf563-865c-29a2-107a-52ebad5acea7/0.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B2%D0%BB%D1%8E%D0%B1%D0%B8%D0%BB%D0%B0%D1%81%D1%8C-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B0/1792330899?i=1792330901&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1792330901",
+          "url": "https://music.apple.com/ru/album/%D0%B2%D0%BB%D1%8E%D0%B1%D0%B8%D0%BB%D0%B0%D1%81%D1%8C-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B0/1792330899?i=1792330901&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:10.299Z"
     },
     "chart-00604": {
       "resolverVersion": 1,
@@ -10768,15 +10827,44 @@
       "retryAfter": "2027-09-04T09:48:41.209Z"
     },
     "chart-00777": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "810c0e5496b04cc4b81bc76c7add381a8b820eaa98007e20f059194aeb610ea4",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "c1e3fb6dc32d27486dd2d614b3597fba50137034f249da0d5f28de5663142a45",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.99,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:03:06.393Z",
-      "retryAfter": "2027-03-03T15:03:06.393Z"
+      "recordingMbid": null,
+      "recordingTitle": "ДУРАКАМ ВЕЗЁТ",
+      "artistCredits": [
+        {
+          "name": "ФОГЕЛЬ",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-02-26T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "ДУРАКАМ ВЕЗЁТ",
+        "kind": "single",
+        "year": 2021,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/12/fc/e8/12fce8bf-31aa-6049-aca3-b032c4c59d54/190296766510.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B4%D1%83%D1%80%D0%B0%D0%BA%D0%B0%D0%BC-%D0%B2%D0%B5%D0%B7%D1%91%D1%82/1553462257?i=1553462269&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1553462269",
+          "url": "https://music.apple.com/ru/album/%D0%B4%D1%83%D1%80%D0%B0%D0%BA%D0%B0%D0%BC-%D0%B2%D0%B5%D0%B7%D1%91%D1%82/1553462257?i=1553462269&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:10.393Z"
     },
     "chart-00774": {
       "resolverVersion": 3,
@@ -10976,21 +11064,21 @@
       "retrievedAt": "2026-09-04T09:49:45.546Z"
     },
     "chart-00799": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "2c9603ebb1a7174e0eae77fe9d8e707848d7e3a52964d600dd200ba0eddf21e2",
+      "resolverVersion": 5,
+      "sourceFingerprint": "877ead53cead419080272645de3897bb600e24df15a47673e7c12dd1f0455d2b",
       "status": "ambiguous",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0.8733,
       "runnerUpDelta": null,
       "alternatives": [
         {
-          "id": "d0b6dfb2-b675-4a33-914a-dfb3c31ff7c3",
+          "id": "apple:1567864455",
           "title": "Вода",
           "score": 0.8733
         }
       ],
-      "retrievedAt": "2026-09-04T15:03:09.790Z",
-      "retryAfter": "2027-09-04T15:03:09.790Z"
+      "retrievedAt": "2026-09-04T18:02:11.069Z",
+      "retryAfter": "2027-09-04T18:02:11.069Z"
     },
     "chart-00652": {
       "resolverVersion": 3,
@@ -11182,15 +11270,44 @@
       "retryAfter": "2027-09-04T15:03:12.075Z"
     },
     "chart-00843": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "38f8994805f120e780f57593d05d7982ea2781043bf36ce9eba1388896fe9571",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "8873ee2fd76e40a0ec011c8fedd30ae2b6bcd6067a91da86c9f0425366f253f7",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.9554,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:18:06.125Z",
-      "retryAfter": "2027-03-03T15:18:06.125Z"
+      "recordingMbid": null,
+      "recordingTitle": "Оставь меня одну (From \"Пацанки\")",
+      "artistCredits": [
+        {
+          "name": "просто Лера",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-09-16T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Оставь меня одну - Single (From \"Пацанки\")",
+        "kind": "single",
+        "year": 2021,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/94/32/d5/9432d54d-3358-bbe4-4c2a-0c23a4f46124/196292448399.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D1%8C-%D0%BC%D0%B5%D0%BD%D1%8F-%D0%BE%D0%B4%D0%BD%D1%83-from-%D0%BF%D0%B0%D1%86%D0%B0%D0%BD%D0%BA%D0%B8/1585364075?i=1585364356&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1585364356",
+          "url": "https://music.apple.com/ru/album/%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D1%8C-%D0%BC%D0%B5%D0%BD%D1%8F-%D0%BE%D0%B4%D0%BD%D1%83-from-%D0%BF%D0%B0%D1%86%D0%B0%D0%BD%D0%BA%D0%B8/1585364075?i=1585364356&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:11.184Z"
     },
     "chart-00753": {
       "resolverVersion": 1,
@@ -11289,15 +11406,44 @@
       "retrievedAt": "2026-09-04T09:50:37.851Z"
     },
     "chart-00706": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "a4b0b9fe63adf3a5277b53e884521e1058666e8c0873de8e1dc838f6dfb7a72a",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "1810ced8f79b9fc80d94d6e4e2c1d4b1d57e8a0029d2d6fa1fd10ddc69f40a91",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.97,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:03:26.734Z",
-      "retryAfter": "2027-03-03T15:03:26.734Z"
+      "recordingMbid": null,
+      "recordingTitle": "Бібліотека",
+      "artistCredits": [
+        {
+          "name": "Колос",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2017,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2017-02-21T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Best",
+        "kind": "album",
+        "year": 2017,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a9/55/a8/a955a81a-adfc-f597-ed6f-8a30f32f1041/0.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B1%D1%96%D0%B1%D0%BB%D1%96%D0%BE%D1%82%D0%B5%D0%BA%D0%B0/1782114348?i=1782114624&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1782114624",
+          "url": "https://music.apple.com/ru/album/%D0%B1%D1%96%D0%B1%D0%BB%D1%96%D0%BE%D1%82%D0%B5%D0%BA%D0%B0/1782114348?i=1782114624&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:11.781Z"
     },
     "chart-00681": {
       "resolverVersion": 3,
@@ -12976,15 +13122,15 @@
       "retrievedAt": "2026-09-04T09:53:21.917Z"
     },
     "chart-00845": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "f7d8c47e2c39828676499fcee419be1a9223cd47735d7a9031b34f3448ced94f",
+      "resolverVersion": 5,
+      "sourceFingerprint": "d401177cf49ff69ebf21fc22b5441486eaf41300c7a83fbba42ad538453c75ac",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:03:56.907Z",
-      "retryAfter": "2027-03-03T15:03:56.908Z"
+      "retrievedAt": "2026-09-04T18:02:11.887Z",
+      "retryAfter": "2027-03-03T18:02:11.887Z"
     },
     "chart-01376": {
       "resolverVersion": 3,
@@ -13218,15 +13364,15 @@
       "retryAfter": "2027-09-04T09:53:47.346Z"
     },
     "chart-00981": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "668f60172bb4d681becae4cad724b3219f1ee68d0bbeb6fbd3bb716b8841746b",
+      "resolverVersion": 5,
+      "sourceFingerprint": "d53adcb6d0ae8f0ef34c00bdfe44285c0559a6c7351482de445e4ab6ea8becab",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:04:08.709Z",
-      "retryAfter": "2027-03-03T15:04:08.709Z"
+      "retrievedAt": "2026-09-04T18:02:12.004Z",
+      "retryAfter": "2027-03-03T18:02:12.004Z"
     },
     "chart-01152": {
       "resolverVersion": 1,
@@ -17272,15 +17418,12 @@
       "retryAfter": "2027-03-03T15:03:04.055Z"
     },
     "chart-00917": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "0062cfc6cbe1004a336e6177cf5ef3f4105895821a9a496664e09ca2af430a49",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:03:24.410Z",
-      "retryAfter": "2027-03-03T15:03:24.410Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "0aef94fbc8183f677bc463fe31477d0dde883665354ed7643f7c72e91ee24f18",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:11.434Z",
+      "retryAfter": "2026-09-04T18:12:11.434Z"
     },
     "chart-01049": {
       "resolverVersion": 3,
@@ -19190,15 +19333,15 @@
       "retrievedAt": "2026-09-04T15:11:42.420Z"
     },
     "chart-01676": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "1860599bfb8d0ee09c055dbc608db2fd9c0cc0c1877c7e162996c82091302287",
+      "resolverVersion": 5,
+      "sourceFingerprint": "e2eac0cfc7a17c9a03108bcd3c6f2c14e1adaa73d6e37860800a52506ccfad4a",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:11:57.443Z",
-      "retryAfter": "2027-03-03T15:11:57.443Z"
+      "retrievedAt": "2026-09-04T18:02:12.126Z",
+      "retryAfter": "2027-03-03T18:02:12.126Z"
     },
     "chart-01698": {
       "resolverVersion": 3,
@@ -19977,15 +20120,12 @@
       "retryAfter": "2027-09-04T15:14:34.201Z"
     },
     "chart-01844": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "9d3fa64eeea4365eb8ef169cffa9d5094b38d2995961dc452d38c9d7008d87a6",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:14:35.296Z",
-      "retryAfter": "2027-03-03T15:14:35.296Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "80085a2c0980036ee27481d143c34e820f955e4702cbd309347d5bd149b6441a",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:12.357Z",
+      "retryAfter": "2026-09-04T18:12:12.357Z"
     },
     "chart-01913": {
       "resolverVersion": 3,
@@ -20632,15 +20772,15 @@
       "retryAfter": "2027-03-03T17:10:28.709Z"
     },
     "pool-32344b6b0b87": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "9707e7483f770019aa2b906b90a7ca1f184ba76e5aa6c1ec53538285e52ef621",
+      "resolverVersion": 5,
+      "sourceFingerprint": "728b9e4495c5061dfc301c27555113e330213c652e00a4d8d92c78aecb25d6c5",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:16:12.480Z",
-      "retryAfter": "2027-03-03T15:16:12.480Z"
+      "retrievedAt": "2026-09-04T18:02:08.572Z",
+      "retryAfter": "2027-03-03T18:02:08.573Z"
     },
     "pool-542b5a46e96d": {
       "resolverVersion": 3,
@@ -21933,15 +22073,12 @@
       "retrievedAt": "2026-09-04T15:25:33.426Z"
     },
     "pool-04729da3313c": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "dcbb37d8e1b84ed44a7a57b3ee2383dcfe04424db948ed2cfd3b70d8eb1aacfc",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:25:35.627Z",
-      "retryAfter": "2027-03-03T15:25:35.627Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "693b2fb8a42245324b218280d7a8c0850824bf9b61cd845e4ff872b91dfc85f0",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:12.611Z",
+      "retryAfter": "2026-09-04T18:12:12.611Z"
     },
     "pool-299c52be3df7": {
       "resolverVersion": 3,
@@ -21995,15 +22132,15 @@
       "retryAfter": "2027-03-03T17:10:29.680Z"
     },
     "pool-39e561fe12db": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "e3262cf4c357f0a5a903b324e93ebdc4ad0dd7f164a6477fc59bcd3b0aaec66b",
+      "resolverVersion": 5,
+      "sourceFingerprint": "630ec3bc405792e44ef3f95c28adec3c06ec2a2b69daaaca44ab8f0f3356ebf7",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:25:45.590Z",
-      "retryAfter": "2027-03-03T15:25:45.590Z"
+      "retrievedAt": "2026-09-04T18:02:12.904Z",
+      "retryAfter": "2027-03-03T18:02:12.904Z"
     },
     "pool-c0a3fd7cb1c9": {
       "resolverVersion": 4,
@@ -22055,34 +22192,28 @@
       "retrievedAt": "2026-09-04T15:25:57.444Z"
     },
     "pool-a233115996bf": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "e55b908e279ee8f7246b2f69528eb3856b7c1829cf718b90f265817b0843f082",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:25:57.561Z",
-      "retryAfter": "2027-03-03T15:25:57.561Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "b823a0a8c5e75c1a4a549647b86d8fc1821dd9739f084b7fc88a10a3906aa695",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:13.143Z",
+      "retryAfter": "2026-09-04T18:12:13.143Z"
     },
     "pool-e4c53c785c24": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "1eb50c499f5a709fc9c151c4d41a1104b203f6676d4a6fd684db609ac72b92d8",
+      "resolverVersion": 5,
+      "sourceFingerprint": "4d3c67c92924110ee8a670947b461edaa7d9e9870389646456452035174de0d2",
       "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:26:01.192Z",
-      "retryAfter": "2026-09-04T15:36:01.192Z"
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:13.400Z",
+      "retryAfter": "2026-09-04T18:12:13.400Z"
     },
     "pool-eab59c08ae78": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "61e74feba15666009ce9c796e4c97054c4bf4c8709c6a1e948be9f9190998fa4",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:26:03.098Z",
-      "retryAfter": "2027-03-03T15:26:03.098Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "9af67e8102ad192cfc89b2bbb21def77854ee6c1cc1be42f5b3fbdcdfb168bdd",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:13.633Z",
+      "retryAfter": "2026-09-04T18:12:13.633Z"
     },
     "pool-398324733410": {
       "resolverVersion": 3,
@@ -22310,34 +22441,37 @@
       "retrievedAt": "2026-09-04T15:26:29.263Z"
     },
     "pool-c0b858ea8e1b": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "54bc443d1b115bb093fac7ca29ee8675e453df37db24f4f3062cb8c2ab4e7929",
+      "resolverVersion": 5,
+      "sourceFingerprint": "a38d7922644a8c58be52e99dacc4dcce28224a0ebb19ae7e236ddfddd057886b",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:26:31.417Z",
-      "retryAfter": "2027-03-03T15:26:31.417Z"
+      "retrievedAt": "2026-09-04T18:02:14.009Z",
+      "retryAfter": "2027-03-03T18:02:14.009Z"
     },
     "pool-45a9c613e344": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "afd9fd7d57bcb581e158663fc2b9217baaf3e5b727f54a6373997a5dc558b7e9",
+      "resolverVersion": 5,
+      "sourceFingerprint": "05933ae28c448eb4c1d37cf595467c11d45085897f68fecda00c4aadad76abee",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:26:33.887Z",
-      "retryAfter": "2027-03-03T15:26:33.887Z"
+      "retrievedAt": "2026-09-04T18:02:14.270Z",
+      "retryAfter": "2027-03-03T18:02:14.270Z"
     },
     "pool-483af28a8c9f": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "3899076a3b8ea19600a45f930fa49adf1f3b1750eb19683a58815979dd04181a",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:26:36.954Z",
-      "retryAfter": "2026-09-04T15:36:36.954Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "b8986e6ed1747fc63f01a565306010908a72116190d070f80c817163b45a9654",
+      "status": "not-found",
+      "method": "apple-search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T18:02:14.542Z",
+      "retryAfter": "2027-03-03T18:02:14.542Z"
     },
     "pool-65a3d7b6d69c": {
       "resolverVersion": 3,
@@ -22378,15 +22512,12 @@
       "retrievedAt": "2026-09-04T15:26:41.146Z"
     },
     "pool-9090bd89587a": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "9ea8d2fd94af12b3c274099de2072e064354e227339f5ad6501bdc16ac9421bb",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:26:41.601Z",
-      "retryAfter": "2027-03-03T15:26:41.601Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "d2bf8734e3eca35224738dc7216cd7ce435d926a4820e1175e230d410ad709f5",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:14.794Z",
+      "retryAfter": "2026-09-04T18:12:14.794Z"
     },
     "pool-56b3ec5a8466": {
       "resolverVersion": 3,
@@ -22454,26 +22585,55 @@
       "retryAfter": "2027-03-03T17:10:45.955Z"
     },
     "pool-279ceabbd02f": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "b4cdb04c8a1cfde850e47774f6e6dee1af14b07c2c5a3448c5ed2c0b770accfb",
+      "resolverVersion": 5,
+      "sourceFingerprint": "50a92611f84846810bd4a58546bea6f8d3b0aee2c05894fc59835df7cc00451f",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:26:51.462Z",
-      "retryAfter": "2027-03-03T15:26:51.462Z"
+      "retrievedAt": "2026-09-04T18:02:15.088Z",
+      "retryAfter": "2027-03-03T18:02:15.088Z"
     },
     "pool-55efa4c43ba2": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "0a256a7bf6a5d8baecf8a9a93a7948fed65273c40786266efcc55256536f5624",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "7a43af3c0371b6125e67584fe71b943844942096b7cb469aedbfe501e7c172f9",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:26:53.676Z",
-      "retryAfter": "2027-03-03T15:26:53.676Z"
+      "recordingMbid": null,
+      "recordingTitle": "Домофон",
+      "artistCredits": [
+        {
+          "name": "TERNOVOY",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2018,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2018-05-13T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Домофон",
+        "kind": "single",
+        "year": 2018,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e0/0d/42/e00d4248-368a-32ff-3270-0bda70897eb9/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B4%D0%BE%D0%BC%D0%BE%D1%84%D0%BE%D0%BD/1383270230?i=1383270242&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1383270242",
+          "url": "https://music.apple.com/ru/album/%D0%B4%D0%BE%D0%BC%D0%BE%D1%84%D0%BE%D0%BD/1383270230?i=1383270242&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:15.373Z"
     },
     "pool-cfaadd10663b": {
       "resolverVersion": 3,
@@ -22573,15 +22733,12 @@
       "retrievedAt": "2026-09-04T15:27:05.180Z"
     },
     "pool-ebbc2fde7fd8": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "5f894d1864d83579a001e360848ed0cd752d9d205ce9ad19dc840b1ca9dfc71e",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:27:06.297Z",
-      "retryAfter": "2027-03-03T15:27:06.297Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "9c7182bc6eb06f875c200982e94c826493471d863863f9c8ab972001cbbd253b",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:15.606Z",
+      "retryAfter": "2026-09-04T18:12:15.606Z"
     },
     "pool-364239afe81a": {
       "resolverVersion": 3,
@@ -22914,37 +23071,34 @@
       "retryAfter": "2027-03-03T15:27:54.835Z"
     },
     "pool-0b3e3a5f099f": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "b46b93113befaa44f9a330385460577c54cfe1031feee2e2bcf81059c6b3cb54",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:27:56.186Z",
-      "retryAfter": "2027-03-03T15:27:56.186Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "2a7dede2e144e390b5655dddf0f2c382540fce787e2a6f351c48c4d8f6bb1fa4",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:15.851Z",
+      "retryAfter": "2026-09-04T18:12:15.851Z"
     },
     "pool-1d5a031b78cf": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "29457e2fcaf8a1d3f05fefc103f4d710fb4d31e7062c26d941fef5fe45f915ad",
+      "resolverVersion": 5,
+      "sourceFingerprint": "38ed827d2be02a74521c86d6a5c6e9e7f87d45f65c5386e6f07efae82d69ab9f",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:27:57.406Z",
-      "retryAfter": "2027-03-03T15:27:57.406Z"
+      "retrievedAt": "2026-09-04T18:02:16.336Z",
+      "retryAfter": "2027-03-03T18:02:16.336Z"
     },
     "pool-296cd4d434dd": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "14dfb06ba2f4b07e383fe225db0ea22f2687ce98c94764632711384e59ade631",
+      "resolverVersion": 5,
+      "sourceFingerprint": "3ca3110ab308c98efb234e71c82783a7e32ab788948464d3a535966d44927399",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:00.681Z",
-      "retryAfter": "2027-03-03T15:28:00.681Z"
+      "retrievedAt": "2026-09-04T18:02:16.585Z",
+      "retryAfter": "2027-03-03T18:02:16.585Z"
     },
     "pool-aca5fe7b24e4": {
       "resolverVersion": 4,
@@ -22969,15 +23123,44 @@
       "retryAfter": "2027-03-03T17:03:23.392Z"
     },
     "pool-223cbd64444d": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "88350315bf0bcaf055c3c4a2b6597f3c888cc5fec4153100edee91afb04c60b1",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "12386ffa22d5631e00268c42d9fe898e84be2ff2847805a3d2bcb0939f9fbccf",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:06.411Z",
-      "retryAfter": "2027-03-03T15:28:06.411Z"
+      "recordingMbid": null,
+      "recordingTitle": "Лампочки",
+      "artistCredits": [
+        {
+          "name": "Galibri & Mavik",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2022,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2022-02-22T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Лампочки",
+        "kind": "single",
+        "year": 2022,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8b/0f/5f/8b0f5fb9-6f24-3155-83f4-501630b4ca9f/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%BB%D0%B0%D0%BC%D0%BF%D0%BE%D1%87%D0%BA%D0%B8/1609100215?i=1609100216&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1609100216",
+          "url": "https://music.apple.com/ru/album/%D0%BB%D0%B0%D0%BC%D0%BF%D0%BE%D1%87%D0%BA%D0%B8/1609100215?i=1609100216&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:17.253Z"
     },
     "pool-27e74f81f39f": {
       "resolverVersion": 4,
@@ -23133,15 +23316,12 @@
       "retryAfter": "2027-03-03T17:11:04.407Z"
     },
     "pool-31ec7de809b1": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "18f9b0dde530f452c305acf733ce88c57d440c9309a2a7e39214a7b6251fde51",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:30.353Z",
-      "retryAfter": "2027-03-03T15:28:30.353Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "fbb2d69f1fb0f5cb2beb993a392eaf6e8fd52e04db7bf8d17430bb3eaf19d1f3",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:17.509Z",
+      "retryAfter": "2026-09-04T18:12:17.509Z"
     },
     "pool-4a469ebddd80": {
       "resolverVersion": 3,
@@ -23386,15 +23566,44 @@
       "retrievedAt": "2026-09-04T15:28:56.364Z"
     },
     "pool-295e7b29efe6": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "ec4301c128124679e868131f4d83dc9e06f975992f1beeac6b9976fe866bb284",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "a78596937ebf3dbd7afd71072a4d906b81e50ec6cabb6dfc405b8c5b13eff3e2",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.99,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:28:57.862Z",
-      "retryAfter": "2027-03-03T15:28:57.862Z"
+      "recordingMbid": null,
+      "recordingTitle": "Примером",
+      "artistCredits": [
+        {
+          "name": "Группа 30.02",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2013,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2013-10-01T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "5 Stars EP - Boys Band",
+        "kind": "album",
+        "year": 2013,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a9/d6/d6/a9d6d6ba-1c3a-9b93-a464-71f5d7a1b4fc/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BE%D0%BC/1562143113?i=1562143479&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1562143479",
+          "url": "https://music.apple.com/ru/album/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BE%D0%BC/1562143113?i=1562143479&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:17.842Z"
     },
     "pool-4531e31fb06c": {
       "resolverVersion": 4,
@@ -23446,26 +23655,26 @@
       "retrievedAt": "2026-09-04T15:29:02.529Z"
     },
     "pool-6f59e3c30422": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "27dc1f3b1ce2bd3927e730f96ced85604d411c2f265be83b15798af6025115e5",
+      "resolverVersion": 5,
+      "sourceFingerprint": "4e99fc20e4adcc8aed321b43c331ec959f8b53f72774870ececa820a15dca358",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:29:03.539Z",
-      "retryAfter": "2027-03-03T15:29:03.539Z"
+      "retrievedAt": "2026-09-04T18:02:18.123Z",
+      "retryAfter": "2027-03-03T18:02:18.123Z"
     },
     "pool-95a603624319": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "44b1f96e5062bcc9ab4c646fd26f2b3a56c7599b670482aabf327ca3154000ce",
+      "resolverVersion": 5,
+      "sourceFingerprint": "489b6e2dc6ba3d088260dbbdf9cbc3751e9a32f49edbdded7526ac3522b44795",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:29:05.754Z",
-      "retryAfter": "2027-03-03T15:29:05.754Z"
+      "retrievedAt": "2026-09-04T18:02:18.706Z",
+      "retryAfter": "2027-03-03T18:02:18.706Z"
     },
     "pool-a41ef3921054": {
       "resolverVersion": 4,
@@ -23490,15 +23699,12 @@
       "retryAfter": "2027-09-04T17:04:53.162Z"
     },
     "pool-ff9600e258ad": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "096bad7fb0c0c687a0647759ae3d5d1f3667c5226ab8fd8c4433fa1d9dcc83f1",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:29:11.274Z",
-      "retryAfter": "2027-03-03T15:29:11.274Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "8c0ec6a02763196dee676bc2d8e9ad2322196f2c751c30f9d50dec36745d9b25",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:18.950Z",
+      "retryAfter": "2026-09-04T18:12:18.950Z"
     },
     "pool-e7a9f7c98ff9": {
       "resolverVersion": 3,
@@ -23668,26 +23874,23 @@
       "retrievedAt": "2026-09-04T15:29:34.858Z"
     },
     "pool-f5a8a784ee05": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "7c3ce934f2c4f5f17031af77c37a9b1f828bd4137764fd78ad526a348635e2c6",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:29:37.187Z",
-      "retryAfter": "2027-03-03T15:29:37.187Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "126da2c7abef3e7ff69a8a0595ba5c4c62e24120e2698851f02446083b2c0554",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:19.197Z",
+      "retryAfter": "2026-09-04T18:12:19.197Z"
     },
     "pool-5391d29b8e05": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "b1f3377a63dae017a8451073fdb295f62d996b8918216eff96b07bf5e70b033d",
+      "resolverVersion": 5,
+      "sourceFingerprint": "eaa43314de5f3e5d97d1ec634e2fdec99ea54f97d94898d8422a6b5bac1beab8",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:29:39.408Z",
-      "retryAfter": "2027-03-03T15:29:39.408Z"
+      "retrievedAt": "2026-09-04T18:02:19.482Z",
+      "retryAfter": "2027-03-03T18:02:19.482Z"
     },
     "pool-723612193d11": {
       "resolverVersion": 3,
@@ -24185,37 +24388,63 @@
       "retrievedAt": "2026-09-04T15:30:53.215Z"
     },
     "pool-4d2930d02e4f": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "e55fc593ebfada17e2bfdb447c17af7b3ac7dcf936a9b84496b5b460a63acd26",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:30:57.667Z",
-      "retryAfter": "2027-03-03T15:30:57.667Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "cf47076dd4fd7c107c99dc4a8269eb9c3eeac2b9f1f7b84dd69b566e76c025b2",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:19.722Z",
+      "retryAfter": "2026-09-04T18:12:19.722Z"
     },
     "pool-59dbf887ba96": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "db15c848e62e64858a090d8930e87d9bc2f4b19fef957c7197e2eb789347da14",
+      "resolverVersion": 5,
+      "sourceFingerprint": "9884d34bdcad58a93a2f1cb16c50f6d40806651b96ec7fa1b8d241e5f960b831",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:30:58.059Z",
-      "retryAfter": "2027-03-03T15:30:58.059Z"
+      "retrievedAt": "2026-09-04T18:02:19.974Z",
+      "retryAfter": "2027-03-03T18:02:19.974Z"
     },
     "pool-b9d31579760e": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "f9a85484652d2db020eb49516d3e6d49dcec379fc10cfc86a0852c13fd51a044",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "86533f3b3300cee6d69a54594e7aad23b58876b540990b36a872a82e1a2623f5",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:30:59.992Z",
-      "retryAfter": "2027-03-03T15:30:59.992Z"
+      "recordingMbid": null,
+      "recordingTitle": "Хочу тибя любицца",
+      "artistCredits": [
+        {
+          "name": "Супер Жорик",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-11-14T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Хочу тибя любицца",
+        "kind": "single",
+        "year": 2019,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0f/ee/1d/0fee1d15-2979-0b4a-9418-5b12e6fff9ed/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D1%85%D0%BE%D1%87%D1%83-%D1%82%D0%B8%D0%B1%D1%8F-%D0%BB%D1%8E%D0%B1%D0%B8%D1%86%D1%86%D0%B0/1655969522?i=1655969665&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1655969665",
+          "url": "https://music.apple.com/ru/album/%D1%85%D0%BE%D1%87%D1%83-%D1%82%D0%B8%D0%B1%D1%8F-%D0%BB%D1%8E%D0%B1%D0%B8%D1%86%D1%86%D0%B0/1655969522?i=1655969665&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:20.263Z"
     },
     "pool-d456be14ae68": {
       "resolverVersion": 3,
@@ -24299,26 +24528,23 @@
       "retrievedAt": "2026-09-04T15:31:12.038Z"
     },
     "pool-2c18da0e3592": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "9593c60c85c08455994f486ccdda18f1e11f2c21064db93e9b175a3b11a41545",
+      "resolverVersion": 5,
+      "sourceFingerprint": "6fa49a10412722443003f1c4208dd51508a592e7166375d013fb3bd7fc4a5c76",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:31:17.954Z",
-      "retryAfter": "2027-03-03T15:31:17.954Z"
+      "retrievedAt": "2026-09-04T18:02:20.747Z",
+      "retryAfter": "2027-03-03T18:02:20.747Z"
     },
     "pool-546ad2d6e3c0": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "c4c143bf87dd84fcf6281622529d39d87c7f26e4745ffc2c1125343e3ec0b2d9",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:31:18.169Z",
-      "retryAfter": "2027-03-03T15:31:18.169Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "5bf6516167894755c9a292507de9842575e0adb6f9df21b3449728f28250b458",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:20.988Z",
+      "retryAfter": "2026-09-04T18:12:20.988Z"
     },
     "pool-9680c8984433": {
       "resolverVersion": 3,
@@ -24368,15 +24594,12 @@
       "retryAfter": "2027-03-03T17:11:06.632Z"
     },
     "pool-e04c1ff5a366": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "b29a8faa73ee72f6fb4fe8b41ad23d80b083f1f49514415e9761361053ecf5f7",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:31:27.587Z",
-      "retryAfter": "2027-03-03T15:31:27.587Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "176cbc0feb04b78e028c940766ee98323aa17fade4bff084377474bc505fffcc",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:21.237Z",
+      "retryAfter": "2026-09-04T18:12:21.237Z"
     },
     "pool-f69376f0e8a2": {
       "resolverVersion": 3,
@@ -24573,15 +24796,12 @@
       "retrievedAt": "2026-09-04T15:31:57.592Z"
     },
     "pool-1ea6ff138d17": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "65df7bd1fce3a5d84f05fedd7d539c85af6dc37433fc562adbaf005a420728ce",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:31:59.684Z",
-      "retryAfter": "2027-03-03T15:31:59.684Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "24d6fa7391dfe44efdb41b0b7aa0691a65611e666c11d8510bd358c7db599890",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:21.496Z",
+      "retryAfter": "2026-09-04T18:12:21.496Z"
     },
     "pool-295ad4f4aeac": {
       "resolverVersion": 4,
@@ -24595,12 +24815,44 @@
       "retryAfter": "2027-03-03T17:11:23.432Z"
     },
     "pool-327675889310": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "358e76f93121a729a94bf224616db7c105c0edcf41453265ecaf4ad3fdbb14de",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:32:05.214Z",
-      "retryAfter": "2026-09-04T15:42:05.214Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "d5ebaf4e55c336f667281f2994268f1cb5c4a43c3966dcdd37cafe5401fb71d1",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
+      "runnerUpDelta": null,
+      "recordingMbid": null,
+      "recordingTitle": "Импульсы города",
+      "artistCredits": [
+        {
+          "name": "Елена Темникова",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2016,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2016-04-14T07:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "TEMNIKOVA I",
+        "kind": "album",
+        "year": 2016,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/bb/2b/a2/bb2ba2bf-2db2-c1dd-5252-c85c599c9cd5/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B8%D0%BC%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D1%8B-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0/1147199446?i=1147199511&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1147199511",
+          "url": "https://music.apple.com/ru/album/%D0%B8%D0%BC%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D1%8B-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0/1147199446?i=1147199511&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:21.856Z"
     },
     "pool-4f3bfa659aa9": {
       "resolverVersion": 3,
@@ -24641,15 +24893,44 @@
       "retrievedAt": "2026-09-04T15:32:07.450Z"
     },
     "pool-6b1cf8f37a44": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "f74bfe97b51f6529736632e01755521e77c4818dbb280ec620b7903dcb061d2b",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "c43ef4718762e34ed2897192977f841a1418614d7c9997be40b562fef77ca944",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:32:09.718Z",
-      "retryAfter": "2027-03-03T15:32:09.718Z"
+      "recordingMbid": null,
+      "recordingTitle": "Вызывай милицию",
+      "artistCredits": [
+        {
+          "name": "Ida Galich",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-10-18T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Вызывай милицию",
+        "kind": "single",
+        "year": 2019,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e1/b8/36/e1b836a6-d93d-c7cf-3f45-be3c1f19afdf/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B2%D1%8B%D0%B7%D1%8B%D0%B2%D0%B0%D0%B9-%D0%BC%D0%B8%D0%BB%D0%B8%D1%86%D0%B8%D1%8E/1652056691?i=1652056692&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1652056692",
+          "url": "https://music.apple.com/ru/album/%D0%B2%D1%8B%D0%B7%D1%8B%D0%B2%D0%B0%D0%B9-%D0%BC%D0%B8%D0%BB%D0%B8%D1%86%D0%B8%D1%8E/1652056691?i=1652056692&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:22.146Z"
     },
     "pool-c0fc5675c640": {
       "resolverVersion": 3,
@@ -24688,15 +24969,12 @@
       "retrievedAt": "2026-09-04T15:32:14.132Z"
     },
     "pool-5726c761e762": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "f4aad132908104c322ae741f802417403dbc54329c247959182ee1e6faa5dd42",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:32:17.401Z",
-      "retryAfter": "2027-03-03T15:32:17.401Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "874a4b7c234c6a24b7ea019b71fab8d54e36035cada15ac44229c0dcb2936359",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:22.381Z",
+      "retryAfter": "2026-09-04T18:12:22.381Z"
     },
     "pool-ce296f1740f8": {
       "resolverVersion": 3,
@@ -25024,15 +25302,12 @@
       "retrievedAt": "2026-09-04T15:32:58.608Z"
     },
     "pool-47a29ece051d": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "24c9bceb44b4dd03d9c88ba56dec8b8cbac4b4f773b91bfda15111177e0462da",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:32:59.647Z",
-      "retryAfter": "2027-03-03T15:32:59.647Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "1f1dae556cde6df51425cfd63de7c6ce9bef1733d0d128db5bb37531c1c0da85",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:22.624Z",
+      "retryAfter": "2026-09-04T18:12:22.624Z"
     },
     "pool-660d897c4af4": {
       "resolverVersion": 3,
@@ -25249,15 +25524,12 @@
       "retryAfter": "2026-09-04T15:43:31.316Z"
     },
     "pool-0059681f20f0": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "d1749a4affbb61a29980d8388e8f63c36566c5ff4e8dd18f6f615a4b225837ed",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:33:33.622Z",
-      "retryAfter": "2027-03-03T15:33:33.622Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "cfe38d0deea041e2df559cd76244461ed81e7b609c1fc9d95e37673d58c69c76",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:22.859Z",
+      "retryAfter": "2026-09-04T18:12:22.859Z"
     },
     "pool-5ea8332a48af": {
       "resolverVersion": 3,
@@ -25469,15 +25741,15 @@
       "retrievedAt": "2026-09-04T15:33:56.688Z"
     },
     "pool-4f6827417d16": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "28194930b30461410171e5749926f698007444f2777271b3c17f1bf2441869d4",
+      "resolverVersion": 5,
+      "sourceFingerprint": "0c3b0dc00ab9698e3cdc02f2792cb669049a3fc7b6412828f43140d3d9e73bea",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:33:57.739Z",
-      "retryAfter": "2027-03-03T15:33:57.739Z"
+      "retrievedAt": "2026-09-04T18:02:23.172Z",
+      "retryAfter": "2027-03-03T18:02:23.172Z"
     },
     "pool-592571943781": {
       "resolverVersion": 3,
@@ -25518,15 +25790,12 @@
       "retrievedAt": "2026-09-04T15:34:02.191Z"
     },
     "pool-83069f140d7c": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "b8dc40e6d39349119a734cbf7bad4a56b8b5548dc96a2f6664b83fbf086323cf",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:34:05.495Z",
-      "retryAfter": "2027-03-03T15:34:05.495Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "9e0bdf07a6de2779d88cda887cf6806846b1e1d9cf8fe156f2cbc22a1eb6cc88",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:23.421Z",
+      "retryAfter": "2026-09-04T18:12:23.421Z"
     },
     "pool-3af54cd2fcdb": {
       "resolverVersion": 3,
@@ -25565,15 +25834,15 @@
       "retrievedAt": "2026-09-04T15:34:12.095Z"
     },
     "pool-790e011f5a24": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "ebc7d3949d335edfdcf1130e7dec15c9c50b20b74689dd6133d5d5a217e796c5",
+      "resolverVersion": 5,
+      "sourceFingerprint": "1d5dd79400d85fe6f27730d328fd9cf45abee260684f519eab223501db6314c7",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:34:14.351Z",
-      "retryAfter": "2027-03-03T15:34:14.351Z"
+      "retrievedAt": "2026-09-04T18:02:23.860Z",
+      "retryAfter": "2027-03-03T18:02:23.860Z"
     },
     "pool-9435c941b48f": {
       "resolverVersion": 3,
@@ -25888,15 +26157,12 @@
       "retrievedAt": "2026-09-04T15:34:43.759Z"
     },
     "pool-2a5dce152ed1": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "4f77c5a485cf11d4cd29f989547a68d10678701de15aafbf668582495b191dda",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:34:45.942Z",
-      "retryAfter": "2027-03-03T15:34:45.942Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "3c2ab598d9a4911d68398110f26c7f0c0cc57fe5a32c260326338356b9bce267",
+      "status": "temporary-error",
+      "error": "429 Too Many Requests",
+      "retrievedAt": "2026-09-04T18:02:31.104Z",
+      "retryAfter": "2026-09-04T18:12:31.104Z"
     },
     "pool-657fd1ede00b": {
       "resolverVersion": 3,
@@ -25907,26 +26173,52 @@
       "retryAfter": "2026-09-04T15:44:49.246Z"
     },
     "pool-db00dd62d388": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "68c473e0db270d2636834ab920ea4b32a0eaf58f648ecdc6edfa9d7ffcfca018",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:34:51.489Z",
-      "retryAfter": "2027-03-03T15:34:51.489Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "b4b7a78312b39ec6d3aacd5d15897d2270bec777f957b56f89f8379ea6cc6eb9",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:31.675Z",
+      "retryAfter": "2026-09-04T18:12:31.675Z"
     },
     "pool-7801addae298": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "af1b25552df6c5e193561b88604b846baf118cb22063a238c8bb8edd72e71b13",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:34:52.686Z",
-      "retryAfter": "2027-03-03T15:34:52.686Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "be9fefd591c5f5eafe5ae449bb513179979c2c5446503c60553000ce03c66c8a",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
+      "runnerUpDelta": 0.0846,
+      "recordingMbid": null,
+      "recordingTitle": "Давай взорвём",
+      "artistCredits": [
+        {
+          "name": "VERBEE",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-05-29T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Давай взорвём",
+        "kind": "single",
+        "year": 2019,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/fa/8a/19/fa8a19f0-c225-9254-ee61-f3af6cbe92a3/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B4%D0%B0%D0%B2%D0%B0%D0%B9-%D0%B2%D0%B7%D0%BE%D1%80%D0%B2%D1%91%D0%BC/1465234108?i=1465234109&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1465234109",
+          "url": "https://music.apple.com/ru/album/%D0%B4%D0%B0%D0%B2%D0%B0%D0%B9-%D0%B2%D0%B7%D0%BE%D1%80%D0%B2%D1%91%D0%BC/1465234108?i=1465234109&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:32.229Z"
     },
     "pool-830b14e1cb5c": {
       "resolverVersion": 3,
@@ -25976,34 +26268,31 @@
       "retrievedAt": "2026-09-04T15:34:55.994Z"
     },
     "pool-9e5d88c560a5": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "3dabfe153bc92394de7f4e6cafcfb4dd815788b00fc8b6ac4e90d2adeb2010b3",
+      "resolverVersion": 5,
+      "sourceFingerprint": "15af1bbf53f475b116c9f4cbaa9059b04737a161bffc0d132433bc795f590a63",
       "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:34:59.215Z",
-      "retryAfter": "2026-09-04T15:44:59.215Z"
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:32.472Z",
+      "retryAfter": "2026-09-04T18:12:32.472Z"
     },
     "pool-c435092fb6c8": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "83ef8c426b2f474ed45c48ce2e8fdbb8fb0586e40a7963a909456ee00f51a48f",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:35:01.476Z",
-      "retryAfter": "2027-03-03T15:35:01.476Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "295d1110da859662fabaf8002da04c9fb3d30d0e32189a026e55541d098a7bc2",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:32.709Z",
+      "retryAfter": "2026-09-04T18:12:32.709Z"
     },
     "pool-e114acdd2320": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "a91e86b9b0a68b913037faaf4ff5866fe38a82f0e3d0680c6b9f1d0ceb2be7de",
+      "resolverVersion": 5,
+      "sourceFingerprint": "ecec680963a6e3c4569a3d4bfabcda2ed3cf16a819016567b093277eabf14852",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:35:02.569Z",
-      "retryAfter": "2027-03-03T15:35:02.569Z"
+      "retrievedAt": "2026-09-04T18:02:33.362Z",
+      "retryAfter": "2027-03-03T18:02:33.362Z"
     },
     "pool-fa7844d4d516": {
       "resolverVersion": 3,
@@ -26053,12 +26342,12 @@
       "retrievedAt": "2026-09-04T15:35:08.728Z"
     },
     "pool-3f048ee62cea": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "83381d934bff48b0992f5fd3a8e5a40fe010ec1fa940243ba822928e210e8d94",
+      "resolverVersion": 5,
+      "sourceFingerprint": "138ef26afbfe964a05ad61ce6bc913edbeadb6b1f7cc1282356fcdb8ae7947f6",
       "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:35:11.380Z",
-      "retryAfter": "2026-09-04T15:45:11.380Z"
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:33.599Z",
+      "retryAfter": "2026-09-04T18:12:33.599Z"
     },
     "pool-41e65a34b7ac": {
       "resolverVersion": 3,
@@ -26143,23 +26432,55 @@
       "retrievedAt": "2026-09-04T15:35:15.901Z"
     },
     "pool-613241fd98ac": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "c391d3d7b2bfde7b2a2781cc3806c0d3380744785d992bdfcc5e1ec6a776b73b",
+      "resolverVersion": 5,
+      "sourceFingerprint": "d8744de2af0e2e9fe247bc88d9acad2bee8dad8e630799109b8a18887396534a",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
+      "runnerUpDelta": null,
+      "recordingMbid": null,
+      "recordingTitle": "Девочка в тренде",
+      "artistCredits": [
+        {
+          "name": "Miko",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-07-05T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Девочка в тренде",
+        "kind": "single",
+        "year": 2019,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ac/b1/b5/acb1b537-5ef2-e50f-f592-7611f69d7716/3615939697879.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%B4%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0-%D0%B2-%D1%82%D1%80%D0%B5%D0%BD%D0%B4%D0%B5/1570267879?i=1570267887&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1570267887",
+          "url": "https://music.apple.com/ru/album/%D0%B4%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0-%D0%B2-%D1%82%D1%80%D0%B5%D0%BD%D0%B4%D0%B5/1570267879?i=1570267887&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:33.900Z"
+    },
+    "pool-6b6090a38cb8": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "ed819f0623ec9df5bffd7b216548bc1964da3d45c3674fa2b898709adfb23466",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:35:18.081Z",
-      "retryAfter": "2027-03-03T15:35:18.081Z"
-    },
-    "pool-6b6090a38cb8": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "c36887bca1fadcf013f5358b6a133b0fe621bfb0e80b814c92d758eba4cbac1a",
-      "status": "temporary-error",
-      "error": "503 Service Temporarily Unavailable",
-      "retrievedAt": "2026-09-04T15:35:21.382Z",
-      "retryAfter": "2026-09-04T15:45:21.382Z"
+      "retrievedAt": "2026-09-04T18:02:34.198Z",
+      "retryAfter": "2027-03-03T18:02:34.198Z"
     },
     "pool-8fb73fa97208": {
       "resolverVersion": 3,
@@ -26456,26 +26777,23 @@
       "retrievedAt": "2026-09-04T15:35:54.706Z"
     },
     "pool-3770fbd57d6c": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "d8837d3c533866cc43317272df9ec1d787518a79421d9a30680d7bfbc62fcc3b",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:00.934Z",
-      "retryAfter": "2027-03-03T15:36:00.934Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "e2165a523e055848c1b0aff50f8a69fc4e3e7508fa76ce5ca50ddd913e5a8d8b",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:34.440Z",
+      "retryAfter": "2026-09-04T18:12:34.440Z"
     },
     "pool-5d361df531fe": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "380bb51419a804a82d0f0e7afbcd3411ffe50a4b50a85272e58c00e7d9a970d6",
+      "resolverVersion": 5,
+      "sourceFingerprint": "9e18a6d5d21c1e95938dc4f1676f5be9f94821838173bdb2bbfbfd4668d65523",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:02.153Z",
-      "retryAfter": "2027-03-03T15:36:02.153Z"
+      "retrievedAt": "2026-09-04T18:02:34.795Z",
+      "retryAfter": "2027-03-03T18:02:34.795Z"
     },
     "pool-129170a6cb4b": {
       "resolverVersion": 3,
@@ -26559,15 +26877,12 @@
       "retrievedAt": "2026-09-04T15:36:13.173Z"
     },
     "pool-23130cc48663": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "9e26b06b1322926c8522f31c5216e90c734c04b82d16516b7a57139c97029bfd",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:14.709Z",
-      "retryAfter": "2027-03-03T15:36:14.709Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "24d8fec293e95a608a4c28b9d4393821bb7ce46cfd9bb83e6c77b4e3c3d7f68d",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:35.043Z",
+      "retryAfter": "2026-09-04T18:12:35.043Z"
     },
     "pool-509efede4735": {
       "resolverVersion": 4,
@@ -26677,26 +26992,52 @@
       "retrievedAt": "2026-09-04T15:36:37.106Z"
     },
     "pool-51c3c56c4fd5": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "e27e332c873e9f0d49b643ac33be3f77ed26fb669cc138e807105e4400435610",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:39.843Z",
-      "retryAfter": "2027-03-03T15:36:39.843Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "7ab274c9df9d9aa83cad7552e2069f937ff9e4296428844a10aeb5d305a8d2e2",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:35.275Z",
+      "retryAfter": "2026-09-04T18:12:35.275Z"
     },
     "pool-e9ff4bcccea5": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "dc7a543c10f54a90d94600efc3ad4e3a0fae69e44ea112f90efbef9c3b5af33d",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "5cc8f534fa7fbc67856a170bcdb47505632ce8af13c67928d3d901daa2acb0bb",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 0.99,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:41.503Z",
-      "retryAfter": "2027-03-03T15:36:41.503Z"
+      "recordingMbid": null,
+      "recordingTitle": "Я лучше всех живу",
+      "artistCredits": [
+        {
+          "name": "EMIN",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2013,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2013-12-16T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "На краю",
+        "kind": "album",
+        "year": 2013,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/72/32/45/72324568-ae47-7b72-c83a-92193e0af84a/0.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D1%8F-%D0%BB%D1%83%D1%87%D1%88%D0%B5-%D0%B2%D1%81%D0%B5%D1%85-%D0%B6%D0%B8%D0%B2%D1%83/1841605526?i=1841605536&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1841605536",
+          "url": "https://music.apple.com/ru/album/%D1%8F-%D0%BB%D1%83%D1%87%D1%88%D0%B5-%D0%B2%D1%81%D0%B5%D1%85-%D0%B6%D0%B8%D0%B2%D1%83/1841605526?i=1841605536&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:35.573Z"
     },
     "pool-f9fc286411ff": {
       "resolverVersion": 4,
@@ -26721,15 +27062,15 @@
       "retryAfter": "2027-03-03T17:11:42.998Z"
     },
     "pool-189d996239f5": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "1754358a22fd3c68287f1519165422be8c759e3a1eabd447a317fd3b85b0be70",
+      "resolverVersion": 5,
+      "sourceFingerprint": "e89ab6eb4814347cce9e29694b0cc025eed1eb8519807161acc9e796a1d23725",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:36:46.343Z",
-      "retryAfter": "2027-03-03T15:36:46.343Z"
+      "retrievedAt": "2026-09-04T18:02:35.835Z",
+      "retryAfter": "2027-03-03T18:02:35.835Z"
     },
     "pool-5b09a1bab131": {
       "resolverVersion": 3,
@@ -26862,15 +27203,15 @@
       "retrievedAt": "2026-09-04T15:37:01.026Z"
     },
     "pool-f288e4adb462": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "562fe351421e479c4d17c9e98ad93706cd43c0baafad6b51d0ca2780929487c9",
+      "resolverVersion": 5,
+      "sourceFingerprint": "421d8ad6069fc241694dbea40a3563bda1445056e7f6284738aaa42310b73490",
       "status": "not-found",
-      "method": "search",
+      "method": "apple-search",
       "confidence": 0,
       "runnerUpDelta": null,
       "alternatives": [],
-      "retrievedAt": "2026-09-04T15:37:12.027Z",
-      "retryAfter": "2027-03-03T15:37:12.027Z"
+      "retrievedAt": "2026-09-04T18:02:36.332Z",
+      "retryAfter": "2027-03-03T18:02:36.332Z"
     },
     "pool-3fca67daa52f": {
       "resolverVersion": 4,
@@ -26944,26 +27285,12 @@
       "retryAfter": "2027-03-03T15:37:54.602Z"
     },
     "pool-deb257a83b6d": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "30a948dad69bc29db4313ead83b8ab6b6c3d523cc044a6319b464741a2542e2c",
-      "status": "ambiguous",
-      "method": "search",
-      "confidence": 0.8753,
-      "runnerUpDelta": 0,
-      "alternatives": [
-        {
-          "id": "fa2f48d8-c92a-4bfa-b729-6f7d0532ddcf",
-          "title": "Мой сон",
-          "score": 0.8753
-        },
-        {
-          "id": "ba0760cf-3de1-4b96-afb9-b6f3d83de39b",
-          "title": "Мой сон",
-          "score": 0.8753
-        }
-      ],
-      "retrievedAt": "2026-09-04T15:37:57.178Z",
-      "retryAfter": "2027-09-04T15:37:57.178Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "c01b6cabc346d15e8f29c29bce1221f70c3f1cd17358ec508149f03a18b67af8",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:36.566Z",
+      "retryAfter": "2026-09-04T18:12:36.566Z"
     },
     "pool-56c2903bf92f": {
       "resolverVersion": 3,
@@ -27094,15 +27421,12 @@
       "retrievedAt": "2026-09-04T15:38:41.928Z"
     },
     "pool-9decd4959c6f": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "065d24aa2d4cee630a2c16cb8f41d8c3ccbffea867615c55cc1084a6d3310ec5",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:38:43.349Z",
-      "retryAfter": "2027-03-03T15:38:43.349Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "6cf25417dc8dc1f6e5325c238ee0b5ece1c7976b507ec08a82f53e33b17e7fde",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:36.807Z",
+      "retryAfter": "2026-09-04T18:12:36.807Z"
     },
     "pool-c2ec7f325a65": {
       "resolverVersion": 3,
@@ -27204,15 +27528,44 @@
       "retrievedAt": "2026-09-04T15:39:15.869Z"
     },
     "pool-f4931666e964": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "0e5c5230e951f165e69ca76f82e66e7518248eb5fe17d0dc0fe76baa011ea44b",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
+      "resolverVersion": 5,
+      "sourceFingerprint": "0142b06f183559e4ca3c7a4952ac0ec7f372c18e0eed0bc93633fb2b713e438b",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "apple-search",
+      "confidence": 1,
       "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:39:27.625Z",
-      "retryAfter": "2027-03-03T15:39:27.625Z"
+      "recordingMbid": null,
+      "recordingTitle": "Я за тобой",
+      "artistCredits": [
+        {
+          "name": "Анна Семенович",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [],
+      "isrcs": [],
+      "releaseYear": 2014,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2014-05-24T12:00:00Z",
+      "versionType": "original",
+      "album": {
+        "title": "Я за тобой",
+        "kind": "single",
+        "year": 2014,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/52/95/085295cf-6714-a98d-6716-a6cb12036428/cover.jpg/600x600bb.jpg",
+        "sourceUrl": "https://music.apple.com/ru/album/%D1%8F-%D0%B7%D0%B0-%D1%82%D0%BE%D0%B1%D0%BE%D0%B9/1748557705?i=1748557706&uo=4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "apple",
+          "entityId": "1748557706",
+          "url": "https://music.apple.com/ru/album/%D1%8F-%D0%B7%D0%B0-%D1%82%D0%BE%D0%B1%D0%BE%D0%B9/1748557705?i=1748557706&uo=4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T18:02:37.234Z"
     },
     "pool-0d3174609477": {
       "resolverVersion": 3,
@@ -27334,15 +27687,12 @@
       "retrievedAt": "2026-09-04T15:40:11.303Z"
     },
     "pool-82a6bb3ea22d": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "28a5ca8b7c3c44d8c92ab4d8a40584d935a16f743a6024bb9c47d151bc69fc81",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:40:12.520Z",
-      "retryAfter": "2027-03-03T15:40:12.520Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "a662527b0a24377a04467882f0ff90a8dd5baf678233a7de5d05d0a0c5190c82",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:37.457Z",
+      "retryAfter": "2026-09-04T18:12:37.457Z"
     },
     "pool-bd40fca61c7e": {
       "resolverVersion": 3,
@@ -27440,26 +27790,20 @@
       "retrievedAt": "2026-09-04T15:40:25.275Z"
     },
     "pool-ec26e47909e7": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "f409f1f48cc19c3cccf8c93db859265b884f8eed1c4c0921b250eb74f9da8dfb",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:40:26.318Z",
-      "retryAfter": "2027-03-03T15:40:26.318Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "5780a4ff246135199910d368858a631f9a19a308557eab0f173910f189b9ef00",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:37.683Z",
+      "retryAfter": "2026-09-04T18:12:37.683Z"
     },
     "pool-069bf8d9c2fc": {
-      "resolverVersion": 3,
-      "sourceFingerprint": "8ab14d43146adb6ccd4bc3f351d9fabe22e4f9bb69070aa228a72848d618e085",
-      "status": "not-found",
-      "method": "search",
-      "confidence": 0,
-      "runnerUpDelta": null,
-      "alternatives": [],
-      "retrievedAt": "2026-09-04T15:40:27.441Z",
-      "retryAfter": "2027-03-03T15:40:27.441Z"
+      "resolverVersion": 5,
+      "sourceFingerprint": "cd5cdbedaca4b8daf56b1e452a43d72da14bbc0ac13777c94eb4f43fb2fef4b3",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:37.931Z",
+      "retryAfter": "2026-09-04T18:12:37.931Z"
     },
     "pool-1d9db1acc282": {
       "resolverVersion": 3,
@@ -28154,6 +28498,150 @@
       ],
       "issues": [],
       "retrievedAt": "2026-09-04T17:14:40.638Z"
+    },
+    "pool-eabfd4b80999": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "e2bb852ac5b77f7e479b68ba46efcd12f93dea73e608f409b9756de28bdaf18c",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:38.157Z",
+      "retryAfter": "2026-09-04T18:12:38.157Z"
+    },
+    "pool-f585c4276cf6": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "8c4f551ceb7f3a3f97db11247872ff40d19fdd7cb3851857e053c8aaef277024",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:38.398Z",
+      "retryAfter": "2026-09-04T18:12:38.398Z"
+    },
+    "pool-745c7679754f": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "b64f5512dc1333323c8abb50a967c382152493d05dee1898f955b2e61cf436b1",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:38.603Z",
+      "retryAfter": "2026-09-04T18:12:38.603Z"
+    },
+    "pool-75310544a546": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "627891fd9a3a97aeca6a93884bb6756bcbb89bb41c638fd2a1edb2412940a23d",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:38.816Z",
+      "retryAfter": "2026-09-04T18:12:38.816Z"
+    },
+    "pool-a556920d76ae": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "97d7dd4b701ac3e41ddba09e8f72d86dfa63bbe567f431724ec9f2ef7ec26d0e",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:39.049Z",
+      "retryAfter": "2026-09-04T18:12:39.049Z"
+    },
+    "pool-ea3a7bf3098c": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "3ed2fce53669c19faf1148c41b81ba5701b5ad1d6c7df7e89f9a9bc347f5db96",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:39.260Z",
+      "retryAfter": "2026-09-04T18:12:39.260Z"
+    },
+    "pool-f22faad689b6": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "24027839e34f95c29860d960384911158199af56604f7539520172f59cd005ad",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:39.468Z",
+      "retryAfter": "2026-09-04T18:12:39.468Z"
+    },
+    "pool-f9bb7845b8d6": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "ec9df60785ca1d8d1ea8c69b772a9fd619ecf9991859a3f2473ed045b040862e",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:39.676Z",
+      "retryAfter": "2026-09-04T18:12:39.676Z"
+    },
+    "pool-faf7ae2ad885": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "bfed697d2354aa55d60ab83a7b1f7ca76fffff39cbe7fabaad5d22d8ca2040c0",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:39.943Z",
+      "retryAfter": "2026-09-04T18:12:39.943Z"
+    },
+    "pool-50b21aaea359": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "f21163c538dceb38efcb7c50e60801b1917c1e89c96fd9df2e4f990ec50a974b",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:40.151Z",
+      "retryAfter": "2026-09-04T18:12:40.152Z"
+    },
+    "pool-5c330bf947ea": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "6b81df7cae712c2dad457b0575ad1a7e7d3f2b7935ec3cbc5d9fd639bdd7e849",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:40.377Z",
+      "retryAfter": "2026-09-04T18:12:40.377Z"
+    },
+    "pool-d3d634a2e01f": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "5f1de6d3c642d90b30a6f053ae3868c68d4835871bf527fa2288ecc3004bc32f",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:40.809Z",
+      "retryAfter": "2026-09-04T18:12:40.809Z"
+    },
+    "pool-30913a988b6c": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "507d05f45e49e21d3be1a02fab8b9fa45be2efa5ee270a4f3d67443914e69385",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:41.045Z",
+      "retryAfter": "2026-09-04T18:12:41.045Z"
+    },
+    "pool-9fc5217a6019": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "98ec7f919acf0a450c22cf762f1f437c8351b12c15d80240e51df9794a669f65",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:41.255Z",
+      "retryAfter": "2026-09-04T18:12:41.255Z"
+    },
+    "pool-916bfc0bcef3": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "70c6a061ee4475980fafb23058c417f5ba49a1e3617d39c020e06b98f44d4494",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:41.499Z",
+      "retryAfter": "2026-09-04T18:12:41.499Z"
+    },
+    "pool-943713984722": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "22e0686fa9f74934584671cae61a8774265d525ed16c6bbbd2a13a4cc1855073",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:42.068Z",
+      "retryAfter": "2026-09-04T18:12:42.068Z"
+    },
+    "pool-26983018211a": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "207f7699f4f06cd59467329d1522d4913b045c439c71cbbc059aabb9e321840d",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:42.283Z",
+      "retryAfter": "2026-09-04T18:12:42.283Z"
+    },
+    "pool-31c48bff5130": {
+      "resolverVersion": 5,
+      "sourceFingerprint": "5828607f1470c425996d4c94926164b33ba2ed5ab7808e980f8f3a9c5288fb59",
+      "status": "temporary-error",
+      "error": "403 Forbidden",
+      "retrievedAt": "2026-09-04T18:02:42.514Z",
+      "retryAfter": "2026-09-04T18:12:42.514Z"
     }
   },
   "artists": {

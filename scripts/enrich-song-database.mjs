@@ -15,11 +15,13 @@ import {
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
-const resolverVersion = 4;
+const resolverVersion = 5;
 const limit = Math.max(1, Number(process.env.ENRICH_LIMIT || 60));
 const targetQuizId = String(process.env.ENRICH_QUIZ_ID || "").trim();
 const targetSongIds = new Set(String(process.env.ENRICH_SONG_IDS || "").split(",").map((value) => value.trim()).filter(Boolean));
 const readyOnly = process.env.ENRICH_READY_ONLY === "1";
+const forceTargeted = process.env.ENRICH_FORCE === "1";
+const appleOnly = process.env.ENRICH_APPLE_ONLY === "1";
 const userAgent = "LamtyuginMusicQuiz/1.0 (https://quiz.lamtyugin.com)";
 const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
@@ -60,13 +62,24 @@ const atomicWriteCache = () => {
   }, { attempted: 0, matched: 0, ambiguous: 0, notFound: 0, temporaryError: 0 });
   const temporary = `${cachePath}.tmp`;
   fs.writeFileSync(temporary, `${JSON.stringify(cache, null, 2)}\n`);
-  fs.renameSync(temporary, cachePath);
+  let lastError;
+  for (let attempt = 0; attempt < 6; attempt += 1) {
+    try {
+      fs.renameSync(temporary, cachePath);
+      return;
+    } catch (error) {
+      lastError = error;
+      if (!["EPERM", "EBUSY", "EACCES"].includes(error?.code) || attempt === 5) break;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100 * (attempt + 1));
+    }
+  }
+  throw lastError;
 };
 
 let lastMusicBrainzRequest = 0;
-const fetchJson = async (url, { musicBrainz = false } = {}) => {
+const fetchJson = async (url, { musicBrainz = false, attempts = 3, timeoutMs = 20000 } = {}) => {
   let error;
-  for (let attempt = 0; attempt < 3; attempt += 1) {
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
     if (musicBrainz) {
       const delay = 1100 - (Date.now() - lastMusicBrainzRequest);
       if (delay > 0) await wait(delay);
@@ -75,7 +88,7 @@ const fetchJson = async (url, { musicBrainz = false } = {}) => {
     try {
       const response = await fetch(url, {
         headers: { Accept: "application/json", "User-Agent": userAgent },
-        signal: AbortSignal.timeout(20000),
+        signal: AbortSignal.timeout(timeoutMs),
       });
       if (response.ok) return response.json();
       if (response.status === 404) return null;
@@ -86,7 +99,7 @@ const fetchJson = async (url, { musicBrainz = false } = {}) => {
       error = new Error(`${response.status} ${response.statusText}`);
     } catch (caught) {
       error = caught;
-      if (attempt < 2) await wait(1500 * (attempt + 1));
+      if (attempt < attempts - 1) await wait(1500 * (attempt + 1));
     }
   }
   throw error || new Error("request failed");
@@ -203,7 +216,51 @@ const enrichArtist = async (musicBrainzArtistId, fallbackName) => {
   return profile;
 };
 
+const appleRecording = (result) => ({
+  id: `apple:${result.trackId}`,
+  title: result.trackName,
+  score: 100,
+  "first-release-date": result.releaseDate || null,
+  "artist-credit": [{ name: result.artistName, artist: { name: result.artistName } }],
+  apple: {
+    trackId: result.trackId,
+    collectionName: result.collectionName || null,
+    collectionViewUrl: result.collectionViewUrl || null,
+    trackViewUrl: result.trackViewUrl || null,
+    artworkUrl: result.artworkUrl100?.replace(/100x100(?:bb)?/u, "600x600bb") || null,
+    trackCount: Number(result.trackCount) || null,
+    releaseDate: result.releaseDate || null,
+  },
+});
+
+const searchAppleRecording = async (song) => {
+  const terms = [...new Set([
+    `${song.artist} ${song.title}`,
+    `${song.artistAliases?.[0] || ""} ${song.titleAliases?.[0] || ""}`,
+  ].map((value) => value.replace(/\s+/gu, " ").trim()).filter(Boolean))];
+  let best = null;
+  for (const country of ["RU"]) {
+    for (const term of terms) {
+      await wait(175);
+      const url = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&country=${country}&media=music&entity=song&limit=25`;
+      const document = await fetchJson(url, { attempts: 2, timeoutMs: 8000 });
+      const recordings = (document?.results || [])
+        .filter((result) => result.kind === "song" && result.trackId && result.trackName && result.artistName)
+        .map(appleRecording);
+      const distinct = [...new Map(recordings.map((recording) => [
+        `${fingerprint(recording.title)}:${fingerprint(recording["artist-credit"]?.[0]?.name)}`,
+        recording,
+      ])).values()];
+      const candidate = { ...chooseRecording(song, distinct, aliasIndex), method: "apple-search", provider: "apple" };
+      if (candidate.status === "matched") return candidate;
+      if (!best || (candidate.score || 0) > (best.score || 0)) best = candidate;
+    }
+  }
+  return best || { status: "not-found", method: "apple-search", provider: "apple", alternatives: [] };
+};
+
 const searchRecording = async (song) => {
+  if (appleOnly) return searchAppleRecording(song);
   for (const isrc of song.externalIds?.isrc || []) {
     const isrcQuery = encodeURIComponent(`isrc:${String(isrc).replace(/[^A-Za-z0-9]/g, "")}`);
     const result = await musicBrainz(`recording?query=${isrcQuery}&limit=8`);
@@ -243,7 +300,12 @@ const searchRecording = async (song) => {
     if (candidate.status === "matched") return candidate;
     if (!best || (candidate.score || 0) > (best.score || 0)) best = candidate;
   }
-  return best || { status: "not-found", method: "search", alternatives: [] };
+  if (best?.status === "matched") return best;
+  const apple = await searchAppleRecording(song).catch(() => null);
+  if (!apple) return best || { status: "not-found", method: "search", alternatives: [] };
+  return apple.status === "matched" || (apple.score || 0) > (best?.score || 0)
+    ? apple
+    : best || apple;
 };
 
 const enrichSong = async (song) => {
@@ -265,9 +327,21 @@ const enrichSong = async (song) => {
     retrievedAt: new Date().toISOString(),
     retryAfter: new Date(Date.now() + (match.status === "ambiguous" ? 365 : 180) * 24 * 60 * 60 * 1000).toISOString(),
   };
-  const recording = await musicBrainz(`recording/${match.recording.id}?inc=artists+isrcs+releases+release-groups`)
-    || match.recording;
-  const release = selectReleaseInfo(recording);
+  const recording = match.provider === "apple"
+    ? match.recording
+    : await musicBrainz(`recording/${match.recording.id}?inc=artists+isrcs+releases+release-groups`) || match.recording;
+  const release = match.provider === "apple" ? {
+    firstReleaseYear: yearOf(recording.apple?.releaseDate),
+    firstReleaseDate: recording.apple?.releaseDate || null,
+    album: recording.apple?.collectionName ? {
+      title: recording.apple.collectionName.replace(/\s+-\s+(?:Single|EP)$/iu, ""),
+      kind: /\s+-\s+Single$/iu.test(recording.apple.collectionName) || (recording.apple.trackCount && recording.apple.trackCount <= 3) ? "single" : "album",
+      year: yearOf(recording.apple.releaseDate),
+      coverUrl: recording.apple.artworkUrl,
+      sourceUrl: recording.apple.collectionViewUrl || recording.apple.trackViewUrl,
+      rightsStatus: "contextual-only",
+    } : null,
+  } : selectReleaseInfo(recording);
   if (release.album?.releaseGroupMbid) {
     const coverDocument = await publicJson(`https://coverartarchive.org/release-group/${release.album.releaseGroupMbid}`)
       .catch(() => null);
@@ -276,10 +350,15 @@ const enrichSong = async (song) => {
   }
   const credits = recordingArtistCredits(recording);
   const artistMbids = [...new Set(credits.map(({ musicBrainzArtistId }) => musicBrainzArtistId).filter(Boolean))];
-  for (const credit of credits) await enrichArtist(credit.musicBrainzArtistId, credit.name);
+  for (const credit of credits) {
+    if (credit.musicBrainzArtistId) await enrichArtist(credit.musicBrainzArtistId, credit.name);
+  }
   const earliestChartYear = Math.min(...(song.chart?.years || []).map(Number).filter(Number.isFinite), Infinity);
   const yearConflict = release.firstReleaseYear && Number.isFinite(earliestChartYear) && release.firstReleaseYear > earliestChartYear + 1;
   const verified = match.status === "matched" && match.method === "exact-isrc" && !yearConflict;
+  const source = match.provider === "apple"
+    ? { provider: "apple", entityId: String(recording.apple.trackId), url: recording.apple.trackViewUrl || recording.apple.collectionViewUrl }
+    : { provider: "musicbrainz", entityId: recording.id, url: `https://musicbrainz.org/recording/${recording.id}` };
   return {
     resolverVersion,
     sourceFingerprint,
@@ -288,7 +367,7 @@ const enrichSong = async (song) => {
     method: usableCandidate ? `${match.method}-candidate` : match.method,
     confidence: Number(match.score.toFixed(4)),
     runnerUpDelta: match.runnerUpDelta === null ? null : Number(match.runnerUpDelta.toFixed(4)),
-    recordingMbid: recording.id,
+    recordingMbid: match.provider === "apple" ? null : recording.id,
     recordingTitle: recording.title,
     artistCredits: credits,
     artistMbids,
@@ -298,7 +377,7 @@ const enrichSong = async (song) => {
     firstReleaseDate: release.firstReleaseDate,
     versionType: extractVersionType(recording.title),
     album: release.album,
-    sources: [{ provider: "musicbrainz", entityId: recording.id, url: `https://musicbrainz.org/recording/${recording.id}` }],
+    sources: [source],
     issues: [
       ...(yearConflict ? ["release-year-after-chart"] : []),
       ...(usableCandidate ? ["ambiguous-recording-choice"] : []),
@@ -318,6 +397,7 @@ const queue = database.songs
   .filter((song) => {
     const existing = cache.songs[song.id];
     const fingerprintMatches = existing?.sourceFingerprint === inputFingerprint(song) && existing?.resolverVersion === resolverVersion;
+    if (forceTargeted && targetSongIds.has(song.id)) return true;
     if (existing?.status === "matched" && fingerprintMatches) return false;
     if (!fingerprintMatches) return true;
     return !existing.retryAfter || Date.parse(existing.retryAfter) <= now;

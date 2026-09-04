@@ -6,6 +6,7 @@ import { rankYouTubeResults, searchYouTubeVideos } from "./youtube-search.mjs";
 import {
   applyArtistCreditOverride,
   artistIdentityFromStatusOverride,
+  externalIdsFromStatusOverride,
   validateSongStatusOverrides,
 } from "./song-status-overrides.mjs";
 
@@ -71,6 +72,10 @@ const cachePath = dataPath("youtube-search-cache.json");
 const loadedCache = fs.existsSync(cachePath) ? readJson(cachePath) : null;
 const cache = loadedCache?.version === 2 ? loadedCache : { version: 2, queries: {} };
 cache.queries ||= {};
+const cachedVideosById = new Map(Object.values(cache.queries)
+  .flatMap((query) => query?.results || [])
+  .filter((video) => video?.videoId)
+  .map((video) => [video.videoId, video]));
 
 const saveCache = () => {
   cache.updatedAt = new Date().toISOString();
@@ -172,7 +177,14 @@ const reserveArtists = (artistIds) => {
   }
 };
 
-const findVideo = async (track) => {
+const findVideo = async (track, song) => {
+  const manualVideoId = externalIdsFromStatusOverride(statusOverrideFor(song), `status override for ${song.id}`).youtube?.[0];
+  if (manualVideoId) {
+    const cachedManual = cachedVideosById.get(manualVideoId);
+    if (cachedManual) return { ...cachedManual, selectedBy: "manual-status-override" };
+    skipped.push({ id: track.id, artist: track.artist, title: track.title, reason: "manual-video-not-in-cache" });
+    return null;
+  }
   const query = `${track.artist} ${track.title}`.replace(/\s+/g, " ").trim();
   let cached = cache.queries[query];
   if (!cached && !offline && networkSearches < maxNetworkSearches) {
@@ -205,7 +217,7 @@ const fillEra = async (era, target, queues = candidateQueues, queueCursors = cur
       if (!song || selectedSongIds.has(song.id) || artistUseCount(song.artistIds) >= maxSongsPerArtist) continue;
       batch.push({ track, song });
     }
-    const videos = await Promise.all(batch.map(({ track }) => findVideo(track)));
+    const videos = await Promise.all(batch.map(({ track, song }) => findVideo(track, song)));
     for (let index = 0; index < batch.length; index += 1) {
       if (selected.filter((song) => song.era === era).length >= target) break;
       const { track, song } = batch[index];
@@ -241,7 +253,7 @@ const fillEra = async (era, target, queues = candidateQueues, queueCursors = cur
         channel: video.channel,
         viewCount: video.viewCount,
         durationSeconds: video.durationSeconds,
-        selectedBy: "automatic-search",
+        selectedBy: video.selectedBy || "automatic-search",
       },
       clip: {
         start: clipStartFor(video.durationSeconds, clipDuration, `${song.id}:${video.videoId}`),
