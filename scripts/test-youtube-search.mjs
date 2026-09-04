@@ -15,4 +15,18 @@ const ranked = rankYouTubeResults(song, [
 assert.equal(ranked.length, 1);
 assert.equal(ranked[0].videoId, "abcdefghijk");
 
+const rareSovietRecording = rankYouTubeResults(
+  { artist: "Майя Кристалинская", title: "Нежность" },
+  [{
+    videoId: "sovietrare1",
+    title: "Майя Кристалинская — Нежность",
+    channel: "Советские песни",
+    durationSeconds: 185,
+    viewCount: 842,
+    badges: [],
+    live: false,
+  }],
+);
+assert.equal(rareSovietRecording.length, 1, "a matching Soviet archive recording must not require 100k views");
+
 console.log("youtube search tests passed");
