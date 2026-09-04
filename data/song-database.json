@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-04T04:16:38.332Z",
+  "generatedAt": "2026-09-04T09:20:58.626Z",
   "archive": "song-database.json.gz",
   "archiveParts": [
     "song-database.json.gz.part-01",
     "song-database.json.gz.part-02"
   ],
+  "archiveSha256": "c3dce381197345b63940d0707942353c752ad8e41f0b0b991c4c8981d4d6dbd2",
   "stats": {
     "songs": 11290,
     "chartSongs": 9239,
@@ -19,8 +20,9 @@
     "readyForPublication": 0,
     "readyForAutomaticQuiz": 0,
     "usedArtists": 611,
-    "withReleaseYear": 5832,
-    "withCandidateReleaseYear": 5835,
+    "withReleaseYear": 5868,
+    "withCandidateReleaseYear": 5871,
+    "withAutomaticEnrichment": 36,
     "workflow": {
       "rejected": 13,
       "used": 420,

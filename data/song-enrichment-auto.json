@@ -1,14 +1,3545 @@
 {
   "version": 1,
   "resolverVersion": 1,
-  "generatedAt": null,
+  "generatedAt": "2026-09-04T09:20:58.485Z",
   "stats": {
-    "attempted": 0,
-    "matched": 0,
-    "ambiguous": 0,
-    "notFound": 0,
-    "temporaryError": 0
+    "attempted": 100,
+    "matched": 36,
+    "ambiguous": 15,
+    "notFound": 39,
+    "temporaryError": 10
   },
-  "songs": {},
-  "artists": {}
+  "songs": {
+    "chart-00091": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "2345b5dac53445f432b2bfae7311eb44f3a810c95ab872f25ebcfb2b5c3882b6",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:14:32.323Z",
+      "retryAfter": "2027-03-03T09:14:32.323Z"
+    },
+    "chart-08951": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "c1102480f8e4163892a7e5dae9c2b3a4778368e40d4f6ba88a03a762a9812191",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "c4d7f4d2-6a50-4c97-b4b6-dc1a6c33fb97",
+      "recordingTitle": "ЭКСПОНАТ",
+      "artistCredits": [
+        {
+          "name": "MIA BOYKA",
+          "musicBrainzArtistId": "55041570-e24b-4069-974e-f4cddb7bd7d6",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "55041570-e24b-4069-974e-f4cddb7bd7d6"
+      ],
+      "isrcs": [
+        "AEA3P2605755"
+      ],
+      "releaseYear": 2026,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2026-05-15",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "c4d7f4d2-6a50-4c97-b4b6-dc1a6c33fb97",
+          "url": "https://musicbrainz.org/recording/c4d7f4d2-6a50-4c97-b4b6-dc1a6c33fb97"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:14:37.921Z"
+    },
+    "chart-08946": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "a0591c63d67e41d779730becb90f1fba54d3fff17e20ebd0ef868d1ff8b661fb",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:14:38.055Z",
+      "retryAfter": "2027-03-03T09:14:38.055Z"
+    },
+    "chart-08943": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "ba15efba173553886f587c680ce06cb9556047cab909b2169de08be3445a6ee9",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "4ddafaaa-d618-40d4-aa41-e7b3c9555fc6",
+      "recordingTitle": "Феникс",
+      "artistCredits": [
+        {
+          "name": "BEARWOLF",
+          "musicBrainzArtistId": "38bfa08d-c155-4a14-bdb1-c8b1971bdf9b",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "38bfa08d-c155-4a14-bdb1-c8b1971bdf9b"
+      ],
+      "isrcs": [
+        "RUAGV2605323"
+      ],
+      "releaseYear": 2026,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2026-02-20",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "4ddafaaa-d618-40d4-aa41-e7b3c9555fc6",
+          "url": "https://musicbrainz.org/recording/4ddafaaa-d618-40d4-aa41-e7b3c9555fc6"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:14:41.388Z"
+    },
+    "chart-08952": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "0a606fe510ee96f32090634beaf95a90db8866578d263e9ce5037ca79809c822",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:14:42.457Z",
+      "retryAfter": "2027-03-03T09:14:42.457Z"
+    },
+    "chart-09011": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "39abef0ef392da3091627093b6e26bff873915c5bd4b8220d4b2383dbf27fb2b",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:14:43.558Z",
+      "retryAfter": "2027-03-03T09:14:43.558Z"
+    },
+    "chart-03237": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "dd39c92136c31e81773e65b0b5082baf1efe7bfd44ccff5f73cf3438abe24875",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:14:44.668Z",
+      "retryAfter": "2027-03-03T09:14:44.668Z"
+    },
+    "chart-03166": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "bfb659b970326160c2ab310bcb3e51342513e5ea2e7503323b45c7b78049903d",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:14:55.348Z",
+      "retryAfter": "2026-09-04T09:24:55.348Z"
+    },
+    "chart-08979": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "1202bbc68903d0e753aaf9c90777e04e4ede7ecc9d53b538dfda52b4b1f85728",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:14:56.395Z",
+      "retryAfter": "2027-03-03T09:14:56.395Z"
+    },
+    "chart-09075": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "e044daa4b16e406224c08d179f38b12c745d83e7bf56157698afb553d63561c3",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:14:57.478Z",
+      "retryAfter": "2027-03-03T09:14:57.478Z"
+    },
+    "chart-03593": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "cea0add8b709c7f065fe2ffbfb3103f53e7cc69330bb09015ca099a6f6f776db",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:15:09.634Z",
+      "retryAfter": "2026-09-04T09:25:09.634Z"
+    },
+    "chart-08986": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "c0d6305103ef47f0594d9ede74956fbaa3ebf8843802fce56fb6a48993fe2c41",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "f47eb018-82f2-4d7a-b57f-fa406c388294",
+      "recordingTitle": "Валькирия",
+      "artistCredits": [
+        {
+          "name": "BEARWOLF",
+          "musicBrainzArtistId": "38bfa08d-c155-4a14-bdb1-c8b1971bdf9b",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "38bfa08d-c155-4a14-bdb1-c8b1971bdf9b"
+      ],
+      "isrcs": [
+        "RUAGV2407313"
+      ],
+      "releaseYear": 2024,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2024-09-20",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "f47eb018-82f2-4d7a-b57f-fa406c388294",
+          "url": "https://musicbrainz.org/recording/f47eb018-82f2-4d7a-b57f-fa406c388294"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:15:21.693Z"
+    },
+    "chart-08953": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "adee5be210bc1d3f03d32982c19e3b4b0ec2f8476949357e44a8464991afe829",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:15:22.199Z",
+      "retryAfter": "2027-03-03T09:15:22.199Z"
+    },
+    "chart-08966": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "85caf377762e4f6f9f238e75625e25786572f86d1f68760fe115d4641ea576d9",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "87669130-e99e-4423-a964-493a0f1f77f3",
+      "recordingTitle": "Нежность",
+      "artistCredits": [
+        {
+          "name": "HOLLYFLAME",
+          "musicBrainzArtistId": "d411d8a0-c506-491e-beb9-03ff9cc6a090",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "d411d8a0-c506-491e-beb9-03ff9cc6a090"
+      ],
+      "isrcs": [],
+      "releaseYear": 2025,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2025-09-26",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "87669130-e99e-4423-a964-493a0f1f77f3",
+          "url": "https://musicbrainz.org/recording/87669130-e99e-4423-a964-493a0f1f77f3"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:15:25.180Z"
+    },
+    "chart-03102": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "35d34631e259b3273ae65c60e2fec64833e3c324ef3648e9de1f06de36ea2416",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:15:35.399Z",
+      "retryAfter": "2027-03-03T09:15:35.399Z"
+    },
+    "chart-08969": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "b50fcf4b634da1040653fcecaa2d7c9c2bfd68cc0571a29edb3bcc1dd7cd3c15",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:15:42.250Z",
+      "retryAfter": "2027-03-03T09:15:42.250Z"
+    },
+    "chart-09070": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "67f000113497230082c59972971484b3168925f8ff87fbfabf6e023982f86735",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:15:43.632Z",
+      "retryAfter": "2027-03-03T09:15:43.632Z"
+    },
+    "chart-08978": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "3fa2fc72555120e8070ac702184e63d241d658e34ed069e4a8f106a479ad5074",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:15:43.764Z",
+      "retryAfter": "2027-03-03T09:15:43.764Z"
+    },
+    "chart-08960": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "93cd9154addb070d37bf72feb6c7205407ff3662a6e76fe135b74103c28ee416",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:15:46.056Z",
+      "retryAfter": "2027-03-03T09:15:46.056Z"
+    },
+    "chart-08985": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "ad5bea1cb45e3aa79cbddc7b538c8cb142b5a660eb4f4bb1a3690394dce0e0b0",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:15:46.187Z",
+      "retryAfter": "2027-03-03T09:15:46.187Z"
+    },
+    "chart-08989": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "4990eb840f385e10fd843fc8f5e1991c7d48ae49b8ceb77a16a0928a8f57df6e",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:15:48.033Z",
+      "retryAfter": "2027-03-03T09:15:48.033Z"
+    },
+    "chart-00125": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "8319c80e479aa9108a717f73b60ba2d6227658c1cf0c3c4340e367015ca3b34b",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "47fa4450-6163-4ae7-8516-ca9505e49b84",
+      "recordingTitle": "Венера-Юпитер",
+      "artistCredits": [
+        {
+          "name": "Ваня Дмитриенко",
+          "musicBrainzArtistId": "3d392525-7405-428d-8ba3-180920afd11c",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "3d392525-7405-428d-8ba3-180920afd11c"
+      ],
+      "isrcs": [
+        "RUACR2000286"
+      ],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-01-01",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "47fa4450-6163-4ae7-8516-ca9505e49b84",
+          "url": "https://musicbrainz.org/recording/47fa4450-6163-4ae7-8516-ca9505e49b84"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:16:07.488Z"
+    },
+    "chart-08996": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "b082f1d0792bfb740aa870b50d32e8d4d2850b31bec3ce2c4bcaa7763a7d7ac1",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:16:08.689Z",
+      "retryAfter": "2027-03-03T09:16:08.689Z"
+    },
+    "chart-09005": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "f3b3037f904d023397c1ffd83bc73e23a9bd54dd214af9434bb4c83bdab1bc93",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:16:10.488Z",
+      "retryAfter": "2027-03-03T09:16:10.488Z"
+    },
+    "chart-03513": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "8410322db64cda21017cc771c6093b46285c8907834ecdbddd88e1e4422a7592",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:16:12.512Z",
+      "retryAfter": "2027-03-03T09:16:12.512Z"
+    },
+    "chart-09149": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "083615bc26e091f8a1a4ce56af8ae89f32e6b58f3aca99d0cf32c44338794498",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:16:20.133Z",
+      "retryAfter": "2027-03-03T09:16:20.133Z"
+    },
+    "chart-08983": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "8eecb0c6d251ecef8f305acdfb07f21c4b688069d009f1ea0428ece3aca8821b",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:16:22.380Z",
+      "retryAfter": "2027-03-03T09:16:22.380Z"
+    },
+    "chart-03058": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "7924738c9435aae6141c22a19904af1a3ddbf3922ed0f08131660b371d3f9158",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:16:24.819Z",
+      "retryAfter": "2027-03-03T09:16:24.819Z"
+    },
+    "chart-08991": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "3ff2a50e2b5a3e43541ba3b4e2a535bcf9a1ef76f91993fb0e670326c59b5009",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "280b7912-7dcb-4dd6-abc7-4e5746115289",
+          "title": "Самолеты",
+          "score": 0.95
+        },
+        {
+          "id": "db196e2f-a15b-45ea-994b-b6d3a420c393",
+          "title": "Самолеты",
+          "score": 0.95
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:16:33.503Z",
+      "retryAfter": "2027-09-04T09:16:33.503Z"
+    },
+    "chart-03135": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "3e761b1e4d567e1c5ea0ff8b7cbd2498909745ea4970325e68fcadb5552e863d",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "22e2909b-cd44-461d-a483-d59866603cf4",
+      "recordingTitle": "Розовое вино",
+      "artistCredits": [
+        {
+          "name": "Элджей",
+          "musicBrainzArtistId": "a4136b4a-5c36-4c20-9281-d4b8bb9e87c7",
+          "joinPhrase": " & "
+        },
+        {
+          "name": "FEDUK",
+          "musicBrainzArtistId": "3229b951-b8e1-4dfc-8cdc-9f5fa503c376",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "a4136b4a-5c36-4c20-9281-d4b8bb9e87c7",
+        "3229b951-b8e1-4dfc-8cdc-9f5fa503c376"
+      ],
+      "isrcs": [
+        "FR96X1712690",
+        "RUA582001727"
+      ],
+      "releaseYear": 2017,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2017-07-23",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "22e2909b-cd44-461d-a483-d59866603cf4",
+          "url": "https://musicbrainz.org/recording/22e2909b-cd44-461d-a483-d59866603cf4"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:16:42.665Z"
+    },
+    "chart-00050": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "8a6b55f6e5ecbd95fd6c7159b02721ea56cb41bb62aa895a8dc3abc70e0bf1f6",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "77416fd2-f030-4a92-ad38-d59fcc95fa40",
+      "recordingTitle": "Я так соскучился",
+      "artistCredits": [
+        {
+          "name": "Порнофильмы",
+          "musicBrainzArtistId": "fa52ad7e-429a-43dc-97a1-c342b490dea6",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "fa52ad7e-429a-43dc-97a1-c342b490dea6"
+      ],
+      "isrcs": [],
+      "releaseYear": 2017,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2017-09-28",
+      "versionType": "original",
+      "album": {
+        "title": "В диапазоне между отчаянием и надеждой",
+        "year": 2017,
+        "releaseGroupMbid": "ac3bb9f5-af22-4f36-bb6d-d789d40cd4c3",
+        "coverUrl": "https://coverartarchive.org/release-group/ac3bb9f5-af22-4f36-bb6d-d789d40cd4c3/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/ac3bb9f5-af22-4f36-bb6d-d789d40cd4c3",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "77416fd2-f030-4a92-ad38-d59fcc95fa40",
+          "url": "https://musicbrainz.org/recording/77416fd2-f030-4a92-ad38-d59fcc95fa40"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:16:49.664Z"
+    },
+    "chart-00083": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "3550b62febc376ca29903204f28e75ff6ca331da9950b2bf4b89587f143fa201",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "dcbe10ac-99bc-4e4a-881a-a73d8c9f6e4a",
+          "title": "Gimme the Loot",
+          "score": 0.95
+        },
+        {
+          "id": "709c7ef7-74bb-465c-aec2-2fc105694bb2",
+          "title": "Gimme the Loot",
+          "score": 0.95
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:16:54.700Z",
+      "retryAfter": "2027-09-04T09:16:54.700Z"
+    },
+    "chart-03369": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "56e6e73a48a1d62dfa8087e2ee1fe5a8bc68123a395420a45888b98ae6b2d027",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:16:54.875Z",
+      "retryAfter": "2027-03-03T09:16:54.875Z"
+    },
+    "chart-07163": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "20b4ad568d509b9b14aad6e36e3caadfe8160f2de5b759e7795016b5d531b54b",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:17:05.629Z",
+      "retryAfter": "2026-09-04T09:27:05.629Z"
+    },
+    "chart-03367": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "9845e14d9661770a1e5ab6e90dff12461967f9a51a233275dcf6bcf6c4e211d6",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:17:06.758Z",
+      "retryAfter": "2027-03-03T09:17:06.758Z"
+    },
+    "chart-08976": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "ae10d760d514bb078b844bb97376957dc7d231cdebf34b4b4ebd108c765f365b",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "0f8b9cf8-d33c-49ed-94ed-500ec0e3de09",
+      "recordingTitle": "Пожары",
+      "artistCredits": [
+        {
+          "name": "Xolidayboy",
+          "musicBrainzArtistId": "fea213d5-95b6-4272-bdb6-d454926f620d",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "fea213d5-95b6-4272-bdb6-d454926f620d"
+      ],
+      "isrcs": [],
+      "releaseYear": 2024,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2024-02-22",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "0f8b9cf8-d33c-49ed-94ed-500ec0e3de09",
+          "url": "https://musicbrainz.org/recording/0f8b9cf8-d33c-49ed-94ed-500ec0e3de09"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:17:11.649Z"
+    },
+    "chart-03967": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "f1850dee1d7012f5744dd954ae63740384b97dae32b98198d988c339acfff965",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:17:20.608Z",
+      "retryAfter": "2026-09-04T09:27:20.608Z"
+    },
+    "chart-00136": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "a12e45a0b904a6aef598c18d9bf8852a458747471d47141f0ecc9d50bac05539",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "83cc5267-bed4-4d71-9a3d-37e41ea6a7a1",
+      "recordingTitle": "СПАСАТЕЛЬНЫЙ КРУГ",
+      "artistCredits": [
+        {
+          "name": "FACE",
+          "musicBrainzArtistId": "c5ad0328-15eb-44a9-82b3-e5b9386d8da4",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "c5ad0328-15eb-44a9-82b3-e5b9386d8da4"
+      ],
+      "isrcs": [
+        "FR10S1930097"
+      ],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-01-31",
+      "versionType": "original",
+      "album": {
+        "title": "SLIME",
+        "year": 2019,
+        "releaseGroupMbid": "ae581171-abc6-4387-927c-9c0ded4b9758",
+        "coverUrl": "https://coverartarchive.org/release-group/ae581171-abc6-4387-927c-9c0ded4b9758/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/ae581171-abc6-4387-927c-9c0ded4b9758",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "83cc5267-bed4-4d71-9a3d-37e41ea6a7a1",
+          "url": "https://musicbrainz.org/recording/83cc5267-bed4-4d71-9a3d-37e41ea6a7a1"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:17:29.439Z"
+    },
+    "chart-00069": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "0bd6bb30d13b89f3a1d9da5e2a5fb3d59ec46250a46831d6fe523ed141f490fa",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "0d71bbc4-11fd-473e-8948-bba91555be81",
+          "title": "Проснулся В Темноте",
+          "score": 0.95
+        },
+        {
+          "id": "cac0d780-6941-4150-9a98-414f5a382317",
+          "title": "Проснулся В Темноте",
+          "score": 0.95
+        },
+        {
+          "id": "2345693b-4a35-4d67-a3b7-ef89b68ee6a6",
+          "title": "Проснулся В Темноте",
+          "score": 0.95
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:17:29.583Z",
+      "retryAfter": "2027-09-04T09:17:29.583Z"
+    },
+    "chart-07315": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "613a1e059001333bd1e9612fa4993531ac2ac859f13ee3662d2dcade4981001c",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:17:38.477Z",
+      "retryAfter": "2026-09-04T09:27:38.477Z"
+    },
+    "chart-00177": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "cb5544d2249125d3a1647f1ae5af32e0f4b0f3657c28ab92d59d5314ad8cf0b8",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:17:40.933Z",
+      "retryAfter": "2027-03-03T09:17:40.933Z"
+    },
+    "chart-09036": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "9068732c19c61488adef601d7cdd4ea9e38d9ae0a9abd5584dd1569c71a8e355",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": 0.007,
+      "alternatives": [
+        {
+          "id": "66eb6563-5e0a-4748-b3df-5a1077d5af0f",
+          "title": "Между небом и землёй",
+          "score": 0.95
+        },
+        {
+          "id": "af7d9bfa-4c12-486a-bc64-7184d2f483a4",
+          "title": "Между небом и землей",
+          "score": 0.943
+        },
+        {
+          "id": "10e3bb77-a1f3-4e66-8d87-d262bc327f57",
+          "title": "Между небом и землёй",
+          "score": 0.943
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:17:45.964Z",
+      "retryAfter": "2027-09-04T09:17:45.964Z"
+    },
+    "chart-00216": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "e1276dc8715eb6a16a8998ec4827a58057497bd383ebe1170b9a3b60258daba8",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "3c1b2b1e-4b94-4f04-ac3b-f422c5fff27e",
+      "recordingTitle": "Танцуйте",
+      "artistCredits": [
+        {
+          "name": "ATL",
+          "musicBrainzArtistId": "405d9ac0-034a-4ae5-98e1-fe4fb65421e4",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "405d9ac0-034a-4ae5-98e1-fe4fb65421e4"
+      ],
+      "isrcs": [
+        "TCACZ1740204"
+      ],
+      "releaseYear": 2017,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2017-03-22",
+      "versionType": "original",
+      "album": {
+        "title": "Лимб",
+        "year": 2017,
+        "releaseGroupMbid": "3fbb62d3-9a69-4a67-bda8-e497445d0714",
+        "coverUrl": "https://coverartarchive.org/release-group/3fbb62d3-9a69-4a67-bda8-e497445d0714/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/3fbb62d3-9a69-4a67-bda8-e497445d0714",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "3c1b2b1e-4b94-4f04-ac3b-f422c5fff27e",
+          "url": "https://musicbrainz.org/recording/3c1b2b1e-4b94-4f04-ac3b-f422c5fff27e"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:17:48.677Z"
+    },
+    "chart-00178": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "0b2737424fc676f4d17a6fc750b66afde20b7a816db6f9df6254f001eec96f8e",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "44afb2ca-6ec2-4af9-a2d0-f5910cf6ba7d",
+      "recordingTitle": "Между нами",
+      "artistCredits": [
+        {
+          "name": "LIZER",
+          "musicBrainzArtistId": "ec121839-bde8-4812-8dca-7c4148b81749",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "ec121839-bde8-4812-8dca-7c4148b81749"
+      ],
+      "isrcs": [
+        "RUA591900503"
+      ],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-04-19",
+      "versionType": "original",
+      "album": {
+        "title": "Не ангел",
+        "year": 2019,
+        "releaseGroupMbid": "c28e377e-b170-467b-b060-65d5d15a5c41",
+        "coverUrl": "https://coverartarchive.org/release-group/c28e377e-b170-467b-b060-65d5d15a5c41/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/c28e377e-b170-467b-b060-65d5d15a5c41",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "44afb2ca-6ec2-4af9-a2d0-f5910cf6ba7d",
+          "url": "https://musicbrainz.org/recording/44afb2ca-6ec2-4af9-a2d0-f5910cf6ba7d"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:17:57.379Z"
+    },
+    "chart-03534": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "ee6bea45c8d45ff502337d4f348a72423b4a707c2f146d3fdad30c17f1f3e373",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:17:58.225Z",
+      "retryAfter": "2027-03-03T09:17:58.225Z"
+    },
+    "chart-00003": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "2ba3e6e31accbb1c63aa735c45a8ceb7f4e48c30cb702d4c98c0ee9c09025170",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:18:05.569Z",
+      "retryAfter": "2027-03-03T09:18:05.569Z"
+    },
+    "chart-00005": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "44d64a97e9b5689e11764efed8f9c2c3c7ad395fa742b2934338e66246bd12fa",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "a7e9657a-1508-4c68-a640-2f0019f6f05b",
+      "recordingTitle": "Снова я напиваюсь",
+      "artistCredits": [
+        {
+          "name": "SLAVA MARLOW",
+          "musicBrainzArtistId": "1b5deb96-c234-42c3-ad32-5ccac027b22e",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "1b5deb96-c234-42c3-ad32-5ccac027b22e"
+      ],
+      "isrcs": [
+        "FRX872051222"
+      ],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-10-07",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "a7e9657a-1508-4c68-a640-2f0019f6f05b",
+          "url": "https://musicbrainz.org/recording/a7e9657a-1508-4c68-a640-2f0019f6f05b"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:18:10.349Z"
+    },
+    "chart-03583": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "5fa7bc6c164e6fa55c7c5a49d25eec0cbf68b6888e48bc57d5b5129917002ce4",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "3ab56143-1cae-4706-ab56-d93a37f8fa21",
+      "recordingTitle": "Ближе",
+      "artistCredits": [
+        {
+          "name": "Влад Соколовский",
+          "musicBrainzArtistId": "a7ca8b19-52a0-44a3-a1b2-324b67917965",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "a7ca8b19-52a0-44a3-a1b2-324b67917965"
+      ],
+      "isrcs": [],
+      "releaseYear": 2008,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2008",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "3ab56143-1cae-4706-ab56-d93a37f8fa21",
+          "url": "https://musicbrainz.org/recording/3ab56143-1cae-4706-ab56-d93a37f8fa21"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:18:13.580Z"
+    },
+    "chart-03629": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "c45a261c5e249b82376f3a86d74b0f7ad9a03454b1726017e57d3730f75adb39",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "6f184f52-b1b4-4eb3-bbaa-608cfce7def5",
+      "recordingTitle": "Минимал",
+      "artistCredits": [
+        {
+          "name": "Элджей",
+          "musicBrainzArtistId": "a4136b4a-5c36-4c20-9281-d4b8bb9e87c7",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "a4136b4a-5c36-4c20-9281-d4b8bb9e87c7"
+      ],
+      "isrcs": [
+        "FRX201793171"
+      ],
+      "releaseYear": 2018,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2018-03-27",
+      "versionType": "original",
+      "album": {
+        "title": "Sayonara Boy X",
+        "year": 2018,
+        "releaseGroupMbid": "abc3309b-5f62-496f-87a6-47f34ade9eb4",
+        "coverUrl": "https://coverartarchive.org/release-group/abc3309b-5f62-496f-87a6-47f34ade9eb4/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/abc3309b-5f62-496f-87a6-47f34ade9eb4",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "6f184f52-b1b4-4eb3-bbaa-608cfce7def5",
+          "url": "https://musicbrainz.org/recording/6f184f52-b1b4-4eb3-bbaa-608cfce7def5"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:18:15.611Z"
+    },
+    "chart-01218": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "7cc317ceb45774901d115ace036f33ffb19d556f0f68993f682add6b67b5fe05",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:18:21.394Z",
+      "retryAfter": "2026-09-04T09:28:21.394Z"
+    },
+    "chart-00378": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "eb333c217571957419f42ab2629dca12d84f64c84dc9ca79d62a3f4ce56dadcf",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "5b026e88-1710-4361-b38f-8ca0124f5f48",
+      "recordingTitle": "27",
+      "artistCredits": [
+        {
+          "name": "Feduk",
+          "musicBrainzArtistId": "3229b951-b8e1-4dfc-8cdc-9f5fa503c376",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "3229b951-b8e1-4dfc-8cdc-9f5fa503c376"
+      ],
+      "isrcs": [],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-04-18",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "5b026e88-1710-4361-b38f-8ca0124f5f48",
+          "url": "https://musicbrainz.org/recording/5b026e88-1710-4361-b38f-8ca0124f5f48"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:18:23.634Z"
+    },
+    "chart-00023": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "f7a990909b33d97a24bd301fe26705af9ab726ee4a292b3578b9010af54168c4",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:18:24.715Z",
+      "retryAfter": "2027-03-03T09:18:24.715Z"
+    },
+    "chart-00011": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "13aa2c2c238e29ad6dd731c56f42f82ec5433f90e03d3737002995d38274af89",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": null,
+      "alternatives": [
+        {
+          "id": "4288c514-ec36-4410-845e-3276158932bc",
+          "title": "Быстро",
+          "score": 0.8333
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:18:34.873Z",
+      "retryAfter": "2027-09-04T09:18:34.873Z"
+    },
+    "chart-00031": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "7d65efdf11feb7c2110ce63691c5494f5967990359a2b61575d846397c988d59",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "8fc43ded-4fce-4546-ae8a-bd326c5cbd38",
+      "recordingTitle": "Колхозник",
+      "artistCredits": [
+        {
+          "name": "Mnogoznaal",
+          "musicBrainzArtistId": "94c56742-531e-4dc1-954e-24cd216b3bde",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "94c56742-531e-4dc1-954e-24cd216b3bde"
+      ],
+      "isrcs": [
+        "FR2X42039062"
+      ],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-04-24",
+      "versionType": "original",
+      "album": {
+        "title": "Круг ветров",
+        "year": 2020,
+        "releaseGroupMbid": "2f606974-5b35-4f6e-bad0-febf027b40f8",
+        "coverUrl": "https://coverartarchive.org/release-group/2f606974-5b35-4f6e-bad0-febf027b40f8/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/2f606974-5b35-4f6e-bad0-febf027b40f8",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "8fc43ded-4fce-4546-ae8a-bd326c5cbd38",
+          "url": "https://musicbrainz.org/recording/8fc43ded-4fce-4546-ae8a-bd326c5cbd38"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:18:38.953Z"
+    },
+    "chart-00041": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "12c9584d3b8434c3fc83feb943c91fdd21508ea44f02afcf3efd58bb4d120a32",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:18:48.440Z",
+      "retryAfter": "2027-03-03T09:18:48.440Z"
+    },
+    "chart-00040": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "1ee357e41fabe47a2e6a54510417861c08d0fdb2e37c1dfa27eeac6c85019529",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": null,
+      "alternatives": [
+        {
+          "id": "5df7020b-fae7-4569-87f3-a237ccaa9dfc",
+          "title": "Днями-ночами",
+          "score": 0.8333
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:18:48.773Z",
+      "retryAfter": "2027-09-04T09:18:48.773Z"
+    },
+    "chart-00053": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "505f95f61344125f234accd6b4d60569b994b9fc98f81a0ae5aa75f85d7df437",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "045437f6-c09e-44dd-ab76-d92b1864dd9a",
+      "recordingTitle": "Инкассатор",
+      "artistCredits": [
+        {
+          "name": "ROCKET",
+          "musicBrainzArtistId": "9e2f71c3-1e8d-4fec-81af-d984bb88eb94",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "9e2f71c3-1e8d-4fec-81af-d984bb88eb94"
+      ],
+      "isrcs": [
+        "FR59R1970745"
+      ],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-07-26",
+      "versionType": "original",
+      "album": {
+        "title": "SWAG SEASON 2",
+        "year": 2019,
+        "releaseGroupMbid": "bd955de5-2f05-4f3a-ae67-5b603649c47a",
+        "coverUrl": "https://coverartarchive.org/release-group/bd955de5-2f05-4f3a-ae67-5b603649c47a/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/bd955de5-2f05-4f3a-ae67-5b603649c47a",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "045437f6-c09e-44dd-ab76-d92b1864dd9a",
+          "url": "https://musicbrainz.org/recording/045437f6-c09e-44dd-ab76-d92b1864dd9a"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:18:51.925Z"
+    },
+    "chart-00051": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "ab5ebd5c7bcd1d134212b4d138b3f5cd4ba72a3d7309ae41834f78d325d5d6eb",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:18:52.970Z",
+      "retryAfter": "2027-03-03T09:18:52.970Z"
+    },
+    "chart-00064": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "7ecd894ead91b54b6734be5709e6592093f2ffafc418f73b5103993c067640b6",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "2480786d-13a7-4101-8ccc-92b8efeb7735",
+      "recordingTitle": "Танцы",
+      "artistCredits": [
+        {
+          "name": "ssshhhiiittt!",
+          "musicBrainzArtistId": "6885e4b4-03e6-48c4-8943-cda1658fbe46",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "6885e4b4-03e6-48c4-8943-cda1658fbe46"
+      ],
+      "isrcs": [
+        "QZNJW2041958"
+      ],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-09-30",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "2480786d-13a7-4101-8ccc-92b8efeb7735",
+          "url": "https://musicbrainz.org/recording/2480786d-13a7-4101-8ccc-92b8efeb7735"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:18:56.555Z"
+    },
+    "chart-05935": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "54bb90c66d91a72b4a7edfc1134635270fbcbd23f56f9402ccb1e90ab006e839",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:19:02.055Z",
+      "retryAfter": "2026-09-04T09:29:02.055Z"
+    },
+    "chart-00080": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "cbec48be2d2d118fa0637a56df1c9bb09ee735446116797a80d45a44749f3fd5",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "94869db6-7435-426d-b909-838f40566557",
+      "recordingTitle": "Кино",
+      "artistCredits": [
+        {
+          "name": "MACAN",
+          "musicBrainzArtistId": "55dfe284-1326-472d-93a1-87c8e0e5f0ed",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "55dfe284-1326-472d-93a1-87c8e0e5f0ed"
+      ],
+      "isrcs": [],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-03-30",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "94869db6-7435-426d-b909-838f40566557",
+          "url": "https://musicbrainz.org/recording/94869db6-7435-426d-b909-838f40566557"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:19:06.492Z"
+    },
+    "chart-00001": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "729380290e12027f98ba7b2f5bcfa412824464b247de2d615028022771447e42",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": null,
+      "alternatives": [
+        {
+          "id": "a05a2b07-73f4-45d2-a7c1-d8d607f9c4d1",
+          "title": "99 Problems",
+          "score": 0.8333
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:08.686Z",
+      "retryAfter": "2027-09-04T09:19:08.686Z"
+    },
+    "chart-00102": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "bfb6379aee85a65f1fee7777bcf2fb4bde0fad42e924e7f243dd9ddb461bfdcc",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:19:10.878Z",
+      "retryAfter": "2027-03-03T09:19:10.878Z"
+    },
+    "chart-00028": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "be7cdd3657afab7047d10e5428e803e45241105622e8f78d78166899300a06b9",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": null,
+      "alternatives": [
+        {
+          "id": "1a22d12b-8956-4522-95c0-72e5e725a1c3",
+          "title": "Cadillac",
+          "score": 0.8333
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:14.189Z",
+      "retryAfter": "2027-09-04T09:19:14.189Z"
+    },
+    "chart-00016": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "8c49599808a7fe0da2288e18dc01c433b6682b4d7bd549cf17685e4d5810008c",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "43d80636-e82a-4ef5-9cd7-5eb16a53bf23",
+      "recordingTitle": "Фотографирую закат",
+      "artistCredits": [
+        {
+          "name": "fem.love",
+          "musicBrainzArtistId": "865b7a67-515f-4b0d-937a-985f85bb80bb",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "865b7a67-515f-4b0d-937a-985f85bb80bb"
+      ],
+      "isrcs": [],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-06-22",
+      "versionType": "original",
+      "album": {
+        "title": "Разбитые сердца",
+        "year": 2020,
+        "releaseGroupMbid": "68f24456-a3c9-49a2-9efd-67fc9b15165a",
+        "coverUrl": "https://coverartarchive.org/release-group/68f24456-a3c9-49a2-9efd-67fc9b15165a/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/68f24456-a3c9-49a2-9efd-67fc9b15165a",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "43d80636-e82a-4ef5-9cd7-5eb16a53bf23",
+          "url": "https://musicbrainz.org/recording/43d80636-e82a-4ef5-9cd7-5eb16a53bf23"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:19:17.546Z"
+    },
+    "chart-07066": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "c238119bf709174e4e4ca023ddb40a04b3f9acb1ef39988ff1304a522495cae6",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:19:23.671Z",
+      "retryAfter": "2026-09-04T09:29:23.671Z"
+    },
+    "chart-00025": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "48ecbb4744dbfc4db8cd6ac3eaa948eb93b0da77203a6a667104e3e831bbb7d8",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:19:24.421Z",
+      "retryAfter": "2027-03-03T09:19:24.421Z"
+    },
+    "chart-00058": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "ec0ba754e1af0ece85bd98b954f1cd19520550ae0fc2e44af3731f5c6664420a",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "d61898f1-dbfc-401e-baa4-342bdd6147c1",
+          "title": "молчи",
+          "score": 0.95
+        },
+        {
+          "id": "5f1cf746-6569-4f16-bdd7-c5e7e757d104",
+          "title": "молчи",
+          "score": 0.95
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:25.503Z",
+      "retryAfter": "2027-09-04T09:19:25.503Z"
+    },
+    "chart-00084": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "fbf73d12125534929a5d1d72bd41ef38b9845bdf8328027ce11471536d3c7c8f",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "dfa6b8e5-a921-4575-92cd-8f652c5e6543",
+      "recordingTitle": "Демоны",
+      "artistCredits": [
+        {
+          "name": "Три дня дождя",
+          "musicBrainzArtistId": "3c1b6453-a4a0-4801-9e33-af590e33b875",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "3c1b6453-a4a0-4801-9e33-af590e33b875"
+      ],
+      "isrcs": [],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-02-21",
+      "versionType": "original",
+      "album": {
+        "title": "Любовь, аддикция и марафоны",
+        "year": 2020,
+        "releaseGroupMbid": "e945b156-fc82-49d3-a982-67e4e414eb14",
+        "coverUrl": "https://coverartarchive.org/release-group/e945b156-fc82-49d3-a982-67e4e414eb14/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/e945b156-fc82-49d3-a982-67e4e414eb14",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "dfa6b8e5-a921-4575-92cd-8f652c5e6543",
+          "url": "https://musicbrainz.org/recording/dfa6b8e5-a921-4575-92cd-8f652c5e6543"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:19:31.721Z"
+    },
+    "chart-00046": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "8f6f6b0ccae8d831812de050b96ec86995f52dd1591e947d0b2477ae384840f0",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:19:32.094Z",
+      "retryAfter": "2027-03-03T09:19:32.094Z"
+    },
+    "chart-00030": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "13911aa6f0b20ca486f399308eb71395d2cc091dcc80b827d123bd730103c8b8",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "4880defb-f8b1-4f54-830f-34c929a76aec",
+      "recordingTitle": "Нету интереса",
+      "artistCredits": [
+        {
+          "name": "10AGE",
+          "musicBrainzArtistId": "dd5ec8a2-777b-4f3d-a525-981c65252078",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "dd5ec8a2-777b-4f3d-a525-981c65252078"
+      ],
+      "isrcs": [],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-05-03",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "4880defb-f8b1-4f54-830f-34c929a76aec",
+          "url": "https://musicbrainz.org/recording/4880defb-f8b1-4f54-830f-34c929a76aec"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:19:36.543Z"
+    },
+    "chart-00042": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "00fb10982ce1307a4bca2b2bdb5ec4fc301e4bede113b18414e826cb16f02384",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": null,
+      "alternatives": [
+        {
+          "id": "afa11139-a193-428c-afe0-07e8157b2d00",
+          "title": "Меня не будет",
+          "score": 0.8333
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:37.600Z",
+      "retryAfter": "2027-09-04T09:19:37.600Z"
+    },
+    "chart-00017": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "783a2f04918ad4bcf61f3179d4720a35ba845d9e0dd543e4b2fdacff941f6cb5",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "d1fc5332-6f05-4741-8807-a89afa098481",
+      "recordingTitle": "По глазам",
+      "artistCredits": [
+        {
+          "name": "SLAVA MARLOW",
+          "musicBrainzArtistId": "1b5deb96-c234-42c3-ad32-5ccac027b22e",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "1b5deb96-c234-42c3-ad32-5ccac027b22e"
+      ],
+      "isrcs": [
+        "FRS182080649"
+      ],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-10-23",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "d1fc5332-6f05-4741-8807-a89afa098481",
+          "url": "https://musicbrainz.org/recording/d1fc5332-6f05-4741-8807-a89afa098481"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:19:40.907Z"
+    },
+    "chart-00347": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "4c1cce11ad223d14fcd0d15c7b79e7487b623c9e60412f38f1e42f2a99a5243e",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:19:43.112Z",
+      "retryAfter": "2027-03-03T09:19:43.112Z"
+    },
+    "chart-00024": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "9ada3a4fc2863c86e6c7eccb009e9ddc08ec5fb287610a48e3b06869313aac27",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "2f5654b6-8f10-42a9-b5fa-f1b3c38a9d95",
+      "recordingTitle": "Мальчик на девятке",
+      "artistCredits": [
+        {
+          "name": "DEAD BLONDE",
+          "musicBrainzArtistId": "fd030780-c526-4047-a32a-22a87094c344",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "fd030780-c526-4047-a32a-22a87094c344"
+      ],
+      "isrcs": [
+        "FR2X42091008"
+      ],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-04-30",
+      "versionType": "original",
+      "album": {
+        "title": "Пропаганда",
+        "year": 2020,
+        "releaseGroupMbid": "83ccebb6-e8f7-41a0-9a58-aa6b59ae8604",
+        "coverUrl": "https://coverartarchive.org/release-group/83ccebb6-e8f7-41a0-9a58-aa6b59ae8604/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/83ccebb6-e8f7-41a0-9a58-aa6b59ae8604",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "2f5654b6-8f10-42a9-b5fa-f1b3c38a9d95",
+          "url": "https://musicbrainz.org/recording/2f5654b6-8f10-42a9-b5fa-f1b3c38a9d95"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:19:46.644Z"
+    },
+    "chart-00006": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "baa7098f37231debb5a5da2685b47dc5d7a4a0d8d8c0ad2956a648adf5b33d11",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": null,
+      "alternatives": [
+        {
+          "id": "c2a45c48-5752-44dd-8c19-1cdb5f52a358",
+          "title": "Million",
+          "score": 0.8333
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:47.511Z",
+      "retryAfter": "2027-09-04T09:19:47.511Z"
+    },
+    "chart-00022": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "087f42db709f24be519efe2be54469541ae94c17e460e1b08ec67c7433bff82a",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": 0.0529,
+      "alternatives": [
+        {
+          "id": "1a11f121-93a3-4011-9502-c195b2c7bf92",
+          "title": "Я в моменте",
+          "score": 0.8333
+        },
+        {
+          "id": "583636fe-e54f-42fe-bce5-6355dec959b6",
+          "title": "Я в моменте 2",
+          "score": 0.7804
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:48.616Z",
+      "retryAfter": "2027-09-04T09:19:48.616Z"
+    },
+    "chart-00029": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "596f03ef23aca01bb82c04112ac83b686381ada7eaa40ae526f6908bfe209125",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "57079e1a-d087-43c2-b29c-fe4fa536483d",
+      "recordingTitle": "Cristal & МОЁТ",
+      "artistCredits": [
+        {
+          "name": "MORGENSHTERN",
+          "musicBrainzArtistId": "ae97ba5f-e7ed-4ed5-9a53-eba415fc49d4",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "ae97ba5f-e7ed-4ed5-9a53-eba415fc49d4"
+      ],
+      "isrcs": [
+        "DGA062038289"
+      ],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-12-28",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "57079e1a-d087-43c2-b29c-fe4fa536483d",
+          "url": "https://musicbrainz.org/recording/57079e1a-d087-43c2-b29c-fe4fa536483d"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:19:53.980Z"
+    },
+    "chart-06228": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "1fd4ec052842a0df4f928ef2f40f2b3fcc9b22e3f732177c8919ebaac717b39b",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:19:58.796Z",
+      "retryAfter": "2026-09-04T09:29:58.796Z"
+    },
+    "chart-00038": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "e6d7ca02fa20df20337a010c37a6768c7d63e9ddd6cb1cad7f39434857f8996c",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "51d93884-82a3-4b31-9104-753fe3f55bbf",
+      "recordingTitle": "KARI",
+      "artistCredits": [
+        {
+          "name": "Big Baby Tape",
+          "musicBrainzArtistId": "010e86e0-94f9-4751-9937-0284f1789fb3",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "010e86e0-94f9-4751-9937-0284f1789fb3"
+      ],
+      "isrcs": [
+        "RUA582002508"
+      ],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-12-18",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "51d93884-82a3-4b31-9104-753fe3f55bbf",
+          "url": "https://musicbrainz.org/recording/51d93884-82a3-4b31-9104-753fe3f55bbf"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:03.551Z"
+    },
+    "chart-00035": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "5ebc1ad75e25ff5421321371880fe6a6166808fc8e99c578b8b79f9c92cae2b5",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:20:04.319Z",
+      "retryAfter": "2027-03-03T09:20:04.319Z"
+    },
+    "chart-00048": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "9f46b0b9614b7bf5562aea294314b0847ea56706df667798a616ba1db98601d1",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:20:05.431Z",
+      "retryAfter": "2027-03-03T09:20:05.431Z"
+    },
+    "chart-00076": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "36b4205f0b551abf74ccebd00813d862c4c52e2cb228e35114cf6a89882d8f75",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:20:06.525Z",
+      "retryAfter": "2027-03-03T09:20:06.525Z"
+    },
+    "chart-00015": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "c3ce94b6f7912de975137676e8b3303e6921d95bf7229f33237f6b77a4369333",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:20:07.677Z",
+      "retryAfter": "2027-03-03T09:20:07.677Z"
+    },
+    "chart-00032": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "ed8a8194e21772afe02a54831f453dd9b15c233347872e5baadeba82d62f2168",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "52e564cb-76a1-4830-856f-b583503404f1",
+      "recordingTitle": "ТЫ ГОРИШЬ КАК ОГОНЬ",
+      "artistCredits": [
+        {
+          "name": "SLAVA MARLOW",
+          "musicBrainzArtistId": "1b5deb96-c234-42c3-ad32-5ccac027b22e",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "1b5deb96-c234-42c3-ad32-5ccac027b22e"
+      ],
+      "isrcs": [
+        "DGA072153729",
+        "RUA582104623"
+      ],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-02-19",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "52e564cb-76a1-4830-856f-b583503404f1",
+          "url": "https://musicbrainz.org/recording/52e564cb-76a1-4830-856f-b583503404f1"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:10.939Z"
+    },
+    "chart-00131": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "7849a591de20665acd457d979530e70a64daefea5b4b3be9ae468c8b90d0a1ec",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "7d38904f-9457-4d0c-8751-f87d4fc7dd3b",
+      "recordingTitle": "Пачка сигарет",
+      "artistCredits": [
+        {
+          "name": "LIZER",
+          "musicBrainzArtistId": "ec121839-bde8-4812-8dca-7c4148b81749",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "ec121839-bde8-4812-8dca-7c4148b81749"
+      ],
+      "isrcs": [],
+      "releaseYear": 2018,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2018-07-27",
+      "versionType": "original",
+      "album": {
+        "title": "TEENAGE LOVE",
+        "year": 2018,
+        "releaseGroupMbid": "2ca9c9a6-2d54-4280-a671-d7e284a42525",
+        "coverUrl": "https://coverartarchive.org/release-group/2ca9c9a6-2d54-4280-a671-d7e284a42525/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/2ca9c9a6-2d54-4280-a671-d7e284a42525",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "7d38904f-9457-4d0c-8751-f87d4fc7dd3b",
+          "url": "https://musicbrainz.org/recording/7d38904f-9457-4d0c-8751-f87d4fc7dd3b"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:14.226Z"
+    },
+    "chart-00139": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "29d65e75d0d12034300e893a3329a879d5e01978a19c0c812fb32fbb58de4387",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "8bb054af-3dfa-4399-aec2-c0d1161e2178",
+      "recordingTitle": "Тёмно-оранжевый закат",
+      "artistCredits": [
+        {
+          "name": "Папин Олимпос",
+          "musicBrainzArtistId": "4bccdf14-9be8-4744-882f-78e72fe91358",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "4bccdf14-9be8-4744-882f-78e72fe91358"
+      ],
+      "isrcs": [],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-03-22",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "8bb054af-3dfa-4399-aec2-c0d1161e2178",
+          "url": "https://musicbrainz.org/recording/8bb054af-3dfa-4399-aec2-c0d1161e2178"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:18.817Z"
+    },
+    "chart-00082": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "4f7cad2bff10be99429ba03ca48aa5d6c6c22c7be37812c12a7e52ed17ec74b1",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "6a8d2bc2-b98f-49e0-a012-8f3a42a2ce87",
+      "recordingTitle": "Динозаврики",
+      "artistCredits": [
+        {
+          "name": "Папин Олимпос",
+          "musicBrainzArtistId": "4bccdf14-9be8-4744-882f-78e72fe91358",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "4bccdf14-9be8-4744-882f-78e72fe91358"
+      ],
+      "isrcs": [],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-11-01",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "6a8d2bc2-b98f-49e0-a012-8f3a42a2ce87",
+          "url": "https://musicbrainz.org/recording/6a8d2bc2-b98f-49e0-a012-8f3a42a2ce87"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:20.831Z"
+    },
+    "chart-00090": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "bb0140be504818896e3c2f64546e3e175cbd9a3679ddf5332aab915c50bfa03c",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:20:23.026Z",
+      "retryAfter": "2027-03-03T09:20:23.026Z"
+    },
+    "chart-00124": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "62c645658f4cdf7bff430fc138df7e00afec35a635a4bc0278ebdb8fe1ffb48c",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": 0,
+      "alternatives": [
+        {
+          "id": "16994c23-9690-4fd5-aff4-43302cc69f23",
+          "title": "Люди",
+          "score": 0.95
+        },
+        {
+          "id": "9157f640-8c9d-4c39-95c4-85462850e481",
+          "title": "Люди",
+          "score": 0.95
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:24.154Z",
+      "retryAfter": "2027-09-04T09:20:24.154Z"
+    },
+    "chart-00092": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "ab0e123c9c6c848ec40763e7d63edbbd65f2a3cf1e6431fe5272ffbe51aa06c3",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": 0.006,
+      "alternatives": [
+        {
+          "id": "c8f8bef3-d1d2-40d9-bf7d-249516724f98",
+          "title": "Стикер",
+          "score": 0.8333
+        },
+        {
+          "id": "0e436a7e-79fc-4bc6-acc1-2373da58e155",
+          "title": "СТИКЕР",
+          "score": 0.8273
+        },
+        {
+          "id": "9c690545-c586-4757-a61e-a37d6806f2e5",
+          "title": "СТИКЕР",
+          "score": 0.8273
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:25.362Z",
+      "retryAfter": "2027-09-04T09:20:25.362Z"
+    },
+    "chart-00769": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "bc42b6789e82b69765289cb0968c6f3bdbd9522e38a985b174e0aa0afb0adba0",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "254065de-378e-46d0-a689-5deccf8e5afb",
+      "recordingTitle": "Девочка в классе",
+      "artistCredits": [
+        {
+          "name": "Джизус",
+          "musicBrainzArtistId": "c961a9c7-8510-428c-8e7c-eaab62f02dff",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "c961a9c7-8510-428c-8e7c-eaab62f02dff"
+      ],
+      "isrcs": [
+        "FR2X41939181"
+      ],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-04-19",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "254065de-378e-46d0-a689-5deccf8e5afb",
+          "url": "https://musicbrainz.org/recording/254065de-378e-46d0-a689-5deccf8e5afb"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:28.573Z"
+    },
+    "chart-00061": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "6541a099e3d5e9ef493107c448e4d5d728d3f8b0256835719d5ca1075483a65e",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "50f8ae16-f0e3-48aa-a2fe-268f0a4ba20a",
+      "recordingTitle": "Fendi",
+      "artistCredits": [
+        {
+          "name": "Rakhim",
+          "musicBrainzArtistId": "ede202a1-b521-45cd-a24b-80fc3d520fa8",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "ede202a1-b521-45cd-a24b-80fc3d520fa8"
+      ],
+      "isrcs": [
+        "FRX202066611"
+      ],
+      "releaseYear": 2020,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2020-07-17",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "50f8ae16-f0e3-48aa-a2fe-268f0a4ba20a",
+          "url": "https://musicbrainz.org/recording/50f8ae16-f0e3-48aa-a2fe-268f0a4ba20a"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:33.290Z"
+    },
+    "chart-04366": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "d21711ca1749beff83afa5721f89d24b8cbd4471032c4828490bce2abe58c32e",
+      "status": "temporary-error",
+      "error": "400 Bad Request",
+      "retrievedAt": "2026-09-04T09:20:38.312Z",
+      "retryAfter": "2026-09-04T09:30:38.312Z"
+    },
+    "chart-00044": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "0f39d9870fd1c42cb280c8e7202b597c0c9754cee4ccf930d73e48156af85cec",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "c7fbf665-4ca5-42c8-8bee-b26945c8aeaa",
+      "recordingTitle": "Lipsi Ha",
+      "artistCredits": [
+        {
+          "name": "Instasamka",
+          "musicBrainzArtistId": "7f742d76-39fa-4939-8e41-e5a2e07ce0a0",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "7f742d76-39fa-4939-8e41-e5a2e07ce0a0"
+      ],
+      "isrcs": [
+        "FRX452167127"
+      ],
+      "releaseYear": 2021,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2021-09-10",
+      "versionType": "original",
+      "album": {
+        "title": "Moneydealer",
+        "year": 2021,
+        "releaseGroupMbid": "0cf80f1b-0cc3-4698-ac43-d69ea681be37",
+        "coverUrl": "https://coverartarchive.org/release-group/0cf80f1b-0cc3-4698-ac43-d69ea681be37/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/0cf80f1b-0cc3-4698-ac43-d69ea681be37",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "c7fbf665-4ca5-42c8-8bee-b26945c8aeaa",
+          "url": "https://musicbrainz.org/recording/c7fbf665-4ca5-42c8-8bee-b26945c8aeaa"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:43.943Z"
+    },
+    "chart-00008": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "71622fdf5fccd8e8c616f020216a176298f01a0c922eb1e826587963b8f6614a",
+      "status": "ambiguous",
+      "method": "search",
+      "confidence": 0.8333,
+      "runnerUpDelta": null,
+      "alternatives": [
+        {
+          "id": "9efeaa57-9100-428f-a051-a7f4a866eebc",
+          "title": "Bandana",
+          "score": 0.8333
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:45.184Z",
+      "retryAfter": "2027-09-04T09:20:45.184Z"
+    },
+    "chart-00052": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "9e89ab26cd98cbb76e6768dac1a2d6444594650c11e2b807427d62311d6a6997",
+      "status": "not-found",
+      "method": "search",
+      "confidence": 0,
+      "runnerUpDelta": null,
+      "alternatives": [],
+      "retrievedAt": "2026-09-04T09:20:46.290Z",
+      "retryAfter": "2027-03-03T09:20:46.290Z"
+    },
+    "chart-00158": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "d5a1f9dc1d114bc860582a8ca70804c76abbe1fda7a84357762b930f232f4d8e",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "cb0884cf-0fe9-487c-ac57-0719f6038be7",
+      "recordingTitle": "Не по пути",
+      "artistCredits": [
+        {
+          "name": "Pharaoh",
+          "musicBrainzArtistId": "ce910111-f540-4b88-b1b6-52b68cc1a718",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "ce910111-f540-4b88-b1b6-52b68cc1a718"
+      ],
+      "isrcs": [
+        "FR96X1856643"
+      ],
+      "releaseYear": 2018,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2018-10-11",
+      "versionType": "original",
+      "album": null,
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "cb0884cf-0fe9-487c-ac57-0719f6038be7",
+          "url": "https://musicbrainz.org/recording/cb0884cf-0fe9-487c-ac57-0719f6038be7"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:50.879Z"
+    },
+    "chart-00707": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "9af1b9cd39a441dcefa75880f6c1f564c272b4c9bae186b1cce6389ba954d51b",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "4a91e3e0-351b-4d01-bb2a-86cf137ce1c5",
+      "recordingTitle": "Смузи",
+      "artistCredits": [
+        {
+          "name": "The Limba",
+          "musicBrainzArtistId": "f5c676c9-5cf5-49ff-acfe-62020bb31cbf",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "f5c676c9-5cf5-49ff-acfe-62020bb31cbf"
+      ],
+      "isrcs": [
+        "FR59R1969872"
+      ],
+      "releaseYear": 2019,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2019-10-11",
+      "versionType": "original",
+      "album": {
+        "title": "Я дома.",
+        "year": 2019,
+        "releaseGroupMbid": "63ae7cdc-da9f-4067-a6cf-c6909358449f",
+        "coverUrl": "https://coverartarchive.org/release-group/63ae7cdc-da9f-4067-a6cf-c6909358449f/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/63ae7cdc-da9f-4067-a6cf-c6909358449f",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "4a91e3e0-351b-4d01-bb2a-86cf137ce1c5",
+          "url": "https://musicbrainz.org/recording/4a91e3e0-351b-4d01-bb2a-86cf137ce1c5"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:57.020Z"
+    },
+    "chart-00701": {
+      "resolverVersion": 1,
+      "sourceFingerprint": "f6e6733056b2845e805f68629dd54519010795995f54ae50e6e8cbd9f8e9251f",
+      "status": "matched",
+      "overallState": "candidate",
+      "method": "search",
+      "confidence": 0.95,
+      "runnerUpDelta": null,
+      "recordingMbid": "49437c1f-af7f-4327-b8aa-ddd9f89f81c7",
+      "recordingTitle": "Дико, например",
+      "artistCredits": [
+        {
+          "name": "Pharaoh",
+          "musicBrainzArtistId": "ce910111-f540-4b88-b1b6-52b68cc1a718",
+          "joinPhrase": ""
+        }
+      ],
+      "artistMbids": [
+        "ce910111-f540-4b88-b1b6-52b68cc1a718"
+      ],
+      "isrcs": [
+        "FR59R1790080"
+      ],
+      "releaseYear": 2017,
+      "releaseYearState": "candidate",
+      "firstReleaseDate": "2017-05-28",
+      "versionType": "original",
+      "album": {
+        "title": "Pink Phloyd",
+        "year": 2017,
+        "releaseGroupMbid": "a882b0d7-1047-480e-a507-c0d50f320498",
+        "coverUrl": "https://coverartarchive.org/release-group/a882b0d7-1047-480e-a507-c0d50f320498/front-500",
+        "sourceUrl": "https://musicbrainz.org/release-group/a882b0d7-1047-480e-a507-c0d50f320498",
+        "rightsStatus": "contextual-only"
+      },
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "49437c1f-af7f-4327-b8aa-ddd9f89f81c7",
+          "url": "https://musicbrainz.org/recording/49437c1f-af7f-4327-b8aa-ddd9f89f81c7"
+        }
+      ],
+      "issues": [],
+      "retrievedAt": "2026-09-04T09:20:58.484Z"
+    }
+  },
+  "artists": {
+    "55041570-e24b-4069-974e-f4cddb7bd7d6": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "MIA BOYKA",
+      "musicBrainzArtistId": "55041570-e24b-4069-974e-f4cddb7bd7d6",
+      "wikidataQid": "Q102234895",
+      "artistForm": "Исполнительница",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1997,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [
+        {
+          "kind": "award",
+          "text": "Среди наград — «Russian National Music Award for Breakthrough of the Year».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q102234895",
+          "state": "candidate"
+        }
+      ],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "55041570-e24b-4069-974e-f4cddb7bd7d6",
+          "url": "https://musicbrainz.org/artist/55041570-e24b-4069-974e-f4cddb7bd7d6"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q102234895",
+          "url": "https://www.wikidata.org/wiki/Q102234895"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:14:37.921Z",
+      "partialError": null
+    },
+    "38bfa08d-c155-4a14-bdb1-c8b1971bdf9b": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "BEARWOLF",
+      "musicBrainzArtistId": "38bfa08d-c155-4a14-bdb1-c8b1971bdf9b",
+      "wikidataQid": null,
+      "artistForm": "Исполнительница",
+      "country": "Russia",
+      "activeYears": null,
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "38bfa08d-c155-4a14-bdb1-c8b1971bdf9b",
+          "url": "https://musicbrainz.org/artist/38bfa08d-c155-4a14-bdb1-c8b1971bdf9b"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:14:41.388Z",
+      "partialError": null
+    },
+    "d411d8a0-c506-491e-beb9-03ff9cc6a090": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "HOLLYFLAME",
+      "musicBrainzArtistId": "d411d8a0-c506-491e-beb9-03ff9cc6a090",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": null,
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "d411d8a0-c506-491e-beb9-03ff9cc6a090",
+          "url": "https://musicbrainz.org/artist/d411d8a0-c506-491e-beb9-03ff9cc6a090"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:15:25.180Z",
+      "partialError": null
+    },
+    "3d392525-7405-428d-8ba3-180920afd11c": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Ваня Дмитриенко",
+      "musicBrainzArtistId": "3d392525-7405-428d-8ba3-180920afd11c",
+      "wikidataQid": "Q113331799",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 2005,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/%D0%92%D0%B0%D0%BD%D1%8F_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%BD%D0%BA%D0%BE_%D0%BD%D0%B0_VK_Fest_2025_%D0%B2_%D0%A1%D0%9F%D0%B1_%28cropped%29.jpg/500px-%D0%92%D0%B0%D0%BD%D1%8F_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%BD%D0%BA%D0%BE_%D0%BD%D0%B0_VK_Fest_2025_%D0%B2_%D0%A1%D0%9F%D0%B1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B0%D0%BD%D1%8F_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%BD%D0%BA%D0%BE_%D0%BD%D0%B0_VK_Fest_2025_%D0%B2_%D0%A1%D0%9F%D0%B1_(cropped).jpg",
+        "attribution": "Okras",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:16:07.488Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "3d392525-7405-428d-8ba3-180920afd11c",
+          "url": "https://musicbrainz.org/artist/3d392525-7405-428d-8ba3-180920afd11c"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q113331799",
+          "url": "https://www.wikidata.org/wiki/Q113331799"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:16:07.488Z",
+      "partialError": null
+    },
+    "a4136b4a-5c36-4c20-9281-d4b8bb9e87c7": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Элджей",
+      "musicBrainzArtistId": "a4136b4a-5c36-4c20-9281-d4b8bb9e87c7",
+      "wikidataQid": "Q47037314",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1994,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Sayonaraboy1.jpg/500px-Sayonaraboy1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sayonaraboy1.jpg",
+        "attribution": "sayonaraboy",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:16:39.379Z"
+      },
+      "facts": [
+        {
+          "kind": "award",
+          "text": "Среди наград — «Премия RU.TV: Лучший старт».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q47037314",
+          "state": "candidate"
+        },
+        {
+          "kind": "award",
+          "text": "Среди наград — «Russian National Music Award for Hip Hop Artist of the Year».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q47037314",
+          "state": "candidate"
+        }
+      ],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "a4136b4a-5c36-4c20-9281-d4b8bb9e87c7",
+          "url": "https://musicbrainz.org/artist/a4136b4a-5c36-4c20-9281-d4b8bb9e87c7"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q47037314",
+          "url": "https://www.wikidata.org/wiki/Q47037314"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:16:39.379Z",
+      "partialError": null
+    },
+    "3229b951-b8e1-4dfc-8cdc-9f5fa503c376": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "FEDUK",
+      "musicBrainzArtistId": "3229b951-b8e1-4dfc-8cdc-9f5fa503c376",
+      "wikidataQid": "Q47037259",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1992,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Feduk_2022.jpg/500px-Feduk_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Feduk_2022.jpg",
+        "attribution": "Антон Зайцев",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:16:42.665Z"
+      },
+      "facts": [
+        {
+          "kind": "award",
+          "text": "Среди наград — «Премия RU.TV: Лучший старт».",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q47037259",
+          "state": "candidate"
+        }
+      ],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "3229b951-b8e1-4dfc-8cdc-9f5fa503c376",
+          "url": "https://musicbrainz.org/artist/3229b951-b8e1-4dfc-8cdc-9f5fa503c376"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q47037259",
+          "url": "https://www.wikidata.org/wiki/Q47037259"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:16:42.665Z",
+      "partialError": null
+    },
+    "fa52ad7e-429a-43dc-97a1-c342b490dea6": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Порнофильмы",
+      "musicBrainzArtistId": "fa52ad7e-429a-43dc-97a1-c342b490dea6",
+      "wikidataQid": "Q42307959",
+      "artistForm": "Группа",
+      "country": "Dubna",
+      "activeYears": {
+        "since": 2008,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [
+          {
+            "name": "Владимир Котляров",
+            "musicBrainzArtistId": "71a33a2e-f946-4252-96cd-50371fd45955",
+            "roles": [
+              "lead vocals"
+            ],
+            "isVocalist": true,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/fa52ad7e-429a-43dc-97a1-c342b490dea6"
+          },
+          {
+            "name": "Александр Русаков",
+            "musicBrainzArtistId": "4c243d56-dc68-4a9e-8dfa-5f7d8354d5df",
+            "roles": [
+              "guitar"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/fa52ad7e-429a-43dc-97a1-c342b490dea6"
+          },
+          {
+            "name": "Вячеслав Селезнёв",
+            "musicBrainzArtistId": "c9faebff-56ee-416c-83b1-d58c6e2aa65a",
+            "roles": [
+              "guitar"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/fa52ad7e-429a-43dc-97a1-c342b490dea6"
+          },
+          {
+            "name": "Александр Агафонов",
+            "musicBrainzArtistId": "dedfc99d-deea-4f30-a11d-2e7a162777c5",
+            "roles": [
+              "bass guitar"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/fa52ad7e-429a-43dc-97a1-c342b490dea6"
+          },
+          {
+            "name": "Кирилл Муравьёв",
+            "musicBrainzArtistId": "198df1b1-fdc8-409d-bd5c-3f8bee0709fd",
+            "roles": [
+              "drums (drum set)"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/fa52ad7e-429a-43dc-97a1-c342b490dea6"
+          }
+        ],
+        "former": [],
+        "state": "candidate"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Pornofilmy_-_Krakow_%28May_2025%29_11.jpg/500px-Pornofilmy_-_Krakow_%28May_2025%29_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pornofilmy_-_Krakow_(May_2025)_11.jpg",
+        "attribution": "Фіксер",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:16:49.664Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "fa52ad7e-429a-43dc-97a1-c342b490dea6",
+          "url": "https://musicbrainz.org/artist/fa52ad7e-429a-43dc-97a1-c342b490dea6"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q42307959",
+          "url": "https://www.wikidata.org/wiki/Q42307959"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:16:49.664Z",
+      "partialError": null
+    },
+    "fea213d5-95b6-4272-bdb6-d454926f620d": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Xolidayboy",
+      "musicBrainzArtistId": "fea213d5-95b6-4272-bdb6-d454926f620d",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": null,
+      "activeYears": null,
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "fea213d5-95b6-4272-bdb6-d454926f620d",
+          "url": "https://musicbrainz.org/artist/fea213d5-95b6-4272-bdb6-d454926f620d"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:17:11.649Z",
+      "partialError": null
+    },
+    "c5ad0328-15eb-44a9-82b3-e5b9386d8da4": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "FACE",
+      "musicBrainzArtistId": "c5ad0328-15eb-44a9-82b3-e5b9386d8da4",
+      "wikidataQid": "Q42296351",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1997,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Face_tele-club_%28cropped%29.jpg/500px-Face_tele-club_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Face_tele-club_(cropped).jpg",
+        "attribution": "kvvalerka",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:17:29.439Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "c5ad0328-15eb-44a9-82b3-e5b9386d8da4",
+          "url": "https://musicbrainz.org/artist/c5ad0328-15eb-44a9-82b3-e5b9386d8da4"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q42296351",
+          "url": "https://www.wikidata.org/wiki/Q42296351"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:17:29.439Z",
+      "partialError": null
+    },
+    "405d9ac0-034a-4ae5-98e1-fe4fb65421e4": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "ATL",
+      "musicBrainzArtistId": "405d9ac0-034a-4ae5-98e1-fe4fb65421e4",
+      "wikidataQid": "Q81643998",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1989,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Atlrapgod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlrapgod.jpg",
+        "attribution": "Sermanario",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:17:48.677Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "405d9ac0-034a-4ae5-98e1-fe4fb65421e4",
+          "url": "https://musicbrainz.org/artist/405d9ac0-034a-4ae5-98e1-fe4fb65421e4"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q81643998",
+          "url": "https://www.wikidata.org/wiki/Q81643998"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:17:48.677Z",
+      "partialError": null
+    },
+    "ec121839-bde8-4812-8dca-7c4148b81749": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "LIZER",
+      "musicBrainzArtistId": "ec121839-bde8-4812-8dca-7c4148b81749",
+      "wikidataQid": "Q80130535",
+      "artistForm": "Исполнитель",
+      "country": "Moscow",
+      "activeYears": {
+        "since": 1998,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/LizerK.jpg/500px-LizerK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:LizerK.jpg",
+        "attribution": "LIZERyungLIZER",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:17:57.379Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "ec121839-bde8-4812-8dca-7c4148b81749",
+          "url": "https://musicbrainz.org/artist/ec121839-bde8-4812-8dca-7c4148b81749"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q80130535",
+          "url": "https://www.wikidata.org/wiki/Q80130535"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:17:57.379Z",
+      "partialError": null
+    },
+    "1b5deb96-c234-42c3-ad32-5ccac027b22e": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "SLAVA MARLOW",
+      "musicBrainzArtistId": "1b5deb96-c234-42c3-ad32-5ccac027b22e",
+      "wikidataQid": "Q96755528",
+      "artistForm": "Исполнитель",
+      "country": "Moscow",
+      "activeYears": {
+        "since": 1999,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Slava_Marlow_%D0%BD%D0%B0_VK_Fest_2022_%282%29.jpg/500px-Slava_Marlow_%D0%BD%D0%B0_VK_Fest_2022_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slava_Marlow_%D0%BD%D0%B0_VK_Fest_2022_(2).jpg",
+        "attribution": "Okras",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:18:10.348Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "1b5deb96-c234-42c3-ad32-5ccac027b22e",
+          "url": "https://musicbrainz.org/artist/1b5deb96-c234-42c3-ad32-5ccac027b22e"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q96755528",
+          "url": "https://www.wikidata.org/wiki/Q96755528"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:18:10.349Z",
+      "partialError": null
+    },
+    "a7ca8b19-52a0-44a3-a1b2-324b67917965": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Влад Соколовский",
+      "musicBrainzArtistId": "a7ca8b19-52a0-44a3-a1b2-324b67917965",
+      "wikidataQid": "Q4427390",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1991,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Vlad_Sokovski.jpg/500px-Vlad_Sokovski.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vlad_Sokovski.jpg",
+        "attribution": "Kozoriz diana",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:18:13.580Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "a7ca8b19-52a0-44a3-a1b2-324b67917965",
+          "url": "https://musicbrainz.org/artist/a7ca8b19-52a0-44a3-a1b2-324b67917965"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q4427390",
+          "url": "https://www.wikidata.org/wiki/Q4427390"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:18:13.580Z",
+      "partialError": null
+    },
+    "94c56742-531e-4dc1-954e-24cd216b3bde": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Mnogoznaal",
+      "musicBrainzArtistId": "94c56742-531e-4dc1-954e-24cd216b3bde",
+      "wikidataQid": "Q39394698",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1993,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Mnogoznaal.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mnogoznaal.png",
+        "attribution": "Maxododoubleg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:18:38.953Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "94c56742-531e-4dc1-954e-24cd216b3bde",
+          "url": "https://musicbrainz.org/artist/94c56742-531e-4dc1-954e-24cd216b3bde"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q39394698",
+          "url": "https://www.wikidata.org/wiki/Q39394698"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:18:38.953Z",
+      "partialError": null
+    },
+    "9e2f71c3-1e8d-4fec-81af-d984bb88eb94": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "ROCKET",
+      "musicBrainzArtistId": "9e2f71c3-1e8d-4fec-81af-d984bb88eb94",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": "Moscow",
+      "activeYears": null,
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "9e2f71c3-1e8d-4fec-81af-d984bb88eb94",
+          "url": "https://musicbrainz.org/artist/9e2f71c3-1e8d-4fec-81af-d984bb88eb94"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:18:51.925Z",
+      "partialError": null
+    },
+    "6885e4b4-03e6-48c4-8943-cda1658fbe46": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "ssshhhiiittt!",
+      "musicBrainzArtistId": "6885e4b4-03e6-48c4-8943-cda1658fbe46",
+      "wikidataQid": "Q69816236",
+      "artistForm": "Группа",
+      "country": "Yaroslavskaya oblast'",
+      "activeYears": {
+        "since": 2015,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "6885e4b4-03e6-48c4-8943-cda1658fbe46",
+          "url": "https://musicbrainz.org/artist/6885e4b4-03e6-48c4-8943-cda1658fbe46"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q69816236",
+          "url": "https://www.wikidata.org/wiki/Q69816236"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:18:56.555Z",
+      "partialError": null
+    },
+    "55dfe284-1326-472d-93a1-87c8e0e5f0ed": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "MACAN",
+      "musicBrainzArtistId": "55dfe284-1326-472d-93a1-87c8e0e5f0ed",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": null,
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "55dfe284-1326-472d-93a1-87c8e0e5f0ed",
+          "url": "https://musicbrainz.org/artist/55dfe284-1326-472d-93a1-87c8e0e5f0ed"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:06.492Z",
+      "partialError": null
+    },
+    "865b7a67-515f-4b0d-937a-985f85bb80bb": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "fem.love",
+      "musicBrainzArtistId": "865b7a67-515f-4b0d-937a-985f85bb80bb",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": null,
+      "activeYears": null,
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "865b7a67-515f-4b0d-937a-985f85bb80bb",
+          "url": "https://musicbrainz.org/artist/865b7a67-515f-4b0d-937a-985f85bb80bb"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:17.546Z",
+      "partialError": null
+    },
+    "3c1b6453-a4a0-4801-9e33-af590e33b875": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Три дня дождя",
+      "musicBrainzArtistId": "3c1b6453-a4a0-4801-9e33-af590e33b875",
+      "wikidataQid": "Q109677469",
+      "artistForm": "Группа",
+      "country": "Russia",
+      "activeYears": {
+        "since": 2019,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [
+          {
+            "name": "Даниил Баслин",
+            "musicBrainzArtistId": "31de8489-6c4e-48d9-9166-614cc02d2ecc",
+            "roles": [
+              "guitar"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+          },
+          {
+            "name": "Николай Садков",
+            "musicBrainzArtistId": "328f90bf-8c3e-4b27-8a3e-9080d7cf90ca",
+            "roles": [
+              "drums (drum set)"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+          },
+          {
+            "name": "Григорий Смирницкий",
+            "musicBrainzArtistId": "36e10ecf-2d18-4f5d-b1c3-f7cec44fa866",
+            "roles": [
+              "electric bass guitar"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+          },
+          {
+            "name": "Глеб Викторов",
+            "musicBrainzArtistId": "3240f3b4-a738-4177-871d-6fa3b0676abd",
+            "roles": [
+              "lead vocals"
+            ],
+            "isVocalist": true,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+          },
+          {
+            "name": "Тихон Баслин",
+            "musicBrainzArtistId": "eff05944-30f4-4dda-864c-1be1c1f99f06",
+            "roles": [
+              "bass"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+          },
+          {
+            "name": "Мари Гораш",
+            "musicBrainzArtistId": "f9a236a6-5482-4845-86e1-41ed0e7bce55",
+            "roles": [
+              "drums (drum set)"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+          },
+          {
+            "name": "Сергей Громов",
+            "musicBrainzArtistId": "bac2a157-e228-4937-a18d-629ee8f2d881",
+            "roles": [],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+          },
+          {
+            "name": "Невьян Максимцев",
+            "musicBrainzArtistId": "f8e47780-c372-4860-94d9-83aa46c5e171",
+            "roles": [
+              "drums (drum set)"
+            ],
+            "isVocalist": false,
+            "since": null,
+            "until": null,
+            "sourceUrl": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+          }
+        ],
+        "former": [],
+        "state": "candidate"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/%D0%A2%D1%80%D0%B8_%D0%B4%D0%BD%D1%8F_%D0%B4%D0%BE%D0%B6%D0%B4%D1%8F_%D0%BD%D0%B0_VK_Fest_2025_%D0%B2_%D0%A1%D0%9F%D0%B1.jpg/500px-%D0%A2%D1%80%D0%B8_%D0%B4%D0%BD%D1%8F_%D0%B4%D0%BE%D0%B6%D0%B4%D1%8F_%D0%BD%D0%B0_VK_Fest_2025_%D0%B2_%D0%A1%D0%9F%D0%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A2%D1%80%D0%B8_%D0%B4%D0%BD%D1%8F_%D0%B4%D0%BE%D0%B6%D0%B4%D1%8F_%D0%BD%D0%B0_VK_Fest_2025_%D0%B2_%D0%A1%D0%9F%D0%B1.jpg",
+        "attribution": "Okras",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:19:31.721Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "3c1b6453-a4a0-4801-9e33-af590e33b875",
+          "url": "https://musicbrainz.org/artist/3c1b6453-a4a0-4801-9e33-af590e33b875"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q109677469",
+          "url": "https://www.wikidata.org/wiki/Q109677469"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:31.721Z",
+      "partialError": null
+    },
+    "dd5ec8a2-777b-4f3d-a525-981c65252078": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "10AGE",
+      "musicBrainzArtistId": "dd5ec8a2-777b-4f3d-a525-981c65252078",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1998,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "dd5ec8a2-777b-4f3d-a525-981c65252078",
+          "url": "https://musicbrainz.org/artist/dd5ec8a2-777b-4f3d-a525-981c65252078"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:36.543Z",
+      "partialError": null
+    },
+    "fd030780-c526-4047-a32a-22a87094c344": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "DEAD BLONDE",
+      "musicBrainzArtistId": "fd030780-c526-4047-a32a-22a87094c344",
+      "wikidataQid": "Q107282203",
+      "artistForm": "Исполнительница",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1999,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Dead_Blonde_%D0%BD%D0%B0_VK_Fest_2022_%282%29.jpg/500px-Dead_Blonde_%D0%BD%D0%B0_VK_Fest_2022_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dead_Blonde_%D0%BD%D0%B0_VK_Fest_2022_(2).jpg",
+        "attribution": "Okras",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:19:46.643Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "fd030780-c526-4047-a32a-22a87094c344",
+          "url": "https://musicbrainz.org/artist/fd030780-c526-4047-a32a-22a87094c344"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q107282203",
+          "url": "https://www.wikidata.org/wiki/Q107282203"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:46.644Z",
+      "partialError": null
+    },
+    "ae97ba5f-e7ed-4ed5-9a53-eba415fc49d4": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "MORGENSHTERN",
+      "musicBrainzArtistId": "ae97ba5f-e7ed-4ed5-9a53-eba415fc49d4",
+      "wikidataQid": "Q59194713",
+      "artistForm": "Исполнитель",
+      "country": "Ufa",
+      "activeYears": {
+        "since": 1998,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%D0%90%D0%BB%D0%B8%D1%88%D0%B5%D1%80_%D0%9C%D0%BE%D1%80%D0%B3%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D1%80%D0%BD_%28cropped%29.jpg/500px-%D0%90%D0%BB%D0%B8%D1%88%D0%B5%D1%80_%D0%9C%D0%BE%D1%80%D0%B3%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D1%80%D0%BD_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BB%D0%B8%D1%88%D0%B5%D1%80_%D0%9C%D0%BE%D1%80%D0%B3%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D1%80%D0%BD_(cropped).jpg",
+        "attribution": "DedaSasha",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:19:53.980Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "ae97ba5f-e7ed-4ed5-9a53-eba415fc49d4",
+          "url": "https://musicbrainz.org/artist/ae97ba5f-e7ed-4ed5-9a53-eba415fc49d4"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q59194713",
+          "url": "https://www.wikidata.org/wiki/Q59194713"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:19:53.980Z",
+      "partialError": null
+    },
+    "010e86e0-94f9-4751-9937-0284f1789fb3": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Big Baby Tape",
+      "musicBrainzArtistId": "010e86e0-94f9-4751-9937-0284f1789fb3",
+      "wikidataQid": "Q59312925",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 2000,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Big_Baby_Tape_%D0%BD%D0%B0_Teen_City_Day_%282023.05.27%29_%28cropped%29.jpg/500px-Big_Baby_Tape_%D0%BD%D0%B0_Teen_City_Day_%282023.05.27%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Big_Baby_Tape_%D0%BD%D0%B0_Teen_City_Day_(2023.05.27)_(cropped).jpg",
+        "attribution": "Okras",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:20:03.551Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "010e86e0-94f9-4751-9937-0284f1789fb3",
+          "url": "https://musicbrainz.org/artist/010e86e0-94f9-4751-9937-0284f1789fb3"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q59312925",
+          "url": "https://www.wikidata.org/wiki/Q59312925"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:03.551Z",
+      "partialError": null
+    },
+    "4bccdf14-9be8-4744-882f-78e72fe91358": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Папин Олимпос",
+      "musicBrainzArtistId": "4bccdf14-9be8-4744-882f-78e72fe91358",
+      "wikidataQid": "Q104543485",
+      "artistForm": "Группа",
+      "country": "Russia",
+      "activeYears": {
+        "since": 2018,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/%D0%9F%D0%B0%D0%BF%D0%B8%D0%BD_%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%BE%D1%81_2020.jpg/500px-%D0%9F%D0%B0%D0%BF%D0%B8%D0%BD_%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%BE%D1%81_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BF%D0%B8%D0%BD_%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%BE%D1%81_2020.jpg",
+        "attribution": "Kerrin Key",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:20:18.817Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "4bccdf14-9be8-4744-882f-78e72fe91358",
+          "url": "https://musicbrainz.org/artist/4bccdf14-9be8-4744-882f-78e72fe91358"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q104543485",
+          "url": "https://www.wikidata.org/wiki/Q104543485"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:18.817Z",
+      "partialError": null
+    },
+    "c961a9c7-8510-428c-8e7c-eaab62f02dff": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Джизус",
+      "musicBrainzArtistId": "c961a9c7-8510-428c-8e7c-eaab62f02dff",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1997,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "c961a9c7-8510-428c-8e7c-eaab62f02dff",
+          "url": "https://musicbrainz.org/artist/c961a9c7-8510-428c-8e7c-eaab62f02dff"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:28.573Z",
+      "partialError": null
+    },
+    "ede202a1-b521-45cd-a24b-80fc3d520fa8": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Rakhim",
+      "musicBrainzArtistId": "ede202a1-b521-45cd-a24b-80fc3d520fa8",
+      "wikidataQid": null,
+      "artistForm": "Исполнитель",
+      "country": "Moscow",
+      "activeYears": {
+        "since": 1996,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": null,
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "ede202a1-b521-45cd-a24b-80fc3d520fa8",
+          "url": "https://musicbrainz.org/artist/ede202a1-b521-45cd-a24b-80fc3d520fa8"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:33.290Z",
+      "partialError": null
+    },
+    "7f742d76-39fa-4939-8e41-e5a2e07ce0a0": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Instasamka",
+      "musicBrainzArtistId": "7f742d76-39fa-4939-8e41-e5a2e07ce0a0",
+      "wikidataQid": "Q99578037",
+      "artistForm": "Исполнительница",
+      "country": "Russia",
+      "activeYears": {
+        "since": 2000,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Instasamka_%D0%BD%D0%B0_VK_Fest_2023_%D0%B2_%D0%A1%D0%9F%D0%B1_%28vertical%29_%28cropped%29.jpg/500px-Instasamka_%D0%BD%D0%B0_VK_Fest_2023_%D0%B2_%D0%A1%D0%9F%D0%B1_%28vertical%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Instasamka_%D0%BD%D0%B0_VK_Fest_2023_%D0%B2_%D0%A1%D0%9F%D0%B1_(vertical)_(cropped).jpg",
+        "attribution": "Okras",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:20:43.943Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "7f742d76-39fa-4939-8e41-e5a2e07ce0a0",
+          "url": "https://musicbrainz.org/artist/7f742d76-39fa-4939-8e41-e5a2e07ce0a0"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q99578037",
+          "url": "https://www.wikidata.org/wiki/Q99578037"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:43.943Z",
+      "partialError": null
+    },
+    "ce910111-f540-4b88-b1b6-52b68cc1a718": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "Pharaoh",
+      "musicBrainzArtistId": "ce910111-f540-4b88-b1b6-52b68cc1a718",
+      "wikidataQid": "Q24350516",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1996,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Pharaoh_%D0%BD%D0%B0_%D1%84%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D0%B5_%D0%9C%D0%B0%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A4%D1%83%D0%BA%D0%BE_%D0%B2_%D0%A1%D0%9F%D0%B1_%2807.09.2019%29_%283%29_%28cropped%29.jpg/500px-Pharaoh_%D0%BD%D0%B0_%D1%84%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D0%B5_%D0%9C%D0%B0%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A4%D1%83%D0%BA%D0%BE_%D0%B2_%D0%A1%D0%9F%D0%B1_%2807.09.2019%29_%283%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pharaoh_%D0%BD%D0%B0_%D1%84%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D0%B5_%D0%9C%D0%B0%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A4%D1%83%D0%BA%D0%BE_%D0%B2_%D0%A1%D0%9F%D0%B1_(07.09.2019)_(3)_(cropped).jpg",
+        "attribution": "Okras",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:20:50.879Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "ce910111-f540-4b88-b1b6-52b68cc1a718",
+          "url": "https://musicbrainz.org/artist/ce910111-f540-4b88-b1b6-52b68cc1a718"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q24350516",
+          "url": "https://www.wikidata.org/wiki/Q24350516"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:50.879Z",
+      "partialError": null
+    },
+    "f5c676c9-5cf5-49ff-acfe-62020bb31cbf": {
+      "resolverVersion": 1,
+      "status": "matched",
+      "name": "The Limba",
+      "musicBrainzArtistId": "f5c676c9-5cf5-49ff-acfe-62020bb31cbf",
+      "wikidataQid": "Q100791350",
+      "artistForm": "Исполнитель",
+      "country": "Russia",
+      "activeYears": {
+        "since": 1997,
+        "until": null,
+        "ended": false
+      },
+      "members": {
+        "current": [],
+        "former": [],
+        "state": "not-found"
+      },
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/The_Limba_%28Jul_2024%3B_cropped%29.png/500px-The_Limba_%28Jul_2024%3B_cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Limba_(Jul_2024;_cropped).png",
+        "attribution": "LITVINER",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "rightsStatus": "freely-licensed",
+        "retrievedAt": "2026-09-04T09:20:57.020Z"
+      },
+      "facts": [],
+      "sources": [
+        {
+          "provider": "musicbrainz",
+          "entityId": "f5c676c9-5cf5-49ff-acfe-62020bb31cbf",
+          "url": "https://musicbrainz.org/artist/f5c676c9-5cf5-49ff-acfe-62020bb31cbf"
+        },
+        {
+          "provider": "wikidata",
+          "entityId": "Q100791350",
+          "url": "https://www.wikidata.org/wiki/Q100791350"
+        }
+      ],
+      "retrievedAt": "2026-09-04T09:20:57.020Z",
+      "partialError": null
+    }
+  }
 }

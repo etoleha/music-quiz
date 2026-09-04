@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T04:16:38.332Z",
+  "generatedAt": "2026-09-04T09:20:58.626Z",
   "policy": {
     "version": 1,
     "uniqueArtistsThroughQuiz": 30,
@@ -33,10 +33,10 @@
       ],
       "candidateScore": 378.65,
       "language": "russian",
-      "releaseYear": "2017",
+      "releaseYear": 2017,
       "candidateYears": [
         {
-          "year": "2017",
+          "year": 2017,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -73,8 +73,13 @@
       ],
       "candidateScore": 318.66,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "apple-music-ru",
         "deezer-ru",
@@ -130,8 +135,13 @@
       ],
       "candidateScore": 285.54,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "apple-music-ru",
         "shazam-ru",
@@ -215,10 +225,10 @@
       ],
       "candidateScore": 221.93,
       "language": "russian",
-      "releaseYear": "2017",
+      "releaseYear": 2017,
       "candidateYears": [
         {
-          "year": "2017",
+          "year": 2017,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -248,10 +258,10 @@
       ],
       "candidateScore": 215.98,
       "language": "russian",
-      "releaseYear": "2007",
+      "releaseYear": 2007,
       "candidateYears": [
         {
-          "year": "2007",
+          "year": 2007,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -336,10 +346,10 @@
       ],
       "candidateScore": 188.11,
       "language": "russian",
-      "releaseYear": "2009",
+      "releaseYear": 2009,
       "candidateYears": [
         {
-          "year": "2009",
+          "year": 2009,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -713,8 +723,13 @@
       ],
       "candidateScore": 140.68,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2017,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
@@ -735,8 +750,13 @@
       ],
       "candidateScore": 138.98,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2017,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -810,8 +830,13 @@
       ],
       "candidateScore": 131.08,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2024,
+      "candidateYears": [
+        {
+          "year": 2024,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "apple-music-ru",
         "shazam-ru"
@@ -837,10 +862,10 @@
       ],
       "candidateScore": 130.81,
       "language": "russian",
-      "releaseYear": "2004",
+      "releaseYear": 2004,
       "candidateYears": [
         {
-          "year": "2004",
+          "year": 2004,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -871,8 +896,13 @@
       ],
       "candidateScore": 130.77,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -924,10 +954,10 @@
       ],
       "candidateScore": 129.31,
       "language": "russian",
-      "releaseYear": "2019",
+      "releaseYear": 2019,
       "candidateYears": [
         {
-          "year": "2019",
+          "year": 2019,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -958,8 +988,13 @@
       ],
       "candidateScore": 126.89,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2017,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -984,8 +1019,13 @@
       ],
       "candidateScore": 125.22,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1059,8 +1099,13 @@
       ],
       "candidateScore": 117.17,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1085,8 +1130,13 @@
       ],
       "candidateScore": 116.77,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2008,
+      "candidateYears": [
+        {
+          "year": 2008,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
@@ -1107,10 +1157,10 @@
       ],
       "candidateScore": 115.97,
       "language": "russian",
-      "releaseYear": "2020",
+      "releaseYear": 2020,
       "candidateYears": [
         {
-          "year": "2020",
+          "year": 2020,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -1145,8 +1195,13 @@
       ],
       "candidateScore": 112.97,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1197,8 +1252,13 @@
       ],
       "candidateScore": 112.77,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1223,8 +1283,13 @@
       ],
       "candidateScore": 112.52,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1249,8 +1314,13 @@
       ],
       "candidateScore": 112.14,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1327,8 +1397,13 @@
       ],
       "candidateScore": 111.75,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1353,10 +1428,10 @@
       ],
       "candidateScore": 111.7,
       "language": "russian",
-      "releaseYear": "2018",
+      "releaseYear": 2018,
       "candidateYears": [
         {
-          "year": "2018",
+          "year": 2018,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -1439,8 +1514,13 @@
       ],
       "candidateScore": 110.5,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1465,8 +1545,13 @@
       ],
       "candidateScore": 110.34,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2021,
+      "candidateYears": [
+        {
+          "year": 2021,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1517,8 +1602,13 @@
       ],
       "candidateScore": 109.45,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1569,10 +1659,10 @@
       ],
       "candidateScore": 108.83,
       "language": "russian",
-      "releaseYear": "2013",
+      "releaseYear": 2013,
       "candidateYears": [
         {
-          "year": "2013",
+          "year": 2013,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -1629,8 +1719,13 @@
       ],
       "candidateScore": 107.28,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1707,8 +1802,13 @@
       ],
       "candidateScore": 106.56,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1733,8 +1833,13 @@
       ],
       "candidateScore": 105.99,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1759,10 +1864,10 @@
       ],
       "candidateScore": 105.93,
       "language": "russian",
-      "releaseYear": "2005",
+      "releaseYear": 2005,
       "candidateYears": [
         {
-          "year": "2005",
+          "year": 2005,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -1793,8 +1898,13 @@
       ],
       "candidateScore": 105.92,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2021,
+      "candidateYears": [
+        {
+          "year": 2021,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1819,8 +1929,13 @@
       ],
       "candidateScore": 105.47,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2018,
+      "candidateYears": [
+        {
+          "year": 2018,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -1845,8 +1960,13 @@
       ],
       "candidateScore": 104.73,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
@@ -2001,10 +2121,10 @@
       ],
       "candidateScore": 103.12,
       "language": "russian",
-      "releaseYear": "2012",
+      "releaseYear": 2012,
       "candidateYears": [
         {
-          "year": "2012",
+          "year": 2012,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -2685,10 +2805,10 @@
       ],
       "candidateScore": 96.89,
       "language": "russian",
-      "releaseYear": "2018",
+      "releaseYear": 2018,
       "candidateYears": [
         {
-          "year": "2018",
+          "year": 2018,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -4543,10 +4663,10 @@
       ],
       "candidateScore": 77.58,
       "language": "russian",
-      "releaseYear": "2012",
+      "releaseYear": 2012,
       "candidateYears": [
         {
-          "year": "2012",
+          "year": 2012,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -5045,10 +5165,10 @@
       ],
       "candidateScore": 72.98,
       "language": "russian",
-      "releaseYear": "2003",
+      "releaseYear": 2003,
       "candidateYears": [
         {
-          "year": "2003",
+          "year": 2003,
           "source": "tophit-ru-monthly-history"
         }
       ],
@@ -5387,10 +5507,10 @@
       ],
       "candidateScore": 68.13,
       "language": "russian",
-      "releaseYear": "2004",
+      "releaseYear": 2004,
       "candidateYears": [
         {
-          "year": "2004",
+          "year": 2004,
           "source": "tophit-ru-monthly-history"
         }
       ],
