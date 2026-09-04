@@ -7,7 +7,6 @@ on:
       - ".github/workflows/enrich-song-database.yml"
       - "scripts/enrich-song-database.mjs"
       - "scripts/enrichment-core.mjs"
-      - "data/song-enrichment-auto.json"
   schedule:
     - cron: "35 2 * * *"
   workflow_dispatch:
@@ -15,7 +14,7 @@ on:
       limit:
         description: "Maximum songs in this batch"
         required: false
-        default: "100"
+        default: "500"
 
 permissions:
   contents: write
@@ -37,7 +36,7 @@ jobs:
           node-version: 24
       - name: Enrich priority songs
         env:
-          ENRICH_LIMIT: ${{ github.event.inputs.limit || '100' }}
+          ENRICH_LIMIT: ${{ github.event.inputs.limit || '500' }}
         run: npm run enrich:songs
       - name: Rebuild and verify the catalog
         run: |
