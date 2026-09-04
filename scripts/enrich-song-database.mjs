@@ -5,6 +5,7 @@ import zlib from "node:zlib";
 import { buildAliasIndex, fingerprint } from "./chart-normalization.mjs";
 import {
   chooseRecording,
+  compareEnrichmentPriority,
   extractVersionType,
   inferArtistForm,
   isAllowedCommonsLicense,
@@ -259,9 +260,10 @@ const enrichSong = async (song) => {
 };
 
 const now = Date.now();
-const priority = (song) => song.readyForUniqueArtistQuiz ? 3 : song.quizRefs?.length ? 2 : song.readyForCuration ? 1 : 0;
+const eligibleForEnrichment = (song) => song.status?.language === "russian"
+  && (song.readyForCuration || song.readyForUniqueArtistQuiz || song.quizRefs?.length);
 const queue = database.songs
-  .filter((song) => song.status?.language === "russian" && priority(song) > 0)
+  .filter(eligibleForEnrichment)
   .filter((song) => {
     const existing = cache.songs[song.id];
     const fingerprintMatches = existing?.sourceFingerprint === inputFingerprint(song) && existing?.resolverVersion === resolverVersion;
@@ -269,7 +271,7 @@ const queue = database.songs
     if (existing.status === "matched") return false;
     return !existing.retryAfter || Date.parse(existing.retryAfter) <= now;
   })
-  .sort((left, right) => priority(right) - priority(left) || right.candidateScore - left.candidateScore)
+  .sort(compareEnrichmentPriority)
   .slice(0, limit);
 
 let processed = 0;

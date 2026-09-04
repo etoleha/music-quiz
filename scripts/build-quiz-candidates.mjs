@@ -27,11 +27,8 @@ for (const song of database.songs) {
     candidateYears: song.release.candidateYears,
     sourceIds: song.chart?.sourceIds || [],
     externalIds: song.externalIds,
-    blockers: [
-      ...(song.release.releaseYearStatus !== "verified" ? ["release-year"] : []),
-      ...(!song.externalIds.youtube?.length ? ["youtube-fragment"] : []),
-      ...(song.enrichment.review !== "verified" ? ["enrichment-review"] : []),
-    ],
+    blockers: song.publicationBlockers || [],
+    publicationProgress: song.publicationProgress,
   });
   if (candidates.length >= limit) break;
 }

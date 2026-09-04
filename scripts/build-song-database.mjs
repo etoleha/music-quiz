@@ -153,6 +153,7 @@ const newEntry = ({ id, artist, title, artistAliases = [], titleAliases = [], ex
     chart: null,
     poolRefs: [],
     quizRefs: [],
+    publishedArtistCredits: [],
   };
   entries.push(entry);
   indexEntry(entry);
@@ -183,6 +184,8 @@ for (const track of catalogTracks) {
     sourceCount: track.sourceCount,
     sourceIds: Object.keys(track.sources || {}).sort(),
     years: yearsFromValues(Object.values(track.sources || {}).flatMap(({ firstSeen, lastSeen }) => [firstSeen, lastSeen])),
+    topHitLanguageCodes: track.sources?.["tophit-ru-monthly-history"]?.languageCodes || [],
+    topHitLanguageNames: track.sources?.["tophit-ru-monthly-history"]?.languageNames || [],
   };
   const topHitReleaseDates = track.sources?.["tophit-ru-monthly-history"]?.releaseDates || [];
   entry.releaseYearCandidates = yearsFromValues(topHitReleaseDates).map((year) => ({ year, source: "tophit-ru-monthly-history" }));
@@ -222,10 +225,15 @@ for (const track of readQuizTracks()) {
   }
   addAliases(entry, [track.artist, ...track.artistAliases], [track.title, ...track.titleAliases]);
   attachExternalIds(entry, ids);
+  entry.publishedArtistCredits = unique([...(entry.publishedArtistCredits || []), track.artist]);
   entry.quizRefs.push({ quizId: track.quizId, youtubeId: track.youtubeId });
 }
 
 const classifyLanguage = (entry) => {
+  const topHitLanguages = entry.chart?.topHitLanguageCodes || [];
+  if (topHitLanguages.length > 1) return { value: "mixed", confidence: "high", evidence: [`tophit-language:${topHitLanguages.join("+")}`] };
+  if (topHitLanguages[0] === "russian") return { value: "russian", confidence: "high", evidence: ["tophit-language:russian"] };
+  if (topHitLanguages.length === 1) return { value: "foreign", confidence: "high", evidence: [`tophit-language:${topHitLanguages[0]}`] };
   const titleHasCyrillic = entry.titleAliases.some(hasCyrillic);
   const artistHasCyrillic = entry.artistAliases.some(hasCyrillic);
   if (entry.quizRefs.length) return { value: "russian", confidence: "high", evidence: ["published-russian-quiz"] };
@@ -257,8 +265,18 @@ const automaticEnrichmentFor = (entry) => enrichmentAuto.songs?.[entry.id]
   || {};
 
 for (const entry of entries) {
-  const resolvedArtistIds = unique(entry.artistAliases.flatMap((value) => normalizeArtist(value, aliasIndex).participants)).sort();
-  entry.artistIdentityResolved = resolvedArtistIds.length > 0;
+  // Alternate spellings are accepted answers, not additional credited people.
+  const creditValues = entry.publishedArtistCredits?.length ? entry.publishedArtistCredits : [entry.artist];
+  const resolvedArtistIds = unique(creditValues.flatMap((value) => normalizeArtist(value, aliasIndex).participants)).sort();
+  const registryResolved = resolvedArtistIds.length > 0 && resolvedArtistIds.every((artistId) => canonicalArtistNames.has(artistId));
+  const sourceCreditResolved = Object.values(entry.externalIds).some((values) => values.length > 0)
+    || (entry.chart?.sourceCount || 0) > 1
+    || entry.poolRefs.length > 0;
+  entry.artistIdentityResolution = registryResolved ? "registry"
+    : entry.quizRefs.length ? "published-credit"
+      : sourceCreditResolved ? "source-credit"
+        : "unresolved";
+  entry.artistIdentityResolved = entry.artistIdentityResolution !== "unresolved";
   entry.artistIds = resolvedArtistIds.length ? resolvedArtistIds : [`unknown:${entry.id}`];
   entry.normalizedArtist = {
     primary: normalizeArtist(entry.artist, aliasIndex).primary,
@@ -330,11 +348,19 @@ for (const entry of entries) {
   };
   entry.readyForCuration = entry.quizCandidate && reviewStatus === "verified" && entry.artistIdentityResolved;
   entry.readyForUniqueArtistQuiz = entry.readyForCuration && entry.allArtistsUnused;
+  entry.publicationBlockers = [
+    !entry.artistIdentityResolved && "artist-identity",
+    language !== "russian" && "language",
+    reviewStatus !== "verified" && "editorial-review",
+    !entry.allArtistsUnused && "artist-already-used",
+    entry.release.releaseYearStatus !== "verified" && "release-year",
+    !entry.externalIds.youtube?.length && "youtube-video",
+    fragmentStatus !== "good" && "fragment-review",
+    entry.enrichment.review !== "verified" && "enrichment-review",
+  ].filter(Boolean);
+  entry.publicationProgress = Number(((8 - entry.publicationBlockers.length) / 8).toFixed(3));
   entry.readyForPublication = entry.readyForCuration
-    && Boolean(entry.externalIds.youtube?.length)
-    && fragmentStatus === "good"
-    && entry.release.releaseYearStatus === "verified"
-    && entry.enrichment.review === "verified";
+    && !entry.publicationBlockers.some((blocker) => ["release-year", "youtube-video", "fragment-review", "enrichment-review"].includes(blocker));
   entry.readyForAutomaticQuiz = entry.readyForPublication && entry.allArtistsUnused;
   if (manual.notes) entry.notes = unique(Array.isArray(manual.notes) ? manual.notes : [manual.notes]);
   delete entry.releaseYearCandidates;

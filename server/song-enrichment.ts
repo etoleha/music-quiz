@@ -24,7 +24,7 @@ type AutoArtist = {
   activeYears?: { since?: number | null; until?: number | null; ended?: boolean } | null;
   members?: { current?: Array<{ name: string; roles?: string[]; since?: number | null }> };
   photo?: { url: string; attribution: string; license: string; licenseUrl: string; sourceUrl: string } | null;
-  facts?: Array<{ text: string; sourceUrl?: string }>;
+  facts?: Array<{ text: string; sourceUrl?: string; state?: "verified" | "candidate" }>;
   sources?: Array<{ provider: string; url: string }>;
 };
 
@@ -80,7 +80,7 @@ export function getPersistedTrackInfo(artist: string, title: string) {
     activeYears,
     members: primary?.members?.current || [],
     image: primary?.photo || undefined,
-    facts: profiles.flatMap((profile) => profile.facts || []).slice(0, 3),
+    facts: profiles.flatMap((profile) => profile.facts || []).filter((fact) => fact.state === "verified").slice(0, 3),
     artistUrl,
     recordingTitle: enrichment.recordingTitle,
     releaseYear: enrichment.releaseYear || undefined,

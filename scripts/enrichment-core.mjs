@@ -134,3 +134,24 @@ export const inferArtistForm = ({ type, gender, memberCount } = {}) => {
   if (gender === "Female") return "Исполнительница";
   return "Исполнитель";
 };
+
+export const enrichmentPriority = (song) => [
+  Number(!song.quizRefs?.length),
+  Number(song.readyForUniqueArtistQuiz),
+  Number(song.status?.languageConfidence === "high" || song.status?.languageConfidence === "manual"),
+  Number(song.artistIdentityResolution === "registry"),
+  -Number(song.publicationBlockers?.length ?? 99),
+  Number(Boolean(song.externalIds?.isrc?.length)),
+  Number(song.release?.candidateYears?.length === 1),
+  Number(song.chart?.sourceCount || 0),
+  Number(song.candidateScore || 0),
+];
+
+export const compareEnrichmentPriority = (left, right) => {
+  const leftPriority = enrichmentPriority(left);
+  const rightPriority = enrichmentPriority(right);
+  for (let index = 0; index < leftPriority.length; index += 1) {
+    if (leftPriority[index] !== rightPriority[index]) return rightPriority[index] - leftPriority[index];
+  }
+  return String(left.id).localeCompare(String(right.id));
+};

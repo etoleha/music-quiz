@@ -26,10 +26,10 @@ const base = {
   release_date: "1 Jan, 2003",
 };
 const { tracks, stats } = aggregateRows([
-  { ...base, track_id: "1", chart_month: "2003-11", position: "5", isrc: "RU-A3K-16-00065" },
-  { ...base, track_id: "1", chart_month: "2003-12", position: "2", isrc: "RU-A3K-16-00065" },
+  { ...base, track_id: "1", chart_month: "2003-11", position: "5", isrc: "RU-A3K-16-00065", tophit_language: "Russian", tophit_language_flag: "ru" },
+  { ...base, track_id: "1", chart_month: "2003-12", position: "2", isrc: "RU-A3K-16-00065", tophit_language: "Russian", tophit_language_flag: "ru" },
   { ...base, artist: "Artist B", title: "Song B", track_id: "2", chart_month: "2003-11", position: "8", isrc: "RU-A3K-16-00065" },
-  { ...base, artist: "Artist C", title: "Song C", track_id: "3", chart_month: "2003-11", position: "1", isrc: "" },
+  { ...base, artist: "Artist C", title: "Song C", track_id: "3", chart_month: "2003-11", position: "1", isrc: "", tophit_language: "English", tophit_language_flag: "gb" },
   { ...base, artist: "", title: "Unknown artist song", track_id: "4", chart_month: "2003-11", position: "10", isrc: "" },
 ]);
 
@@ -43,5 +43,9 @@ assert.equal(tracks[0].matchableIsrc, null);
 assert.equal(tracks[1].isrcStatus, "collision");
 assert.equal(tracks[2].isrcStatus, "missing");
 assert.equal(tracks[3].artist, null);
+assert.deepEqual(tracks[0].languageCodes, ["russian"]);
+assert.equal(tracks[0].languageStatus, "unique");
+assert.deepEqual(tracks[2].languageCodes, ["english"]);
+assert.equal(tracks[3].languageStatus, "missing", "старый CSV без флага остаётся импортируемым");
 
 console.log("TopHit import tests passed");

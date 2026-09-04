@@ -5,6 +5,7 @@ import crypto from "node:crypto";
 import { buildAliasIndex } from "./chart-normalization.mjs";
 import {
   chooseRecording,
+  compareEnrichmentPriority,
   extractVersionType,
   inferArtistForm,
   isAllowedCommonsLicense,
@@ -62,6 +63,11 @@ assert.equal(isAllowedCommonsLicense("CC BY-ND 4.0"), false);
 assert.equal(isAllowedCommonsLicense("unknown"), false);
 assert.equal(inferArtistForm({ type: "Group" }), "Группа");
 assert.equal(inferArtistForm({ type: "Person", gender: "Female" }), "Исполнительница");
+
+const nearReady = { id: "near", quizRefs: [], readyForUniqueArtistQuiz: true, status: { languageConfidence: "high" }, artistIdentityResolution: "registry", publicationBlockers: ["youtube-video"], externalIds: { isrc: ["X"] }, release: { candidateYears: [{ year: 2020 }] }, chart: { sourceCount: 2 }, candidateScore: 10 };
+const far = { ...nearReady, id: "far", publicationBlockers: ["release-year", "youtube-video", "fragment-review"], externalIds: {}, release: { candidateYears: [] }, candidateScore: 100 };
+const published = { ...nearReady, id: "published", quizRefs: [{ quizId: "old" }] };
+assert.deepEqual([published, far, nearReady].sort(compareEnrichmentPriority).map(({ id }) => id), ["near", "far", "published"]);
 
 const databaseIndex = JSON.parse(fs.readFileSync(new URL("../data/song-database.json", import.meta.url), "utf8"));
 const full = fs.readFileSync(new URL(`../data/${databaseIndex.archive}`, import.meta.url));

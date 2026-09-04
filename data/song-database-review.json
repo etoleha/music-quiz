@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T09:58:50.298Z",
-  "totalNeedsReview": 6121,
+  "generatedAt": "2026-09-04T10:19:04.307Z",
+  "totalNeedsReview": 5932,
   "shown": 500,
   "songs": [
     {
@@ -554,9 +554,7 @@
       "artistIds": [
         "pizza"
       ],
-      "usedArtistIds": [
-        "pizza"
-      ],
+      "usedArtistIds": [],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -683,9 +681,7 @@
       "artistIds": [
         "pizza"
       ],
-      "usedArtistIds": [
-        "pizza"
-      ],
+      "usedArtistIds": [],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -1126,9 +1122,7 @@
         "dose",
         "pizza"
       ],
-      "usedArtistIds": [
-        "pizza"
-      ],
+      "usedArtistIds": [],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -1513,9 +1507,7 @@
         "pizza",
         "temnikova"
       ],
-      "usedArtistIds": [
-        "pizza"
-      ],
+      "usedArtistIds": [],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -1923,7 +1915,6 @@
       "releaseYear": null,
       "candidateYears": [],
       "artistIds": [
-        "dose",
         "moyamishel"
       ],
       "usedArtistIds": [
@@ -2288,9 +2279,7 @@
       "artistIds": [
         "pizza"
       ],
-      "usedArtistIds": [
-        "pizza"
-      ],
+      "usedArtistIds": [],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -2698,9 +2687,7 @@
       "artistIds": [
         "pizza"
       ],
-      "usedArtistIds": [
-        "pizza"
-      ],
+      "usedArtistIds": [],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -2805,11 +2792,9 @@
       "releaseYear": null,
       "candidateYears": [],
       "artistIds": [
-        "basta",
         "egorkrid"
       ],
       "usedArtistIds": [
-        "basta",
         "egorkrid"
       ],
       "readyForCuration": false,
@@ -3096,9 +3081,7 @@
       "artistIds": [
         "pizza"
       ],
-      "usedArtistIds": [
-        "pizza"
-      ],
+      "usedArtistIds": [],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -3689,7 +3672,6 @@
         }
       ],
       "artistIds": [
-        "justinbieber",
         "thekidlaroi"
       ],
       "usedArtistIds": [],
@@ -3715,49 +3697,6 @@
       }
     },
     {
-      "id": "chart-00200",
-      "artist": "SAINt JHN",
-      "title": "Roses - Imanbek Remix",
-      "candidateScore": 274.89,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "imanbek",
-        "saintjhn"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "spotify-ru-daily-history",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "spotify": [
-          "24Yi9hE78yPEbZ4kxyoXAI"
-        ],
-        "tophit": [
-          "98114"
-        ],
-        "isrc": [
-          "RUB421901499"
-        ]
-      }
-    },
-    {
       "id": "chart-03028",
       "artist": "Armin van Buuren (Армин ван Бюрен) & Sharon den Adel",
       "title": "In And Out Of Love",
@@ -3775,7 +3714,6 @@
         }
       ],
       "artistIds": [
-        "arminvanbuuren",
         "arminvanbuurenarminvanbyuren",
         "sharondenadel"
       ],
@@ -3933,8 +3871,7 @@
         }
       ],
       "artistIds": [
-        "burakyeter",
-        "danellesandoval"
+        "burakyeter"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -4177,7 +4114,6 @@
         }
       ],
       "artistIds": [
-        "jxdn",
         "nessabarrett"
       ],
       "usedArtistIds": [],
@@ -4343,7 +4279,6 @@
         }
       ],
       "artistIds": [
-        "hvme",
         "travisscott"
       ],
       "usedArtistIds": [],
@@ -4470,9 +4405,7 @@
         }
       ],
       "artistIds": [
-        "a7s",
-        "atb",
-        "topic"
+        "atb"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -4620,48 +4553,6 @@
       }
     },
     {
-      "id": "chart-00698",
-      "artist": "Tones And I",
-      "title": "Dance Monkey",
-      "candidateScore": 241.18,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "tonesandi"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "spotify-ru-daily-history",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "spotify": [
-          "1rgnBhdG2JDFTbYkYRZAku"
-        ],
-        "tophit": [
-          "99456"
-        ],
-        "isrc": [
-          "QZES71982312"
-        ]
-      }
-    },
-    {
       "id": "chart-08586",
       "artist": "Temper City",
       "title": "Self Aware",
@@ -4701,48 +4592,6 @@
       }
     },
     {
-      "id": "chart-00750",
-      "artist": "Billie Eilish",
-      "title": "bad guy",
-      "candidateScore": 237.14,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "billieeilish"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "spotify-ru-daily-history",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "spotify": [
-          "2Fxmhks0bxGSBdJ92vM42m"
-        ],
-        "tophit": [
-          "95269"
-        ],
-        "isrc": [
-          "USUM71900764"
-        ]
-      }
-    },
-    {
       "id": "chart-00364",
       "artist": "Topic",
       "title": "Breaking Me",
@@ -4760,7 +4609,6 @@
         }
       ],
       "artistIds": [
-        "a7s",
         "topic"
       ],
       "usedArtistIds": [],
@@ -4845,7 +4693,6 @@
         }
       ],
       "artistIds": [
-        "dababy",
         "dualipa"
       ],
       "usedArtistIds": [],
@@ -4888,9 +4735,7 @@
         }
       ],
       "artistIds": [
-        "djgoja",
-        "jasonderulo",
-        "melody"
+        "djgoja"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -5011,9 +4856,7 @@
         }
       ],
       "artistIds": [
-        "daftpunk",
-        "nilerodgers",
-        "pharrellwilliams"
+        "daftpunk"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -5055,9 +4898,7 @@
         }
       ],
       "artistIds": [
-        "blackeyedpeas",
-        "jreysoul",
-        "ozuna"
+        "blackeyedpeas"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -5310,8 +5151,7 @@
         }
       ],
       "artistIds": [
-        "naughtyboy",
-        "samsmith"
+        "naughtyboy"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -5479,9 +5319,7 @@
         }
       ],
       "artistIds": [
-        "dualipa",
-        "eltonjohn",
-        "pnau"
+        "eltonjohn"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -5523,7 +5361,6 @@
         }
       ],
       "artistIds": [
-        "daftpunk",
         "theweeknd"
       ],
       "usedArtistIds": [],
@@ -5968,44 +5805,6 @@
       }
     },
     {
-      "id": "chart-02989",
-      "artist": "Jay Sean",
-      "title": "Ride It",
-      "candidateScore": 185.69,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2008,
-      "candidateYears": [
-        {
-          "year": 2008,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "jaysean"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "11552"
-        ],
-        "isrc": [
-          "GBTYR0800002"
-        ]
-      }
-    },
-    {
       "id": "chart-02972",
       "artist": "Pharrell Williams",
       "title": "Happy",
@@ -6250,8 +6049,6 @@
         }
       ],
       "artistIds": [
-        "goonrock",
-        "laurenbennett",
         "lmfao"
       ],
       "usedArtistIds": [],
@@ -6937,7 +6734,6 @@
         }
       ],
       "artistIds": [
-        "jayz",
         "rihanna"
       ],
       "usedArtistIds": [],
@@ -6976,8 +6772,7 @@
         }
       ],
       "artistIds": [
-        "glennmorrison",
-        "islove"
+        "glennmorrison"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -7617,9 +7412,7 @@
         }
       ],
       "artistIds": [
-        "goingdeeper",
-        "lp",
-        "swankytunes"
+        "lp"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -7805,7 +7598,6 @@
         }
       ],
       "artistIds": [
-        "cyril",
         "disturbed"
       ],
       "usedArtistIds": [],
@@ -7880,8 +7672,7 @@
         }
       ],
       "artistIds": [
-        "selenagomez",
-        "thescene"
+        "selenagomez"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -8088,42 +7879,6 @@
       }
     },
     {
-      "id": "chart-03105",
-      "artist": "Lil Peep feat XXXTENTACION",
-      "title": "Falling Down",
-      "candidateScore": 180.69,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "lilpeep",
-        "xxxtentacion"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "91862"
-        ]
-      }
-    },
-    {
       "id": "chart-03156",
       "artist": "Tate Mcrae",
       "title": "Sports car",
@@ -8176,8 +7931,6 @@
         }
       ],
       "artistIds": [
-        "justintimberlake",
-        "nellyfurtado",
         "timbaland"
       ],
       "usedArtistIds": [],
@@ -8367,8 +8120,7 @@
       ],
       "artistIds": [
         "50cent",
-        "justintimberlake",
-        "timbaland"
+        "justintimberlake"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -8427,44 +8179,6 @@
       }
     },
     {
-      "id": "chart-03078",
-      "artist": "Jennifer Lopez",
-      "title": "Brave",
-      "candidateScore": 180.05,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2008,
-      "candidateYears": [
-        {
-          "year": 2008,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "jenniferlopez"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "12170"
-        ],
-        "isrc": [
-          "USSM10704002"
-        ]
-      }
-    },
-    {
       "id": "chart-03022",
       "artist": "Paul Van Dyk",
       "title": "Let Go",
@@ -8482,8 +8196,7 @@
         }
       ],
       "artistIds": [
-        "paulvandyk",
-        "reagarvey"
+        "paulvandyk"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -8805,42 +8518,6 @@
       }
     },
     {
-      "id": "chart-03068",
-      "artist": "Ed Sheeran & Justin Bieber",
-      "title": "I Don't Care",
-      "candidateScore": 178.98,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "edsheeran",
-        "justinbieber"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "95712"
-        ]
-      }
-    },
-    {
       "id": "chart-03031",
       "artist": "Jimin",
       "title": "Who",
@@ -9083,7 +8760,6 @@
         }
       ],
       "artistIds": [
-        "giulia",
         "marius"
       ],
       "usedArtistIds": [],
@@ -9391,7 +9067,6 @@
         }
       ],
       "artistIds": [
-        "imran",
         "leony"
       ],
       "usedArtistIds": [],
@@ -9406,42 +9081,6 @@
       "externalIds": {
         "tophit": [
           "239505"
-        ]
-      }
-    },
-    {
-      "id": "chart-03169",
-      "artist": "Calvin Harris & Rag'n'Bone Man",
-      "title": "Giant",
-      "candidateScore": 177.55,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "calvinharris",
-        "ragnboneman"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "93853"
         ]
       }
     },
@@ -9463,8 +9102,7 @@
         }
       ],
       "artistIds": [
-        "movetown",
-        "rayhorton"
+        "movetown"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -9594,42 +9232,6 @@
       }
     },
     {
-      "id": "chart-03089",
-      "artist": "Sam Smith & Normani",
-      "title": "Dancing With A Stranger",
-      "candidateScore": 177.22,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "normani",
-        "samsmith"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "94096"
-        ]
-      }
-    },
-    {
       "id": "chart-03070",
       "artist": "Ufo361 , Nina Chuba",
       "title": "LIEBE",
@@ -9662,46 +9264,6 @@
       "externalIds": {
         "tophit": [
           "228478"
-        ]
-      }
-    },
-    {
-      "id": "chart-03119",
-      "artist": "Daddy Yankee feat Katy Perry & Snow",
-      "title": "Con Calma [Remix]",
-      "candidateScore": 177.16,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "daddyyankee",
-        "katyperry",
-        "snow"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "95160"
-        ],
-        "isrc": [
-          "USUG12201734"
         ]
       }
     },
@@ -9950,9 +9512,7 @@
         }
       ],
       "artistIds": [
-        "dev",
-        "fareastmovement",
-        "thecataracs"
+        "fareastmovement"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -10074,42 +9634,6 @@
       "externalIds": {
         "tophit": [
           "276307"
-        ]
-      }
-    },
-    {
-      "id": "chart-03188",
-      "artist": "Shawn Mendes & Camila Cabello",
-      "title": "Señorita",
-      "candidateScore": 176.31,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "camilacabello",
-        "shawnmendes"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "96884"
         ]
       }
     },
@@ -10245,8 +9769,7 @@
         }
       ],
       "artistIds": [
-        "ajr",
-        "louisajohnson"
+        "ajr"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -10476,7 +9999,6 @@
         }
       ],
       "artistIds": [
-        "emileeflood",
         "surfmesa"
       ],
       "usedArtistIds": [],
@@ -11042,7 +10564,6 @@
         }
       ],
       "artistIds": [
-        "akram",
         "davidvendetta"
       ],
       "usedArtistIds": [],
@@ -11081,7 +10602,6 @@
         }
       ],
       "artistIds": [
-        "emelisande",
         "professorgreen"
       ],
       "usedArtistIds": [],
@@ -11158,8 +10678,7 @@
         }
       ],
       "artistIds": [
-        "alexgaudino",
-        "crystalwaters"
+        "alexgaudino"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -11176,45 +10695,6 @@
         ],
         "isrc": [
           "ITL010600381"
-        ]
-      }
-    },
-    {
-      "id": "chart-03283",
-      "artist": "Meduza ft. GOODBOYS",
-      "title": "Piece Of Your Heart",
-      "candidateScore": 174.32,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "goodboys",
-        "meduza"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "94426"
-        ],
-        "isrc": [
-          "DEUM71807719"
         ]
       }
     },
@@ -11348,8 +10828,7 @@
         }
       ],
       "artistIds": [
-        "jaymesyoung",
-        "prettyyoung"
+        "jaymesyoung"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -11387,11 +10866,7 @@
         }
       ],
       "artistIds": [
-        "burnaboy",
-        "coldplay",
-        "elyanna",
-        "littlesimz",
-        "tini"
+        "coldplay"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -11542,7 +11017,6 @@
       ],
       "artistIds": [
         "aldenjacob",
-        "jacobalden",
         "theparakit"
       ],
       "usedArtistIds": [],
@@ -11638,41 +11112,6 @@
       }
     },
     {
-      "id": "chart-03182",
-      "artist": "Katy Perry",
-      "title": "Hot'N'Cold",
-      "candidateScore": 173.71,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2008,
-      "candidateYears": [
-        {
-          "year": 2008,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "katyperry"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "15532"
-        ]
-      }
-    },
-    {
       "id": "chart-03212",
       "artist": "G-Eazy & Halsey",
       "title": "Him & I",
@@ -11708,44 +11147,6 @@
         ],
         "isrc": [
           "USRC11701867"
-        ]
-      }
-    },
-    {
-      "id": "chart-03336",
-      "artist": "Maruv",
-      "title": "Siren Song",
-      "candidateScore": 173.52,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "maruv"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "94606"
-        ],
-        "isrc": [
-          "RUA591900271"
         ]
       }
     },
@@ -11823,44 +11224,6 @@
         ],
         "isrc": [
           "ROWWA2000001"
-        ]
-      }
-    },
-    {
-      "id": "chart-03099",
-      "artist": "Madcon",
-      "title": "Beggin",
-      "candidateScore": 173.38,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2008,
-      "candidateYears": [
-        {
-          "year": 2008,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "madcon"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "12935"
-        ],
-        "isrc": [
-          "DEE860800121"
         ]
       }
     },
@@ -12299,7 +11662,6 @@
         }
       ],
       "artistIds": [
-        "felixjaehn",
         "nea"
       ],
       "usedArtistIds": [],
@@ -12317,46 +11679,6 @@
         ],
         "isrc": [
           "SEBGA1902742"
-        ]
-      }
-    },
-    {
-      "id": "chart-03410",
-      "artist": "Denis First , Reznikov , Bright Sparks",
-      "title": "Shameless",
-      "candidateScore": 172.18,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "brightsparks",
-        "denisfirst",
-        "reznikov"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "93232"
-        ],
-        "isrc": [
-          "USSM11905431"
         ]
       }
     },
@@ -12641,8 +11963,6 @@
         }
       ],
       "artistIds": [
-        "afrojack",
-        "nayer",
         "neyo",
         "pitbull"
       ],
@@ -12794,8 +12114,7 @@
         }
       ],
       "artistIds": [
-        "ericprydz",
-        "pinkfloyd"
+        "ericprydz"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -12926,44 +12245,6 @@
         ],
         "isrc": [
           "USUS11600322"
-        ]
-      }
-    },
-    {
-      "id": "chart-03263",
-      "artist": "Jonas Brothers",
-      "title": "Sucker",
-      "candidateScore": 170.96,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "jonasbrothers"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "94907"
-        ],
-        "isrc": [
-          "USUG11900515"
         ]
       }
     },
@@ -13140,8 +12421,7 @@
         }
       ],
       "artistIds": [
-        "fareastmovement",
-        "justinbieber"
+        "fareastmovement"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -13179,7 +12459,6 @@
         }
       ],
       "artistIds": [
-        "julianperretta",
         "kungs",
         "purplediscomachine"
       ],
@@ -13294,8 +12573,7 @@
       ],
       "artistIds": [
         "gorgoncity",
-        "rmans",
-        "romans"
+        "rmans"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -13333,9 +12611,7 @@
         }
       ],
       "artistIds": [
-        "goingdeeper",
-        "lp",
-        "swankytunes"
+        "lp"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -13394,43 +12670,6 @@
       }
     },
     {
-      "id": "chart-03424",
-      "artist": "Aaron Smith feat Luvli",
-      "title": "Dancin (Krono Remix)",
-      "candidateScore": 170.21,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "aaronsmith",
-        "krono",
-        "luvli"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "91683"
-        ]
-      }
-    },
-    {
       "id": "chart-03363",
       "artist": "DJ SMASH",
       "title": "The Night Is Young",
@@ -13448,8 +12687,7 @@
         }
       ],
       "artistIds": [
-        "djsmash",
-        "stephenridley"
+        "djsmash"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -13942,7 +13180,6 @@
       ],
       "artistIds": [
         "adriansana",
-        "akcent",
         "vivienohara"
       ],
       "usedArtistIds": [],
@@ -14173,8 +13410,7 @@
         }
       ],
       "artistIds": [
-        "arilenaara",
-        "beverlypills"
+        "arilenaara"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -14212,7 +13448,6 @@
         }
       ],
       "artistIds": [
-        "chrisdesarandy",
         "safriduo",
         "twocolors"
       ],
@@ -14362,8 +13597,7 @@
         }
       ],
       "artistIds": [
-        "justintimberlake",
-        "ti"
+        "justintimberlake"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -14670,8 +13904,7 @@
       ],
       "artistIds": [
         "jameshype",
-        "miggidelarosa",
-        "miggydelarosa"
+        "miggidelarosa"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -14987,44 +14220,6 @@
       }
     },
     {
-      "id": "chart-03317",
-      "artist": "Ava Max",
-      "title": "Sweet But Psycho",
-      "candidateScore": 167.52,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "avamax"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "91754"
-        ],
-        "isrc": [
-          "USAT21802011"
-        ]
-      }
-    },
-    {
       "id": "chart-03111",
       "artist": "Hurts",
       "title": "Stay",
@@ -15097,45 +14292,6 @@
         ],
         "isrc": [
           "USWB12305048"
-        ]
-      }
-    },
-    {
-      "id": "chart-03137",
-      "artist": "Arash feat Helena",
-      "title": "One Night in Dubai",
-      "candidateScore": 167.45,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "arash",
-        "helena"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "95171"
-        ],
-        "isrc": [
-          "SE2VK1400601"
         ]
       }
     },
@@ -15463,8 +14619,7 @@
         }
       ],
       "artistIds": [
-        "davidguetta",
-        "davisjd"
+        "davidguetta"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -15519,41 +14674,6 @@
         ],
         "isrc": [
           "USWB11504556"
-        ]
-      }
-    },
-    {
-      "id": "chart-03258",
-      "artist": "Katy Perry",
-      "title": "I Kissed A Girl",
-      "candidateScore": 166.77,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2008,
-      "candidateYears": [
-        {
-          "year": 2008,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "katyperry"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "13605"
         ]
       }
     },
@@ -15754,44 +14874,6 @@
       }
     },
     {
-      "id": "chart-03372",
-      "artist": "Mohombi",
-      "title": "Hello",
-      "candidateScore": 166.38,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "mohombi"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "94817"
-        ],
-        "isrc": [
-          "SE2VK1900201"
-        ]
-      }
-    },
-    {
       "id": "chart-03229",
       "artist": "P!nk",
       "title": "U + Ur Hand",
@@ -15917,10 +14999,8 @@
         }
       ],
       "artistIds": [
-        "alisaueno",
         "nervo",
-        "sofitukker",
-        "theknocks"
+        "sofitukker"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -15998,8 +15078,7 @@
       "artistIds": [
         "oaks",
         "robinschulz",
-        "topic",
-        "winonaoak"
+        "topic"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -16223,9 +15302,7 @@
         }
       ],
       "artistIds": [
-        "brasco",
-        "danbalan",
-        "tanyvander"
+        "danbalan"
       ],
       "usedArtistIds": [
         "danbalan"
@@ -16342,7 +15419,6 @@
         }
       ],
       "artistIds": [
-        "2eivissa",
         "davidtavare"
       ],
       "usedArtistIds": [],
@@ -16703,44 +15779,6 @@
       }
     },
     {
-      "id": "chart-03527",
-      "artist": "Regard",
-      "title": "Ride It",
-      "candidateScore": 165.06,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "regard"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "98822"
-        ],
-        "isrc": [
-          "GBCEN1900047"
-        ]
-      }
-    },
-    {
       "id": "chart-03330",
       "artist": "Lil Wayne & Wiz Khalifa & Imagine Dragons",
       "title": "Sucker for Pain",
@@ -16760,8 +15798,6 @@
       "artistIds": [
         "imaginedragons",
         "lilwayne",
-        "logic",
-        "tydollaign",
         "wizkhalifa"
       ],
       "usedArtistIds": [],
@@ -16841,8 +15877,7 @@
         }
       ],
       "artistIds": [
-        "pnk",
-        "willowsagehart"
+        "pnk"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -16880,8 +15915,7 @@
         }
       ],
       "artistIds": [
-        "enriqueiglesias",
-        "johntaaustin"
+        "enriqueiglesias"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -17070,7 +16104,6 @@
       ],
       "artistIds": [
         "arash",
-        "daecolm",
         "hugel",
         "topic"
       ],
@@ -17130,44 +16163,6 @@
       }
     },
     {
-      "id": "chart-03541",
-      "artist": "Rompasso",
-      "title": "Paradise",
-      "candidateScore": 164.26,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "rompasso"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "95650"
-        ],
-        "isrc": [
-          "NLZ541900945"
-        ]
-      }
-    },
-    {
       "id": "chart-03477",
       "artist": "Bebe Rexha",
       "title": "Self Control",
@@ -17223,8 +16218,7 @@
         }
       ],
       "artistIds": [
-        "thescript",
-        "william"
+        "thescript"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -17339,7 +16333,6 @@
         }
       ],
       "artistIds": [
-        "feat",
         "lilnas"
       ],
       "usedArtistIds": [],
@@ -17475,6 +16468,921 @@
         ],
         "isrc": [
           "SEYOK1406001"
+        ]
+      }
+    },
+    {
+      "id": "chart-03549",
+      "artist": "Consoul Trainin feat Steven Aderinto & DuoViolins",
+      "title": "Obsession",
+      "candidateScore": 163.75,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2017,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "consoultrainin",
+        "duoviolins",
+        "stevenaderinto"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "85707"
+        ],
+        "isrc": [
+          "GRFOT1800006"
+        ]
+      }
+    },
+    {
+      "id": "chart-03270",
+      "artist": "Макс Барских",
+      "title": "Lost In Love",
+      "candidateScore": 163.71,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2010,
+      "candidateYears": [
+        {
+          "year": 2010,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "maksbarskih"
+      ],
+      "usedArtistIds": [
+        "maksbarskih"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "29693"
+        ],
+        "isrc": [
+          "FR2X41778874"
+        ]
+      }
+    },
+    {
+      "id": "chart-03504",
+      "artist": "Misha Miller , Alex Velea",
+      "title": "Bam Bam",
+      "candidateScore": 163.65,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2024,
+      "candidateYears": [
+        {
+          "year": 2024,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "alexvelea",
+        "mishamiller"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "231487"
+        ]
+      }
+    },
+    {
+      "id": "chart-03312",
+      "artist": "Plazma",
+      "title": "Mystery (The Power within)",
+      "candidateScore": 163.64,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2010,
+      "candidateYears": [
+        {
+          "year": 2010,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "plazma"
+      ],
+      "usedArtistIds": [
+        "plazma"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "22232"
+        ],
+        "isrc": [
+          "RUB421701602"
+        ]
+      }
+    },
+    {
+      "id": "chart-03398",
+      "artist": "Justin Timberlake",
+      "title": "Can't Stop The Feeling!",
+      "candidateScore": 163.33,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2016,
+      "candidateYears": [
+        {
+          "year": 2016,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "justintimberlake"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "73874"
+        ],
+        "isrc": [
+          "USRC11601599"
+        ]
+      }
+    },
+    {
+      "id": "chart-03358",
+      "artist": "Mari Ferrari , M.Z.I & S-Elm feat Vianne",
+      "title": "Drop Dead",
+      "candidateScore": 163.27,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "mariferrari",
+        "mzi",
+        "selm",
+        "vianne"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "102754"
+        ],
+        "isrc": [
+          "QZARB1867522"
+        ]
+      }
+    },
+    {
+      "id": "chart-08576",
+      "artist": "The Bausa",
+      "title": "Magnetic",
+      "candidateScore": 163.21,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "thebausa"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "shazam-ru",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "273192"
+        ]
+      }
+    },
+    {
+      "id": "chart-03359",
+      "artist": "Cascada",
+      "title": "Miracle",
+      "candidateScore": 162.97,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "cascada"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "8560"
+        ],
+        "isrc": [
+          "DEHK90913013"
+        ]
+      }
+    },
+    {
+      "id": "chart-03501",
+      "artist": "AVAION x BUNT.",
+      "title": "Other Side",
+      "candidateScore": 162.9,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2023,
+      "candidateYears": [
+        {
+          "year": 2023,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "avaion",
+        "bunt"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "189967"
+        ]
+      }
+    },
+    {
+      "id": "chart-03506",
+      "artist": "Tom Gregory",
+      "title": "Footprints",
+      "candidateScore": 162.9,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2021,
+      "candidateYears": [
+        {
+          "year": 2021,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "tomgregory"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "141934"
+        ],
+        "isrc": [
+          "DEN062100974"
+        ]
+      }
+    },
+    {
+      "id": "chart-03474",
+      "artist": "Britney Spears",
+      "title": "Till The World Ends",
+      "candidateScore": 162.84,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2011,
+      "candidateYears": [
+        {
+          "year": 2011,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "britneyspears"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "31664"
+        ],
+        "isrc": [
+          "USJI11100074"
+        ]
+      }
+    },
+    {
+      "id": "chart-03575",
+      "artist": "Kwabs",
+      "title": "Walk",
+      "candidateScore": 162.75,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2014,
+      "candidateYears": [
+        {
+          "year": 2014,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "kwabs"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "59768"
+        ],
+        "isrc": [
+          "GBAHS1400252"
+        ]
+      }
+    },
+    {
+      "id": "chart-03319",
+      "artist": "P!nk",
+      "title": "Hate Me",
+      "candidateScore": 162.73,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2023,
+      "candidateYears": [
+        {
+          "year": 2023,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "pnk"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "166932"
+        ],
+        "isrc": [
+          "USRC12204193"
+        ]
+      }
+    },
+    {
+      "id": "chart-03433",
+      "artist": "Bakermat",
+      "title": "Teach Me",
+      "candidateScore": 162.53,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2015,
+      "candidateYears": [
+        {
+          "year": 2015,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "bakermat"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "61715"
+        ],
+        "isrc": [
+          "NLE801400559"
+        ]
+      }
+    },
+    {
+      "id": "chart-03625",
+      "artist": "Timofey & Bartosz Brenes & Terri B!",
+      "title": "Heaven",
+      "candidateScore": 162.52,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2010,
+      "candidateYears": [
+        {
+          "year": 2010,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "bartoszbrenes",
+        "terrib",
+        "timofey"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "26278"
+        ]
+      }
+    },
+    {
+      "id": "chart-03381",
+      "artist": "Willy William",
+      "title": "Ego",
+      "candidateScore": 162.46,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2015,
+      "candidateYears": [
+        {
+          "year": 2015,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "willywilliam"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "70712"
+        ],
+        "isrc": [
+          "FR2PY1506200"
+        ]
+      }
+    },
+    {
+      "id": "chart-03536",
+      "artist": "Samantha Jade",
+      "title": "Firestarter",
+      "candidateScore": 162.41,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2013,
+      "candidateYears": [
+        {
+          "year": 2013,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "samanthajade"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "49556"
+        ],
+        "isrc": [
+          "AUBM01300119"
+        ]
+      }
+    },
+    {
+      "id": "chart-03416",
+      "artist": "Jason Derulo feat French Montana",
+      "title": "Tip Toe",
+      "candidateScore": 162.39,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2017,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "frenchmontana",
+        "jasonderulo"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "86138"
+        ],
+        "isrc": [
+          "USWB11702102"
+        ]
+      }
+    },
+    {
+      "id": "chart-03514",
+      "artist": "Tim3bomb feat Tim Schou",
+      "title": "Magic",
+      "candidateScore": 162.33,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2018,
+      "candidateYears": [
+        {
+          "year": 2018,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "tim3bomb",
+        "timschou"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "88871"
+        ],
+        "isrc": [
+          "USME30902987"
+        ]
+      }
+    },
+    {
+      "id": "chart-03478",
+      "artist": "Robin Schulz feat James Blunt",
+      "title": "Ok",
+      "candidateScore": 162.28,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2017,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "jamesblunt",
+        "robinschulz"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "81714"
+        ],
+        "isrc": [
+          "BET231633806"
+        ]
+      }
+    },
+    {
+      "id": "chart-03450",
+      "artist": "Danzel",
+      "title": "You Spin Me Round",
+      "candidateScore": 162.21,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "danzel"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "9518"
+        ],
+        "isrc": [
+          "BEN580700236"
+        ]
+      }
+    },
+    {
+      "id": "chart-03388",
+      "artist": "Alfa , Manu Chao",
+      "title": "a me mi piace",
+      "candidateScore": 162.15,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2025,
+      "candidateYears": [
+        {
+          "year": 2025,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "alfa",
+        "manuchao"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "251847"
+        ]
+      }
+    },
+    {
+      "id": "chart-03353",
+      "artist": "Benny Blanco & Calvin Harris",
+      "title": "I Found You",
+      "candidateScore": 162.12,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2018,
+      "candidateYears": [
+        {
+          "year": 2018,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "bennyblanco",
+        "calvinharris"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "92666"
+        ],
+        "isrc": [
+          "USUM71822027"
+        ]
+      }
+    },
+    {
+      "id": "chart-03175",
+      "artist": "Backstreet Boys",
+      "title": "Inconsolable",
+      "candidateScore": 162.1,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "backstreetboys"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "9311"
+        ],
+        "isrc": [
+          "USJI10700559"
         ]
       }
     }

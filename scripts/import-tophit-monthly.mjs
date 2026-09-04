@@ -83,6 +83,12 @@ const numberOrNull = (value) => {
 };
 
 const sortedUnique = (values) => [...new Set(values.filter(Boolean))].sort((left, right) => left.localeCompare(right, "ru"));
+const normalizeLanguageName = (value = "") => {
+  const normalized = String(value).trim().toLowerCase();
+  if (["russian", "русский", "ru"].includes(normalized)) return "russian";
+  if (["english", "английский", "en"].includes(normalized)) return "english";
+  return normalized || null;
+};
 
 const trackKeyFor = (row, extracted) => {
   const topHitTrackId = String(row.track_id || "").trim();
@@ -109,6 +115,9 @@ const emptyTrack = (row, extracted) => {
     isrcStatus: "missing",
     trackUrls: [],
     releaseDates: [],
+    languageNames: [],
+    languageCodes: [],
+    languageFlagCodes: [],
     monthlyPositions: {},
     _key: key,
   };
@@ -132,6 +141,9 @@ const loadExisting = (outputPath) => {
       fallbackKey: track.topHitTrackId ? null : fallbackKey,
       _key: key,
       isrcSources: track.isrcSources || [],
+      languageNames: track.languageNames || [],
+      languageCodes: track.languageCodes || [],
+      languageFlagCodes: track.languageFlagCodes || [],
     },
     ];
   }));
@@ -168,6 +180,9 @@ export const aggregateRows = (rows, existingTracks = new Map()) => {
     }
     track.trackUrls.push(String(row.track_url || "").trim());
     track.releaseDates.push(String(row.release_date || "").trim());
+    track.languageNames.push(String(row.tophit_language || row.language || "").trim());
+    track.languageCodes.push(normalizeLanguageName(row.tophit_language || row.language));
+    track.languageFlagCodes.push(String(row.tophit_language_flag || row.language_flag || "").trim().toLowerCase());
     track.monthlyPositions[month] = position;
     tracks.set(key, track);
   }
@@ -189,6 +204,10 @@ export const aggregateRows = (rows, existingTracks = new Map()) => {
     track.isrcSources = sortedUnique(track.isrcSources);
     track.trackUrls = sortedUnique(track.trackUrls);
     track.releaseDates = sortedUnique(track.releaseDates);
+    track.languageNames = sortedUnique(track.languageNames);
+    track.languageCodes = sortedUnique(track.languageCodes);
+    track.languageFlagCodes = sortedUnique(track.languageFlagCodes);
+    track.languageStatus = track.languageCodes.length > 1 ? "conflicting" : track.languageCodes.length === 1 ? "unique" : "missing";
     track.monthlyPositions = Object.fromEntries(Object.entries(track.monthlyPositions).sort(([left], [right]) => left.localeCompare(right)));
     const positions = Object.values(track.monthlyPositions);
     const months = Object.keys(track.monthlyPositions);
