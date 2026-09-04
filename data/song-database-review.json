@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T19:36:06.604Z",
-  "totalNeedsReview": 5944,
+  "generatedAt": "2026-09-04T19:52:30.018Z",
+  "totalNeedsReview": 5942,
   "shown": 500,
   "songs": [
     {
@@ -927,33 +927,6 @@
       "readyForPublication": false,
       "sourceIds": [
         "shazam-ru"
-      ],
-      "poolRefs": [],
-      "externalIds": {}
-    },
-    {
-      "id": "chart-03196",
-      "artist": "T9",
-      "title": "Ода Нашей Любви",
-      "candidateScore": 88.63,
-      "workflow": "waiting",
-      "language": "russian",
-      "languageEvidence": [
-        "cyrillic-title"
-      ],
-      "releaseYear": null,
-      "candidateYears": [],
-      "artistIds": [
-        "t9"
-      ],
-      "usedArtistIds": [
-        "t9"
-      ],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual"
       ],
       "poolRefs": [],
       "externalIds": {}
@@ -17407,6 +17380,42 @@
         ],
         "isrc": [
           "BEN580700236"
+        ]
+      }
+    },
+    {
+      "id": "chart-03388",
+      "artist": "Alfa , Manu Chao",
+      "title": "a me mi piace",
+      "candidateScore": 162.15,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2025,
+      "candidateYears": [
+        {
+          "year": 2025,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "alfa",
+        "manuchao"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "251847"
         ]
       }
     }

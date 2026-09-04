@@ -1,5 +1,6 @@
 import { quizzes } from "../../quiz-data";
 import { getLocalDb } from "../../../server/local-db";
+import { rebuildMistakeMasteryForTrack } from "../../../server/mistake-mastery";
 
 export const runtime = "nodejs";
 
@@ -38,6 +39,7 @@ export async function POST(request: Request) {
         source.track.duration,
         reason,
       );
+    rebuildMistakeMasteryForTrack(database, body.trackKey);
     return Response.json({ reported: true });
   } catch (error) {
     console.error("fragment feedback save failed", error);
@@ -55,6 +57,7 @@ export async function DELETE(request: Request) {
     database.prepare(`DELETE FROM fragment_reports WHERE attempt_id = ? AND track_key = ?
       AND EXISTS (SELECT 1 FROM attempts WHERE id = ? AND user_id = 'owner')`)
       .run(body.attemptId, body.trackKey, body.attemptId);
+    rebuildMistakeMasteryForTrack(database, body.trackKey);
     return Response.json({ reported: false });
   } catch (error) {
     console.error("fragment feedback delete failed", error);

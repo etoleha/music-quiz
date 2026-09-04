@@ -42,3 +42,22 @@ export function isAccepted(value: string, aliases: string[]) {
     return distance(candidate, expected) <= allowance;
   });
 }
+
+const collaborationSeparator = /\s+(?:feat\.?|ft\.?|и|x|&)\s+|,\s*/i;
+const isPersonalForm = (value: string) => /^(?:исполнитель|исполнительница)$/i.test(value.trim());
+const surnameFrom = (value: string) => {
+  const words = normalize(value).split(/\s+/).filter(Boolean);
+  return words.length >= 2 ? words.at(-1) ?? "" : "";
+};
+
+export function isArtistAccepted(value: string, aliases: string[], artistForm: string) {
+  if (isAccepted(value, aliases)) return true;
+  const forms = artistForm.split(/\s*\+\s*/);
+  const surnameAliases = forms.length === 1
+    ? isPersonalForm(forms[0])
+      ? aliases.map(surnameFrom).filter(Boolean)
+      : []
+    : (aliases[0] || "").split(collaborationSeparator).flatMap((part, index) =>
+      isPersonalForm(forms[index] || "") ? [surnameFrom(part)].filter(Boolean) : []);
+  return surnameAliases.length > 0 && isAccepted(value, surnameAliases);
+}

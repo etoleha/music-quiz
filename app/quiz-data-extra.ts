@@ -318,6 +318,7 @@ const manualTitleAliases: Record<string, string[]> = {
   "5’nizza—Солдат": ["Я солдат"],
   "Игорь Корнелюк—Город, которого нет": ["Город которого нет"],
   "Танцы Минус—Цветут цветы": ["Цветы"],
+  "L'ONE feat. Варвара Визбор—Якутяночка": ["Якутяночка ft. Варвара Визбор"],
 };
 
 const unique = (values: string[]) => [...new Set(values.filter(Boolean))];
@@ -454,7 +455,7 @@ export const extraQuizzes: Quiz[] = [
       extraTrack("rH3dgj4jj0I", "Ангина", "Кому какое дело", 31, 15, 2004),
       extraTrack("AE_bMZSGDW0", "Сати Казанова feat. Arsenium", "До рассвета", 38, 7, 2014),
       extraTrack("jWDwdYSdM64", "PHARAOH", "BLACK SIEMENS", 28, 11, 2017),
-      extraTrack("mdRaS5mZkjk", "L'ONE feat. Варвара Визбор", "Якутяночка ft. Варвара Визбор", 38, 11, 2016),
+      extraTrack("mdRaS5mZkjk", "L'ONE feat. Варвара Визбор", "Якутяночка", 38, 11, 2016),
       extraTrack("-T5G2j9Og8c", "Елена Темникова", "Импульсы города", 43, 11, 2016),
       extraTrack("K4JsGE9h4as", "Анна Семенович", "Я за тобой", 35, 15, 2014),
       extraTrack("zQ7Zrowa-gY", "Strange", "Зависай", 39, 15, 2019),

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getQuiz, quizzes, type Quiz, type Track } from "./quiz-data";
-import { isAccepted } from "./scoring";
+import { isAccepted, isArtistAccepted } from "./scoring";
 
 type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void };
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean };
@@ -374,7 +374,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     player.current?.stopVideo(); stopClipClock();
     const localReview = order.map((track) => {
       const answer = finalAnswers.find((item) => item.trackKey === track.key) ?? { trackKey: track.key, artistAnswer: "", titleAnswer: "", loadFailed: false };
-      return { ...answer, track, artistPoint: answer.loadFailed ? 0 : Number(isAccepted(answer.artistAnswer, track.artistAliases)), titlePoint: answer.loadFailed ? 0 : Number(isAccepted(answer.titleAnswer, track.titleAliases)) };
+      return { ...answer, track, artistPoint: answer.loadFailed ? 0 : Number(isArtistAccepted(answer.artistAnswer, track.artistAliases, track.artistForm)), titlePoint: answer.loadFailed ? 0 : Number(isAccepted(answer.titleAnswer, track.titleAliases)) };
     });
     const skipped = localReview.filter((item) => item.loadFailed).length;
     const value = localReview.reduce((sum, item) => sum + item.artistPoint + item.titlePoint, 0);
@@ -483,6 +483,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         body: JSON.stringify({ attemptId: currentAttemptId, trackKey }),
       });
       if (!response.ok) throw new Error("feedback failed");
+      await loadStats();
     } catch {
       setBadFragments((items) => {
         const next = new Set(items);

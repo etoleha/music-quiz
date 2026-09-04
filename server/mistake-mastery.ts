@@ -51,6 +51,14 @@ export function rebuildMistakeMasteryForTrack(database: DatabaseSync, trackKey: 
     aa.artist_point AS artistPoint, aa.title_point AS titlePoint, aa.load_failed AS loadFailed
     FROM attempt_answers aa JOIN attempts a ON a.id = aa.attempt_id
     WHERE a.user_id = 'owner' AND aa.track_key = ?
+      AND NOT (
+        TRIM(aa.artist_answer) = '' AND TRIM(aa.title_answer) = ''
+        AND EXISTS (
+          SELECT 1 FROM fragment_reports fr
+          WHERE fr.attempt_id = aa.attempt_id AND fr.track_key = aa.track_key
+            AND fr.reason = 'bad-fragment'
+        )
+      )
     ORDER BY a.created_at ASC, aa.id ASC`).all(trackKey) as Array<{
       trackKey: string;
       artist: string;
@@ -65,9 +73,16 @@ export function rebuildMistakeMasteryForTrack(database: DatabaseSync, trackKey: 
 
 export function backfillMistakeMastery(database: DatabaseSync) {
   const existing = database.prepare("SELECT COUNT(*) AS count FROM mistake_mastery").get() as { count: number };
-  if (existing.count) return;
-  const missedTracks = database.prepare(`SELECT DISTINCT aa.track_key AS trackKey
+  if (!existing.count) {
+    const missedTracks = database.prepare(`SELECT DISTINCT aa.track_key AS trackKey
+      FROM attempt_answers aa JOIN attempts a ON a.id = aa.attempt_id
+      WHERE a.user_id = 'owner' AND aa.load_failed = 0 AND (aa.artist_point + aa.title_point) < 2`).all() as Array<{ trackKey: string }>;
+    for (const { trackKey } of missedTracks) rebuildMistakeMasteryForTrack(database, trackKey);
+  }
+  const exemptedTracks = database.prepare(`SELECT DISTINCT aa.track_key AS trackKey
     FROM attempt_answers aa JOIN attempts a ON a.id = aa.attempt_id
-    WHERE a.user_id = 'owner' AND aa.load_failed = 0 AND (aa.artist_point + aa.title_point) < 2`).all() as Array<{ trackKey: string }>;
-  for (const { trackKey } of missedTracks) rebuildMistakeMasteryForTrack(database, trackKey);
+    JOIN fragment_reports fr ON fr.attempt_id = aa.attempt_id AND fr.track_key = aa.track_key
+    WHERE a.user_id = 'owner' AND TRIM(aa.artist_answer) = '' AND TRIM(aa.title_answer) = ''
+      AND fr.reason = 'bad-fragment'`).all() as Array<{ trackKey: string }>;
+  for (const { trackKey } of exemptedTracks) rebuildMistakeMasteryForTrack(database, trackKey);
 }

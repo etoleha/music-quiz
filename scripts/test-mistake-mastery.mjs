@@ -11,6 +11,8 @@ database.exec(`
     track_key TEXT NOT NULL,
     artist TEXT NOT NULL,
     title TEXT NOT NULL,
+    artist_answer TEXT NOT NULL DEFAULT '',
+    title_answer TEXT NOT NULL DEFAULT '',
     artist_point INTEGER NOT NULL,
     title_point INTEGER NOT NULL,
     load_failed INTEGER NOT NULL DEFAULT 0
@@ -25,6 +27,11 @@ database.exec(`
     active INTEGER NOT NULL DEFAULT 1,
     last_error_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+  );
+  CREATE TABLE fragment_reports (
+    attempt_id TEXT NOT NULL,
+    track_key TEXT NOT NULL,
+    reason TEXT NOT NULL
   );
 `);
 
@@ -61,5 +68,16 @@ database.prepare("INSERT INTO attempt_answers (attempt_id, track_key, artist, ti
   .run("a2", "artist—song", "Artist", "Song", 1, 1);
 rebuildMistakeMasteryForTrack(database, "artist—song");
 assert.deepEqual(mastery(), { successes: 1, requiredSuccesses: 2, misses: 1, active: 1 });
+
+database.prepare("INSERT INTO attempts (id, user_id, created_at) VALUES (?, 'owner', ?)").run("a3", "2026-01-03 10:00:00");
+database.prepare("INSERT INTO attempt_answers (attempt_id, track_key, artist, title, artist_point, title_point) VALUES (?, ?, ?, ?, ?, ?)")
+  .run("a3", "bad—fragment", "Artist", "Song", 0, 0);
+database.prepare("INSERT INTO fragment_reports (attempt_id, track_key, reason) VALUES (?, ?, ?)")
+  .run("a3", "bad—fragment", "bad-fragment");
+rebuildMistakeMasteryForTrack(database, "bad—fragment");
+assert.equal(database.prepare("SELECT COUNT(*) AS count FROM mistake_mastery WHERE track_key = 'bad—fragment'").get().count, 0);
+database.prepare("DELETE FROM fragment_reports WHERE attempt_id = ? AND track_key = ?").run("a3", "bad—fragment");
+rebuildMistakeMasteryForTrack(database, "bad—fragment");
+assert.equal(database.prepare("SELECT misses FROM mistake_mastery WHERE track_key = 'bad—fragment'").get().misses, 1);
 
 console.log("mistake mastery tests passed");

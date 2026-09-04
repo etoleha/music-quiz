@@ -1,5 +1,5 @@
 import { getQuiz, quizzes, type Track } from "../../quiz-data";
-import { isAccepted } from "../../scoring";
+import { isAccepted, isArtistAccepted } from "../../scoring";
 import { getLocalDb, inTransaction } from "../../../server/local-db";
 import { applyMistakeResult, rebuildMistakeMasteryForTrack } from "../../../server/mistake-mastery";
 
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
         loadFailed,
         artistAnswer,
         titleAnswer,
-        artistPoint: loadFailed ? 0 : Number(isAccepted(artistAnswer, track.artistAliases)),
+        artistPoint: loadFailed ? 0 : Number(isArtistAccepted(artistAnswer, track.artistAliases, track.artistForm)),
         titlePoint: loadFailed ? 0 : Number(isAccepted(titleAnswer, track.titleAliases)),
       };
     });

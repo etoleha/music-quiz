@@ -30,4 +30,5 @@ for (const [artist, form] of [
 }
 
 assert.match(extra, /extraTrack\("Q6a_mLhifqc", "Quest Pistols Show", "Санта Лючия"/, "нужен основной клип, а не dance remix");
+assert.match(extra, /extraTrack\("mdRaS5mZkjk", "L'ONE feat\. Варвара Визбор", "Якутяночка"/, "featured-исполнитель не должен повторяться в названии песни");
 console.log("quiz semantic tests passed");

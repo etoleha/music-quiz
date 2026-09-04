@@ -137,7 +137,11 @@ const attachExternalIds = (entry, ids = {}) => {
   }
 };
 
-const findEntry = ({ artist, title }, ids = {}, { allowManualArtist = false } = {}) => {
+const titleWithoutFeaturedCredit = (value) => fingerprint(
+  String(value || "").replace(/\s+(?:feat\.?|ft\.?)\s+.+$/iu, ""),
+);
+
+const findEntry = ({ artist, title, titleAliases = [] }, ids = {}, { allowManualArtist = false } = {}) => {
   const idMatches = new Set();
   for (const [namespace, values] of Object.entries(ids)) {
     for (const value of unique(Array.isArray(values) ? values : [values])) {
@@ -146,8 +150,10 @@ const findEntry = ({ artist, title }, ids = {}, { allowManualArtist = false } = 
     }
   }
   if (idMatches.size === 1) return [...idMatches][0];
-  const normalized = normalizeObservation({ artist, title }, aliasIndex);
-  return (titleIndex.get(normalized.titleKey) || []).find((entry) => {
+  const candidateTitles = unique([title, ...titleAliases]);
+  const observations = candidateTitles.map((candidateTitle) =>
+    normalizeObservation({ artist, title: candidateTitle }, aliasIndex));
+  const artistMatches = (entry, normalized) => {
     if (artistsOverlap(entry.normalizedArtist, normalized.artist)) return true;
     if (!allowManualArtist) return false;
     const manual = overrides.songs?.[entry.id]
@@ -157,7 +163,22 @@ const findEntry = ({ artist, title }, ids = {}, { allowManualArtist = false } = 
       primary: identity.artistIds[0],
       participants: identity.artistIds,
     }, normalized.artist) : false;
-  }) || null;
+  };
+  for (const normalized of observations) {
+    const match = (titleIndex.get(normalized.titleKey) || []).find((entry) => artistMatches(entry, normalized));
+    if (match) return match;
+  }
+  if (allowManualArtist) {
+    for (let index = 0; index < observations.length; index += 1) {
+      const baseTitle = titleWithoutFeaturedCredit(candidateTitles[index]);
+      if (!baseTitle) continue;
+      const match = entries.find((entry) =>
+        entry.titleAliases.some((alias) => titleWithoutFeaturedCredit(alias) === baseTitle)
+        && artistMatches(entry, observations[index]));
+      if (match) return match;
+    }
+  }
+  return null;
 };
 
 const newEntry = ({ id, artist, title, artistAliases = [], titleAliases = [], externalIds = {}, explicit = false }) => {
@@ -247,6 +268,12 @@ for (const track of readQuizTracks()) {
     entry = newEntry({ id: `quiz-${digest}`, artist: track.artist, title: track.title, externalIds: ids });
   }
   addAliases(entry, [track.artist, ...track.artistAliases], [track.title, ...track.titleAliases]);
+  const repeatedFeaturedCredit = String(entry.title).match(/\s+(?:feat\.?|ft\.?)\s+(.+)$/iu)?.[1];
+  if (repeatedFeaturedCredit
+    && titleWithoutFeaturedCredit(entry.title) === titleWithoutFeaturedCredit(track.title)
+    && fingerprint(track.artist).includes(fingerprint(repeatedFeaturedCredit))) {
+    entry.title = track.title;
+  }
   attachExternalIds(entry, ids);
   entry.publishedArtistCredits = unique([...(entry.publishedArtistCredits || []), track.artist]);
   entry.quizRefs.push({ quizId: track.quizId, youtubeId: track.youtubeId });
