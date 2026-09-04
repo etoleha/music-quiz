@@ -1,7 +1,7 @@
 import { extraQuizzes } from "./quiz-data-extra";
 
-export type SingleArtistForm = "Исполнитель" | "Исполнительница" | "Группа";
-type LowerArtistForm = "исполнитель" | "исполнительница" | "группа";
+export type SingleArtistForm = "Исполнитель" | "Исполнительница" | "Группа" | "Проект";
+type LowerArtistForm = "исполнитель" | "исполнительница" | "группа" | "проект";
 export type ArtistForm = SingleArtistForm
   | "Дуэт"
   | "Исполнители"

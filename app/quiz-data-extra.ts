@@ -1,6 +1,36 @@
 import type { Quiz, Track } from "./quiz-data";
 
 const performerForms: Partial<Record<string, Track["artistForm"]>> = {
+  "ВИА «Самоцветы»": "Группа",
+  "Валерий Ободзинский": "Исполнитель",
+  "Яак Йоала": "Исполнитель",
+  "Запрещенные барабанщики": "Группа",
+  "Алёна Свиридова": "Исполнительница",
+  "НеИгрушки": "Группа",
+  "Алексей Глызин": "Исполнитель",
+  "Олег Газманов": "Исполнитель",
+  "Евгения Отрадная": "Исполнительница",
+  "Тимати": "Исполнитель",
+  "Игорь Николаев": "Исполнитель",
+  "Чай Вдвоем": "Группа",
+  "Триада": "Группа",
+  "Руслан Набиев": "Исполнитель",
+  "Мика Ньютон": "Исполнительница",
+  "Бутырка": "Группа",
+  "Катя Чехова": "Проект",
+  "Джанго": "Проект",
+  "Юрий Титов": "Исполнитель",
+  "Тараканы!": "Группа",
+  "Элджей & FEDUK": "Исполнитель + исполнитель",
+  "ПОШЛАЯ МОЛЛИ": "Группа",
+  "Джарахов": "Исполнитель",
+  "FACE": "Исполнитель",
+  "30.02": "Группа",
+  "Kristina Si": "Исполнительница",
+  "TamerlanAlena": "Исполнитель + исполнительница",
+  "Милана Хаметова & Milana Star": "Исполнительница + исполнительница",
+  "INSTASAMKA": "Исполнительница",
+  "Chris Yank": "Исполнитель",
   "Бьянка feat. Серёга": "Исполнительница + исполнитель",
   "Quest Pistols Show": "Группа",
   "ESTRADARADA": "Группа",
@@ -143,6 +173,20 @@ const performerForms: Partial<Record<string, Track["artistForm"]>> = {
 };
 
 const manualArtistAliases: Record<string, string[]> = {
+  "ВИА «Самоцветы»": ["ВИА Самоцветы", "Самоцветы"],
+  "Запрещенные барабанщики": ["Запрещённые барабанщики"],
+  "Чай Вдвоем": ["Чай вдвоём"],
+  "Катя Чехова": ["Katya Chekhova"],
+  "Джанго": ["Django"],
+  "Элджей & FEDUK": ["Элджей и Федук", "Allj и Feduk"],
+  "ПОШЛАЯ МОЛЛИ": ["Пошлая Молли", "Poshlaya Molly"],
+  "FACE": ["Фейс"],
+  "30.02": ["30 02", "Тридцать ноль два"],
+  "Kristina Si": ["Кристина Си"],
+  "TamerlanAlena": ["Tamerlan Alena", "Тамерлан и Алёна"],
+  "Милана Хаметова & Milana Star": ["Милана Хаметова и Милана Стар"],
+  "INSTASAMKA": ["Инстасамка"],
+  "Chris Yank": ["Крис Янк"],
   "Demo": ["ДЕМО"],
   "MONATIK": ["Монатик"],
   "Oxxxymiron": ["Оксимирон"],
@@ -195,7 +239,7 @@ const atomicArtistNames = new Set([
   "Король и Шут",
 ]);
 
-const extraTrack = (youtubeId: string, artist: string, title: string, start: number, duration = 15): Track => {
+const extraTrack = (youtubeId: string, artist: string, title: string, start: number, duration = 15, releaseYear?: number): Track => {
   const atomicArtist = atomicArtistNames.has(artist);
   const collaboration = !atomicArtist && /(?:\bfeat\.?\b|\bft\.?\b|\s[иx&]\s|,)/i.test(artist);
   const parts = atomicArtist ? [artist] : artist.split(/\s+(?:feat\.?|ft\.?|и|x|&)\s+|,\s*/i);
@@ -211,10 +255,49 @@ const extraTrack = (youtubeId: string, artist: string, title: string, start: num
     titleAliases: unique([title, ...(manualTitleAliases[`${artist}—${title}`] ?? [])]),
     start,
     duration,
+    releaseYear,
   };
 };
 
 export const extraQuizzes: Quiz[] = [
+  {
+    id: "hard-16",
+    title: "Квиз XVI",
+    level: "экспертный",
+    published: "4 сентября 2026",
+    tracks: [
+      extraTrack("tf_2ytc9CW0", "ВИА «Самоцветы»", "Мой адрес — Советский Союз", 33, 11, 1972),
+      extraTrack("R9RWKriFiC4", "Валерий Ободзинский", "Эти глаза напротив", 40, 7, 1970),
+      extraTrack("HivfQbISY_Y", "Яак Йоала", "Подберу музыку", 52, 15, 1979),
+      extraTrack("9j4HJp-AsOo", "Запрещенные барабанщики", "Убили негра", 35, 11, 1999),
+      extraTrack("2s2fOZI4h6Q", "Алёна Свиридова", "Ой!", 48, 7, 1999),
+      extraTrack("mqgJ0BDHBCY", "НеИгрушки", "100 дней до приказа", 40, 11, 1999),
+      extraTrack("8ibkl-4biGI", "Алексей Глызин", "Поздний вечер в Сорренто", 50, 15, 1999),
+      extraTrack("lKf4ic5eScQ", "Олег Газманов", "На Заре", 51, 15, 1999),
+      extraTrack("sajZP8ACfRE", "Евгения Отрадная", "Уходи и дверь закрой", 37, 7, 2007),
+      extraTrack("0I8UzeIJ_SY", "Тимати", "Не сходи с ума", 35, 11, 2007),
+      extraTrack("cZvQU4gBnvc", "Игорь Николаев", "Прости и отпусти", 51, 15, 2002),
+      extraTrack("hXPq1YS7Myc", "Чай Вдвоем", "Прости", 52, 11, 2006),
+      extraTrack("oUUa2_QL9cc", "Триада", "Нежный Омут", 33, 11, 2007),
+      extraTrack("v-RNpBDCHtE", "Руслан Набиев", "По Ресторанам", 36, 15, 2007),
+      extraTrack("XY_nJm_02Lk", "Мика Ньютон", "Белые лошади", 31, 7, 2007),
+      extraTrack("jD7-9MgV3NI", "Бутырка", "Запахло весной", 39, 11, 2002),
+      extraTrack("fmoz1ru3Y1k", "Катя Чехова", "Я робот", 44, 11, 2005),
+      extraTrack("J-ONXIVg48Q", "Джанго", "Холодная весна", 35, 7, 2005),
+      extraTrack("sV_ZdWA4m-I", "Юрий Титов", "Понарошку", 44, 15, 2004),
+      extraTrack("2nmzotKMfJA", "Тараканы!", "Я смотрю на них", 46, 7, 2002),
+      extraTrack("wOBnq0Ewz5k", "Элджей & FEDUK", "Розовое вино", 33, 7, 2017),
+      extraTrack("QkNnWHIjHOM", "ПОШЛАЯ МОЛЛИ", "НОН СТОП", 43, 11, 2017),
+      extraTrack("uSFVmj_iorw", "Джарахов", "ПЬЁМ", 42, 15, 2018),
+      extraTrack("Jr-Zr25Qmqk", "FACE", "МОЙ КАЛАШНИКОВ", 27, 11, 2019),
+      extraTrack("7z6sMxIZ0t0", "30.02", "Звезды в Лужах", 31, 7, 2013),
+      extraTrack("8lL0HIh9KOk", "Kristina Si", "Хочу", 40, 11, 2016),
+      extraTrack("w7IUtf1Y9NE", "TamerlanAlena", "Потоки ветра", 45, 15, 2016),
+      extraTrack("Gg6UKGgvQNI", "Милана Хаметова & Milana Star", "ЛП", 26, 7, 2022),
+      extraTrack("rX1H3nd_LnI", "INSTASAMKA", "Волосы назад", 29, 15, 2022),
+      extraTrack("vYnisdEaPYU", "Chris Yank", "Холодно", 31, 11, 2022),
+    ],
+  },
   {
     id: "hard-15",
     title: "Квиз XV",
