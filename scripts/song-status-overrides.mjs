@@ -1,3 +1,5 @@
+import { fingerprint } from "./chart-normalization.mjs";
+
 const YOUTUBE_ID_PATTERN = /^[A-Za-z0-9_-]{11}$/;
 
 const objectOrNull = (value) => value !== null && typeof value === "object" && !Array.isArray(value);
@@ -23,11 +25,66 @@ export const externalIdsFromStatusOverride = (override = {}, label = "song overr
   return youtube.length ? { youtube: [...new Set(youtube)] } : {};
 };
 
+export const artistIdentityFromStatusOverride = (override = {}, label = "song override") => {
+  if (!objectOrNull(override)) throw new Error(`${label} must be an object`);
+  const hasArtistCredit = override.artistCredit !== undefined;
+  const hasArtistIds = override.artistIds !== undefined;
+  if (!hasArtistCredit && !hasArtistIds) return null;
+  if (hasArtistCredit !== hasArtistIds) {
+    throw new Error(`${label}.artistCredit and ${label}.artistIds must be specified together`);
+  }
+
+  if (typeof override.artistCredit !== "string" || !override.artistCredit.trim()) {
+    throw new Error(`${label}.artistCredit must be a non-empty string`);
+  }
+  if (!Array.isArray(override.artistIds) || override.artistIds.length === 0) {
+    throw new Error(`${label}.artistIds must be a non-empty array of normalized artist IDs`);
+  }
+
+  const normalizedIds = override.artistIds.map((artistId) => {
+    if (typeof artistId !== "string" || !artistId.trim()) {
+      throw new Error(`${label}.artistIds must contain non-empty strings`);
+    }
+    const normalized = fingerprint(artistId);
+    if (!normalized || artistId !== normalized) {
+      throw new Error(`${label}.artistIds contains non-normalized artist ID: ${JSON.stringify(artistId)}`);
+    }
+    return normalized;
+  });
+  if (new Set(normalizedIds).size !== normalizedIds.length) {
+    throw new Error(`${label}.artistIds must contain unique normalized artist IDs`);
+  }
+
+  return {
+    artistCredit: override.artistCredit.trim(),
+    artistIds: normalizedIds,
+  };
+};
+
+export const applyArtistCreditOverride = (entry, identityOverride) => {
+  if (!identityOverride) return entry;
+  const sourceArtistCredit = entry.artist;
+  entry.sourceArtistCredit = sourceArtistCredit;
+  entry.artist = identityOverride.artistCredit;
+  entry.artistAliases = [...new Set([
+    ...(entry.artistAliases || []),
+    sourceArtistCredit,
+    identityOverride.artistCredit,
+  ].filter(Boolean).map(String))].sort((left, right) => left.localeCompare(right, "ru"));
+  entry.normalizedArtist = {
+    primary: identityOverride.artistIds[0],
+    participants: [...identityOverride.artistIds],
+  };
+  return entry;
+};
+
 export const validateSongStatusOverrides = (document) => {
   if (!objectOrNull(document)) throw new Error("song-status-overrides.json must contain an object");
   if (!objectOrNull(document.songs)) throw new Error("song-status-overrides.json.songs must contain an object");
   for (const [key, override] of Object.entries(document.songs)) {
-    externalIdsFromStatusOverride(override, `song-status-overrides.json.songs[${JSON.stringify(key)}]`);
+    const label = `song-status-overrides.json.songs[${JSON.stringify(key)}]`;
+    externalIdsFromStatusOverride(override, label);
+    artistIdentityFromStatusOverride(override, label);
   }
 };
 

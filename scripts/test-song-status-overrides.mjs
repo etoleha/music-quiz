@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import {
+  applyArtistCreditOverride,
+  artistIdentityFromStatusOverride,
   externalIdsFromStatusOverride,
   publicationBlockersFor,
   validateSongStatusOverrides,
@@ -17,6 +19,44 @@ const document = {
 
 assert.doesNotThrow(() => validateSongStatusOverrides(document));
 assert.deepEqual(externalIdsFromStatusOverride(document.songs["artist:title"]), { youtube: [youtubeId] });
+
+const identityOverride = {
+  artistCredit: "  Miyagi & Эндшпиль feat. Рем Дигга  ",
+  artistIds: ["miyagi", "endshpil", "remdigga"],
+};
+assert.deepEqual(artistIdentityFromStatusOverride(identityOverride), {
+  artistCredit: "Miyagi & Эндшпиль feat. Рем Дигга",
+  artistIds: ["miyagi", "endshpil", "remdigga"],
+});
+assert.equal(artistIdentityFromStatusOverride({}), null);
+
+const entryWithIncompleteCredit = {
+  artist: "Miyagi & Эндшпиль",
+  artistAliases: ["Miyagi & Эндшпиль", "Мияги и Эндшпиль"],
+  normalizedArtist: { primary: "miyagi", participants: ["miyagi", "endshpil"] },
+};
+applyArtistCreditOverride(entryWithIncompleteCredit, artistIdentityFromStatusOverride(identityOverride));
+assert.equal(entryWithIncompleteCredit.artist, "Miyagi & Эндшпиль feat. Рем Дигга");
+assert.equal(entryWithIncompleteCredit.sourceArtistCredit, "Miyagi & Эндшпиль");
+assert.ok(entryWithIncompleteCredit.artistAliases.includes("Miyagi & Эндшпиль"));
+assert.ok(entryWithIncompleteCredit.artistAliases.includes("Miyagi & Эндшпиль feat. Рем Дигга"));
+assert.deepEqual(entryWithIncompleteCredit.normalizedArtist, {
+  primary: "miyagi",
+  participants: ["miyagi", "endshpil", "remdigga"],
+});
+
+for (const [override, expected] of [
+  [{ artistCredit: "Artist feat. Guest" }, /must be specified together/],
+  [{ artistIds: ["artist", "guest"] }, /must be specified together/],
+  [{ artistCredit: "   ", artistIds: ["artist"] }, /non-empty string/],
+  [{ artistCredit: "Artist", artistIds: [] }, /non-empty array/],
+  [{ artistCredit: "Artist", artistIds: ["artist", ""] }, /non-empty strings/],
+  [{ artistCredit: "Artist", artistIds: ["Artist"] }, /non-normalized artist ID/],
+  [{ artistCredit: "Artist", artistIds: ["artist-id"] }, /non-normalized artist ID/],
+  [{ artistCredit: "Artist", artistIds: ["artist", "artist"] }, /unique normalized artist IDs/],
+]) {
+  assert.throws(() => artistIdentityFromStatusOverride(override), expected);
+}
 
 assert.throws(
   () => validateSongStatusOverrides({ version: 1, songs: { bad: { externalIds: { youtube: youtubeId } } } }),

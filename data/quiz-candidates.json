@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T10:47:50.700Z",
+  "generatedAt": "2026-09-04T11:28:48.969Z",
   "policy": {
     "version": 1,
     "uniqueArtistsThroughQuiz": 30,
@@ -13,8 +13,8 @@
   },
   "stats": {
     "totalSongs": 11290,
-    "readyForCuration": 3606,
-    "uniqueArtistCandidates": 2006,
+    "readyForCuration": 3604,
+    "uniqueArtistCandidates": 2004,
     "selectedWithoutArtistRepeats": 500,
     "reservedArtistEntities": 548,
     "readyForPublication": 0
@@ -52,10 +52,9 @@
         ]
       },
       "blockers": [
-        "fragment-review",
-        "enrichment-review"
+        "fragment-review"
       ],
-      "publicationProgress": 0.75
+      "publicationProgress": 0.875
     },
     {
       "rank": 2,
@@ -79,7 +78,7 @@
           "6767217103"
         ],
         "youtube": [
-          "feGgQxcNYZ0"
+          "qhTqZgfdxvc"
         ]
       },
       "blockers": [
@@ -118,10 +117,9 @@
         ]
       },
       "blockers": [
-        "fragment-review",
-        "enrichment-review"
+        "fragment-review"
       ],
-      "publicationProgress": 0.75
+      "publicationProgress": 0.875
     },
     {
       "rank": 4,
@@ -155,36 +153,6 @@
     },
     {
       "rank": 5,
-      "id": "chart-09011",
-      "artist": "Фара Ночи",
-      "title": "Богиня моря",
-      "artistIds": [
-        "faranochi"
-      ],
-      "candidateScore": 234.56,
-      "language": "russian",
-      "releaseYear": 2026,
-      "candidateYears": [],
-      "sourceIds": [
-        "apple-music-ru",
-        "shazam-ru",
-        "youtube-ru-weekly"
-      ],
-      "externalIds": {
-        "apple-music-ru": [
-          "6776332549"
-        ],
-        "youtube": [
-          "ngmOMZQZz0s"
-        ]
-      },
-      "blockers": [
-        "fragment-review"
-      ],
-      "publicationProgress": 0.875
-    },
-    {
-      "rank": 6,
       "id": "chart-08979",
       "artist": "Марго Нуар, Александра Чистякова & Лилия Вайн",
       "title": "Возраст - это просто пин-код",
@@ -216,14 +184,14 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 7,
+      "rank": 6,
       "id": "chart-08945",
-      "artist": "Ваня Дмитриенко, Мальбэк & Сюзанна",
+      "artist": "Ваня Дмитриенко, МАЛЬБЭК & Сюзанна",
       "title": "Отражение",
       "artistIds": [
+        "vanyadmitrienko",
         "malbek",
-        "syuzanna",
-        "vanyadmitrienko"
+        "syuzanna"
       ],
       "candidateScore": 182.56,
       "language": "russian",
@@ -247,7 +215,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 8,
+      "rank": 7,
       "id": "chart-08953",
       "artist": "HOLLYFLAME",
       "title": "Тону",
@@ -276,16 +244,16 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 9,
+      "rank": 8,
       "id": "chart-08969",
-      "artist": "ЕВА ВЛАСОВА",
+      "artist": "Ева Власова",
       "title": "Вчера (Cover)",
       "artistIds": [
         "evavlasova"
       ],
       "candidateScore": 176.2,
       "language": "russian",
-      "releaseYear": 2003,
+      "releaseYear": 2002,
       "candidateYears": [],
       "sourceIds": [
         "apple-music-ru",
@@ -305,7 +273,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 10,
+      "rank": 9,
       "id": "chart-08978",
       "artist": "Akmal'",
       "title": "Любовная",
@@ -323,16 +291,18 @@
       "externalIds": {
         "apple-music-ru": [
           "6787881444"
+        ],
+        "youtube": [
+          "OHHFCVd5uLk"
         ]
       },
       "blockers": [
-        "youtube-video",
         "fragment-review"
       ],
-      "publicationProgress": 0.75
+      "publicationProgress": 0.875
     },
     {
-      "rank": 11,
+      "rank": 10,
       "id": "chart-08960",
       "artist": "By Индия",
       "title": "спектакль",
@@ -361,7 +331,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 12,
+      "rank": 11,
       "id": "chart-08985",
       "artist": "Jakone & Kiliana",
       "title": "Жиганская",
@@ -391,7 +361,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 13,
+      "rank": 12,
       "id": "chart-00633",
       "artist": "PIZZA",
       "title": "Улыбка",
@@ -420,7 +390,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 14,
+      "rank": 13,
       "id": "chart-08989",
       "artist": "Police in Paris & Ida Galich",
       "title": "БИЗИ",
@@ -450,7 +420,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 15,
+      "rank": 14,
       "id": "chart-03565",
       "artist": "RSAC",
       "title": "NBA (Rompasso Remix)",
@@ -487,7 +457,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 16,
+      "rank": 15,
       "id": "chart-08941",
       "artist": "Михаил Шуфутинский",
       "title": "3-е сентября",
@@ -507,7 +477,7 @@
           "1641738007"
         ],
         "youtube": [
-          "Kv-tbdVOuOA"
+          "ypLYo6F4vDE"
         ]
       },
       "blockers": [
@@ -516,36 +486,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 17,
-      "id": "chart-08983",
-      "artist": "СДП",
-      "title": "Сыпь, гармоника! (First Take Master)",
-      "artistIds": [
-        "sdp"
-      ],
-      "candidateScore": 143.66,
-      "language": "russian",
-      "releaseYear": 2025,
-      "candidateYears": [],
-      "sourceIds": [
-        "apple-music-ru",
-        "shazam-ru"
-      ],
-      "externalIds": {
-        "apple-music-ru": [
-          "1878101401"
-        ],
-        "youtube": [
-          "xS2Bk3Qaez8"
-        ]
-      },
-      "blockers": [
-        "fragment-review"
-      ],
-      "publicationProgress": 0.875
-    },
-    {
-      "rank": 18,
+      "rank": 16,
       "id": "chart-08991",
       "artist": "Женя Трофимов",
       "title": "Самолеты",
@@ -574,9 +515,9 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 19,
+      "rank": 17,
       "id": "chart-03135",
-      "artist": "Элджей & Feduk",
+      "artist": "Элджей & FEDUK",
       "title": "Розовое вино",
       "artistIds": [
         "eldzhei",
@@ -600,13 +541,12 @@
         ]
       },
       "blockers": [
-        "fragment-review",
-        "enrichment-review"
+        "fragment-review"
       ],
-      "publicationProgress": 0.75
+      "publicationProgress": 0.875
     },
     {
-      "rank": 20,
+      "rank": 18,
       "id": "chart-00050",
       "artist": "ПОРНОФИЛЬМЫ",
       "title": "Я так соскучился",
@@ -634,13 +574,12 @@
         ]
       },
       "blockers": [
-        "fragment-review",
-        "enrichment-review"
+        "fragment-review"
       ],
-      "publicationProgress": 0.75
+      "publicationProgress": 0.875
     },
     {
-      "rank": 21,
+      "rank": 19,
       "id": "chart-00083",
       "artist": "Big Baby Tape",
       "title": "Gimme The Loot",
@@ -668,7 +607,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 22,
+      "rank": 20,
       "id": "chart-03369",
       "artist": "T-killah ft. Настя Кочеткова",
       "title": "Над землей",
@@ -693,7 +632,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 23,
+      "rank": 21,
       "id": "chart-07163",
       "artist": "Maruv",
       "title": "Focus On Me",
@@ -729,7 +668,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 24,
+      "rank": 22,
       "id": "chart-03367",
       "artist": "Мияги",
       "title": "In Love",
@@ -753,7 +692,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 25,
+      "rank": 23,
       "id": "chart-08976",
       "artist": "XOLIDAYBOY",
       "title": "Пожары",
@@ -787,7 +726,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 26,
+      "rank": 24,
       "id": "chart-03967",
       "artist": "Smash!!",
       "title": "Obsession",
@@ -823,7 +762,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 27,
+      "rank": 25,
       "id": "chart-00136",
       "artist": "FACE",
       "title": "СПАСАТЕЛЬНЫЙ КРУГ",
@@ -856,7 +795,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 28,
+      "rank": 26,
       "id": "chart-00069",
       "artist": "GONE.Fludd",
       "title": "Проснулся В Темноте",
@@ -884,7 +823,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 29,
+      "rank": 27,
       "id": "chart-09036",
       "artist": "DJ SMASH",
       "title": "Между небом и землёй",
@@ -908,7 +847,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 30,
+      "rank": 28,
       "id": "chart-00216",
       "artist": "ATL",
       "title": "Танцуйте",
@@ -941,7 +880,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 31,
+      "rank": 29,
       "id": "chart-00178",
       "artist": "Lizer",
       "title": "Между Нами",
@@ -974,7 +913,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 32,
+      "rank": 30,
       "id": "chart-03534",
       "artist": "DJ Antoine vs Timati ft. Kalenna",
       "title": "Welcome to St Tropez",
@@ -999,7 +938,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 33,
+      "rank": 31,
       "id": "chart-03360",
       "artist": "Вика Дайнеко",
       "title": "Фильм Не О Любви",
@@ -1023,7 +962,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 34,
+      "rank": 32,
       "id": "chart-04479",
       "artist": "Mr. Credo",
       "title": "Медляк",
@@ -1059,7 +998,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 35,
+      "rank": 33,
       "id": "chart-00003",
       "artist": "kizaru",
       "title": "Dezhavyu",
@@ -1087,7 +1026,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 36,
+      "rank": 34,
       "id": "chart-00005",
       "artist": "SLAVA MARLOW",
       "title": "Снова я напиваюсь",
@@ -1120,7 +1059,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 37,
+      "rank": 35,
       "id": "chart-03583",
       "artist": "Влад Соколовский",
       "title": "Ближе",
@@ -1149,7 +1088,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 38,
+      "rank": 36,
       "id": "chart-01218",
       "artist": "Little Big",
       "title": "Hypnodancer",
@@ -1189,7 +1128,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 39,
+      "rank": 37,
       "id": "chart-00031",
       "artist": "Mnogoznaal",
       "title": "Колхозник",
@@ -1222,7 +1161,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 40,
+      "rank": 38,
       "id": "chart-00040",
       "artist": "pyrokinesis",
       "title": "Днями-ночами",
@@ -1250,7 +1189,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 41,
+      "rank": 39,
       "id": "chart-00053",
       "artist": "ROCKET",
       "title": "Инкассатор",
@@ -1283,7 +1222,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 42,
+      "rank": 40,
       "id": "chart-00064",
       "artist": "ssshhhiiittt!",
       "title": "Танцы",
@@ -1316,7 +1255,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 43,
+      "rank": 41,
       "id": "chart-00080",
       "artist": "MACAN",
       "title": "Кино",
@@ -1349,7 +1288,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 44,
+      "rank": 42,
       "id": "chart-00102",
       "artist": "Poshlaya Molly",
       "title": "Нон стоп",
@@ -1377,7 +1316,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 45,
+      "rank": 43,
       "id": "chart-00028",
       "artist": "MORGENSHTERN",
       "title": "Cadillac",
@@ -1405,7 +1344,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 46,
+      "rank": 44,
       "id": "chart-00016",
       "artist": "fem.love",
       "title": "Фотографирую закат",
@@ -1438,7 +1377,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 47,
+      "rank": 45,
       "id": "chart-07066",
       "artist": "Gazirovka",
       "title": "Black",
@@ -1474,7 +1413,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 48,
+      "rank": 46,
       "id": "chart-00025",
       "artist": "SEEMEE",
       "title": "Голодный пёс [prod. by Pretty Scream]",
@@ -1502,7 +1441,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 49,
+      "rank": 47,
       "id": "chart-00058",
       "artist": "кис-кис",
       "title": "молчи",
@@ -1530,7 +1469,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 50,
+      "rank": 48,
       "id": "chart-00084",
       "artist": "Три дня дождя",
       "title": "Демоны",
@@ -1563,7 +1502,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 51,
+      "rank": 49,
       "id": "chart-00030",
       "artist": "10AGE",
       "title": "Нету интереса",
@@ -1596,7 +1535,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 52,
+      "rank": 50,
       "id": "chart-00042",
       "artist": "ANIKV",
       "title": "Меня не будет",
@@ -1624,7 +1563,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 53,
+      "rank": 51,
       "id": "chart-00024",
       "artist": "DEAD BLONDE",
       "title": "Мальчик на девятке",
@@ -1657,7 +1596,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 54,
+      "rank": 52,
       "id": "chart-00022",
       "artist": "Dzharakhov",
       "title": "Я в моменте",
@@ -1685,7 +1624,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 55,
+      "rank": 53,
       "id": "chart-06228",
       "artist": "Тимур Родригез",
       "title": "#Heroes",
@@ -1721,7 +1660,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 56,
+      "rank": 54,
       "id": "chart-00015",
       "artist": "WENARO",
       "title": "Лёд",
@@ -1749,7 +1688,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 57,
+      "rank": 55,
       "id": "chart-00139",
       "artist": "Папин Олимпос",
       "title": "Тёмно-оранжевый закат",
@@ -1782,7 +1721,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 58,
+      "rank": 56,
       "id": "chart-00124",
       "artist": "Дайте танк (!)",
       "title": "Люди",
@@ -1810,7 +1749,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 59,
+      "rank": 57,
       "id": "chart-00092",
       "artist": "CMH",
       "title": "СТИКЕР",
@@ -1838,7 +1777,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 60,
+      "rank": 58,
       "id": "chart-00769",
       "artist": "Джизус",
       "title": "Девочка в классе",
@@ -1871,7 +1810,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 61,
+      "rank": 59,
       "id": "chart-00061",
       "artist": "Rakhim",
       "title": "Fendi",
@@ -1904,7 +1843,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 62,
+      "rank": 60,
       "id": "chart-04366",
       "artist": "Игра Слов",
       "title": "Алина Кабаева",
@@ -1940,7 +1879,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 63,
+      "rank": 61,
       "id": "chart-00044",
       "artist": "INSTASAMKA",
       "title": "LIPSI HA",
@@ -1973,7 +1912,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 64,
+      "rank": 62,
       "id": "chart-00158",
       "artist": "PHARAOH",
       "title": "Не по пути",
@@ -2006,7 +1945,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 65,
+      "rank": 63,
       "id": "chart-00112",
       "artist": "Max Korzh",
       "title": "2 типа людей",
@@ -2034,7 +1973,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 66,
+      "rank": 64,
       "id": "chart-00707",
       "artist": "The Limba",
       "title": "СМУЗИ",
@@ -2067,7 +2006,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 67,
+      "rank": 65,
       "id": "chart-00087",
       "artist": "SODA LUV",
       "title": "Бигасс",
@@ -2095,7 +2034,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 68,
+      "rank": 66,
       "id": "chart-00206",
       "artist": "Платина",
       "title": "Бандана",
@@ -2123,7 +2062,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 69,
+      "rank": 67,
       "id": "chart-00059",
       "artist": "BRANYA",
       "title": "Пополам",
@@ -2151,7 +2090,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 70,
+      "rank": 68,
       "id": "chart-00100",
       "artist": "ooes",
       "title": "зима",
@@ -2184,7 +2123,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 71,
+      "rank": 69,
       "id": "chart-00199",
       "artist": "Peremotka",
       "title": "Как тебя покорить",
@@ -2212,7 +2151,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 72,
+      "rank": 70,
       "id": "chart-06049",
       "artist": "A-Dessa",
       "title": "Fire",
@@ -2248,7 +2187,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 73,
+      "rank": 71,
       "id": "chart-00099",
       "artist": "LOVV66",
       "title": "Трап Трап",
@@ -2281,7 +2220,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 74,
+      "rank": 72,
       "id": "chart-00204",
       "artist": "УННВ",
       "title": "Без даты",
@@ -2309,7 +2248,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 75,
+      "rank": 73,
       "id": "chart-00162",
       "artist": "104",
       "title": "НЕ ЖАЛЬ",
@@ -2337,7 +2276,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 76,
+      "rank": 74,
       "id": "chart-00111",
       "artist": "THRILL PILL",
       "title": "Миллионы",
@@ -2365,7 +2304,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 77,
+      "rank": 75,
       "id": "chart-00071",
       "artist": "uniqe",
       "title": "ТОЛПЫ КРИЧАТ",
@@ -2393,7 +2332,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 78,
+      "rank": 76,
       "id": "chart-00173",
       "artist": "MAYOT",
       "title": "Ауди [prod. by Sqweezey]",
@@ -2421,7 +2360,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 79,
+      "rank": 77,
       "id": "chart-00151",
       "artist": "Konfuz",
       "title": "Кайф ты поймала",
@@ -2454,7 +2393,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 80,
+      "rank": 78,
       "id": "chart-00187",
       "artist": "Markul",
       "title": "Серпантин",
@@ -2487,7 +2426,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 81,
+      "rank": 79,
       "id": "chart-00079",
       "artist": "rizza",
       "title": "плачь",
@@ -2515,7 +2454,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 82,
+      "rank": 80,
       "id": "chart-00138",
       "artist": "HENSY",
       "title": "Поболело и прошло",
@@ -2548,7 +2487,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 83,
+      "rank": 81,
       "id": "chart-00141",
       "artist": "OG Buda",
       "title": "Старшие",
@@ -2576,7 +2515,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 84,
+      "rank": 82,
       "id": "chart-00152",
       "artist": "Канги",
       "title": "Эйя",
@@ -2609,7 +2548,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 85,
+      "rank": 83,
       "id": "chart-00120",
       "artist": "GUMA",
       "title": "Стеклянная",
@@ -2642,7 +2581,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 86,
+      "rank": 84,
       "id": "chart-00057",
       "artist": "Geegun",
       "title": "На чиле",
@@ -2670,7 +2609,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 87,
+      "rank": 85,
       "id": "chart-00094",
       "artist": "Mumiy Troll",
       "title": "Башня",
@@ -2698,7 +2637,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 88,
+      "rank": 86,
       "id": "chart-00235",
       "artist": "Ghostface Playa",
       "title": "KILLKA",
@@ -2726,7 +2665,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 89,
+      "rank": 87,
       "id": "chart-00258",
       "artist": "нексюша",
       "title": "На твиче",
@@ -2759,7 +2698,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 90,
+      "rank": 88,
       "id": "chart-00140",
       "artist": "SQWOZ BAB",
       "title": "АУФ",
@@ -2787,7 +2726,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 91,
+      "rank": 89,
       "id": "chart-00268",
       "artist": "вышел покурить",
       "title": "кладбище",
@@ -2820,7 +2759,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 92,
+      "rank": 90,
       "id": "chart-00157",
       "artist": "JAMIK",
       "title": "Франция",
@@ -2848,7 +2787,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 93,
+      "rank": 91,
       "id": "chart-00240",
       "artist": "LIL MORTY",
       "title": "Я пиздатый",
@@ -2881,7 +2820,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 94,
+      "rank": 92,
       "id": "chart-00163",
       "artist": "Alyona Shvets",
       "title": "первое свидание",
@@ -2909,7 +2848,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 95,
+      "rank": 93,
       "id": "chart-00117",
       "artist": "kostromin",
       "title": "Моя голова винтом",
@@ -2937,7 +2876,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 96,
+      "rank": 94,
       "id": "chart-00168",
       "artist": "Nikitata",
       "title": "ТАЙМАУТ",
@@ -2965,7 +2904,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 97,
+      "rank": 95,
       "id": "chart-00282",
       "artist": "SALUKI",
       "title": "Стресс",
@@ -2993,7 +2932,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 98,
+      "rank": 96,
       "id": "chart-07158",
       "artist": "CYGO",
       "title": "Panda E",
@@ -3029,7 +2968,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 99,
+      "rank": 97,
       "id": "chart-00123",
       "artist": "remember.",
       "title": "Кожура",
@@ -3057,7 +2996,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 100,
+      "rank": 98,
       "id": "chart-00188",
       "artist": "АДЛИН",
       "title": "No Love",
@@ -3090,7 +3029,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 101,
+      "rank": 99,
       "id": "chart-00217",
       "artist": "Anet Sai",
       "title": "СЛЁЗЫ - OST \"Пацанки\"",
@@ -3118,7 +3057,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 102,
+      "rank": 100,
       "id": "chart-00984",
       "artist": "Chris Yank",
       "title": "Холодно",
@@ -3151,7 +3090,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 103,
+      "rank": 101,
       "id": "chart-00271",
       "artist": "uglystephan",
       "title": "Снова обогнал их",
@@ -3184,7 +3123,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 104,
+      "rank": 102,
       "id": "chart-00214",
       "artist": "Rauf & Faik",
       "title": "Если тебе будет грустно",
@@ -3213,7 +3152,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 105,
+      "rank": 103,
       "id": "chart-01015",
       "artist": "RaiM",
       "title": "Двигаться",
@@ -3241,7 +3180,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 106,
+      "rank": 104,
       "id": "chart-07195",
       "artist": "Zvonkiy",
       "title": "Voices",
@@ -3277,7 +3216,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 107,
+      "rank": 105,
       "id": "chart-09007",
       "artist": "Бонд с кнопкой",
       "title": "Кухни",
@@ -3306,7 +3245,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 108,
+      "rank": 106,
       "id": "chart-00354",
       "artist": "ELMAN",
       "title": "Балкон",
@@ -3334,7 +3273,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 109,
+      "rank": 107,
       "id": "chart-00289",
       "artist": "Султан Лагучев",
       "title": "Горький вкус",
@@ -3362,7 +3301,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 110,
+      "rank": 108,
       "id": "chart-00095",
       "artist": "КОСМОНАВТОВ НЕТ",
       "title": "баночка с окурками",
@@ -3395,7 +3334,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 111,
+      "rank": 109,
       "id": "chart-00167",
       "artist": "Kambulat",
       "title": "Привет",
@@ -3423,7 +3362,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 112,
+      "rank": 110,
       "id": "chart-00272",
       "artist": "LILDRUGHILL",
       "title": "Терминал",
@@ -3456,7 +3395,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 113,
+      "rank": 111,
       "id": "chart-00213",
       "artist": "LIL KRYSTALLL",
       "title": "Шенген",
@@ -3489,7 +3428,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 114,
+      "rank": 112,
       "id": "chart-00259",
       "artist": "KENTUKKI",
       "title": "Замигает свет",
@@ -3517,7 +3456,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 115,
+      "rank": 113,
       "id": "chart-00331",
       "artist": "просто Лера",
       "title": "Лютики",
@@ -3545,7 +3484,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 116,
+      "rank": 114,
       "id": "chart-00318",
       "artist": "Sqwore",
       "title": "Холодное оружие",
@@ -3573,7 +3512,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 117,
+      "rank": 115,
       "id": "chart-00277",
       "artist": "Galibri & Mavik",
       "title": "Федерико Феллини",
@@ -3607,7 +3546,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 118,
+      "rank": 116,
       "id": "chart-00220",
       "artist": "Lusia Chebotina",
       "title": "СОЛНЦЕ МОНАКО",
@@ -3635,7 +3574,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 119,
+      "rank": 117,
       "id": "chart-00679",
       "artist": "Nekoglai",
       "title": "Cumback",
@@ -3663,7 +3602,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 120,
+      "rank": 118,
       "id": "chart-00275",
       "artist": "Husky",
       "title": "Никогда-нибудь",
@@ -3691,7 +3630,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 121,
+      "rank": 119,
       "id": "chart-00228",
       "artist": "DSPRITE",
       "title": "Погоди",
@@ -3719,7 +3658,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 122,
+      "rank": 120,
       "id": "chart-00261",
       "artist": "Bula",
       "title": "Тлеет",
@@ -3747,7 +3686,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 123,
+      "rank": 121,
       "id": "chart-00280",
       "artist": "TINI LIN",
       "title": "Последний танец",
@@ -3775,7 +3714,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 124,
+      "rank": 122,
       "id": "chart-00408",
       "artist": "Timran",
       "title": "Не пускайте танцевать",
@@ -3803,7 +3742,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 125,
+      "rank": 123,
       "id": "chart-00861",
       "artist": "IC3PEAK",
       "title": "Смерти Больше Нет",
@@ -3831,7 +3770,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 126,
+      "rank": 124,
       "id": "chart-00392",
       "artist": "Flëur",
       "title": "Формалин",
@@ -3859,7 +3798,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 127,
+      "rank": 125,
       "id": "chart-00283",
       "artist": "JojoHF",
       "title": "Губы",
@@ -3887,7 +3826,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 128,
+      "rank": 126,
       "id": "chart-00380",
       "artist": "NЮ",
       "title": "Никто",
@@ -3915,7 +3854,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 129,
+      "rank": 127,
       "id": "chart-00322",
       "artist": "Pretty Scream",
       "title": "Ты",
@@ -3943,7 +3882,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 130,
+      "rank": 128,
       "id": "chart-00389",
       "artist": "Кишлак",
       "title": "Я уёбываю в джаз",
@@ -3976,7 +3915,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 131,
+      "rank": 129,
       "id": "chart-00309",
       "artist": "quiizzzmeow",
       "title": "cети",
@@ -4004,7 +3943,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 132,
+      "rank": 130,
       "id": "chart-00375",
       "artist": "Scally Milano",
       "title": "Буква Х",
@@ -4032,7 +3971,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 133,
+      "rank": 131,
       "id": "chart-05186",
       "artist": "Stas Piekha",
       "title": "On The Palm Of My Hand",
@@ -4068,7 +4007,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 134,
+      "rank": 132,
       "id": "chart-00614",
       "artist": "Где Фантом?",
       "title": "Я тебя люблю",
@@ -4101,7 +4040,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 135,
+      "rank": 133,
       "id": "chart-00386",
       "artist": "Даня Милохин",
       "title": "Дико тусим",
@@ -4129,7 +4068,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 136,
+      "rank": 134,
       "id": "chart-00594",
       "artist": "maslo chernogo tmina",
       "title": "что для тебя красота",
@@ -4157,7 +4096,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 137,
+      "rank": 135,
       "id": "chart-00579",
       "artist": "JILLZAY",
       "title": "Бар \"2 лесбухи\"",
@@ -4185,7 +4124,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 138,
+      "rank": 136,
       "id": "chart-00451",
       "artist": "КУЧЕР",
       "title": "По щекам слёзы",
@@ -4213,7 +4152,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 139,
+      "rank": 137,
       "id": "chart-00585",
       "artist": "Mother Mother",
       "title": "Hayloft",
@@ -4241,7 +4180,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 140,
+      "rank": 138,
       "id": "chart-00367",
       "artist": "3TERNITY",
       "title": "ФИТИЛЬ",
@@ -4269,7 +4208,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 141,
+      "rank": 139,
       "id": "chart-00379",
       "artist": "G4OUR",
       "title": "Растет",
@@ -4297,7 +4236,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 142,
+      "rank": 140,
       "id": "chart-00400",
       "artist": "CAPTOWN",
       "title": "Разная дрянь",
@@ -4325,7 +4264,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 143,
+      "rank": 141,
       "id": "chart-00556",
       "artist": "Dzharo & Khanza",
       "title": "Таблетка",
@@ -4354,7 +4293,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 144,
+      "rank": 142,
       "id": "chart-00393",
       "artist": "GSPD",
       "title": "У России три пути",
@@ -4382,7 +4321,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 145,
+      "rank": 143,
       "id": "chart-00486",
       "artist": "Natan",
       "title": "Ананасовый сироп",
@@ -4410,7 +4349,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 146,
+      "rank": 144,
       "id": "chart-00500",
       "artist": "Soda",
       "title": "Pullin Up",
@@ -4438,7 +4377,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 147,
+      "rank": 145,
       "id": "chart-07369",
       "artist": "Mari Kraymbrery",
       "title": "I Feel So Good",
@@ -4474,7 +4413,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 148,
+      "rank": 146,
       "id": "chart-00542",
       "artist": "Xcho",
       "title": "Вороны",
@@ -4502,7 +4441,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 149,
+      "rank": 147,
       "id": "chart-05111",
       "artist": "Moral`niy Kodeks",
       "title": "Where Are You?",
@@ -4538,7 +4477,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 150,
+      "rank": 148,
       "id": "chart-00416",
       "artist": "Lely45",
       "title": "Восемь",
@@ -4566,7 +4505,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 151,
+      "rank": 149,
       "id": "chart-00399",
       "artist": "ЛЯЛЬКА",
       "title": "Трахаца",
@@ -4594,7 +4533,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 152,
+      "rank": 150,
       "id": "chart-07278",
       "artist": "Artur Pirojkov",
       "title": "Hooked",
@@ -4627,7 +4566,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 153,
+      "rank": 151,
       "id": "chart-07350",
       "artist": "Filatov & Karas vs. Burito",
       "title": "Take My Heart",
@@ -4664,7 +4603,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 154,
+      "rank": 152,
       "id": "chart-05233",
       "artist": "Vintaj",
       "title": "The Loneliness Of Love",
@@ -4700,7 +4639,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 155,
+      "rank": 153,
       "id": "chart-00464",
       "artist": "Какая Разница",
       "title": "Рассвет",
@@ -4733,7 +4672,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 156,
+      "rank": 154,
       "id": "chart-00288",
       "artist": "Шайни",
       "title": "Yeyo!",
@@ -4766,7 +4705,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 157,
+      "rank": 155,
       "id": "chart-00362",
       "artist": "Boulevard Depo",
       "title": "В.О.Л.К.",
@@ -4794,7 +4733,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 158,
+      "rank": 156,
       "id": "chart-00371",
       "artist": "YUNG TRAPPA",
       "title": "Розовое Вино 2",
@@ -4822,7 +4761,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 159,
+      "rank": 157,
       "id": "chart-00584",
       "artist": "хочуспать",
       "title": "спать с тобой",
@@ -4850,7 +4789,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 160,
+      "rank": 158,
       "id": "chart-00483",
       "artist": "zhanulka",
       "title": "кискис",
@@ -4878,7 +4817,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 161,
+      "rank": 159,
       "id": "chart-00385",
       "artist": "Антон Токарев",
       "title": "Седьмой лепесток",
@@ -4911,7 +4850,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 162,
+      "rank": 160,
       "id": "chart-00503",
       "artist": "Arthur Pirozhkov",
       "title": "Хочешь",
@@ -4939,7 +4878,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 163,
+      "rank": 161,
       "id": "chart-00387",
       "artist": "BUSHIDO ZHO",
       "title": "макинтош бизнес онли",
@@ -4972,7 +4911,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 164,
+      "rank": 162,
       "id": "chart-00448",
       "artist": "ALEKS ATAMAN",
       "title": "Диалоги тет-а-тет",
@@ -5000,7 +4939,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 165,
+      "rank": 163,
       "id": "chart-00758",
       "artist": "polnalyubvi",
       "title": "Кометы",
@@ -5033,7 +4972,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 166,
+      "rank": 164,
       "id": "chart-07317",
       "artist": "Valeriy Meladze",
       "title": "What Do You Want From Me?",
@@ -5069,7 +5008,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 167,
+      "rank": 165,
       "id": "chart-05257",
       "artist": "Timati & Mario Winans",
       "title": "Forever (Russian Edit)",
@@ -5106,7 +5045,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 168,
+      "rank": 166,
       "id": "chart-00508",
       "artist": "PLOHOYPAREN",
       "title": "Таблетка",
@@ -5139,7 +5078,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 169,
+      "rank": 167,
       "id": "chart-00510",
       "artist": "Truwer",
       "title": "Весь в отца",
@@ -5167,7 +5106,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 170,
+      "rank": 168,
       "id": "chart-05121",
       "artist": "Valeriy Syutkin",
       "title": "The Shuttle",
@@ -5203,7 +5142,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 171,
+      "rank": 169,
       "id": "chart-00793",
       "artist": "Molchat Doma",
       "title": "Судно (Борис Рижий)",
@@ -5231,7 +5170,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 172,
+      "rank": 170,
       "id": "chart-07321",
       "artist": "Gradusi",
       "title": "Don't Go Away",
@@ -5264,7 +5203,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 173,
+      "rank": 171,
       "id": "chart-00794",
       "artist": "Gruppa Skryptonite",
       "title": "3x3",
@@ -5292,7 +5231,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 174,
+      "rank": 172,
       "id": "chart-00466",
       "artist": "LXNER",
       "title": "Крышу сносит",
@@ -5320,7 +5259,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 175,
+      "rank": 173,
       "id": "chart-00555",
       "artist": "NLO",
       "title": "Не грусти",
@@ -5348,7 +5287,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 176,
+      "rank": 174,
       "id": "chart-00415",
       "artist": "163ONMYNECK",
       "title": "ЖМУРКИ",
@@ -5381,7 +5320,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 177,
+      "rank": 175,
       "id": "chart-00622",
       "artist": "Минин",
       "title": "Зелёный глаз",
@@ -5409,7 +5348,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 178,
+      "rank": 176,
       "id": "chart-00549",
       "artist": "FrozenGangBeatz",
       "title": "Запятые",
@@ -5437,7 +5376,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 179,
+      "rank": 177,
       "id": "chart-00539",
       "artist": "DK",
       "title": "Всё в порядке",
@@ -5470,7 +5409,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 180,
+      "rank": 178,
       "id": "chart-07343",
       "artist": "Nikolay Baskov",
       "title": "Heart On Heart",
@@ -5503,7 +5442,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 181,
+      "rank": 179,
       "id": "chart-00548",
       "artist": "BALKON",
       "title": "Ведьмы",
@@ -5536,7 +5475,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 182,
+      "rank": 180,
       "id": "chart-05993",
       "artist": "Tacabro",
       "title": "Tacatа",
@@ -5572,7 +5511,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 183,
+      "rank": 181,
       "id": "chart-05245",
       "artist": "Tancy Minus",
       "title": "It's",
@@ -5608,7 +5547,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 184,
+      "rank": 182,
       "id": "chart-00601",
       "artist": "Мэйби Бэйби",
       "title": "Ахегао",
@@ -5641,7 +5580,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 185,
+      "rank": 183,
       "id": "chart-00729",
       "artist": "Dose",
       "title": "Солнце Золотое",
@@ -5669,7 +5608,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 186,
+      "rank": 184,
       "id": "chart-00570",
       "artist": "Mekhman",
       "title": "Копия пиратская",
@@ -5697,7 +5636,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 187,
+      "rank": 185,
       "id": "chart-00829",
       "artist": "конец солнечных дней",
       "title": "дети немой страны",
@@ -5730,7 +5669,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 188,
+      "rank": 186,
       "id": "chart-07304",
       "artist": "Denis Maydanov",
       "title": "Doomed To Love",
@@ -5766,7 +5705,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 189,
+      "rank": 187,
       "id": "chart-05269",
       "artist": "Dmitriy Malikov",
       "title": "Mine, Mine",
@@ -5799,7 +5738,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 190,
+      "rank": 188,
       "id": "chart-00693",
       "artist": "СЕРЕГА ПИРАТ",
       "title": "Тп на аме",
@@ -5832,7 +5771,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 191,
+      "rank": 189,
       "id": "chart-00676",
       "artist": "BODIEV",
       "title": "Крузак 200",
@@ -5860,7 +5799,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 192,
+      "rank": 190,
       "id": "chart-00644",
       "artist": "Electroforez",
       "title": "Я ничего не могу с собою сделать",
@@ -5888,7 +5827,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 193,
+      "rank": 191,
       "id": "chart-00784",
       "artist": "Slattcrank",
       "title": "Семь семь [prod. by Mabemoda, Rallex]",
@@ -5916,7 +5855,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 194,
+      "rank": 192,
       "id": "chart-00552",
       "artist": "ЕГОР ШИП",
       "title": "Dior",
@@ -5949,7 +5888,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 195,
+      "rank": 193,
       "id": "chart-00889",
       "artist": "ФОГЕЛЬ",
       "title": "МАЛЬЧИК",
@@ -5977,7 +5916,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 196,
+      "rank": 194,
       "id": "chart-00892",
       "artist": "JEEMBO",
       "title": "FALLEN",
@@ -6005,7 +5944,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 197,
+      "rank": 195,
       "id": "chart-07347",
       "artist": "Allj & Era Istrefi",
       "title": "Sayonara Baby",
@@ -6042,7 +5981,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 198,
+      "rank": 196,
       "id": "chart-07322",
       "artist": "Emin",
       "title": "Tender",
@@ -6078,7 +6017,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 199,
+      "rank": 197,
       "id": "chart-00492",
       "artist": "VisaGangBeatz",
       "title": "БИЗНЕС",
@@ -6106,7 +6045,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 200,
+      "rank": 198,
       "id": "chart-00827",
       "artist": "Palina",
       "title": "Месяц",
@@ -6139,7 +6078,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 201,
+      "rank": 199,
       "id": "chart-05085",
       "artist": "Kristina Orbakayte",
       "title": "The Sun",
@@ -6175,7 +6114,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 202,
+      "rank": 200,
       "id": "chart-00636",
       "artist": "MONEYKEN",
       "title": "Она не любит вино",
@@ -6203,7 +6142,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 203,
+      "rank": 201,
       "id": "chart-05246",
       "artist": "Anna Sedokova",
       "title": "Getting Used To It",
@@ -6239,7 +6178,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 204,
+      "rank": 202,
       "id": "chart-00859",
       "artist": "Абрикоса",
       "title": "Влюбилась в друга",
@@ -6267,7 +6206,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 205,
+      "rank": 203,
       "id": "chart-00715",
       "artist": "Lesha Svik",
       "title": "Плакала",
@@ -6295,7 +6234,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 206,
+      "rank": 204,
       "id": "chart-00617",
       "artist": "Yanix",
       "title": "Стейк",
@@ -6323,7 +6262,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 207,
+      "rank": 205,
       "id": "chart-00692",
       "artist": "Daybe",
       "title": "Антикобыла (prod. by SHEEPY)",
@@ -6351,7 +6290,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 208,
+      "rank": 206,
       "id": "chart-03736",
       "artist": "Elvis Presley vs. Paul Oakenfold",
       "title": "Rubberneckin' (Рaul Oakenfold remix)",
@@ -6387,7 +6326,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 209,
+      "rank": 207,
       "id": "chart-00963",
       "artist": "METAN",
       "title": "Шнурки",
@@ -6415,7 +6354,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 210,
+      "rank": 208,
       "id": "chart-05232",
       "artist": "Roma Kenga",
       "title": "Where There's Love",
@@ -6451,7 +6390,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 211,
+      "rank": 209,
       "id": "chart-00761",
       "artist": "Krovostok",
       "title": "Амфибия",
@@ -6479,7 +6418,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 212,
+      "rank": 210,
       "id": "chart-08990",
       "artist": "MONA",
       "title": "Иордан",
@@ -6512,7 +6451,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 213,
+      "rank": 211,
       "id": "chart-07353",
       "artist": "Elena Temnikova",
       "title": "Heat",
@@ -6548,7 +6487,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 214,
+      "rank": 212,
       "id": "chart-00688",
       "artist": "Loqiemean",
       "title": "Одинокий каннибал",
@@ -6581,7 +6520,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 215,
+      "rank": 213,
       "id": "chart-00767",
       "artist": "My",
       "title": "Пожар",
@@ -6609,7 +6548,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 216,
+      "rank": 214,
       "id": "chart-05082",
       "artist": "Taisiya Povali",
       "title": "Ex",
@@ -6645,7 +6584,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 217,
+      "rank": 215,
       "id": "chart-00917",
       "artist": ".",
       "title": "Я тебе не верю",
@@ -6673,7 +6612,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 218,
+      "rank": 216,
       "id": "chart-00742",
       "artist": "Jakomo",
       "title": "Платина",
@@ -6701,7 +6640,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 219,
+      "rank": 217,
       "id": "chart-00918",
       "artist": "kirkiimad",
       "title": "ЛЕГО",
@@ -6729,7 +6668,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 220,
+      "rank": 218,
       "id": "chart-05275",
       "artist": "Jasmin",
       "title": "Eyelash",
@@ -6765,7 +6704,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 221,
+      "rank": 219,
       "id": "chart-00706",
       "artist": "Колос",
       "title": "Бібліотека",
@@ -6793,7 +6732,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 222,
+      "rank": 220,
       "id": "chart-00959",
       "artist": "Andrey Gubin",
       "title": "Ночь",
@@ -6821,7 +6760,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 223,
+      "rank": 221,
       "id": "chart-00814",
       "artist": "We",
       "title": "Зеркало",
@@ -6849,7 +6788,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 224,
+      "rank": 222,
       "id": "chart-07309",
       "artist": "Katya Rostovtseva",
       "title": "Brutalnyi Muzhchina",
@@ -6882,7 +6821,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 225,
+      "rank": 223,
       "id": "chart-00804",
       "artist": "Lida",
       "title": "Евробит",
@@ -6910,7 +6849,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 226,
+      "rank": 224,
       "id": "pool-ea032f55105c",
       "artist": "Стас Михайлов и Таисия Повалий",
       "title": "Отпусти",
@@ -6938,7 +6877,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 227,
+      "rank": 225,
       "id": "chart-00973",
       "artist": "SCIRENA",
       "title": "Конспект",
@@ -6966,7 +6905,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 228,
+      "rank": 226,
       "id": "chart-03995",
       "artist": "Thomas N'evergreen & Polina Griffith",
       "title": "Just Another Love Song (DJ Грув Remix)",
@@ -7003,7 +6942,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 229,
+      "rank": 227,
       "id": "chart-00995",
       "artist": "ZOLOTO",
       "title": "Грустно на афтепати",
@@ -7031,7 +6970,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 230,
+      "rank": 228,
       "id": "chart-07333",
       "artist": "Molly",
       "title": "Call My Number",
@@ -7067,7 +7006,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 231,
+      "rank": 229,
       "id": "chart-01045",
       "artist": "Kush Lovers",
       "title": "20К",
@@ -7095,7 +7034,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 232,
+      "rank": 230,
       "id": "chart-01179",
       "artist": "V $ X V PRiNCE",
       "title": "На лету",
@@ -7124,7 +7063,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 233,
+      "rank": 231,
       "id": "chart-00754",
       "artist": "Eldzhey",
       "title": "Чупа Чупс",
@@ -7152,7 +7091,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 234,
+      "rank": 232,
       "id": "chart-00316",
       "artist": "ZAPOMNI",
       "title": "Я всё решу (Intro)",
@@ -7180,7 +7119,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 235,
+      "rank": 233,
       "id": "chart-00967",
       "artist": "Mav-d",
       "title": "Темнота",
@@ -7208,7 +7147,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 236,
+      "rank": 234,
       "id": "chart-01037",
       "artist": "BOOKER",
       "title": "Некуда бежать",
@@ -7236,7 +7175,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 237,
+      "rank": 235,
       "id": "chart-01150",
       "artist": "Yamadzhi",
       "title": "Минимум",
@@ -7264,7 +7203,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 238,
+      "rank": 236,
       "id": "chart-08998",
       "artist": "Татьяна Куртукова",
       "title": "Матушка",
@@ -7297,7 +7236,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 239,
+      "rank": 237,
       "id": "chart-01041",
       "artist": "ANAZED",
       "title": "И я",
@@ -7330,7 +7269,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 240,
+      "rank": 238,
       "id": "chart-01148",
       "artist": "DAVA",
       "title": "ОБНУЛИЛА НАС",
@@ -7358,7 +7297,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 241,
+      "rank": 239,
       "id": "chart-01376",
       "artist": "Misha Marvin",
       "title": "Французский поцелуй",
@@ -7386,7 +7325,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 242,
+      "rank": 240,
       "id": "chart-00911",
       "artist": "Rodionis",
       "title": "Цыгане из Парижа",
@@ -7414,7 +7353,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 243,
+      "rank": 241,
       "id": "chart-07338",
       "artist": "Не указан",
       "title": "Gomf",
@@ -7450,7 +7389,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 244,
+      "rank": 242,
       "id": "chart-01028",
       "artist": "TVETH",
       "title": "Тринити",
@@ -7478,7 +7417,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 245,
+      "rank": 243,
       "id": "chart-01163",
       "artist": "whyalive",
       "title": "Код",
@@ -7506,7 +7445,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 246,
+      "rank": 244,
       "id": "chart-00981",
       "artist": "17 SEVENTEEN",
       "title": "Спать",
@@ -7534,7 +7473,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 247,
+      "rank": 245,
       "id": "chart-00946",
       "artist": "Ильич да Софья",
       "title": "Ой да на рейве",
@@ -7562,7 +7501,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 248,
+      "rank": 246,
       "id": "chart-01225",
       "artist": "PALC",
       "title": "Тараканы",
@@ -7595,7 +7534,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 249,
+      "rank": 247,
       "id": "chart-01277",
       "artist": "Colorit",
       "title": "Быстро",
@@ -7623,7 +7562,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 250,
+      "rank": 248,
       "id": "chart-00964",
       "artist": "DOROFEEVA",
       "title": "Невеста",
@@ -7651,7 +7590,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 251,
+      "rank": 249,
       "id": "chart-01018",
       "artist": "LAUD",
       "title": "Пули",
@@ -7679,7 +7618,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 252,
+      "rank": 250,
       "id": "chart-01079",
       "artist": "Александр Гудков",
       "title": "Аквадискотека",
@@ -7707,7 +7646,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 253,
+      "rank": 251,
       "id": "chart-01077",
       "artist": "Anacondaz",
       "title": "Метафизика",
@@ -7735,7 +7674,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 254,
+      "rank": 252,
       "id": "chart-01048",
       "artist": "Basic Boy",
       "title": "Удачи",
@@ -7763,7 +7702,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 255,
+      "rank": 253,
       "id": "chart-01147",
       "artist": "лиззка",
       "title": "Аквадискотека",
@@ -7796,7 +7735,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 256,
+      "rank": 254,
       "id": "chart-01231",
       "artist": "ДЕТИ RAVE",
       "title": "Икры и Сала",
@@ -7824,7 +7763,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 257,
+      "rank": 255,
       "id": "chart-01557",
       "artist": "Kara Kross",
       "title": "Поколение",
@@ -7852,7 +7791,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 258,
+      "rank": 256,
       "id": "chart-01643",
       "artist": "LILCAK3",
       "title": "КАТЮХА",
@@ -7880,7 +7819,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 259,
+      "rank": 257,
       "id": "chart-00924",
       "artist": "SHOOVAL",
       "title": "Мы открываем бизнес (Skit)",
@@ -7913,7 +7852,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 260,
+      "rank": 258,
       "id": "chart-01259",
       "artist": "Руслан Утюг",
       "title": "Никогда",
@@ -7946,7 +7885,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 261,
+      "rank": 259,
       "id": "chart-01080",
       "artist": "M'Dee",
       "title": "Петербург",
@@ -7974,7 +7913,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 262,
+      "rank": 260,
       "id": "chart-01184",
       "artist": "Magnum Opus",
       "title": "Новенький",
@@ -8002,7 +7941,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 263,
+      "rank": 261,
       "id": "chart-01227",
       "artist": "MAX",
       "title": "Blueberry Eyes",
@@ -8030,7 +7969,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 264,
+      "rank": 262,
       "id": "chart-01659",
       "artist": "Автостопом по фазе сна",
       "title": "Опианариум",
@@ -8058,7 +7997,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 265,
+      "rank": 263,
       "id": "chart-01654",
       "artist": "забей, лерочка",
       "title": "каждый, кто делал тебе больно",
@@ -8087,7 +8026,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 266,
+      "rank": 264,
       "id": "chart-01260",
       "artist": "Murovei",
       "title": "Пробегал мимо",
@@ -8115,7 +8054,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 267,
+      "rank": 265,
       "id": "chart-01349",
       "artist": "Сны Саламандры",
       "title": "Экзорцизм",
@@ -8143,7 +8082,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 268,
+      "rank": 266,
       "id": "chart-01379",
       "artist": "Thomas Mraz",
       "title": "Мой вайб",
@@ -8171,7 +8110,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 269,
+      "rank": 267,
       "id": "chart-01202",
       "artist": "VELIAL SQUAD",
       "title": "Глубина (prod. by Young Royce & Meep)",
@@ -8199,7 +8138,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 270,
+      "rank": 268,
       "id": "chart-01254",
       "artist": "Vitya AK",
       "title": "Не раз убивало",
@@ -8227,7 +8166,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 271,
+      "rank": 269,
       "id": "chart-05252",
       "artist": "Anita Tsoy",
       "title": "Lip Scotch",
@@ -8263,7 +8202,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 272,
+      "rank": 270,
       "id": "chart-00788",
       "artist": "Adecvat_production",
       "title": "За цвет голубых очей (Remix)",
@@ -8291,7 +8230,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 273,
+      "rank": 271,
       "id": "chart-01233",
       "artist": "рудбой",
       "title": "Сказка о потерянном времени",
@@ -8319,7 +8258,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 274,
+      "rank": 272,
       "id": "chart-01709",
       "artist": "Серебряная свадьба",
       "title": "Я жизнь люблю...",
@@ -8347,7 +8286,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 275,
+      "rank": 273,
       "id": "chart-01300",
       "artist": "I61",
       "title": "Выходные",
@@ -8375,7 +8314,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 276,
+      "rank": 274,
       "id": "chart-01208",
       "artist": "INDABLACK",
       "title": "Туда-обратно",
@@ -8403,7 +8342,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 277,
+      "rank": 275,
       "id": "chart-01251",
       "artist": "Midix",
       "title": "Слышу как ты дышишь",
@@ -8431,7 +8370,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 278,
+      "rank": 276,
       "id": "chart-01088",
       "artist": "Verka Serduchka",
       "title": "Новогодняя",
@@ -8459,7 +8398,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 279,
+      "rank": 277,
       "id": "chart-04960",
       "artist": "Boombox",
       "title": "To The Janitors",
@@ -8495,7 +8434,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 280,
+      "rank": 278,
       "id": "chart-01502",
       "artist": "Куок",
       "title": "Воздух",
@@ -8523,7 +8462,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 281,
+      "rank": 279,
       "id": "chart-01911",
       "artist": "Egor Nats",
       "title": "Хочу к тебе",
@@ -8551,7 +8490,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 282,
+      "rank": 280,
       "id": "chart-01364",
       "artist": "KURT92",
       "title": "В Потолок",
@@ -8579,7 +8518,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 283,
+      "rank": 281,
       "id": "chart-01562",
       "artist": "OWEEK",
       "title": "Танцуй",
@@ -8607,7 +8546,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 284,
+      "rank": 282,
       "id": "pool-128d46828794",
       "artist": "ВИА Сливки",
       "title": "Куда уходит детство",
@@ -8629,7 +8568,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 285,
+      "rank": 283,
       "id": "pool-c50b6c954054",
       "artist": "Рок-Группа",
       "title": "Попса",
@@ -8651,7 +8590,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 286,
+      "rank": 284,
       "id": "pool-b430ec0f850f",
       "artist": "Евгения Отрадная",
       "title": "Уходи и дверь закрой",
@@ -8673,7 +8612,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 287,
+      "rank": 285,
       "id": "pool-57b96f3cae19",
       "artist": "Милана Хаметова & Milana Star",
       "title": "ЛП",
@@ -8696,7 +8635,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 288,
+      "rank": 286,
       "id": "pool-d23abda574e0",
       "artist": "Разные Люди",
       "title": "Никогда не вернусь",
@@ -8718,7 +8657,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 289,
+      "rank": 287,
       "id": "pool-6c235e43bba1",
       "artist": "Сати Казанова feat. Arsenium",
       "title": "До рассвета",
@@ -8741,7 +8680,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 290,
+      "rank": 288,
       "id": "pool-c8afe7ecc01e",
       "artist": "30.02",
       "title": "Звезды в Лужах",
@@ -8763,7 +8702,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 291,
+      "rank": 289,
       "id": "pool-0ccf3a1ecab4",
       "artist": "Мика Ньютон",
       "title": "Белые лошади",
@@ -8785,7 +8724,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 292,
+      "rank": 290,
       "id": "pool-80819227ce68",
       "artist": "DJ Бойко",
       "title": "Трава",
@@ -8807,7 +8746,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 293,
+      "rank": 291,
       "id": "pool-ad2056f5fd90",
       "artist": "BIFFGUYZ ft. Bovie & Rox",
       "title": "Я тебя Бум Бум Бум",
@@ -8831,7 +8770,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 294,
+      "rank": 292,
       "id": "pool-adde30e629a2",
       "artist": "Джанго",
       "title": "Холодная весна",
@@ -8853,7 +8792,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 295,
+      "rank": 293,
       "id": "pool-299c52be3df7",
       "artist": "Мэвл",
       "title": "Холодок",
@@ -8875,7 +8814,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 296,
+      "rank": 294,
       "id": "pool-ecd187364300",
       "artist": "Эльбрус Джанмирзоев и Alexandros Tsopozidis",
       "title": "БРОДЯГА",
@@ -8898,7 +8837,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 297,
+      "rank": 295,
       "id": "pool-39e561fe12db",
       "artist": "Остап Парфенов & Nvkrn134",
       "title": "Ты не королева",
@@ -8921,7 +8860,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 298,
+      "rank": 296,
       "id": "pool-c0a3fd7cb1c9",
       "artist": "KAMON!!!",
       "title": "Каблы, КАМON!!!",
@@ -8943,7 +8882,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 299,
+      "rank": 297,
       "id": "pool-cddcc19ebb66",
       "artist": "Tony Igy",
       "title": "Astronomia",
@@ -8965,7 +8904,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 300,
+      "rank": 298,
       "id": "pool-590dcdf62122",
       "artist": "Алиса",
       "title": "Веретено",
@@ -8987,7 +8926,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 301,
+      "rank": 299,
       "id": "pool-e4c53c785c24",
       "artist": "Герр Антон",
       "title": "Одинокии мужчина",
@@ -9009,7 +8948,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 302,
+      "rank": 300,
       "id": "pool-a233115996bf",
       "artist": "Марина Алиева ft. Аслан Гусейнов",
       "title": "Где ты",
@@ -9032,7 +8971,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 303,
+      "rank": 301,
       "id": "pool-2c10055b4416",
       "artist": "Triplex vs Apocalyptica",
       "title": "Бой с тенью",
@@ -9054,7 +8993,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 304,
+      "rank": 302,
       "id": "pool-4b4e20150c06",
       "artist": "Влади",
       "title": "Сочиняй Мечты ft. Уля",
@@ -9076,7 +9015,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 305,
+      "rank": 303,
       "id": "pool-0ed507078e48",
       "artist": "T-Fest Х Скриптонит",
       "title": "Ламбада",
@@ -9098,7 +9037,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 306,
+      "rank": 304,
       "id": "pool-550635b54914",
       "artist": "Тараканы!",
       "title": "Я смотрю на них",
@@ -9120,7 +9059,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 307,
+      "rank": 305,
       "id": "pool-c370d77ec6c1",
       "artist": "SKY",
       "title": "Мальчик ищет маму",
@@ -9142,7 +9081,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 308,
+      "rank": 306,
       "id": "pool-3e4510c7c17d",
       "artist": "Ева Польна",
       "title": "Весь мир на ладони моей",
@@ -9164,7 +9103,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 309,
+      "rank": 307,
       "id": "pool-75f5a622f2b1",
       "artist": "Чи",
       "title": "Ли - Любовь - это яд",
@@ -9186,7 +9125,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 310,
+      "rank": 308,
       "id": "pool-9dbb1ebd7d58",
       "artist": "GRIVINA",
       "title": "Я хочу",
@@ -9208,7 +9147,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 311,
+      "rank": 309,
       "id": "pool-5a8e7e239ae5",
       "artist": "Афродита",
       "title": "Валера",
@@ -9230,7 +9169,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 312,
+      "rank": 310,
       "id": "pool-ba316a2ede8c",
       "artist": "Олег Газманов",
       "title": "Сделан в СССР",
@@ -9252,7 +9191,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 313,
+      "rank": 311,
       "id": "chart-00910",
       "artist": "Niman",
       "title": "Талия - Remix by Karma",
@@ -9280,7 +9219,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 314,
+      "rank": 312,
       "id": "pool-c0b858ea8e1b",
       "artist": "Все Включено",
       "title": "Девочка Столичная",
@@ -9302,7 +9241,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 315,
+      "rank": 313,
       "id": "pool-38b2e7bcbbd9",
       "artist": "Дыши",
       "title": "Взгляни на небо",
@@ -9324,7 +9263,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 316,
+      "rank": 314,
       "id": "pool-45a9c613e344",
       "artist": "Ивангай ft. TRINERGY",
       "title": "ХАЮХАЙ",
@@ -9347,7 +9286,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 317,
+      "rank": 315,
       "id": "pool-483af28a8c9f",
       "artist": "Нурминскии  Валим",
       "title": "Валим",
@@ -9369,7 +9308,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 318,
+      "rank": 316,
       "id": "pool-85a7aecd940c",
       "artist": "Чай Вдвоём",
       "title": "Желанная",
@@ -9391,7 +9330,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 319,
+      "rank": 317,
       "id": "pool-3051a079f421",
       "artist": "Buranovskiye Babushki",
       "title": "Party For Everybody",
@@ -9413,7 +9352,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 320,
+      "rank": 318,
       "id": "pool-09237f2a0092",
       "artist": "Михей",
       "title": "Сука Любовь",
@@ -9435,7 +9374,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 321,
+      "rank": 319,
       "id": "pool-ed03bf1ad2ff",
       "artist": "Провода",
       "title": "Про Кино",
@@ -9457,7 +9396,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 322,
+      "rank": 320,
       "id": "pool-22ac25cf322d",
       "artist": "Bad B. Альянс",
       "title": "Надежда На Завтра",
@@ -9479,7 +9418,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 323,
+      "rank": 321,
       "id": "pool-56b3ec5a8466",
       "artist": "Enjoykin",
       "title": "Котлетки с Пюрешкой",
@@ -9501,7 +9440,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 324,
+      "rank": 322,
       "id": "pool-7cc8f3f1f368",
       "artist": "Джарахов",
       "title": "POKEBALL",
@@ -9523,7 +9462,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 325,
+      "rank": 323,
       "id": "pool-23da8d66b554",
       "artist": "ЮГ",
       "title": "Ещё Один День",
@@ -9545,7 +9484,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 326,
+      "rank": 324,
       "id": "pool-56506dd23b5f",
       "artist": "Pанетки",
       "title": "Это все о ней",
@@ -9567,7 +9506,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 327,
+      "rank": 325,
       "id": "pool-cfaadd10663b",
       "artist": "63 Регион",
       "title": "Драма",
@@ -9589,7 +9528,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 328,
+      "rank": 326,
       "id": "pool-279ceabbd02f",
       "artist": "МС ХОВАНСКИЙ",
       "title": "Батя в Здании",
@@ -9611,7 +9550,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 329,
+      "rank": 327,
       "id": "chart-01727",
       "artist": "Ханза",
       "title": "Плачь и Танцуй",
@@ -9639,7 +9578,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 330,
+      "rank": 328,
       "id": "chart-01919",
       "artist": "Эндшпиль",
       "title": "Orange Sunset",
@@ -9667,7 +9606,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 331,
+      "rank": 329,
       "id": "chart-01812",
       "artist": "Dina",
       "title": "Я ищу тебя",
@@ -9695,7 +9634,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 332,
+      "rank": 330,
       "id": "chart-01679",
       "artist": "EVASHA",
       "title": "Завяжи",
@@ -9723,7 +9662,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 333,
+      "rank": 331,
       "id": "pool-55efa4c43ba2",
       "artist": "TERNOVOY",
       "title": "Домофон",
@@ -9745,7 +9684,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 334,
+      "rank": 332,
       "id": "pool-8f16ef90d62d",
       "artist": "СТОКС",
       "title": "Между Минском и Римом",
@@ -9767,7 +9706,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 335,
+      "rank": 333,
       "id": "pool-ebbc2fde7fd8",
       "artist": "Dj Piligrim",
       "title": "Да я",
@@ -9789,7 +9728,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 336,
+      "rank": 334,
       "id": "pool-981ff56bd7f1",
       "artist": "NTL",
       "title": "Когда Хоронят Молодых",
@@ -9811,7 +9750,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 337,
+      "rank": 335,
       "id": "pool-d77132b121de",
       "artist": "КОМИССАР",
       "title": "Любовь-это яд",
@@ -9833,7 +9772,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 338,
+      "rank": 336,
       "id": "pool-a7f1958afe61",
       "artist": "Триада",
       "title": "Дежавю",
@@ -9855,7 +9794,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 339,
+      "rank": 337,
       "id": "pool-a54d477fca3b",
       "artist": "TATARKA",
       "title": "АЛТЫН",
@@ -9877,7 +9816,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 340,
+      "rank": 338,
       "id": "pool-2573218f836b",
       "artist": "1.kla$",
       "title": "Почему",
@@ -9899,7 +9838,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 341,
+      "rank": 339,
       "id": "pool-05b53f36e25d",
       "artist": "Мастер ШЕFF",
       "title": "Тачки-Красотки",
@@ -9921,7 +9860,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 342,
+      "rank": 340,
       "id": "pool-afe9eb89aa94",
       "artist": "Светлана Лобода",
       "title": "За что?",
@@ -9943,7 +9882,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 343,
+      "rank": 341,
       "id": "pool-38344ad8db99",
       "artist": "Тамерлан и Алена",
       "title": "Я Буду",
@@ -9966,7 +9905,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 344,
+      "rank": 342,
       "id": "pool-5b4c29278c72",
       "artist": "KYIVSTONER",
       "title": "Лето",
@@ -9988,7 +9927,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 345,
+      "rank": 343,
       "id": "pool-a9ab47625901",
       "artist": "Александр Буйнов",
       "title": "Песня о настоящей любви",
@@ -10010,7 +9949,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 346,
+      "rank": 344,
       "id": "pool-c9eceed0a30e",
       "artist": "Алёна Свиридова",
       "title": "Ой!",
@@ -10032,7 +9971,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 347,
+      "rank": 345,
       "id": "pool-8a08e137b62d",
       "artist": "Анна Бутурлина",
       "title": "Отпусти и забудь",
@@ -10054,7 +9993,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 348,
+      "rank": 346,
       "id": "pool-4d38d56b6b7f",
       "artist": "Владимир Кузьмин",
       "title": "Сказка в моей жизни",
@@ -10076,7 +10015,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 349,
+      "rank": 347,
       "id": "pool-65e8dd1ed831",
       "artist": "Группа Градусы",
       "title": "Кто ты",
@@ -10098,7 +10037,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 350,
+      "rank": 348,
       "id": "pool-296cd4d434dd",
       "artist": "Пика",
       "title": "Патимейкер",
@@ -10120,7 +10059,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 351,
+      "rank": 349,
       "id": "pool-d6c3dd22945f",
       "artist": "Фабрика звёзд-1",
       "title": "Круто ты попал на TV",
@@ -10142,7 +10081,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 352,
+      "rank": 350,
       "id": "pool-0b3e3a5f099f",
       "artist": "Amirchik",
       "title": "Эта любовь",
@@ -10164,7 +10103,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 353,
+      "rank": 351,
       "id": "pool-1d5a031b78cf",
       "artist": "DV Street & ЛюSEA Алексеенко",
       "title": "Дороже золота",
@@ -10187,7 +10126,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 354,
+      "rank": 352,
       "id": "pool-899720f5fc2b",
       "artist": "КИТАЙ (KIT-I)",
       "title": "Выпускной",
@@ -10209,7 +10148,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 355,
+      "rank": 353,
       "id": "pool-810f853a1734",
       "artist": "ПОШЛАЯ МОЛЛИ",
       "title": "НОН СТОП",
@@ -10231,7 +10170,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 356,
+      "rank": 354,
       "id": "pool-9dbb5879802c",
       "artist": "Запрещенные барабанщики",
       "title": "Убили негра",
@@ -10253,7 +10192,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 357,
+      "rank": 355,
       "id": "pool-a8919491aabf",
       "artist": "Иванушки Int.",
       "title": "Безнадега точка ру",
@@ -10275,7 +10214,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 358,
+      "rank": 356,
       "id": "pool-27e74f81f39f",
       "artist": "Павел Воля",
       "title": "Офигенно",
@@ -10297,7 +10236,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 359,
+      "rank": 357,
       "id": "pool-ebb090399eea",
       "artist": "Бутырка",
       "title": "Запахло весной",
@@ -10319,7 +10258,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 360,
+      "rank": 358,
       "id": "pool-f68615087cd8",
       "artist": "Дана Соколова feat Скруджи",
       "title": "Индиго",
@@ -10342,7 +10281,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 361,
+      "rank": 359,
       "id": "pool-b732c830aaa1",
       "artist": "Нурминский",
       "title": "Ауфф",
@@ -10364,7 +10303,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 362,
+      "rank": 360,
       "id": "pool-bbd8b883ace1",
       "artist": "Светлана Тарабарова & Клей Угрюмого",
       "title": "Забывай",
@@ -10387,7 +10326,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 363,
+      "rank": 361,
       "id": "pool-b954c959de4f",
       "artist": "Tanir & Tyomcha",
       "title": "DA DA DA",
@@ -10410,7 +10349,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 364,
+      "rank": 362,
       "id": "pool-5e4c83ff4ba3",
       "artist": "Катя Чехова",
       "title": "Я робот",
@@ -10432,7 +10371,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 365,
+      "rank": 363,
       "id": "pool-c557e73251bb",
       "artist": "СЯВА",
       "title": "ПЕСНЯ ПРО ОДЕССУ",
@@ -10454,7 +10393,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 366,
+      "rank": 364,
       "id": "pool-6e88db06d3ee",
       "artist": "Kristina Si",
       "title": "Хочу",
@@ -10476,7 +10415,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 367,
+      "rank": 365,
       "id": "pool-4a469ebddd80",
       "artist": "Ольга Бузова",
       "title": "Мало половин",
@@ -10498,7 +10437,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 368,
+      "rank": 366,
       "id": "pool-156a117938ab",
       "artist": "LONE",
       "title": "Якутяночка ft. Варвара Визбор",
@@ -10520,7 +10459,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 369,
+      "rank": 367,
       "id": "pool-ed85e41e1e2c",
       "artist": "Игорь Николаев",
       "title": "Пять причин",
@@ -10542,7 +10481,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 370,
+      "rank": 368,
       "id": "pool-a46f999b9632",
       "artist": "Сергей Трофимов",
       "title": "Город Сочи",
@@ -10564,7 +10503,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 371,
+      "rank": 369,
       "id": "pool-55625a777269",
       "artist": "Dress Code",
       "title": "Персона VIP",
@@ -10586,7 +10525,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 372,
+      "rank": 370,
       "id": "pool-3e168c18ec80",
       "artist": "Ангина",
       "title": "Болела",
@@ -10608,7 +10547,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 373,
+      "rank": 371,
       "id": "pool-eb786cb07bc4",
       "artist": "Николай Басков",
       "title": "Тебе одной",
@@ -10630,7 +10569,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 374,
+      "rank": 372,
       "id": "pool-4531e31fb06c",
       "artist": "А.Чумаков А.Панайотов, Р.Алехно",
       "title": "Необыкновенная",
@@ -10653,7 +10592,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 375,
+      "rank": 373,
       "id": "pool-a41ef3921054",
       "artist": "Анита Цой",
       "title": "На восток",
@@ -10675,7 +10614,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 376,
+      "rank": 374,
       "id": "pool-295e7b29efe6",
       "artist": "Группа 30.02",
       "title": "ПРИМЕРОМ",
@@ -10697,7 +10636,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 377,
+      "rank": 375,
       "id": "pool-ea6576bd6e3d",
       "artist": "Верка Сердючка",
       "title": "Розовый Свитер",
@@ -10719,7 +10658,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 378,
+      "rank": 376,
       "id": "pool-e7a9f7c98ff9",
       "artist": "Ганвест",
       "title": "Никотин",
@@ -10741,7 +10680,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 379,
+      "rank": 377,
       "id": "pool-71b0e8eaefac",
       "artist": "TamerlanAlena",
       "title": "Хочу с тобой",
@@ -10763,7 +10702,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 380,
+      "rank": 378,
       "id": "chart-01232",
       "artist": "КИССКОЛД",
       "title": "Когда ты улыбаешься - Dневник Dжессики Remix",
@@ -10791,7 +10730,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 381,
+      "rank": 379,
       "id": "pool-9178abf841a5",
       "artist": "Полиграф ШарикOFF",
       "title": "Гелик Вани",
@@ -10813,7 +10752,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 382,
+      "rank": 380,
       "id": "pool-ad61ee1028c1",
       "artist": "Юрий Лоза",
       "title": "Сто часов",
@@ -10835,7 +10774,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 383,
+      "rank": 381,
       "id": "pool-f5a8a784ee05",
       "artist": "NK  НАСТЯ КАМЕНСКИХ",
       "title": "ЭТОМОЯНОЧЬ",
@@ -10857,7 +10796,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 384,
+      "rank": 382,
       "id": "pool-723612193d11",
       "artist": "Алексин",
       "title": "Страшная",
@@ -10879,7 +10818,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 385,
+      "rank": 383,
       "id": "pool-c2ff0ac802c9",
       "artist": "Настя Задорожная",
       "title": "Любовь, Нелюбовь",
@@ -10901,7 +10840,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 386,
+      "rank": 384,
       "id": "pool-d75e9a622f9e",
       "artist": "MMDance",
       "title": "Прикольная Бэтмен",
@@ -10923,7 +10862,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 387,
+      "rank": 385,
       "id": "pool-dcd1e7a1e60e",
       "artist": "Биплан",
       "title": "С добрым утром",
@@ -10945,7 +10884,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 388,
+      "rank": 386,
       "id": "pool-7b81bb14c7c4",
       "artist": "Группа ПИЦЦА",
       "title": "Романс",
@@ -10967,7 +10906,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 389,
+      "rank": 387,
       "id": "pool-18244e897bfe",
       "artist": "Сосо Павлиашвили",
       "title": "Ждет тебя грузин",
@@ -10989,7 +10928,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 390,
+      "rank": 388,
       "id": "pool-512ce0988916",
       "artist": "Юта",
       "title": "Любимый Мой",
@@ -11011,7 +10950,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 391,
+      "rank": 389,
       "id": "pool-966cabc10a5d",
       "artist": "Green Grey",
       "title": "Мазафака",
@@ -11033,7 +10972,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 392,
+      "rank": 390,
       "id": "pool-59dbf887ba96",
       "artist": "Аркадий Лайкин feat. Позитив",
       "title": "Сексуальный",
@@ -11056,7 +10995,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 393,
+      "rank": 391,
       "id": "pool-38e1aa3dd812",
       "artist": "Артем Пивоваров",
       "title": "Кислород",
@@ -11078,7 +11017,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 394,
+      "rank": 392,
       "id": "pool-e66390d092e1",
       "artist": "Варвара",
       "title": "Ближе",
@@ -11100,7 +11039,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 395,
+      "rank": 393,
       "id": "pool-e3730d4d5976",
       "artist": "НеИгрушки",
       "title": "100 дней до приказа",
@@ -11122,7 +11061,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 396,
+      "rank": 394,
       "id": "pool-b9d31579760e",
       "artist": "Супер Жорик",
       "title": "Хочу Тибя Любицца",
@@ -11144,7 +11083,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 397,
+      "rank": 395,
       "id": "pool-4d2930d02e4f",
       "artist": "EEONEGUY",
       "title": "# ДЕЛАЙПОСВОЕМУ",
@@ -11166,7 +11105,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 398,
+      "rank": 396,
       "id": "pool-98666eeb290c",
       "artist": "Анжелика Агурбаш",
       "title": "Роза на снегу",
@@ -11188,7 +11127,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 399,
+      "rank": 397,
       "id": "pool-546ad2d6e3c0",
       "artist": "Не Будите Спящих",
       "title": "Алкоголики",
@@ -11210,7 +11149,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 400,
+      "rank": 398,
       "id": "pool-9680c8984433",
       "artist": "Профессор Лебединский",
       "title": "Спят усталые игрушки",
@@ -11232,7 +11171,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 401,
+      "rank": 399,
       "id": "pool-2c18da0e3592",
       "artist": "УСПЕШНАЯ ГРУППА",
       "title": "ЦОК-ЦОК",
@@ -11254,7 +11193,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 402,
+      "rank": 400,
       "id": "pool-e04c1ff5a366",
       "artist": "Kenjebek Nurdolday",
       "title": "Шоколад",
@@ -11276,7 +11215,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 403,
+      "rank": 401,
       "id": "chart-01602",
       "artist": "Сёстры",
       "title": "Высота",
@@ -11304,7 +11243,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 404,
+      "rank": 402,
       "id": "chart-01582",
       "artist": "ANDRO",
       "title": "Подруга",
@@ -11332,7 +11271,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 405,
+      "rank": 403,
       "id": "chart-01719",
       "artist": "Gunwest",
       "title": "Ниссан Тусан",
@@ -11360,7 +11299,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 406,
+      "rank": 404,
       "id": "chart-01537",
       "artist": "Neverlove",
       "title": "Лолихантер",
@@ -11388,7 +11327,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 407,
+      "rank": 405,
       "id": "chart-02062",
       "artist": "ROSS",
       "title": "Кто такой? (prod. by Pimp My Ride)",
@@ -11416,7 +11355,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 408,
+      "rank": 406,
       "id": "pool-194c89fa8450",
       "artist": "GOODY",
       "title": "Panamera",
@@ -11438,7 +11377,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 409,
+      "rank": 407,
       "id": "pool-351f34d94dd8",
       "artist": "Ангел А и DJ Slon",
       "title": "А ты меня любишь?",
@@ -11461,7 +11400,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 410,
+      "rank": 408,
       "id": "pool-f28938000990",
       "artist": "DJ Дождик",
       "title": "Почему же",
@@ -11483,7 +11422,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 411,
+      "rank": 409,
       "id": "pool-ea4162ccf28c",
       "artist": "Олег Кензов",
       "title": "По кайфу",
@@ -11505,7 +11444,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 412,
+      "rank": 410,
       "id": "pool-10418ea1c620",
       "artist": "Асия",
       "title": "Лампочка",
@@ -11527,7 +11466,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 413,
+      "rank": 411,
       "id": "pool-1ea6ff138d17",
       "artist": "Вика Крутая",
       "title": "Убегу",
@@ -11549,7 +11488,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 414,
+      "rank": 412,
       "id": "pool-0a8ca8922264",
       "artist": "Дима Колдун",
       "title": "Дай мне силу клип",
@@ -11571,7 +11510,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 415,
+      "rank": 413,
       "id": "pool-ce296f1740f8",
       "artist": "Евгений Осин",
       "title": "Мечта",
@@ -11593,7 +11532,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 416,
+      "rank": 414,
       "id": "pool-f44b1f5387e6",
       "artist": "Сказка",
       "title": "С Днем Рождения",
@@ -11615,7 +11554,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 417,
+      "rank": 415,
       "id": "pool-5726c761e762",
       "artist": "BONSAI",
       "title": "Она",
@@ -11637,7 +11576,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 418,
+      "rank": 416,
       "id": "pool-088e91b2ebed",
       "artist": "Саша Project",
       "title": "Говорила мама",
@@ -11659,7 +11598,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 419,
+      "rank": 417,
       "id": "pool-8d70d5dfc05d",
       "artist": "Uma2rmaH",
       "title": "Ума Турман",
@@ -11681,7 +11620,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 420,
+      "rank": 418,
       "id": "pool-6ed69148d362",
       "artist": "Ксюша Ларина",
       "title": "Дотронься",
@@ -11703,7 +11642,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 421,
+      "rank": 419,
       "id": "pool-47a29ece051d",
       "artist": "Cali",
       "title": "Взять Взять",
@@ -11725,7 +11664,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 422,
+      "rank": 420,
       "id": "pool-1bfceb3c8c70",
       "artist": "Владимир Асимов",
       "title": "Тёмно красное вино",
@@ -11747,7 +11686,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 423,
+      "rank": 421,
       "id": "pool-5324ac735f79",
       "artist": "Елена Ваенга",
       "title": "Курю",
@@ -11769,7 +11708,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 424,
+      "rank": 422,
       "id": "pool-62aac58d62f6",
       "artist": "Игорь Саруханов",
       "title": "Бухта радости",
@@ -11791,7 +11730,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 425,
+      "rank": 423,
       "id": "pool-5ea8332a48af",
       "artist": "Джиган",
       "title": "Нас больше нет",
@@ -11813,7 +11752,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 426,
+      "rank": 424,
       "id": "pool-e7df4c063e8a",
       "artist": "Зануда",
       "title": "Папиросы",
@@ -11835,7 +11774,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 427,
+      "rank": 425,
       "id": "pool-d9bd397efec1",
       "artist": "Те100стерон",
       "title": "Это не женщина",
@@ -11857,7 +11796,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 428,
+      "rank": 426,
       "id": "pool-4f6827417d16",
       "artist": "Эд Шульжевский",
       "title": "Он и она",
@@ -11879,7 +11818,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 429,
+      "rank": 427,
       "id": "pool-83069f140d7c",
       "artist": "Spa-City",
       "title": "Малолетняя дочь",
@@ -11901,7 +11840,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 430,
+      "rank": 428,
       "id": "pool-e6e65131ae1c",
       "artist": "Артур Пирожков",
       "title": "Красивая Песня",
@@ -11923,7 +11862,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 431,
+      "rank": 429,
       "id": "pool-d7b3a24a19ab",
       "artist": "Ольга Орлова",
       "title": "Я буду петь",
@@ -11945,7 +11884,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 432,
+      "rank": 430,
       "id": "pool-790e011f5a24",
       "artist": "Юля Савичева",
       "title": "Как твои дела",
@@ -11967,7 +11906,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 433,
+      "rank": 431,
       "id": "pool-91ea79bc597f",
       "artist": "Герои",
       "title": "Пока мы молоды",
@@ -11989,7 +11928,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 434,
+      "rank": 432,
       "id": "pool-b5a64fe56e0c",
       "artist": "USB и Сергей Жуков",
       "title": "Скажи Зачем",
@@ -12012,7 +11951,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 435,
+      "rank": 433,
       "id": "pool-2a5dce152ed1",
       "artist": "Сценакардия",
       "title": "Самолеты",
@@ -12034,7 +11973,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 436,
+      "rank": 434,
       "id": "pool-db00dd62d388",
       "artist": "Nebezao feat. Андрей Леницкий",
       "title": "Как ты там",
@@ -12057,7 +11996,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 437,
+      "rank": 435,
       "id": "pool-c435092fb6c8",
       "artist": "А.Руссо & К. Орбакайте",
       "title": "Просто любить тебя",
@@ -12080,7 +12019,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 438,
+      "rank": 436,
       "id": "pool-e114acdd2320",
       "artist": "Бутусов",
       "title": "Настасья",
@@ -12102,7 +12041,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 439,
+      "rank": 437,
       "id": "pool-7801addae298",
       "artist": "VERBEE",
       "title": "Давай взорвем",
@@ -12124,7 +12063,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 440,
+      "rank": 438,
       "id": "pool-58953a0cd212",
       "artist": "Зомб",
       "title": "Даже не половина",
@@ -12146,7 +12085,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 441,
+      "rank": 439,
       "id": "pool-de62f62d046d",
       "artist": "Максим Галкин",
       "title": "Два пролёта",
@@ -12168,7 +12107,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 442,
+      "rank": 440,
       "id": "pool-3f048ee62cea",
       "artist": "Наташа Королева",
       "title": "Сиреневый рай",
@@ -12190,7 +12129,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 443,
+      "rank": 441,
       "id": "pool-8fb73fa97208",
       "artist": "DADO",
       "title": "Лето",
@@ -12212,7 +12151,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 444,
+      "rank": 442,
       "id": "pool-6b6090a38cb8",
       "artist": "L-Jane",
       "title": "Бабочка",
@@ -12234,7 +12173,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 445,
+      "rank": 443,
       "id": "pool-613241fd98ac",
       "artist": "Miko",
       "title": "Девочка в тренде",
@@ -12256,7 +12195,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 446,
+      "rank": 444,
       "id": "pool-e057ccd540fc",
       "artist": "Руслан Набиев",
       "title": "По Ресторанам",
@@ -12278,7 +12217,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 447,
+      "rank": 445,
       "id": "pool-4fe3def82207",
       "artist": "Zvika Brand Ft. 69 & Jah B",
       "title": "Potahat Tik",
@@ -12302,7 +12241,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 448,
+      "rank": 446,
       "id": "pool-b49d33db8189",
       "artist": "Дискотека Авария VS Жуки",
       "title": "Влечение",
@@ -12324,7 +12263,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 449,
+      "rank": 447,
       "id": "pool-e0a0bcd86110",
       "artist": "Евгений Анегин",
       "title": "Луна",
@@ -12346,7 +12285,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 450,
+      "rank": 448,
       "id": "pool-b13e57f4e412",
       "artist": "Подъём! и Карина М.",
       "title": "Кораблики",
@@ -12369,7 +12308,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 451,
+      "rank": 449,
       "id": "pool-71320779fc45",
       "artist": "Юрий Титов",
       "title": "Понарошку",
@@ -12391,7 +12330,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 452,
+      "rank": 450,
       "id": "pool-3770fbd57d6c",
       "artist": "MAKF",
       "title": "Девочка со вписки",
@@ -12413,7 +12352,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 453,
+      "rank": 451,
       "id": "pool-23130cc48663",
       "artist": "АГОНЬ",
       "title": "Опа Опа",
@@ -12435,7 +12374,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 454,
+      "rank": 452,
       "id": "pool-17e0068ea8cc",
       "artist": "Кабаре-дуэт Академия",
       "title": "Маленький",
@@ -12457,7 +12396,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 455,
+      "rank": 453,
       "id": "pool-d90971653303",
       "artist": "Легальный Бизне$$",
       "title": "Пачка Сигарет",
@@ -12479,7 +12418,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 456,
+      "rank": 454,
       "id": "pool-509efede4735",
       "artist": "Ф.Киркоров, М.Распутина",
       "title": "Роза чайная",
@@ -12502,7 +12441,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 457,
+      "rank": 455,
       "id": "pool-4203914cfee9",
       "artist": "Марина Хлебникова",
       "title": "Зима приходит сама",
@@ -12524,7 +12463,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 458,
+      "rank": 456,
       "id": "pool-a3f57521d7f1",
       "artist": "Александр Рыбак",
       "title": "Небеса Европы",
@@ -12546,7 +12485,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 459,
+      "rank": 457,
       "id": "pool-4f2d162b998f",
       "artist": "Наталия Ветлицкая",
       "title": "Половинки",
@@ -12568,7 +12507,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 460,
+      "rank": 458,
       "id": "pool-189d996239f5",
       "artist": "ТИЛЭКС x АНТОН ИЗ ФРАНЦИИ",
       "title": "ЛОВИ ХАЙП",
@@ -12591,7 +12530,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 461,
+      "rank": 459,
       "id": "pool-ec68a6279b26",
       "artist": "HammАli & Эллаи",
       "title": "Не плачь, не реви",
@@ -12614,7 +12553,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 462,
+      "rank": 460,
       "id": "chart-01676",
       "artist": "39",
       "title": "Блэссд",
@@ -12642,7 +12581,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 463,
+      "rank": 461,
       "id": "chart-01826",
       "artist": "Молодой Платон",
       "title": "KATER",
@@ -12670,7 +12609,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 464,
+      "rank": 462,
       "id": "chart-02068",
       "artist": "Moreart",
       "title": "Я буду ебать",
@@ -12698,7 +12637,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 465,
+      "rank": 463,
       "id": "chart-01813",
       "artist": "Rozalia",
       "title": "Аладдин (prod. by retroyse)",
@@ -12726,7 +12665,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 466,
+      "rank": 464,
       "id": "chart-01798",
       "artist": "White Punk",
       "title": "Мимо",
@@ -12754,7 +12693,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 467,
+      "rank": 465,
       "id": "pool-620072cf564a",
       "artist": "Валерий и Константин Меладзе",
       "title": "Мой брат",
@@ -12777,7 +12716,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 468,
+      "rank": 466,
       "id": "pool-710108fb087b",
       "artist": "Куба",
       "title": "Я сделаю все",
@@ -12799,7 +12738,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 469,
+      "rank": 467,
       "id": "pool-deb257a83b6d",
       "artist": "Таня Буланова",
       "title": "Мой сон",
@@ -12821,7 +12760,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 470,
+      "rank": 468,
       "id": "pool-3fca67daa52f",
       "artist": "Kamazz",
       "title": "Как ты там?",
@@ -12843,7 +12782,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 471,
+      "rank": 469,
       "id": "pool-58b0d041555e",
       "artist": "Zdob si Zdub",
       "title": "Видели ночь",
@@ -12865,7 +12804,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 472,
+      "rank": 470,
       "id": "pool-1441cbaca5e6",
       "artist": "Алексей Глызин",
       "title": "Поздний вечер в Сорренто",
@@ -12887,7 +12826,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 473,
+      "rank": 471,
       "id": "pool-f4931666e964",
       "artist": "Анна Семенович",
       "title": "Я за тобой",
@@ -12909,7 +12848,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 474,
+      "rank": 472,
       "id": "pool-c327062e22f7",
       "artist": "Бабек Мамедрзаев",
       "title": "Принцесса",
@@ -12931,7 +12870,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 475,
+      "rank": 473,
       "id": "pool-07e474a915cc",
       "artist": "Группа Краски",
       "title": "Раз, Два, Три, Четыре",
@@ -12953,7 +12892,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 476,
+      "rank": 474,
       "id": "pool-a312f5ab6f59",
       "artist": "Дина Гарипова",
       "title": "What If",
@@ -12975,7 +12914,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 477,
+      "rank": 475,
       "id": "pool-d535302b54d0",
       "artist": "Максим Леонидов",
       "title": "Не дай ему уйти",
@@ -12997,7 +12936,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 478,
+      "rank": 476,
       "id": "pool-0f4cd2aa7bd0",
       "artist": "Сектор Газа",
       "title": "Демобилизация",
@@ -13019,7 +12958,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 479,
+      "rank": 477,
       "id": "pool-bd40fca61c7e",
       "artist": "Эмма М",
       "title": "Штрихкоды",
@@ -13041,7 +12980,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 480,
+      "rank": 478,
       "id": "pool-82a6bb3ea22d",
       "artist": "Strange",
       "title": "Зависай",
@@ -13063,7 +13002,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 481,
+      "rank": 479,
       "id": "pool-1b4aadf9adda",
       "artist": "Александр Яковлев",
       "title": "Не уходи",
@@ -13085,7 +13024,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 482,
+      "rank": 480,
       "id": "pool-ec26e47909e7",
       "artist": "Ленінград",
       "title": "Ч.П.Х.",
@@ -13107,7 +13046,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 483,
+      "rank": 481,
       "id": "pool-a0093b43b587",
       "artist": "Златаслава",
       "title": "Горько",
@@ -13129,7 +13068,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 484,
+      "rank": 482,
       "id": "pool-2b93b87fd104",
       "artist": "Ярослава",
       "title": "Это любовь",
@@ -13151,7 +13090,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 485,
+      "rank": 483,
       "id": "pool-96b21b3a2a1c",
       "artist": "Снег",
       "title": "Николай Носков",
@@ -13173,7 +13112,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 486,
+      "rank": 484,
       "id": "pool-162035b28edd",
       "artist": "Ханна",
       "title": "Чтобы лето не кончалось",
@@ -13195,7 +13134,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 487,
+      "rank": 485,
       "id": "pool-ea3a7bf3098c",
       "artist": "4G",
       "title": "Улыбайся",
@@ -13217,7 +13156,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 488,
+      "rank": 486,
       "id": "pool-f9bb7845b8d6",
       "artist": "J-Power ft. MC Pryanikov",
       "title": "Девчонка",
@@ -13240,7 +13179,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 489,
+      "rank": 487,
       "id": "pool-d3d634a2e01f",
       "artist": "Дискомафия",
       "title": "Летняя пора",
@@ -13262,7 +13201,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 490,
+      "rank": 488,
       "id": "pool-886b2d52fbe9",
       "artist": "Чугунный Скороход",
       "title": "Быстрая походка",
@@ -13284,7 +13223,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 491,
+      "rank": 489,
       "id": "pool-50b21aaea359",
       "artist": "Fly Project",
       "title": "Mandala (Лето Солнце Жара)",
@@ -13306,7 +13245,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 492,
+      "rank": 490,
       "id": "pool-5c330bf947ea",
       "artist": "VAVAN, Galibri  Mavik",
       "title": "Сказочный десант",
@@ -13329,7 +13268,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 493,
+      "rank": 491,
       "id": "pool-9fc5217a6019",
       "artist": "Олег Майфми",
       "title": "Если Ты Со Мной",
@@ -13351,7 +13290,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 494,
+      "rank": 492,
       "id": "pool-916bfc0bcef3",
       "artist": "Татьяна Лихачева",
       "title": "Любовь холодная война",
@@ -13373,7 +13312,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 495,
+      "rank": 493,
       "id": "pool-de52356a0667",
       "artist": "Киркоров",
       "title": "Мышь",
@@ -13395,7 +13334,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 496,
+      "rank": 494,
       "id": "pool-31c48bff5130",
       "artist": "SERYOGA",
       "title": "Твой любимый клоун",
@@ -13417,7 +13356,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 497,
+      "rank": 495,
       "id": "pool-28da92329644",
       "artist": "А.Панайотов и А.Чумаков",
       "title": "Балалайка",
@@ -13440,7 +13379,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 498,
+      "rank": 496,
       "id": "pool-d3a5ca6c85c7",
       "artist": "Доктор Александров",
       "title": "Stop Narcotics",
@@ -13462,7 +13401,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 499,
+      "rank": 497,
       "id": "pool-6052e0916a1b",
       "artist": "Нигатив",
       "title": "История Одной Болезни",
@@ -13484,7 +13423,7 @@
       "publicationProgress": 0.5
     },
     {
-      "rank": 500,
+      "rank": 498,
       "id": "pool-4f8b8464af5a",
       "artist": "AnDy Darling",
       "title": "Просто танцевать ft. XNOVA",
@@ -13492,6 +13431,50 @@
         "andydarling"
       ],
       "candidateScore": 41.8,
+      "language": "russian",
+      "releaseYear": null,
+      "candidateYears": [],
+      "sourceIds": [],
+      "externalIds": {},
+      "blockers": [
+        "release-year",
+        "youtube-video",
+        "fragment-review",
+        "enrichment-review"
+      ],
+      "publicationProgress": 0.5
+    },
+    {
+      "rank": 499,
+      "id": "pool-68730762246d",
+      "artist": "Doni",
+      "title": "Базара нет",
+      "artistIds": [
+        "doni"
+      ],
+      "candidateScore": 41.8,
+      "language": "russian",
+      "releaseYear": null,
+      "candidateYears": [],
+      "sourceIds": [],
+      "externalIds": {},
+      "blockers": [
+        "release-year",
+        "youtube-video",
+        "fragment-review",
+        "enrichment-review"
+      ],
+      "publicationProgress": 0.5
+    },
+    {
+      "rank": 500,
+      "id": "pool-14c536a3a3eb",
+      "artist": "Инь",
+      "title": "Ян - Карма",
+      "artistIds": [
+        "in"
+      ],
+      "candidateScore": 41.6,
       "language": "russian",
       "releaseYear": null,
       "candidateYears": [],

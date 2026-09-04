@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T10:47:50.700Z",
-  "totalNeedsReview": 5935,
+  "generatedAt": "2026-09-04T11:28:48.969Z",
+  "totalNeedsReview": 5936,
   "shown": 500,
   "songs": [
     {
@@ -3572,11 +3572,11 @@
     },
     {
       "id": "chart-00091",
-      "artist": "Мияги",
+      "artist": "Miyagi & Эндшпиль feat. Рем Дигга",
       "title": "I Got Love",
       "candidateScore": 378.65,
       "workflow": "rejected",
-      "language": "russian",
+      "language": "mixed",
       "languageEvidence": [
         "manual-override"
       ],
@@ -3588,7 +3588,9 @@
         }
       ],
       "artistIds": [
-        "miyagi"
+        "miyagi",
+        "endshpil",
+        "remdigga"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -4727,6 +4729,40 @@
         ],
         "isrc": [
           "USUM72021500"
+        ]
+      }
+    },
+    {
+      "id": "chart-09011",
+      "artist": "Фара Ночи",
+      "title": "Богиня моря",
+      "candidateScore": 234.56,
+      "workflow": "rejected",
+      "language": "russian",
+      "languageEvidence": [
+        "manual-override"
+      ],
+      "releaseYear": 2026,
+      "candidateYears": [],
+      "artistIds": [
+        "faranochi"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "apple-music-ru",
+        "shazam-ru",
+        "youtube-ru-weekly"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "apple-music-ru": [
+          "6776332549"
+        ],
+        "youtube": [
+          "ngmOMZQZz0s"
         ]
       }
     },
@@ -10226,7 +10262,7 @@
     },
     {
       "id": "chart-09070",
-      "artist": "ЦУЕФА",
+      "artist": "ЦУЕФА feat. Вирсавия, Милана Некрасова, LIZOGUB & Давид Туров",
       "title": "Я ТЕБЯ МОГНУ",
       "candidateScore": 174.97,
       "workflow": "rejected",
@@ -10237,7 +10273,11 @@
       "releaseYear": 2026,
       "candidateYears": [],
       "artistIds": [
-        "tsuefa"
+        "tsuefa",
+        "virsaviya",
+        "milananecrasova",
+        "lizogub",
+        "davidturov"
       ],
       "usedArtistIds": [],
       "readyForCuration": false,
@@ -17355,42 +17395,6 @@
         ],
         "isrc": [
           "BEN580700236"
-        ]
-      }
-    },
-    {
-      "id": "chart-03388",
-      "artist": "Alfa , Manu Chao",
-      "title": "a me mi piace",
-      "candidateScore": 162.15,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2025,
-      "candidateYears": [
-        {
-          "year": 2025,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "alfa",
-        "manuchao"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "251847"
         ]
       }
     }

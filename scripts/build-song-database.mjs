@@ -10,6 +10,8 @@ import {
   normalizeObservation,
 } from "./chart-normalization.mjs";
 import {
+  applyArtistCreditOverride,
+  artistIdentityFromStatusOverride,
   externalIdsFromStatusOverride,
   publicationBlockersFor,
   validateSongStatusOverrides,
@@ -270,26 +272,39 @@ const automaticEnrichmentFor = (entry) => enrichmentAuto.songs?.[entry.id]
   || enrichmentAuto.songs?.[identityKey(entry.normalizedArtist, entry.normalizedTitle)]
   || {};
 
+// Resolve each override against the untouched source identity. A manual credit can
+// change normalizedArtist, so looking the override up again afterwards would lose
+// overrides keyed by normalizedArtist:normalizedTitle.
+const statusOverridesByEntry = new Map(entries.map((entry) => [entry, overrideFor(entry)]));
+const enrichmentOverridesByEntry = new Map(entries.map((entry) => [entry, enrichmentFor(entry)]));
+const automaticEnrichmentByEntry = new Map(entries.map((entry) => [entry, automaticEnrichmentFor(entry)]));
+
 for (const entry of entries) {
-  attachExternalIds(entry, externalIdsFromStatusOverride(overrideFor(entry), `status override for ${entry.id}`));
+  const manual = statusOverridesByEntry.get(entry);
+  attachExternalIds(entry, externalIdsFromStatusOverride(manual, `status override for ${entry.id}`));
+  const manualIdentity = artistIdentityFromStatusOverride(manual, `status override for ${entry.id}`);
+  applyArtistCreditOverride(entry, manualIdentity);
 }
 
 for (const entry of entries) {
+  const manualIdentity = artistIdentityFromStatusOverride(statusOverridesByEntry.get(entry), `status override for ${entry.id}`);
   // Alternate spellings are accepted answers, not additional credited people.
   const creditValues = entry.publishedArtistCredits?.length ? entry.publishedArtistCredits : [entry.artist];
-  const resolvedArtistIds = unique(creditValues.flatMap((value) => normalizeArtist(value, aliasIndex).participants)).sort();
+  const resolvedArtistIds = manualIdentity?.artistIds
+    || unique(creditValues.flatMap((value) => normalizeArtist(value, aliasIndex).participants)).sort();
   const registryResolved = resolvedArtistIds.length > 0 && resolvedArtistIds.every((artistId) => canonicalArtistNames.has(artistId));
   const sourceCreditResolved = Object.values(entry.externalIds).some((values) => values.length > 0)
     || (entry.chart?.sourceCount || 0) > 1
     || entry.poolRefs.length > 0;
-  entry.artistIdentityResolution = registryResolved ? "registry"
+  entry.artistIdentityResolution = manualIdentity ? "manual-override"
+    : registryResolved ? "registry"
     : entry.quizRefs.length ? "published-credit"
       : sourceCreditResolved ? "source-credit"
         : "unresolved";
   entry.artistIdentityResolved = entry.artistIdentityResolution !== "unresolved";
   entry.artistIds = resolvedArtistIds.length ? resolvedArtistIds : [`unknown:${entry.id}`];
   entry.normalizedArtist = {
-    primary: normalizeArtist(entry.artist, aliasIndex).primary,
+    primary: manualIdentity?.artistIds[0] || normalizeArtist(entry.artist, aliasIndex).primary,
     participants: entry.artistIds,
   };
 }
@@ -297,9 +312,9 @@ for (const entry of entries) {
 const usedArtistIds = new Set(entries.filter(({ quizRefs }) => quizRefs.length).flatMap(({ artistIds }) => artistIds));
 
 for (const entry of entries) {
-  const manual = overrideFor(entry);
-  const enrichment = enrichmentFor(entry);
-  const automaticEnrichment = automaticEnrichmentFor(entry);
+  const manual = statusOverridesByEntry.get(entry);
+  const enrichment = enrichmentOverridesByEntry.get(entry);
+  const automaticEnrichment = automaticEnrichmentByEntry.get(entry);
   const automaticLanguage = classifyLanguage(entry);
   const language = manual.language || automaticLanguage.value;
   const workflowStatus = manual.workflowStatus || (entry.quizRefs.length ? "used" : entry.explicit ? "rejected" : "waiting");
