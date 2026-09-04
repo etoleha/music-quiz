@@ -44,6 +44,7 @@ next-env.d.ts
 !/data/README.md
 !/data/song-pool*.json
 !/data/chart-songs*.json
+!/data/chart-songs*.json.gz
 !/data/artist-aliases.json
 !/data/chart-sources.json
 !/data/chart-observations.json
