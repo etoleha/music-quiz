@@ -200,7 +200,8 @@ const enrichArtist = async (musicBrainzArtistId, fallbackName) => {
 
 const searchRecording = async (song) => {
   for (const isrc of song.externalIds?.isrc || []) {
-    const result = await musicBrainz(`isrc/${encodeURIComponent(isrc)}?inc=artists+releases+release-groups`);
+    const isrcQuery = encodeURIComponent(`isrc:${String(isrc).replace(/[^A-Za-z0-9]/g, "")}`);
+    const result = await musicBrainz(`recording?query=${isrcQuery}&limit=8`);
     const recordings = result?.recordings || [];
     const match = chooseRecording(song, recordings, aliasIndex, { exactIsrc: true });
     if (match.status === "matched") return { ...match, method: "exact-isrc", isrc };
