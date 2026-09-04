@@ -5,7 +5,13 @@ import { getLocalDb } from "./local-db";
 export type GuestComparison = {
   score: number;
   maxScore: number;
-  answers: Array<{ trackKey: string; points: number; loadFailed: boolean }>;
+  answers: Array<{
+    trackKey: string;
+    artistAnswer: string;
+    titleAnswer: string;
+    points: number;
+    loadFailed: boolean;
+  }>;
 };
 
 export function createOrReuseShare(quizId: string) {
@@ -27,16 +33,19 @@ export function getGuestShare(token: string) {
   if (!share) return null;
   const excludedTrackKeys = getUnresolvedFragmentReportKeys(database, share.quizId);
 
-  const attempt = database.prepare(`SELECT id
+  const attempt = database.prepare(`SELECT id, score, max_score AS maxScore
     FROM attempts WHERE user_id = 'owner' AND quiz_id = ?
-    ORDER BY created_at DESC LIMIT 1`).get(share.quizId) as { id: string } | undefined;
+    ORDER BY created_at DESC LIMIT 1`).get(share.quizId) as { id: string; score: number; maxScore: number } | undefined;
 
   let comparison: GuestComparison | null = null;
   if (attempt) {
     const answers = database.prepare(`SELECT track_key AS trackKey,
+      artist_answer AS artistAnswer, title_answer AS titleAnswer,
       artist_point + title_point AS points, load_failed AS loadFailed
       FROM attempt_answers WHERE attempt_id = ?`).all(attempt.id) as Array<{
         trackKey: string;
+        artistAnswer: string;
+        titleAnswer: string;
         points: number;
         loadFailed: number;
       }>;
@@ -44,8 +53,12 @@ export function getGuestShare(token: string) {
       .filter((answer) => !excludedTrackKeys.has(answer.trackKey))
       .map((answer) => ({ ...answer, loadFailed: Boolean(answer.loadFailed) }));
     comparison = {
-      score: visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : answer.points), 0),
-      maxScore: visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : 2), 0),
+      score: visibleAnswers.length
+        ? visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : answer.points), 0)
+        : attempt.score,
+      maxScore: visibleAnswers.length
+        ? visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : 2), 0)
+        : attempt.maxScore,
       answers: visibleAnswers,
     };
   }

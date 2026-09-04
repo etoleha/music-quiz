@@ -6,6 +6,8 @@ import { extractAssignedJson, parseViewCount } from "./youtube-search.mjs";
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
 const channelUrl = "https://www.youtube.com/@AvtoradioMoscow/videos?hl=ru";
+const args = new Set(process.argv.slice(2));
+const fromCache = args.has("--from-cache");
 const maxPagesArg = process.argv.indexOf("--max-pages");
 const maxPages = maxPagesArg >= 0 ? Math.max(1, Number(process.argv[maxPagesArg + 1])) : Infinity;
 const headers = {
@@ -54,36 +56,47 @@ const videosFrom = (payload) => [
     .map(lockupVideoFrom),
 ];
 
-const initialResponse = await fetch(channelUrl, { headers, signal: AbortSignal.timeout(30_000) });
-if (!initialResponse.ok) throw new Error(`YouTube channel returned HTTP ${initialResponse.status}`);
-const html = await initialResponse.text();
-const initialData = extractAssignedJson(html, ["var ytInitialData =", "window[\"ytInitialData\"] =", "ytInitialData ="]);
-const configValue = (name) => html.match(new RegExp(`"${name}":"([^"]+)"`))?.[1] || null;
-const apiKey = configValue("INNERTUBE_API_KEY");
-const clientVersion = configValue("INNERTUBE_CONTEXT_CLIENT_VERSION") || configValue("INNERTUBE_CLIENT_VERSION");
-if (!apiKey || !clientVersion) throw new Error("YouTube InnerTube configuration was not found");
+let videos;
+let pages;
+let complete;
+if (fromCache) {
+  const cached = JSON.parse(fs.readFileSync(dataPath("avtoradio-youtube-videos.json"), "utf8"));
+  videos = new Map(cached.videos.map((video) => [video.videoId, video]));
+  pages = cached.stats.pages;
+  complete = cached.stats.complete;
+} else {
+  const initialResponse = await fetch(channelUrl, { headers, signal: AbortSignal.timeout(30_000) });
+  if (!initialResponse.ok) throw new Error(`YouTube channel returned HTTP ${initialResponse.status}`);
+  const html = await initialResponse.text();
+  const initialData = extractAssignedJson(html, ["var ytInitialData =", "window[\"ytInitialData\"] =", "ytInitialData ="]);
+  const configValue = (name) => html.match(new RegExp(`"${name}":"([^"]+)"`))?.[1] || null;
+  const apiKey = configValue("INNERTUBE_API_KEY");
+  const clientVersion = configValue("INNERTUBE_CONTEXT_CLIENT_VERSION") || configValue("INNERTUBE_CLIENT_VERSION");
+  if (!apiKey || !clientVersion) throw new Error("YouTube InnerTube configuration was not found");
 
-const videos = new Map(videosFrom(initialData).map((video) => [video.videoId, video]));
-const seenTokens = new Set();
-let continuation = continuationFrom(initialData);
-let pages = 1;
-while (continuation && pages < maxPages && !seenTokens.has(continuation)) {
-  seenTokens.add(continuation);
-  const response = await fetch(`https://www.youtube.com/youtubei/v1/browse?key=${encodeURIComponent(apiKey)}`, {
-    method: "POST",
-    headers: { ...headers, "content-type": "application/json" },
-    body: JSON.stringify({
-      context: { client: { clientName: "WEB", clientVersion, hl: "ru", gl: "RU" } },
-      continuation,
-    }),
-    signal: AbortSignal.timeout(30_000),
-  });
-  if (!response.ok) throw new Error(`YouTube continuation returned HTTP ${response.status} on page ${pages + 1}`);
-  const payload = await response.json();
-  for (const video of videosFrom(payload)) videos.set(video.videoId, video);
-  continuation = continuationFrom(payload);
-  pages += 1;
-  if (pages % 25 === 0) console.log(`Авторадио: загружено ${videos.size} видео (${pages} страниц)`);
+  videos = new Map(videosFrom(initialData).map((video) => [video.videoId, video]));
+  const seenTokens = new Set();
+  let continuation = continuationFrom(initialData);
+  pages = 1;
+  while (continuation && pages < maxPages && !seenTokens.has(continuation)) {
+    seenTokens.add(continuation);
+    const response = await fetch(`https://www.youtube.com/youtubei/v1/browse?key=${encodeURIComponent(apiKey)}`, {
+      method: "POST",
+      headers: { ...headers, "content-type": "application/json" },
+      body: JSON.stringify({
+        context: { client: { clientName: "WEB", clientVersion, hl: "ru", gl: "RU" } },
+        continuation,
+      }),
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (!response.ok) throw new Error(`YouTube continuation returned HTTP ${response.status} on page ${pages + 1}`);
+    const payload = await response.json();
+    for (const video of videosFrom(payload)) videos.set(video.videoId, video);
+    continuation = continuationFrom(payload);
+    pages += 1;
+    if (pages % 25 === 0) console.log(`Авторадио: загружено ${videos.size} видео (${pages} страниц)`);
+  }
+  complete = !continuation;
 }
 
 const trackPattern = /^(.+?)\s+[-–—]\s+(.+?)\s*\(\s*LIVE\s*@\s*Авторадио\s*\)\s*$/iu;
@@ -93,6 +106,8 @@ const clean = (value) => String(value || "")
   .replace(/\s+/g, " ")
   .trim();
 const normalizedPair = (artist, title) => `${artist}:${title}`.toLocaleLowerCase("ru-RU")
+  .replace(/ё/g, "е").replace(/[^a-zа-я0-9]+/giu, " ").trim();
+const normalizedArtist = (artist) => clean(artist).toLocaleLowerCase("ru-RU")
   .replace(/ё/g, "е").replace(/[^a-zа-я0-9]+/giu, " ").trim();
 const candidates = new Map();
 const collections = [];
@@ -125,11 +140,44 @@ for (const video of videos.values()) {
   }
 }
 
+const selectionPolicy = {
+  globalViewsFloor: 100_000,
+  perArtistViewsFloor: 25_000,
+  perArtistLimit: 2,
+};
+const candidatesByArtist = new Map();
+for (const candidate of candidates.values()) {
+  const key = normalizedArtist(candidate.artist);
+  if (!candidatesByArtist.has(key)) candidatesByArtist.set(key, []);
+  candidatesByArtist.get(key).push(candidate);
+}
+for (const artistCandidates of candidatesByArtist.values()) {
+  artistCandidates.sort((left, right) => (right.sourceViews || 0) - (left.sourceViews || 0));
+}
+const selectedCandidates = [...candidates.values()].filter((candidate) => {
+  const artistCandidates = candidatesByArtist.get(normalizedArtist(candidate.artist));
+  const artistRank = artistCandidates.indexOf(candidate) + 1;
+  candidate.sourceArtistRank = artistRank;
+  candidate.selectionReason = (candidate.sourceViews || 0) >= selectionPolicy.globalViewsFloor
+    ? "popular-channel-video"
+    : "top-video-for-artist";
+  return (candidate.sourceViews || 0) >= selectionPolicy.globalViewsFloor
+    || (artistRank <= selectionPolicy.perArtistLimit
+      && (candidate.sourceViews || 0) >= selectionPolicy.perArtistViewsFloor);
+});
+
 const videoArchive = {
   version: 1,
   importedAt: new Date().toISOString(),
   source: { id: "avtoradio-youtube", name: "Авторадио — YouTube", url: channelUrl },
-  stats: { pages, videos: videos.size, trackCandidates: candidates.size, collections: collections.length, complete: !continuation },
+  stats: {
+    pages,
+    videos: videos.size,
+    trackCandidates: candidates.size,
+    selectedTrackCandidates: selectedCandidates.length,
+    collections: collections.length,
+    complete,
+  },
   videos: [...videos.values()],
   collections,
 };
@@ -137,9 +185,9 @@ const songPool = {
   version: 1,
   generatedAt: videoArchive.importedAt,
   source: videoArchive.source,
-  stats: { tracks: candidates.size },
+  stats: { tracks: selectedCandidates.length, scannedTracks: candidates.size, selectionPolicy },
   collections,
-  tracks: [...candidates.values()].sort((left, right) => left.artist.localeCompare(right.artist, "ru") || left.title.localeCompare(right.title, "ru")),
+  tracks: selectedCandidates.sort((left, right) => left.artist.localeCompare(right.artist, "ru") || left.title.localeCompare(right.title, "ru")),
 };
 fs.writeFileSync(dataPath("avtoradio-youtube-videos.json"), `${JSON.stringify(videoArchive, null, 2)}\n`);
 fs.writeFileSync(dataPath("song-pool-avtoradio.json"), `${JSON.stringify(songPool, null, 2)}\n`);

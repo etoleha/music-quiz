@@ -24,6 +24,7 @@ for (const [artist, form] of [
   ["Глюк’oZa", "Исполнительница"],
   ["Фактор-2", "Исполнитель + исполнитель"],
   ["Непара", "Исполнитель + исполнительница"],
+  ["Tanir & Tyomcha", "Дуэт"],
 ]) {
   const expression = new RegExp(`"${artist.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}":\\s*"${form.replaceAll("+", "\\+")}"`);
   assert.ok(expression.test(`${base}\n${extra}`), `неверная форма: ${artist}`);
@@ -31,4 +32,7 @@ for (const [artist, form] of [
 
 assert.match(extra, /extraTrack\("Q6a_mLhifqc", "Quest Pistols Show", "Санта Лючия"/, "нужен основной клип, а не dance remix");
 assert.match(extra, /extraTrack\("mdRaS5mZkjk", "L'ONE feat\. Варвара Визбор", "Якутяночка"/, "featured-исполнитель не должен повторяться в названии песни");
+const sovietQuiz = extra.match(/id: "soviet-hard-01",[\s\S]*?tracks: \[([\s\S]*?)\n\s*\],\n\s*},/);
+assert.ok(sovietQuiz, "нужен отдельный сложный советский квиз");
+assert.equal([...sovietQuiz[1].matchAll(/extraTrack\(/g)].length, 20, "в советском квизе должно быть 20 песен");
 console.log("quiz semantic tests passed");

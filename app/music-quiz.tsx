@@ -87,7 +87,13 @@ type MusicQuizProps = {
   comparison?: {
     score: number;
     maxScore: number;
-    answers: Array<{ trackKey: string; points: number; loadFailed: boolean }>;
+    answers: Array<{
+      trackKey: string;
+      artistAnswer: string;
+      titleAnswer: string;
+      points: number;
+      loadFailed: boolean;
+    }>;
   } | null;
   excludedTrackKeys?: string[];
 };
@@ -632,8 +638,11 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
           const info = artistInfo[item.track.key];
           return <article className={`review-row ${item.loadFailed ? "is-annulled" : ""} ${reviewIndex === itemIndex ? "is-selected" : ""}`} key={item.track.key}>
             <b>{String(itemIndex + 1).padStart(2, "0")}</b>
-            <div><strong>{item.track.artist} — {item.track.title}</strong>{item.track.releaseYear && <span className="review-track-meta">{item.track.releaseYear} год{item.track.album ? ` · альбом «${item.track.album.title}»` : ""}</span>}<small>{item.loadFailed ? `Аннулирован · ${youtubeErrorLabel(item.loadErrorCode)}` : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small></div>
-            <div className="row-scores"><span className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/2`}</span>{comparison && <span className="owner-points">{ownerAnswer?.loadFailed ? "—" : ownerAnswer ? `${ownerAnswer.points}/2` : "—"}</span>}</div>
+            <div className="review-track"><strong>{item.track.artist} — {item.track.title}</strong>{item.track.releaseYear && <span className="review-track-meta">{item.track.releaseYear} год{item.track.album ? ` · альбом «${item.track.album.title}»` : ""}</span>}{comparison ? <div className="answer-comparison">
+              <div className={`answer-card ${item.loadFailed ? "is-annulled" : ""}`}><span>Ты</span><small>{item.loadFailed ? `Аннулирован · ${youtubeErrorLabel(item.loadErrorCode)}` : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small><b className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/2`}</b></div>
+              <div className={`answer-card ${ownerAnswer?.loadFailed ? "is-annulled" : ""}`}><span>Алексей</span><small>{ownerAnswer?.loadFailed ? "Аннулирован" : ownerAnswer ? `${ownerAnswer.artistAnswer || "—"} · ${ownerAnswer.titleAnswer || "—"}` : "Нет данных по этому вопросу"}</small><b className={ownerAnswer?.loadFailed ? "void" : ownerAnswer?.points ? "points" : "zero"}>{ownerAnswer?.loadFailed ? "—" : ownerAnswer ? `${ownerAnswer.points}/2` : "—"}</b></div>
+            </div> : <small>{item.loadFailed ? `Аннулирован · ${youtubeErrorLabel(item.loadErrorCode)}` : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small>}</div>
+            {!comparison && <div className="row-scores"><span className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/2`}</span></div>}
             <div className="review-controls">
               <Button ref={(element) => { reviewPlayButtons.current[itemIndex] = element; }} size="sm" variant="outline" className="review-play" disabled={!playerReady} aria-label={`Прослушать фрагмент ${item.track.artist} — ${item.track.title}`} onFocus={() => setReviewIndex(itemIndex)} onClick={() => { setReviewIndex(itemIndex); playReviewClip(item.track); }}><Volume2 /> {isPlaying ? "…" : `${item.track.duration} сек.`}</Button>
               {clipPlayback?.trackKey === item.track.key && clipPlayback.context === "review" && <ClipTimeline playback={clipPlayback} duration={item.track.duration} compact />}

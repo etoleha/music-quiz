@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T20:30:16.338Z",
-  "totalNeedsReview": 5878,
+  "generatedAt": "2026-09-04T20:54:33.752Z",
+  "totalNeedsReview": 5905,
   "shown": 500,
   "songs": [
     {
@@ -336,6 +336,33 @@
       "externalIds": {}
     },
     {
+      "id": "chart-03063",
+      "artist": "Градусы",
+      "title": "Кто ты?",
+      "candidateScore": 92.73,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "gradusy"
+      ],
+      "usedArtistIds": [
+        "gradusy"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
       "id": "chart-03065",
       "artist": "TEMNIKOVA",
       "title": "Вдох",
@@ -356,6 +383,33 @@
       "readyForPublication": false,
       "sourceIds": [
         "europa-plus-annual"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-09073",
+      "artist": "Filatov & Karas",
+      "title": "Среди Счастливых Людей",
+      "candidateScore": 92.67,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "filatovkaras"
+      ],
+      "usedArtistIds": [
+        "filatovkaras"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "shazam-ru"
       ],
       "poolRefs": [],
       "externalIds": {}
@@ -461,6 +515,31 @@
       "externalIds": {}
     },
     {
+      "id": "chart-03114",
+      "artist": "PIZZA",
+      "title": "Оружие",
+      "candidateScore": 91.29,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "pizza"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
       "id": "chart-09079",
       "artist": "Таня. Л",
       "title": "\" Под Шуфутинского\"",
@@ -531,6 +610,31 @@
       "readyForPublication": false,
       "sourceIds": [
         "shazam-ru"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-03139",
+      "artist": "PIZZA",
+      "title": "Мерцала",
+      "candidateScore": 90.78,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "pizza"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
       ],
       "poolRefs": [],
       "externalIds": {}
@@ -693,6 +797,31 @@
       "externalIds": {}
     },
     {
+      "id": "chart-03227",
+      "artist": "Zvonkiy",
+      "title": "Голоса",
+      "candidateScore": 88.05,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "zvonkiy"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
       "id": "chart-09093",
       "artist": "Settlers",
       "title": "Светлое чувство",
@@ -764,6 +893,31 @@
       "readyForPublication": false,
       "sourceIds": [
         "shazam-ru"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-03261",
+      "artist": "Ваня Дмитриенко",
+      "title": "Вечно молодым",
+      "candidateScore": 86.85,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "vanyadmitrienko"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
       ],
       "poolRefs": [],
       "externalIds": {}
@@ -1331,6 +1485,33 @@
       "externalIds": {}
     },
     {
+      "id": "chart-03425",
+      "artist": "JONY",
+      "title": "Воздушный сарафан",
+      "candidateScore": 80.36,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "jony"
+      ],
+      "usedArtistIds": [
+        "jony"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
       "id": "chart-03429",
       "artist": "Zivert",
       "title": "Эгоистка",
@@ -1486,6 +1667,33 @@
       "externalIds": {}
     },
     {
+      "id": "chart-03449",
+      "artist": "Город 312",
+      "title": "213 Дорог",
+      "candidateScore": 79.14,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "gorod312"
+      ],
+      "usedArtistIds": [
+        "gorod312"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
       "id": "chart-03464",
       "artist": "Chris Yank",
       "title": "#ИМЕННОТА",
@@ -1584,6 +1792,33 @@
       "readyForPublication": false,
       "sourceIds": [
         "youtube-ru-weekly"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-03510",
+      "artist": "Лера Массква",
+      "title": "Разные",
+      "candidateScore": 75.66,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "leramasskva"
+      ],
+      "usedArtistIds": [
+        "leramasskva"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
       ],
       "poolRefs": [],
       "externalIds": {}
@@ -2051,6 +2286,31 @@
       "externalIds": {}
     },
     {
+      "id": "chart-03632",
+      "artist": "PIZZA",
+      "title": "Триумфальная",
+      "candidateScore": 67.92,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "pizza"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
       "id": "chart-03637",
       "artist": "Винтаж",
       "title": "Мама Мия",
@@ -2341,6 +2601,31 @@
       "externalIds": {}
     },
     {
+      "id": "chart-03680",
+      "artist": "PIZZA",
+      "title": "Романс",
+      "candidateScore": 62.63,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "pizza"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
       "id": "chart-09151",
       "artist": "Antoha MC",
       "title": "Всё просто (RMX)",
@@ -2411,6 +2696,33 @@
       "readyForPublication": false,
       "sourceIds": [
         "youtube-ru-weekly"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-09155",
+      "artist": "Uma2rman",
+      "title": "Не стой, танцуй",
+      "candidateScore": 57.18,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "uma2rman"
+      ],
+      "usedArtistIds": [
+        "uma2rman"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "shazam-ru"
       ],
       "poolRefs": [],
       "externalIds": {}
@@ -17308,463 +17620,6 @@
         ],
         "isrc": [
           "SE2VK1304109"
-        ]
-      }
-    },
-    {
-      "id": "chart-03379",
-      "artist": "K.Maro",
-      "title": "Good Old Days",
-      "candidateScore": 160.65,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2009,
-      "candidateYears": [
-        {
-          "year": 2009,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "kmaro"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "16794"
-        ],
-        "isrc": [
-          "CAW110800150"
-        ]
-      }
-    },
-    {
-      "id": "chart-03592",
-      "artist": "Rihanna & Calvin Harris",
-      "title": "We Found Love",
-      "candidateScore": 160.54,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2011,
-      "candidateYears": [
-        {
-          "year": 2011,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "calvinharris",
-        "rihanna"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "34826"
-        ],
-        "isrc": [
-          "USUM71115507"
-        ]
-      }
-    },
-    {
-      "id": "chart-03325",
-      "artist": "Betta Lemme",
-      "title": "Bambola",
-      "candidateScore": 160.43,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "bettalemme"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "86345"
-        ],
-        "isrc": [
-          "QMEU31822884"
-        ]
-      }
-    },
-    {
-      "id": "chart-03434",
-      "artist": "Sunlounger",
-      "title": "Lost",
-      "candidateScore": 160.42,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2009,
-      "candidateYears": [
-        {
-          "year": 2009,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "sunlounger"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "16931"
-        ],
-        "isrc": [
-          "NLF711812153"
-        ]
-      }
-    },
-    {
-      "id": "chart-03475",
-      "artist": "Fifth Harmony feat Kid Ink",
-      "title": "Worth It",
-      "candidateScore": 160.4,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2015,
-      "candidateYears": [
-        {
-          "year": 2015,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "fifthharmony",
-        "kidink"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "62798"
-        ],
-        "isrc": [
-          "USSM11500757"
-        ]
-      }
-    },
-    {
-      "id": "chart-00431",
-      "artist": "Moses",
-      "title": "A Million On My Soul (Remix)",
-      "candidateScore": 160.36,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "moses"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "spotify-ru-daily-history",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "spotify": [
-          "6RomQ7YOhEuvjY8UtMYwDk"
-        ],
-        "tophit": [
-          "117186"
-        ],
-        "isrc": [
-          "USCGJ2095078"
-        ]
-      }
-    },
-    {
-      "id": "chart-03426",
-      "artist": "Lufthaus , Robbie Williams feat Sophie Ellis-Bextor",
-      "title": "Immortal",
-      "candidateScore": 160.17,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2023,
-      "candidateYears": [
-        {
-          "year": 2023,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "lufthaus",
-        "robbiewilliams",
-        "sophieellisbextor"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "183237"
-        ]
-      }
-    },
-    {
-      "id": "chart-03512",
-      "artist": "Marlon Roudette",
-      "title": "Anti Hero",
-      "candidateScore": 160.07,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2012,
-      "candidateYears": [
-        {
-          "year": 2012,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "marlonroudette"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "37112"
-        ],
-        "isrc": [
-          "USA371625692"
-        ]
-      }
-    },
-    {
-      "id": "chart-03542",
-      "artist": "sombr",
-      "title": "12 to 12",
-      "candidateScore": 159.83,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2025,
-      "candidateYears": [
-        {
-          "year": 2025,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "sombr"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "254954"
-        ]
-      }
-    },
-    {
-      "id": "chart-03444",
-      "artist": "HUGEL , Alleh , Yorghaki",
-      "title": "una noche con hugel",
-      "candidateScore": 159.79,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2025,
-      "candidateYears": [
-        {
-          "year": 2025,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "alleh",
-        "hugel",
-        "yorghaki"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "241686"
-        ]
-      }
-    },
-    {
-      "id": "chart-03463",
-      "artist": "Alvaro Soler feat Cali y El Dandee",
-      "title": "Manana",
-      "candidateScore": 159.59,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2021,
-      "candidateYears": [
-        {
-          "year": 2021,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "alvarosoler",
-        "caliyeldandee"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "137091"
-        ],
-        "isrc": [
-          "DEUM72100396"
-        ]
-      }
-    },
-    {
-      "id": "chart-03519",
-      "artist": "Dua Lipa",
-      "title": "New Rules",
-      "candidateScore": 159.53,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2017,
-      "candidateYears": [
-        {
-          "year": 2017,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "dualipa"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "82837"
-        ],
-        "isrc": [
-          "GBAHT1700676"
         ]
       }
     }
