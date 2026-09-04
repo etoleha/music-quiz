@@ -66,7 +66,10 @@ for (const song of database.songs) {
   for (const reference of song.poolRefs || []) songsByPoolId.set(reference.id, song);
 }
 
-const poolFiles = fs.readdirSync(dataPath()).filter((file) => /^song-pool(?:-(?:\d+|soviet|90s))?\.json$/.test(file)).sort();
+const poolFiles = fs.readdirSync(dataPath())
+  .filter((file) => /^song-pool(?:-(?:\d+|soviet|90s|avtoradio))?\.json$/.test(file))
+  .sort((left, right) => Number(left === "song-pool-avtoradio.json") - Number(right === "song-pool-avtoradio.json")
+    || left.localeCompare(right));
 const poolTracks = poolFiles.flatMap((file) => readJson(dataPath(file)).tracks.map((track) => ({ ...track, poolFile: file })));
 const cachePath = dataPath("youtube-search-cache.json");
 const loadedCache = fs.existsSync(cachePath) ? readJson(cachePath) : null;
@@ -131,6 +134,7 @@ const orderCandidates = (tracks) => {
 
 const sourceEvidenceFor = (track) => {
   if (track.poolFile === "song-pool-soviet.json") return "trusted-soviet-collection";
+  if (track.poolFile === "song-pool-avtoradio.json") return "avtoradio-live-catalog";
   if (track.poolFile === "song-pool-3.json") return "russian-chart-cyrillic-or-high-confidence";
   if (/Золотой граммофон/iu.test(track.sourceName || "")) return "golden-gramophone";
   return "trusted-russian-collection";

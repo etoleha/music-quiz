@@ -10,6 +10,7 @@ type SubmittedAnswer = {
   artistAnswer?: string;
   titleAnswer?: string;
   loadFailed?: boolean;
+  loadErrorCode?: number;
 };
 
 export async function POST(request: Request) {
@@ -37,9 +38,13 @@ export async function POST(request: Request) {
       const loadFailed = Boolean(answer.loadFailed);
       const artistAnswer = String(answer.artistAnswer ?? "").slice(0, 160);
       const titleAnswer = String(answer.titleAnswer ?? "").slice(0, 160);
+      const loadErrorCode = loadFailed && Number.isInteger(answer.loadErrorCode)
+        ? Math.max(0, Math.min(999, Number(answer.loadErrorCode)))
+        : null;
       return {
         track,
         loadFailed,
+        loadErrorCode,
         artistAnswer,
         titleAnswer,
         artistPoint: loadFailed ? 0 : Number(isArtistAccepted(artistAnswer, track.artistAliases, track.artistForm)),
@@ -59,8 +64,8 @@ export async function POST(request: Request) {
         VALUES (?, 'owner', ?, ?, ?, ?, ?)`)
         .run(attemptId, quiz.id, quiz.title, score, maxScore, skipped);
       const insertAnswer = database.prepare(`INSERT INTO attempt_answers
-        (attempt_id, track_key, artist, title, artist_answer, title_answer, artist_point, title_point, load_failed)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+        (attempt_id, track_key, artist, title, artist_answer, title_answer, artist_point, title_point, load_failed, load_error_code)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
       for (const item of reviewed) {
         insertAnswer.run(
           attemptId,
@@ -72,6 +77,7 @@ export async function POST(request: Request) {
           item.artistPoint,
           item.titlePoint,
           item.loadFailed ? 1 : 0,
+          item.loadErrorCode,
         );
         applyMistakeResult(database, {
           trackKey: item.track.key,
@@ -83,8 +89,8 @@ export async function POST(request: Request) {
         });
         if (item.loadFailed) {
           database.prepare(`INSERT OR IGNORE INTO fragment_reports
-            (attempt_id, quiz_id, track_key, artist, title, youtube_id, clip_start, clip_duration, reason)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'load-failed')`).run(
+            (attempt_id, quiz_id, track_key, artist, title, youtube_id, clip_start, clip_duration, reason, player_error_code)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'load-failed', ?)`).run(
               attemptId,
               quiz.id,
               item.track.key,
@@ -93,6 +99,7 @@ export async function POST(request: Request) {
               item.track.youtubeId,
               item.track.start,
               item.track.duration,
+              item.loadErrorCode,
             );
         }
       }

@@ -39,6 +39,7 @@ function createDatabase() {
       artist_point INTEGER NOT NULL DEFAULT 0,
       title_point INTEGER NOT NULL DEFAULT 0,
       load_failed INTEGER NOT NULL DEFAULT 0,
+      load_error_code INTEGER,
       UNIQUE(attempt_id, track_key)
     );
 
@@ -59,6 +60,8 @@ function createDatabase() {
       clip_start INTEGER NOT NULL,
       clip_duration INTEGER NOT NULL,
       reason TEXT NOT NULL DEFAULT 'bad-fragment',
+      auto_annulled INTEGER NOT NULL DEFAULT 0,
+      player_error_code INTEGER,
       created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
       UNIQUE(attempt_id, track_key)
     );
@@ -97,6 +100,16 @@ function createDatabase() {
   const fragmentReportColumns = database.prepare("PRAGMA table_info(fragment_reports)").all() as Array<{ name: string }>;
   if (!fragmentReportColumns.some(({ name }) => name === "reason")) {
     database.exec("ALTER TABLE fragment_reports ADD COLUMN reason TEXT NOT NULL DEFAULT 'bad-fragment'");
+  }
+  if (!fragmentReportColumns.some(({ name }) => name === "auto_annulled")) {
+    database.exec("ALTER TABLE fragment_reports ADD COLUMN auto_annulled INTEGER NOT NULL DEFAULT 0");
+  }
+  if (!fragmentReportColumns.some(({ name }) => name === "player_error_code")) {
+    database.exec("ALTER TABLE fragment_reports ADD COLUMN player_error_code INTEGER");
+  }
+  const attemptAnswerColumns = database.prepare("PRAGMA table_info(attempt_answers)").all() as Array<{ name: string }>;
+  if (!attemptAnswerColumns.some(({ name }) => name === "load_error_code")) {
+    database.exec("ALTER TABLE attempt_answers ADD COLUMN load_error_code INTEGER");
   }
   backfillMistakeMastery(database);
   return database;

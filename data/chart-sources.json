@@ -3,6 +3,16 @@
   "checkedAt": "2026-09-03",
   "sources": [
     {
+      "id": "avtoradio-youtube",
+      "name": "Авторадио — YouTube",
+      "kind": "artist-track-catalog",
+      "cadence": "periodic-full-scan",
+      "url": "https://www.youtube.com/@AvtoradioMoscow/videos",
+      "status": "importer-ready",
+      "automatic": false,
+      "note": "Названия исполнителей и песен берутся из LIVE-видео и тематических подборок канала; игровые версии затем ищутся отдельно."
+    },
+    {
       "id": "spotify-ru-daily-history",
       "name": "Spotify Daily Chart — Russia",
       "kind": "historical-aggregate",

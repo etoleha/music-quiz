@@ -41,7 +41,10 @@ const catalogArchive = catalogIndex.archive
   : null;
 const catalogTracks = catalogArchive?.tracks
   || (catalogIndex.parts || []).flatMap((file) => readJson(dataPath(file)).tracks || []);
-const poolFiles = fs.readdirSync(dataPath()).filter((file) => /^song-pool(?:-(?:\d+|soviet|90s))?\.json$/.test(file)).sort();
+const poolFiles = fs.readdirSync(dataPath())
+  .filter((file) => /^song-pool(?:-(?:\d+|soviet|90s|avtoradio))?\.json$/.test(file))
+  .sort((left, right) => Number(left === "song-pool-avtoradio.json") - Number(right === "song-pool-avtoradio.json")
+    || left.localeCompare(right));
 
 const unique = (values) => [...new Set(values.filter(Boolean).map(String))];
 const uniqueNumbers = (values) => [...new Set(values.filter(validYear).map(Number))];
@@ -240,10 +243,20 @@ for (const file of poolFiles) {
   for (const track of pool.tracks || []) {
     const ids = track.spotifyTrackId ? { spotify: [track.spotifyTrackId] } : {};
     let entry = findEntry(track, ids);
+    if (file === "song-pool-avtoradio.json" && entry) {
+      const sourceParticipants = new Set(normalizeObservation(track, aliasIndex).artist.participants);
+      const entryParticipants = new Set(entry.normalizedArtist.participants);
+      const sameCredit = sourceParticipants.size === entryParticipants.size
+        && [...sourceParticipants].every((artistId) => entryParticipants.has(artistId));
+      if (!sameCredit) entry = null;
+    }
     if (!entry) {
       const normalized = normalizeObservation(track, aliasIndex);
-      const digest = crypto.createHash("sha1").update(identityKey(normalized.artist, normalized.titleKey)).digest("hex").slice(0, 12);
-      entry = newEntry({ id: `pool-${digest}`, artist: track.artist, title: track.title, externalIds: ids });
+      const identity = file === "song-pool-avtoradio.json"
+        ? `${[...normalized.artist.participants].sort().join("+")}:${normalized.titleKey}`
+        : identityKey(normalized.artist, normalized.titleKey);
+      const digest = crypto.createHash("sha1").update(identity).digest("hex").slice(0, 12);
+      entry = newEntry({ id: `${file === "song-pool-avtoradio.json" ? "avtoradio" : "pool"}-${digest}`, artist: track.artist, title: track.title, externalIds: ids });
     }
     addAliases(entry, [track.artist], [track.title]);
     attachExternalIds(entry, ids);
@@ -361,7 +374,7 @@ for (const entry of entries) {
   const automaticEnrichment = automaticEnrichmentByEntry.get(entry);
   const preparation = preparedBySongId.get(entry.id) || null;
   if (preparation && JSON.stringify(preparation.artistIds) !== JSON.stringify(entry.artistIds)) {
-    throw new Error(`quiz-ready-songs.json artist identity is stale for ${entry.id}`);
+    throw new Error(`quiz-ready-songs.json artist identity is stale for ${entry.id}: ${JSON.stringify(preparation.artistIds)} -> ${JSON.stringify(entry.artistIds)}`);
   }
   const automaticLanguage = classifyLanguage(entry);
   const language = manual.language || automaticLanguage.value;

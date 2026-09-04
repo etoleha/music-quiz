@@ -52,8 +52,7 @@ export function rebuildMistakeMasteryForTrack(database: DatabaseSync, trackKey: 
     FROM attempt_answers aa JOIN attempts a ON a.id = aa.attempt_id
     WHERE a.user_id = 'owner' AND aa.track_key = ?
       AND NOT (
-        TRIM(aa.artist_answer) = '' AND TRIM(aa.title_answer) = ''
-        AND EXISTS (
+        (aa.artist_point + aa.title_point) < 2 AND EXISTS (
           SELECT 1 FROM fragment_reports fr
           WHERE fr.attempt_id = aa.attempt_id AND fr.track_key = aa.track_key
             AND fr.reason = 'bad-fragment'
@@ -82,7 +81,7 @@ export function backfillMistakeMastery(database: DatabaseSync) {
   const exemptedTracks = database.prepare(`SELECT DISTINCT aa.track_key AS trackKey
     FROM attempt_answers aa JOIN attempts a ON a.id = aa.attempt_id
     JOIN fragment_reports fr ON fr.attempt_id = aa.attempt_id AND fr.track_key = aa.track_key
-    WHERE a.user_id = 'owner' AND TRIM(aa.artist_answer) = '' AND TRIM(aa.title_answer) = ''
+    WHERE a.user_id = 'owner' AND (aa.artist_point + aa.title_point) < 2
       AND fr.reason = 'bad-fragment'`).all() as Array<{ trackKey: string }>;
   for (const { trackKey } of exemptedTracks) rebuildMistakeMasteryForTrack(database, trackKey);
 }

@@ -10,14 +10,16 @@
     "build": "next build",
     "start": "next start",
     "test": "npm run test:charts && npm run build",
-    "test:charts": "node scripts/test-chart-normalization.mjs && node scripts/test-tophit-import.mjs && node scripts/test-enrichment.mjs && node scripts/test-song-status-overrides.mjs && node scripts/test-youtube-search.mjs && node scripts/test-song-database.mjs && node scripts/test-quiz-semantics.mjs && node scripts/test-mistake-mastery.mjs && node scripts/test-scoring.mjs",
+    "test:charts": "node scripts/test-chart-normalization.mjs && node scripts/test-tophit-import.mjs && node scripts/test-enrichment.mjs && node scripts/test-song-status-overrides.mjs && node scripts/test-youtube-search.mjs && node scripts/test-youtube-playability.mjs && node scripts/test-song-database.mjs && node scripts/test-quiz-semantics.mjs && node scripts/test-mistake-mastery.mjs && node scripts/test-feedback-scoring.mjs && node scripts/test-scoring.mjs",
     "import:tophit": "node scripts/import-tophit-monthly.mjs",
     "monitor:charts": "node scripts/monitor-charts.mjs",
     "build:song-database": "node scripts/build-song-database.mjs",
     "build:quiz-candidates": "node scripts/build-quiz-candidates.mjs",
     "build:ready-pool": "node scripts/build-ready-song-pool.mjs",
     "report:issues": "node scripts/collect-quiz-issues.mjs",
-    "enrich:songs": "node scripts/enrich-song-database.mjs"
+    "enrich:songs": "node scripts/enrich-song-database.mjs",
+    "generate:quiz": "node scripts/generate-next-quiz.mjs",
+    "import:avtoradio": "node scripts/import-avtoradio-youtube.mjs"
   },
   "dependencies": {
     "class-variance-authority": "0.7.1",

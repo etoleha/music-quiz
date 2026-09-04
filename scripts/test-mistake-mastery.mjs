@@ -80,4 +80,20 @@ database.prepare("DELETE FROM fragment_reports WHERE attempt_id = ? AND track_ke
 rebuildMistakeMasteryForTrack(database, "bad—fragment");
 assert.equal(database.prepare("SELECT misses FROM mistake_mastery WHERE track_key = 'bad—fragment'").get().misses, 1);
 
+database.prepare("INSERT INTO attempts (id, user_id, created_at) VALUES (?, 'owner', ?)").run("a4", "2026-01-04 10:00:00");
+database.prepare("INSERT INTO attempt_answers (attempt_id, track_key, artist, title, artist_answer, title_answer, artist_point, title_point) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")
+  .run("a4", "partly-wrong—fragment", "Artist", "Song", "Artist", "Wrong", 1, 0);
+database.prepare("INSERT INTO fragment_reports (attempt_id, track_key, reason) VALUES (?, ?, ?)")
+  .run("a4", "partly-wrong—fragment", "bad-fragment");
+rebuildMistakeMasteryForTrack(database, "partly-wrong—fragment");
+assert.equal(database.prepare("SELECT COUNT(*) AS count FROM mistake_mastery WHERE track_key = 'partly-wrong—fragment'").get().count, 0);
+
+database.prepare("INSERT INTO attempts (id, user_id, created_at) VALUES (?, 'owner', ?)").run("a5", "2026-01-05 10:00:00");
+database.prepare("INSERT INTO attempt_answers (attempt_id, track_key, artist, title, artist_answer, title_answer, artist_point, title_point) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")
+  .run("a5", "correct—fragment", "Artist", "Song", "Artist", "Song", 1, 1);
+database.prepare("INSERT INTO fragment_reports (attempt_id, track_key, reason) VALUES (?, ?, ?)")
+  .run("a5", "correct—fragment", "bad-fragment");
+rebuildMistakeMasteryForTrack(database, "correct—fragment");
+assert.equal(database.prepare("SELECT COUNT(*) AS count FROM mistake_mastery WHERE track_key = 'correct—fragment'").get().count, 0);
+
 console.log("mistake mastery tests passed");

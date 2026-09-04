@@ -8,9 +8,10 @@ export async function GET() {
     const database = getLocalDb();
     const reportRows = database.prepare(`SELECT quiz_id AS quizId, track_key AS trackKey,
       artist, title, youtube_id AS youtubeId, clip_start AS clipStart,
-      clip_duration AS clipDuration, reason, COUNT(*) AS reports, MAX(created_at) AS lastReportedAt
+      clip_duration AS clipDuration, reason, player_error_code AS playerErrorCode,
+      COUNT(*) AS reports, MAX(created_at) AS lastReportedAt
       FROM fragment_reports
-      GROUP BY quiz_id, track_key, artist, title, youtube_id, clip_start, clip_duration, reason
+      GROUP BY quiz_id, track_key, artist, title, youtube_id, clip_start, clip_duration, reason, player_error_code
       ORDER BY reports DESC, lastReportedAt DESC LIMIT 200`).all() as Array<{
         quizId: string;
         trackKey: string;
@@ -20,6 +21,7 @@ export async function GET() {
         clipStart: number;
         clipDuration: number;
         reason: string;
+        playerErrorCode: number | null;
         reports: number;
         lastReportedAt: string;
       }>;

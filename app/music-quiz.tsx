@@ -10,7 +10,7 @@ import { getQuiz, quizzes, type Quiz, type Track } from "./quiz-data";
 import { isAccepted, isArtistAccepted } from "./scoring";
 
 type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void };
-type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean };
+type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean; loadErrorCode?: number };
 type Review = Answer & { track: Track; artistPoint: number; titlePoint: number };
 type Attempt = { id: string; quizId: string; quizTitle: string; score: number; maxScore: number; skipped: number; createdAt: string };
 type WeakTrack = { trackKey: string; artist: string; title: string; successes: number; requiredSuccesses: number; misses: number };
@@ -58,6 +58,14 @@ const wordForm = (count: number) => {
 };
 
 const spotifyArtistUrl = (artist: string) => `https://open.spotify.com/search/${encodeURIComponent(artist)}`;
+const youtubeErrorLabel = (code?: number) => ({
+  2: "неверный ID ролика",
+  5: "ошибка HTML5-плеера",
+  100: "ролик удалён или закрыт",
+  101: "автор запретил встраивание",
+  150: "ролик нельзя встроить",
+  153: "YouTube не принял встроенный плеер",
+}[code || 0] || (code ? `ошибка YouTube ${code}` : "причина не определена"));
 const formatClipTime = (seconds: number) => {
   const safeSeconds = Math.max(0, Math.ceil(seconds));
   return `${Math.floor(safeSeconds / 60)}:${String(safeSeconds % 60).padStart(2, "0")}`;
@@ -118,6 +126,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   const answersRef = useRef<Answer[]>([]);
   const submissionLocked = useRef(false);
   const autoplayedTrack = useRef<string | null>(null);
+  const pendingLoadErrorCode = useRef<number | undefined>(undefined);
   const artistInput = useRef<HTMLInputElement | null>(null);
   const titleInput = useRef<HTMLInputElement | null>(null);
   const reviewPlayButtons = useRef<Array<HTMLButtonElement | null>>([]);
@@ -215,9 +224,10 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
             setReviewPlayingKey(null);
           }
         },
-        onError: () => {
+        onError: (event: { data: number }) => {
           stopClipClock();
           playingRef.current = false;
+          pendingLoadErrorCode.current = Number.isInteger(event.data) ? event.data : undefined;
           triesRef.current = 0;
           setPlaying(false);
           setTries(0);
@@ -253,6 +263,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     stopClipClock();
     player.current?.stopVideo();
     playingRef.current = false;
+    pendingLoadErrorCode.current = undefined;
     setPlaying(false);
     setReviewPlayingKey(null);
     setScreen("home");
@@ -355,6 +366,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     stopClipClock();
     player.current?.stopVideo();
     playingRef.current = false;
+    pendingLoadErrorCode.current = undefined;
     triesRef.current = 2;
     submissionLocked.current = false;
     setArtist(""); setTitle(""); setTries(2); setPlaying(false);
@@ -483,6 +495,20 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         body: JSON.stringify({ attemptId: currentAttemptId, trackKey }),
       });
       if (!response.ok) throw new Error("feedback failed");
+      const data = await response.json() as {
+        score?: number;
+        maxScore?: number;
+        skipped?: number;
+        loadFailed?: boolean;
+      };
+      if (typeof data.loadFailed === "boolean") {
+        setReview((items) => items.map((item) => item.trackKey === trackKey
+          ? { ...item, loadFailed: data.loadFailed as boolean }
+          : item));
+      }
+      if (typeof data.score === "number" && typeof data.maxScore === "number" && typeof data.skipped === "number") {
+        setScore({ value: data.score, max: data.maxScore, skipped: data.skipped });
+      }
       await loadStats();
     } catch {
       setBadFragments((items) => {
@@ -500,7 +526,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     }
   };
 
-  const submit = (options: { loadFailed?: boolean; artistAnswer?: string; titleAnswer?: string } = {}) => {
+  const submit = (options: { loadFailed?: boolean; artistAnswer?: string; titleAnswer?: string; loadErrorCode?: number } = {}) => {
     if (!current || submissionLocked.current) return;
     submissionLocked.current = true;
     const next = [...answersRef.current, {
@@ -508,6 +534,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       artistAnswer: options.artistAnswer ?? artist,
       titleAnswer: options.titleAnswer ?? title,
       loadFailed: options.loadFailed ?? false,
+      loadErrorCode: options.loadFailed ? options.loadErrorCode ?? pendingLoadErrorCode.current : undefined,
     }];
     answersRef.current = next;
     setAnswers(next);
@@ -605,7 +632,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
           const info = artistInfo[item.track.key];
           return <article className={`review-row ${item.loadFailed ? "is-annulled" : ""} ${reviewIndex === itemIndex ? "is-selected" : ""}`} key={item.track.key}>
             <b>{String(itemIndex + 1).padStart(2, "0")}</b>
-            <div><strong>{item.track.artist} — {item.track.title}</strong>{item.track.releaseYear && <span className="review-track-meta">{item.track.releaseYear} год{item.track.album ? ` · альбом «${item.track.album.title}»` : ""}</span>}<small>{item.loadFailed ? "Аннулирован" : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small></div>
+            <div><strong>{item.track.artist} — {item.track.title}</strong>{item.track.releaseYear && <span className="review-track-meta">{item.track.releaseYear} год{item.track.album ? ` · альбом «${item.track.album.title}»` : ""}</span>}<small>{item.loadFailed ? `Аннулирован · ${youtubeErrorLabel(item.loadErrorCode)}` : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small></div>
             <div className="row-scores"><span className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/2`}</span>{comparison && <span className="owner-points">{ownerAnswer?.loadFailed ? "—" : ownerAnswer ? `${ownerAnswer.points}/2` : "—"}</span>}</div>
             <div className="review-controls">
               <Button ref={(element) => { reviewPlayButtons.current[itemIndex] = element; }} size="sm" variant="outline" className="review-play" disabled={!playerReady} aria-label={`Прослушать фрагмент ${item.track.artist} — ${item.track.title}`} onFocus={() => setReviewIndex(itemIndex)} onClick={() => { setReviewIndex(itemIndex); playReviewClip(item.track); }}><Volume2 /> {isPlaying ? "…" : `${item.track.duration} сек.`}</Button>
