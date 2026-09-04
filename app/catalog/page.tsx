@@ -42,7 +42,7 @@ export default async function CatalogPage({ searchParams }: { searchParams: Prom
       <td><span className={`catalog-status ${song.status.workflow}`}>{label(song.status.workflow)}</span><small>{label(song.status.language)}</small></td>
       <td>{song.usedArtistIds.length ? <span className="catalog-warning">есть использованные</span> : <span className="catalog-ok">все новые</span>}<small>{song.artistIds.length} {song.artistIds.length === 1 ? "сущность" : "участника"}</small></td>
       <td><span>{song.chart?.sourceIds.length || 0}</span><small>{song.candidateScore.toFixed(1)} балла</small></td>
-      <td><div className="catalog-readiness" title="Личность · год · ролик/фрагмент · оформление"><i className={song.readyForCuration ? "done" : ""} /><i className={song.release.releaseYearStatus === "verified" ? "done" : ""} /><i className={song.externalIds.youtube?.length && song.status.fragment === "good" ? "done" : ""} /><i className={song.enrichment.review === "verified" ? "done" : ""} /></div></td>
+      <td><div className="catalog-readiness" title="Личность · примерный год · ролик · игровой фрагмент"><i className={song.readyForCuration ? "done" : ""} /><i className={song.release.releaseYear ? "done" : ""} /><i className={song.externalIds.youtube?.length ? "done" : ""} /><i className={song.readyForPublication ? "done" : ""} /></div></td>
     </tr>)}</tbody></table></div>
     <nav className="catalog-pages"><span>Страница {result.page} из {result.pageCount}</span><div>{result.page > 1 && <Link href={hrefForPage(result.page - 1)}>← Назад</Link>}{result.page < result.pageCount && <Link href={hrefForPage(result.page + 1)}>Вперёд →</Link>}</div></nav>
   </main>;

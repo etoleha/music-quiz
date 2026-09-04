@@ -35,6 +35,7 @@ export const fragmentReports = sqliteTable("fragment_reports", {
   youtubeId: text("youtube_id").notNull(),
   clipStart: integer("clip_start").notNull(),
   clipDuration: integer("clip_duration").notNull(),
+  reason: text("reason").notNull().default("bad-fragment"),
   createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
 });
 

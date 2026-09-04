@@ -3,7 +3,8 @@ import { getLocalDb } from "../../../server/local-db";
 
 export const runtime = "nodejs";
 
-type FeedbackBody = { attemptId?: string; trackKey?: string };
+const feedbackReasons = new Set(["bad-fragment", "load-failed", "wrong-video", "not-eligible", "wrong-metadata"]);
+type FeedbackBody = { attemptId?: string; trackKey?: string; reason?: string };
 
 const allTracks = () => new Map(
   quizzes.flatMap((quiz) => quiz.tracks.map((track) => [track.key, { quizId: quiz.id, track }] as const)),
@@ -16,14 +17,17 @@ export async function POST(request: Request) {
       return Response.json({ error: "Некорректная отметка" }, { status: 400 });
     }
     const database = getLocalDb();
+    const requestedReason = body.reason || "bad-fragment";
+    const reason = feedbackReasons.has(requestedReason) ? requestedReason : "bad-fragment";
     const attempt = database.prepare(`SELECT id FROM attempts
       WHERE id = ? AND user_id = 'owner'`).get(body.attemptId) as { id: string } | undefined;
     const source = allTracks().get(body.trackKey);
     if (!attempt || !source) return Response.json({ error: "Результат не найден" }, { status: 404 });
 
-    database.prepare(`INSERT OR IGNORE INTO fragment_reports
-      (attempt_id, quiz_id, track_key, artist, title, youtube_id, clip_start, clip_duration)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?)`).run(
+    database.prepare(`INSERT INTO fragment_reports
+      (attempt_id, quiz_id, track_key, artist, title, youtube_id, clip_start, clip_duration, reason)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ON CONFLICT(attempt_id, track_key) DO UPDATE SET reason = excluded.reason, created_at = CURRENT_TIMESTAMP`).run(
         body.attemptId,
         source.quizId,
         source.track.key,
@@ -32,6 +36,7 @@ export async function POST(request: Request) {
         source.track.youtubeId,
         source.track.start,
         source.track.duration,
+        reason,
       );
     return Response.json({ reported: true });
   } catch (error) {

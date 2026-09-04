@@ -57,6 +57,7 @@ function createDatabase() {
       youtube_id TEXT NOT NULL,
       clip_start INTEGER NOT NULL,
       clip_duration INTEGER NOT NULL,
+      reason TEXT NOT NULL DEFAULT 'bad-fragment',
       created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
       UNIQUE(attempt_id, track_key)
     );
@@ -78,6 +79,10 @@ function createDatabase() {
       ON track_info_cache(expires_at);
     PRAGMA optimize;
   `);
+  const fragmentReportColumns = database.prepare("PRAGMA table_info(fragment_reports)").all() as Array<{ name: string }>;
+  if (!fragmentReportColumns.some(({ name }) => name === "reason")) {
+    database.exec("ALTER TABLE fragment_reports ADD COLUMN reason TEXT NOT NULL DEFAULT 'bad-fragment'");
+  }
   return database;
 }
 

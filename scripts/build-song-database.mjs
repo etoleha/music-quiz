@@ -14,6 +14,7 @@ import {
   artistIdentityFromStatusOverride,
   externalIdsFromStatusOverride,
   publicationBlockersFor,
+  quizReadinessBlockersFor,
   validateSongStatusOverrides,
 } from "./song-status-overrides.mjs";
 
@@ -29,13 +30,18 @@ const overrides = readJson(dataPath("song-status-overrides.json"));
 validateSongStatusOverrides(overrides);
 const enrichmentOverrides = readJson(dataPath("song-enrichment-overrides.json"));
 const enrichmentAuto = readJson(dataPath("song-enrichment-auto.json"));
+const readyPool = fs.existsSync(dataPath("quiz-ready-songs.json"))
+  ? readJson(dataPath("quiz-ready-songs.json"))
+  : { songs: [] };
+const preparedBySongId = new Map((readyPool.songs || []).map((song) => [song.songId, song]));
+if (preparedBySongId.size !== (readyPool.songs || []).length) throw new Error("quiz-ready-songs.json contains duplicate songId values");
 const catalogIndex = readJson(dataPath("chart-catalog.json"));
 const catalogArchive = catalogIndex.archive
   ? JSON.parse(zlib.gunzipSync(fs.readFileSync(dataPath(catalogIndex.archive))).toString("utf8"))
   : null;
 const catalogTracks = catalogArchive?.tracks
   || (catalogIndex.parts || []).flatMap((file) => readJson(dataPath(file)).tracks || []);
-const poolFiles = fs.readdirSync(dataPath()).filter((file) => /^song-pool(?:-\d+)?\.json$/.test(file)).sort();
+const poolFiles = fs.readdirSync(dataPath()).filter((file) => /^song-pool(?:-(?:\d+|soviet))?\.json$/.test(file)).sort();
 
 const unique = (values) => [...new Set(values.filter(Boolean).map(String))];
 const uniqueNumbers = (values) => [...new Set(values.filter(validYear).map(Number))];
@@ -282,6 +288,8 @@ const automaticEnrichmentByEntry = new Map(entries.map((entry) => [entry, automa
 for (const entry of entries) {
   const manual = statusOverridesByEntry.get(entry);
   attachExternalIds(entry, externalIdsFromStatusOverride(manual, `status override for ${entry.id}`));
+  const preparation = preparedBySongId.get(entry.id);
+  if (preparation?.youtube?.videoId) attachExternalIds(entry, { youtube: [preparation.youtube.videoId] });
   const manualIdentity = artistIdentityFromStatusOverride(manual, `status override for ${entry.id}`);
   applyArtistCreditOverride(entry, manualIdentity);
 }
@@ -315,6 +323,10 @@ for (const entry of entries) {
   const manual = statusOverridesByEntry.get(entry);
   const enrichment = enrichmentOverridesByEntry.get(entry);
   const automaticEnrichment = automaticEnrichmentByEntry.get(entry);
+  const preparation = preparedBySongId.get(entry.id) || null;
+  if (preparation && JSON.stringify(preparation.artistIds) !== JSON.stringify(entry.artistIds)) {
+    throw new Error(`quiz-ready-songs.json artist identity is stale for ${entry.id}`);
+  }
   const automaticLanguage = classifyLanguage(entry);
   const language = manual.language || automaticLanguage.value;
   const workflowStatus = manual.workflowStatus || (entry.quizRefs.length ? "used" : entry.explicit ? "rejected" : "waiting");
@@ -342,6 +354,7 @@ for (const entry of entries) {
   entry.allArtistsUnused = entry.usedArtistIds.length === 0;
   const candidateReleaseYears = [
     ...(entry.releaseYearCandidates || []),
+    ...(validYear(preparation?.approximateYear) ? [{ year: Number(preparation.approximateYear), source: "quiz-ready-pool" }] : []),
     ...(validYear(automaticEnrichment.releaseYear) ? [{
       year: Number(automaticEnrichment.releaseYear),
       source: automaticEnrichment.releaseYearState === "verified" ? "musicbrainz-isrc" : "musicbrainz-search",
@@ -351,9 +364,10 @@ for (const entry of entries) {
   const identifierReleaseYear = automaticEnrichment.releaseYearState === "verified" && validYear(automaticEnrichment.releaseYear)
     ? Number(automaticEnrichment.releaseYear)
     : null;
+  const preparedReleaseYear = validYear(preparation?.approximateYear) ? Number(preparation.approximateYear) : null;
   entry.release = {
-    releaseYear: validYear(enrichment.releaseYear) ? Number(enrichment.releaseYear) : identifierReleaseYear || automaticReleaseYear,
-    releaseYearStatus: validYear(enrichment.releaseYear) || identifierReleaseYear ? "verified" : automaticReleaseYear ? "candidate" : "missing",
+    releaseYear: validYear(enrichment.releaseYear) ? Number(enrichment.releaseYear) : identifierReleaseYear || preparedReleaseYear || automaticReleaseYear,
+    releaseYearStatus: validYear(enrichment.releaseYear) || identifierReleaseYear ? "verified" : preparedReleaseYear || automaticReleaseYear ? "candidate" : "missing",
     versionYear: validYear(enrichment.versionYear) ? Number(enrichment.versionYear) : null,
     versionType: enrichment.versionType || automaticEnrichment.versionType || "original",
     album: enrichment.album || automaticEnrichment.album || null,
@@ -373,10 +387,11 @@ for (const entry of entries) {
   };
   entry.readyForCuration = entry.quizCandidate && reviewStatus === "verified" && entry.artistIdentityResolved;
   entry.readyForUniqueArtistQuiz = entry.readyForCuration && entry.allArtistsUnused;
-  entry.publicationBlockers = publicationBlockersFor(entry, { language, reviewStatus, fragmentStatus });
+  entry.quizPreparation = preparation;
+  entry.metadataBlockers = publicationBlockersFor(entry, { language, reviewStatus, fragmentStatus });
+  entry.publicationBlockers = quizReadinessBlockersFor(entry, preparation, { workflowStatus });
   entry.publicationProgress = Number(((8 - entry.publicationBlockers.length) / 8).toFixed(3));
-  entry.readyForPublication = entry.readyForCuration
-    && !entry.publicationBlockers.some((blocker) => ["release-year", "youtube-video", "fragment-review", "enrichment-review"].includes(blocker));
+  entry.readyForPublication = entry.publicationBlockers.length === 0;
   entry.readyForAutomaticQuiz = entry.readyForPublication && entry.allArtistsUnused;
   if (manual.notes) entry.notes = unique(Array.isArray(manual.notes) ? manual.notes : [manual.notes]);
   delete entry.releaseYearCandidates;

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "batch": "soviet",
+  "generatedAt": "2026-09-04",
+  "count": 20,
+  "notes": [
+    "Кандидаты советского периода для эпохального баланса будущих квизов.",
+    "Год используется как приблизительный игровой ориентир и не требует отдельного подтверждения перед публикацией.",
+    "Песни отобраны из репертуара фестиваля «Песня года» и сопоставимых редакционных каталогов советской эстрады."
+  ],
+  "sources": [
+    {
+      "name": "Песня года",
+      "url": "https://ru.wikipedia.org/wiki/Песня_года",
+      "role": "trusted-russian-collection"
+    },
+    {
+      "name": "Фирма «Мелодия»",
+      "url": "https://melody.su/",
+      "role": "era-cross-check"
+    }
+  ],
+  "tracks": [
+    { "id": "soviet-0001", "artist": "Майя Кристалинская", "title": "А снег идёт", "listYear": 1961, "sourceBand": "recognizable", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/А_снег_идёт_(песня)" },
+    { "id": "soviet-0002", "artist": "Эдуард Хиль", "title": "Как провожают пароходы", "listYear": 1966, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Эдуард_Хиль" },
+    { "id": "soviet-0003", "artist": "Муслим Магомаев", "title": "Синяя вечность", "listYear": 1969, "sourceBand": "recognizable", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Синяя_вечность" },
+    { "id": "soviet-0004", "artist": "Валерий Ободзинский", "title": "Эти глаза напротив", "listYear": 1970, "sourceBand": "recognizable", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Эти_глаза_напротив" },
+    { "id": "soviet-0005", "artist": "Анна Герман", "title": "Надежда", "listYear": 1971, "sourceBand": "recognizable", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Надежда_(песня)" },
+    { "id": "soviet-0006", "artist": "ВИА «Самоцветы»", "title": "Мой адрес — Советский Союз", "listYear": 1972, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Самоцветы_(вокально-инструментальный_ансамбль)" },
+    { "id": "soviet-0007", "artist": "ВИА «Весёлые ребята»", "title": "Как прекрасен этот мир", "listYear": 1972, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Весёлые_ребята_(ВИА)" },
+    { "id": "soviet-0008", "artist": "Людмила Сенчина", "title": "Золушка", "listYear": 1973, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Сенчина,_Людмила_Петровна" },
+    { "id": "soviet-0009", "artist": "Александр Градский", "title": "Как молоды мы были", "listYear": 1976, "sourceBand": "recognizable", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Как_молоды_мы_были" },
+    { "id": "soviet-0010", "artist": "Яак Йоала", "title": "Подберу музыку", "listYear": 1979, "sourceBand": "deep", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Йоала,_Яак_Арнович" },
+    { "id": "soviet-0011", "artist": "Юрий Антонов", "title": "Море", "listYear": 1981, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Антонов,_Юрий_Михайлович" },
+    { "id": "soviet-0012", "artist": "Форум", "title": "Белая ночь", "listYear": 1984, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Форум_(группа)" },
+    { "id": "soviet-0013", "artist": "Игорь Скляр", "title": "Комарово", "listYear": 1985, "sourceBand": "recognizable", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Комарово_(песня)" },
+    { "id": "soviet-0014", "artist": "София Ротару", "title": "Луна, луна", "listYear": 1986, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Ротару,_София_Михайловна" },
+    { "id": "soviet-0015", "artist": "Электроклуб", "title": "Чистые пруды", "listYear": 1987, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Чистые_пруды_(песня)" },
+    { "id": "soviet-0016", "artist": "Владимир Маркин", "title": "Я готов целовать песок", "listYear": 1987, "sourceBand": "deep", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Маркин,_Владимир_Николаевич" },
+    { "id": "soviet-0017", "artist": "Михаил Боярский", "title": "Зеленоглазое такси", "listYear": 1987, "sourceBand": "recognizable", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Зеленоглазое_такси" },
+    { "id": "soviet-0018", "artist": "Александр Малинин", "title": "Поручик Голицын", "listYear": 1988, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Малинин,_Александр_Николаевич" },
+    { "id": "soviet-0019", "artist": "Игорь Корнелюк", "title": "Билет на балет", "listYear": 1988, "sourceBand": "deep", "candidateType": "soviet-catalog", "sourceName": "Песня года", "sourceUrl": "https://ru.wikipedia.org/wiki/Корнелюк,_Игорь_Евгеньевич" },
+    { "id": "soviet-0020", "artist": "Жанна Агузарова", "title": "Верю я", "listYear": 1988, "sourceBand": "middle", "candidateType": "soviet-catalog", "sourceName": "Советская эстрада", "sourceUrl": "https://ru.wikipedia.org/wiki/Агузарова,_Жанна_Хасановна" }
+  ]
+}

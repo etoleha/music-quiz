@@ -1,0 +1,4752 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-04T13:08:21.127Z",
+  "policy": {
+    "targetTotal": 100,
+    "eraTargets": {
+      "soviet": 10,
+      "1990s": 16,
+      "2000s": 39,
+      "2010s": 25,
+      "2020s": 10
+    },
+    "uniqueArtists": true,
+    "approximateYearsAllowed": true,
+    "manualClipReviewRequired": false,
+    "optionalMetadataBlocksPublication": false
+  },
+  "stats": {
+    "readyForQuiz": 100,
+    "eraCounts": {
+      "soviet": 10,
+      "1990s": 16,
+      "2000s": 39,
+      "2010s": 25,
+      "2020s": 10
+    },
+    "recognitionCounts": {
+      "recognizable": 26,
+      "middle": 45,
+      "deep": 29
+    },
+    "reservedArtistEntities": 117,
+    "networkSearches": 0,
+    "cachedSearches": 141,
+    "skippedCandidates": 25
+  },
+  "songs": [
+    {
+      "id": "ready-0001",
+      "songId": "pool-10e3a723f9ab",
+      "poolId": "soviet-0007",
+      "artist": "ВИА «Весёлые ребята»",
+      "title": "Как прекрасен этот мир",
+      "artistIds": [
+        "viaveselyerebyata"
+      ],
+      "artistAliases": [
+        "ВИА «Весёлые ребята»"
+      ],
+      "titleAliases": [
+        "Как прекрасен этот мир"
+      ],
+      "era": "soviet",
+      "approximateYear": 1972,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Песня года",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Весёлые_ребята_(ВИА)"
+      },
+      "youtube": {
+        "videoId": "2_0MJeke3Rg",
+        "title": "ВИА Веселые ребята  - как прекрасен этот мир",
+        "channel": "Ретро Легенды",
+        "viewCount": 387710,
+        "durationSeconds": 235,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0002",
+      "songId": "pool-ac0e399e18b8",
+      "poolId": "soviet-0005",
+      "artist": "Анна Герман",
+      "title": "Надежда",
+      "artistIds": [
+        "annagerman"
+      ],
+      "artistAliases": [
+        "Анна Герман"
+      ],
+      "titleAliases": [
+        "Надежда"
+      ],
+      "era": "soviet",
+      "approximateYear": 1971,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Песня года",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Надежда_(песня)"
+      },
+      "youtube": {
+        "videoId": "MNy65TItXnU",
+        "title": "Анна Герман - Надежда, мой компас земной",
+        "channel": "Александр Чернов",
+        "viewCount": 14508213,
+        "durationSeconds": 221,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0003",
+      "songId": "pool-7235b98b3a48",
+      "poolId": "soviet-0006",
+      "artist": "ВИА «Самоцветы»",
+      "title": "Мой адрес — Советский Союз",
+      "artistIds": [
+        "viasamotsvety"
+      ],
+      "artistAliases": [
+        "ВИА «Самоцветы»"
+      ],
+      "titleAliases": [
+        "Мой адрес — Советский Союз"
+      ],
+      "era": "soviet",
+      "approximateYear": 1972,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Песня года",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Самоцветы_(вокально-инструментальный_ансамбль)"
+      },
+      "youtube": {
+        "videoId": "tf_2ytc9CW0",
+        "title": "ВИА \"Самоцветы\" - \"Мой адрес - Советский Союз!\" (1973)",
+        "channel": "Музыка на советском телевидении",
+        "viewCount": 635326,
+        "durationSeconds": 154,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0004",
+      "songId": "pool-adaecbdb395c",
+      "poolId": "soviet-0016",
+      "artist": "Владимир Маркин",
+      "title": "Я готов целовать песок",
+      "artistIds": [
+        "vladimirmarkin"
+      ],
+      "artistAliases": [
+        "Владимир Маркин"
+      ],
+      "titleAliases": [
+        "Я готов целовать песок"
+      ],
+      "era": "soviet",
+      "approximateYear": 1987,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Маркин,_Владимир_Николаевич"
+      },
+      "youtube": {
+        "videoId": "5MGEQs3-7Yc",
+        "title": "Владимир Маркин \"Я готов целовать песок\" (1987)",
+        "channel": "Музыка на советском телевидении",
+        "viewCount": 1785849,
+        "durationSeconds": 155,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 26,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0005",
+      "songId": "pool-f5ab2d2aac8f",
+      "poolId": "soviet-0008",
+      "artist": "Людмила Сенчина",
+      "title": "Золушка",
+      "artistIds": [
+        "lyudmilasenchina"
+      ],
+      "artistAliases": [
+        "Людмила Сенчина"
+      ],
+      "titleAliases": [
+        "Золушка"
+      ],
+      "era": "soviet",
+      "approximateYear": 1973,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Сенчина,_Людмила_Петровна"
+      },
+      "youtube": {
+        "videoId": "lDZCpr_pBSs",
+        "title": "Людмила Сенчина -\" Золушка \"",
+        "channel": "Lizaweta 246",
+        "viewCount": 1016221,
+        "durationSeconds": 239,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 44,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0006",
+      "songId": "pool-a87b558ca591",
+      "poolId": "soviet-0004",
+      "artist": "Валерий Ободзинский",
+      "title": "Эти глаза напротив",
+      "artistIds": [
+        "valeriiobodzinskii"
+      ],
+      "artistAliases": [
+        "Валерий Ободзинский"
+      ],
+      "titleAliases": [
+        "Эти глаза напротив"
+      ],
+      "era": "soviet",
+      "approximateYear": 1970,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Эти_глаза_напротив"
+      },
+      "youtube": {
+        "videoId": "R9RWKriFiC4",
+        "title": "Валерий Ободзинский - Эти глаза напротив",
+        "channel": "mugler02",
+        "viewCount": 16546174,
+        "durationSeconds": 207,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0007",
+      "songId": "pool-7712fa60500d",
+      "poolId": "soviet-0002",
+      "artist": "Эдуард Хиль",
+      "title": "Как провожают пароходы",
+      "artistIds": [
+        "eduardhil"
+      ],
+      "artistAliases": [
+        "Эдуард Хиль"
+      ],
+      "titleAliases": [
+        "Как провожают пароходы"
+      ],
+      "era": "soviet",
+      "approximateYear": 1966,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Эдуард_Хиль"
+      },
+      "youtube": {
+        "videoId": "5C4bivr_ieg",
+        "title": "Эдуард Хиль \"Как провожают пароходы\" (1965)",
+        "channel": "Музыка на советском телевидении",
+        "viewCount": 249292,
+        "durationSeconds": 187,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0008",
+      "songId": "pool-4339a23b7193",
+      "poolId": "soviet-0010",
+      "artist": "Яак Йоала",
+      "title": "Подберу музыку",
+      "artistIds": [
+        "yaakioala"
+      ],
+      "artistAliases": [
+        "Яак Йоала"
+      ],
+      "titleAliases": [
+        "Подберу музыку"
+      ],
+      "era": "soviet",
+      "approximateYear": 1979,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Песня года",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Йоала,_Яак_Арнович"
+      },
+      "youtube": {
+        "videoId": "HivfQbISY_Y",
+        "title": "Яак Йоала \"Подберу музыку\" (1979)",
+        "channel": "Музыка на советском телевидении",
+        "viewCount": 2266160,
+        "durationSeconds": 298,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 52,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0009",
+      "songId": "pool-3222bd4fe79c",
+      "poolId": "soviet-0013",
+      "artist": "Игорь Скляр",
+      "title": "Комарово",
+      "artistIds": [
+        "igorsklyar"
+      ],
+      "artistAliases": [
+        "Игорь Скляр"
+      ],
+      "titleAliases": [
+        "Комарово"
+      ],
+      "era": "soviet",
+      "approximateYear": 1985,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Песня года",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Комарово_(песня)"
+      },
+      "youtube": {
+        "videoId": "G6NqhIYzpZM",
+        "title": "Игорь Скляр - Комарово",
+        "channel": "MP3Nice",
+        "viewCount": 23137531,
+        "durationSeconds": 136,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0010",
+      "songId": "pool-3c315b562a78",
+      "poolId": "soviet-0001",
+      "artist": "Майя Кристалинская",
+      "title": "А снег идёт",
+      "artistIds": [
+        "maiyakristalinskaya"
+      ],
+      "artistAliases": [
+        "Майя Кристалинская"
+      ],
+      "titleAliases": [
+        "А снег идёт"
+      ],
+      "era": "soviet",
+      "approximateYear": 1961,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/А_снег_идёт_(песня)"
+      },
+      "youtube": {
+        "videoId": "6DKRstqSDOM",
+        "title": "МАЙЯ КРИСТАЛИНСКАЯ   А СНЕГ ИДЕТ",
+        "channel": "валерий панчеха",
+        "viewCount": 847965,
+        "durationSeconds": 137,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 27,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0011",
+      "songId": "pool-9dbb5879802c",
+      "poolId": "pool-0006",
+      "artist": "Запрещенные барабанщики",
+      "title": "Убили негра",
+      "artistIds": [
+        "zapreschennyebarabanschiki"
+      ],
+      "artistAliases": [
+        "Запрещенные барабанщики"
+      ],
+      "titleAliases": [
+        "Убили негра"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "9j4HJp-AsOo",
+        "title": "Запрещенные Барабанщики   \"Убили негра\"",
+        "channel": "Запрещённые Барабанщики official music video",
+        "viewCount": 1983292,
+        "durationSeconds": 230,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 35,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0012",
+      "songId": "pool-c9eceed0a30e",
+      "poolId": "pool-1029",
+      "artist": "Алёна Свиридова",
+      "title": "Ой!",
+      "artistIds": [
+        "alenasviridova"
+      ],
+      "artistAliases": [
+        "Алёна Свиридова"
+      ],
+      "titleAliases": [
+        "Ой!"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 1999",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "2s2fOZI4h6Q",
+        "title": "Алёна Свиридова - \"Ой!\"",
+        "channel": "Алёна Свиридова",
+        "viewCount": 210086,
+        "durationSeconds": 240,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 48,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0013",
+      "songId": "pool-dcd1e7a1e60e",
+      "poolId": "pool-0011",
+      "artist": "Биплан",
+      "title": "С добрым утром",
+      "artistIds": [
+        "biplan"
+      ],
+      "artistAliases": [
+        "Биплан"
+      ],
+      "titleAliases": [
+        "С добрым утром"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "zlzm2yAiiFY",
+        "title": "Биплан - С добрым утром",
+        "channel": "Ekarny Babay",
+        "viewCount": 263260,
+        "durationSeconds": 224,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 42,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0014",
+      "songId": "pool-17e0068ea8cc",
+      "poolId": "pool-1043",
+      "artist": "Кабаре-дуэт Академия",
+      "title": "Маленький",
+      "artistIds": [
+        "kabareduetakademiya"
+      ],
+      "artistAliases": [
+        "Кабаре-дуэт Академия"
+      ],
+      "titleAliases": [
+        "Маленький"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 1999",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "_OWL_vVv0Jg",
+        "title": "Кабаре Дуэт Академия Маленький",
+        "channel": "Нурлан Боканов",
+        "viewCount": 33337,
+        "durationSeconds": 222,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 45,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0015",
+      "songId": "pool-e3730d4d5976",
+      "poolId": "pool-0012",
+      "artist": "НеИгрушки",
+      "title": "100 дней до приказа",
+      "artistIds": [
+        "neigrushki"
+      ],
+      "artistAliases": [
+        "НеИгрушки"
+      ],
+      "titleAliases": [
+        "100 дней до приказа"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "mqgJ0BDHBCY",
+        "title": "НеИгрушки - 100 дней до приказа (Official Video, 1999)",
+        "channel": "MELOMAN VIDEO",
+        "viewCount": 2871690,
+        "durationSeconds": 259,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0016",
+      "songId": "pool-9680c8984433",
+      "poolId": "pool-0013",
+      "artist": "Профессор Лебединский",
+      "title": "Спят усталые игрушки",
+      "artistIds": [
+        "professorlebedinskii"
+      ],
+      "artistAliases": [
+        "Профессор Лебединский"
+      ],
+      "titleAliases": [
+        "Спят усталые игрушки"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "AZDvnXKvtSw",
+        "title": "Профессор Лебединский - Спят усталые игрушки. HD",
+        "channel": "Алексей Профессор Лебединский",
+        "viewCount": 234705,
+        "durationSeconds": 212,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 41,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0017",
+      "songId": "pool-1441cbaca5e6",
+      "poolId": "pool-0025",
+      "artist": "Алексей Глызин",
+      "title": "Поздний вечер в Сорренто",
+      "artistIds": [
+        "alekseiglyzin"
+      ],
+      "artistAliases": [
+        "Алексей Глызин"
+      ],
+      "titleAliases": [
+        "Поздний вечер в Сорренто"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "8ibkl-4biGI",
+        "title": "Алексей Глызин \"Поздний вечер в Сорренто\"",
+        "channel": "Алексей Глызин",
+        "viewCount": 6402710,
+        "durationSeconds": 243,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 50,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0018",
+      "songId": "pool-ce296f1740f8",
+      "poolId": "pool-0018",
+      "artist": "Евгений Осин",
+      "title": "Мечта",
+      "artistIds": [
+        "evgeniiosin"
+      ],
+      "artistAliases": [
+        "Евгений Осин"
+      ],
+      "titleAliases": [
+        "Мечта"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "HQcOaKf4Z9M",
+        "title": "Евгений Осин - Мечта (Official Video) 1999",
+        "channel": "MELOMAN VIDEO",
+        "viewCount": 73082,
+        "durationSeconds": 284,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0019",
+      "songId": "pool-9b768ad51421",
+      "poolId": "pool-1006",
+      "artist": "Владимир Кузьмин",
+      "title": "Семь морей",
+      "artistIds": [
+        "vladimirkuzmin"
+      ],
+      "artistAliases": [
+        "Владимир Кузьмин"
+      ],
+      "titleAliases": [
+        "Семь морей"
+      ],
+      "era": "1990s",
+      "approximateYear": 1996,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "golden-gramophone",
+        "sourceName": "Золотой граммофон",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Список_лауреатов_премии_«Золотой_граммофон»"
+      },
+      "youtube": {
+        "videoId": "2Hn6mJrtyps",
+        "title": "Владимир Кузьмин - Семь морей",
+        "channel": "StarPro",
+        "viewCount": 1127579,
+        "durationSeconds": 286,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 54,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0020",
+      "songId": "pool-1bfceb3c8c70",
+      "poolId": "pool-0020",
+      "artist": "Владимир Асимов",
+      "title": "Тёмно красное вино",
+      "artistIds": [
+        "vladimirasimov"
+      ],
+      "artistAliases": [
+        "Владимир Асимов"
+      ],
+      "titleAliases": [
+        "Тёмно красное вино"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "7i5woKPCXJ0",
+        "title": "Владимир Асимов \"Темно-красное вино\"",
+        "channel": "Irinka304",
+        "viewCount": 20027,
+        "durationSeconds": 265,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0021",
+      "songId": "pool-ab9dee1bf799",
+      "poolId": "pool-1047",
+      "artist": "Олег Газманов",
+      "title": "На Заре",
+      "artistIds": [
+        "oleggazmanov"
+      ],
+      "artistAliases": [
+        "Олег Газманов"
+      ],
+      "titleAliases": [
+        "На Заре"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 1999",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "lKf4ic5eScQ",
+        "title": "Олег Газманов - На заре",
+        "channel": "ShuMa",
+        "viewCount": 38882,
+        "durationSeconds": 259,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 51,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0022",
+      "songId": "pool-a3ba38bdfcf1",
+      "poolId": "pool-1010",
+      "artist": "Ирина Климова",
+      "title": "Далеко",
+      "artistIds": [
+        "irinaklimova"
+      ],
+      "artistAliases": [
+        "Ирина Климова"
+      ],
+      "titleAliases": [
+        "Далеко"
+      ],
+      "era": "1990s",
+      "approximateYear": 1996,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "golden-gramophone",
+        "sourceName": "Золотой граммофон",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Список_лауреатов_премии_«Золотой_граммофон»"
+      },
+      "youtube": {
+        "videoId": "jaN8KGIFEQY",
+        "title": "Ирина Климова - Далеко",
+        "channel": "was",
+        "viewCount": 766,
+        "durationSeconds": 253,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 52,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0023",
+      "songId": "pool-886b2d52fbe9",
+      "poolId": "pool-0030",
+      "artist": "Чугунный Скороход",
+      "title": "Быстрая походка",
+      "artistIds": [
+        "chugunnyiskorohod"
+      ],
+      "artistAliases": [
+        "Чугунный Скороход"
+      ],
+      "titleAliases": [
+        "Быстрая походка"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "4xZTffBmVP0",
+        "title": "Чугунный Скороход - Быстрая походка",
+        "channel": "MacJoseph",
+        "viewCount": 669306,
+        "durationSeconds": 239,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 49,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0024",
+      "songId": "pool-f261a89232ed",
+      "poolId": "pool-1013",
+      "artist": "Людмила Зыкина",
+      "title": "Я люблю вас",
+      "artistIds": [
+        "lyudmilazykina"
+      ],
+      "artistAliases": [
+        "Людмила Зыкина"
+      ],
+      "titleAliases": [
+        "Я люблю вас"
+      ],
+      "era": "1990s",
+      "approximateYear": 1996,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "golden-gramophone",
+        "sourceName": "Золотой граммофон",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Список_лауреатов_премии_«Золотой_граммофон»"
+      },
+      "youtube": {
+        "videoId": "av0HSzDUx0o",
+        "title": "Людмила Зыкина - Я люблю вас",
+        "channel": "venats",
+        "viewCount": 14373,
+        "durationSeconds": 269,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 52,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0025",
+      "songId": "pool-8904a1a85b3c",
+      "poolId": "pool-1015",
+      "artist": "Надежда Кадышева и ансамбль Золотое кольцо",
+      "title": "Течёт ручей",
+      "artistIds": [
+        "ansamblzolotoekoltso",
+        "nadezhdakadysheva"
+      ],
+      "artistAliases": [
+        "Надежда Кадышева и ансамбль Золотое кольцо"
+      ],
+      "titleAliases": [
+        "Течёт ручей"
+      ],
+      "era": "1990s",
+      "approximateYear": 1996,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "golden-gramophone",
+        "sourceName": "Золотой граммофон",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Список_лауреатов_премии_«Золотой_граммофон»"
+      },
+      "youtube": {
+        "videoId": "2XNnk0ngAlE",
+        "title": "Надежда Кадышева и ансамбль \"Золотое кольцо\" - Течёт ручей",
+        "channel": "Сергей Марков",
+        "viewCount": 800236,
+        "durationSeconds": 138,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 25,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0026",
+      "songId": "pool-f456b59a033e",
+      "poolId": "pool-1050",
+      "artist": "Таня Буланова",
+      "title": "Мало не много",
+      "artistIds": [
+        "tanyabulanova"
+      ],
+      "artistAliases": [
+        "Таня Буланова"
+      ],
+      "titleAliases": [
+        "Мало не много"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 1999",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "euoHYphmgqY",
+        "title": "Таня Буланова/ Мало  не много",
+        "channel": "Евгений Ступишин",
+        "viewCount": 610,
+        "durationSeconds": 220,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 35,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0027",
+      "songId": "pool-aca5fe7b24e4",
+      "poolId": "pool-0541",
+      "artist": "Всё включено",
+      "title": "Загорелое лето",
+      "artistIds": [
+        "vsevklyucheno"
+      ],
+      "artistAliases": [
+        "Всё включено"
+      ],
+      "titleAliases": [
+        "Загорелое лето"
+      ],
+      "era": "2000s",
+      "approximateYear": 2009,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=omACSwlI8Zw"
+      },
+      "youtube": {
+        "videoId": "d5qGT7YscMY",
+        "title": "ВСЕ ВКЛЮЧЕНО - \"ЗАГОРЕЛОЕ ЛЕТО\"",
+        "channel": "ГРУППА ВСЕ ВКЛЮЧЕНО (www.vsyovklucheno.ru)",
+        "viewCount": 6780,
+        "durationSeconds": 227,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 45,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0028",
+      "songId": "pool-b430ec0f850f",
+      "poolId": "pool-0404",
+      "artist": "Евгения Отрадная",
+      "title": "Уходи и дверь закрой",
+      "artistIds": [
+        "evgeniyaotradnaya"
+      ],
+      "artistAliases": [
+        "Евгения Отрадная"
+      ],
+      "titleAliases": [
+        "Уходи и дверь закрой"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "sajZP8ACfRE",
+        "title": "Евгения Отрадная \"Уходи и дверь закрой\".",
+        "channel": "Muz Arhiv Universal",
+        "viewCount": 3056391,
+        "durationSeconds": 216,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 37,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0029",
+      "songId": "pool-ac38244496e1",
+      "poolId": "pool-0417",
+      "artist": "Тимати",
+      "title": "Не сходи с ума",
+      "artistIds": [
+        "timati"
+      ],
+      "artistAliases": [
+        "Тимати"
+      ],
+      "titleAliases": [
+        "Не сходи с ума"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "0I8UzeIJ_SY",
+        "title": "Тимати - Не сходи с ума (official video)",
+        "channel": "Тимати",
+        "viewCount": 2722330,
+        "durationSeconds": 230,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 35,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0030",
+      "songId": "pool-82398ccaf220",
+      "poolId": "pool-0169",
+      "artist": "Игорь Николаев",
+      "title": "Прости и отпусти",
+      "artistIds": [
+        "igornikolaev"
+      ],
+      "artistAliases": [
+        "Игорь Николаев"
+      ],
+      "titleAliases": [
+        "Прости и отпусти"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=Obl5ZdqqmQ8"
+      },
+      "youtube": {
+        "videoId": "cZvQU4gBnvc",
+        "title": "Игорь Николаев - Прости и отпусти (аудио)",
+        "channel": "Игорь Николаев",
+        "viewCount": 455682,
+        "durationSeconds": 304,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 51,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0031",
+      "songId": "pool-4ef7f0eb3d9d",
+      "poolId": "pool-1335",
+      "artist": "Чай Вдвоем",
+      "title": "Прости",
+      "artistIds": [
+        "chaivdvoem"
+      ],
+      "artistAliases": [
+        "Чай Вдвоем"
+      ],
+      "titleAliases": [
+        "Прости"
+      ],
+      "era": "2000s",
+      "approximateYear": 2006,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2006",
+        "sourceUrl": "https://www.youtube.com/watch?v=SUT03iBzl4c"
+      },
+      "youtube": {
+        "videoId": "hXPq1YS7Myc",
+        "title": "Чай Вдвоем - Прости",
+        "channel": "StarPro",
+        "viewCount": 1194504,
+        "durationSeconds": 267,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 52,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0032",
+      "songId": "pool-d23abda574e0",
+      "poolId": "pool-0198",
+      "artist": "Разные Люди",
+      "title": "Никогда не вернусь",
+      "artistIds": [
+        "raznyelyudi"
+      ],
+      "artistAliases": [
+        "Разные Люди"
+      ],
+      "titleAliases": [
+        "Никогда не вернусь"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=roDOHklQsQ8"
+      },
+      "youtube": {
+        "videoId": "kLSe7jdn3Ws",
+        "title": "Разные Люди – Никогда не вернусь (video 2003)",
+        "channel": "РАЗНЫЕ ЛЮДИ",
+        "viewCount": 23267,
+        "durationSeconds": 232,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 43,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0033",
+      "songId": "pool-8e50f9ad246a",
+      "poolId": "pool-0418",
+      "artist": "Триада",
+      "title": "Нежный Омут",
+      "artistIds": [
+        "triada"
+      ],
+      "artistAliases": [
+        "Триада"
+      ],
+      "titleAliases": [
+        "Нежный Омут"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "oUUa2_QL9cc",
+        "title": "Нежный омут",
+        "channel": "Официальный канал группы ТРИАДА",
+        "viewCount": 1743712,
+        "durationSeconds": 218,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0034",
+      "songId": "pool-e057ccd540fc",
+      "poolId": "pool-0438",
+      "artist": "Руслан Набиев",
+      "title": "По Ресторанам",
+      "artistIds": [
+        "ruslannabiev"
+      ],
+      "artistAliases": [
+        "Руслан Набиев"
+      ],
+      "titleAliases": [
+        "По Ресторанам"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "v-RNpBDCHtE",
+        "title": "Руслан Набиев  -  По ресторанам",
+        "channel": "Руслан Набиев",
+        "viewCount": 43855442,
+        "durationSeconds": 239,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0035",
+      "songId": "pool-27e74f81f39f",
+      "poolId": "pool-0419",
+      "artist": "Павел Воля",
+      "title": "Офигенно",
+      "artistIds": [
+        "pavelvolya"
+      ],
+      "artistAliases": [
+        "Павел Воля"
+      ],
+      "titleAliases": [
+        "Офигенно"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "DIac05tWDBY",
+        "title": "Павел Воля - Офигенно",
+        "channel": "Павел Воля (PavelVolyaOfficial)",
+        "viewCount": 2659325,
+        "durationSeconds": 252,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 48,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0036",
+      "songId": "pool-0ccf3a1ecab4",
+      "poolId": "pool-0406",
+      "artist": "Мика Ньютон",
+      "title": "Белые лошади",
+      "artistIds": [
+        "mikanyuton"
+      ],
+      "artistAliases": [
+        "Мика Ньютон"
+      ],
+      "titleAliases": [
+        "Белые лошади"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "XY_nJm_02Lk",
+        "title": "Мика Ньютон Белые лошади...",
+        "channel": "Iulika99Iulika",
+        "viewCount": 1056410,
+        "durationSeconds": 170,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0037",
+      "songId": "pool-e0a0bcd86110",
+      "poolId": "pool-0502",
+      "artist": "Евгений Анегин",
+      "title": "Луна",
+      "artistIds": [
+        "evgeniianegin"
+      ],
+      "artistAliases": [
+        "Евгений Анегин"
+      ],
+      "titleAliases": [
+        "Луна"
+      ],
+      "era": "2000s",
+      "approximateYear": 2008,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=YwLOXoRcUEg"
+      },
+      "youtube": {
+        "videoId": "2zPVDUG9x74",
+        "title": "Евгений Анегин   Луна",
+        "channel": "дмитрий сергеев",
+        "viewCount": 422813,
+        "durationSeconds": 203,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 39,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0038",
+      "songId": "pool-ebb090399eea",
+      "poolId": "pool-0153",
+      "artist": "Бутырка",
+      "title": "Запахло весной",
+      "artistIds": [
+        "butyrka"
+      ],
+      "artistAliases": [
+        "Бутырка"
+      ],
+      "titleAliases": [
+        "Запахло весной"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=Obl5ZdqqmQ8"
+      },
+      "youtube": {
+        "videoId": "jD7-9MgV3NI",
+        "title": "Запахло весной",
+        "channel": "группа БУТЫРКА",
+        "viewCount": 6229524,
+        "durationSeconds": 251,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 39,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0039",
+      "songId": "pool-80819227ce68",
+      "poolId": "pool-0352",
+      "artist": "DJ Бойко",
+      "title": "Трава",
+      "artistIds": [
+        "djboiko"
+      ],
+      "artistAliases": [
+        "DJ Бойко"
+      ],
+      "titleAliases": [
+        "Трава"
+      ],
+      "era": "2000s",
+      "approximateYear": 2006,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=SUT03iBzl4c"
+      },
+      "youtube": {
+        "videoId": "2XrgGCdi65w",
+        "title": "DJ Бойко - Трава",
+        "channel": "videodcomua",
+        "viewCount": 653204,
+        "durationSeconds": 299,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 56,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0040",
+      "songId": "pool-5e4c83ff4ba3",
+      "poolId": "pool-0313",
+      "artist": "Катя Чехова",
+      "title": "Я робот",
+      "artistIds": [
+        "katyachehova"
+      ],
+      "artistAliases": [
+        "Катя Чехова"
+      ],
+      "titleAliases": [
+        "Я робот"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=alvo_WaqXnc"
+      },
+      "youtube": {
+        "videoId": "fmoz1ru3Y1k",
+        "title": "Катя Чехова - Я робот (SD)",
+        "channel": "Катя Чехова",
+        "viewCount": 2661089,
+        "durationSeconds": 204,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 44,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0041",
+      "songId": "pool-b13e57f4e412",
+      "poolId": "pool-0327",
+      "artist": "Подъём! и Карина М.",
+      "title": "Кораблики",
+      "artistIds": [
+        "karinam",
+        "podem"
+      ],
+      "artistAliases": [
+        "Подъём! и Карина М."
+      ],
+      "titleAliases": [
+        "Кораблики"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=alvo_WaqXnc"
+      },
+      "youtube": {
+        "videoId": "OTSzpTySfSc",
+        "title": "Подъём! и Карина М. - Кораблики (живое выступление на VTV) эксклюзив",
+        "channel": "Разные видео",
+        "viewCount": 75629,
+        "durationSeconds": 275,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 54,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0042",
+      "songId": "pool-22a28cbdc2d0",
+      "poolId": "pool-1327",
+      "artist": "Вика Дайнеко",
+      "title": "Я просто сразу от тебя уйду",
+      "artistIds": [
+        "vikadaineko"
+      ],
+      "artistAliases": [
+        "Вика Дайнеко"
+      ],
+      "titleAliases": [
+        "Я просто сразу от тебя уйду"
+      ],
+      "era": "2000s",
+      "approximateYear": 2006,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2006",
+        "sourceUrl": "https://www.youtube.com/watch?v=SUT03iBzl4c"
+      },
+      "youtube": {
+        "videoId": "vbkPx7PCy0w",
+        "title": "Вика Дайнеко - Я просто сразу от тебя уйду",
+        "channel": "Виктория Дайнеко",
+        "viewCount": 23445937,
+        "durationSeconds": 231,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 41,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0043",
+      "songId": "pool-f15025a44356",
+      "poolId": "pool-0420",
+      "artist": "Игра Слов",
+      "title": "На банане",
+      "artistIds": [
+        "igraslov"
+      ],
+      "artistAliases": [
+        "Игра Слов"
+      ],
+      "titleAliases": [
+        "На банане"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "D8CA9PaTcx4",
+        "title": "Игра Слов - На банане (Official Video)",
+        "channel": "100PRO",
+        "viewCount": 221798,
+        "durationSeconds": 207,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0044",
+      "songId": "pool-b4bda602aa61",
+      "poolId": "pool-1349",
+      "artist": "Стас Михайлов",
+      "title": "Все для тебя",
+      "artistIds": [
+        "stasmihailov"
+      ],
+      "artistAliases": [
+        "Стас Михайлов"
+      ],
+      "titleAliases": [
+        "Все для тебя"
+      ],
+      "era": "2000s",
+      "approximateYear": 2006,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2006",
+        "sourceUrl": "https://www.youtube.com/watch?v=SUT03iBzl4c"
+      },
+      "youtube": {
+        "videoId": "NQz3MkLjHSA",
+        "title": "Стас Михайлов - Все для тебя",
+        "channel": "Стас Михайлов",
+        "viewCount": 33913776,
+        "durationSeconds": 236,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 43,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0045",
+      "songId": "pool-adde30e629a2",
+      "poolId": "pool-0304",
+      "artist": "Джанго",
+      "title": "Холодная весна",
+      "artistIds": [
+        "dzhango"
+      ],
+      "artistAliases": [
+        "Джанго"
+      ],
+      "titleAliases": [
+        "Холодная весна"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=alvo_WaqXnc"
+      },
+      "youtube": {
+        "videoId": "J-ONXIVg48Q",
+        "title": "Джанго - Холодная весна",
+        "channel": "Джанго",
+        "viewCount": 5423732,
+        "durationSeconds": 193,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 35,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0046",
+      "songId": "pool-a46f999b9632",
+      "poolId": "pool-0421",
+      "artist": "Сергей Трофимов",
+      "title": "Город Сочи",
+      "artistIds": [
+        "sergeitrofimov"
+      ],
+      "artistAliases": [
+        "Сергей Трофимов"
+      ],
+      "titleAliases": [
+        "Город Сочи"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "CnuHq9krFH4",
+        "title": "Сергей Трофимов - Город Сочи",
+        "channel": "Сергей ТРОФИМОВ",
+        "viewCount": 7692931,
+        "durationSeconds": 168,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 35,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0047",
+      "songId": "pool-c0a3fd7cb1c9",
+      "poolId": "pool-0474",
+      "artist": "KAMON!!!",
+      "title": "Каблы, КАМON!!!",
+      "artistIds": [
+        "kamon"
+      ],
+      "artistAliases": [
+        "KAMON!!!"
+      ],
+      "titleAliases": [
+        "Каблы, КАМON!!!"
+      ],
+      "era": "2000s",
+      "approximateYear": 2008,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=YwLOXoRcUEg"
+      },
+      "youtube": {
+        "videoId": "ufeN1hTraiM",
+        "title": "KAMON!!! - Каблы, КАМON!!! (Official Video)",
+        "channel": "Lavinamusic",
+        "viewCount": 786908,
+        "durationSeconds": 205,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0048",
+      "songId": "pool-55625a777269",
+      "poolId": "pool-0544",
+      "artist": "Dress Code",
+      "title": "Персона VIP",
+      "artistIds": [
+        "dresscode"
+      ],
+      "artistAliases": [
+        "Dress Code"
+      ],
+      "titleAliases": [
+        "Персона VIP"
+      ],
+      "era": "2000s",
+      "approximateYear": 2009,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=omACSwlI8Zw"
+      },
+      "youtube": {
+        "videoId": "mCqK41M21AU",
+        "title": "Dress Code - Персона VIP",
+        "channel": "ELLO",
+        "viewCount": 3554189,
+        "durationSeconds": 227,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 47,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0049",
+      "songId": "pool-71320779fc45",
+      "poolId": "pool-0274",
+      "artist": "Юрий Титов",
+      "title": "Понарошку",
+      "artistIds": [
+        "yuriititov"
+      ],
+      "artistAliases": [
+        "Юрий Титов"
+      ],
+      "titleAliases": [
+        "Понарошку"
+      ],
+      "era": "2000s",
+      "approximateYear": 2004,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BOTnzjpbu-o"
+      },
+      "youtube": {
+        "videoId": "sV_ZdWA4m-I",
+        "title": "Юрий Титов - Понарошку",
+        "channel": "StarPro",
+        "viewCount": 21616516,
+        "durationSeconds": 225,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 44,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0050",
+      "songId": "pool-3e168c18ec80",
+      "poolId": "pool-0263",
+      "artist": "Ангина",
+      "title": "Болела",
+      "artistIds": [
+        "angina"
+      ],
+      "artistAliases": [
+        "Ангина"
+      ],
+      "titleAliases": [
+        "Болела"
+      ],
+      "era": "2000s",
+      "approximateYear": 2004,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BOTnzjpbu-o"
+      },
+      "youtube": {
+        "videoId": "VVL-X8cr_Xo",
+        "title": "Ангина - Болела",
+        "channel": "AnginaFun",
+        "viewCount": 2764404,
+        "durationSeconds": 188,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0051",
+      "songId": "pool-eb786cb07bc4",
+      "poolId": "pool-1374",
+      "artist": "Николай Басков",
+      "title": "Тебе одной",
+      "artistIds": [
+        "nikolaibaskov"
+      ],
+      "artistAliases": [
+        "Николай Басков"
+      ],
+      "titleAliases": [
+        "Тебе одной"
+      ],
+      "era": "2000s",
+      "approximateYear": 2007,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2007",
+        "sourceUrl": "https://www.youtube.com/watch?v=AIsuFDa7KV4"
+      },
+      "youtube": {
+        "videoId": "oB7eQYrAhv0",
+        "title": "Николай Басков - Тебе одной (аудио)",
+        "channel": "Николай Басков",
+        "viewCount": 86565,
+        "durationSeconds": 189,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 30,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0052",
+      "songId": "pool-129170a6cb4b",
+      "poolId": "pool-0504",
+      "artist": "Ангел А",
+      "title": "Простая девчонка",
+      "artistIds": [
+        "angela"
+      ],
+      "artistAliases": [
+        "Ангел А"
+      ],
+      "titleAliases": [
+        "Простая девчонка"
+      ],
+      "era": "2000s",
+      "approximateYear": 2008,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=YwLOXoRcUEg"
+      },
+      "youtube": {
+        "videoId": "H7BbrxJMBZw",
+        "title": "Ангел А - Простая девчонка",
+        "channel": "WMA Music",
+        "viewCount": 9778772,
+        "durationSeconds": 225,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0053",
+      "songId": "pool-4531e31fb06c",
+      "poolId": "pool-0315",
+      "artist": "А.Чумаков А.Панайотов, Р.Алехно",
+      "title": "Необыкновенная",
+      "artistIds": [
+        "achumakovapanaiotov",
+        "ralehno"
+      ],
+      "artistAliases": [
+        "А.Чумаков А.Панайотов, Р.Алехно"
+      ],
+      "titleAliases": [
+        "Необыкновенная"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=alvo_WaqXnc"
+      },
+      "youtube": {
+        "videoId": "XOkrcNG6rHA",
+        "title": "Необыкновенная - А.Чумаков А.Панайотов, Р.Алехно",
+        "channel": "Е F",
+        "viewCount": 7746371,
+        "durationSeconds": 226,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0054",
+      "songId": "pool-550635b54914",
+      "poolId": "pool-0146",
+      "artist": "Тараканы!",
+      "title": "Я смотрю на них",
+      "artistIds": [
+        "tarakany"
+      ],
+      "artistAliases": [
+        "Тараканы!"
+      ],
+      "titleAliases": [
+        "Я смотрю на них"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=Obl5ZdqqmQ8"
+      },
+      "youtube": {
+        "videoId": "2nmzotKMfJA",
+        "title": "Тараканы! — Я смотрю на них",
+        "channel": "Дмитрий Спирин и Тараканы!",
+        "viewCount": 1649619,
+        "durationSeconds": 216,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0055",
+      "songId": "pool-83b83ee70297",
+      "poolId": "pool-0566",
+      "artist": "Ева Польна",
+      "title": "Не расставаясь",
+      "artistIds": [
+        "evapolna"
+      ],
+      "artistAliases": [
+        "Ева Польна"
+      ],
+      "titleAliases": [
+        "Не расставаясь"
+      ],
+      "era": "2000s",
+      "approximateYear": 2009,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=omACSwlI8Zw"
+      },
+      "youtube": {
+        "videoId": "GkxzvK-JDIA",
+        "title": "Ева Польна - Не расставаясь",
+        "channel": "ELLO",
+        "viewCount": 7821037,
+        "durationSeconds": 200,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0056",
+      "songId": "pool-658fd4023ae6",
+      "poolId": "pool-1410",
+      "artist": "Таисия Повалий",
+      "title": "Бывший",
+      "artistIds": [
+        "taisiyapovalii"
+      ],
+      "artistAliases": [
+        "Таисия Повалий"
+      ],
+      "titleAliases": [
+        "Бывший"
+      ],
+      "era": "2000s",
+      "approximateYear": 2008,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2008",
+        "sourceUrl": "https://www.youtube.com/watch?v=YwLOXoRcUEg"
+      },
+      "youtube": {
+        "videoId": "UeLySzTxpCg",
+        "title": "Таисия Повалий - Бывший (2007)",
+        "channel": "Официальный канал Таисии Повалий TPovaliyOfficial",
+        "viewCount": 275212,
+        "durationSeconds": 207,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 34,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0057",
+      "songId": "pool-c370d77ec6c1",
+      "poolId": "pool-0260",
+      "artist": "SKY",
+      "title": "Мальчик ищет маму",
+      "artistIds": [
+        "sky"
+      ],
+      "artistAliases": [
+        "SKY"
+      ],
+      "titleAliases": [
+        "Мальчик ищет маму"
+      ],
+      "era": "2000s",
+      "approximateYear": 2004,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BOTnzjpbu-o"
+      },
+      "youtube": {
+        "videoId": "nYRvpkNpBeY",
+        "title": "SKY - Мальчик ищет маму HD",
+        "channel": "Global Media Line",
+        "viewCount": 682252,
+        "durationSeconds": 207,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 35,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0058",
+      "songId": "pool-d90971653303",
+      "poolId": "pool-0073",
+      "artist": "Легальный Бизне$$",
+      "title": "Пачка Сигарет",
+      "artistIds": [
+        "legalnyibizne"
+      ],
+      "artistAliases": [
+        "Легальный Бизне$$"
+      ],
+      "titleAliases": [
+        "Пачка Сигарет"
+      ],
+      "era": "2000s",
+      "approximateYear": 2000,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=7TnTcO9Krdk"
+      },
+      "youtube": {
+        "videoId": "Ux_qoItlFPA",
+        "title": "Легальный Бизне$$ - Пачка Сигарет",
+        "channel": "TheLIGALIZEtv",
+        "viewCount": 2153002,
+        "durationSeconds": 228,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 45,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0059",
+      "songId": "chart-04479",
+      "poolId": "pool-0157",
+      "artist": "Mr. Credo",
+      "title": "Медляк",
+      "artistIds": [
+        "mrcredo"
+      ],
+      "artistAliases": [
+        "Mr. Credo",
+        "Mr.Credo"
+      ],
+      "titleAliases": [
+        "Медляк",
+        "Medlyak"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=Obl5ZdqqmQ8"
+      },
+      "youtube": {
+        "videoId": "gONq93vLhWk",
+        "title": "Mr.Credo \"Медляк\" [Official track] 2002",
+        "channel": "MR. CREDO [Чародей]",
+        "viewCount": 102802143,
+        "durationSeconds": 270,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 50,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0060",
+      "songId": "pool-509efede4735",
+      "poolId": "pool-0227",
+      "artist": "Ф.Киркоров, М.Распутина",
+      "title": "Роза чайная",
+      "artistIds": [
+        "fkirkorov",
+        "mrasputina"
+      ],
+      "artistAliases": [
+        "Ф.Киркоров, М.Распутина"
+      ],
+      "titleAliases": [
+        "Роза чайная"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=roDOHklQsQ8"
+      },
+      "youtube": {
+        "videoId": "A-8lhylTqUs",
+        "title": "Ф.Киркоров & М.Распутина-Роза чайная (ЗД-2004).m4v",
+        "channel": "NattaliM",
+        "viewCount": 137610,
+        "durationSeconds": 317,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 51,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0061",
+      "songId": "pool-723612193d11",
+      "poolId": "pool-0158",
+      "artist": "Алексин",
+      "title": "Страшная",
+      "artistIds": [
+        "aleksin"
+      ],
+      "artistAliases": [
+        "Алексин"
+      ],
+      "titleAliases": [
+        "Страшная"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=Obl5ZdqqmQ8"
+      },
+      "youtube": {
+        "videoId": "IrdR_t44kHA",
+        "title": "Андрей Алексин. Клип Страшная.",
+        "channel": "Андрей Алексин",
+        "viewCount": 1049011,
+        "durationSeconds": 249,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0062",
+      "songId": "pool-4203914cfee9",
+      "poolId": "pool-0171",
+      "artist": "Марина Хлебникова",
+      "title": "Зима приходит сама",
+      "artistIds": [
+        "marinahlebnikova"
+      ],
+      "artistAliases": [
+        "Марина Хлебникова"
+      ],
+      "titleAliases": [
+        "Зима приходит сама"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=Obl5ZdqqmQ8"
+      },
+      "youtube": {
+        "videoId": "5ftDVqVm-LY",
+        "title": "Марина Хлебникова - Зима приходит сама | Аудио",
+        "channel": "Марина Хлебникова",
+        "viewCount": 3308,
+        "durationSeconds": 262,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 52,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0063",
+      "songId": "pool-c2ff0ac802c9",
+      "poolId": "pool-0491",
+      "artist": "Настя Задорожная",
+      "title": "Любовь, Нелюбовь",
+      "artistIds": [
+        "nastyazadorozhnaya"
+      ],
+      "artistAliases": [
+        "Настя Задорожная"
+      ],
+      "titleAliases": [
+        "Любовь, Нелюбовь"
+      ],
+      "era": "2000s",
+      "approximateYear": 2008,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=YwLOXoRcUEg"
+      },
+      "youtube": {
+        "videoId": "aH7Bvjhn_9k",
+        "title": "НАСТЯ ЗАДОРОЖНАЯ - Любовь/Нелюбовь",
+        "channel": "Настя Задорожная",
+        "viewCount": 1164003,
+        "durationSeconds": 269,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 49,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0064",
+      "songId": "pool-78dd756c25fc",
+      "poolId": "pool-0316",
+      "artist": "Smash!",
+      "title": "Мечта",
+      "artistIds": [
+        "smash"
+      ],
+      "artistAliases": [
+        "Smash!"
+      ],
+      "titleAliases": [
+        "Мечта"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=alvo_WaqXnc"
+      },
+      "youtube": {
+        "videoId": "iJ7zEiUtiiw",
+        "title": "Smash!! - Мечта",
+        "channel": "sergeylazarevcom",
+        "viewCount": 791750,
+        "durationSeconds": 283,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 50,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0065",
+      "songId": "pool-966cabc10a5d",
+      "poolId": "pool-0059",
+      "artist": "Green Grey",
+      "title": "Мазафака",
+      "artistIds": [
+        "greengrey"
+      ],
+      "artistAliases": [
+        "Green Grey"
+      ],
+      "titleAliases": [
+        "Мазафака"
+      ],
+      "era": "2000s",
+      "approximateYear": 2000,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=7TnTcO9Krdk"
+      },
+      "youtube": {
+        "videoId": "emG0YA9NDEw",
+        "title": "Green Grey - Мазафака",
+        "channel": "Melomanka1991",
+        "viewCount": 738159,
+        "durationSeconds": 263,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 42,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0066",
+      "songId": "chart-03135",
+      "poolId": "pool-0809",
+      "artist": "Элджей & FEDUK",
+      "title": "Розовое вино",
+      "artistIds": [
+        "eldzhei",
+        "feduk"
+      ],
+      "artistAliases": [
+        "Элджей & Feduk",
+        "Элджей & FEDUK"
+      ],
+      "titleAliases": [
+        "Розовое вино"
+      ],
+      "era": "2010s",
+      "approximateYear": 2017,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=RA2BvApRYCI"
+      },
+      "youtube": {
+        "videoId": "wOBnq0Ewz5k",
+        "title": "Элджей & Feduk - Розовое вино",
+        "channel": "FEDUK",
+        "viewCount": 396733528,
+        "durationSeconds": 203,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Sayonaraboy1.jpg/500px-Sayonaraboy1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sayonaraboy1.jpg",
+          "attribution": "sayonaraboy",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "rightsStatus": "freely-licensed",
+          "retrievedAt": "2026-09-04T09:16:39.379Z"
+        },
+        "artistForm": "Исполнитель + исполнитель"
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0067",
+      "songId": "pool-810f853a1734",
+      "poolId": "pool-0818",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "title": "НОН СТОП",
+      "artistIds": [
+        "poshlayamolli"
+      ],
+      "artistAliases": [
+        "ПОШЛАЯ МОЛЛИ"
+      ],
+      "titleAliases": [
+        "НОН СТОП"
+      ],
+      "era": "2010s",
+      "approximateYear": 2017,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=RA2BvApRYCI"
+      },
+      "youtube": {
+        "videoId": "QkNnWHIjHOM",
+        "title": "ПОШЛАЯ МОЛЛИ - НОН СТОП",
+        "channel": "LAV",
+        "viewCount": 12376965,
+        "durationSeconds": 214,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 43,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0068",
+      "songId": "pool-9e4bb5af2783",
+      "poolId": "pool-1907",
+      "artist": "Джарахов",
+      "title": "ПЬЁМ",
+      "artistIds": [
+        "dzharahov"
+      ],
+      "artistAliases": [
+        "Джарахов"
+      ],
+      "titleAliases": [
+        "ПЬЁМ"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2018",
+        "sourceUrl": "https://www.youtube.com/watch?v=B8m34KMCCfY"
+      },
+      "youtube": {
+        "videoId": "uSFVmj_iorw",
+        "title": "Джарахов – ПЬЁМ (official music video)",
+        "channel": "ДЖАРАХОВ",
+        "viewCount": 17337201,
+        "durationSeconds": 247,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 42,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0069",
+      "songId": "chart-07066",
+      "poolId": "pool-0853",
+      "artist": "Gazirovka",
+      "title": "Black",
+      "artistIds": [
+        "gazirovka"
+      ],
+      "artistAliases": [
+        "Gazirovka",
+        "GAZIROVKA"
+      ],
+      "titleAliases": [
+        "Black"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=B8m34KMCCfY"
+      },
+      "youtube": {
+        "videoId": "aD1IyIBdqjQ",
+        "title": "GAZIROVKA - Black (Official Video)",
+        "channel": "GAZIROVKA SOUND",
+        "viewCount": 59605615,
+        "durationSeconds": 167,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0070",
+      "songId": "pool-6c235e43bba1",
+      "poolId": "pool-0719",
+      "artist": "Сати Казанова feat. Arsenium",
+      "title": "До рассвета",
+      "artistIds": [
+        "arsenium",
+        "satikazanova"
+      ],
+      "artistAliases": [
+        "Сати Казанова feat. Arsenium"
+      ],
+      "titleAliases": [
+        "До рассвета"
+      ],
+      "era": "2010s",
+      "approximateYear": 2014,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=jzxyFnv7sZA"
+      },
+      "youtube": {
+        "videoId": "AE_bMZSGDW0",
+        "title": "Сати Казанова feat. Arsenium - До рассвета",
+        "channel": "ELLO",
+        "viewCount": 114981158,
+        "durationSeconds": 199,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0071",
+      "songId": "pool-b732c830aaa1",
+      "poolId": "pool-1887",
+      "artist": "Нурминский",
+      "title": "Ауфф",
+      "artistIds": [
+        "nurminskii"
+      ],
+      "artistAliases": [
+        "Нурминский"
+      ],
+      "titleAliases": [
+        "Ауфф"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2018",
+        "sourceUrl": "https://www.youtube.com/watch?v=B8m34KMCCfY"
+      },
+      "youtube": {
+        "videoId": "mUr_x51RceA",
+        "title": "Нурминский - Ауфф (Официальный Клип)",
+        "channel": "Нурминский",
+        "viewCount": 25735032,
+        "durationSeconds": 192,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0072",
+      "songId": "pool-b5b6942ada07",
+      "poolId": "pool-0918",
+      "artist": "Doni feat Timran",
+      "title": "Не спать",
+      "artistIds": [
+        "doni",
+        "timran"
+      ],
+      "artistAliases": [
+        "Doni feat Timran"
+      ],
+      "titleAliases": [
+        "Не спать"
+      ],
+      "era": "2010s",
+      "approximateYear": 2019,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=A9ojAUFIQZ8"
+      },
+      "youtube": {
+        "videoId": "2gIyk1XiN24",
+        "title": "Doni feat. Timran - Не Спать (2019)",
+        "channel": "MrAydinLIVE",
+        "viewCount": 47800,
+        "durationSeconds": 197,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0073",
+      "songId": "pool-bbd8b883ace1",
+      "poolId": "pool-0758",
+      "artist": "Светлана Тарабарова & Клей Угрюмого",
+      "title": "Забывай",
+      "artistIds": [
+        "kleiugryumogo",
+        "svetlanatarabarova"
+      ],
+      "artistAliases": [
+        "Светлана Тарабарова & Клей Угрюмого"
+      ],
+      "titleAliases": [
+        "Забывай"
+      ],
+      "era": "2010s",
+      "approximateYear": 2015,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=bBiEHdaHv8g"
+      },
+      "youtube": {
+        "videoId": "B77gmrb_XCc",
+        "title": "Светлана Тарабарова & Клей Угрюмого - Забывай",
+        "channel": "ELLO",
+        "viewCount": 564854,
+        "durationSeconds": 223,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0074",
+      "songId": "pool-4fe3def82207",
+      "poolId": "pool-0765",
+      "artist": "Zvika Brand Ft. 69 & Jah B",
+      "title": "Potahat Tik",
+      "artistIds": [
+        "69",
+        "jahb",
+        "zvikabrand"
+      ],
+      "artistAliases": [
+        "Zvika Brand Ft. 69 & Jah B"
+      ],
+      "titleAliases": [
+        "Potahat Tik"
+      ],
+      "era": "2010s",
+      "approximateYear": 2015,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=bBiEHdaHv8g"
+      },
+      "youtube": {
+        "videoId": "HBPht3KVE6o",
+        "title": "Zvika Brand Ft. 69 & Jah B - Potahat Tik (Official video)",
+        "channel": "WOW TV",
+        "viewCount": 6532488,
+        "durationSeconds": 226,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0075",
+      "songId": "pool-c557e73251bb",
+      "poolId": "pool-0656",
+      "artist": "СЯВА",
+      "title": "ПЕСНЯ ПРО ОДЕССУ",
+      "artistIds": [
+        "syava"
+      ],
+      "artistAliases": [
+        "СЯВА"
+      ],
+      "titleAliases": [
+        "ПЕСНЯ ПРО ОДЕССУ"
+      ],
+      "era": "2010s",
+      "approximateYear": 2012,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=UbWoV0zyKcE"
+      },
+      "youtube": {
+        "videoId": "k4KFb5thkzA",
+        "title": "СЯВА - ПЕСНЯ ПРО ОДЕССУ (2012)",
+        "channel": "СЯВА",
+        "viewCount": 3558409,
+        "durationSeconds": 181,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 27,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0076",
+      "songId": "chart-00690",
+      "poolId": "pool-1936",
+      "artist": "FACE",
+      "title": "МОЙ КАЛАШНИКОВ",
+      "artistIds": [
+        "face"
+      ],
+      "artistAliases": [
+        "FACE"
+      ],
+      "titleAliases": [
+        "МОЙ КАЛАШНИКОВ"
+      ],
+      "era": "2010s",
+      "approximateYear": 2019,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2019",
+        "sourceUrl": "https://www.youtube.com/watch?v=A9ojAUFIQZ8"
+      },
+      "youtube": {
+        "videoId": "Jr-Zr25Qmqk",
+        "title": "Face - Мой Калашников",
+        "channel": "русский рэп/МУЗЫКАЛЬНЫЙ ПОРТАЛ",
+        "viewCount": 1636917,
+        "durationSeconds": 149,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 27,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": {
+          "title": "SLIME",
+          "year": 2019,
+          "releaseGroupMbid": "ae581171-abc6-4387-927c-9c0ded4b9758",
+          "coverUrl": "https://coverartarchive.org/release-group/ae581171-abc6-4387-927c-9c0ded4b9758/front-500",
+          "sourceUrl": "https://musicbrainz.org/release-group/ae581171-abc6-4387-927c-9c0ded4b9758",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Face_tele-club_%28cropped%29.jpg/500px-Face_tele-club_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Face_tele-club_(cropped).jpg",
+          "attribution": "kvvalerka",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "rightsStatus": "freely-licensed",
+          "retrievedAt": "2026-09-04T09:17:29.439Z"
+        },
+        "artistForm": "Исполнитель"
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0077",
+      "songId": "pool-a6e6ebf36ac5",
+      "poolId": "pool-0875",
+      "artist": "ДЕТИ RAVE",
+      "title": "ТУРБО ПУШКА",
+      "artistIds": [
+        "detirave"
+      ],
+      "artistAliases": [
+        "ДЕТИ RAVE"
+      ],
+      "titleAliases": [
+        "ТУРБО ПУШКА"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=B8m34KMCCfY"
+      },
+      "youtube": {
+        "videoId": "2WOx450fopI",
+        "title": "ДЕТИ RAVE - ТУРБО ПУШКА (Official Music Video)",
+        "channel": "ДЕТИ RAVE",
+        "viewCount": 45898763,
+        "durationSeconds": 113,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 25,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0078",
+      "songId": "pool-c8afe7ecc01e",
+      "poolId": "pool-0686",
+      "artist": "30.02",
+      "title": "Звезды в Лужах",
+      "artistIds": [
+        "3002"
+      ],
+      "artistAliases": [
+        "30.02"
+      ],
+      "titleAliases": [
+        "Звезды в Лужах"
+      ],
+      "era": "2010s",
+      "approximateYear": 2013,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=-MXyUdTm4ik"
+      },
+      "youtube": {
+        "videoId": "7z6sMxIZ0t0",
+        "title": "30.02 - \"Звезды в Лужах\" (HD).",
+        "channel": "3002AM",
+        "viewCount": 81923,
+        "durationSeconds": 187,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0079",
+      "songId": "pool-6e88db06d3ee",
+      "poolId": "pool-1774",
+      "artist": "Kristina Si",
+      "title": "Хочу",
+      "artistIds": [
+        "kristinasi"
+      ],
+      "artistAliases": [
+        "Kristina Si"
+      ],
+      "titleAliases": [
+        "Хочу"
+      ],
+      "era": "2010s",
+      "approximateYear": 2016,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2016",
+        "sourceUrl": "https://www.youtube.com/watch?v=1i4x6k24taE"
+      },
+      "youtube": {
+        "videoId": "8lL0HIh9KOk",
+        "title": "Хочу",
+        "channel": "Kristina Si - Topic",
+        "viewCount": 8238167,
+        "durationSeconds": 203,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0080",
+      "songId": "chart-02938",
+      "poolId": "pool-1888",
+      "artist": "Lizer",
+      "title": "Корабли",
+      "artistIds": [
+        "lizer"
+      ],
+      "artistAliases": [
+        "Lizer",
+        "LIZER"
+      ],
+      "titleAliases": [
+        "Корабли",
+        "Korabli"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2018",
+        "sourceUrl": "https://www.youtube.com/watch?v=B8m34KMCCfY"
+      },
+      "youtube": {
+        "videoId": "t8QrXI71jOE",
+        "title": "LIZER - Корабли | Official Audio",
+        "channel": "WOW TV",
+        "viewCount": 26381629,
+        "durationSeconds": 176,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": {
+          "title": "Не ангел",
+          "year": 2019,
+          "releaseGroupMbid": "c28e377e-b170-467b-b060-65d5d15a5c41",
+          "coverUrl": "https://coverartarchive.org/release-group/c28e377e-b170-467b-b060-65d5d15a5c41/front-500",
+          "sourceUrl": "https://musicbrainz.org/release-group/c28e377e-b170-467b-b060-65d5d15a5c41",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/LizerK.jpg/500px-LizerK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LizerK.jpg",
+          "attribution": "LIZERyungLIZER",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "rightsStatus": "freely-licensed",
+          "retrievedAt": "2026-09-04T09:17:57.379Z"
+        },
+        "artistForm": "Исполнитель"
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0081",
+      "songId": "pool-4a469ebddd80",
+      "poolId": "pool-1832",
+      "artist": "Ольга Бузова",
+      "title": "Мало половин",
+      "artistIds": [
+        "olgabuzova"
+      ],
+      "artistAliases": [
+        "Ольга Бузова"
+      ],
+      "titleAliases": [
+        "Мало половин"
+      ],
+      "era": "2010s",
+      "approximateYear": 2017,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2017",
+        "sourceUrl": "https://www.youtube.com/watch?v=RA2BvApRYCI"
+      },
+      "youtube": {
+        "videoId": "Ro6GHxFj8uk",
+        "title": "Ольга Бузова - Мало половин (премьера клипа, 2017)",
+        "channel": "Ольга Бузова",
+        "viewCount": 49721411,
+        "durationSeconds": 214,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 32,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0082",
+      "songId": "pool-19adcbe42a36",
+      "poolId": "pool-0793",
+      "artist": "TamerlanAlena",
+      "title": "Потоки ветра",
+      "artistIds": [
+        "tamerlanalena"
+      ],
+      "artistAliases": [
+        "TamerlanAlena"
+      ],
+      "titleAliases": [
+        "Потоки ветра"
+      ],
+      "era": "2010s",
+      "approximateYear": 2016,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=1i4x6k24taE"
+      },
+      "youtube": {
+        "videoId": "w7IUtf1Y9NE",
+        "title": "TamerlanAlena – Потоки ветра (official music video)",
+        "channel": "TamerlanAlena",
+        "viewCount": 20691120,
+        "durationSeconds": 212,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 45,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0083",
+      "songId": "pool-156a117938ab",
+      "poolId": "pool-1775",
+      "artist": "LONE",
+      "title": "Якутяночка ft. Варвара Визбор",
+      "artistIds": [
+        "lone"
+      ],
+      "artistAliases": [
+        "LONE"
+      ],
+      "titleAliases": [
+        "Якутяночка ft. Варвара Визбор"
+      ],
+      "era": "2010s",
+      "approximateYear": 2016,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2016",
+        "sourceUrl": "https://www.youtube.com/watch?v=1i4x6k24taE"
+      },
+      "youtube": {
+        "videoId": "mdRaS5mZkjk",
+        "title": "L'ONE - Якутяночка (feat. Варвара Визбор)",
+        "channel": "L’ONE / Леван Горозия",
+        "viewCount": 32133534,
+        "durationSeconds": 227,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0084",
+      "songId": "pool-ad2056f5fd90",
+      "poolId": "pool-0687",
+      "artist": "BIFFGUYZ ft. Bovie & Rox",
+      "title": "Я тебя Бум Бум Бум",
+      "artistIds": [
+        "biffguyz",
+        "bovie",
+        "rox"
+      ],
+      "artistAliases": [
+        "BIFFGUYZ ft. Bovie & Rox"
+      ],
+      "titleAliases": [
+        "Я тебя Бум Бум Бум"
+      ],
+      "era": "2010s",
+      "approximateYear": 2013,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=-MXyUdTm4ik"
+      },
+      "youtube": {
+        "videoId": "r2hgZbCg4to",
+        "title": "BIFFGUYZ feat Bovie & Rox - Я тебя Бум Бум Бум Official video",
+        "channel": "Руслан Хамитов",
+        "viewCount": 7234956,
+        "durationSeconds": 210,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0085",
+      "songId": "pool-26725c501796",
+      "poolId": "pool-1632",
+      "artist": "Джиган",
+      "title": "На край света",
+      "artistIds": [
+        "dzhigan"
+      ],
+      "artistAliases": [
+        "Джиган"
+      ],
+      "titleAliases": [
+        "На край света"
+      ],
+      "era": "2010s",
+      "approximateYear": 2013,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2013",
+        "sourceUrl": "https://www.youtube.com/watch?v=-MXyUdTm4ik"
+      },
+      "youtube": {
+        "videoId": "rbPxOkKeQJQ",
+        "title": "Джиган - На край света",
+        "channel": "Джиган",
+        "viewCount": 180,
+        "durationSeconds": 199,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0086",
+      "songId": "pool-299c52be3df7",
+      "poolId": "pool-1932",
+      "artist": "Мэвл",
+      "title": "Холодок",
+      "artistIds": [
+        "mevl"
+      ],
+      "artistAliases": [
+        "Мэвл"
+      ],
+      "titleAliases": [
+        "Холодок"
+      ],
+      "era": "2010s",
+      "approximateYear": 2019,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2019",
+        "sourceUrl": "https://www.youtube.com/watch?v=A9ojAUFIQZ8"
+      },
+      "youtube": {
+        "videoId": "tZruUh0Yvp8",
+        "title": "Мэвл - Холодок",
+        "channel": "Мэвл",
+        "viewCount": 44990666,
+        "durationSeconds": 123,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 29,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0087",
+      "songId": "pool-5d361df531fe",
+      "poolId": "pool-0831",
+      "artist": "Скруджи",
+      "title": "Рукалицо",
+      "artistIds": [
+        "skrudzhi"
+      ],
+      "artistAliases": [
+        "Скруджи"
+      ],
+      "titleAliases": [
+        "Рукалицо"
+      ],
+      "era": "2010s",
+      "approximateYear": 2017,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=RA2BvApRYCI"
+      },
+      "youtube": {
+        "videoId": "uPReDK5NnDs",
+        "title": "Скруджи-РукаЛицо",
+        "channel": "Manya Mollayeva",
+        "viewCount": 84329,
+        "durationSeconds": 252,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 52,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0088",
+      "songId": "pool-9d64b2c2f15c",
+      "poolId": "pool-1834",
+      "artist": "PHARAOH",
+      "title": "BLACK SIEMENS",
+      "artistIds": [
+        "pharaoh"
+      ],
+      "artistAliases": [
+        "PHARAOH"
+      ],
+      "titleAliases": [
+        "BLACK SIEMENS"
+      ],
+      "era": "2010s",
+      "approximateYear": 2017,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2017",
+        "sourceUrl": "https://www.youtube.com/watch?v=RA2BvApRYCI"
+      },
+      "youtube": {
+        "videoId": "jWDwdYSdM64",
+        "title": "PHARAOH – BLACK SIEMENS (PROD. BY FROZENGANGBEATZ)",
+        "channel": "Dead Dynasty",
+        "viewCount": 42912567,
+        "durationSeconds": 196,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 28,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0089",
+      "songId": "pool-3770fbd57d6c",
+      "poolId": "pool-0919",
+      "artist": "MAKF",
+      "title": "Девочка со вписки",
+      "artistIds": [
+        "makf"
+      ],
+      "artistAliases": [
+        "MAKF"
+      ],
+      "titleAliases": [
+        "Девочка со вписки"
+      ],
+      "era": "2010s",
+      "approximateYear": 2019,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=A9ojAUFIQZ8"
+      },
+      "youtube": {
+        "videoId": "0tjZcouvDwU",
+        "title": "MAKF - Девочка со вписки (prod. by Vion Konger)",
+        "channel": "MAKF",
+        "viewCount": 5881227,
+        "durationSeconds": 198,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0090",
+      "songId": "chart-06049",
+      "poolId": "pool-1618",
+      "artist": "A-Dessa",
+      "title": "Fire",
+      "artistIds": [
+        "adessa"
+      ],
+      "artistAliases": [
+        "A-Dessa"
+      ],
+      "titleAliases": [
+        "Fire"
+      ],
+      "era": "2010s",
+      "approximateYear": 2013,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2013",
+        "sourceUrl": "https://www.youtube.com/watch?v=-MXyUdTm4ik"
+      },
+      "youtube": {
+        "videoId": "9lIPHFa2GdQ",
+        "title": "A-Dessa - Fire",
+        "channel": "DnevnoeTV",
+        "viewCount": 3096,
+        "durationSeconds": 191,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 37,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0091",
+      "songId": "pool-57b96f3cae19",
+      "poolId": "pool-0949",
+      "artist": "Милана Хаметова & Milana Star",
+      "title": "ЛП",
+      "artistIds": [
+        "milanahametova",
+        "milanastar"
+      ],
+      "artistAliases": [
+        "Милана Хаметова & Milana Star"
+      ],
+      "titleAliases": [
+        "ЛП"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "Gg6UKGgvQNI",
+        "title": "Милана Хаметова & Milana Star - ЛП (Выступление на Детском радио)",
+        "channel": "Музыка. Детское радио",
+        "viewCount": 25199058,
+        "durationSeconds": 136,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 26,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0092",
+      "songId": "pool-223cbd64444d",
+      "poolId": "pool-1976",
+      "artist": "Galibri & Mavik",
+      "title": "Лампочки",
+      "artistIds": [
+        "galibri",
+        "mavik"
+      ],
+      "artistAliases": [
+        "Galibri & Mavik"
+      ],
+      "titleAliases": [
+        "Лампочки"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2022",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "A0PoroAjGKk",
+        "title": "Galibri & Mavik - Лампочки (Премьера клипа, 2022)",
+        "channel": "FOMENKOF Music",
+        "viewCount": 19996756,
+        "durationSeconds": 133,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 30,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0093",
+      "songId": "pool-45feae2af4b6",
+      "poolId": "pool-1984",
+      "artist": "INSTASAMKA",
+      "title": "Волосы назад",
+      "artistIds": [
+        "instasamka"
+      ],
+      "artistAliases": [
+        "INSTASAMKA"
+      ],
+      "titleAliases": [
+        "Волосы назад"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2022",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "rX1H3nd_LnI",
+        "title": "INSTASAMKA - ВОЛОСЫ НАЗАД",
+        "channel": "Fashion Music",
+        "viewCount": 290178,
+        "durationSeconds": 142,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 29,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0094",
+      "songId": "pool-1ec84821e60d",
+      "poolId": "pool-0962",
+      "artist": "Arut, MORGENSHTERN",
+      "title": "BUGATTI",
+      "artistIds": [
+        "arut",
+        "morgenshtern"
+      ],
+      "artistAliases": [
+        "Arut, MORGENSHTERN"
+      ],
+      "titleAliases": [
+        "BUGATTI"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "FVlSjitljSg",
+        "title": "Arut, MORGENSHTERN - BUGATTI (Official Video, 2022)",
+        "channel": "MORGENSHTERN",
+        "viewCount": 17964343,
+        "durationSeconds": 220,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 42,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0095",
+      "songId": "pool-f9fc286411ff",
+      "poolId": "pool-0981",
+      "artist": "NЮ",
+      "title": "Некуда бежать",
+      "artistIds": [
+        "nyu"
+      ],
+      "artistAliases": [
+        "NЮ"
+      ],
+      "titleAliases": [
+        "Некуда бежать"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "CdsqxF1wiMI",
+        "title": "NЮ - Некуда бежать",
+        "channel": "Николаенко Юрий",
+        "viewCount": 90515703,
+        "durationSeconds": 203,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0096",
+      "songId": "chart-00984",
+      "poolId": "pool-0964",
+      "artist": "Chris Yank",
+      "title": "Холодно",
+      "artistIds": [
+        "chrisyank"
+      ],
+      "artistAliases": [
+        "Chris Yank"
+      ],
+      "titleAliases": [
+        "Холодно"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "vYnisdEaPYU",
+        "title": "Chris Yank   Холодно (Mood Video)",
+        "channel": "Chris Yank",
+        "viewCount": 41041259,
+        "durationSeconds": 149,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": "Исполнитель"
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0097",
+      "songId": "pool-e04c1ff5a366",
+      "poolId": "pool-0965",
+      "artist": "Kenjebek Nurdolday",
+      "title": "Шоколад",
+      "artistIds": [
+        "kenjebeknurdolday"
+      ],
+      "artistAliases": [
+        "Kenjebek Nurdolday"
+      ],
+      "titleAliases": [
+        "Шоколад"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "Ei7mQfpK-I4",
+        "title": "Kenjebek Nurdolday - Шоколад (Official Audio)",
+        "channel": "Kenjebek Nurdolday",
+        "viewCount": 63232827,
+        "durationSeconds": 211,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0098",
+      "songId": "pool-3fca67daa52f",
+      "poolId": "pool-0983",
+      "artist": "Kamazz",
+      "title": "Как ты там?",
+      "artistIds": [
+        "kamazz"
+      ],
+      "artistAliases": [
+        "Kamazz"
+      ],
+      "titleAliases": [
+        "Как ты там?"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "deep",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "9pDrV_OnMsA",
+        "title": "Kamazz - Как ты там?",
+        "channel": "Kamazz",
+        "viewCount": 103716556,
+        "durationSeconds": 138,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 20,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0099",
+      "songId": "pool-04729da3313c",
+      "poolId": "pool-0951",
+      "artist": "MARKUL, Тося Чайкина",
+      "title": "Стрелы",
+      "artistIds": [
+        "markul",
+        "tosyachaikina"
+      ],
+      "artistAliases": [
+        "MARKUL, Тося Чайкина"
+      ],
+      "titleAliases": [
+        "Стрелы"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "recognizable",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "mPWRPlW-ke8",
+        "title": "Markul, Тося Чайкина - Стрелы",
+        "channel": "E V O Live",
+        "viewCount": 2756,
+        "durationSeconds": 177,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0100",
+      "songId": "pool-8e762e891fee",
+      "poolId": "pool-0970",
+      "artist": "MIA BOYKA, T-killah",
+      "title": "САЛАМАНДРА",
+      "artistIds": [
+        "miaboyka",
+        "tkillah"
+      ],
+      "artistAliases": [
+        "MIA BOYKA, T-killah"
+      ],
+      "titleAliases": [
+        "САЛАМАНДРА"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "middle",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "vUeQraGdpu8",
+        "title": "MIA BOYKA, T-killah - САЛАМАНДРА (ПРЕМЬЕРА КЛИПА 2022)",
+        "channel": "MIA BOYKA",
+        "viewCount": 12713752,
+        "durationSeconds": 147,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 27,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "album": null,
+        "artistImage": null,
+        "artistForm": null
+      },
+      "readyForQuiz": true
+    }
+  ],
+  "skipped": [
+    {
+      "id": "pool-0439",
+      "artist": "Таисия Повалий",
+      "title": "За тобой",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0100",
+      "artist": "Алиса",
+      "title": "Веретено",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0360",
+      "artist": "Анита Цой",
+      "title": "На восток",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0210",
+      "artist": "Юрий Лоза",
+      "title": "Сто часов",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0354",
+      "artist": "Дыши",
+      "title": "Взгляни на небо",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0211",
+      "artist": "Smash",
+      "title": "Молитва",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0481",
+      "artist": "Dj Smash",
+      "title": "Volna",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0443",
+      "artist": "Наташа Королева",
+      "title": "На синем море",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0426",
+      "artist": "Анита Цой",
+      "title": "Небо",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0159",
+      "artist": "Сосо Павлиашвили",
+      "title": "Ждет тебя грузин",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0331",
+      "artist": "Куба",
+      "title": "Я сделаю все",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0213",
+      "artist": "Варвара",
+      "title": "Ближе",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0102",
+      "artist": "ЮГ",
+      "title": "Ещё Один День",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0607",
+      "artist": "КИТАЙ (KIT-I)",
+      "title": "Выпускной",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0819",
+      "artist": "ПОРНОФИЛЬМЫ",
+      "title": "Я так соскучился",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0820",
+      "artist": "Дана Соколова feat Скруджи",
+      "title": "Индиго",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0811",
+      "artist": "DONI feat Сати Казанова",
+      "title": "Я украду",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0902",
+      "artist": "Tanir & Tyomcha",
+      "title": "DA DA DA",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0830",
+      "artist": "ATL",
+      "title": "Танцуйте",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0866",
+      "artist": "Miyagi feat KADI",
+      "title": "Родная Пой",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0720",
+      "artist": "Эльбрус Джанмирзоев и Alexandros Tsopozidis",
+      "title": "БРОДЯГА",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0856",
+      "artist": "CYGO",
+      "title": "Panda E",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-1975",
+      "artist": "The Limba",
+      "title": "Секрет",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0963",
+      "artist": "Konfuz",
+      "title": "Пропал интерес",
+      "reason": "not-in-cache"
+    },
+    {
+      "id": "pool-0969",
+      "artist": "MACAN",
+      "title": "За всех",
+      "reason": "not-in-cache"
+    }
+  ]
+}

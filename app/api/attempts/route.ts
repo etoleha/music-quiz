@@ -72,6 +72,20 @@ export async function POST(request: Request) {
           item.titlePoint,
           item.loadFailed ? 1 : 0,
         );
+        if (item.loadFailed) {
+          database.prepare(`INSERT OR IGNORE INTO fragment_reports
+            (attempt_id, quiz_id, track_key, artist, title, youtube_id, clip_start, clip_duration, reason)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'load-failed')`).run(
+              attemptId,
+              quiz.id,
+              item.track.key,
+              item.track.artist,
+              item.track.title,
+              item.track.youtubeId,
+              item.track.start,
+              item.track.duration,
+            );
+        }
       }
     });
 

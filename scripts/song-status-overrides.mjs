@@ -98,3 +98,22 @@ export const publicationBlockersFor = (entry, { language, reviewStatus, fragment
   fragmentStatus !== "good" && "fragment-review",
   entry.enrichment.review !== "verified" && "enrichment-review",
 ].filter(Boolean);
+
+export const quizReadinessBlockersFor = (entry, preparation, { workflowStatus }) => {
+  const clip = preparation?.clip;
+  const youtube = preparation?.youtube;
+  const validClip = Number.isInteger(clip?.start) && clip.start >= 0
+    && Number.isInteger(clip?.duration) && clip.duration >= 5 && clip.duration <= 20
+    && Number.isInteger(youtube?.durationSeconds)
+    && clip.start + clip.duration <= youtube.durationSeconds;
+  return [
+    workflowStatus !== "waiting" && "workflow",
+    !entry.artistIdentityResolved && "artist-identity",
+    !entry.allArtistsUnused && "artist-already-used",
+    !preparation?.eligibility?.approved && "quiz-eligibility",
+    !Number.isInteger(preparation?.approximateYear) && "approximate-year",
+    !["soviet", "1990s", "2000s", "2010s", "2020s"].includes(preparation?.era) && "era",
+    !youtube?.videoId && "youtube-video",
+    !validClip && "playable-fragment",
+  ].filter(Boolean);
+};
