@@ -86,6 +86,9 @@ const saveCache = () => {
 };
 
 const approximateYearFor = (track, song) => {
+  if (song?.release?.releaseYearStatus === "verified" && Number.isInteger(song.release.releaseYear)) {
+    return Number(song.release.releaseYear);
+  }
   if (Number.isInteger(track.listYear)) return Number(track.listYear);
   if (Number.isInteger(song?.release?.releaseYear)) return Number(song.release.releaseYear);
   const chartYears = (song?.chart?.years || []).map(Number).filter(Number.isInteger).sort((left, right) => left - right);

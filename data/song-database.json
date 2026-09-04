@@ -7,7 +7,7 @@
     "song-database.json.gz.part-02",
     "song-database.json.gz.part-03"
   ],
-  "archiveSha256": "ea17d6fec3f6e8692511d86dc2abbf3450cc3eaf613daed3f5aa8e72ea4955ca",
+  "archiveSha256": "3a21dbe19fdabd415d086fca6e0703a57907edad69bc7d14490211b200fce10c",
   "stats": {
     "songs": 13337,
     "chartSongs": 9239,
@@ -18,11 +18,11 @@
     "quizCandidates": 5662,
     "readyForCuration": 5542,
     "readyForUniqueArtistQuiz": 2561,
-    "readyForPublication": 779,
-    "readyForAutomaticQuiz": 779,
+    "readyForPublication": 775,
+    "readyForAutomaticQuiz": 775,
     "usedArtists": 472,
     "withReleaseYear": 7476,
-    "withCandidateReleaseYear": 7442,
+    "withCandidateReleaseYear": 7441,
     "withAutomaticEnrichment": 911,
     "workflow": {
       "rejected": 28,

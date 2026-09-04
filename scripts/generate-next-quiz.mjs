@@ -11,93 +11,169 @@ const valueAfter = (name, fallback) => {
 };
 
 const sourcePath = path.join(repoRoot, "data", "quiz-ready-songs.json");
+const preflightPath = path.join(repoRoot, "data", "quiz-ready-validation.json");
 const outputPath = path.resolve(repoRoot, valueAfter("--output", "data/quiz-release-candidate.json"));
 const seed = valueAfter("--seed", new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Yerevan" }));
 const allowPreviouslyUsedArtists = args.has("--allow-used-artists");
+const skipPreflight = args.has("--skip-preflight");
 const offline = args.has("--offline");
+const refreshYouTube = args.has("--refresh-youtube");
 const eraTargets = { soviet: 2, "1990s": 4, "2000s": 7, "2010s": 4, "2020s": 3 };
 const recognitionTargets = { recognizable: 5, middle: 8, deep: 7 };
 
 const pool = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
+let preflightSongIds = null;
+let preflightPlaybackBySongId = new Map();
+if (!skipPreflight) {
+  if (!fs.existsSync(preflightPath)) throw new Error("Нет предрелизного отчёта. Сначала запусти npm run preflight:ready.");
+  const sourceSha256 = crypto.createHash("sha256").update(fs.readFileSync(sourcePath)).digest("hex");
+  const preflight = JSON.parse(fs.readFileSync(preflightPath, "utf8"));
+  if (preflight.source?.sha256 !== sourceSha256) {
+    throw new Error("Предрелизный отчёт устарел. Снова запусти npm run preflight:ready.");
+  }
+  preflightSongIds = new Set(preflight.passed.map(({ songId }) => songId));
+  preflightPlaybackBySongId = new Map(preflight.passed.map(({ songId, playback }) => [songId, playback]));
+}
 const stableRank = (song) => crypto.createHash("sha256")
   .update(`${seed}:${song.songId}:${song.youtube.videoId}`)
   .digest("hex");
 
-const artistIdsOverlap = (left, right) => left === right
-  || (Math.min(left.length, right.length) >= 5 && (left.includes(right) || right.includes(left)));
+const artistIdsOverlap = (left, right) => left === right;
 const hasArtistOverlap = (song, selected) => selected.some((other) =>
   song.artistIds.some((left) => other.artistIds.some((right) => artistIdsOverlap(left, right))));
 
 const candidates = pool.songs
   .filter((song) => song.readyForQuiz)
+  .filter((song) => !preflightSongIds || preflightSongIds.has(song.songId))
   .filter((song) => allowPreviouslyUsedArtists || song.artistNovelty === "new-artist")
   .filter((song) => eraTargets[song.era] !== undefined)
   .sort((left, right) => stableRank(left).localeCompare(stableRank(right)));
 
-const selected = [];
-const recognitionCounts = { recognizable: 0, middle: 0, deep: 0 };
-for (const [era, target] of Object.entries(eraTargets)) {
-  while (selected.filter((song) => song.era === era).length < target) {
-    const eligible = candidates
-      .filter((song) => song.era === era)
-      .filter((song) => !selected.some((other) => other.songId === song.songId || other.youtube.videoId === song.youtube.videoId))
-      .filter((song) => !hasArtistOverlap(song, selected))
-      .sort((left, right) => {
-        const leftNeed = recognitionTargets[left.recognizability] - recognitionCounts[left.recognizability];
-        const rightNeed = recognitionTargets[right.recognizability] - recognitionCounts[right.recognizability];
-        return rightNeed - leftNeed || stableRank(left).localeCompare(stableRank(right));
-      });
-    const song = eligible[0];
-    if (!song) throw new Error(`Не хватает уникальных кандидатов эпохи ${era}: выбрано ${selected.filter((item) => item.era === era).length}/${target}`);
-    selected.push(song);
-    recognitionCounts[song.recognizability] += 1;
+const eras = Object.keys(eraTargets);
+const recognitionBands = Object.keys(recognitionTargets);
+const bucketKey = (era, band) => `${era}:${band}`;
+const candidateBuckets = new Map();
+for (const era of eras) {
+  for (const band of recognitionBands) {
+    candidateBuckets.set(bucketKey(era, band), candidates.filter((song) => song.era === era && song.recognizability === band));
   }
 }
 
-const checkYouTube = async (song) => {
-  if (offline) return { status: "not-checked", reason: "offline" };
-  return checkYouTubeVideo(song.youtube.videoId);
+const rowOptions = Object.fromEntries(eras.map((era) => {
+  const options = [];
+  const target = eraTargets[era];
+  for (let recognizable = 0; recognizable <= target; recognizable += 1) {
+    for (let middle = 0; middle <= target - recognizable; middle += 1) {
+      const deep = target - recognizable - middle;
+      const counts = { recognizable, middle, deep };
+      if (recognitionBands.every((band) => counts[band] <= candidateBuckets.get(bucketKey(era, band)).length)) options.push(counts);
+    }
+  }
+  return [era, options.sort((left, right) => {
+    const balanceScore = (counts) => recognitionBands.reduce((sum, band) =>
+      sum + Math.abs(counts[band] / target - recognitionTargets[band] / 20), 0);
+    return balanceScore(left) - balanceScore(right)
+      || recognitionBands.map((band) => left[band]).join("").localeCompare(recognitionBands.map((band) => right[band]).join(""));
+  })];
+}));
+
+const selectSongsForMatrix = (matrix, rejectedVideoIds) => {
+  const remaining = new Map();
+  for (const era of eras) {
+    for (const band of recognitionBands) remaining.set(bucketKey(era, band), matrix[era][band]);
+  }
+  const selected = [];
+  const visit = () => {
+    if (selected.length === 20) return true;
+    const choices = [...remaining.entries()]
+      .filter(([, count]) => count > 0)
+      .map(([key, count]) => {
+        const eligible = candidateBuckets.get(key)
+          .filter((song) => !rejectedVideoIds.has(song.youtube.videoId))
+          .filter((song) => !selected.some((other) => other.songId === song.songId || other.youtube.videoId === song.youtube.videoId))
+          .filter((song) => !hasArtistOverlap(song, selected));
+        return { key, count, eligible };
+      })
+      .sort((left, right) => (left.eligible.length - left.count) - (right.eligible.length - right.count)
+        || left.eligible.length - right.eligible.length);
+    const choice = choices[0];
+    if (!choice || choice.eligible.length < choice.count) return false;
+    remaining.set(choice.key, choice.count - 1);
+    for (const song of choice.eligible) {
+      selected.push(song);
+      if (visit()) return true;
+      selected.pop();
+    }
+    remaining.set(choice.key, choice.count);
+    return false;
+  };
+  return visit() ? selected : null;
 };
 
-const playbackChecks = [];
+const selectExactSongs = (rejectedVideoIds) => {
+  const remainingBands = { ...recognitionTargets };
+  const matrix = {};
+  const allocateRows = (eraIndex) => {
+    if (eraIndex === eras.length) {
+      if (!recognitionBands.every((band) => remainingBands[band] === 0)) return null;
+      return selectSongsForMatrix(matrix, rejectedVideoIds);
+    }
+    const era = eras[eraIndex];
+    for (const option of rowOptions[era]) {
+      if (!recognitionBands.every((band) => option[band] <= remainingBands[band])) continue;
+      matrix[era] = option;
+      for (const band of recognitionBands) remainingBands[band] -= option[band];
+      const result = allocateRows(eraIndex + 1);
+      if (result) return result;
+      for (const band of recognitionBands) remainingBands[band] += option[band];
+    }
+    delete matrix[era];
+    return null;
+  };
+  const result = allocateRows(0);
+  if (!result) throw new Error("Не удалось одновременно выполнить квоты эпох, сложности и уникальности исполнителей.");
+  return result;
+};
+
+const checkYouTube = async (song) => {
+  if (offline) return { status: "not-checked", reason: "offline" };
+  const cached = preflightPlaybackBySongId.get(song.songId);
+  if (!refreshYouTube && cached?.status === "passed") return { ...cached, reason: "fresh-preflight-cache" };
+  const result = await checkYouTubeVideo(song.youtube.videoId);
+  if (/^http-(?:408|425|429|5\d\d)$/u.test(result.reason || "") && cached?.status === "passed") {
+    return { ...cached, reason: `fresh-preflight-cache-after-${result.reason}` };
+  }
+  if (/^http-(?:408|425|429|5\d\d)$/u.test(result.reason || "")) {
+    throw new Error(`Временная ошибка YouTube ${result.reason}; выпуск не изменён.`);
+  }
+  return result;
+};
+
 const rejectedVideoIds = new Set();
-let pendingPlaybackChecks = [...selected];
-while (pendingPlaybackChecks.length) {
-  const failedSongs = [];
-  for (let index = 0; index < pendingPlaybackChecks.length; index += 5) {
-    const batch = pendingPlaybackChecks.slice(index, index + 5);
+const playbackChecksByVideo = new Map();
+let selected;
+while (true) {
+  selected = selectExactSongs(rejectedVideoIds);
+  const unchecked = selected.filter((song) => !playbackChecksByVideo.has(song.youtube.videoId));
+  for (let index = 0; index < unchecked.length; index += 5) {
+    const batch = unchecked.slice(index, index + 5);
     const checked = await Promise.all(batch.map(async (song) => ({
       song,
       check: await checkYouTube(song),
     })));
     for (const { song, check } of checked) {
-      playbackChecks.push({ songId: song.songId, videoId: song.youtube.videoId, ...check });
-      if (check.status === "failed") failedSongs.push(song);
+      playbackChecksByVideo.set(song.youtube.videoId, { songId: song.songId, videoId: song.youtube.videoId, ...check });
     }
   }
+  const failedSongs = selected.filter((song) => playbackChecksByVideo.get(song.youtube.videoId)?.status === "failed");
   if (!failedSongs.length) break;
-  pendingPlaybackChecks = [];
-  for (const failedSong of failedSongs) {
-    rejectedVideoIds.add(failedSong.youtube.videoId);
-    const failedIndex = selected.findIndex((song) => song.songId === failedSong.songId);
-    if (failedIndex >= 0) selected.splice(failedIndex, 1);
-    recognitionCounts[failedSong.recognizability] -= 1;
-    const replacement = candidates
-      .filter((song) => song.era === failedSong.era)
-      .filter((song) => !rejectedVideoIds.has(song.youtube.videoId))
-      .filter((song) => !selected.some((other) => other.songId === song.songId || other.youtube.videoId === song.youtube.videoId))
-      .filter((song) => !hasArtistOverlap(song, selected))
-      .sort((left, right) => {
-        const leftSameBand = Number(left.recognizability === failedSong.recognizability);
-        const rightSameBand = Number(right.recognizability === failedSong.recognizability);
-        return rightSameBand - leftSameBand || stableRank(left).localeCompare(stableRank(right));
-      })[0];
-    if (!replacement) throw new Error(`Не нашлось замены для ${failedSong.artist} — ${failedSong.title} (${failedSong.era})`);
-    selected.push(replacement);
-    recognitionCounts[replacement.recognizability] += 1;
-    pendingPlaybackChecks.push(replacement);
+  for (const song of failedSongs) {
+    const check = playbackChecksByVideo.get(song.youtube.videoId);
+    console.warn(`Исключено видео: ${song.artist} — ${song.title} (${song.youtube.videoId}): ${check.reason}`);
+    rejectedVideoIds.add(song.youtube.videoId);
   }
 }
+const playbackChecks = [...playbackChecksByVideo.values()];
 
 const ordered = [...selected].sort((left, right) => stableRank({ ...left, songId: `order:${left.songId}` })
   .localeCompare(stableRank({ ...right, songId: `order:${right.songId}` })));
@@ -114,6 +190,8 @@ const releaseCandidate = {
     uniqueArtists: true,
     uniqueSongs: true,
     uniqueYouTubeVideos: true,
+    preflightRequired: !skipPreflight,
+    youtubeRefreshRequested: refreshYouTube,
   },
   validation: {
     passed: true,
@@ -121,6 +199,8 @@ const releaseCandidate = {
     rejectedVideos: [...rejectedVideoIds],
     notes: [
       "Проверка YouTube отсеивает удалённые, возрастные и запрещённые для встраивания ролики.",
+      "При обычной сборке используется свежая семидневная проверка, чтобы лимит YouTube 429 не считался поломкой ролика.",
+      "В выпуск попадают только карточки, прошедшие актуальный предрелизный отчёт.",
       "Границы фрагментов выбраны эвристикой; перед публикацией остаётся короткое прослушивание.",
     ],
   },
