@@ -22,7 +22,7 @@ export async function GET() {
     const weakTracks = database.prepare(`SELECT track_key AS trackKey, artist, title,
       successes, required_successes AS requiredSuccesses, misses
       FROM mistake_mastery WHERE active = 1
-      ORDER BY successes ASC, misses DESC, last_error_at DESC, artist ASC LIMIT 120`).all();
+      ORDER BY successes ASC, misses DESC, last_error_at DESC, artist ASC`).all();
 
     return Response.json({ attempts, weakTracks });
   } catch (error) {
