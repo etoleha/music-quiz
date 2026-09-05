@@ -10,6 +10,7 @@ import {
   externalIdsFromStatusOverride,
   validateSongStatusOverrides,
 } from "./song-status-overrides.mjs";
+import { isArtistBlocked, isArtistPrioritized, loadArtistSelectionPolicy } from "./artist-selection-policy.mjs";
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
@@ -45,6 +46,7 @@ if (databaseIndex.archiveSha256 && crypto.createHash("sha256").update(compressed
 }
 const database = JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
 const aliasIndex = buildAliasIndex(readJson(dataPath("artist-aliases.json")));
+const artistSelectionPolicy = loadArtistSelectionPolicy(repoRoot);
 const statusOverrides = readJson(dataPath("song-status-overrides.json"));
 validateSongStatusOverrides(statusOverrides);
 const statusOverrideFor = (song) => statusOverrides.songs?.[song.id]
@@ -134,7 +136,9 @@ const orderCandidates = (tracks, era) => {
   const groups = new Map(["recognizable", "middle", "deep"].map((band) => [band, []]));
   for (const track of tracks) groups.get(recognitionFor(track)).push(track);
   for (const group of groups.values()) group.sort((left, right) =>
-    sourcePriorityFor(left, era) - sourcePriorityFor(right, era)
+    Number(isArtistPrioritized(songsByPoolId.get(right.id) || right, artistSelectionPolicy))
+      - Number(isArtistPrioritized(songsByPoolId.get(left.id) || left, artistSelectionPolicy))
+    || sourcePriorityFor(left, era) - sourcePriorityFor(right, era)
     || (sourcePriorityFor(left, era) === 0 ? Number(right.sourceViews || 0) - Number(left.sourceViews || 0) : 0)
     || Number(left.listRank ?? 999) - Number(right.listRank ?? 999)
     || String(left.artist).localeCompare(String(right.artist), "ru"));
@@ -173,6 +177,7 @@ const suspiciousMetadata = (track, song) => knownBadPoolIds.has(track.id)
 const buildCandidateQueues = ({ requireUnusedArtists }) => Object.fromEntries(Object.keys(scaledTargets).map((era) => [era, orderCandidates(poolTracks.filter((track) => {
     const song = songsByPoolId.get(track.id);
     if (eraFor(track, song) !== era || suspiciousMetadata(track, song) || !eligibleSourceFor(track, song)) return false;
+    if (isArtistBlocked(song || track, artistSelectionPolicy)) return false;
     if (!song?.readyForCuration || song.status?.workflow !== "waiting" || song.quizRefs?.length) return false;
     return !requireUnusedArtists || (song.allArtistsUnused && !anyArtistOverlaps(song.artistIds, usedArtistIds));
   }), era)]));
@@ -259,6 +264,7 @@ const fillEra = async (era, target, queues = candidateQueues, queueCursors = cur
       era,
       approximateYear,
       recognizability: recognition,
+      selectionPreference: isArtistPrioritized(song, artistSelectionPolicy) ? "priority-include" : "standard",
       artistNovelty: song.allArtistsUnused && !anyArtistOverlaps(song.artistIds, usedArtistIds)
         ? "new-artist"
         : "previously-used-artist",

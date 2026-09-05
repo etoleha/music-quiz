@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "blocked": [
+    { "canonical": "SHAMAN", "aliases": ["Ярослав Дронов"] },
+    { "canonical": "Татьяна Куртукова", "aliases": [] },
+    { "canonical": "Николай Басков", "aliases": [] },
+    { "canonical": "Николай Расторгуев", "aliases": ["Любэ", "ЛЮБЭ", "Lube", "Lyube"] },
+    { "canonical": "Юлия Чичерина", "aliases": ["Чичерина"] },
+    { "canonical": "Вика Цыганова", "aliases": ["Виктория Цыганова"] },
+    { "canonical": "Олег Газманов", "aliases": [] }
+  ],
+  "priorityInclude": [
+    { "canonical": "Порнофильмы", "aliases": [] },
+    { "canonical": "Noize MC", "aliases": ["Иван Алексеев"] },
+    { "canonical": "Монеточка", "aliases": ["Елизавета Гырдымова"] },
+    { "canonical": "Oxxxymiron", "aliases": ["Мирон Фёдоров", "Мирон Федоров"] },
+    { "canonical": "Земфира", "aliases": ["Земфира Рамазанова"] },
+    { "canonical": "Би-2", "aliases": ["Bi-2", "Лёва Би-2", "Лева Би-2"] },
+    { "canonical": "ДДТ", "aliases": ["DDT", "Юрий Шевчук"] },
+    { "canonical": "Сплин", "aliases": ["Splean"] },
+    { "canonical": "Ногу свело!", "aliases": ["Ногу свело", "Nogu Svelo"] },
+    { "canonical": "Little Big", "aliases": [] },
+    { "canonical": "Аквариум", "aliases": ["Борис Гребенщиков", "БГ"] },
+    { "canonical": "Машина времени", "aliases": ["Андрей Макаревич"] },
+    { "canonical": "Каста", "aliases": ["Kasta"] },
+    { "canonical": "Anacondaz", "aliases": [] },
+    { "canonical": "Face", "aliases": ["Иван Дрёмин", "Иван Дремин"] }
+  ],
+  "rules": {
+    "blockedParticipantExcludesTrack": true,
+    "priorityParticipantPrioritizesTrack": true,
+    "publishedHistoryIsImmutable": true
+  },
+  "notes": [
+    "Стоп-лист применяется к любому заявленному участнику записи и к связанным группе/солисту, перечисленным как алиасы.",
+    "Приоритетный список влияет на порядок подготовки и выбора, но не отменяет квоты эпох, сложности, уникальности и техническую проверку.",
+    "Уже опубликованные квизы не переписываются."
+  ]
+}

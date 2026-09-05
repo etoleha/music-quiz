@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { checkYouTubeVideo } from "./youtube-playability.mjs";
+import { isArtistBlocked, isArtistPrioritized, loadArtistSelectionPolicy } from "./artist-selection-policy.mjs";
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const args = new Set(process.argv.slice(2));
@@ -20,6 +21,8 @@ const offline = args.has("--offline");
 const refreshYouTube = args.has("--refresh-youtube");
 const eraTargets = { soviet: 2, "1990s": 4, "2000s": 7, "2010s": 4, "2020s": 3 };
 const recognitionTargets = { recognizable: 5, middle: 8, deep: 7 };
+const maxPriorityArtists = 3;
+const artistSelectionPolicy = loadArtistSelectionPolicy(repoRoot);
 
 const pool = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
 let preflightSongIds = null;
@@ -44,10 +47,13 @@ const hasArtistOverlap = (song, selected) => selected.some((other) =>
 
 const candidates = pool.songs
   .filter((song) => song.readyForQuiz)
+  .filter((song) => !isArtistBlocked(song, artistSelectionPolicy))
   .filter((song) => !preflightSongIds || preflightSongIds.has(song.songId))
   .filter((song) => allowPreviouslyUsedArtists || song.artistNovelty === "new-artist")
   .filter((song) => eraTargets[song.era] !== undefined)
-  .sort((left, right) => stableRank(left).localeCompare(stableRank(right)));
+  .sort((left, right) => Number(isArtistPrioritized(right, artistSelectionPolicy))
+    - Number(isArtistPrioritized(left, artistSelectionPolicy))
+    || stableRank(left).localeCompare(stableRank(right)));
 
 const eras = Object.keys(eraTargets);
 const recognitionBands = Object.keys(recognitionTargets);
@@ -91,7 +97,9 @@ const selectSongsForMatrix = (matrix, rejectedVideoIds) => {
         const eligible = candidateBuckets.get(key)
           .filter((song) => !rejectedVideoIds.has(song.youtube.videoId))
           .filter((song) => !selected.some((other) => other.songId === song.songId || other.youtube.videoId === song.youtube.videoId))
-          .filter((song) => !hasArtistOverlap(song, selected));
+          .filter((song) => !hasArtistOverlap(song, selected))
+          .filter((song) => !isArtistPrioritized(song, artistSelectionPolicy)
+            || selected.filter((other) => isArtistPrioritized(other, artistSelectionPolicy)).length < maxPriorityArtists);
         return { key, count, eligible };
       })
       .sort((left, right) => (left.eligible.length - left.count) - (right.eligible.length - right.count)
@@ -192,6 +200,9 @@ const releaseCandidate = {
     uniqueYouTubeVideos: true,
     preflightRequired: !skipPreflight,
     youtubeRefreshRequested: refreshYouTube,
+    artistStopListApplied: true,
+    priorityArtistPreferenceApplied: true,
+    maxPriorityArtists,
   },
   validation: {
     passed: true,

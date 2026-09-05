@@ -61,5 +61,6 @@ next-env.d.ts
 !/data/song-enrichment-overrides.json
 !/data/song-enrichment-auto.json
 !/data/quiz-generation-policy.json
+!/data/artist-selection-policy.json
 !/data/quiz-candidates.json
 !/data/quiz-ready-songs.json

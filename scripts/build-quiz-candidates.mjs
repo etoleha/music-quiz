@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { isArtistBlocked, isArtistPrioritized, loadArtistSelectionPolicy } from "./artist-selection-policy.mjs";
 import zlib from "node:zlib";
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
@@ -7,11 +8,16 @@ const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
 const databaseIndex = JSON.parse(fs.readFileSync(dataPath("song-database.json"), "utf8"));
 const database = JSON.parse(zlib.gunzipSync(fs.readFileSync(dataPath(databaseIndex.archive))).toString("utf8"));
 const policy = JSON.parse(fs.readFileSync(dataPath("quiz-generation-policy.json"), "utf8"));
+const artistSelectionPolicy = loadArtistSelectionPolicy(repoRoot);
 const limit = Math.max(1, Number(process.env.QUIZ_CANDIDATE_LIMIT || 500));
 
 const reservedArtists = new Set();
 const candidates = [];
-for (const song of database.songs) {
+const orderedSongs = database.songs
+  .filter((song) => !isArtistBlocked(song, artistSelectionPolicy))
+  .sort((left, right) => Number(isArtistPrioritized(right, artistSelectionPolicy))
+    - Number(isArtistPrioritized(left, artistSelectionPolicy)));
+for (const song of orderedSongs) {
   if (!song.readyForUniqueArtistQuiz) continue;
   if (song.artistIds.some((artistId) => reservedArtists.has(artistId))) continue;
   for (const artistId of song.artistIds) reservedArtists.add(artistId);
