@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-05T07:22:49.324Z",
-  "totalNeedsReview": 5905,
+  "generatedAt": "2026-09-05T09:02:43.314Z",
+  "totalNeedsReview": 5935,
   "shown": 500,
   "songs": [
     {
-      "id": "chart-09174",
+      "id": "chart-09217",
       "artist": "Xamdam Sobirov",
       "title": "Пешта",
       "candidateScore": 99.78,
@@ -30,7 +30,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09056",
+      "id": "chart-09099",
       "artist": "Ne Budite Spyashchikh",
       "title": "Танцуй пока молодой (рэп версия)",
       "candidateScore": 99.24,
@@ -55,34 +55,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09017",
-      "artist": "Руслан Набиев",
-      "title": "По ресторанам (Dj Fat Maxx Remix)",
-      "candidateScore": 99.09,
-      "workflow": "waiting",
-      "language": "russian",
-      "languageEvidence": [
-        "cyrillic-title"
-      ],
-      "releaseYear": null,
-      "candidateYears": [],
-      "artistIds": [
-        "ruslannabiev"
-      ],
-      "usedArtistIds": [
-        "ruslannabiev"
-      ],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "deezer-ru"
-      ],
-      "poolRefs": [],
-      "externalIds": {}
-    },
-    {
-      "id": "chart-09058",
+      "id": "chart-09101",
       "artist": "Sveta",
       "title": "Мои слёзы",
       "candidateScore": 98.9,
@@ -109,7 +82,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09062",
+      "id": "chart-09105",
       "artist": "RUNA",
       "title": "Линии",
       "candidateScore": 96.39,
@@ -134,7 +107,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09063",
+      "id": "chart-09106",
       "artist": "Фара Ночи",
       "title": "Не буди меня",
       "candidateScore": 96.26,
@@ -159,7 +132,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09066",
+      "id": "chart-09109",
       "artist": "Потомучто",
       "title": "Жизнь и смерть",
       "candidateScore": 95.35,
@@ -184,7 +157,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09067",
+      "id": "chart-09110",
       "artist": "Everst",
       "title": "Тебя дороже нет",
       "candidateScore": 94.95,
@@ -209,7 +182,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09068",
+      "id": "chart-09111",
       "artist": "Costa Lacoste",
       "title": "Черри Леди",
       "candidateScore": 94.68,
@@ -234,7 +207,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09069",
+      "id": "chart-09112",
       "artist": "Тима Белорусских",
       "title": "Мысли",
       "candidateScore": 94.54,
@@ -261,7 +234,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09182",
+      "id": "chart-09225",
       "artist": "Makich",
       "title": "Позови",
       "candidateScore": 93.84,
@@ -286,7 +259,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09183",
+      "id": "chart-09226",
       "artist": "Мадина Хамидова",
       "title": "Дагна дукха везнариг",
       "candidateScore": 93.55,
@@ -388,7 +361,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09073",
+      "id": "chart-09116",
       "artist": "Filatov & Karas",
       "title": "Среди Счастливых Людей",
       "candidateScore": 92.67,
@@ -415,7 +388,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09186",
+      "id": "chart-09229",
       "artist": "Betsy",
       "title": "Парацетамол",
       "candidateScore": 92.06,
@@ -440,7 +413,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09076",
+      "id": "chart-09119",
       "artist": "Анна Немченко",
       "title": "Ретровейв",
       "candidateScore": 91.74,
@@ -465,7 +438,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09077",
+      "id": "chart-09120",
       "artist": "Icegergert",
       "title": "Евродэнс.ru",
       "candidateScore": 91.59,
@@ -490,7 +463,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09078",
+      "id": "chart-09121",
       "artist": "BEREZHNO",
       "title": "Это лето будет нашим",
       "candidateScore": 91.43,
@@ -540,7 +513,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09079",
+      "id": "chart-09122",
       "artist": "Таня. Л",
       "title": "\" Под Шуфутинского\"",
       "candidateScore": 91.27,
@@ -565,7 +538,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09188",
+      "id": "chart-09231",
       "artist": "JF Voice",
       "title": "ЭКСПЕРИМЕНТ НЕ БЫЛ ПРОВАЛЬНЫМ",
       "candidateScore": 90.78,
@@ -590,7 +563,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09081",
+      "id": "chart-09124",
       "artist": "Kagramanov",
       "title": "Танцуй, пантера",
       "candidateScore": 90.78,
@@ -640,7 +613,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09082",
+      "id": "chart-09125",
       "artist": "ANNA ASTI & Dima Bilan",
       "title": "Эпилог",
       "candidateScore": 90.62,
@@ -669,7 +642,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09084",
+      "id": "chart-09127",
       "artist": "The Limba",
       "title": "Ча Ща",
       "candidateScore": 90.28,
@@ -696,7 +669,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09189",
+      "id": "chart-09232",
       "artist": "ЭЛЕВЕН ЭЙТ",
       "title": "ФРУКТОВЫЙ",
       "candidateScore": 90.11,
@@ -721,7 +694,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09087",
+      "id": "chart-09130",
       "artist": "Atlantida Project",
       "title": "Гиперпространство",
       "candidateScore": 89.43,
@@ -746,7 +719,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09088",
+      "id": "chart-09131",
       "artist": "YungMeechy",
       "title": "Дофамин (slowed)",
       "candidateScore": 89.25,
@@ -771,7 +744,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09089",
+      "id": "chart-09132",
       "artist": "MIROLYBOVA & BARABANOV",
       "title": "Пьяная без вина 2.0",
       "candidateScore": 89.07,
@@ -822,7 +795,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09093",
+      "id": "chart-09136",
       "artist": "Settlers",
       "title": "Светлое чувство",
       "candidateScore": 87.6,
@@ -847,7 +820,34 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09094",
+      "id": "chart-09017",
+      "artist": "Руслан Набиев",
+      "title": "По ресторанам (Dj Fat Maxx Remix)",
+      "candidateScore": 87.49,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "ruslannabiev"
+      ],
+      "usedArtistIds": [
+        "ruslannabiev"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "deezer-ru"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-09137",
       "artist": "Нина Шацкая & Брендон Стоун",
       "title": "Стамбул",
       "candidateScore": 87.22,
@@ -873,7 +873,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09095",
+      "id": "chart-09138",
       "artist": "Noggano",
       "title": "Санта Муэрте",
       "candidateScore": 87.03,
@@ -949,7 +949,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09197",
+      "id": "chart-09240",
       "artist": "ГЛЕНТ",
       "title": "ГИМН РОБЛОКС",
       "candidateScore": 86.83,
@@ -974,7 +974,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09096",
+      "id": "chart-09139",
       "artist": "Alex Lim & Igor Krutoy",
       "title": "Океан",
       "candidateScore": 86.63,
@@ -1000,7 +1000,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09097",
+      "id": "chart-09140",
       "artist": "Sound From R.K",
       "title": "Ветерок",
       "candidateScore": 86.23,
@@ -1025,7 +1025,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09098",
+      "id": "chart-09141",
       "artist": "Люся Чеботина",
       "title": "ГОРГОНА",
       "candidateScore": 86.03,
@@ -1078,7 +1078,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09200",
+      "id": "chart-09243",
       "artist": "Цой Виктор",
       "title": "Кончится лето",
       "candidateScore": 85.19,
@@ -1153,7 +1153,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09103",
+      "id": "chart-09146",
       "artist": "SEVILLE",
       "title": "Бриллиант",
       "candidateScore": 84.55,
@@ -1200,31 +1200,6 @@
       "readyForPublication": false,
       "sourceIds": [
         "europa-plus-annual"
-      ],
-      "poolRefs": [],
-      "externalIds": {}
-    },
-    {
-      "id": "chart-09106",
-      "artist": "TATITERA",
-      "title": "Жизнь бумеранг",
-      "candidateScore": 83.65,
-      "workflow": "waiting",
-      "language": "russian",
-      "languageEvidence": [
-        "cyrillic-title"
-      ],
-      "releaseYear": null,
-      "candidateYears": [],
-      "artistIds": [
-        "tatitera"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "shazam-ru"
       ],
       "poolRefs": [],
       "externalIds": {}
@@ -1309,7 +1284,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09107",
+      "id": "chart-09150",
       "artist": "Masha and the Bear",
       "title": "Три желания",
       "candidateScore": 83.42,
@@ -1334,7 +1309,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09108",
+      "id": "chart-09151",
       "artist": "Husky",
       "title": "Ай",
       "candidateScore": 83.19,
@@ -1359,7 +1334,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09109",
+      "id": "chart-09152",
       "artist": "BUINAGOLOVUSHKA",
       "title": "Ты лети",
       "candidateScore": 82.96,
@@ -1384,7 +1359,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09205",
+      "id": "chart-09248",
       "artist": "onokami",
       "title": "грустинка",
       "candidateScore": 82.96,
@@ -1409,7 +1384,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09110",
+      "id": "chart-09153",
       "artist": "Yamia",
       "title": "До старости вместе",
       "candidateScore": 82.72,
@@ -1434,7 +1409,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09112",
+      "id": "chart-09155",
       "artist": "KhaliF",
       "title": "Мальвина",
       "candidateScore": 82,
@@ -1459,7 +1434,34 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09118",
+      "id": "chart-09067",
+      "artist": "Андрей Губин",
+      "title": "Было но прошло",
+      "candidateScore": 80.81,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "andreigubin"
+      ],
+      "usedArtistIds": [
+        "andreigubin"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "deezer-ru"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-09161",
       "artist": "Соня Белькевич & M.r-X",
       "title": "Танцуя лечусь",
       "candidateScore": 80.47,
@@ -1539,7 +1541,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09119",
+      "id": "chart-09162",
       "artist": "Виталя Джа",
       "title": "Похуй молодой",
       "candidateScore": 80.2,
@@ -1589,7 +1591,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09209",
+      "id": "chart-09252",
       "artist": "Бахтавар",
       "title": "Когда звучит пандур",
       "candidateScore": 79.93,
@@ -1614,7 +1616,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09121",
+      "id": "chart-09164",
       "artist": "Xcho & SAYAN",
       "title": "Тёмная ночь",
       "candidateScore": 79.66,
@@ -1721,7 +1723,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09127",
+      "id": "chart-09170",
       "artist": "VORSKIY & GG brodyaga",
       "title": "Её формы как бомба",
       "candidateScore": 77.04,
@@ -1747,7 +1749,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09128",
+      "id": "chart-09171",
       "artist": "George Leahu",
       "title": "Давай доживём до старости вместе",
       "candidateScore": 76.73,
@@ -1772,7 +1774,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09213",
+      "id": "chart-09256",
       "artist": "Дайте танк (!)",
       "title": "Утро",
       "candidateScore": 76.41,
@@ -1851,7 +1853,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09132",
+      "id": "chart-09175",
       "artist": "Алхимка",
       "title": "Дурачок",
       "candidateScore": 74.75,
@@ -1901,7 +1903,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09216",
+      "id": "chart-09259",
       "artist": "Rafs Perfume",
       "title": "Доля воровская (На разных языках)",
       "candidateScore": 74.41,
@@ -1926,7 +1928,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09135",
+      "id": "chart-09178",
       "artist": "ELMAN",
       "title": "С неба",
       "candidateScore": 73.33,
@@ -1978,7 +1980,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09217",
+      "id": "chart-09260",
       "artist": "Марьяна Локель",
       "title": "Ивана Купала",
       "candidateScore": 72.96,
@@ -2003,7 +2005,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09136",
+      "id": "chart-09179",
       "artist": "Татьяна Куртукова",
       "title": "Алёшенька",
       "candidateScore": 72.96,
@@ -2028,7 +2030,32 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09137",
+      "id": "chart-09079",
+      "artist": "Jay Leemo",
+      "title": "Улетай (Dj Geny Tur & Techno Project Remix)",
+      "candidateScore": 72.67,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "jayleemo"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "deezer-ru"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-09180",
       "artist": "ENZRO",
       "title": "А я по ночам не сплю",
       "candidateScore": 72.2,
@@ -2106,7 +2133,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09138",
+      "id": "chart-09181",
       "artist": "Marcel",
       "title": "Она мм",
       "candidateScore": 71.81,
@@ -2184,7 +2211,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09140",
+      "id": "chart-09183",
       "artist": "Асия",
       "title": "Несправедливо",
       "candidateScore": 69.75,
@@ -2236,7 +2263,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09141",
+      "id": "chart-09184",
       "artist": "Lalis Dream",
       "title": "Последний день лета",
       "candidateScore": 69.31,
@@ -2261,7 +2288,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09219",
+      "id": "chart-09262",
       "artist": "Фара Ночи",
       "title": "Богиня красоты",
       "candidateScore": 68.86,
@@ -2281,6 +2308,33 @@
       "readyForPublication": false,
       "sourceIds": [
         "youtube-ru-weekly"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-09084",
+      "artist": "Иракли",
+      "title": "Сделай шаг",
+      "candidateScore": 68.32,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "irakli"
+      ],
+      "usedArtistIds": [
+        "irakli"
+      ],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "deezer-ru"
       ],
       "poolRefs": [],
       "externalIds": {}
@@ -2338,7 +2392,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09145",
+      "id": "chart-09188",
       "artist": "HOLLYFLAME, IOWA & Dose",
       "title": "Ловлю",
       "candidateScore": 66.98,
@@ -2367,7 +2421,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09146",
+      "id": "chart-09189",
       "artist": "NEMIGA & Дорогой Дневник",
       "title": "Весь этот мир",
       "candidateScore": 66.48,
@@ -2420,7 +2474,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09221",
+      "id": "chart-09264",
       "artist": "Oasis Deep",
       "title": "Чёрные Вороны",
       "candidateScore": 65.97,
@@ -2445,7 +2499,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09147",
+      "id": "chart-09190",
       "artist": "Zainab Makhaeva",
       "title": "Сердце на костре",
       "candidateScore": 65.97,
@@ -2524,7 +2578,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09223",
+      "id": "chart-09266",
       "artist": "Айшат Махметмурзаева",
       "title": "Де Дийне Маьл Дели",
       "candidateScore": 63.8,
@@ -2626,7 +2680,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09151",
+      "id": "chart-09194",
       "artist": "Antoha MC",
       "title": "Всё просто (RMX)",
       "candidateScore": 62.02,
@@ -2651,7 +2705,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09226",
+      "id": "chart-09269",
       "artist": "ROCKET",
       "title": "Думаю о тебе",
       "candidateScore": 60.08,
@@ -2676,7 +2730,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09227",
+      "id": "chart-09270",
       "artist": "Кулиев Рамазан",
       "title": "Когда звучит дамбур",
       "candidateScore": 58.68,
@@ -2701,7 +2755,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09155",
+      "id": "chart-09198",
       "artist": "Uma2rman",
       "title": "Не стой, танцуй",
       "candidateScore": 57.18,
@@ -2728,10 +2782,10 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09051",
-      "artist": "Biffguyz",
-      "title": "Я тебя бум бум бум [Love Me]",
-      "candidateScore": 56.39,
+      "id": "chart-09091",
+      "artist": "Света",
+      "title": "Может да, может нет",
+      "candidateScore": 56.52,
       "workflow": "waiting",
       "language": "russian",
       "languageEvidence": [
@@ -2740,9 +2794,11 @@
       "releaseYear": null,
       "candidateYears": [],
       "artistIds": [
-        "biffguyz"
+        "sveta"
       ],
-      "usedArtistIds": [],
+      "usedArtistIds": [
+        "sveta"
+      ],
       "readyForCuration": false,
       "readyForUniqueArtistQuiz": false,
       "readyForPublication": false,
@@ -2753,7 +2809,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09231",
+      "id": "chart-09274",
       "artist": "Ислам Итляшев",
       "title": "На нервах",
       "candidateScore": 51.96,
@@ -2778,7 +2834,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09232",
+      "id": "chart-09275",
       "artist": "ENZRO",
       "title": "Ночи я не боюсь",
       "candidateScore": 49.89,
@@ -2803,7 +2859,32 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09164",
+      "id": "chart-09051",
+      "artist": "Biffguyz",
+      "title": "Я тебя бум бум бум [Love Me]",
+      "candidateScore": 49.8,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "biffguyz"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "deezer-ru"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-09207",
       "artist": "NEON Kylian",
       "title": "Где тебя искать (Deep House Version)",
       "candidateScore": 43.66,
@@ -2828,7 +2909,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09235",
+      "id": "chart-09278",
       "artist": "SHAMI",
       "title": "Сердце забрала",
       "candidateScore": 42.16,
@@ -2853,7 +2934,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09165",
+      "id": "chart-09208",
       "artist": "Bear Sound Music",
       "title": "Ты просто будь со мною рядом",
       "candidateScore": 40.56,
@@ -2878,7 +2959,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09236",
+      "id": "chart-09279",
       "artist": "Клава Кока",
       "title": "Журавли",
       "candidateScore": 38.82,
@@ -2905,7 +2986,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09167",
+      "id": "chart-09210",
       "artist": "урал гайсин",
       "title": "священная война",
       "candidateScore": 36.94,
@@ -2930,7 +3011,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09168",
+      "id": "chart-09211",
       "artist": "КАЗАКИ ДЕЛАЮТ ХИТЫ",
       "title": "Облака",
       "candidateScore": 32.59,
@@ -2955,7 +3036,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09170",
+      "id": "chart-09213",
       "artist": "Krutakova",
       "title": "Гуляй, парниша",
       "candidateScore": 27.14,
@@ -2980,32 +3061,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09054",
-      "artist": "nkeeei",
-      "title": "ТАКОЙ ЖЕ",
-      "candidateScore": 24.4,
-      "workflow": "waiting",
-      "language": "russian",
-      "languageEvidence": [
-        "cyrillic-title"
-      ],
-      "releaseYear": null,
-      "candidateYears": [],
-      "artistIds": [
-        "nkeeei"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "deezer-ru"
-      ],
-      "poolRefs": [],
-      "externalIds": {}
-    },
-    {
-      "id": "chart-09171",
+      "id": "chart-09214",
       "artist": "Artem Smile",
       "title": "Цыганка нагадала",
       "candidateScore": 23.8,
@@ -3030,7 +3086,32 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09172",
+      "id": "chart-09054",
+      "artist": "nkeeei",
+      "title": "ТАКОЙ ЖЕ",
+      "candidateScore": 21.54,
+      "workflow": "waiting",
+      "language": "russian",
+      "languageEvidence": [
+        "cyrillic-title"
+      ],
+      "releaseYear": null,
+      "candidateYears": [],
+      "artistIds": [
+        "nkeeei"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "deezer-ru"
+      ],
+      "poolRefs": [],
+      "externalIds": {}
+    },
+    {
+      "id": "chart-09215",
       "artist": "132-й меридиан",
       "title": "А мне всё же классно",
       "candidateScore": 19.85,
@@ -3055,7 +3136,7 @@
       "externalIds": {}
     },
     {
-      "id": "chart-09173",
+      "id": "chart-09216",
       "artist": "Байсангур Дербишов",
       "title": "Сирла седа",
       "candidateScore": 15.02,
@@ -3083,7 +3164,7 @@
       "id": "chart-00091",
       "artist": "Miyagi & Эндшпиль feat. Рем Дигга",
       "title": "I Got Love",
-      "candidateScore": 378.65,
+      "candidateScore": 384.09,
       "workflow": "rejected",
       "language": "mixed",
       "languageEvidence": [
@@ -3140,7 +3221,7 @@
       "id": "chart-08619",
       "artist": "Zivert",
       "title": "Gaz",
-      "candidateScore": 359.97,
+      "candidateScore": 365.1,
       "workflow": "waiting",
       "language": "unknown",
       "languageEvidence": [
@@ -3303,6 +3384,47 @@
       }
     },
     {
+      "id": "chart-08630",
+      "artist": "Hugel & Imael Angel & Ultra Naté",
+      "title": "Movin' To The Sun",
+      "candidateScore": 270.48,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "hugel",
+        "imaelangel",
+        "ultranate"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "apple-music-ru",
+        "shazam-ru",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "279780"
+        ],
+        "apple-music-ru": [
+          "6769070199"
+        ]
+      }
+    },
+    {
       "id": "chart-03044",
       "artist": "Stromae",
       "title": "Alors On Danse",
@@ -3456,47 +3578,6 @@
       "externalIds": {
         "tophit": [
           "30869"
-        ]
-      }
-    },
-    {
-      "id": "chart-08630",
-      "artist": "Hugel & Imael Angel & Ultra Naté",
-      "title": "Movin' To The Sun",
-      "candidateScore": 265.37,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2026,
-      "candidateYears": [
-        {
-          "year": 2026,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "hugel",
-        "imaelangel",
-        "ultranate"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "apple-music-ru",
-        "shazam-ru",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "279780"
-        ],
-        "apple-music-ru": [
-          "6769070199"
         ]
       }
     },
@@ -3750,6 +3831,40 @@
       }
     },
     {
+      "id": "chart-09011",
+      "artist": "Фара Ночи",
+      "title": "Богиня моря",
+      "candidateScore": 255.79,
+      "workflow": "rejected",
+      "language": "russian",
+      "languageEvidence": [
+        "manual-override"
+      ],
+      "releaseYear": 2026,
+      "candidateYears": [],
+      "artistIds": [
+        "faranochi"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "apple-music-ru",
+        "shazam-ru",
+        "youtube-ru-weekly"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "apple-music-ru": [
+          "6776332549"
+        ],
+        "youtube": [
+          "ngmOMZQZz0s"
+        ]
+      }
+    },
+    {
       "id": "chart-00302",
       "artist": "Imagine Dragons",
       "title": "Follow You",
@@ -3999,6 +4114,45 @@
       }
     },
     {
+      "id": "chart-03396",
+      "artist": "Tiësto",
+      "title": "Red Lights",
+      "candidateScore": 245.08,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2014,
+      "candidateYears": [
+        {
+          "year": 2014,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "tiesto"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "deezer-ru",
+        "europa-plus-annual",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "53197"
+        ],
+        "isrc": [
+          "CYA111300060"
+        ]
+      }
+    },
+    {
       "id": "chart-00033",
       "artist": "BTS",
       "title": "Dynamite",
@@ -4041,6 +4195,45 @@
       }
     },
     {
+      "id": "chart-08586",
+      "artist": "Temper City",
+      "title": "Self Aware",
+      "candidateScore": 242.63,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "tempercity"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "apple-music-ru",
+        "shazam-ru",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "274038"
+        ],
+        "apple-music-ru": [
+          "1877803360"
+        ]
+      }
+    },
+    {
       "id": "chart-00212",
       "artist": "Trevor Daniel",
       "title": "Falling",
@@ -4079,45 +4272,6 @@
         ],
         "isrc": [
           "USUYG1221109"
-        ]
-      }
-    },
-    {
-      "id": "chart-08586",
-      "artist": "Temper City",
-      "title": "Self Aware",
-      "candidateScore": 238.62,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2026,
-      "candidateYears": [
-        {
-          "year": 2026,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "tempercity"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "apple-music-ru",
-        "shazam-ru",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "274038"
-        ],
-        "apple-music-ru": [
-          "1877803360"
         ]
       }
     },
@@ -4202,40 +4356,6 @@
         ],
         "isrc": [
           "USUM72021500"
-        ]
-      }
-    },
-    {
-      "id": "chart-09011",
-      "artist": "Фара Ночи",
-      "title": "Богиня моря",
-      "candidateScore": 234.56,
-      "workflow": "rejected",
-      "language": "russian",
-      "languageEvidence": [
-        "manual-override"
-      ],
-      "releaseYear": 2026,
-      "candidateYears": [],
-      "artistIds": [
-        "faranochi"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "apple-music-ru",
-        "shazam-ru",
-        "youtube-ru-weekly"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "apple-music-ru": [
-          "6776332549"
-        ],
-        "youtube": [
-          "ngmOMZQZz0s"
         ]
       }
     },
@@ -4357,6 +4477,49 @@
         ],
         "isrc": [
           "USUG12301501"
+        ]
+      }
+    },
+    {
+      "id": "chart-05370",
+      "artist": "David Tavare & Ruth Brown",
+      "title": "Call Me Baby (If You Don't Know My Name)",
+      "candidateScore": 219.19,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2009,
+      "candidateYears": [
+        {
+          "year": 2009,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "davidtavare",
+        "ruthbrown"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "apple-music-ru",
+        "shazam-ru",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "17578"
+        ],
+        "isrc": [
+          "ATR210655011"
+        ],
+        "apple-music-ru": [
+          "1570153637"
         ]
       }
     },
@@ -4567,49 +4730,6 @@
         ],
         "isrc": [
           "USRC11903454"
-        ]
-      }
-    },
-    {
-      "id": "chart-05370",
-      "artist": "David Tavare & Ruth Brown",
-      "title": "Call Me Baby (If You Don't Know My Name)",
-      "candidateScore": 212.97,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2009,
-      "candidateYears": [
-        {
-          "year": 2009,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "davidtavare",
-        "ruthbrown"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "apple-music-ru",
-        "shazam-ru",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "17578"
-        ],
-        "isrc": [
-          "ATR210655011"
-        ],
-        "apple-music-ru": [
-          "1570153637"
         ]
       }
     },
@@ -9734,40 +9854,6 @@
       }
     },
     {
-      "id": "chart-09070",
-      "artist": "ЦУЕФА feat. Вирсавия, Милана Некрасова, LIZOGUB & Давид Туров",
-      "title": "Я ТЕБЯ МОГНУ",
-      "candidateScore": 174.97,
-      "workflow": "rejected",
-      "language": "russian",
-      "languageEvidence": [
-        "manual-override"
-      ],
-      "releaseYear": 2026,
-      "candidateYears": [],
-      "artistIds": [
-        "tsuefa",
-        "virsaviya",
-        "milananecrasova",
-        "lizogub",
-        "davidturov"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "shazam-ru",
-        "youtube-ru-weekly"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "youtube": [
-          "3_S6MxP2NIc"
-        ]
-      }
-    },
-    {
       "id": "chart-03140",
       "artist": "Troye Sivan",
       "title": "Rush",
@@ -10328,45 +10414,6 @@
         ],
         "isrc": [
           "DEE861101328"
-        ]
-      }
-    },
-    {
-      "id": "chart-05924",
-      "artist": "Pitbull feat. Chris Brown",
-      "title": "International Love",
-      "candidateScore": 174.16,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2011,
-      "candidateYears": [
-        {
-          "year": 2011,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "chrisbrown",
-        "pitbull"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "deezer-ru",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "35239"
-        ],
-        "isrc": [
-          "USJAY1100015"
         ]
       }
     },
@@ -16306,6 +16353,45 @@
       }
     },
     {
+      "id": "chart-05924",
+      "artist": "Pitbull feat. Chris Brown",
+      "title": "International Love",
+      "candidateScore": 163.11,
+      "workflow": "waiting",
+      "language": "unknown",
+      "languageEvidence": [
+        "tophit-may-translate-title"
+      ],
+      "releaseYear": 2011,
+      "candidateYears": [
+        {
+          "year": 2011,
+          "source": "tophit-ru-monthly-history"
+        }
+      ],
+      "artistIds": [
+        "chrisbrown",
+        "pitbull"
+      ],
+      "usedArtistIds": [],
+      "readyForCuration": false,
+      "readyForUniqueArtistQuiz": false,
+      "readyForPublication": false,
+      "sourceIds": [
+        "deezer-ru",
+        "tophit-ru-monthly-history"
+      ],
+      "poolRefs": [],
+      "externalIds": {
+        "tophit": [
+          "35239"
+        ],
+        "isrc": [
+          "USJAY1100015"
+        ]
+      }
+    },
+    {
       "id": "chart-03359",
       "artist": "Cascada",
       "title": "Miracle",
@@ -17244,44 +17330,6 @@
       }
     },
     {
-      "id": "chart-03396",
-      "artist": "Tiësto",
-      "title": "Red Lights",
-      "candidateScore": 161.44,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2014,
-      "candidateYears": [
-        {
-          "year": 2014,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "tiesto"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "53197"
-        ],
-        "isrc": [
-          "CYA111300060"
-        ]
-      }
-    },
-    {
       "id": "chart-03570",
       "artist": "Vanotek feat Eneli",
       "title": "Back to Me",
@@ -17543,83 +17591,6 @@
         ],
         "isrc": [
           "USUG12301219"
-        ]
-      }
-    },
-    {
-      "id": "chart-03503",
-      "artist": "Imanbek feat Trevor Daniel",
-      "title": "In The Morning",
-      "candidateScore": 160.76,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2023,
-      "candidateYears": [
-        {
-          "year": 2023,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "imanbek",
-        "trevordaniel"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "166823"
-        ],
-        "isrc": [
-          "RUB422201923"
-        ]
-      }
-    },
-    {
-      "id": "chart-03404",
-      "artist": "Basshunter",
-      "title": "Saturday",
-      "candidateScore": 160.7,
-      "workflow": "waiting",
-      "language": "unknown",
-      "languageEvidence": [
-        "tophit-may-translate-title"
-      ],
-      "releaseYear": 2010,
-      "candidateYears": [
-        {
-          "year": 2010,
-          "source": "tophit-ru-monthly-history"
-        }
-      ],
-      "artistIds": [
-        "basshunter"
-      ],
-      "usedArtistIds": [],
-      "readyForCuration": false,
-      "readyForUniqueArtistQuiz": false,
-      "readyForPublication": false,
-      "sourceIds": [
-        "europa-plus-annual",
-        "tophit-ru-monthly-history"
-      ],
-      "poolRefs": [],
-      "externalIds": {
-        "tophit": [
-          "25900"
-        ],
-        "isrc": [
-          "SE2VK1304109"
         ]
       }
     }

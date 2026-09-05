@@ -1,6 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T10:18:59.716Z",
-  "potentialArtistAliasCount": 0,
-  "potentialArtistAliases": []
+  "generatedAt": "2026-09-05T09:02:06.115Z",
+  "potentialArtistAliasCount": 1,
+  "potentialArtistAliases": [
+    {
+      "title": "СОЛНЦЕ МОНАКО",
+      "leftArtist": "Lusia Chebotina",
+      "rightArtist": "Люся Чеботина",
+      "similarity": 0.867
+    }
+  ]
 }
