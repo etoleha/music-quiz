@@ -21,7 +21,7 @@ const offline = args.has("--offline");
 const refreshYouTube = args.has("--refresh-youtube");
 const eraTargets = { soviet: 2, "1990s": 4, "2000s": 7, "2010s": 4, "2020s": 3 };
 const recognitionTargets = { recognizable: 5, middle: 8, deep: 7 };
-const maxPriorityArtists = 3;
+const maxPriorityArtists = 2;
 const artistSelectionPolicy = loadArtistSelectionPolicy(repoRoot);
 
 const pool = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
