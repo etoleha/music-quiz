@@ -276,7 +276,12 @@
     "pool-e114acdd2320": {
       "artistCredit": "Вячеслав Бутусов & Deadушки",
       "artistIds": ["vyacheslavbutusov", "deadushki"],
-      "notes": ["Восстановлен полный credit записи."]
+      "externalIds": { "youtube": ["xgADjyoJoaw"] },
+      "fragmentStatus": "good",
+      "notes": [
+        "Восстановлен полный credit записи.",
+        "Возрастная версия заменена на встраиваемый ролик официального канала Deadушки; фрагмент подтверждён."
+      ]
     },
     "pool-9e5d88c560a5": {
       "artistCredit": "Гости из будущего",
@@ -331,7 +336,11 @@
     "pool-189d996239f5": {
       "artistCredit": "Саша Тилэкс feat. Антон из Франции",
       "artistIds": ["sashatileks", "antonizfrantsii"],
-      "notes": ["Нормализованы имена исполнителей."]
+      "fragmentStatus": "good",
+      "notes": [
+        "Нормализованы имена исполнителей.",
+        "Фрагмент перенесён с разговорного вступления в куплет без произнесённого названия."
+      ]
     },
     "pool-f9bb7845b8d6": {
       "fragmentStatus": "bad",
@@ -372,6 +381,23 @@
       "artistCredit": "ВладиМир",
       "artistIds": ["vladimir"],
       "notes": ["Исправлен credit: это сценическое имя Владимира Киселёва-младшего."]
+    },
+    "pool-b67367965b52": {
+      "fragmentStatus": "good",
+      "notes": ["Фрагмент перенесён из участка с названием песни в первый куплет."]
+    },
+    "pool-d2837ac277eb": {
+      "fragmentStatus": "good",
+      "notes": ["Фрагмент перенесён в инструментальный участок без произнесённого названия."]
+    },
+    "pool-1d5a031b78cf": {
+      "fragmentStatus": "good",
+      "notes": ["Фрагмент перенесён в первый куплет до строки с названием песни."]
+    },
+    "pool-966cabc10a5d": {
+      "externalIds": { "youtube": ["dvRyViUXC3w"] },
+      "fragmentStatus": "good",
+      "notes": ["Возрастная загрузка заменена на встраиваемый оригинальный клип официального канала GreenGreyOfficial."]
     }
   }
 }
