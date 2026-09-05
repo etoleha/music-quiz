@@ -19,8 +19,12 @@ const outputPath = process.env.READY_POOL_OUTPUT
   : dataPath("quiz-ready-songs.json");
 const generatedAt = process.env.READY_POOL_GENERATED_AT || new Date().toISOString();
 const targetTotal = Math.max(1, Number(process.env.READY_POOL_LIMIT || 1000));
-const maxNetworkSearches = Math.max(targetTotal, Number(process.env.READY_POOL_MAX_SEARCHES || Math.ceil(targetTotal * 1.6)));
+const configuredMaxNetworkSearches = Number(process.env.READY_POOL_MAX_SEARCHES);
+const maxNetworkSearches = Number.isFinite(configuredMaxNetworkSearches)
+  ? Math.max(0, configuredMaxNetworkSearches)
+  : Math.ceil(targetTotal * 1.6);
 const maxSongsPerArtist = Math.max(1, Number(process.env.READY_POOL_MAX_PER_ARTIST || 20));
+const searchPauseMs = Math.max(0, Number(process.env.READY_POOL_SEARCH_PAUSE_MS || 500));
 const offline = process.argv.includes("--offline");
 
 // The ready inventory is deliberately broader than a single quiz. Scarce eras
@@ -125,11 +129,14 @@ const clipStartFor = (videoDuration, clipDuration, key) => {
 };
 
 const bandOrder = ["middle", "recognizable", "middle", "deep"];
-const orderCandidates = (tracks) => {
+const sourcePriorityFor = (track, era) => era === "2000s" && track.poolFile === "song-pool-avtoradio.json" ? 0 : 1;
+const orderCandidates = (tracks, era) => {
   const groups = new Map(["recognizable", "middle", "deep"].map((band) => [band, []]));
   for (const track of tracks) groups.get(recognitionFor(track)).push(track);
   for (const group of groups.values()) group.sort((left, right) =>
-    Number(left.listRank ?? 999) - Number(right.listRank ?? 999)
+    sourcePriorityFor(left, era) - sourcePriorityFor(right, era)
+    || (sourcePriorityFor(left, era) === 0 ? Number(right.sourceViews || 0) - Number(left.sourceViews || 0) : 0)
+    || Number(left.listRank ?? 999) - Number(right.listRank ?? 999)
     || String(left.artist).localeCompare(String(right.artist), "ru"));
   const result = [];
   while ([...groups.values()].some((group) => group.length)) {
@@ -168,7 +175,7 @@ const buildCandidateQueues = ({ requireUnusedArtists }) => Object.fromEntries(Ob
     if (eraFor(track, song) !== era || suspiciousMetadata(track, song) || !eligibleSourceFor(track, song)) return false;
     if (!song?.readyForCuration || song.status?.workflow !== "waiting" || song.quizRefs?.length) return false;
     return !requireUnusedArtists || (song.allArtistsUnused && !anyArtistOverlaps(song.artistIds, usedArtistIds));
-  }))]));
+  }), era)]));
 
 const candidateQueues = buildCandidateQueues({ requireUnusedArtists: true });
 const fallbackCandidateQueues = buildCandidateQueues({ requireUnusedArtists: false });
@@ -201,6 +208,7 @@ const findVideo = async (track, song) => {
   const query = `${track.artist} ${track.title}`.replace(/\s+/g, " ").trim();
   let cached = cache.queries[query];
   if (!cached && !offline && networkSearches < maxNetworkSearches) {
+    if (networkSearches && searchPauseMs) await new Promise((resolve) => setTimeout(resolve, searchPauseMs));
     networkSearches += 1;
     try {
       const search = await searchYouTubeVideos(track);

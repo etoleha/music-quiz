@@ -9,6 +9,8 @@ const dataPath = (...parts) => path.join(repoRoot, "data", ...parts);
 const args = new Set(process.argv.slice(2));
 const refresh = args.has("--refresh");
 const offline = args.has("--offline");
+const requestConcurrency = Math.max(1, Number(process.env.YOUTUBE_PREFLIGHT_CONCURRENCY || 3));
+const requestPauseMs = Math.max(0, Number(process.env.YOUTUBE_PREFLIGHT_PAUSE_MS || 500));
 const sourcePath = dataPath("quiz-ready-songs.json");
 const reportPath = dataPath("quiz-ready-validation.json");
 const cachePath = dataPath("youtube-playability-cache.json");
@@ -31,8 +33,9 @@ const isFresh = (entry) => entry?.checkedAt && now - Date.parse(entry.checkedAt)
 const isTransient = (reason = "") => /(?:http-(?:408|425|429|5\d\d)|fetch failed|timeout|timed out|aborted|network)/iu.test(reason);
 const saveCache = () => fs.writeFileSync(cachePath, `${JSON.stringify(cache, null, 2)}\n`);
 
-for (let index = 0; index < staticClean.length; index += 8) {
-  const batch = staticClean.slice(index, index + 8);
+for (let index = 0; index < staticClean.length; index += requestConcurrency) {
+  const batch = staticClean.slice(index, index + requestConcurrency);
+  let networkChecksInBatch = 0;
   await Promise.all(batch.map(async (row) => {
     const videoId = row.song.youtube.videoId;
     let playback = cache.videos[videoId];
@@ -42,6 +45,7 @@ for (let index = 0; index < staticClean.length; index += 8) {
       playback = null;
     } else {
       const result = await checkYouTubeVideo(videoId);
+      networkChecksInBatch += 1;
       checkedNow += 1;
       if (result.status === "failed" && isTransient(result.reason)) {
         transientFailures += 1;
@@ -56,11 +60,13 @@ for (let index = 0; index < staticClean.length; index += 8) {
     if (!playback) row.blockers.push({ code: "youtube-not-checked", message: "Нет свежей проверки YouTube." });
     else if (playback.status !== "passed") row.blockers.push({ code: "youtube-unplayable", message: `YouTube: ${playback.reason}.` });
   }));
-  if (!offline && (index + batch.length) % 40 < 8) {
+  if (!offline && (index + batch.length) % 40 < requestConcurrency) {
     saveCache();
     console.log(`Предрелизная проверка: ${Math.min(index + batch.length, staticClean.length)}/${staticClean.length}`);
   }
-  if (!offline && index + batch.length < staticClean.length) await new Promise((resolve) => setTimeout(resolve, 150));
+  if (!offline && networkChecksInBatch && index + batch.length < staticClean.length && requestPauseMs) {
+    await new Promise((resolve) => setTimeout(resolve, requestPauseMs));
+  }
 }
 
 if (!offline) saveCache();
