@@ -1,33 +1,33 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-05T06:13:34.614Z",
+  "generatedAt": "2026-09-05T07:22:49.324Z",
   "archive": "song-database.json.gz",
   "archiveParts": [
     "song-database.json.gz.part-01",
     "song-database.json.gz.part-02",
     "song-database.json.gz.part-03"
   ],
-  "archiveSha256": "8df3914b9ec901bcf0e326725524682d857f726ac5f11e02653ac9f6c6c61a7e",
+  "archiveSha256": "89128d0f0b614aeca2acf10c42154c54281027320b8d26290ae613de07a9aae3",
   "stats": {
     "songs": 13331,
     "chartSongs": 9239,
     "poolPositions": 5613,
     "poolSongs": 5186,
-    "publishedQuizSongs": 580,
-    "quizTrackPositions": 580,
-    "quizCandidates": 5636,
-    "readyForCuration": 5516,
-    "readyForUniqueArtistQuiz": 2443,
-    "readyForPublication": 731,
-    "readyForAutomaticQuiz": 731,
-    "usedArtists": 494,
-    "withReleaseYear": 7760,
-    "withCandidateReleaseYear": 7717,
+    "publishedQuizSongs": 600,
+    "quizTrackPositions": 600,
+    "quizCandidates": 5616,
+    "readyForCuration": 5496,
+    "readyForUniqueArtistQuiz": 2360,
+    "readyForPublication": 694,
+    "readyForAutomaticQuiz": 694,
+    "usedArtists": 517,
+    "withReleaseYear": 7783,
+    "withCandidateReleaseYear": 7739,
     "withAutomaticEnrichment": 1212,
     "workflow": {
       "rejected": 28,
-      "used": 580,
-      "waiting": 12723
+      "used": 600,
+      "waiting": 12703
     },
     "language": {
       "foreign": 1543,
@@ -41,8 +41,8 @@
     },
     "fragment": {
       "bad": 8,
-      "good": 580,
-      "not-checked": 12743
+      "good": 600,
+      "not-checked": 12723
     }
   },
   "statusDimensions": {

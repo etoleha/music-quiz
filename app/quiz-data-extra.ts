@@ -301,6 +301,26 @@ const performerForms: Partial<Record<string, Track["artistForm"]>> = {
   "Куба": "Дуэт",
   "Верона": "Исполнительница",
   "Дискомафия": "Группа",
+  "Крис Кельми": "Исполнитель",
+  "вышел покурить": "Исполнитель",
+  "Anacondaz": "Группа",
+  "Марина Алиева ft. Аслан Гусейнов": "Исполнительница + исполнитель",
+  "На-На": "Группа",
+  "Тайм-Аут": "Группа",
+  "Саша Project": "Проект",
+  "Игра Слов": "Группа",
+  "1.kla$": "Исполнитель",
+  "Uma2rmaH": "Группа",
+  "Big Baby Tape": "Исполнитель",
+  "Ирина Климова": "Исполнительница",
+  "СТОКС": "Группа",
+  "JEEMBO": "Исполнитель",
+  "Сектор Газа": "Группа",
+  "Подъём! и Карина М.": "Группа + исполнительница",
+  "Руслан Утюг": "Исполнитель",
+  "Иосиф Кобзон": "Исполнитель",
+  "Пеп-Си": "Группа",
+  "BULA feat. SVNV": "Исполнитель + исполнитель",
 };
 
 const manualArtistAliases: Record<string, string[]> = {
@@ -350,6 +370,11 @@ const manualArtistAliases: Record<string, string[]> = {
   "Вирус!": ["Вирус"],
   "Ногу Свело!": ["Ногу Свело"],
   "Сплин и Би-2": ["Сплин Би 2"],
+  "На-На": ["Na-Na", "Нана"],
+  "1.kla$": ["1.Kla$", "1 класс", "Первый Класс"],
+  "Uma2rmaH": ["Uma2rman", "Уматурман", "Ума Турман"],
+  "СТОКС": ["Стокс"],
+  "Пеп-Си": ["Pep-See", "Пепси"],
 };
 
 const manualTitleAliases: Record<string, string[]> = {
@@ -392,6 +417,34 @@ const extraTrack = (youtubeId: string, artist: string, title: string, start: num
 };
 
 export const extraQuizzes: Quiz[] = [
+  {
+    id: "hard-21",
+    title: "Квиз XXI",
+    level: "сложный",
+    published: "5 сентября 2026",
+    tracks: [
+      extraTrack("MHPGPWv4WWg", "Крис Кельми", "Ночное рандеву", 20, 11, 1989),
+      extraTrack("wrc-mYS8w_k", "вышел покурить", "кладбище", 10, 11, 2019),
+      extraTrack("UZNhod9IzWY", "Anacondaz", "Когда-нибудь", 68, 15, 2021),
+      extraTrack("IszR2N3i3Rg", "Марина Алиева ft. Аслан Гусейнов", "Где ты", 34, 7, 2010),
+      extraTrack("mUbdmM4UzS4", "На-На", "Фаина", 0, 7, 1992),
+      extraTrack("Z-m_sWVb0J0", "Тайм-Аут", "Я люблю кататься", 15, 15, 1994),
+      extraTrack("8mrwitVAlfg", "Саша Project", "Говорила мама", 39, 11, 2004),
+      extraTrack("-_a2ba0bC9g", "Игра Слов", "Алина Кабаева", 35, 11, 2005),
+      extraTrack("-k2BBziI4d0", "1.kla$", "Почему", 1, 7, 2004),
+      extraTrack("Nohg8RSsoaw", "Uma2rmaH", "Ты далеко", 25, 11, 2005),
+      extraTrack("koaqwuRSmBk", "Big Baby Tape", "Gimme The Loot", 30, 11, 2018),
+      extraTrack("jaN8KGIFEQY", "Ирина Климова", "Далеко", 20, 7, 1998),
+      extraTrack("juqpp-8EgVo", "СТОКС", "Между Минском и Римом", 20, 7, 2003),
+      extraTrack("kufHCZsnvOU", "JEEMBO", "Лица в пол", 37, 15, 2020),
+      extraTrack("pQVl8IAJpiY", "Сектор Газа", "Демобилизация", 10, 15, 2000),
+      extraTrack("OTSzpTySfSc", "Подъём! и Карина М.", "Кораблики", 54, 15, 2005),
+      extraTrack("r1p4yha7xuQ", "Руслан Утюг", "Никогда", 6, 15, 2019),
+      extraTrack("cjXkPZSfB3I", "Иосиф Кобзон", "А у нас во дворе", 31, 11, 1962),
+      extraTrack("cFkt-nj6Myw", "Пеп-Си", "Вовочка", 15, 15, 1996),
+      extraTrack("d-HHuVrbPl8", "BULA feat. SVNV", "Тлеет", 60, 11, 2020),
+    ],
+  },
   {
     id: "hard-20",
     title: "Квиз XX",
