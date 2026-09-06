@@ -1,10 +1,13 @@
 {
   "version": 1,
-  "uniqueArtistsThroughQuiz": 30,
-  "participantRule": "any-participant-blocks-credit",
+  "allowPreviouslyUsedArtists": true,
+  "uniqueArtistsWithinQuiz": true,
+  "uniqueSongsAcrossQuizzes": true,
+  "participantRule": "any-participant-blocks-credit-within-quiz",
   "unknownParticipantRule": "manual-review",
   "notes": [
-    "До квиза XXX включительно не повторяется ни один участник предыдущих сольных записей и разовых совместных исполнений.",
+    "Исполнители и группы из прошлых выпусков могут появляться снова с другой песней.",
+    "Одна и та же песня не публикуется повторно, а внутри одного квиза исполнительские сущности не повторяются.",
     "Постоянная группа или дуэт считается одной самостоятельной исполнительской сущностью."
   ]
 }

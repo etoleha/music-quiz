@@ -49,11 +49,15 @@ for (const song of database.songs) {
 }
 
 const quizCandidates = JSON.parse(fs.readFileSync(new URL("quiz-candidates.json", dataUrl), "utf8"));
+assert.equal(quizCandidates.policy.allowPreviouslyUsedArtists, true);
 const reserved = new Set();
 for (const song of quizCandidates.candidates) {
   assert.ok(song.artistIds.every((artistId) => !reserved.has(artistId)), `artist repeated in candidate queue: ${song.artist}`);
   for (const artistId of song.artistIds) reserved.add(artistId);
 }
+const publishedArtistIds = new Set(database.songs.filter(({ quizRefs }) => quizRefs.length).flatMap(({ artistIds }) => artistIds));
+assert.ok(quizCandidates.candidates.some(({ artistIds }) => artistIds.some((artistId) => publishedArtistIds.has(artistId))),
+  "candidate queue should allow artists from earlier quizzes");
 
 const readyPool = JSON.parse(fs.readFileSync(new URL("quiz-ready-songs.json", dataUrl), "utf8"));
 assert.ok(readyPool.songs.length >= 1000);
@@ -62,6 +66,7 @@ assert.equal(Object.values(readyPool.stats.eraCounts).reduce((sum, count) => sum
 assert.equal(new Set(readyPool.songs.map(({ songId }) => songId)).size, readyPool.songs.length);
 assert.equal(new Set(readyPool.songs.map(({ youtube }) => youtube.videoId)).size, readyPool.songs.length);
 assert.equal(readyPool.stats.newArtistSongs + readyPool.stats.previousArtistOverflowSongs, readyPool.songs.length);
+assert.equal(readyPool.policy.previouslyUsedArtistsEligibleForRelease, true);
 assert.ok(index.stats.readyForPublication >= readyPool.stats.newArtistSongs);
 assert.ok(index.stats.readyForAutomaticQuiz >= readyPool.stats.newArtistSongs);
 const readyArtistCounts = new Map();

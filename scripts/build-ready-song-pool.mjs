@@ -38,6 +38,7 @@ for (const era of Object.keys(scaledTargets)) {
 }
 
 const databaseIndex = readJson(dataPath("song-database.json"));
+const generationPolicy = readJson(dataPath("quiz-generation-policy.json"));
 const compressed = databaseIndex.archiveParts?.length
   ? Buffer.concat(databaseIndex.archiveParts.map((file) => fs.readFileSync(dataPath(file))))
   : fs.readFileSync(dataPath(databaseIndex.archive));
@@ -322,10 +323,9 @@ while (selected.length < targetTotal) {
 }
 
 // A large reusable inventory may also contain new songs by artists heard in an
-// older quiz. They are kept only as overflow stock: the scheduled quiz builder
-// still excludes them from upcoming releases via artistNovelty and its own
-// no-repeat rule. This prevents a temporary YouTube outage or newly resolved
-// artist alias from shrinking the prepared inventory.
+// older quiz. They are kept as overflow stock and may enter a release when the
+// generation policy allows historical artist repeats. The per-release no-repeat
+// rule still prevents the same artist from appearing twice in one quiz.
 if (selected.length < targetTotal) {
   const fallbackCursors = Object.fromEntries(Object.keys(fallbackCandidateQueues).map((era) => [era, 0]));
   while (selected.length < targetTotal) {
@@ -355,6 +355,7 @@ const report = {
     eraTargets: scaledTargets,
     uniqueArtistsWithinQuiz: true,
     maxSongsPerArtistInInventory: maxSongsPerArtist,
+    previouslyUsedArtistsEligibleForRelease: generationPolicy.allowPreviouslyUsedArtists === true,
     approximateYearsAllowed: true,
     manualClipReviewRequired: false,
     optionalMetadataBlocksPublication: false,

@@ -13,12 +13,15 @@ const limit = Math.max(1, Number(process.env.QUIZ_CANDIDATE_LIMIT || 500));
 
 const reservedArtists = new Set();
 const candidates = [];
+const eligibleForCandidateQueue = (song) => policy.allowPreviouslyUsedArtists
+  ? song.readyForCuration && song.status?.workflow === "waiting" && !song.quizRefs?.length
+  : song.readyForUniqueArtistQuiz;
 const orderedSongs = database.songs
   .filter((song) => !isArtistBlocked(song, artistSelectionPolicy))
   .sort((left, right) => Number(isArtistPrioritized(right, artistSelectionPolicy))
     - Number(isArtistPrioritized(left, artistSelectionPolicy)));
 for (const song of orderedSongs) {
-  if (!song.readyForUniqueArtistQuiz) continue;
+  if (!eligibleForCandidateQueue(song)) continue;
   if (song.artistIds.some((artistId) => reservedArtists.has(artistId))) continue;
   for (const artistId of song.artistIds) reservedArtists.add(artistId);
   candidates.push({
@@ -46,7 +49,7 @@ const report = {
   stats: {
     totalSongs: database.stats.songs,
     readyForCuration: database.stats.readyForCuration,
-    uniqueArtistCandidates: database.stats.readyForUniqueArtistQuiz,
+    uniqueArtistCandidates: orderedSongs.filter(eligibleForCandidateQueue).length,
     selectedWithoutArtistRepeats: candidates.length,
     reservedArtistEntities: reservedArtists.size,
     readyForPublication: database.stats.readyForPublication,

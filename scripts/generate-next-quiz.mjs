@@ -15,7 +15,12 @@ const sourcePath = path.join(repoRoot, "data", "quiz-ready-songs.json");
 const preflightPath = path.join(repoRoot, "data", "quiz-ready-validation.json");
 const outputPath = path.resolve(repoRoot, valueAfter("--output", "data/quiz-release-candidate.json"));
 const seed = valueAfter("--seed", new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Yerevan" }));
-const allowPreviouslyUsedArtists = args.has("--allow-used-artists");
+const generationPolicy = JSON.parse(fs.readFileSync(path.join(repoRoot, "data", "quiz-generation-policy.json"), "utf8"));
+if (args.has("--allow-used-artists") && args.has("--new-artists-only")) {
+  throw new Error("Нельзя одновременно указывать --allow-used-artists и --new-artists-only.");
+}
+const allowPreviouslyUsedArtists = args.has("--allow-used-artists")
+  || (!args.has("--new-artists-only") && generationPolicy.allowPreviouslyUsedArtists === true);
 const skipPreflight = args.has("--skip-preflight");
 const offline = args.has("--offline");
 const refreshYouTube = args.has("--refresh-youtube");
