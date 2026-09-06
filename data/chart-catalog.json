@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-05T09:02:06.115Z",
-  "trackCount": 9282,
+  "generatedAt": "2026-09-06T09:24:23.650Z",
+  "trackCount": 9283,
   "archive": "chart-catalog.json.gz",
   "sourceCount": 7,
-  "snapshotCount": 6,
+  "snapshotCount": 8,
   "scoring": {
     "withinSource": "Each repeated snapshot appearance adds percentile rank points from 1 to 100.",
     "historical": "Historical aggregates retain their own repeat counts and are converted to raw source points.",
