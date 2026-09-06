@@ -19,12 +19,14 @@ const outputPath = process.env.READY_POOL_OUTPUT
   ? path.resolve(repoRoot, process.env.READY_POOL_OUTPUT)
   : dataPath("quiz-ready-songs.json");
 const generatedAt = process.env.READY_POOL_GENERATED_AT || new Date().toISOString();
-const targetTotal = Math.max(1, Number(process.env.READY_POOL_LIMIT || 1000));
+// Keep a deep reusable inventory by default. The current verified source set
+// safely supports 3,600 tracks without lowering video or metadata thresholds.
+const targetTotal = Math.max(1, Number(process.env.READY_POOL_LIMIT || 3600));
 const configuredMaxNetworkSearches = Number(process.env.READY_POOL_MAX_SEARCHES);
 const maxNetworkSearches = Number.isFinite(configuredMaxNetworkSearches)
   ? Math.max(0, configuredMaxNetworkSearches)
   : Math.ceil(targetTotal * 1.6);
-const maxSongsPerArtist = Math.max(1, Number(process.env.READY_POOL_MAX_PER_ARTIST || 20));
+const maxSongsPerArtist = Math.max(1, Number(process.env.READY_POOL_MAX_PER_ARTIST || 50));
 const searchPauseMs = Math.max(0, Number(process.env.READY_POOL_SEARCH_PAUSE_MS || 500));
 const offline = process.argv.includes("--offline");
 

@@ -1,0 +1,1378 @@
+{
+  "version": 2,
+  "generatedAt": "2026-09-06T22:41:14.426Z",
+  "status": "verified",
+  "quiz": {
+    "id": "new-rules-test-01",
+    "title": "Квиз XXIII · новый стандарт",
+    "level": "смешанный",
+    "published": "7 сентября 2026"
+  },
+  "policy": {
+    "trackCount": 20,
+    "uniqueSongs": true,
+    "uniqueYouTubeVideos": true,
+    "relationshipConflicts": true,
+    "strictMetadataGate": true
+  },
+  "stats": {
+    "eras": {
+      "soviet": 2,
+      "1990s": 4,
+      "2000s": 7,
+      "2010s": 4,
+      "2020s": 3
+    },
+    "recognition": {
+      "recognizable": 5,
+      "middle": 8,
+      "deep": 7
+    }
+  },
+  "tracks": [
+    {
+      "id": "ready-0002",
+      "songId": "pool-978adfbe162b",
+      "poolId": "soviet-0031",
+      "artist": "Клавдия Шульженко",
+      "title": "Синий платочек",
+      "artistIds": [
+        "klavdiyashulzhenko"
+      ],
+      "artistAliases": [
+        "Клавдия Шульженко"
+      ],
+      "titleAliases": [
+        "Синий платочек"
+      ],
+      "era": "soviet",
+      "approximateYear": 1940,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Советская_эстрада"
+      },
+      "youtube": {
+        "videoId": "17T3iIp6OCM",
+        "title": "Клавдия Шульженко \"Синий платочек\" (1975)",
+        "channel": "Музыка на советском телевидении",
+        "viewCount": 157253,
+        "durationSeconds": 183,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 29,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "«Синий платочек» — архивная запись",
+          "kind": "archive",
+          "year": 1942,
+          "coverUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%D0%9A%D0%BB%D0%B0%D0%B2%D0%B4%D1%96%D1%8F%20%D0%A8%D1%83%D0%BB%D1%8C%D0%B6%D0%B5%D0%BD%D0%BA%D0%BE%2C%20%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D1%80%D1%82%20%D1%84%D1%80%D0%BE%D0%BD%D1%82%D1%83.jpg?width=800",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BB%D0%B0%D0%B2%D0%B4%D1%96%D1%8F_%D0%A8%D1%83%D0%BB%D1%8C%D0%B6%D0%B5%D0%BD%D0%BA%D0%BE,_%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D1%80%D1%82_%D1%84%D1%80%D0%BE%D0%BD%D1%82%D1%83.jpg"
+        },
+        "artistImage": {
+          "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Klavdiya%20Shulzhenko%20in%201934.jpg?width=800",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klavdiya_Shulzhenko_in_1934.jpg",
+          "attribution": "Главархив Москвы / Mos.ru",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Клавдия Шульженко",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/2521260521"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1729",
+      "songId": "pool-ce212e6f31b2",
+      "poolId": "soviet-0052",
+      "artist": "Вадим Мулерман",
+      "title": "Трус не играет в хоккей",
+      "artistIds": [
+        "vadimmulerman"
+      ],
+      "artistAliases": [
+        "Вадим Мулерман"
+      ],
+      "titleAliases": [
+        "Трус не играет в хоккей"
+      ],
+      "era": "soviet",
+      "approximateYear": 1968,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Советская_эстрада"
+      },
+      "youtube": {
+        "videoId": "Q9cqazIMgw0",
+        "title": "Трус не играет в хоккей",
+        "channel": "Вадим Мулерман - Topic",
+        "viewCount": 23853,
+        "durationSeconds": 112,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 20,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Трус не играет в хоккей / Нам не страшен серый волк",
+          "kind": "single",
+          "year": 1969,
+          "coverUrl": "https://i.ytimg.com/vi/Q9cqazIMgw0/hqdefault.jpg",
+          "sourceUrl": "https://rusneb.ru/catalog/000199_000009_008199764/"
+        },
+        "artistImage": {
+          "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%D0%92%D0%B0%D0%B4%D0%B8%D0%BC%20%D0%9C%D1%83%D0%BB%D0%B5%D1%80%D0%BC%D0%B0%D0%BD.jpg?width=800",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B0%D0%B4%D0%B8%D0%BC_%D0%9C%D1%83%D0%BB%D0%B5%D1%80%D0%BC%D0%B0%D0%BD.jpg",
+          "attribution": "Wikimedia Commons"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D1%83%D1%81_%D0%BD%D0%B5_%D0%B8%D0%B3%D1%80%D0%B0%D0%B5%D1%82_%D0%B2_%D1%85%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9",
+          "https://musicbrainz.org/artist/758fccdb-c134-49bd-b1dd-322093c886b2"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0006",
+      "songId": "pool-e80b214f0717",
+      "poolId": "quiz-answer-e80b214f0717",
+      "artist": "Азиза",
+      "title": "Всё или ничего",
+      "artistIds": [
+        "aziza"
+      ],
+      "artistAliases": [
+        "Азиза"
+      ],
+      "titleAliases": [
+        "Всё или ничего"
+      ],
+      "era": "1990s",
+      "approximateYear": 1997,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "Shxk_X1_lj8",
+        "title": "Азиза. Всё или ничего. 1997 год",
+        "channel": "AZIZA MUHAMEDOVA",
+        "viewCount": 2643,
+        "durationSeconds": 264,
+        "selectedBy": "editorial-replacement"
+      },
+      "clip": {
+        "start": 52,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Всё или ничего",
+          "kind": "album",
+          "year": 1997,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/98892/1fe7b646.a.8389383-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/8389383/track/56571254",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/149669/713e4aba.a.5226814-1/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/3003739",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/8389383/track/56571254",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0023",
+      "songId": "pool-18cf32537a9c",
+      "poolId": "quiz-answer-18cf32537a9c",
+      "artist": "Иван Купала",
+      "title": "Брови",
+      "artistIds": [
+        "ivankupala"
+      ],
+      "artistAliases": [
+        "Иван Купала"
+      ],
+      "titleAliases": [
+        "Брови"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/226260/track/2282740"
+      },
+      "youtube": {
+        "videoId": "gppepyFfFxM",
+        "title": "Иван Купала - \"Брови\"",
+        "channel": "МУЗЫКА ОБРАЗА",
+        "viewCount": 1415022,
+        "durationSeconds": 197,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 29,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Кострома",
+          "kind": "album",
+          "year": 1999,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15682289/29a37d90.a.226260-3/400x400",
+          "sourceUrl": "https://music.yandex.com/album/226260/track/2282740",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/9867886/35071fc7.p.453094/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/453094",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/226260/track/2282740"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0059",
+      "songId": "pool-1fadbf33cea6",
+      "poolId": "quiz-answer-1fadbf33cea6",
+      "artist": "Ноль",
+      "title": "Человек и кошка",
+      "artistIds": [
+        "nol"
+      ],
+      "artistAliases": [
+        "Ноль"
+      ],
+      "titleAliases": [
+        "Человек и кошка"
+      ],
+      "era": "1990s",
+      "approximateYear": 1991,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "m7FXP3-53uc",
+        "title": "Ноль - Человек и Кошка",
+        "channel": "Igor Shenderovich",
+        "viewCount": 7562,
+        "durationSeconds": 369,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 64,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Песня о безответной любви к родине",
+          "kind": "album",
+          "year": 1991,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16616584/d4c09fd4.a.63123-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/63123/track/27037175",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/4489759/f2d822ab.p.167070/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/167070",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/63123/track/27037175",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0053",
+      "songId": "pool-3b54008bfd88",
+      "poolId": "quiz-answer-3b54008bfd88",
+      "artist": "Настя Полева",
+      "title": "Голоса",
+      "artistIds": [
+        "nastyapoleva"
+      ],
+      "artistAliases": [
+        "Настя Полева"
+      ],
+      "titleAliases": [
+        "Голоса"
+      ],
+      "era": "1990s",
+      "approximateYear": 1994,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "DZtS4qO_ciw",
+        "title": "Настя Полева \"Голоса\"",
+        "channel": "Местный Житель",
+        "viewCount": 102660,
+        "durationSeconds": 263,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Танец на цыпочках",
+          "kind": "album",
+          "year": 1994,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/12554677/24abb7cb.a.36651818-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/36651818/track/139220062",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/2357076/e2599cdb.p.42512/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/42512",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/36651818/track/139220062",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0089",
+      "songId": "pool-45032d8576bc",
+      "poolId": "quiz-answer-45032d8576bc",
+      "artist": "[AMATORY]",
+      "title": "Дыши со мной",
+      "artistIds": [
+        "amatory"
+      ],
+      "artistAliases": [
+        "[AMATORY]"
+      ],
+      "titleAliases": [
+        "Дыши со мной"
+      ],
+      "era": "2000s",
+      "approximateYear": 2008,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "jLJZfcdE_qc",
+        "title": "[AMATORY] - Дыши Со Мной",
+        "channel": "amatorytube",
+        "viewCount": 6840420,
+        "durationSeconds": 197,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 42,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "VII",
+          "kind": "album",
+          "year": 2008,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/13043189/f4036a2c.a.64357-4/400x400",
+          "sourceUrl": "https://music.yandex.com/album/64357/track/19987679",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/15018579/2b76713c.p.169904/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/169904",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/64357/track/19987679",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0099",
+      "songId": "pool-70d9b24a4d75",
+      "poolId": "quiz-answer-70d9b24a4d75",
+      "artist": "Ассаи",
+      "title": "Южные сны",
+      "artistIds": [
+        "assai"
+      ],
+      "artistAliases": [
+        "Ассаи"
+      ],
+      "titleAliases": [
+        "Южные сны"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "0IWjhpKcwyA",
+        "title": "Ассаи - Южные сны",
+        "channel": "MrBardiur",
+        "viewCount": 192605,
+        "durationSeconds": 257,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Другие берега",
+          "kind": "album",
+          "year": 2005,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15406468/b05602b4.a.1611311-4/400x400",
+          "sourceUrl": "https://music.yandex.com/album/1611311/track/36272090",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/28589/4222c4fe.p.218782/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/218782",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/1611311/track/36272090",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0109",
+      "songId": "pool-af17c0902a1f",
+      "poolId": "quiz-answer-af17c0902a1f",
+      "artist": "Воровайки",
+      "title": "Хоп, мусорок",
+      "artistIds": [
+        "vorovaiki"
+      ],
+      "artistAliases": [
+        "Воровайки"
+      ],
+      "titleAliases": [
+        "Хоп, мусорок"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "0BOczZeM0LQ",
+        "title": "ВОРОВАЙКИ - Хоп, мусорок [Official video]",
+        "channel": "Золото Шансона",
+        "viewCount": 5238282,
+        "durationSeconds": 194,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 32,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Мачо",
+          "kind": "album",
+          "year": 2003,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/5853241/4edc5369.a.4058662-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/4058662/track/33221159",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17784780/aff42fd5.p.218241/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/218241",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/4058662/track/33221159",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0115",
+      "songId": "pool-422fe801e24e",
+      "poolId": "quiz-answer-422fe801e24e",
+      "artist": "Гражданская оборона",
+      "title": "Мёртвые",
+      "artistIds": [
+        "grazhdanskayaoborona"
+      ],
+      "artistAliases": [
+        "Гражданская оборона"
+      ],
+      "titleAliases": [
+        "Мёртвые"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/4784443/track/37696655"
+      },
+      "youtube": {
+        "videoId": "EDJfcdwuBfg",
+        "title": "Гражданская oборона - Мёртвые",
+        "channel": "Andreas",
+        "viewCount": 64505,
+        "durationSeconds": 138,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 28,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Лунный переворот",
+          "kind": "album",
+          "year": 2005,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/97284/da438bd9.a.4784443-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/4784443/track/37696655",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/108289/a413f4f4.p.42528/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/42528",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/4784443/track/37696655"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0117",
+      "songId": "pool-bac316c53e73",
+      "poolId": "quiz-answer-bac316c53e73",
+      "artist": "Дайкири",
+      "title": "Папа",
+      "artistIds": [
+        "daikiri"
+      ],
+      "artistAliases": [
+        "Дайкири"
+      ],
+      "titleAliases": [
+        "Папа"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/13050701/track/74607751"
+      },
+      "youtube": {
+        "videoId": "oOMyhzDE-FA",
+        "title": "Дайкири - Папа",
+        "channel": "Виталий Муха",
+        "viewCount": 370413,
+        "durationSeconds": 243,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Любишь — таешь",
+          "kind": "album",
+          "year": 2002,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/2442093/55a76249.a.13050701-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/13050701/track/74607751",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/5280749/6b28b04b.p.5521937/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/5521937",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/13050701/track/74607751"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0182",
+      "songId": "pool-0e583ac94f14",
+      "poolId": "quiz-answer-0e583ac94f14",
+      "artist": "Михаил Гребенщиков",
+      "title": "Булки",
+      "artistIds": [
+        "mihailgrebenschikov"
+      ],
+      "artistAliases": [
+        "Михаил Гребенщиков"
+      ],
+      "titleAliases": [
+        "Булки"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "1awcNq8L924",
+        "title": "Михаил Гребенщиков - Булки",
+        "channel": "Михаил Гребенщиков",
+        "viewCount": 1586424,
+        "durationSeconds": 214,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 44,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Попал",
+          "kind": "album",
+          "year": 2003,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/103235/9a9ec394.a.5706281-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/5706281/track/42992627",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/5457712/4fe1629c.a.18427040-1/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/156416",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/5706281/track/42992627",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0078",
+      "songId": "pool-0b90b0e6a49a",
+      "poolId": "quiz-answer-0b90b0e6a49a",
+      "artist": "Аквариум",
+      "title": "Не могу оторвать глаз от тебя",
+      "artistIds": [
+        "akvarium"
+      ],
+      "artistAliases": [
+        "Аквариум"
+      ],
+      "titleAliases": [
+        "Не могу оторвать глаз от тебя"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "deep",
+      "selectionPreference": "priority-include",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "8WyI7Fea58Y",
+        "title": "Аквариум - Не могу оторвать глаз от тебя ( Official Video )",
+        "channel": "Аквариум I БГ+",
+        "viewCount": 632463,
+        "durationSeconds": 223,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Zoom Zoom Zoom",
+          "kind": "album",
+          "year": 2005,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/42108/9c955a91.a.476833-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/476833/track/20164943",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/108289/6c4059f1.p.188963/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/188963",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/476833/track/20164943",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0418",
+      "songId": "chart-00184",
+      "poolId": "pool-2131",
+      "artist": "Mnogoznaal",
+      "title": "Гостиница Космос",
+      "artistIds": [
+        "mnogoznaal"
+      ],
+      "artistAliases": [
+        "Mnogoznaal"
+      ],
+      "titleAliases": [
+        "Гостиница Космос"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "russian-chart-cyrillic-or-high-confidence",
+        "sourceName": "Spotify Daily Chart — Russia",
+        "sourceUrl": "https://kworb.net/spotify/country/ru_daily_totals.html"
+      },
+      "youtube": {
+        "videoId": "o2eiUduoqWM",
+        "title": "Mnogoznaal - Гостиница Космос",
+        "channel": "Mnogoznaal",
+        "viewCount": 8851376,
+        "durationSeconds": 160,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 22,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Гостиница Космос",
+          "year": 2018,
+          "releaseGroupMbid": "7bbff21c-5f4d-4e65-a737-cae989dc9147",
+          "coverUrl": "https://coverartarchive.org/release-group/7bbff21c-5f4d-4e65-a737-cae989dc9147/front-500",
+          "sourceUrl": "https://musicbrainz.org/release-group/7bbff21c-5f4d-4e65-a737-cae989dc9147",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Mnogoznaal.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mnogoznaal.png",
+          "attribution": "Maxododoubleg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "rightsStatus": "freely-licensed",
+          "retrievedAt": "2026-09-04T09:18:38.953Z"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [
+          {
+            "name": "Mnogoznaal",
+            "musicBrainzArtistId": "94c56742-531e-4dc1-954e-24cd216b3bde",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://musicbrainz.org/recording/384cd95d-caab-4d8c-ba0c-96ed6c522926",
+          "https://musicbrainz.org/artist/94c56742-531e-4dc1-954e-24cd216b3bde",
+          "https://www.wikidata.org/wiki/Q39394698"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0471",
+      "songId": "pool-02467427b223",
+      "poolId": "quiz-answer-02467427b223",
+      "artist": "АИГЕЛ",
+      "title": "Татарин",
+      "artistIds": [
+        "aigel"
+      ],
+      "artistAliases": [
+        "АИГЕЛ"
+      ],
+      "titleAliases": [
+        "Татарин"
+      ],
+      "era": "2010s",
+      "approximateYear": 2017,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "4JwWAAqas94",
+        "title": "АИГЕЛ – Татарин",
+        "channel": "Maxim",
+        "viewCount": 1409700,
+        "durationSeconds": 177,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 29,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "1190",
+          "kind": "album",
+          "year": 2017,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15401259/7a2070d8.a.4390229-3/400x400",
+          "sourceUrl": "https://music.yandex.com/album/4390229/track/51332341",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/2480468/6576574b.p.5097198/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/5097198",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Дуэт",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/4390229/track/51332341",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0498",
+      "songId": "pool-d873bf3a5166",
+      "poolId": "quiz-answer-d873bf3a5166",
+      "artist": "Антоха МС",
+      "title": "Ритм сердца",
+      "artistIds": [
+        "antohams"
+      ],
+      "artistAliases": [
+        "Антоха МС"
+      ],
+      "titleAliases": [
+        "Ритм сердца"
+      ],
+      "era": "2010s",
+      "approximateYear": 2017,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "-EqF7V-_ZYA",
+        "title": "Антоха МС - Ритм сердца",
+        "channel": "Антоха МС",
+        "viewCount": 2680577,
+        "durationSeconds": 285,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 57,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Советы для молодожёнов",
+          "kind": "album",
+          "year": 2017,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/8871869/81acde47.a.17921568-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/17921568/track/36933162",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17649213/0d1f8253.p.3808906/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/3808906",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/17921568/track/36933162",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0507",
+      "songId": "pool-acbf866be1c4",
+      "poolId": "quiz-answer-acbf866be1c4",
+      "artist": "Бурановские бабушки",
+      "title": "Новогодняя",
+      "artistIds": [
+        "buranovskiebabushki"
+      ],
+      "artistAliases": [
+        "Бурановские бабушки"
+      ],
+      "titleAliases": [
+        "Новогодняя"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "FgjTZ-P70t8",
+        "title": "Бурановские Бабушки - Новогодняя",
+        "channel": "ELLO",
+        "viewCount": 321105,
+        "durationSeconds": 259,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 45,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Внучка",
+          "kind": "album",
+          "year": 2018,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/163479/4f7e6105.a.6187261-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/6187261/track/45986921",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/10126140/615a75da.p.706157/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/706157",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/6187261/track/45986921",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0895",
+      "songId": "chart-00076",
+      "poolId": "pool-2050",
+      "artist": "Miyagi & Andy Panda",
+      "title": "Там ревели горы",
+      "artistIds": [
+        "miyagi"
+      ],
+      "artistAliases": [
+        "Мияги",
+        "Miyagi & Andy Panda",
+        "Miyagi",
+        "MiyaGi & Эндшпиль",
+        "Miyagi & Эндшпиль"
+      ],
+      "titleAliases": [
+        "Там ревели горы"
+      ],
+      "era": "2020s",
+      "approximateYear": 2020,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "russian-chart-cyrillic-or-high-confidence",
+        "sourceName": "Spotify Daily Chart — Russia",
+        "sourceUrl": "https://kworb.net/spotify/country/ru_daily_totals.html"
+      },
+      "youtube": {
+        "videoId": "gzBT0_bjUNA",
+        "title": "Miyagi & Andy Panda - Там ревели горы (2020)",
+        "channel": "Black Beats",
+        "viewCount": 108527371,
+        "durationSeconds": 177,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 39,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "YAMAKASI",
+          "kind": "album",
+          "year": 2020,
+          "releaseGroupMbid": "db703109-598e-47e0-9edc-6b4abe1e0b44",
+          "coverUrl": "https://coverartarchive.org/release/f212486a-6901-439e-87db-d1cec392d15d/29281349787-500.jpg",
+          "sourceUrl": "https://musicbrainz.org/release-group/db703109-598e-47e0-9edc-6b4abe1e0b44",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/MiyaGi_%26_%D0%AD%D0%BD%D0%B4%D1%88%D0%BF%D0%B8%D0%BB%D1%8C_performing_live_in_a_concert_%282016%29.png/500px-MiyaGi_%26_%D0%AD%D0%BD%D0%B4%D1%88%D0%BF%D0%B8%D0%BB%D1%8C_performing_live_in_a_concert_%282016%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:MiyaGi_%26_%D0%AD%D0%BD%D0%B4%D1%88%D0%BF%D0%B8%D0%BB%D1%8C_performing_live_in_a_concert_(2016).png",
+          "attribution": "Русский рэп 2019",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "rightsStatus": "freely-licensed",
+          "retrievedAt": "2026-09-04T14:52:14.487Z"
+        },
+        "artistForm": "Дуэт",
+        "performers": [
+          {
+            "name": "Miyagi & Andy Panda",
+            "musicBrainzArtistId": "0b7177a6-9833-47b5-879f-57cde4771102",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://musicbrainz.org/recording/ecf58875-66ef-4d0c-8d6e-782dfbaef485",
+          "https://musicbrainz.org/artist/0b7177a6-9833-47b5-879f-57cde4771102",
+          "https://www.wikidata.org/wiki/Q52686724"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0859",
+      "songId": "pool-b0a66e2f50ce",
+      "poolId": "quiz-answer-b0a66e2f50ce",
+      "artist": "Бонд с кнопкой",
+      "title": "Фонарь",
+      "artistIds": [
+        "bondsknopkoi"
+      ],
+      "artistAliases": [
+        "Бонд с кнопкой"
+      ],
+      "titleAliases": [
+        "Фонарь"
+      ],
+      "era": "2020s",
+      "approximateYear": 2023,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "Xj4gWKbUELw",
+        "title": "Фонарь",
+        "channel": "Бонд с кнопкой ",
+        "viewCount": 264861,
+        "durationSeconds": 178,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Путешествие",
+          "kind": "album",
+          "year": 2023,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/10092855/cbc030d2.a.26819431-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/26819431/track/116054895",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/14304155/8d5c9c99.p.8621539/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/8621539",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/26819431/track/116054895",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0855",
+      "songId": "pool-d4376b2c25ff",
+      "poolId": "quiz-answer-d4376b2c25ff",
+      "artist": "БИРТМАН",
+      "title": "Маманя",
+      "artistIds": [
+        "birtman"
+      ],
+      "artistAliases": [
+        "БИРТМАН"
+      ],
+      "titleAliases": [
+        "Маманя"
+      ],
+      "era": "2020s",
+      "approximateYear": 2020,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "tgPj-9ofhM4",
+        "title": "БИРТМАН — МАМАНЯ",
+        "channel": "БИРТМАН",
+        "viewCount": 2220080,
+        "durationSeconds": 243,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 44,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Маманя",
+          "kind": "single",
+          "year": 2020,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/3071110/dd233bdf.a.12220284-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/12220284/track/71609552",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17722696/37994a5f.p.3805596/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/3805596",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Проект",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/12220284/track/71609552",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    }
+  ]
+}

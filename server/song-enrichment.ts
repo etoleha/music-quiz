@@ -50,7 +50,20 @@ type CatalogSong = {
   };
 };
 
-let loaded: { songs: CatalogSong[]; enrichment: AutoEnrichment } | null = null;
+type PublicationVerification = {
+  songs: Record<string, {
+    checks?: Record<string, { state: string; sources?: string[] }>;
+    release?: { releaseYear?: number; versionYear?: number; album?: CatalogSong["release"] extends infer R ? R extends { album?: infer A } ? A : never : never };
+    artistImage?: AutoArtist["photo"];
+    relationships?: { lineup?: Array<{ name: string; role?: string; highlighted?: boolean }>; sourceUrl?: string };
+    credits?: Array<{ role: string; names: string[] }>;
+    soundtrack?: { title: string; kind?: string; year?: number; sourceUrl?: string } | null;
+    difficulty?: { band: "recognizable" | "middle" | "deep"; score: number; explanation: string; basis?: string[] };
+    publishedAt?: string;
+  }>;
+};
+
+let loaded: { songs: CatalogSong[]; enrichment: AutoEnrichment; verification: PublicationVerification } | null = null;
 
 const fingerprint = (value = "") => String(value)
   .normalize("NFKD")
@@ -70,7 +83,11 @@ function load() {
   }
   const database = JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
   const enrichment = JSON.parse(fs.readFileSync(path.join(dataDirectory, "song-enrichment-auto.json"), "utf8"));
-  loaded = { songs: database.songs, enrichment };
+  const verificationPath = path.join(dataDirectory, "song-publication-verification.json");
+  const verification = fs.existsSync(verificationPath)
+    ? JSON.parse(fs.readFileSync(verificationPath, "utf8"))
+    : { songs: {} };
+  loaded = { songs: database.songs, enrichment, verification };
   return loaded;
 }
 
@@ -84,17 +101,26 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
       [item.artist, ...(item.artistAliases || [])].some((value) => fingerprint(value) === artistKey)
       && [item.title, ...(item.titleAliases || [])].some((value) => fingerprint(value) === titleKey));
   if (!song) return null;
+  const verified = data.verification.songs[song.id];
   const enrichment = data.enrichment.songs[song.id];
   if (!enrichment || enrichment.status !== "matched") {
+    const verifiedSources = Object.values(verified?.checks || {}).flatMap((check) => check.sources || []);
+    const verifiedCount = Object.values(verified?.checks || {}).filter((check) => ["verified", "not-applicable"].includes(check.state)).length;
     return {
       name: song.artist,
       artistForm: song.enrichment?.artistForm || undefined,
-      image: song.enrichment?.artistImage || undefined,
+      image: verified?.artistImage || song.enrichment?.artistImage || undefined,
       facts: (song.enrichment?.facts || []).filter((fact) => fact.state !== "candidate").slice(0, 3),
-      releaseYear: song.release?.releaseYear || undefined,
-      releaseYearStatus: song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
-      album: song.release?.album ? { ...song.release.album, kind: song.release.album.kind || "album" } : undefined,
-      sources: (song.enrichment?.sources || []).map((url) => ({ provider: "catalog", url })),
+      releaseYear: verified?.release?.releaseYear || song.release?.releaseYear || undefined,
+      versionYear: verified?.release?.versionYear || undefined,
+      releaseYearStatus: verified?.checks?.release?.state === "verified" || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
+      album: verified?.release?.album || (song.release?.album ? { ...song.release.album, kind: song.release.album.kind || "album" } : undefined),
+      members: verified?.relationships?.lineup || [],
+      credits: verified?.credits || [],
+      soundtrack: verified?.soundtrack || undefined,
+      difficulty: verified?.difficulty,
+      verification: verified ? { status: verified.publishedAt ? "published" : "verified", verifiedChecks: verifiedCount, totalChecks: Object.keys(verified.checks || {}).length } : undefined,
+      sources: [...new Set([...(song.enrichment?.sources || []), ...verifiedSources])].map((url) => ({ provider: "source", url })),
     };
   }
   const profiles = (enrichment.artistMbids || []).map((id) => data.enrichment.artists[id]).filter(Boolean);
@@ -121,25 +147,33 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
     : song.release?.album && catalogAlbumMatchesYear
       ? { ...song.release.album, kind: song.release.album.kind || "album" }
       : undefined;
+  const verifiedSources = Object.values(verified?.checks || {}).flatMap((check) => check.sources || []);
+  const verifiedCount = Object.values(verified?.checks || {}).filter((check) => ["verified", "not-applicable"].includes(check.state)).length;
   return {
     name: primary?.name || enrichment.artistCredits?.map(({ name, joinPhrase = "" }) => `${name}${joinPhrase}`).join("").trim() || artist,
     artistForm: primary?.artistForm || song.enrichment?.artistForm || undefined,
     country: primary?.country || undefined,
     activeYears,
-    members: primary?.members?.current || [],
-    image: primary?.photo || song.enrichment?.artistImage || undefined,
+    members: verified?.relationships?.lineup || primary?.members?.current || [],
+    image: verified?.artistImage || primary?.photo || song.enrichment?.artistImage || undefined,
     facts: [
       ...profiles.flatMap((profile) => profile.facts || []),
       ...(song.enrichment?.facts || []),
     ].filter((fact) => fact.state === "verified").slice(0, 3),
     artistUrl,
     recordingTitle: enrichment.recordingTitle,
-    releaseYear,
-    releaseYearStatus: verifiedEnrichmentYear || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
-    album,
+    releaseYear: verified?.release?.releaseYear || releaseYear,
+    versionYear: verified?.release?.versionYear || undefined,
+    releaseYearStatus: verified?.checks?.release?.state === "verified" || verifiedEnrichmentYear || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
+    album: verified?.release?.album || album,
+    credits: verified?.credits || [],
+    soundtrack: verified?.soundtrack || undefined,
+    difficulty: verified?.difficulty,
+    verification: verified ? { status: verified.publishedAt ? "published" : "verified", verifiedChecks: verifiedCount, totalChecks: Object.keys(verified.checks || {}).length } : undefined,
     sources: [
       ...(enrichment.sources || []),
       ...profiles.flatMap((profile) => profile.sources || []),
+      ...verifiedSources.map((url) => ({ provider: "verification", url })),
     ],
   };
 }

@@ -19,6 +19,7 @@ const resolverVersion = 6;
 const limit = Math.max(1, Number(process.env.ENRICH_LIMIT || 60));
 const targetQuizId = String(process.env.ENRICH_QUIZ_ID || "").trim();
 const targetSongIds = new Set(String(process.env.ENRICH_SONG_IDS || "").split(",").map((value) => value.trim()).filter(Boolean));
+const targetPoolFile = String(process.env.ENRICH_POOL_FILE || "").trim();
 const readyOnly = process.env.ENRICH_READY_ONLY === "1";
 const forceTargeted = process.env.ENRICH_FORCE === "1";
 const appleOnly = process.env.ENRICH_APPLE_ONLY === "1";
@@ -447,17 +448,23 @@ const enrichSong = async (song) => {
 };
 
 const now = Date.now();
-const eligibleForEnrichment = (song) => song.status?.language === "russian"
-  && (song.readyForCuration || song.readyForUniqueArtistQuiz || song.quizRefs?.length);
+const belongsToTargetPool = (song) => Boolean(targetPoolFile
+  && song.poolRefs?.some(({ file }) => file === targetPoolFile));
+const targetPoolNeedsEnrichment = (song) => song.poolRefs?.some(({ file, album }) =>
+  file === targetPoolFile && !album);
+const eligibleForEnrichment = (song) => belongsToTargetPool(song)
+  || (song.status?.language === "russian"
+    && (song.readyForCuration || song.readyForUniqueArtistQuiz || song.quizRefs?.length));
 const queue = database.songs
   .filter(eligibleForEnrichment)
   .filter((song) => !targetQuizId || song.quizRefs?.some(({ quizId }) => quizId === targetQuizId))
   .filter((song) => !targetSongIds.size || targetSongIds.has(song.id))
+  .filter((song) => !targetPoolFile || (belongsToTargetPool(song) && targetPoolNeedsEnrichment(song)))
   .filter((song) => !readyOnly || song.readyForPublication)
   .filter((song) => {
     const existing = cache.songs[song.id];
     const fingerprintMatches = existing?.sourceFingerprint === inputFingerprint(song) && existing?.resolverVersion === resolverVersion;
-    if (forceTargeted && targetSongIds.has(song.id)) return true;
+    if (forceTargeted && (targetSongIds.has(song.id) || belongsToTargetPool(song))) return true;
     if (existing?.status === "matched" && fingerprintMatches) return false;
     if (!fingerprintMatches) return true;
     return !existing.retryAfter || Date.parse(existing.retryAfter) <= now;

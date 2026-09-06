@@ -25,8 +25,23 @@ type CatalogSong = {
 };
 
 type CatalogArchive = { generatedAt: string; stats: Record<string, unknown>; songs: CatalogSong[] };
+type VerificationRecord = { publishedAt?: string; selectedForQuiz?: string; disposition?: string; checks?: Record<string, { state: string }>; release?: { releaseYear?: number } };
 
 let archive: CatalogArchive | null = null;
+let verificationSongs: Record<string, VerificationRecord> = {};
+
+const requiredChecks = ["identity", "release", "artwork", "artistImage", "youtube", "fragment", "relationships", "difficulty", "credits", "soundtrack"];
+const officialStatus = (record?: VerificationRecord) => {
+  if (!record) return "catalogued";
+  if (record.disposition === "rejected") return "rejected";
+  if (record.disposition === "quarantined" || Object.values(record.checks || {}).some((check) => check.state === "failed")) return "quarantined";
+  const complete = requiredChecks.every((name) => ["verified", "not-applicable"].includes(record.checks?.[name]?.state || ""));
+  if (record.publishedAt && complete) return "published";
+  if (record.selectedForQuiz && complete) return "verified";
+  if (record.selectedForQuiz) return "selected";
+  if (["identity", "youtube", "fragment"].every((name) => ["verified", "not-applicable"].includes(record.checks?.[name]?.state || ""))) return "technical-ready";
+  return Object.values(record.checks || {}).some((check) => ["automatic", "verified"].includes(check.state)) ? "enriched" : "catalogued";
+};
 
 function loadArchive() {
   if (archive) return archive;
@@ -39,6 +54,8 @@ function loadArchive() {
     throw new Error("Song database archive checksum mismatch");
   }
   archive = JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
+  const verificationPath = path.join(dataDirectory, "song-publication-verification.json");
+  verificationSongs = fs.existsSync(verificationPath) ? JSON.parse(fs.readFileSync(verificationPath, "utf8")).songs || {} : {};
   return archive!;
 }
 
@@ -68,7 +85,7 @@ export function getCatalogPage(filters: CatalogFilters) {
     if (filters.artistUsage === "used" && !song.usedArtistIds.length) return false;
     if (filters.readiness === "curation" && !song.readyForCuration) return false;
     if (filters.readiness === "unique" && !song.readyForUniqueArtistQuiz) return false;
-    if (filters.readiness === "publish" && !song.readyForPublication) return false;
+    if (filters.readiness === "publish" && !["verified", "published"].includes(officialStatus(verificationSongs[song.id]))) return false;
     if (filters.readiness === "review" && song.status.review === "verified" && song.enrichment.review === "verified") return false;
     return true;
   });
@@ -78,11 +95,16 @@ export function getCatalogPage(filters: CatalogFilters) {
   const sourceIds = [...new Set(database.songs.flatMap((song) => song.chart?.sourceIds || []))].sort();
   return {
     generatedAt: database.generatedAt,
-    stats: database.stats,
+    stats: { ...database.stats, officiallyVerified: Object.values(verificationSongs).filter((record) => ["verified", "published"].includes(officialStatus(record))).length } as Record<string, unknown>,
     total: filtered.length,
     page,
     pageCount,
     sourceIds,
-    songs: filtered.slice((page - 1) * pageSize, page * pageSize),
+    songs: filtered.slice((page - 1) * pageSize, page * pageSize).map((song) => ({
+      ...song,
+      officialStatus: officialStatus(verificationSongs[song.id]),
+      officialChecks: Object.values(verificationSongs[song.id]?.checks || {}).filter((check) => ["verified", "not-applicable"].includes(check.state)).length,
+      officialReleaseYear: verificationSongs[song.id]?.release?.releaseYear,
+    })),
   };
 }

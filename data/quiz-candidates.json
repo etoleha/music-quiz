@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-06T11:37:07.716Z",
+  "generatedAt": "2026-09-06T21:12:15.851Z",
   "policy": {
     "version": 1,
     "allowPreviouslyUsedArtists": true,
@@ -15,12 +15,12 @@
     ]
   },
   "stats": {
-    "totalSongs": 13365,
-    "readyForCuration": 5461,
-    "uniqueArtistCandidates": 5393,
+    "totalSongs": 19287,
+    "readyForCuration": 8886,
+    "uniqueArtistCandidates": 8793,
     "selectedWithoutArtistRepeats": 500,
-    "reservedArtistEntities": 545,
-    "readyForPublication": 602
+    "reservedArtistEntities": 546,
+    "readyForPublication": 1822
   },
   "candidates": [
     {
@@ -408,9 +408,41 @@
     },
     {
       "rank": 13,
-      "id": "avtoradio-9e50945b0f96",
+      "id": "pool-6eb9d45b5854",
+      "artist": "Аквариум",
+      "title": "25 к 10",
+      "artistIds": [
+        "akvarium"
+      ],
+      "candidateScore": 20,
+      "language": "russian",
+      "releaseYear": 1982,
+      "candidateYears": [
+        {
+          "year": 1982,
+          "source": "pool-source"
+        }
+      ],
+      "sourceIds": [],
+      "externalIds": {
+        "yandexMusic": [
+          "20165363"
+        ]
+      },
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
+    },
+    {
+      "rank": 14,
+      "id": "pool-d34c2f01f2fa",
       "artist": "Андрей Макаревич",
-      "title": "Костёр",
+      "title": "Давайте делать",
       "artistIds": [
         "andreimakarevich"
       ],
@@ -430,47 +462,58 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 14,
-      "id": "pool-37fb7e4d703a",
-      "artist": "ДДТ",
-      "title": "Что такое осень",
+      "rank": 15,
+      "id": "pool-3ab62adc9262",
+      "artist": "Борис Гребенщиков",
+      "title": "Время Н",
       "artistIds": [
-        "ddt"
+        "borisgrebenschikov"
       ],
       "candidateScore": 20,
       "language": "russian",
-      "releaseYear": 1992,
+      "releaseYear": 2018,
       "candidateYears": [
         {
-          "year": 1992,
-          "source": "quiz-ready-pool"
+          "year": 2018,
+          "source": "pool-source"
         }
       ],
       "sourceIds": [],
       "externalIds": {
+        "yandexMusic": [
+          "138241470"
+        ],
         "youtube": [
-          "LvaYk-phy14"
+          "fbo-JQEL04E"
         ]
       },
-      "blockers": [
-        "artist-already-used"
-      ],
-      "publicationProgress": 0.875
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 15,
-      "id": "avtoradio-3c0097db919b",
-      "artist": "Каста",
-      "title": "Аленаташа",
+      "rank": 16,
+      "id": "pool-6c650376f0af",
+      "artist": "Влади & Каста",
+      "title": "Прощание",
       "artistIds": [
-        "kasta"
+        "kasta",
+        "vladi"
       ],
       "candidateScore": 20,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2012,
+      "candidateYears": [
+        {
+          "year": 2012,
+          "source": "pool-source"
+        }
+      ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "yandexMusic": [
+          "3693798"
+        ]
+      },
       "blockers": [
         "artist-already-used",
         "quiz-eligibility",
@@ -482,7 +525,38 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 16,
+      "rank": 17,
+      "id": "pool-a57e6ba21ac4",
+      "artist": "ДДТ",
+      "title": "Белая река",
+      "artistIds": [
+        "ddt"
+      ],
+      "candidateScore": 20,
+      "language": "russian",
+      "releaseYear": 1999,
+      "candidateYears": [
+        {
+          "year": 1999,
+          "source": "pool-source"
+        }
+      ],
+      "sourceIds": [],
+      "externalIds": {
+        "yandexMusic": [
+          "14662825"
+        ],
+        "youtube": [
+          "Xes3nVNrD3Y"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
+    },
+    {
+      "rank": 18,
       "id": "chart-02270",
       "artist": "Splean",
       "title": "Выхода нет",
@@ -511,7 +585,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 17,
+      "rank": 19,
       "id": "chart-08625",
       "artist": "By Индия, Xcho & МОТ",
       "title": "Шадэ",
@@ -554,7 +628,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 18,
+      "rank": 20,
       "id": "chart-08497",
       "artist": "Icegergert & Zivert",
       "title": "БАНК",
@@ -596,7 +670,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 19,
+      "rank": 21,
       "id": "chart-08943",
       "artist": "BEARWOLF",
       "title": "Феникс",
@@ -636,7 +710,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 20,
+      "rank": 22,
       "id": "chart-08951",
       "artist": "MIA BOYKA",
       "title": "ЭКСПОНАТ",
@@ -676,7 +750,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 21,
+      "rank": 23,
       "id": "chart-08957",
       "artist": "Артик и Асти",
       "title": "Лампочки",
@@ -685,8 +759,13 @@
       ],
       "candidateScore": 308.89,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "apple-music-ru",
         "shazam-ru",
@@ -695,20 +774,18 @@
       "externalIds": {
         "apple-music-ru": [
           "1575451599"
+        ],
+        "youtube": [
+          "Mq9uVFWKIGE"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 22,
+      "rank": 24,
       "id": "chart-08946",
       "artist": "ENZRO",
       "title": "Ты не бойся ночи",
@@ -742,7 +819,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 23,
+      "rank": 25,
       "id": "chart-08942",
       "artist": "Toxi$ & Дора",
       "title": "ЗНАК",
@@ -775,7 +852,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 24,
+      "rank": 26,
       "id": "chart-03240",
       "artist": "Нюша",
       "title": "Цунами",
@@ -802,20 +879,18 @@
         ],
         "isrc": [
           "RUB421400040"
+        ],
+        "youtube": [
+          "T4JeTFUM1j4"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 25,
+      "rank": 27,
       "id": "chart-08952",
       "artist": "SAYAN",
       "title": "Мальборо",
@@ -849,7 +924,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 26,
+      "rank": 28,
       "id": "chart-03185",
       "artist": "AY YOLA",
       "title": "Homay",
@@ -873,19 +948,16 @@
       "externalIds": {
         "tophit": [
           "242672"
+        ],
+        "youtube": [
+          "eqBIbSEJDA0"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 27,
+      "rank": 29,
       "id": "chart-00359",
       "artist": "Макс Барских",
       "title": "BESTSELLER",
@@ -925,7 +997,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 28,
+      "rank": 30,
       "id": "chart-00713",
       "artist": "NILETTO",
       "title": "Someone like you",
@@ -968,7 +1040,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 29,
+      "rank": 31,
       "id": "chart-00694",
       "artist": "HammAli & Мари Краймбрери",
       "title": "Медляк",
@@ -999,20 +1071,18 @@
         ],
         "isrc": [
           "RUA582104352"
+        ],
+        "youtube": [
+          "pnTsPwYehP4"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 30,
+      "rank": 32,
       "id": "chart-03210",
       "artist": "Елена Терлеева",
       "title": "Солнце",
@@ -1043,7 +1113,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 31,
+      "rank": 33,
       "id": "chart-00021",
       "artist": "Король и Шут",
       "title": "Кукла колдуна",
@@ -1056,7 +1126,7 @@
       "candidateYears": [
         {
           "year": 1999,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -1069,20 +1139,18 @@
         ],
         "apple-music-ru": [
           "1723344992"
+        ],
+        "youtube": [
+          "Nj6aM9ljdQU"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 32,
+      "rank": 34,
       "id": "chart-01976",
       "artist": "Filatov & Karas",
       "title": "Give It Away",
@@ -1122,7 +1190,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 33,
+      "rank": 35,
       "id": "chart-03055",
       "artist": "Дима Билан",
       "title": "Number One Fan",
@@ -1148,20 +1216,18 @@
         ],
         "isrc": [
           "RUB421500047"
+        ],
+        "youtube": [
+          "TGBb2lg656A"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 34,
+      "rank": 36,
       "id": "chart-08979",
       "artist": "Марго Нуар, Александра Чистякова & Лилия Вайн",
       "title": "Возраст - это просто пин-код",
@@ -1197,7 +1263,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 35,
+      "rank": 37,
       "id": "chart-08953",
       "artist": "HOLLYFLAME",
       "title": "Тону",
@@ -1230,7 +1296,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 36,
+      "rank": 38,
       "id": "chart-03422",
       "artist": "Сергей Лазарев",
       "title": "Girlfriend",
@@ -1271,7 +1337,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 37,
+      "rank": 39,
       "id": "chart-09099",
       "artist": "ЦУЕФА",
       "title": "Я ТЕБЯ МОГНУ",
@@ -1303,7 +1369,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 38,
+      "rank": 40,
       "id": "chart-08950",
       "artist": "Баста",
       "title": "Если я буду танцевать",
@@ -1334,7 +1400,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 39,
+      "rank": 41,
       "id": "chart-03093",
       "artist": "Polina",
       "title": "Fade To Love",
@@ -1372,7 +1438,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 40,
+      "rank": 42,
       "id": "chart-08954",
       "artist": "IOWA",
       "title": "МЫ",
@@ -1403,7 +1469,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 41,
+      "rank": 43,
       "id": "chart-09119",
       "artist": "lightprey",
       "title": "целоваться",
@@ -1429,7 +1495,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 42,
+      "rank": 44,
       "id": "chart-08945",
       "artist": "Ваня Дмитриенко, МАЛЬБЭК & Сюзанна",
       "title": "Отражение",
@@ -1464,7 +1530,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 43,
+      "rank": 45,
       "id": "chart-00633",
       "artist": "PIZZA",
       "title": "Улыбка",
@@ -1496,7 +1562,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 44,
+      "rank": 46,
       "id": "chart-08981",
       "artist": "GAYAZOV$ BROTHER$",
       "title": "Санта Лючия",
@@ -1527,7 +1593,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 45,
+      "rank": 47,
       "id": "chart-08969",
       "artist": "Ева Власова",
       "title": "Вчера (Cover)",
@@ -1560,7 +1626,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 46,
+      "rank": 48,
       "id": "chart-08978",
       "artist": "Akmal'",
       "title": "Любовная",
@@ -1593,7 +1659,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 47,
+      "rank": 49,
       "id": "chart-00143",
       "artist": "Ramil'",
       "title": "Сияй",
@@ -1602,8 +1668,13 @@
       ],
       "candidateScore": 181.14,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "apple-music-ru",
         "spotify-ru-daily-history"
@@ -1614,20 +1685,18 @@
         ],
         "apple-music-ru": [
           "1652369297"
+        ],
+        "youtube": [
+          "anc5ysnFw9M"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 48,
+      "rank": 50,
       "id": "chart-03528",
       "artist": "A’STUDIO",
       "title": "Ангел",
@@ -1666,7 +1735,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 49,
+      "rank": 51,
       "id": "chart-08985",
       "artist": "Jakone & Kiliana",
       "title": "Жиганская",
@@ -1700,7 +1769,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 50,
+      "rank": 52,
       "id": "chart-08989",
       "artist": "Police in Paris & Ida Galich",
       "title": "БИЗИ",
@@ -1734,7 +1803,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 51,
+      "rank": 53,
       "id": "chart-08974",
       "artist": "Дискотека Авария",
       "title": "КУКЛА [Remix 2026]",
@@ -1765,7 +1834,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 52,
+      "rank": 54,
       "id": "chart-00440",
       "artist": "Клава Кока",
       "title": "Покинула чат",
@@ -1774,8 +1843,13 @@
       ],
       "candidateScore": 169.32,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "deezer-ru",
         "spotify-ru-daily-history"
@@ -1783,20 +1857,18 @@
       "externalIds": {
         "spotify": [
           "7aeVjMwmfh2srL7TDmCS3F"
+        ],
+        "youtube": [
+          "BZNIYVitza0"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 53,
+      "rank": 55,
       "id": "chart-00499",
       "artist": "Intelligency",
       "title": "August",
@@ -1825,19 +1897,16 @@
         ],
         "isrc": [
           "RUA592000667"
+        ],
+        "youtube": [
+          "CgNv_6haou0"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 54,
+      "rank": 56,
       "id": "chart-03108",
       "artist": "Банд’Эрос",
       "title": "Про Красивую Жизнь",
@@ -1846,24 +1915,28 @@
       ],
       "candidateScore": 157.94,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "a2ENRguEy-g"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 55,
+      "rank": 57,
       "id": "chart-03565",
       "artist": "RSAC",
       "title": "NBA (Rompasso Remix)",
@@ -1905,7 +1978,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 56,
+      "rank": 58,
       "id": "chart-06095",
       "artist": "Тимати feat. Григорий Лепс",
       "title": "Лондон",
@@ -1931,32 +2004,8 @@
         ],
         "isrc": [
           "RUA591200263"
-        ],
-        "youtube": [
-          "djIAgcCnFmE"
         ]
       },
-      "blockers": [
-        "artist-already-used"
-      ],
-      "publicationProgress": 0.875
-    },
-    {
-      "rank": 57,
-      "id": "chart-03154",
-      "artist": "JONY",
-      "title": "Аллея",
-      "artistIds": [
-        "jony"
-      ],
-      "candidateScore": 153.46,
-      "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [
-        "europa-plus-annual"
-      ],
-      "externalIds": {},
       "blockers": [
         "artist-already-used",
         "quiz-eligibility",
@@ -1968,7 +2017,37 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 58,
+      "rank": 59,
+      "id": "chart-03154",
+      "artist": "JONY",
+      "title": "Аллея",
+      "artistIds": [
+        "jony"
+      ],
+      "candidateScore": 153.46,
+      "language": "russian",
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "quiz-ready-pool"
+        }
+      ],
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "externalIds": {
+        "youtube": [
+          "5R6BYT176Bk"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
+    },
+    {
+      "rank": 60,
       "id": "chart-08991",
       "artist": "Женя Трофимов",
       "title": "Самолеты",
@@ -2001,7 +2080,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 59,
+      "rank": 61,
       "id": "chart-03334",
       "artist": "Ёлка",
       "title": "Впусти музыку",
@@ -2032,7 +2111,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 60,
+      "rank": 62,
       "id": "chart-03164",
       "artist": "Burito",
       "title": "Штрихи",
@@ -2041,24 +2120,28 @@
       ],
       "candidateScore": 149.73,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2017,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "kn6LXpEcRp8"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 61,
+      "rank": 63,
       "id": "chart-03249",
       "artist": "Юлия Савичева",
       "title": "Никак",
@@ -2067,24 +2150,28 @@
       ],
       "candidateScore": 148.4,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "eDmAPUYQVc4"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 62,
+      "rank": 64,
       "id": "chart-01969",
       "artist": "T-Fest",
       "title": "Улети",
@@ -2097,7 +2184,7 @@
       "candidateYears": [
         {
           "year": 2017,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -2107,20 +2194,18 @@
       "externalIds": {
         "spotify": [
           "3BnMwtFr961gmt2ybIFTDH"
+        ],
+        "youtube": [
+          "CB0DEcaPwhw"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 63,
+      "rank": 65,
       "id": "chart-08941",
       "artist": "Михаил Шуфутинский",
       "title": "3-е сентября",
@@ -2159,7 +2244,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 64,
+      "rank": 66,
       "id": "chart-09193",
       "artist": "Shluzov",
       "title": "Её парень",
@@ -2185,7 +2270,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 65,
+      "rank": 67,
       "id": "chart-03360",
       "artist": "Виктория Дайнеко",
       "title": "Фильм Не О Любви",
@@ -2216,7 +2301,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 66,
+      "rank": 68,
       "id": "chart-00286",
       "artist": "Скриптонит",
       "title": "Мультибрендовый",
@@ -2249,7 +2334,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 67,
+      "rank": 69,
       "id": "chart-08976",
       "artist": "XOLIDAYBOY",
       "title": "Пожары",
@@ -2284,7 +2369,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 68,
+      "rank": 70,
       "id": "chart-00420",
       "artist": "THRILL PILL, Егор Крид & MORGENSHTERN",
       "title": "Грустная Песня",
@@ -2319,7 +2404,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 69,
+      "rank": 71,
       "id": "chart-03591",
       "artist": "Plazma",
       "title": "Living In The Past",
@@ -2358,7 +2443,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 70,
+      "rank": 72,
       "id": "chart-04723",
       "artist": "ВИА Гра",
       "title": "ЛМЛ",
@@ -2383,20 +2468,18 @@
         ],
         "isrc": [
           "RUB421500378"
+        ],
+        "youtube": [
+          "qJmxmEEy2dk"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 71,
+      "rank": 73,
       "id": "chart-03369",
       "artist": "T-killah ft. Настя Кочеткова",
       "title": "Над землей",
@@ -2425,7 +2508,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 72,
+      "rank": 74,
       "id": "chart-09007",
       "artist": "Бонд с кнопкой",
       "title": "Кухни",
@@ -2434,8 +2517,13 @@
       ],
       "candidateScore": 131.49,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "apple-music-ru",
         "shazam-ru"
@@ -2443,19 +2531,16 @@
       "externalIds": {
         "apple-music-ru": [
           "1795795647"
+        ],
+        "youtube": [
+          "wQH0RE-AY60"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 73,
+      "rank": 75,
       "id": "chart-03389",
       "artist": "HammAli & Navai",
       "title": "Девочка - война",
@@ -2481,7 +2566,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 74,
+      "rank": 76,
       "id": "chart-03367",
       "artist": "Мияги",
       "title": "In Love",
@@ -2509,7 +2594,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 75,
+      "rank": 77,
       "id": "chart-04896",
       "artist": "Серебро",
       "title": "Song #1",
@@ -2531,18 +2616,20 @@
       "externalIds": {
         "tophit": [
           "7782"
-        ],
-        "youtube": [
-          "AQNYqhcHKPo"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 76,
+      "rank": 78,
       "id": "chart-00069",
       "artist": "GONE.Fludd",
       "title": "Проснулся В Темноте",
@@ -2573,7 +2660,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 77,
+      "rank": 79,
       "id": "chart-00024",
       "artist": "DEAD BLONDE",
       "title": "Мальчик на девятке",
@@ -2604,7 +2691,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 78,
+      "rank": 80,
       "id": "chart-03199",
       "artist": "5sta Family",
       "title": "Вместе мы",
@@ -2613,24 +2700,28 @@
       ],
       "candidateScore": 128.63,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2012,
+      "candidateYears": [
+        {
+          "year": 2012,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "87qSqrGariI"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 79,
+      "rank": 81,
       "id": "chart-00139",
       "artist": "Папин Олимпос",
       "title": "Тёмно-оранжевый закат",
@@ -2661,7 +2752,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 80,
+      "rank": 82,
       "id": "chart-00216",
       "artist": "ATL",
       "title": "Танцуйте",
@@ -2674,7 +2765,7 @@
       "candidateYears": [
         {
           "year": 2017,
-          "source": "quiz-ready-pool"
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [
@@ -2683,18 +2774,20 @@
       "externalIds": {
         "spotify": [
           "2sgyUEjvzSW0l6NgFBZ4Dt"
-        ],
-        "youtube": [
-          "ryotss9iX4U"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 81,
+      "rank": 83,
       "id": "chart-07141",
       "artist": "Loboda",
       "title": "Superstar",
@@ -2719,20 +2812,18 @@
         ],
         "isrc": [
           "RUA011800153"
+        ],
+        "youtube": [
+          "uAMpvfBbmwA"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 82,
+      "rank": 84,
       "id": "chart-04481",
       "artist": "t.A.T.u",
       "title": "All About Us",
@@ -2770,7 +2861,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 83,
+      "rank": 85,
       "id": "chart-00707",
       "artist": "The Limba",
       "title": "СМУЗИ",
@@ -2783,7 +2874,7 @@
       "candidateYears": [
         {
           "year": 2019,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -2792,20 +2883,18 @@
       "externalIds": {
         "spotify": [
           "3sSags381KPFiIz546e0GK"
+        ],
+        "youtube": [
+          "6Od0EEbmvZs"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 84,
+      "rank": 86,
       "id": "chart-03394",
       "artist": "Винтаж",
       "title": "Всего хорошего",
@@ -2831,7 +2920,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 85,
+      "rank": 87,
       "id": "chart-09068",
       "artist": "Шура",
       "title": "Ты не верь слезам",
@@ -2861,7 +2950,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 86,
+      "rank": 88,
       "id": "chart-03457",
       "artist": "МакSим",
       "title": "Не отдам",
@@ -2887,7 +2976,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 87,
+      "rank": 89,
       "id": "chart-03534",
       "artist": "DJ Antoine vs Timati ft. Kalenna",
       "title": "Welcome to St Tropez",
@@ -2916,7 +3005,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 88,
+      "rank": 90,
       "id": "chart-03470",
       "artist": "Hi-Fi",
       "title": "По следам",
@@ -2925,24 +3014,28 @@
       ],
       "candidateScore": 122.95,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "-23D7HnjHWw"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 89,
+      "rank": 91,
       "id": "chart-00151",
       "artist": "Konfuz",
       "title": "Кайф ты поймала",
@@ -2975,7 +3068,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 90,
+      "rank": 92,
       "id": "chart-00138",
       "artist": "HENSY",
       "title": "Поболело и прошло",
@@ -3006,7 +3099,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 91,
+      "rank": 93,
       "id": "chart-03956",
       "artist": "Пропаганда",
       "title": "Quanto Costa",
@@ -3031,20 +3124,18 @@
         ],
         "isrc": [
           "RUB731422802"
+        ],
+        "youtube": [
+          "mQtBaJ1Arwo"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 92,
+      "rank": 94,
       "id": "chart-04479",
       "artist": "Mr. Credo",
       "title": "Медляк",
@@ -3082,7 +3173,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 93,
+      "rank": 95,
       "id": "chart-00003",
       "artist": "kizaru",
       "title": "Dezhavyu",
@@ -3111,7 +3202,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 94,
+      "rank": 96,
       "id": "chart-00152",
       "artist": "Канги",
       "title": "Эйя",
@@ -3142,7 +3233,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 95,
+      "rank": 97,
       "id": "chart-00120",
       "artist": "GUMA",
       "title": "Стеклянная",
@@ -3173,7 +3264,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 96,
+      "rank": 98,
       "id": "chart-04000",
       "artist": "Ленинград",
       "title": "Геленджик",
@@ -3211,7 +3302,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 97,
+      "rank": 99,
       "id": "chart-00005",
       "artist": "SLAVA MARLOW",
       "title": "Снова я напиваюсь",
@@ -3224,7 +3315,7 @@
       "candidateYears": [
         {
           "year": 2020,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -3233,19 +3324,16 @@
       "externalIds": {
         "spotify": [
           "18t2lAzaHW2bJomYeyzrpy"
+        ],
+        "youtube": [
+          "ByCfsIEmIMg"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 98,
+      "rank": 100,
       "id": "chart-03583",
       "artist": "Влад Соколовский",
       "title": "Ближе",
@@ -3277,7 +3365,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 99,
+      "rank": 101,
       "id": "chart-03509",
       "artist": "Гости из будущего",
       "title": "Самый любимый враг",
@@ -3286,8 +3374,43 @@
       ],
       "candidateScore": 116.49,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        }
+      ],
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "externalIds": {
+        "youtube": [
+          "xcybM8OY06s"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
+    },
+    {
+      "rank": 102,
+      "id": "chart-03629",
+      "artist": "Элджей",
+      "title": "Минимал",
+      "artistIds": [
+        "eldzhei"
+      ],
+      "candidateScore": 116.42,
+      "language": "russian",
+      "releaseYear": 2018,
+      "candidateYears": [
+        {
+          "year": 2018,
+          "source": "musicbrainz-search"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
@@ -3303,37 +3426,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 100,
-      "id": "chart-03629",
-      "artist": "Элджей",
-      "title": "Минимал",
-      "artistIds": [
-        "eldzhei"
-      ],
-      "candidateScore": 116.42,
-      "language": "russian",
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "quiz-ready-pool"
-        }
-      ],
-      "sourceIds": [
-        "europa-plus-annual"
-      ],
-      "externalIds": {
-        "youtube": [
-          "YBFDYb5GCrI"
-        ]
-      },
-      "blockers": [
-        "artist-already-used"
-      ],
-      "publicationProgress": 0.875
-    },
-    {
-      "rank": 101,
+      "rank": 103,
       "id": "chart-00378",
       "artist": "FEDUK",
       "title": "27",
@@ -3346,7 +3439,7 @@
       "candidateYears": [
         {
           "year": 2019,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -3355,20 +3448,18 @@
       "externalIds": {
         "spotify": [
           "1SccjD8RvJ6vegZLFdgy5a"
+        ],
+        "youtube": [
+          "iHkrcNf01X4"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 102,
+      "rank": 104,
       "id": "chart-00331",
       "artist": "просто Лера",
       "title": "Лютики",
@@ -3403,7 +3494,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 103,
+      "rank": 105,
       "id": "chart-00277",
       "artist": "Galibri & Mavik",
       "title": "Федерико Феллини",
@@ -3437,7 +3528,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 104,
+      "rank": 106,
       "id": "chart-00031",
       "artist": "Mnogoznaal",
       "title": "Колхозник",
@@ -3468,7 +3559,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 105,
+      "rank": 107,
       "id": "chart-00040",
       "artist": "pyrokinesis",
       "title": "Днями-ночами",
@@ -3499,7 +3590,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 106,
+      "rank": 108,
       "id": "chart-00053",
       "artist": "ROCKET",
       "title": "Инкассатор",
@@ -3530,7 +3621,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 107,
+      "rank": 109,
       "id": "chart-00064",
       "artist": "ssshhhiiittt!",
       "title": "Танцы",
@@ -3561,7 +3652,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 108,
+      "rank": 110,
       "id": "chart-05935",
       "artist": "DJ Smash feat. Maury",
       "title": "Rendez-vous",
@@ -3598,7 +3689,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 109,
+      "rank": 111,
       "id": "chart-00080",
       "artist": "MACAN",
       "title": "Кино",
@@ -3611,7 +3702,7 @@
       "candidateYears": [
         {
           "year": 2020,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -3620,20 +3711,18 @@
       "externalIds": {
         "spotify": [
           "7q8jzypmJPGTsph168wWjt"
+        ],
+        "youtube": [
+          "CaOivkjwrmI"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 110,
+      "rank": 112,
       "id": "chart-00001",
       "artist": "Big Baby Tape",
       "title": "99 Problems",
@@ -3663,7 +3752,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 111,
+      "rank": 113,
       "id": "chart-00102",
       "artist": "Poshlaya Molly",
       "title": "Нон стоп",
@@ -3692,7 +3781,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 112,
+      "rank": 114,
       "id": "chart-00016",
       "artist": "fem.love",
       "title": "Фотографирую закат",
@@ -3723,7 +3812,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 113,
+      "rank": 115,
       "id": "chart-07066",
       "artist": "Gazirovka",
       "title": "Black",
@@ -3761,7 +3850,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 114,
+      "rank": 116,
       "id": "chart-00025",
       "artist": "SEEMEE",
       "title": "Голодный пёс [prod. by Pretty Scream]",
@@ -3792,7 +3881,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 115,
+      "rank": 117,
       "id": "chart-00058",
       "artist": "кис-кис",
       "title": "молчи",
@@ -3827,7 +3916,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 116,
+      "rank": 118,
       "id": "chart-09100",
       "artist": "Света",
       "title": "Мои слёзы",
@@ -3858,7 +3947,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 117,
+      "rank": 119,
       "id": "chart-03136",
       "artist": "Моя Мишель",
       "title": "Ветер меняет направление",
@@ -3867,24 +3956,28 @@
       ],
       "candidateScore": 110.78,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2024,
+      "candidateYears": [
+        {
+          "year": 2024,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "jM7PoIjG7uk"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 118,
+      "rank": 120,
       "id": "chart-05161",
       "artist": "Жанна Фриске",
       "title": "Жанна Фриске",
@@ -3917,7 +4010,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 119,
+      "rank": 121,
       "id": "chart-00084",
       "artist": "Три дня дождя",
       "title": "Демоны",
@@ -3952,7 +4045,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 120,
+      "rank": 122,
       "id": "chart-00030",
       "artist": "10AGE",
       "title": "Нету интереса",
@@ -3983,7 +4076,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 121,
+      "rank": 123,
       "id": "chart-00388",
       "artist": "Mary Gu",
       "title": "Косички",
@@ -3992,28 +4085,31 @@
       ],
       "candidateScore": 109.93,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "50H8ewgWjuwx22LiLeKrIm"
+        ],
+        "youtube": [
+          "tWRZSD8i8Vk"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 122,
+      "rank": 124,
       "id": "chart-00042",
       "artist": "ANIKV",
       "title": "Меня не будет",
@@ -4044,7 +4140,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 123,
+      "rank": 125,
       "id": "chart-02475",
       "artist": "MARUV",
       "title": "Sad Song",
@@ -4073,19 +4169,16 @@
         ],
         "isrc": [
           "RUA582001721"
+        ],
+        "youtube": [
+          "Yuo_6Qq3EhY"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 124,
+      "rank": 126,
       "id": "chart-00380",
       "artist": "NЮ",
       "title": "Никто",
@@ -4094,28 +4187,31 @@
       ],
       "candidateScore": 108.89,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "0m2GGIVcV80IfKDg1oCULj"
+        ],
+        "youtube": [
+          "oIVrkETbZas"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 125,
+      "rank": 127,
       "id": "chart-00022",
       "artist": "Dzharakhov",
       "title": "Я в моменте",
@@ -4144,7 +4240,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 126,
+      "rank": 128,
       "id": "chart-06228",
       "artist": "Тимур Родригез",
       "title": "#Heroes",
@@ -4178,7 +4274,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 127,
+      "rank": 129,
       "id": "chart-00068",
       "artist": "LSP",
       "title": "Номера",
@@ -4211,7 +4307,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 128,
+      "rank": 130,
       "id": "chart-00015",
       "artist": "WENARO",
       "title": "Лёд",
@@ -4242,7 +4338,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 129,
+      "rank": 131,
       "id": "chart-00131",
       "artist": "Lizer",
       "title": "Пачка сигарет",
@@ -4277,7 +4373,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 130,
+      "rank": 132,
       "id": "chart-00451",
       "artist": "КУЧЕР & JANAGA",
       "title": "По щекам слёзы",
@@ -4309,7 +4405,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 131,
+      "rank": 133,
       "id": "chart-00468",
       "artist": "ANNA ASTI",
       "title": "Феникс",
@@ -4342,7 +4438,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 132,
+      "rank": 134,
       "id": "chart-00124",
       "artist": "Дайте танк (!)",
       "title": "Люди",
@@ -4373,7 +4469,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 133,
+      "rank": 135,
       "id": "chart-00092",
       "artist": "CMH",
       "title": "СТИКЕР",
@@ -4404,7 +4500,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 134,
+      "rank": 136,
       "id": "chart-00769",
       "artist": "Джизус",
       "title": "Девочка в классе",
@@ -4435,7 +4531,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 135,
+      "rank": 137,
       "id": "chart-05189",
       "artist": "Филипп Киркоров",
       "title": "Галки",
@@ -4460,20 +4556,18 @@
         ],
         "isrc": [
           "RUB421303330"
+        ],
+        "youtube": [
+          "i5twfJ15yEA"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 136,
+      "rank": 138,
       "id": "chart-00061",
       "artist": "Rakhim",
       "title": "Fendi",
@@ -4507,7 +4601,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 137,
+      "rank": 139,
       "id": "chart-00044",
       "artist": "INSTASAMKA",
       "title": "LIPSI HA",
@@ -4542,7 +4636,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 138,
+      "rank": 140,
       "id": "chart-03298",
       "artist": "LYRIQ",
       "title": "Почему",
@@ -4551,23 +4645,26 @@
       ],
       "candidateScore": 105.58,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2023,
+      "candidateYears": [
+        {
+          "year": 2023,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {},
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "externalIds": {
+        "youtube": [
+          "YsRn4-6aOEE"
+        ]
+      },
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 139,
+      "rank": 141,
       "id": "chart-00158",
       "artist": "PHARAOH",
       "title": "Не по пути",
@@ -4580,7 +4677,7 @@
       "candidateYears": [
         {
           "year": 2018,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -4589,20 +4686,18 @@
       "externalIds": {
         "spotify": [
           "5kElIh62XbmpGwfR0cYaZn"
+        ],
+        "youtube": [
+          "3QGMDa7t1Ug"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 140,
+      "rank": 142,
       "id": "chart-00112",
       "artist": "Max Korzh",
       "title": "2 типа людей",
@@ -4633,7 +4728,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 141,
+      "rank": 143,
       "id": "chart-00062",
       "artist": "Тима Белорусских",
       "title": "Окей",
@@ -4642,28 +4737,31 @@
       ],
       "candidateScore": 104.89,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "3MPFuEXwjdrR7yKua2wrUL"
+        ],
+        "youtube": [
+          "eGT84Rcyvv4"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 142,
+      "rank": 144,
       "id": "chart-00087",
       "artist": "SODA LUV",
       "title": "Бигасс",
@@ -4694,7 +4792,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 143,
+      "rank": 145,
       "id": "chart-00206",
       "artist": "Платина",
       "title": "Бандана",
@@ -4729,7 +4827,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 144,
+      "rank": 146,
       "id": "chart-00059",
       "artist": "BRANYA",
       "title": "Пополам",
@@ -4760,7 +4858,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 145,
+      "rank": 147,
       "id": "chart-00100",
       "artist": "ooes",
       "title": "зима",
@@ -4791,7 +4889,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 146,
+      "rank": 148,
       "id": "chart-00199",
       "artist": "Peremotka",
       "title": "Как тебя покорить",
@@ -4822,7 +4920,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 147,
+      "rank": 149,
       "id": "chart-06049",
       "artist": "A-Dessa",
       "title": "Fire",
@@ -4856,7 +4954,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 148,
+      "rank": 150,
       "id": "chart-00099",
       "artist": "LOVV66",
       "title": "Трап Трап",
@@ -4887,7 +4985,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 149,
+      "rank": 151,
       "id": "chart-00204",
       "artist": "УННВ",
       "title": "Без даты",
@@ -4918,7 +5016,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 150,
+      "rank": 152,
       "id": "chart-04162",
       "artist": "Arash",
       "title": "Boro Boro",
@@ -4952,7 +5050,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 151,
+      "rank": 153,
       "id": "chart-00162",
       "artist": "104",
       "title": "НЕ ЖАЛЬ",
@@ -4983,7 +5081,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 152,
+      "rank": 154,
       "id": "chart-00175",
       "artist": "MUKKA",
       "title": "Не Киряй",
@@ -5013,7 +5111,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 153,
+      "rank": 155,
       "id": "chart-00758",
       "artist": "polnalyubvi",
       "title": "Кометы",
@@ -5044,7 +5142,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 154,
+      "rank": 156,
       "id": "chart-00071",
       "artist": "uniqe",
       "title": "ТОЛПЫ КРИЧАТ",
@@ -5075,7 +5173,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 155,
+      "rank": 157,
       "id": "chart-00173",
       "artist": "MAYOT",
       "title": "Ауди [prod. by Sqweezey]",
@@ -5104,7 +5202,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 156,
+      "rank": 158,
       "id": "chart-06383",
       "artist": "Потап и Настя Каменских",
       "title": "Уди Уди",
@@ -5129,20 +5227,18 @@
         ],
         "isrc": [
           "FR6V82411651"
+        ],
+        "youtube": [
+          "VWJrMkRcXu8"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 157,
+      "rank": 159,
       "id": "chart-08990",
       "artist": "MONA",
       "title": "Иордан",
@@ -5155,7 +5251,7 @@
       "candidateYears": [
         {
           "year": 2024,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -5164,19 +5260,16 @@
       "externalIds": {
         "apple-music-ru": [
           "1777205296"
+        ],
+        "youtube": [
+          "OLZEUAalqcI"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 158,
+      "rank": 160,
       "id": "chart-00385",
       "artist": "Антон Токарев",
       "title": "Седьмой лепесток",
@@ -5211,7 +5304,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 159,
+      "rank": 161,
       "id": "chart-00187",
       "artist": "Markul",
       "title": "Серпантин",
@@ -5242,7 +5335,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 160,
+      "rank": 162,
       "id": "chart-00079",
       "artist": "rizza",
       "title": "плачь",
@@ -5273,7 +5366,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 161,
+      "rank": 163,
       "id": "chart-00555",
       "artist": "NLO",
       "title": "Не грусти",
@@ -5304,7 +5397,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 162,
+      "rank": 164,
       "id": "chart-00141",
       "artist": "OG Buda",
       "title": "Старшие",
@@ -5313,28 +5406,31 @@
       ],
       "candidateScore": 100.45,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "56eV7dmQU2tlUT9QsVQWUV"
+        ],
+        "youtube": [
+          "ftrdGtQrs14"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 163,
+      "rank": 165,
       "id": "chart-05699",
       "artist": "Потап и Вера Брежнева",
       "title": "Пронто",
@@ -5360,20 +5456,18 @@
         ],
         "isrc": [
           "FR6V81950444"
+        ],
+        "youtube": [
+          "80-0lWcCKcI"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 164,
+      "rank": 166,
       "id": "chart-00057",
       "artist": "Geegun",
       "title": "На чиле",
@@ -5402,7 +5496,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 165,
+      "rank": 167,
       "id": "chart-07365",
       "artist": "Lika Star feat. Иракли",
       "title": "Luna",
@@ -5441,7 +5535,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 166,
+      "rank": 168,
       "id": "chart-00094",
       "artist": "Mumiy Troll",
       "title": "Башня",
@@ -5470,7 +5564,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 167,
+      "rank": 169,
       "id": "chart-00235",
       "artist": "Ghostface Playa",
       "title": "KILLKA",
@@ -5499,7 +5593,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 168,
+      "rank": 170,
       "id": "chart-00645",
       "artist": "The Hatters",
       "title": "Я делаю шаг",
@@ -5529,7 +5623,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 169,
+      "rank": 171,
       "id": "chart-03459",
       "artist": "Градусы",
       "title": "Она",
@@ -5555,7 +5649,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 170,
+      "rank": 172,
       "id": "chart-03453",
       "artist": "Юлианна Караулова",
       "title": "Ты не такой",
@@ -5581,7 +5675,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 171,
+      "rank": 173,
       "id": "chart-00258",
       "artist": "нексюша",
       "title": "На твиче",
@@ -5612,7 +5706,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 172,
+      "rank": 174,
       "id": "chart-09078",
       "artist": "Белый орёл",
       "title": "Потому что нельзя быть красивой такой",
@@ -5621,24 +5715,28 @@
       ],
       "candidateScore": 98.4,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "deezer-ru"
       ],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "2_bKT8Z2-DU"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 173,
+      "rank": 175,
       "id": "chart-00140",
       "artist": "SQWOZ BAB",
       "title": "АУФ",
@@ -5669,7 +5767,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 174,
+      "rank": 176,
       "id": "chart-00157",
       "artist": "JAMIK",
       "title": "Франция",
@@ -5700,7 +5798,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 175,
+      "rank": 177,
       "id": "chart-06951",
       "artist": "Леонид Агутин и Willie Key",
       "title": "Самба",
@@ -5723,20 +5821,18 @@
       "externalIds": {
         "tophit": [
           "81966"
+        ],
+        "youtube": [
+          "SibS1Tc7CvI"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 176,
+      "rank": 178,
       "id": "chart-00240",
       "artist": "LIL MORTY",
       "title": "Я пиздатый",
@@ -5771,7 +5867,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 177,
+      "rank": 179,
       "id": "chart-00163",
       "artist": "Alyona Shvets",
       "title": "первое свидание",
@@ -5802,7 +5898,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 178,
+      "rank": 180,
       "id": "chart-00117",
       "artist": "kostromin",
       "title": "Моя голова винтом",
@@ -5833,7 +5929,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 179,
+      "rank": 181,
       "id": "chart-00168",
       "artist": "Nikitata",
       "title": "ТАЙМАУТ",
@@ -5842,27 +5938,29 @@
       ],
       "candidateScore": 97.21,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "175xPRXSrf7RSWdjAhc6oD"
+        ],
+        "youtube": [
+          "LZjeuZRow1Y"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 180,
+      "rank": 182,
       "id": "chart-00282",
       "artist": "SALUKI",
       "title": "Стресс",
@@ -5893,7 +5991,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 181,
+      "rank": 183,
       "id": "chart-00123",
       "artist": "remember.",
       "title": "Кожура",
@@ -5924,7 +6022,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 182,
+      "rank": 184,
       "id": "chart-00188",
       "artist": "АДЛИН",
       "title": "No Love",
@@ -5955,7 +6053,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 183,
+      "rank": 185,
       "id": "chart-00217",
       "artist": "Анет Сай",
       "title": "СЛЁЗЫ - OST \"Пацанки\"",
@@ -5986,7 +6084,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 184,
+      "rank": 186,
       "id": "chart-00889",
       "artist": "ФОГЕЛЬ",
       "title": "МАЛЬЧИК",
@@ -6017,7 +6115,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 185,
+      "rank": 187,
       "id": "chart-00271",
       "artist": "uglystephan",
       "title": "Снова обогнал их",
@@ -6048,7 +6146,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 186,
+      "rank": 188,
       "id": "chart-00671",
       "artist": "CREAM SODA",
       "title": "Сердце Лёд",
@@ -6081,7 +6179,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 187,
+      "rank": 189,
       "id": "chart-00214",
       "artist": "Rauf & Faik",
       "title": "Если тебе будет грустно",
@@ -6113,7 +6211,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 188,
+      "rank": 190,
       "id": "chart-01015",
       "artist": "RaiM",
       "title": "Двигаться",
@@ -6148,7 +6246,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 189,
+      "rank": 191,
       "id": "chart-02060",
       "artist": "Звери",
       "title": "Районы-кварталы",
@@ -6181,7 +6279,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 190,
+      "rank": 192,
       "id": "chart-07195",
       "artist": "Zvonkiy",
       "title": "Voices",
@@ -6218,7 +6316,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 191,
+      "rank": 193,
       "id": "chart-00354",
       "artist": "ELMAN",
       "title": "Балкон",
@@ -6249,7 +6347,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 192,
+      "rank": 194,
       "id": "chart-00289",
       "artist": "Султан Лагучев",
       "title": "Горький вкус",
@@ -6282,7 +6380,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 193,
+      "rank": 195,
       "id": "chart-00095",
       "artist": "КОСМОНАВТОВ НЕТ",
       "title": "баночка с окурками",
@@ -6313,7 +6411,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 194,
+      "rank": 196,
       "id": "chart-00696",
       "artist": "Jah Khalib",
       "title": "Искал-Нашёл",
@@ -6322,28 +6420,31 @@
       ],
       "candidateScore": 94.77,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "28ZRIWwLO42L8o8k2qGLKt"
+        ],
+        "youtube": [
+          "io-BG2YhXrA"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 195,
+      "rank": 197,
       "id": "chart-05445",
       "artist": "Чи-Ли",
       "title": "Орэ-Орэ",
@@ -6381,7 +6482,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 196,
+      "rank": 198,
       "id": "chart-00167",
       "artist": "Kambulat",
       "title": "Привет",
@@ -6416,7 +6517,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 197,
+      "rank": 199,
       "id": "chart-00272",
       "artist": "LILDRUGHILL",
       "title": "Терминал",
@@ -6447,7 +6548,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 198,
+      "rank": 200,
       "id": "chart-00213",
       "artist": "LIL KRYSTALLL",
       "title": "Шенген",
@@ -6478,7 +6579,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 199,
+      "rank": 201,
       "id": "chart-03530",
       "artist": "Ева Польна",
       "title": "Я тебя тоже нет (Je T'aime)",
@@ -6504,7 +6605,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 200,
+      "rank": 202,
       "id": "chart-00259",
       "artist": "KENTUKKI",
       "title": "Замигает свет",
@@ -6535,7 +6636,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 201,
+      "rank": 203,
       "id": "chart-00715",
       "artist": "Лёша Свик",
       "title": "Плакала",
@@ -6570,7 +6671,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 202,
+      "rank": 204,
       "id": "chart-00318",
       "artist": "Sqwore",
       "title": "Холодное оружие",
@@ -6579,27 +6680,29 @@
       ],
       "candidateScore": 93.64,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "1qNe5rzjYah7emeSt96L6n"
+        ],
+        "youtube": [
+          "5NrB9pOMMx0"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 203,
+      "rank": 205,
       "id": "chart-06703",
       "artist": "Зара",
       "title": "Ленинград",
@@ -6637,7 +6740,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 204,
+      "rank": 206,
       "id": "chart-00220",
       "artist": "Lusia Chebotina",
       "title": "СОЛНЦЕ МОНАКО",
@@ -6666,7 +6769,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 205,
+      "rank": 207,
       "id": "chart-00679",
       "artist": "Nekoglai",
       "title": "Cumback",
@@ -6697,7 +6800,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 206,
+      "rank": 208,
       "id": "chart-00275",
       "artist": "Husky",
       "title": "Никогда-нибудь",
@@ -6726,7 +6829,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 207,
+      "rank": 209,
       "id": "chart-02133",
       "artist": "Полина Гагарина",
       "title": "Вчера",
@@ -6757,7 +6860,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 208,
+      "rank": 210,
       "id": "chart-00382",
       "artist": "Гуф",
       "title": "Ураган",
@@ -6787,7 +6890,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 209,
+      "rank": 211,
       "id": "chart-00228",
       "artist": "DSPRITE",
       "title": "Погоди",
@@ -6822,7 +6925,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 210,
+      "rank": 212,
       "id": "chart-05075",
       "artist": "София Ротару",
       "title": "I'll Name The Planet",
@@ -6860,7 +6963,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 211,
+      "rank": 213,
       "id": "chart-00280",
       "artist": "TINI LIN",
       "title": "Последний танец",
@@ -6891,7 +6994,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 212,
+      "rank": 214,
       "id": "chart-00408",
       "artist": "Timran",
       "title": "Не пускайте танцевать",
@@ -6922,7 +7025,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 213,
+      "rank": 215,
       "id": "chart-07077",
       "artist": "JeeGun feat. Artem Kacher",
       "title": "Dna",
@@ -6961,7 +7064,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 214,
+      "rank": 216,
       "id": "chart-00861",
       "artist": "IC3PEAK",
       "title": "Смерти Больше Нет",
@@ -6994,7 +7097,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 215,
+      "rank": 217,
       "id": "chart-00392",
       "artist": "Flëur",
       "title": "Формалин",
@@ -7029,7 +7132,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 216,
+      "rank": 218,
       "id": "chart-08211",
       "artist": "Юлия Паршута",
       "title": "Кришна",
@@ -7051,19 +7154,16 @@
       "externalIds": {
         "tophit": [
           "211455"
+        ],
+        "youtube": [
+          "hopdHBNt8Lc"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 217,
+      "rank": 219,
       "id": "chart-00283",
       "artist": "JojoHF",
       "title": "Губы",
@@ -7072,15 +7172,11 @@
       ],
       "candidateScore": 89.01,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2021,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -7098,7 +7194,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 218,
+      "rank": 220,
       "id": "chart-00322",
       "artist": "Pretty Scream",
       "title": "Ты",
@@ -7129,7 +7225,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 219,
+      "rank": 221,
       "id": "chart-00389",
       "artist": "Кишлак",
       "title": "Я уёбываю в джаз",
@@ -7160,7 +7256,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 220,
+      "rank": 222,
       "id": "chart-00309",
       "artist": "quiizzzmeow",
       "title": "cети",
@@ -7191,7 +7287,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 221,
+      "rank": 223,
       "id": "chart-00375",
       "artist": "Scally Milano",
       "title": "Буква Х",
@@ -7222,7 +7318,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 222,
+      "rank": 224,
       "id": "chart-05186",
       "artist": "Stas Piekha",
       "title": "On The Palm Of My Hand",
@@ -7259,7 +7355,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 223,
+      "rank": 225,
       "id": "chart-00614",
       "artist": "Где Фантом?",
       "title": "Я тебя люблю",
@@ -7294,7 +7390,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 224,
+      "rank": 226,
       "id": "chart-00594",
       "artist": "maslo chernogo tmina",
       "title": "что для тебя красота",
@@ -7325,7 +7421,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 225,
+      "rank": 227,
       "id": "chart-00579",
       "artist": "JILLZAY",
       "title": "Бар \"2 лесбухи\"",
@@ -7356,7 +7452,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 226,
+      "rank": 228,
       "id": "chart-00585",
       "artist": "Mother Mother",
       "title": "Hayloft",
@@ -7385,7 +7481,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 227,
+      "rank": 229,
       "id": "chart-00379",
       "artist": "G4OUR",
       "title": "Растет",
@@ -7416,7 +7512,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 228,
+      "rank": 230,
       "id": "chart-00400",
       "artist": "CAPTOWN",
       "title": "Разная дрянь",
@@ -7447,7 +7543,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 229,
+      "rank": 231,
       "id": "chart-00556",
       "artist": "Dzharo & Khanza",
       "title": "Таблетка",
@@ -7477,7 +7573,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 230,
+      "rank": 232,
       "id": "chart-00393",
       "artist": "GSPD",
       "title": "У России три пути",
@@ -7508,7 +7604,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 231,
+      "rank": 233,
       "id": "chart-00486",
       "artist": "Natan",
       "title": "Ананасовый сироп",
@@ -7539,7 +7635,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 232,
+      "rank": 234,
       "id": "chart-00500",
       "artist": "Soda",
       "title": "Pullin Up",
@@ -7568,7 +7664,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 233,
+      "rank": 235,
       "id": "chart-07369",
       "artist": "Mari Kraymbrery",
       "title": "I Feel So Good",
@@ -7605,7 +7701,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 234,
+      "rank": 236,
       "id": "chart-05111",
       "artist": "Moral`niy Kodeks",
       "title": "Where Are You?",
@@ -7642,7 +7738,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 235,
+      "rank": 237,
       "id": "chart-05136",
       "artist": "T9",
       "title": "Breathe In And Out (Ode To Our Love)",
@@ -7677,7 +7773,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 236,
+      "rank": 238,
       "id": "chart-00416",
       "artist": "Lely45",
       "title": "Восемь",
@@ -7708,7 +7804,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 237,
+      "rank": 239,
       "id": "chart-07305",
       "artist": "Руки Вверх!",
       "title": "She Kisses Me",
@@ -7746,7 +7842,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 238,
+      "rank": 240,
       "id": "chart-00399",
       "artist": "ЛЯЛЬКА",
       "title": "Трахаца",
@@ -7775,7 +7871,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 239,
+      "rank": 241,
       "id": "chart-07278",
       "artist": "Artur Pirojkov",
       "title": "Hooked",
@@ -7809,7 +7905,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 240,
+      "rank": 242,
       "id": "chart-07350",
       "artist": "Filatov & Karas vs. Burito",
       "title": "Take My Heart",
@@ -7847,7 +7943,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 241,
+      "rank": 243,
       "id": "chart-01148",
       "artist": "DAVA",
       "title": "ОБНУЛИЛА НАС",
@@ -7878,7 +7974,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 242,
+      "rank": 244,
       "id": "chart-05233",
       "artist": "Vintaj",
       "title": "The Loneliness Of Love",
@@ -7915,7 +8011,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 243,
+      "rank": 245,
       "id": "chart-00464",
       "artist": "Какая Разница",
       "title": "Рассвет",
@@ -7946,7 +8042,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 244,
+      "rank": 246,
       "id": "chart-00288",
       "artist": "Шайни",
       "title": "Yeyo!",
@@ -7977,7 +8073,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 245,
+      "rank": 247,
       "id": "chart-00465",
       "artist": "Nervy",
       "title": "Нервы",
@@ -7986,28 +8082,31 @@
       ],
       "candidateScore": 84.26,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "70qbqCW6z92WESMZC1opsd"
+        ],
+        "youtube": [
+          "HwBt4UUmtYQ"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 246,
+      "rank": 248,
       "id": "chart-00362",
       "artist": "Boulevard Depo",
       "title": "В.О.Л.К.",
@@ -8038,7 +8137,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 247,
+      "rank": 249,
       "id": "chart-00371",
       "artist": "YUNG TRAPPA",
       "title": "Розовое Вино 2",
@@ -8069,7 +8168,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 248,
+      "rank": 250,
       "id": "chart-00483",
       "artist": "zhanulka",
       "title": "кискис",
@@ -8100,7 +8199,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 249,
+      "rank": 251,
       "id": "chart-09194",
       "artist": "Паша Руденко",
       "title": "Город влюблённых",
@@ -8109,23 +8208,26 @@
       ],
       "candidateScore": 82.63,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "shazam-ru"
       ],
-      "externalIds": {},
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "externalIds": {
+        "youtube": [
+          "4uNZ2UBQdLQ"
+        ]
+      },
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 250,
+      "rank": 252,
       "id": "chart-07136",
       "artist": "Ani Lorak",
       "title": "Crazy",
@@ -8160,7 +8262,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 251,
+      "rank": 253,
       "id": "chart-00503",
       "artist": "Arthur Pirozhkov",
       "title": "Хочешь",
@@ -8189,7 +8291,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 252,
+      "rank": 254,
       "id": "chart-00387",
       "artist": "BUSHIDO ZHO",
       "title": "макинтош бизнес онли",
@@ -8220,7 +8322,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 253,
+      "rank": 255,
       "id": "pool-cd3d81dd5e34",
       "artist": "Линда",
       "title": "Мало огня",
@@ -8252,7 +8354,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 254,
+      "rank": 256,
       "id": "chart-05229",
       "artist": "Sogdiana",
       "title": "The Clouds Parted",
@@ -8290,7 +8392,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 255,
+      "rank": 257,
       "id": "chart-00448",
       "artist": "ALEKS ATAMAN",
       "title": "Диалоги тет-а-тет",
@@ -8299,27 +8401,29 @@
       ],
       "candidateScore": 82.12,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "7qEZALeVloIwiz6tvX8ZUL"
+        ],
+        "youtube": [
+          "GBs-vSwOTAE"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 256,
+      "rank": 258,
       "id": "chart-07317",
       "artist": "Valeriy Meladze",
       "title": "What Do You Want From Me?",
@@ -8356,7 +8460,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 257,
+      "rank": 259,
       "id": "chart-00508",
       "artist": "PLOHOYPAREN",
       "title": "Таблетка",
@@ -8387,7 +8491,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 258,
+      "rank": 260,
       "id": "chart-00510",
       "artist": "Truwer",
       "title": "Весь в отца",
@@ -8418,7 +8522,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 259,
+      "rank": 261,
       "id": "chart-07344",
       "artist": "Anivar",
       "title": "My Favorite Person",
@@ -8456,7 +8560,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 260,
+      "rank": 262,
       "id": "chart-05121",
       "artist": "Valeriy Syutkin",
       "title": "The Shuttle",
@@ -8493,7 +8597,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 261,
+      "rank": 263,
       "id": "chart-00793",
       "artist": "Molchat Doma",
       "title": "Судно (Борис Рижий)",
@@ -8524,7 +8628,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 262,
+      "rank": 264,
       "id": "chart-07321",
       "artist": "Gradusi",
       "title": "Don't Go Away",
@@ -8558,7 +8662,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 263,
+      "rank": 265,
       "id": "chart-00794",
       "artist": "Gruppa Skryptonite",
       "title": "3x3",
@@ -8587,7 +8691,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 264,
+      "rank": 266,
       "id": "chart-00466",
       "artist": "LXNER",
       "title": "Крышу сносит",
@@ -8618,7 +8722,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 265,
+      "rank": 267,
       "id": "chart-03945",
       "artist": "Dato",
       "title": "Chito-Gvrito",
@@ -8649,7 +8753,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 266,
+      "rank": 268,
       "id": "chart-00631",
       "artist": "Valentin Strykalo",
       "title": "Кайен",
@@ -8679,7 +8783,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 267,
+      "rank": 269,
       "id": "chart-06996",
       "artist": "Эмма М",
       "title": "Beautiful Life",
@@ -8704,19 +8808,16 @@
         ],
         "isrc": [
           "RUA591700840"
+        ],
+        "youtube": [
+          "CdtE7fCoXdc"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 268,
+      "rank": 270,
       "id": "chart-00415",
       "artist": "163ONMYNECK",
       "title": "ЖМУРКИ",
@@ -8747,7 +8848,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 269,
+      "rank": 271,
       "id": "chart-07835",
       "artist": "Анна Семенович feat. Слава",
       "title": "Бумеранг",
@@ -8781,7 +8882,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 270,
+      "rank": 272,
       "id": "chart-01992",
       "artist": "Блестящие",
       "title": "Новогодняя песня",
@@ -8811,7 +8912,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 271,
+      "rank": 273,
       "id": "chart-00665",
       "artist": "Kino",
       "title": "Хочу перемен",
@@ -8820,28 +8921,31 @@
       ],
       "candidateScore": 78.91,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "3uTMwljOgDz2s6oXrM1BQO"
+        ],
+        "youtube": [
+          "v3LDiiy5pfA"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 272,
+      "rank": 274,
       "id": "chart-06872",
       "artist": "НА-НА",
       "title": "Зинаида",
@@ -8866,20 +8970,18 @@
         ],
         "isrc": [
           "FR10S2379791"
+        ],
+        "youtube": [
+          "FC60GJio1vA"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 273,
+      "rank": 275,
       "id": "chart-07261",
       "artist": "Irina Dubtsova",
       "title": "I Love You To The Moon",
@@ -8917,7 +9019,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 274,
+      "rank": 276,
       "id": "chart-05156",
       "artist": "Дмитрий Колдун",
       "title": "Princess",
@@ -8955,7 +9057,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 275,
+      "rank": 277,
       "id": "chart-00622",
       "artist": "Минин",
       "title": "Зелёный глаз",
@@ -8986,7 +9088,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 276,
+      "rank": 278,
       "id": "chart-00549",
       "artist": "FrozenGangBeatz",
       "title": "Запятые",
@@ -9017,7 +9119,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 277,
+      "rank": 279,
       "id": "chart-00539",
       "artist": "DK",
       "title": "Всё в порядке",
@@ -9048,7 +9150,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 278,
+      "rank": 280,
       "id": "chart-07343",
       "artist": "Nikolay Baskov",
       "title": "Heart On Heart",
@@ -9082,7 +9184,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 279,
+      "rank": 281,
       "id": "chart-00548",
       "artist": "BALKON",
       "title": "Ведьмы",
@@ -9113,7 +9215,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 280,
+      "rank": 282,
       "id": "chart-00711",
       "artist": "Gafur",
       "title": "Lollipop",
@@ -9122,27 +9224,29 @@
       ],
       "candidateScore": 77.66,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "1QmfSqTKuspgO4QZKJZWgP"
+        ],
+        "youtube": [
+          "OAVD4buFGmE"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 281,
+      "rank": 283,
       "id": "chart-05993",
       "artist": "Tacabro",
       "title": "Tacatа",
@@ -9179,7 +9283,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 282,
+      "rank": 284,
       "id": "chart-05245",
       "artist": "Tancy Minus",
       "title": "It's",
@@ -9216,7 +9320,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 283,
+      "rank": 285,
       "id": "chart-00601",
       "artist": "Мэйби Бэйби",
       "title": "Ахегао",
@@ -9247,7 +9351,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 284,
+      "rank": 286,
       "id": "chart-00729",
       "artist": "Dose",
       "title": "Солнце Золотое",
@@ -9278,7 +9382,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 285,
+      "rank": 287,
       "id": "chart-00570",
       "artist": "Mekhman",
       "title": "Копия пиратская",
@@ -9309,7 +9413,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 286,
+      "rank": 288,
       "id": "chart-09045",
       "artist": "Seryabkina",
       "title": "Бывшие",
@@ -9334,7 +9438,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 287,
+      "rank": 289,
       "id": "chart-05255",
       "artist": "Alla Pugacheva & Maxim Galkin",
       "title": "Thunderbirds",
@@ -9370,7 +9474,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 288,
+      "rank": 290,
       "id": "chart-00829",
       "artist": "конец солнечных дней",
       "title": "дети немой страны",
@@ -9401,7 +9505,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 289,
+      "rank": 291,
       "id": "chart-07304",
       "artist": "Denis Maydanov",
       "title": "Doomed To Love",
@@ -9438,7 +9542,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 290,
+      "rank": 292,
       "id": "chart-05269",
       "artist": "Dmitriy Malikov",
       "title": "Mine, Mine",
@@ -9472,7 +9576,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 291,
+      "rank": 293,
       "id": "chart-00693",
       "artist": "СЕРЕГА ПИРАТ",
       "title": "Тп на аме",
@@ -9503,7 +9607,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 292,
+      "rank": 294,
       "id": "chart-00676",
       "artist": "BODIEV",
       "title": "Крузак 200",
@@ -9512,28 +9616,31 @@
       ],
       "candidateScore": 76.57,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "3JtOCVKrs786JHQ02tdP9m"
+        ],
+        "youtube": [
+          "W0SIu6MKS_M"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 293,
+      "rank": 295,
       "id": "chart-00644",
       "artist": "Electroforez",
       "title": "Я ничего не могу с собою сделать",
@@ -9562,7 +9669,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 294,
+      "rank": 296,
       "id": "chart-00784",
       "artist": "Slattcrank",
       "title": "Семь семь [prod. by Mabemoda, Rallex]",
@@ -9593,7 +9700,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 295,
+      "rank": 297,
       "id": "chart-09200",
       "artist": "CHEPIKK",
       "title": "5 минут назад",
@@ -9602,23 +9709,26 @@
       ],
       "candidateScore": 76.39,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2026,
+      "candidateYears": [
+        {
+          "year": 2026,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "shazam-ru"
       ],
-      "externalIds": {},
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "externalIds": {
+        "youtube": [
+          "cvl8Q7QMEf0"
+        ]
+      },
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 296,
+      "rank": 298,
       "id": "chart-00552",
       "artist": "ЕГОР ШИП",
       "title": "Dior",
@@ -9649,7 +9759,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 297,
+      "rank": 299,
       "id": "chart-00892",
       "artist": "JEEMBO",
       "title": "FALLEN",
@@ -9679,7 +9789,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 298,
+      "rank": 300,
       "id": "chart-07347",
       "artist": "Allj & Era Istrefi",
       "title": "Sayonara Baby",
@@ -9717,7 +9827,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 299,
+      "rank": 301,
       "id": "chart-07322",
       "artist": "Emin",
       "title": "Tender",
@@ -9754,7 +9864,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 300,
+      "rank": 302,
       "id": "chart-00492",
       "artist": "VisaGangBeatz",
       "title": "БИЗНЕС",
@@ -9785,7 +9895,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 301,
+      "rank": 303,
       "id": "chart-05085",
       "artist": "Kristina Orbakayte",
       "title": "The Sun",
@@ -9822,7 +9932,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 302,
+      "rank": 304,
       "id": "chart-07357",
       "artist": "Vladimir Presnyakov",
       "title": "Only Where You Are",
@@ -9860,7 +9970,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 303,
+      "rank": 305,
       "id": "chart-00636",
       "artist": "MONEYKEN",
       "title": "Она не любит вино",
@@ -9891,7 +10001,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 304,
+      "rank": 306,
       "id": "chart-00660",
       "artist": "MATRANG",
       "title": "ПАТРИАРХАТ",
@@ -9900,28 +10010,31 @@
       ],
       "candidateScore": 74.12,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "1nWPjOyTB3syHbNDiqEgN2"
+        ],
+        "youtube": [
+          "b_poDGWyXmc"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 305,
+      "rank": 307,
       "id": "chart-05246",
       "artist": "Anna Sedokova",
       "title": "Getting Used To It",
@@ -9958,7 +10071,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 306,
+      "rank": 308,
       "id": "chart-00617",
       "artist": "Yanix",
       "title": "Стейк",
@@ -9989,7 +10102,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 307,
+      "rank": 309,
       "id": "chart-00692",
       "artist": "Daybe",
       "title": "Антикобыла (prod. by SHEEPY)",
@@ -10018,7 +10131,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 308,
+      "rank": 310,
       "id": "chart-03736",
       "artist": "Elvis Presley vs. Paul Oakenfold",
       "title": "Rubberneckin' (Рaul Oakenfold remix)",
@@ -10055,7 +10168,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 309,
+      "rank": 311,
       "id": "chart-00963",
       "artist": "METAN",
       "title": "Шнурки",
@@ -10086,7 +10199,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 310,
+      "rank": 312,
       "id": "chart-05232",
       "artist": "Roma Kenga",
       "title": "Where There's Love",
@@ -10123,7 +10236,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 311,
+      "rank": 313,
       "id": "chart-00761",
       "artist": "Krovostok",
       "title": "Амфибия",
@@ -10132,27 +10245,29 @@
       ],
       "candidateScore": 72.34,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "4OEFimDOokeMcxvWdmWbuI"
+        ],
+        "youtube": [
+          "AsZ_AT3cWSY"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 312,
+      "rank": 314,
       "id": "chart-07353",
       "artist": "Elena Temnikova",
       "title": "Heat",
@@ -10190,7 +10305,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 313,
+      "rank": 315,
       "id": "chart-00688",
       "artist": "Loqiemean",
       "title": "Одинокий каннибал",
@@ -10221,7 +10336,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 314,
+      "rank": 316,
       "id": "chart-00767",
       "artist": "My",
       "title": "Пожар",
@@ -10252,7 +10367,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 315,
+      "rank": 317,
       "id": "chart-05082",
       "artist": "Taisiya Povali",
       "title": "Ex",
@@ -10289,7 +10404,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 316,
+      "rank": 318,
       "id": "chart-00917",
       "artist": "Ирина Аллегрова & Григорий Лепс",
       "title": "Я тебе не верю",
@@ -10320,7 +10435,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 317,
+      "rank": 319,
       "id": "chart-00742",
       "artist": "Jakomo",
       "title": "Платина",
@@ -10351,7 +10466,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 318,
+      "rank": 320,
       "id": "chart-00918",
       "artist": "kirkiimad",
       "title": "ЛЕГО",
@@ -10382,7 +10497,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 319,
+      "rank": 321,
       "id": "chart-05275",
       "artist": "Jasmin",
       "title": "Eyelash",
@@ -10419,7 +10534,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 320,
+      "rank": 322,
       "id": "chart-00959",
       "artist": "Andrey Gubin",
       "title": "Ночь",
@@ -10450,7 +10565,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 321,
+      "rank": 323,
       "id": "pool-52f9d1611fac",
       "artist": "Наргиз и Максим Фадеев",
       "title": "Вдвоём",
@@ -10479,7 +10594,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 322,
+      "rank": 324,
       "id": "chart-00814",
       "artist": "We",
       "title": "Зеркало",
@@ -10510,7 +10625,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 323,
+      "rank": 325,
       "id": "pool-1aaf0819bd77",
       "artist": "Мумий Тролль",
       "title": "Невеста",
@@ -10538,7 +10653,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 324,
+      "rank": 326,
       "id": "pool-299c52be3df7",
       "artist": "Мэвл",
       "title": "Холодок",
@@ -10564,7 +10679,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 325,
+      "rank": 327,
       "id": "chart-07309",
       "artist": "Katya Rostovtseva",
       "title": "Brutalnyi Muzhchina",
@@ -10598,7 +10713,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 326,
+      "rank": 328,
       "id": "chart-00804",
       "artist": "Lida",
       "title": "Евробит",
@@ -10629,7 +10744,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 327,
+      "rank": 329,
       "id": "pool-c7d23f6e149b",
       "artist": "Ария",
       "title": "Беспечный ангел",
@@ -10638,22 +10753,26 @@
       ],
       "candidateScore": 68.8,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2004,
+      "candidateYears": [
+        {
+          "year": 2004,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "ztKl8qqZr0c"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 328,
+      "rank": 330,
       "id": "pool-f3ea9b3ff8d8",
       "artist": "Вирус",
       "title": "Ручки",
@@ -10681,7 +10800,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 329,
+      "rank": 331,
       "id": "pool-75c90dc316eb",
       "artist": "Джанго",
       "title": "Была не была",
@@ -10690,22 +10809,26 @@
       ],
       "candidateScore": 68.8,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2005,
+      "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "bnUOG2XoKmI"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 330,
+      "rank": 332,
       "id": "pool-70d47db82126",
       "artist": "СЛОТ",
       "title": "Мертвые звезды",
@@ -10714,27 +10837,30 @@
       ],
       "candidateScore": 68.7,
       "language": "russian",
-      "releaseYear": 2023,
+      "releaseYear": 2007,
       "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2023,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "F_f0ZxArFns"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 331,
+      "rank": 333,
       "id": "pool-d70ab4d40b0c",
       "artist": "ALEKSEEV",
       "title": "Океанами Стали",
@@ -10747,23 +10873,22 @@
       "candidateYears": [
         {
           "year": 2016,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "CL9a0szaOso"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 332,
+      "rank": 334,
       "id": "pool-ea032f55105c",
       "artist": "Стас Михайлов и Таисия Повалий",
       "title": "Отпусти",
@@ -10777,23 +10902,22 @@
       "candidateYears": [
         {
           "year": 2010,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "tt8fT-HMoFc"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 333,
+      "rank": 335,
       "id": "chart-00973",
       "artist": "SCIRENA",
       "title": "Конспект",
@@ -10824,7 +10948,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 334,
+      "rank": 336,
       "id": "pool-0ccb38627e5d",
       "artist": "Алексей Воробьев",
       "title": "Я тебя люблю",
@@ -10848,7 +10972,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 335,
+      "rank": 337,
       "id": "pool-1549bc3206d8",
       "artist": "Dabro",
       "title": "Я по частицам",
@@ -10872,7 +10996,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 336,
+      "rank": 338,
       "id": "chart-03995",
       "artist": "Thomas N'evergreen & Polina Griffith",
       "title": "Just Another Love Song (DJ Грув Remix)",
@@ -10910,7 +11034,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 337,
+      "rank": 339,
       "id": "pool-55efa4c43ba2",
       "artist": "TERNOVOY",
       "title": "Домофон",
@@ -10936,7 +11060,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 338,
+      "rank": 340,
       "id": "chart-00995",
       "artist": "ZOLOTO",
       "title": "Грустно на афтепати",
@@ -10945,27 +11069,29 @@
       ],
       "candidateScore": 67.95,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "2jZkZ9yvZpXw3ECTXcrwC9"
+        ],
+        "youtube": [
+          "8Tzvo4Mr3FI"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 339,
+      "rank": 341,
       "id": "pool-7f4e4cae442d",
       "artist": "Фактор 2",
       "title": "Война",
@@ -10974,22 +11100,26 @@
       ],
       "candidateScore": 67.8,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2004,
+      "candidateYears": [
+        {
+          "year": 2004,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "-j2GK74Sx78"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 340,
+      "rank": 342,
       "id": "pool-9820471f6ead",
       "artist": "Алсу",
       "title": "Иногда",
@@ -10998,15 +11128,11 @@
       ],
       "candidateScore": 67.7,
       "language": "russian",
-      "releaseYear": 1999,
+      "releaseYear": 2020,
       "candidateYears": [
         {
-          "year": 1999,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2020,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
@@ -11021,7 +11147,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 341,
+      "rank": 343,
       "id": "pool-0b3e3a5f099f",
       "artist": "Amirchik",
       "title": "Эта любовь",
@@ -11047,7 +11173,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 342,
+      "rank": 344,
       "id": "chart-07333",
       "artist": "Molly",
       "title": "Call My Number",
@@ -11084,7 +11210,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 343,
+      "rank": 345,
       "id": "pool-b732c830aaa1",
       "artist": "Нурминский",
       "title": "Ауфф",
@@ -11094,21 +11220,25 @@
       "candidateScore": 67.1,
       "language": "russian",
       "releaseYear": 2018,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "candidateYears": [
+        {
+          "year": 2018,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "mUr_x51RceA"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 344,
+      "rank": 346,
       "id": "pool-f56b33752c07",
       "artist": "ВАЛЕРИЯ",
       "title": "Таю",
@@ -11140,7 +11270,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 345,
+      "rank": 347,
       "id": "pool-4fb96ed38227",
       "artist": "Люся Чеботина",
       "title": "ПЛАКАЛ ГОЛЛИВУД",
@@ -11149,26 +11279,22 @@
       ],
       "candidateScore": 66.9,
       "language": "russian",
-      "releaseYear": 2022,
-      "candidateYears": [
-        {
-          "year": 2022,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "LwxqbivM898"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 346,
+      "rank": 348,
       "id": "pool-4a469ebddd80",
       "artist": "Ольга Бузова",
       "title": "Мало половин",
@@ -11194,7 +11320,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 347,
+      "rank": 349,
       "id": "pool-6b6fa6d58fe7",
       "artist": "Чай Вдвоем",
       "title": "День рождения",
@@ -11222,7 +11348,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 348,
+      "rank": 350,
       "id": "chart-01045",
       "artist": "Kush Lovers",
       "title": "20К",
@@ -11253,7 +11379,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 349,
+      "rank": 351,
       "id": "chart-01179",
       "artist": "V $ X V PRiNCE",
       "title": "На лету",
@@ -11285,7 +11411,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 350,
+      "rank": 352,
       "id": "pool-7eeac8d1f6d3",
       "artist": "ГОРОД 312",
       "title": "Фонари",
@@ -11309,7 +11435,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 351,
+      "rank": 353,
       "id": "pool-a46f999b9632",
       "artist": "Сергей Трофимов",
       "title": "Город Сочи",
@@ -11318,15 +11444,11 @@
       ],
       "candidateScore": 66.8,
       "language": "russian",
-      "releaseYear": 2007,
+      "releaseYear": 2016,
       "candidateYears": [
         {
-          "year": 2007,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2016,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
@@ -11341,7 +11463,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 352,
+      "rank": 354,
       "id": "pool-66e52424dcf1",
       "artist": "Глюкоза",
       "title": "Швайне",
@@ -11370,7 +11492,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 353,
+      "rank": 355,
       "id": "pool-36ec9477ec89",
       "artist": "Валерий Меладзе",
       "title": "Салют, Вера",
@@ -11379,26 +11501,22 @@
       ],
       "candidateScore": 66.6,
       "language": "russian",
-      "releaseYear": 2005,
-      "candidateYears": [
-        {
-          "year": 2005,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "y0o4j1qnO6Y"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 354,
+      "rank": 356,
       "id": "pool-1cf530f91605",
       "artist": "Uma2rman",
       "title": "Кажется",
@@ -11407,26 +11525,22 @@
       ],
       "candidateScore": 66.5,
       "language": "russian",
-      "releaseYear": 2009,
-      "candidateYears": [
-        {
-          "year": 2009,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "qtJwdrKkw0M"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 355,
+      "rank": 357,
       "id": "pool-8349ab506ff3",
       "artist": "MBAND",
       "title": "Невыносимая",
@@ -11454,7 +11568,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 356,
+      "rank": 358,
       "id": "chart-00754",
       "artist": "Eldzhey",
       "title": "Чупа Чупс",
@@ -11485,7 +11599,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 357,
+      "rank": 359,
       "id": "pool-ad61ee1028c1",
       "artist": "Юрий Лоза",
       "title": "Сто часов",
@@ -11513,7 +11627,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 358,
+      "rank": 360,
       "id": "pool-639b9c88c37c",
       "artist": "Анита Цой",
       "title": "Небо",
@@ -11526,23 +11640,22 @@
       "candidateYears": [
         {
           "year": 2007,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "2VeOOH6GmzQ"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 359,
+      "rank": 361,
       "id": "pool-512ce0988916",
       "artist": "Юта",
       "title": "Любимый Мой",
@@ -11555,23 +11668,22 @@
       "candidateYears": [
         {
           "year": 2014,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "yqmqbHJ8BaE"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 360,
+      "rank": 362,
       "id": "pool-38e1aa3dd812",
       "artist": "Артем Пивоваров",
       "title": "Кислород",
@@ -11597,7 +11709,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 361,
+      "rank": 363,
       "id": "chart-00316",
       "artist": "ZAPOMNI",
       "title": "Я всё решу (Intro)",
@@ -11626,7 +11738,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 362,
+      "rank": 364,
       "id": "chart-00967",
       "artist": "Mav-d",
       "title": "Темнота",
@@ -11657,7 +11769,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 363,
+      "rank": 365,
       "id": "pool-ea4162ccf28c",
       "artist": "Олег Кензов",
       "title": "По кайфу",
@@ -11683,7 +11795,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 364,
+      "rank": 366,
       "id": "pool-cb9143f5007e",
       "artist": "Elvira T",
       "title": "Такси",
@@ -11711,7 +11823,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 365,
+      "rank": 367,
       "id": "pool-1c41672edcfa",
       "artist": "Жасмин",
       "title": "Как ты мне нужен",
@@ -11720,27 +11832,30 @@
       ],
       "candidateScore": 65.3,
       "language": "russian",
-      "releaseYear": 2017,
+      "releaseYear": 2005,
       "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2017,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "YeUMsdUkk88"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 366,
+      "rank": 368,
       "id": "pool-64e4d62b9bf7",
       "artist": "Инфинити",
       "title": "Замечталась",
@@ -11768,7 +11883,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 367,
+      "rank": 369,
       "id": "chart-01037",
       "artist": "BOOKER",
       "title": "Некуда бежать",
@@ -11799,7 +11914,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 368,
+      "rank": 370,
       "id": "chart-01150",
       "artist": "Yamadzhi",
       "title": "Минимум",
@@ -11830,7 +11945,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 369,
+      "rank": 371,
       "id": "chart-07374",
       "artist": "Denis Klyaver",
       "title": "How Beautiful You Were",
@@ -11868,7 +11983,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 370,
+      "rank": 372,
       "id": "pool-d9bd397efec1",
       "artist": "Те100стерон",
       "title": "Это не женщина",
@@ -11898,7 +12013,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 371,
+      "rank": 373,
       "id": "pool-f3aa28b6672d",
       "artist": "Марсель",
       "title": "Предубеждение и Гордость",
@@ -11922,7 +12037,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 372,
+      "rank": 374,
       "id": "pool-3af54cd2fcdb",
       "artist": "Эд Шульжевский",
       "title": "По имени Настя",
@@ -11931,22 +12046,26 @@
       ],
       "candidateScore": 64.5,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2010,
+      "candidateYears": [
+        {
+          "year": 2010,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "N83ZQvFrj2M"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 373,
+      "rank": 375,
       "id": "chart-01041",
       "artist": "ANAZED",
       "title": "И я",
@@ -11977,7 +12096,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 374,
+      "rank": 376,
       "id": "pool-d91e28abfe35",
       "artist": "# 2Маши",
       "title": "Босая",
@@ -11986,22 +12105,26 @@
       ],
       "candidateScore": 64.4,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2018,
+      "candidateYears": [
+        {
+          "year": 2018,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "Vbtpm23ucw4"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 375,
+      "rank": 377,
       "id": "pool-3f978aeb7b39",
       "artist": "ФАБРИКА",
       "title": "Зажигают огоньки",
@@ -12010,22 +12133,26 @@
       ],
       "candidateScore": 64.3,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "Y_LhRw5bWx8"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 376,
+      "rank": 378,
       "id": "pool-58953a0cd212",
       "artist": "Зомб",
       "title": "Даже не половина",
@@ -12051,7 +12178,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 377,
+      "rank": 379,
       "id": "pool-613241fd98ac",
       "artist": "Miko",
       "title": "Девочка в тренде",
@@ -12077,7 +12204,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 378,
+      "rank": 380,
       "id": "pool-a3f57521d7f1",
       "artist": "Александр Рыбак",
       "title": "Небеса Европы",
@@ -12086,24 +12213,21 @@
       ],
       "candidateScore": 63.3,
       "language": "russian",
-      "releaseYear": 2010,
-      "candidateYears": [
-        {
-          "year": 2010,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "YQ-fkZVgJmY"
-        ]
-      },
-      "blockers": [],
-      "publicationProgress": 1
+      "externalIds": {},
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
-      "rank": 379,
+      "rank": 381,
       "id": "pool-c8776420d285",
       "artist": "LONE feat. MONATIK",
       "title": "Сон",
@@ -12113,22 +12237,26 @@
       ],
       "candidateScore": 63.2,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2016,
+      "candidateYears": [
+        {
+          "year": 2016,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "UCHROqiX0lI"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 380,
+      "rank": 382,
       "id": "chart-01354",
       "artist": "вышел покурить",
       "title": "вопрос",
@@ -12141,7 +12269,7 @@
       "candidateYears": [
         {
           "year": 2019,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -12150,20 +12278,18 @@
       "externalIds": {
         "spotify": [
           "0OQf2nxEo29HqO4iUuHCov"
+        ],
+        "youtube": [
+          "6nTgARJ19pU"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 381,
+      "rank": 383,
       "id": "chart-01376",
       "artist": "Misha Marvin",
       "title": "Французский поцелуй",
@@ -12194,7 +12320,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 382,
+      "rank": 384,
       "id": "chart-00911",
       "artist": "Rodionis",
       "title": "Цыгане из Парижа",
@@ -12225,7 +12351,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 383,
+      "rank": 385,
       "id": "pool-3d59d1c1f9db",
       "artist": "Total",
       "title": "Уходим на закат",
@@ -12249,7 +12375,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 384,
+      "rank": 386,
       "id": "chart-05154",
       "artist": "Tatyana Bulanova",
       "title": "Lyublyu I Skuchayu",
@@ -12287,7 +12413,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 385,
+      "rank": 387,
       "id": "pool-f47b2b8c5b66",
       "artist": "Вельвет",
       "title": "Прости",
@@ -12296,22 +12422,26 @@
       ],
       "candidateScore": 62.6,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2009,
+      "candidateYears": [
+        {
+          "year": 2009,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "EVniuJWXHsY"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 386,
+      "rank": 388,
       "id": "pool-907d05fe16e6",
       "artist": "Инь-Ян",
       "title": "Не Отпускай Моей Руки",
@@ -12320,22 +12450,26 @@
       ],
       "candidateScore": 62.6,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2010,
+      "candidateYears": [
+        {
+          "year": 2010,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "RisKqPxDOek"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 387,
+      "rank": 389,
       "id": "chart-07338",
       "artist": "Не указан",
       "title": "Gomf",
@@ -12372,7 +12506,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 388,
+      "rank": 390,
       "id": "chart-01028",
       "artist": "TVETH",
       "title": "Тринити",
@@ -12401,7 +12535,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 389,
+      "rank": 391,
       "id": "pool-09885d90d12b",
       "artist": "Денис Майданов",
       "title": "Ничего не жаль",
@@ -12425,7 +12559,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 390,
+      "rank": 392,
       "id": "pool-303d05f0e030",
       "artist": "Авраам Руссо",
       "title": "Знаю",
@@ -12454,7 +12588,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 391,
+      "rank": 393,
       "id": "pool-4b78cb053cbc",
       "artist": "RASA",
       "title": "Двое бывших",
@@ -12463,22 +12597,26 @@
       ],
       "candidateScore": 61.7,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2022,
+      "candidateYears": [
+        {
+          "year": 2022,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "qNB8NiQ5Q8I"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 392,
+      "rank": 394,
       "id": "chart-01163",
       "artist": "whyalive",
       "title": "Код",
@@ -12487,27 +12625,29 @@
       ],
       "candidateScore": 61.59,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "53shWqZYUcOCTM8bn6Z2nM"
+        ],
+        "youtube": [
+          "26y0Ehk9C_Y"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 393,
+      "rank": 395,
       "id": "pool-449222ede34c",
       "artist": "Ханна",
       "title": "Пули",
@@ -12530,7 +12670,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 394,
+      "rank": 396,
       "id": "pool-416e3ccd8181",
       "artist": "Тутси",
       "title": "Горький Шоколад",
@@ -12539,22 +12679,26 @@
       ],
       "candidateScore": 61,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2005,
+      "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "73hDuXYfM6s"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 395,
+      "rank": 397,
       "id": "pool-33f13073c9d8",
       "artist": "Сосо Павлиашвили",
       "title": "Помолимся за родителей",
@@ -12563,27 +12707,30 @@
       ],
       "candidateScore": 60.9,
       "language": "russian",
-      "releaseYear": 2012,
+      "releaseYear": 2007,
       "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2012,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "hPBG8szffCs"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 396,
+      "rank": 398,
       "id": "pool-8a44b6cccf19",
       "artist": "MITCHEL",
       "title": "Во Дворе Ходит Слух",
@@ -12609,7 +12756,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 397,
+      "rank": 399,
       "id": "pool-6151ca5c8df0",
       "artist": "МОХИТО",
       "title": "Руки прочь",
@@ -12635,7 +12782,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 398,
+      "rank": 400,
       "id": "chart-00981",
       "artist": "17 SEVENTEEN",
       "title": "Спать",
@@ -12666,7 +12813,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 399,
+      "rank": 401,
       "id": "chart-00946",
       "artist": "Ильич да Софья",
       "title": "Ой да на рейве",
@@ -12695,7 +12842,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 400,
+      "rank": 402,
       "id": "chart-01053",
       "artist": "Колос",
       "title": "Бiблiотека",
@@ -12726,7 +12873,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 401,
+      "rank": 403,
       "id": "chart-01225",
       "artist": "PALC",
       "title": "Тараканы",
@@ -12757,7 +12904,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 402,
+      "rank": 404,
       "id": "pool-f78465969448",
       "artist": "Непара",
       "title": "Плачь и смотри",
@@ -12770,23 +12917,22 @@
       "candidateYears": [
         {
           "year": 2006,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "WDMXcnzlhlM"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 403,
+      "rank": 405,
       "id": "pool-3ab76f640956",
       "artist": "Наташа Королёва",
       "title": "Синие лебеди",
@@ -12795,27 +12941,30 @@
       ],
       "candidateScore": 60.5,
       "language": "russian",
-      "releaseYear": 1995,
+      "releaseYear": 2002,
       "candidateYears": [
+        {
+          "year": 2002,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 1995,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "Zo2lpU_AKn0"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 404,
+      "rank": 406,
       "id": "pool-6a15a9a0c8c3",
       "artist": "Kristina Si",
       "title": "Тебе не будет больно",
@@ -12839,7 +12988,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 405,
+      "rank": 407,
       "id": "pool-27f872a97e0b",
       "artist": "ОЛЕГ МАЙАМИ",
       "title": "Ты ветер я вода",
@@ -12865,7 +13014,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 406,
+      "rank": 408,
       "id": "pool-e48b5d67d0e4",
       "artist": "Братья Грим",
       "title": "Кустурица",
@@ -12874,22 +13023,26 @@
       ],
       "candidateScore": 60,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2005,
+      "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "kV8MuZsytF0"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 407,
+      "rank": 409,
       "id": "chart-01277",
       "artist": "Colorit",
       "title": "Быстро",
@@ -12924,7 +13077,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 408,
+      "rank": 410,
       "id": "chart-00964",
       "artist": "DOROFEEVA",
       "title": "Невеста",
@@ -12955,7 +13108,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 409,
+      "rank": 411,
       "id": "chart-01018",
       "artist": "LAUD",
       "title": "Пули",
@@ -12986,7 +13139,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 410,
+      "rank": 412,
       "id": "chart-01079",
       "artist": "Александр Гудков",
       "title": "Аквадискотека",
@@ -13017,7 +13170,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 411,
+      "rank": 413,
       "id": "chart-01048",
       "artist": "Basic Boy",
       "title": "Удачи",
@@ -13048,7 +13201,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 412,
+      "rank": 414,
       "id": "chart-01231",
       "artist": "ДЕТИ RAVE",
       "title": "Икры и Сала",
@@ -13061,7 +13214,7 @@
       "candidateYears": [
         {
           "year": 2020,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -13070,20 +13223,18 @@
       "externalIds": {
         "spotify": [
           "6eHKoMFFoMJ4cWwPscl382"
+        ],
+        "youtube": [
+          "aAQWJKQ8Lzo"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 413,
+      "rank": 415,
       "id": "chart-01557",
       "artist": "Kara Kross",
       "title": "Поколение",
@@ -13114,7 +13265,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 414,
+      "rank": 416,
       "id": "chart-01643",
       "artist": "LILCAK3",
       "title": "КАТЮХА",
@@ -13123,27 +13274,29 @@
       ],
       "candidateScore": 56.91,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "3zp2XaUzXPoEMpOBzMz7JQ"
+        ],
+        "youtube": [
+          "DimXBZnWMLw"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 415,
+      "rank": 417,
       "id": "chart-00924",
       "artist": "SHOOVAL",
       "title": "Мы открываем бизнес (Skit)",
@@ -13177,7 +13330,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 416,
+      "rank": 418,
       "id": "chart-01186",
       "artist": "25/17",
       "title": "Северная страна",
@@ -13210,7 +13363,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 417,
+      "rank": 419,
       "id": "chart-01080",
       "artist": "M'Dee",
       "title": "Петербург",
@@ -13241,7 +13394,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 418,
+      "rank": 420,
       "id": "chart-01184",
       "artist": "Magnum Opus",
       "title": "Новенький",
@@ -13270,7 +13423,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 419,
+      "rank": 421,
       "id": "chart-01227",
       "artist": "MAX",
       "title": "Blueberry Eyes",
@@ -13299,7 +13452,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 420,
+      "rank": 422,
       "id": "chart-01659",
       "artist": "Автостопом по фазе сна",
       "title": "Опианариум",
@@ -13334,7 +13487,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 421,
+      "rank": 423,
       "id": "chart-01654",
       "artist": "забей, лерочка",
       "title": "каждый, кто делал тебе больно",
@@ -13370,7 +13523,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 422,
+      "rank": 424,
       "id": "chart-01260",
       "artist": "Murovei",
       "title": "Пробегал мимо",
@@ -13401,7 +13554,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 423,
+      "rank": 425,
       "id": "chart-01349",
       "artist": "Сны Саламандры",
       "title": "Экзорцизм",
@@ -13435,7 +13588,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 424,
+      "rank": 426,
       "id": "chart-01344",
       "artist": "HLEB",
       "title": "Choco",
@@ -13465,7 +13618,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 425,
+      "rank": 427,
       "id": "chart-01379",
       "artist": "Thomas Mraz",
       "title": "Мой вайб",
@@ -13496,7 +13649,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 426,
+      "rank": 428,
       "id": "chart-01202",
       "artist": "VELIAL SQUAD",
       "title": "Глубина (prod. by Young Royce & Meep)",
@@ -13527,7 +13680,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 427,
+      "rank": 429,
       "id": "chart-01254",
       "artist": "Vitya AK",
       "title": "Не раз убивало",
@@ -13536,27 +13689,29 @@
       ],
       "candidateScore": 53.13,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "3dZgiru1ozOBYyGeLVJFnd"
+        ],
+        "youtube": [
+          "Pj6w83vb5MU"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 428,
+      "rank": 430,
       "id": "chart-05252",
       "artist": "Anita Tsoy",
       "title": "Lip Scotch",
@@ -13593,7 +13748,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 429,
+      "rank": 431,
       "id": "chart-00788",
       "artist": "Adecvat_production",
       "title": "За цвет голубых очей (Remix)",
@@ -13622,7 +13777,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 430,
+      "rank": 432,
       "id": "chart-01233",
       "artist": "рудбой",
       "title": "Сказка о потерянном времени",
@@ -13653,7 +13808,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 431,
+      "rank": 433,
       "id": "chart-01709",
       "artist": "Серебряная свадьба",
       "title": "Я жизнь люблю...",
@@ -13662,15 +13817,11 @@
       ],
       "candidateScore": 51.62,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2012,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2012,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -13688,7 +13839,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 432,
+      "rank": 434,
       "id": "chart-01300",
       "artist": "I61",
       "title": "Выходные",
@@ -13697,27 +13848,29 @@
       ],
       "candidateScore": 51.62,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "7p65QrEiV0iRt0afL80k9S"
+        ],
+        "youtube": [
+          "oiIw-G9yaFU"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 433,
+      "rank": 435,
       "id": "chart-01208",
       "artist": "INDABLACK",
       "title": "Туда-обратно",
@@ -13746,7 +13899,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 434,
+      "rank": 436,
       "id": "chart-01343",
       "artist": "Ivan Dorn",
       "title": "Кроме тебя",
@@ -13776,7 +13929,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 435,
+      "rank": 437,
       "id": "chart-01251",
       "artist": "Midix",
       "title": "Слышу как ты дышишь",
@@ -13807,7 +13960,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 436,
+      "rank": 438,
       "id": "chart-01088",
       "artist": "Verka Serduchka",
       "title": "Новогодняя",
@@ -13838,7 +13991,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 437,
+      "rank": 439,
       "id": "chart-04960",
       "artist": "Boombox",
       "title": "To The Janitors",
@@ -13875,7 +14028,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 438,
+      "rank": 440,
       "id": "chart-02073",
       "artist": "Нина Бродская",
       "title": "Звенит январская вьюга",
@@ -13910,7 +14063,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 439,
+      "rank": 441,
       "id": "chart-01502",
       "artist": "Куок",
       "title": "Воздух",
@@ -13945,7 +14098,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 440,
+      "rank": 442,
       "id": "chart-05196",
       "artist": "Boris Moiseev & Layma Vaykule",
       "title": "Baltic Romance",
@@ -13984,7 +14137,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 441,
+      "rank": 443,
       "id": "chart-01911",
       "artist": "Egor Nats",
       "title": "Хочу к тебе",
@@ -14015,7 +14168,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 442,
+      "rank": 444,
       "id": "chart-01364",
       "artist": "KURT92",
       "title": "В Потолок",
@@ -14024,27 +14177,29 @@
       ],
       "candidateScore": 49.92,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "0lTvAEk6nJ3bFjAQ3kbGSn"
+        ],
+        "youtube": [
+          "M5GHe5pxwoA"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 443,
+      "rank": 445,
       "id": "chart-01562",
       "artist": "OWEEK",
       "title": "Танцуй",
@@ -14075,7 +14230,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 444,
+      "rank": 446,
       "id": "pool-128d46828794",
       "artist": "ВИА Сливки",
       "title": "Куда уходит детство",
@@ -14088,20 +14243,22 @@
       "candidateYears": [
         {
           "year": 2001,
-          "source": "quiz-ready-pool"
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "WOGMyUqJuzU"
-        ]
-      },
-      "blockers": [],
-      "publicationProgress": 1
+      "externalIds": {},
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
-      "rank": 445,
+      "rank": 447,
       "id": "pool-c50b6c954054",
       "artist": "Рок-Группа",
       "title": "Попса",
@@ -14124,7 +14281,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 446,
+      "rank": 448,
       "id": "pool-e2af0cf3fa8f",
       "artist": "Юрий Шатунов",
       "title": "Детство",
@@ -14152,7 +14309,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 447,
+      "rank": 449,
       "id": "pool-8b2d81c70d70",
       "artist": "Demo",
       "title": "2000 лет",
@@ -14161,69 +14318,17 @@
       ],
       "candidateScore": 49.9,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.25
-    },
-    {
-      "rank": 448,
-      "id": "pool-1ebd3a7029a7",
-      "artist": "Lumen",
-      "title": "Государство",
-      "artistIds": [
-        "lumen"
-      ],
-      "candidateScore": 49.9,
-      "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.25
-    },
-    {
-      "rank": 449,
-      "id": "pool-973a19b01114",
-      "artist": "Горячий Шоколад",
-      "title": "Береги",
-      "artistIds": [
-        "goryachiishokolad"
-      ],
-      "candidateScore": 49.7,
-      "language": "russian",
-      "releaseYear": 2009,
+      "releaseYear": 1999,
       "candidateYears": [
         {
-          "year": 2009,
+          "year": 1999,
           "source": "quiz-ready-pool"
-        },
-        {
-          "year": 2010,
-          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
       "externalIds": {
         "youtube": [
-          "syv-84jabbQ"
+          "ATDDDw1N_VU"
         ]
       },
       "blockers": [
@@ -14233,6 +14338,63 @@
     },
     {
       "rank": 450,
+      "id": "pool-1ebd3a7029a7",
+      "artist": "Lumen",
+      "title": "Государство",
+      "artistIds": [
+        "lumen"
+      ],
+      "candidateScore": 49.9,
+      "language": "russian",
+      "releaseYear": 2005,
+      "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        }
+      ],
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "J9fAvi1T-e4"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
+    },
+    {
+      "rank": 451,
+      "id": "pool-973a19b01114",
+      "artist": "Горячий Шоколад",
+      "title": "Береги",
+      "artistIds": [
+        "goryachiishokolad"
+      ],
+      "candidateScore": 49.7,
+      "language": "russian",
+      "releaseYear": 2010,
+      "candidateYears": [
+        {
+          "year": 2010,
+          "source": "musicbrainz-search"
+        }
+      ],
+      "sourceIds": [],
+      "externalIds": {},
+      "blockers": [
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.25
+    },
+    {
+      "rank": 452,
       "id": "pool-d23abda574e0",
       "artist": "Разные Люди",
       "title": "Никогда не вернусь",
@@ -14258,7 +14420,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 451,
+      "rank": 453,
       "id": "pool-adb81a3f2ecf",
       "artist": "Смысловые Галлюцинации",
       "title": "Полюса",
@@ -14267,26 +14429,22 @@
       ],
       "candidateScore": 49.7,
       "language": "russian",
-      "releaseYear": 2005,
-      "candidateYears": [
-        {
-          "year": 2005,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "DjYs4atrRfk"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 452,
+      "rank": 454,
       "id": "pool-a422278444c5",
       "artist": "DONI feat Сати Казанова",
       "title": "Я украду",
@@ -14315,7 +14473,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 453,
+      "rank": 455,
       "id": "pool-7b309969d1d4",
       "artist": "TOKiO",
       "title": "Кто я без тебя",
@@ -14343,7 +14501,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 454,
+      "rank": 456,
       "id": "pool-600c82b253c8",
       "artist": "VITAS",
       "title": "7-ой элемент",
@@ -14371,7 +14529,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 455,
+      "rank": 457,
       "id": "pool-80819227ce68",
       "artist": "DJ Бойко",
       "title": "Трава",
@@ -14397,7 +14555,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 456,
+      "rank": 458,
       "id": "pool-5673a444c01f",
       "artist": "ПИЛОТ",
       "title": "Ждите солнца",
@@ -14406,22 +14564,26 @@
       ],
       "candidateScore": 49.4,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2005,
+      "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "Z74n_0-q3yo"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 457,
+      "rank": 459,
       "id": "pool-07b814efb408",
       "artist": "Quest Pistols",
       "title": "Белая стрекоза любви",
@@ -14449,7 +14611,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 458,
+      "rank": 460,
       "id": "pool-cfc19a4fac2a",
       "artist": "Ляпис Трубецкой",
       "title": "Почтальоны",
@@ -14458,22 +14620,26 @@
       ],
       "candidateScore": 49.3,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2004,
+      "candidateYears": [
+        {
+          "year": 2004,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "WPk5zqFvTCU"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 459,
+      "rank": 461,
       "id": "pool-ad2056f5fd90",
       "artist": "BIFFGUYZ ft. Bovie & Rox",
       "title": "Я тебя Бум Бум Бум",
@@ -14501,7 +14667,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 460,
+      "rank": 462,
       "id": "pool-989f4613b615",
       "artist": "Reflex",
       "title": "Падали звёзды",
@@ -14510,30 +14676,27 @@
       ],
       "candidateScore": 49.3,
       "language": "russian",
-      "releaseYear": 2003,
+      "releaseYear": 2014,
       "candidateYears": [
-        {
-          "year": 2003,
-          "source": "quiz-ready-pool"
-        },
         {
           "year": 2014,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "_VTTdrUheIc"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 461,
+      "rank": 463,
       "id": "pool-893c57f1d43d",
       "artist": "Андрей Губин",
       "title": "Девушки, как звёзды",
@@ -14561,7 +14724,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 462,
+      "rank": 464,
       "id": "pool-ecd187364300",
       "artist": "Эльбрус Джанмирзоев и Alexandros Tsopozidis",
       "title": "БРОДЯГА",
@@ -14588,7 +14751,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 463,
+      "rank": 465,
       "id": "pool-e89ce55bf676",
       "artist": "Open Kids ft. Quest Pistols Show",
       "title": "Круче всех",
@@ -14613,7 +14776,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 464,
+      "rank": 466,
       "id": "pool-39e561fe12db",
       "artist": "Остап Парфенов & Nvkrn134",
       "title": "Ты не королева",
@@ -14640,7 +14803,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 465,
+      "rank": 467,
       "id": "pool-6cc5e2a040e8",
       "artist": "Отпетые мошенники",
       "title": "Девушки бывают разные",
@@ -14664,7 +14827,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 466,
+      "rank": 468,
       "id": "pool-cddcc19ebb66",
       "artist": "Tony Igy",
       "title": "Astronomia",
@@ -14690,7 +14853,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 467,
+      "rank": 469,
       "id": "pool-590dcdf62122",
       "artist": "Алиса",
       "title": "Веретено",
@@ -14703,23 +14866,22 @@
       "candidateYears": [
         {
           "year": 2001,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "R5g5sLLZme8"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 468,
+      "rank": 470,
       "id": "pool-740c76211c25",
       "artist": "Бумбокс",
       "title": "Вахтерам",
@@ -14728,27 +14890,30 @@
       ],
       "candidateScore": 49,
       "language": "russian",
-      "releaseYear": 2017,
+      "releaseYear": 2007,
       "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2017,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "tnZPDs9qepA"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 469,
+      "rank": 471,
       "id": "pool-e4c53c785c24",
       "artist": "Герр Антон",
       "title": "Одинокии мужчина",
@@ -14774,7 +14939,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 470,
+      "rank": 472,
       "id": "pool-4972bbf44044",
       "artist": "Доминик Джокер",
       "title": "Такая одна",
@@ -14802,7 +14967,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 471,
+      "rank": 473,
       "id": "pool-6c48e0d548ba",
       "artist": "Мара",
       "title": "Чё на чём",
@@ -14811,22 +14976,26 @@
       ],
       "candidateScore": 49,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2004,
+      "candidateYears": [
+        {
+          "year": 2004,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "bvf7hjs9owE"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 472,
+      "rank": 474,
       "id": "pool-2c10055b4416",
       "artist": "Triplex vs Apocalyptica",
       "title": "Бой с тенью",
@@ -14849,30 +15018,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 473,
-      "id": "pool-4b4e20150c06",
-      "artist": "Влади",
-      "title": "Сочиняй Мечты ft. Уля",
-      "artistIds": [
-        "vladi"
-      ],
-      "candidateScore": 48.9,
-      "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
-    },
-    {
-      "rank": 474,
+      "rank": 475,
       "id": "pool-31cedd214453",
       "artist": "23_45",
       "title": "Друг без друга",
@@ -14896,7 +15042,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 475,
+      "rank": 476,
       "id": "pool-2a3e179cf638",
       "artist": "Катя Лель",
       "title": "Мой мармеладный",
@@ -14905,27 +15051,30 @@
       ],
       "candidateScore": 48.8,
       "language": "russian",
-      "releaseYear": 2004,
+      "releaseYear": 2003,
       "candidateYears": [
+        {
+          "year": 2003,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2004,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "rsXJ7KApMU8"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 476,
+      "rank": 477,
       "id": "pool-84f65336c36e",
       "artist": "ЧАЙФ",
       "title": "Время не ждёт",
@@ -14934,22 +15083,26 @@
       ],
       "candidateScore": 48.8,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2001,
+      "candidateYears": [
+        {
+          "year": 2001,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "BLLL4cpqw9w"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 477,
+      "rank": 478,
       "id": "pool-73a1e6ce9298",
       "artist": "Dan Balan",
       "title": "Лишь до утра",
@@ -14958,27 +15111,30 @@
       ],
       "candidateScore": 48.8,
       "language": "russian",
-      "releaseYear": 2012,
+      "releaseYear": 2011,
       "candidateYears": [
+        {
+          "year": 2011,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2012,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "YT2ojzrs70k"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 478,
+      "rank": 479,
       "id": "pool-0ed507078e48",
       "artist": "T-Fest Х Скриптонит",
       "title": "Ламбада",
@@ -14987,24 +15143,21 @@
       ],
       "candidateScore": 48.8,
       "language": "russian",
-      "releaseYear": 2017,
-      "candidateYears": [
-        {
-          "year": 2017,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "TL5leSWjudM"
-        ]
-      },
-      "blockers": [],
-      "publicationProgress": 1
+      "externalIds": {},
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
-      "rank": 479,
+      "rank": 480,
       "id": "pool-dc055169f8a0",
       "artist": "Танцы минус",
       "title": "Романтика",
@@ -15013,27 +15166,30 @@
       ],
       "candidateScore": 48.6,
       "language": "russian",
-      "releaseYear": 2006,
+      "releaseYear": 2004,
       "candidateYears": [
+        {
+          "year": 2004,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2006,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "C-DOg4UPIvo"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 480,
+      "rank": 481,
       "id": "pool-75f5a622f2b1",
       "artist": "Чи",
       "title": "Ли - Любовь - это яд",
@@ -15056,7 +15212,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 481,
+      "rank": 482,
       "id": "pool-9dbb1ebd7d58",
       "artist": "GRIVINA",
       "title": "Я хочу",
@@ -15082,7 +15238,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 482,
+      "rank": 483,
       "id": "pool-5a8e7e239ae5",
       "artist": "Афродита",
       "title": "Валера",
@@ -15108,7 +15264,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 483,
+      "rank": 484,
       "id": "pool-2d7195e0d6c3",
       "artist": "Дельфин",
       "title": "Кокон",
@@ -15132,7 +15288,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 484,
+      "rank": 485,
       "id": "chart-00910",
       "artist": "Niman",
       "title": "Талия - Remix by Karma",
@@ -15161,7 +15317,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 485,
+      "rank": 486,
       "id": "pool-c0b858ea8e1b",
       "artist": "Все Включено",
       "title": "Девочка Столичная",
@@ -15189,40 +15345,12 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 486,
+      "rank": 487,
       "id": "pool-4e2094a3032d",
       "artist": "Грибы",
       "title": "Копы",
       "artistIds": [
         "griby"
-      ],
-      "candidateScore": 48.4,
-      "language": "russian",
-      "releaseYear": 2016,
-      "candidateYears": [
-        {
-          "year": 2016,
-          "source": "quiz-ready-pool"
-        }
-      ],
-      "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "OVqW4tFR-gc"
-        ]
-      },
-      "blockers": [
-        "artist-already-used"
-      ],
-      "publicationProgress": 0.875
-    },
-    {
-      "rank": 487,
-      "id": "pool-13127b6fa937",
-      "artist": "Кристина Орбакайте",
-      "title": "Май",
-      "artistIds": [
-        "kristinaorbakaite"
       ],
       "candidateScore": 48.4,
       "language": "russian",
@@ -15242,6 +15370,34 @@
     },
     {
       "rank": 488,
+      "id": "pool-13127b6fa937",
+      "artist": "Кристина Орбакайте",
+      "title": "Май",
+      "artistIds": [
+        "kristinaorbakaite"
+      ],
+      "candidateScore": 48.4,
+      "language": "russian",
+      "releaseYear": 2000,
+      "candidateYears": [
+        {
+          "year": 2000,
+          "source": "quiz-ready-pool"
+        }
+      ],
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "Kf1LtxpHB0E"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
+    },
+    {
+      "rank": 489,
       "id": "pool-a82b9cf65634",
       "artist": "СЕРЕГА",
       "title": "Черный бумер",
@@ -15250,22 +15406,26 @@
       ],
       "candidateScore": 48.4,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2004,
+      "candidateYears": [
+        {
+          "year": 2004,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "4SV7iN5ivgs"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 489,
+      "rank": 490,
       "id": "pool-83f3a53109ca",
       "artist": "Алена Апина и Лолита",
       "title": "Песня о женской дружбе",
@@ -15290,7 +15450,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 490,
+      "rank": 491,
       "id": "pool-45a9c613e344",
       "artist": "Ивангай ft. TRINERGY",
       "title": "ХАЮХАЙ",
@@ -15317,7 +15477,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 491,
+      "rank": 492,
       "id": "pool-3051a079f421",
       "artist": "Buranovskiye Babushki",
       "title": "Party For Everybody",
@@ -15343,7 +15503,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 492,
+      "rank": 493,
       "id": "pool-09237f2a0092",
       "artist": "Михей",
       "title": "Сука Любовь",
@@ -15369,7 +15529,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 493,
+      "rank": 494,
       "id": "pool-39745c07d814",
       "artist": "Ночные Снайперы",
       "title": "Ты дарила мне розы",
@@ -15393,7 +15553,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 494,
+      "rank": 495,
       "id": "pool-ed03bf1ad2ff",
       "artist": "Провода",
       "title": "Про Кино",
@@ -15419,7 +15579,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 495,
+      "rank": 496,
       "id": "pool-22ac25cf322d",
       "artist": "Bad B. Альянс",
       "title": "Надежда На Завтра",
@@ -15442,7 +15602,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 496,
+      "rank": 497,
       "id": "pool-56b3ec5a8466",
       "artist": "Enjoykin",
       "title": "Котлетки с Пюрешкой",
@@ -15468,7 +15628,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 497,
+      "rank": 498,
       "id": "pool-d44da720740d",
       "artist": "MACHETE",
       "title": "Между Висками",
@@ -15477,22 +15637,26 @@
       ],
       "candidateScore": 48.2,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2013,
+      "candidateYears": [
+        {
+          "year": 2013,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "2DFo3FOW6O4"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 498,
+      "rank": 499,
       "id": "pool-7cc8f3f1f368",
       "artist": "Джарахов",
       "title": "POKEBALL",
@@ -15501,22 +15665,26 @@
       ],
       "candidateScore": 48.1,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2016,
+      "candidateYears": [
+        {
+          "year": 2016,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "6PmrsXPrP0I"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 499,
+      "rank": 500,
       "id": "pool-56506dd23b5f",
       "artist": "Pанетки",
       "title": "Это все о ней",
@@ -15537,34 +15705,6 @@
         "playable-fragment"
       ],
       "publicationProgress": 0.375
-    },
-    {
-      "rank": 500,
-      "id": "pool-b6cfb819a03f",
-      "artist": "Милана Хаметова",
-      "title": "Купи Пёсика",
-      "artistIds": [
-        "milanahametova"
-      ],
-      "candidateScore": 48,
-      "language": "russian",
-      "releaseYear": 2022,
-      "candidateYears": [
-        {
-          "year": 2022,
-          "source": "quiz-ready-pool"
-        }
-      ],
-      "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "ixidX4_77Bo"
-        ]
-      },
-      "blockers": [
-        "artist-already-used"
-      ],
-      "publicationProgress": 0.875
     }
   ]
 }

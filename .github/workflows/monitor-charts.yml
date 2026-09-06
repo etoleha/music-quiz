@@ -40,6 +40,9 @@ jobs:
             data/song-database.json.gz \
             data/song-database.json.gz.part-01 \
             data/song-database.json.gz.part-02 \
+            data/song-database.json.gz.part-03 \
+            data/song-database.json.gz.part-04 \
+            data/song-database.json.gz.part-05 \
             data/song-database-review.json \
             data/quiz-candidates.json
           if git diff --cached --quiet; then

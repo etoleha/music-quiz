@@ -7,7 +7,7 @@ const valueOf = (value: string | string[] | undefined) => Array.isArray(value) ?
 const filtersFrom = (params: Record<string, string | string[] | undefined>): CatalogFilters => Object.fromEntries(
   Object.entries(params).map(([key, value]) => [key, valueOf(value)]),
 );
-const label = (value: string) => ({ russian: "русский", foreign: "иностранный", mixed: "смешанный", unknown: "не определён", waiting: "ожидает", used: "использована", rejected: "отклонена" }[value] || value);
+const label = (value: string) => ({ russian: "русский", foreign: "иностранный", mixed: "смешанный", unknown: "не определён", waiting: "ожидает", used: "использована", rejected: "отклонена", catalogued: "в каталоге", enriched: "обогащена", "technical-ready": "технически готова", selected: "выбрана", verified: "проверена", published: "опубликована", quarantined: "карантин" }[value] || value);
 
 export default async function CatalogPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const filters = filtersFrom(await searchParams);
@@ -25,7 +25,7 @@ export default async function CatalogPage({ searchParams }: { searchParams: Prom
       <article><strong>{Number(result.stats.readyForUniqueArtistQuiz).toLocaleString("ru-RU")}</strong><span>с новыми исполнителями</span></article>
       <article><strong>{Number(result.stats.withCandidateReleaseYear).toLocaleString("ru-RU")}</strong><span>есть кандидат года</span></article>
       <article><strong>{Number(result.stats.withAutomaticEnrichment || 0).toLocaleString("ru-RU")}</strong><span>найдена подробная справка</span></article>
-      <article><strong>{Number(result.stats.readyForPublication).toLocaleString("ru-RU")}</strong><span>полностью готовы</span></article>
+      <article><strong>{Number(result.stats.officiallyVerified || 0).toLocaleString("ru-RU")}</strong><span>официально проверены</span></article>
     </section>
     <form className="catalog-filters">
       <label>Поиск<input name="q" defaultValue={filters.q} placeholder="Исполнитель или песня" /></label>
@@ -38,8 +38,8 @@ export default async function CatalogPage({ searchParams }: { searchParams: Prom
     </form>
     <div className="catalog-table-wrap"><table className="catalog-table"><thead><tr><th>Песня</th><th>Год</th><th>Статус</th><th>Исполнители</th><th>Источники</th><th>Готовность</th></tr></thead><tbody>{result.songs.map((song) => <tr key={song.id}>
       <td><strong>{song.artist} — {song.title}</strong><small>{song.id}</small></td>
-      <td>{song.release.releaseYear ? <span title={song.release.releaseYearStatus === "verified" ? "Подтверждено" : "Нужно подтвердить"}>{song.release.releaseYearStatus === "verified" ? "" : "≈ "}{song.release.releaseYear}</span> : "—"}</td>
-      <td><span className={`catalog-status ${song.status.workflow}`}>{label(song.status.workflow)}</span><small>{label(song.status.language)}</small></td>
+      <td>{song.officialReleaseYear || song.release.releaseYear ? <span title={song.officialReleaseYear || song.release.releaseYearStatus === "verified" ? "Подтверждено" : "Нужно подтвердить"}>{song.officialReleaseYear || song.release.releaseYearStatus === "verified" ? "" : "≈ "}{song.officialReleaseYear || song.release.releaseYear}</span> : "—"}</td>
+      <td><span className={`catalog-status ${song.officialStatus}`}>{label(song.officialStatus)}</span><small>{label(song.status.language)} · {song.officialChecks}/10</small></td>
       <td>{song.usedArtistIds.length ? <span className="catalog-warning">есть использованные</span> : <span className="catalog-ok">все новые</span>}<small>{song.artistIds.length} {song.artistIds.length === 1 ? "сущность" : "участника"}</small></td>
       <td><span>{song.chart?.sourceIds.length || 0}</span><small>{song.candidateScore.toFixed(1)} балла</small></td>
       <td><div className="catalog-readiness" title="Личность · примерный год · ролик · игровой фрагмент"><i className={song.readyForCuration ? "done" : ""} /><i className={song.release.releaseYear ? "done" : ""} /><i className={song.externalIds.youtube?.length ? "done" : ""} /><i className={song.readyForPublication ? "done" : ""} /></div></td>

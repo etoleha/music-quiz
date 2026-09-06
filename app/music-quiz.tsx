@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BarChart3, Check, ChevronRight, CirclePlay, ExternalLink, Flag, Headphones, History, Library, Music2, RotateCcw, Share2, TriangleAlert, Volume2 } from "lucide-react";
+import { BarChart3, Check, ChevronRight, CirclePlay, Disc3, ExternalLink, Flag, Gauge, Headphones, History, Library, Music2, RotateCcw, Share2, ShieldCheck, Sparkles, TriangleAlert, UsersRound, Volume2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -24,10 +24,16 @@ type ArtistInfo = {
   artistUrl?: string;
   releaseYear?: number;
   releaseYearStatus?: "candidate" | "verified";
-  album?: { title: string; kind?: string; year?: number; coverUrl?: string };
-  members?: Array<{ name: string; roles?: string[]; since?: string }>;
+  versionYear?: number;
+  album?: { title: string; kind?: string; year?: number; coverUrl?: string; sourceUrl?: string };
+  members?: Array<{ name: string; roles?: string[]; role?: string; since?: string; highlighted?: boolean }>;
   image?: { url: string; attribution?: string; license?: string; licenseUrl?: string; sourceUrl?: string };
   facts?: Array<{ text: string; sourceUrl?: string }>;
+  credits?: Array<{ role: string; names: string[] }>;
+  soundtrack?: { title: string; kind?: string; year?: number; sourceUrl?: string };
+  difficulty?: { band: "recognizable" | "middle" | "deep"; score: number; explanation: string; basis?: string[] };
+  verification?: { status: "verified" | "published"; verifiedChecks: number; totalChecks: number };
+  sources?: Array<{ provider: string; url: string }>;
 };
 
 declare global {
@@ -70,6 +76,37 @@ const formatClipTime = (seconds: number) => {
   const safeSeconds = Math.max(0, Math.ceil(seconds));
   return `${Math.floor(safeSeconds / 60)}:${String(safeSeconds % 60).padStart(2, "0")}`;
 };
+
+const difficultyLabel = { recognizable: "знакомая", middle: "средняя", deep: "сложная" } as const;
+const releaseKindLabel = (kind?: string) => ({ album: "альбом", single: "сингл", soundtrack: "саундтрек", archive: "архивная запись", release: "релиз" }[kind || ""] || "релиз");
+
+function TrackReferenceCard({ info, track }: { info?: ArtistInfo; track: Track }) {
+  if (!info || info.status === "loading") return <div className="artist-info loading"><span className="artist-info-placeholder">Собираю проверенную карточку песни…</span></div>;
+  if (info.status === "error") return <div className="artist-info error"><span className="artist-info-placeholder">Дополнительная справка для этой песни пока готовится.</span></div>;
+  const sources = [...new Map((info.sources || []).map((source) => [source.url, source])).values()].slice(0, 4);
+  const yearLine = info.releaseYear || track.releaseYear;
+  return <div className="artist-info ready">
+    <div className="reference-media">
+      {info.image?.url && <figure>{info.image.sourceUrl ? <a className="reference-image-link" href={info.image.sourceUrl} target="_blank" rel="noreferrer"><img src={info.image.url} alt={`Фото: ${track.artist}`} loading="lazy" /><span>Фото исполнителя <ExternalLink /></span></a> : <><img src={info.image.url} alt={`Фото: ${track.artist}`} loading="lazy" /><span>Фото исполнителя</span></>}</figure>}
+      {info.album?.coverUrl && <figure>{info.album.sourceUrl ? <a className="reference-image-link" href={info.album.sourceUrl} target="_blank" rel="noreferrer"><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><span>{releaseKindLabel(info.album.kind)} <ExternalLink /></span></a> : <><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><span>{releaseKindLabel(info.album.kind)}</span></>}</figure>}
+    </div>
+    <div className="reference-content">
+      <div className="reference-topline">
+        {info.verification && <span className="verified-mark"><ShieldCheck /> Проверено {info.verification.verifiedChecks}/{info.verification.totalChecks}</span>}
+        {info.difficulty && <span className={`difficulty-mark is-${info.difficulty.band}`}><Gauge /> {difficultyLabel[info.difficulty.band]} · {info.difficulty.score}/100</span>}
+      </div>
+      <div className="reference-grid">
+        <section><h4><Disc3 /> Релиз</h4><p>{yearLine ? <>{info.releaseYearStatus === "candidate" ? "Около " : ""}<strong>{yearLine}</strong> год</> : "Год уточняется"}{info.versionYear && info.versionYear !== yearLine ? <> · звучит версия <strong>{info.versionYear}</strong> года</> : null}</p>{info.album && <p>{releaseKindLabel(info.album.kind)} «{info.album.title}»{info.album.year && info.album.year !== yearLine ? ` · ${info.album.year}` : ""}</p>}</section>
+        {info.members?.length ? <section className="lineup-section"><h4><UsersRound /> Участники</h4><div className="lineup-list">{info.members.map((member) => <span className={member.highlighted ? "is-highlighted" : ""} key={`${member.name}-${member.role || member.roles?.join()}`}><b>{member.name}</b>{member.role || member.roles?.join(", ") ? <small>{member.role || member.roles?.join(", ")}</small> : null}</span>)}</div></section> : null}
+        {info.credits?.length ? <section><h4><Sparkles /> Авторы</h4>{info.credits.map((credit) => <p key={`${credit.role}-${credit.names.join()}`}><b>{credit.role}:</b> {credit.names.join(", ")}</p>)}</section> : null}
+        {info.soundtrack ? <section><h4><Music2 /> OST</h4><p>{info.soundtrack.sourceUrl ? <a href={info.soundtrack.sourceUrl} target="_blank" rel="noreferrer">{info.soundtrack.title} <ExternalLink /></a> : info.soundtrack.title}{info.soundtrack.year ? ` · ${info.soundtrack.year}` : ""}</p></section> : null}
+      </div>
+      {info.difficulty && <p className="difficulty-explanation">Почему так: {info.difficulty.explanation}</p>}
+      {info.facts?.map((fact) => <p className="artist-fact" key={fact.text}>{fact.text}{fact.sourceUrl && <a href={fact.sourceUrl} target="_blank" rel="noreferrer" aria-label="Источник факта"><ExternalLink /></a>}</p>)}
+      {(sources.length || info.artistUrl) ? <div className="reference-sources"><span>Источники:</span>{sources.map((source, index) => <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.provider === "verification" ? `проверка ${index + 1}` : `источник ${index + 1}`} <ExternalLink /></a>)}{!sources.length && info.artistUrl && <a href={info.artistUrl} target="_blank" rel="noreferrer">профиль исполнителя <ExternalLink /></a>}</div> : null}
+    </div>
+  </div>;
+}
 
 function ClipTimeline({ playback, duration, compact = false }: { playback?: ClipPlayback; duration: number; compact?: boolean }) {
   const elapsed = Math.min(duration, playback?.elapsed ?? 0);
@@ -652,7 +689,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
               {!guestMode && <Button size="sm" variant="ghost" className={`bad-fragment-button ${badFragments.has(item.trackKey) ? "is-reported" : ""}`} disabled={!currentAttemptId || fragmentFeedbackPending.has(item.trackKey)} aria-pressed={badFragments.has(item.trackKey)} onClick={() => void toggleBadFragment(item.trackKey)}><Flag /> {badFragments.has(item.trackKey) ? "Отмечено" : "Плохой фрагмент"}</Button>}
               <Button size="sm" variant="ghost" disabled={!currentAttemptId && !guestMode} onClick={() => void correctResult(item.trackKey, { annulled: !item.loadFailed })}>{item.loadFailed ? "Вернуть" : "Аннулировать"}</Button><div className="score-picker" role="group" aria-label={`Баллы за ${item.track.artist} — ${item.track.title}`}>{[0, 1, 2].map((value) => <button type="button" key={value} className={!item.loadFailed && points === value ? "is-selected" : ""} aria-pressed={!item.loadFailed && points === value} disabled={!currentAttemptId && !guestMode} onClick={() => void correctResult(item.trackKey, { points: value })}>{value}</button>)}</div>
             </div>
-            <div className={`artist-info ${info?.status ?? "loading"}`}>{!info || info.status === "loading" ? <span className="artist-info-placeholder">Подбираю альбом, обложку и сведения…</span> : info.status === "error" ? <span className="artist-info-placeholder">Дополнительная справка для этой песни пока готовится.</span> : <><div className="artist-info-media">{info.image?.url && <figure><img src={info.image.url} alt={`Фото: ${item.track.artist}`} loading="lazy" />{info.image.sourceUrl && <figcaption><a href={info.image.sourceUrl} target="_blank" rel="noreferrer">{info.image.attribution || "Фото"}</a>{info.image.license && <> · {info.image.licenseUrl ? <a href={info.image.licenseUrl} target="_blank" rel="noreferrer">{info.image.license}</a> : info.image.license}</>}</figcaption>}</figure>}{info.album?.coverUrl && <figure><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><figcaption>Обложка альбома</figcaption></figure>}</div><div className="artist-info-copy">{(info.country || info.activeYears) && <span>{[info.country, info.activeYears].filter(Boolean).join(" · ")}</span>}{(info.releaseYear || item.track.releaseYear) && <span>{info.releaseYearStatus === "candidate" ? "Примерно " : ""}{info.releaseYear || item.track.releaseYear} год{info.album ? ` · ${info.album.kind === "album" ? "альбом" : "релиз"} «${info.album.title}»` : item.track.album ? ` · альбом «${item.track.album.title}»` : ""}</span>}{info.members?.length ? <span><b>Состав:</b> {info.members.map((member) => member.name).join(", ")}</span> : null}{info.facts?.map((fact) => <span className="artist-fact" key={fact.text}>{fact.text}{fact.sourceUrl && <a href={fact.sourceUrl} target="_blank" rel="noreferrer" aria-label="Источник факта"><ExternalLink /></a>}</span>)}{info.artistUrl && <a href={info.artistUrl} target="_blank" rel="noreferrer">Источники <ExternalLink /></a>}</div></>}</div>
+            <TrackReferenceCard info={info} track={item.track} />
           </article>;
         })}</div>
         <div className="result-actions">{!guestMode && <Button variant="outline" onClick={leaveResults}><Library /> Все квизы · Esc</Button>}{!guestMode && activeQuiz && <Button variant="outline" onClick={() => void shareQuiz(activeQuiz)}><Share2 /> {sharedQuizId === activeQuiz.id ? "Ссылка скопирована" : "Поделиться"}</Button>}<Button onClick={() => activeQuiz && begin(activeQuiz)}><RotateCcw /> Ещё раз · Alt+R</Button></div>

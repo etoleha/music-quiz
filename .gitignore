@@ -64,3 +64,6 @@ next-env.d.ts
 !/data/artist-selection-policy.json
 !/data/quiz-candidates.json
 !/data/quiz-ready-songs.json
+!/data/song-publication-verification.json
+!/data/quiz-release-new-rules.json
+!/data/quiz-release-new-rules-validation.json

@@ -157,6 +157,7 @@ const titleWithoutFeaturedCredit = (value) => fingerprint(
 );
 
 const findEntry = ({ artist, title, titleAliases = [] }, ids = {}, { allowManualArtist = false } = {}) => {
+  const incomingArtist = normalizeObservation({ artist, title }, aliasIndex).artist;
   const idMatches = new Set();
   for (const [namespace, values] of Object.entries(ids)) {
     for (const value of unique(Array.isArray(values) ? values : [values])) {
@@ -164,7 +165,13 @@ const findEntry = ({ artist, title, titleAliases = [] }, ids = {}, { allowManual
       if (match) idMatches.add(match);
     }
   }
-  if (idMatches.size === 1) return [...idMatches][0];
+  // Provider IDs are normally the strongest identity signal, but historical
+  // enrichment can contain a wrongly attached ID for a same-titled song.
+  // Never let that collapse two unrelated credited artists into one entry.
+  if (idMatches.size === 1) {
+    const idMatch = [...idMatches][0];
+    if (artistsOverlap(idMatch.normalizedArtist, incomingArtist)) return idMatch;
+  }
   const candidateTitles = unique([title, ...titleAliases]);
   const observations = candidateTitles.map((candidateTitle) =>
     normalizeObservation({ artist, title: candidateTitle }, aliasIndex));
@@ -254,7 +261,9 @@ for (const track of catalogTracks) {
 for (const file of poolFiles) {
   const pool = readJson(dataPath(file));
   for (const track of pool.tracks || []) {
-    const ids = track.spotifyTrackId ? { spotify: [track.spotifyTrackId] } : {};
+    const ids = {};
+    if (track.spotifyTrackId) ids.spotify = [track.spotifyTrackId];
+    if (track.yandexTrackId) ids.yandexMusic = [track.yandexTrackId];
     let entry = findEntry(track, ids);
     if (file === "song-pool-avtoradio.json" && entry) {
       const sourceParticipants = new Set(normalizeObservation(track, aliasIndex).artist.participants);
@@ -273,6 +282,10 @@ for (const file of poolFiles) {
     }
     addAliases(entry, [track.artist], [track.title]);
     attachExternalIds(entry, ids);
+    if (validYear(track.releaseYear)) {
+      entry.releaseYearCandidates ||= [];
+      entry.releaseYearCandidates.push({ year: Number(track.releaseYear), source: "pool-source" });
+    }
     entry.poolRefs.push({
       file,
       id: track.id,
@@ -280,7 +293,18 @@ for (const file of poolFiles) {
       listRank: track.listRank ?? null,
       chartScore: track.chartScore ?? null,
       sourceBand: track.sourceBand ?? null,
+      candidateType: track.candidateType ?? null,
       sourceUrl: track.sourceUrl ?? null,
+      sourceName: track.sourceName ?? null,
+      metadataSourceUrl: track.metadataSourceUrl ?? null,
+      language: track.language ?? null,
+      releaseYear: validYear(track.releaseYear) ? Number(track.releaseYear) : null,
+      album: track.album ?? null,
+      artistImage: track.artistImage ?? null,
+      artistForm: track.artistForm ?? null,
+      facts: track.facts ?? [],
+      reviewStatus: track.reviewStatus ?? null,
+      quizAnswerRefs: track.quizAnswerRefs ?? [],
     });
   }
 }
@@ -307,6 +331,14 @@ for (const track of readQuizTracks()) {
 }
 
 const classifyLanguage = (entry) => {
+  const poolLanguages = unique(entry.poolRefs.map(({ language }) => language))
+    .filter((language) => ["russian", "foreign", "mixed"].includes(language));
+  if (poolLanguages.includes("mixed") || poolLanguages.length > 1) {
+    return { value: "mixed", confidence: "high", evidence: [`pool-language:${poolLanguages.join("+")}`] };
+  }
+  if (poolLanguages.length === 1) {
+    return { value: poolLanguages[0], confidence: "high", evidence: [`pool-language:${poolLanguages[0]}`] };
+  }
   const topHitLanguages = entry.chart?.topHitLanguageCodes || [];
   if (topHitLanguages.length > 1) return { value: "mixed", confidence: "high", evidence: [`tophit-language:${topHitLanguages.join("+")}`] };
   if (topHitLanguages[0] === "russian") return { value: "russian", confidence: "high", evidence: ["tophit-language:russian"] };
@@ -397,7 +429,11 @@ for (const entry of entries) {
   const stableIdentity = Object.values(entry.externalIds).some((values) => values.length > 0)
     || (entry.chart?.sourceCount || 0) > 1
     || entry.poolRefs.length > 0;
-  const reviewStatus = manual.reviewStatus || (entry.quizRefs.length || (stableIdentity && language !== "unknown") ? "verified" : "needs-review");
+  const poolReviewStatuses = entry.poolRefs.map(({ reviewStatus: value }) => value).filter(Boolean);
+  const poolReviewStatus = poolReviewStatuses.includes("verified") ? "verified"
+    : poolReviewStatuses.includes("needs-review") ? "needs-review" : null;
+  const reviewStatus = manual.reviewStatus || poolReviewStatus
+    || (entry.quizRefs.length || (stableIdentity && language !== "unknown") ? "verified" : "needs-review");
   for (const [field, value] of Object.entries({ workflowStatus, language, reviewStatus, fragmentStatus })) {
     if (!statusValues[field].has(value)) throw new Error(`Invalid ${field}=${value} for ${entry.id}`);
   }
@@ -425,6 +461,8 @@ for (const entry of entries) {
     }] : []),
   ].filter((candidate, index, candidates) => candidates.findIndex(({ year }) => Number(year) === Number(candidate.year)) === index);
   const automaticReleaseYear = candidateReleaseYears.length === 1 ? candidateReleaseYears[0].year : null;
+  const poolMetadata = entry.poolRefs.find(({ album, artistImage, artistForm, facts }) =>
+    album || artistImage || artistForm || facts?.length) || {};
   const identifierReleaseYear = automaticEnrichment.releaseYearState === "verified" && validYear(automaticEnrichment.releaseYear)
     ? Number(automaticEnrichment.releaseYear)
     : null;
@@ -444,22 +482,26 @@ for (const entry of entries) {
     releaseYearStatus: validYear(enrichment.releaseYear) || identifierReleaseYear ? "verified" : preparedReleaseYear || publishedReleaseYear || automaticReleaseYear ? "candidate" : "missing",
     versionYear: validYear(enrichment.versionYear) ? Number(enrichment.versionYear) : null,
     versionType: enrichment.versionType || automaticEnrichment.versionType || "original",
-    album: enrichment.album || automaticAlbum || null,
+    album: enrichment.album || automaticAlbum || poolMetadata.album || null,
     candidateYears: candidateReleaseYears,
   };
   const artistProfiles = (automaticEnrichment.artistMbids || []).map((id) => enrichmentAuto.artists?.[id]).filter(Boolean);
+  const automaticFacts = artistProfiles.flatMap(({ facts = [] }) => facts).slice(0, 3);
   entry.enrichment = {
     artistForm: enrichment.artistForm
       || artistProfiles[0]?.artistForm
       || publishedArtistForms.get(entry.artist)
       || (entry.artistIds.length === 1 ? publishedSingleArtistForms.get(entry.artistIds[0]) : null)
+      || poolMetadata.artistForm
       || null,
     performers: enrichment.performers || automaticEnrichment.artistCredits || [],
-    artistImage: enrichment.artistImage || artistProfiles.find(({ photo }) => photo)?.photo || null,
-    facts: enrichment.facts || artistProfiles.flatMap(({ facts = [] }) => facts).slice(0, 3),
+    artistImage: enrichment.artistImage || artistProfiles.find(({ photo }) => photo)?.photo || poolMetadata.artistImage || null,
+    facts: enrichment.facts || (automaticFacts.length ? automaticFacts : poolMetadata.facts || []),
     sources: enrichment.sources || unique([
       ...(automaticEnrichment.sources || []).map(({ url }) => url),
       ...artistProfiles.flatMap(({ sources = [] }) => sources.map(({ url }) => url)),
+      poolMetadata.metadataSourceUrl,
+      poolMetadata.sourceUrl,
     ]),
     review: enrichment.review || automaticEnrichment.overallState || (entry.release.releaseYearStatus === "verified" ? "verified" : entry.release.candidateYears.length === 1 ? "candidate" : "needs-review"),
   };

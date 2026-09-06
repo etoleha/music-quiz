@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { checkYouTubeVideo } from "./youtube-playability.mjs";
 import { isArtistBlocked, isArtistPrioritized, loadArtistSelectionPolicy } from "./artist-selection-policy.mjs";
+import { conflictEntityIdsFor, publicationReport, validatePublicationVerification } from "./publication-verification.mjs";
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const args = new Set(process.argv.slice(2));
@@ -24,12 +25,17 @@ const allowPreviouslyUsedArtists = args.has("--allow-used-artists")
 const skipPreflight = args.has("--skip-preflight");
 const offline = args.has("--offline");
 const refreshYouTube = args.has("--refresh-youtube");
+const strictPublication = args.has("--strict-publication");
 const eraTargets = { soviet: 2, "1990s": 4, "2000s": 7, "2010s": 4, "2020s": 3 };
 const recognitionTargets = { recognizable: 5, middle: 8, deep: 7 };
 const maxPriorityArtists = 2;
 const artistSelectionPolicy = loadArtistSelectionPolicy(repoRoot);
 
 const pool = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
+const publicationVerificationPath = path.join(repoRoot, "data", "song-publication-verification.json");
+const publicationVerification = fs.existsSync(publicationVerificationPath)
+  ? validatePublicationVerification(JSON.parse(fs.readFileSync(publicationVerificationPath, "utf8")))
+  : { songs: {} };
 let preflightSongIds = null;
 let preflightPlaybackBySongId = new Map();
 if (!skipPreflight) {
@@ -46,16 +52,27 @@ const stableRank = (song) => crypto.createHash("sha256")
   .update(`${seed}:${song.songId}:${song.youtube.videoId}`)
   .digest("hex");
 
-const artistIdsOverlap = (left, right) => left === right;
 const hasArtistOverlap = (song, selected) => selected.some((other) =>
-  song.artistIds.some((left) => other.artistIds.some((right) => artistIdsOverlap(left, right))));
+  conflictEntityIdsFor(song, publicationVerification).some((left) =>
+    conflictEntityIdsFor(other, publicationVerification).includes(left)));
 
 const candidates = pool.songs
   .filter((song) => song.readyForQuiz)
   .filter((song) => !isArtistBlocked(song, artistSelectionPolicy))
   .filter((song) => !preflightSongIds || preflightSongIds.has(song.songId))
+  .filter((song) => !strictPublication || publicationReport(song, publicationVerification.songs[song.songId]).passed)
   .filter((song) => allowPreviouslyUsedArtists || song.artistNovelty === "new-artist")
   .filter((song) => eraTargets[song.era] !== undefined)
+  .map((song) => {
+    const verified = publicationVerification.songs[song.songId];
+    return {
+      ...song,
+      artist: verified?.identity?.artist || song.artist,
+      artistAliases: verified?.identity?.artistAliases || song.artistAliases,
+      recognizability: verified?.difficulty?.band || song.recognizability,
+      optionalMetadata: verified?.identity?.artistForm ? { ...song.optionalMetadata, artistForm: verified.identity.artistForm } : song.optionalMetadata,
+    };
+  })
   .sort((left, right) => Number(isArtistPrioritized(right, artistSelectionPolicy))
     - Number(isArtistPrioritized(left, artistSelectionPolicy))
     || stableRank(left).localeCompare(stableRank(right)));
@@ -204,6 +221,7 @@ const releaseCandidate = {
     uniqueSongs: true,
     uniqueYouTubeVideos: true,
     preflightRequired: !skipPreflight,
+    strictPublication,
     youtubeRefreshRequested: refreshYouTube,
     artistStopListApplied: true,
     priorityArtistPreferenceApplied: true,
