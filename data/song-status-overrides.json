@@ -7,6 +7,20 @@
     "Подтверждённые вручную YouTube ID задаются как externalIds.youtube: массив 11-символьных ID, без URL. Это не подтверждает качество фрагмента."
   ],
   "songs": {
+    "pool-4531e31fb06c": {
+      "artistCredit": "Алексей Чумаков, Александр Панайотов и Руслан Алехно",
+      "artistIds": ["alekseichumakov", "aleksandrpanaiotov", "ruslanalehno"],
+      "notes": ["Полный credit восстановлен; все три исполнителя участвуют в проверке повторов."]
+    },
+    "pool-5c330bf947ea": {
+      "artistCredit": "VAVAN, Galibri & Mavik",
+      "artistIds": ["vavan", "galibri", "mavik"],
+      "notes": ["Galibri & Mavik разнесены на две исполнительские сущности для корректной проверки повторов."]
+    },
+    "pool-c225e1b9d6de": {
+      "externalIds": { "youtube": ["7ECJcEyWWeg"] },
+      "notes": ["Выбрана официальная студийная версия NENSI MUSIC вместо концертной записи с речью ведущего."]
+    },
     "chart-00091": {
       "workflowStatus": "rejected",
       "language": "mixed",

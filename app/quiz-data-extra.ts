@@ -338,6 +338,26 @@ const performerForms: Partial<Record<string, Track["artistForm"]>> = {
   "Иосиф Кобзон": "Исполнитель",
   "Пеп-Си": "Группа",
   "BULA feat. SVNV": "Исполнитель + исполнитель",
+  "Евгений Анегин": "Исполнитель",
+  "Владимир Асимов": "Исполнитель",
+  "Lizer": "Исполнитель",
+  "Дыши": "Группа",
+  "Игорь Саруханов": "Исполнитель",
+  "Майя Кристалинская": "Исполнительница",
+  "Биплан": "Группа",
+  "VAVAN, Galibri & Mavik": "Исполнитель + группа",
+  "ATL": "Исполнитель",
+  "Сергей Захаров": "Исполнитель",
+  "лиззка": "Исполнительница",
+  "МС ХОВАНСКИЙ": "Исполнитель",
+  "63 Регион": "Группа",
+  "Михаил Шуфутинский": "Исполнитель",
+  "Алексин": "Исполнитель",
+  "BONSAI": "Проект",
+  "Елена Ваенга": "Исполнительница",
+  "Zdob si Zdub": "Группа",
+  "L-Jane": "Исполнитель",
+  "Ева Польна": "Исполнительница",
 };
 
 const manualArtistAliases: Record<string, string[]> = {
@@ -392,6 +412,14 @@ const manualArtistAliases: Record<string, string[]> = {
   "Uma2rmaH": ["Uma2rman", "Уматурман", "Ума Турман"],
   "СТОКС": ["Стокс"],
   "Пеп-Си": ["Pep-See", "Пепси"],
+  "Lizer": ["Лизер"],
+  "VAVAN, Galibri & Mavik": ["Ваван, Галибри и Мавик", "VAVAN, Galibri and Mavik"],
+  "ATL": ["АТЛ"],
+  "лиззка": ["Лиззка"],
+  "МС ХОВАНСКИЙ": ["MC Хованский", "Юрий Хованский"],
+  "BONSAI": ["Бонсай"],
+  "Zdob si Zdub": ["Здоб ши Здуб", "Zdob și Zdub", "Zdob-Si-Zdub"],
+  "L-Jane": ["Л Джейн", "Эл Джейн"],
 };
 
 const manualTitleAliases: Record<string, string[]> = {
@@ -402,6 +430,9 @@ const manualTitleAliases: Record<string, string[]> = {
   "Игорь Корнелюк—Город, которого нет": ["Город которого нет"],
   "Танцы Минус—Цветут цветы": ["Цветы"],
   "L'ONE feat. Варвара Визбор—Якутяночка": ["Якутяночка ft. Варвара Визбор"],
+  "Владимир Асимов—Тёмно красное вино": ["Темно-красное вино"],
+  "ATL—25 недель": ["Двадцать пять недель"],
+  "Михаил Шуфутинский—Третье сентября": ["3 сентября"],
 };
 
 const unique = (values: string[]) => [...new Set(values.filter(Boolean))];
@@ -434,6 +465,34 @@ const extraTrack = (youtubeId: string, artist: string, title: string, start: num
 };
 
 export const extraQuizzes: Quiz[] = [
+  {
+    id: "hard-22",
+    title: "Квиз XXII",
+    level: "сложный",
+    published: "6 сентября 2026",
+    tracks: [
+      extraTrack("2zPVDUG9x74", "Евгений Анегин", "Луна", 70, 15, 2008),
+      extraTrack("7i5woKPCXJ0", "Владимир Асимов", "Тёмно красное вино", 105, 11, 1999),
+      extraTrack("dfPBOt_rhdw", "Lizer", "Между Нами", 50, 15, 2019),
+      extraTrack("wrgVeSY5uJE", "Дыши", "Взгляни на небо", 49, 7, 2006),
+      extraTrack("k5tC8RClkAA", "Игорь Саруханов", "Желаю Тебе", 95, 15, 1994),
+      extraTrack("6DKRstqSDOM", "Майя Кристалинская", "А снег идёт", 45, 7, 1961),
+      extraTrack("zlzm2yAiiFY", "Биплан", "С добрым утром", 70, 11, 1999),
+      extraTrack("Sghx8KdwiI4", "VAVAN, Galibri & Mavik", "Сказочный десант", 0, 15, 2022),
+      extraTrack("qMpxMUeBduM", "ATL", "25 недель", 38, 15, 2021),
+      extraTrack("_WI6TYacRD0", "Сергей Захаров", "Мелодия", 32, 11, 1974),
+      extraTrack("1RkW-mZoRMk", "лиззка", "Аквадискотека", 70, 15, 2021),
+      extraTrack("8TX9zpTqZrc", "МС ХОВАНСКИЙ", "Батя в Здании", 33, 7, 2017),
+      extraTrack("glqGcEE4430", "63 Регион", "Драма", 45, 7, 2005),
+      extraTrack("5S901EsLuC0", "Михаил Шуфутинский", "Третье сентября", 30, 7, 1993),
+      extraTrack("IrdR_t44kHA", "Алексин", "Страшная", 46, 11, 2001),
+      extraTrack("FGH035qXqMw", "BONSAI", "Она", 32, 11, 2019),
+      extraTrack("3dJxre6LNyI", "Елена Ваенга", "Курю", 100, 11, 2008),
+      extraTrack("A1hhCIfPtIc", "Zdob si Zdub", "Видели ночь", 90, 11, 2000),
+      extraTrack("h3TXRIEqWyY", "L-Jane", "Бабочка", 35, 11, 2017),
+      extraTrack("AidUnHbiYTc", "Ева Польна", "Парни не плачут", 30, 15, 2009),
+    ],
+  },
   {
     id: "soviet-familiar-01",
     title: "Советский квиз — знакомые песни",
