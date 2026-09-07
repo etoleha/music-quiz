@@ -1,0 +1,1443 @@
+{
+  "version": 2,
+  "generatedAt": "2026-09-06T23:30:55.635Z",
+  "status": "verified",
+  "quiz": {
+    "id": "new-rules-test-02",
+    "title": "Квиз XXIV · новая калибровка",
+    "level": "средний",
+    "published": "7 сентября 2026"
+  },
+  "policy": {
+    "trackCount": 20,
+    "uniqueSongs": true,
+    "uniqueYouTubeVideos": true,
+    "relationshipConflicts": true,
+    "strictMetadataGate": true,
+    "personalization": {
+      "rapShareMaximum": 0.1,
+      "easierThan": "new-rules-test-01"
+    }
+  },
+  "stats": {
+    "eras": {
+      "soviet": 2,
+      "1990s": 4,
+      "2000s": 7,
+      "2010s": 4,
+      "2020s": 3
+    },
+    "recognition": {
+      "recognizable": 8,
+      "middle": 9,
+      "deep": 3
+    }
+  },
+  "tracks": [
+    {
+      "id": "ready-0539",
+      "songId": "pool-35827af275a5",
+      "poolId": "quiz-answer-35827af275a5",
+      "artist": "Песняры",
+      "title": "Вологда",
+      "artistIds": [
+        "pesnyary"
+      ],
+      "artistAliases": [
+        "Песняры"
+      ],
+      "titleAliases": [
+        "Вологда"
+      ],
+      "era": "soviet",
+      "approximateYear": 1976,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "G8CRfd6Fnf8",
+        "title": "Песняры & Анатолий Кашепаров - Вологда (2019)",
+        "channel": "ПЕСНЯРЫ",
+        "viewCount": 257529,
+        "durationSeconds": 247,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 49,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "«Вологда» — архивное телеисполнение",
+          "kind": "archive",
+          "year": 1976,
+          "coverUrl": "https://i.ytimg.com/vi/TRodzcQvxq0/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=TRodzcQvxq0"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/99892/bb05ddcb.a.5925840-1/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2611761",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Песняры",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0/1571509825?i=1571510113&uo=4",
+          "https://music.yandex.com/album/5925840/track/44236791",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0105",
+      "songId": "pool-ce99c7b7eb00",
+      "poolId": "quiz-answer-083a78dbb289",
+      "artist": "ВИА «Синяя птица»",
+      "title": "Клён",
+      "artistIds": [
+        "viasinyayaptitsa"
+      ],
+      "artistAliases": [
+        "ВИА «Синяя птица»"
+      ],
+      "titleAliases": [
+        "Клён"
+      ],
+      "era": "soviet",
+      "approximateYear": 1975,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "IhxkoPeR6aY",
+        "title": "ВИА Синяя птица-клен",
+        "channel": "aist0410",
+        "viewCount": 18620380,
+        "durationSeconds": 177,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "«Клён» — запись ВИА «Синяя птица»",
+          "kind": "archive",
+          "year": 1975,
+          "coverUrl": "https://i.ytimg.com/vi/IhxkoPeR6aY/hqdefault.jpg",
+          "sourceUrl": "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/3226792/589c1714.a.12570582-1/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2717598",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/17044112/track/72818859",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0013",
+      "songId": "pool-c225e1b9d6de",
+      "poolId": "nineties-0042",
+      "artist": "Нэнси",
+      "title": "Дым сигарет с ментолом",
+      "artistIds": [
+        "nensi"
+      ],
+      "artistAliases": [
+        "Нэнси"
+      ],
+      "titleAliases": [
+        "Дым сигарет с ментолом"
+      ],
+      "era": "1990s",
+      "approximateYear": 1993,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русские хиты 90-х",
+        "sourceUrl": "https://www.youtube.com/@LEZZATV/videos"
+      },
+      "youtube": {
+        "videoId": "7ECJcEyWWeg",
+        "title": "NENSI / Нэнси  - Дым Сигарет с Ментолом (Official Studio AVI) 1993",
+        "channel": "NENSI MUSIC",
+        "viewCount": 203063678,
+        "durationSeconds": 370,
+        "selectedBy": "manual-status-override"
+      },
+      "clip": {
+        "start": 69,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Дым сигарет с ментолом",
+          "kind": "album",
+          "year": 1993,
+          "coverUrl": "https://i.ytimg.com/vi/5qsjsrgbTzM/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=5qsjsrgbTzM"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/7ECJcEyWWeg/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=7ECJcEyWWeg",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Нэнси",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://ru.wikipedia.org/wiki/Нэнси_(группа)"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1756",
+      "songId": "pool-8b2d81c70d70",
+      "poolId": "pool-1021",
+      "artist": "Demo",
+      "title": "2000 лет",
+      "artistIds": [
+        "demo"
+      ],
+      "artistAliases": [
+        "Demo"
+      ],
+      "titleAliases": [
+        "2000 лет"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 1999",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "ATDDDw1N_VU",
+        "title": "DEMO - ДЕМО – 2000 лет -  Две Тысячи Лет - Песня года 1999",
+        "channel": "ДЕМО",
+        "viewCount": 176831642,
+        "durationSeconds": 299,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 55,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Солнышко",
+          "kind": "album",
+          "year": 1999,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e4/55/c3/e455c357-dd1d-fd7d-2064-e93dac23d63e/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/ATDDDw1N_VU/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=ATDDDw1N_VU",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Демо",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2013",
+      "songId": "pool-a23bc4e4f2c4",
+      "poolId": "nineties-0028",
+      "artist": "Лицей",
+      "title": "Осень",
+      "artistIds": [
+        "litsei"
+      ],
+      "artistAliases": [
+        "Лицей"
+      ],
+      "titleAliases": [
+        "Осень"
+      ],
+      "era": "1990s",
+      "approximateYear": 1995,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русские хиты 90-х",
+        "sourceUrl": "https://www.youtube.com/@LEZZATV/videos"
+      },
+      "youtube": {
+        "videoId": "cGgbQFOK_L4",
+        "title": "Лицей - Осень (Официальный клип)",
+        "channel": "Группа «Лицей» official channel ",
+        "viewCount": 30134793,
+        "durationSeconds": 268,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 54,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Открытый занавес",
+          "kind": "album",
+          "year": 1996,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/b5/60/c5b56019-935c-05f7-55f1-c62306bc5d18/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/cGgbQFOK_L4/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=cGgbQFOK_L4",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Лицей",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1842",
+      "songId": "pool-9820471f6ead",
+      "poolId": "pool-1028",
+      "artist": "Алсу",
+      "title": "Иногда",
+      "artistIds": [
+        "alsu"
+      ],
+      "artistAliases": [
+        "Алсу"
+      ],
+      "titleAliases": [
+        "Иногда"
+      ],
+      "era": "1990s",
+      "approximateYear": 1999,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 1999",
+        "sourceUrl": "https://www.youtube.com/watch?v=BTyJ_u8MnEA"
+      },
+      "youtube": {
+        "videoId": "nMyBRkBHVLA",
+        "title": "Алсу - Иногда",
+        "channel": "АЛСУ • ALSOU",
+        "viewCount": 2795015,
+        "durationSeconds": 244,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Алсу",
+          "kind": "album",
+          "year": 1999,
+          "coverUrl": "https://coverartarchive.org/release/3519dd8a-1c65-448f-acc9-a06046904157/front-500",
+          "sourceUrl": "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/nMyBRkBHVLA/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=nMyBRkBHVLA",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "АЛСУ",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/2030030277"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1717",
+      "songId": "pool-dd48777bcfb2",
+      "poolId": "pool-1099",
+      "artist": "Земфира",
+      "title": "ПММЛ",
+      "artistIds": [
+        "zemfira"
+      ],
+      "artistAliases": [
+        "Земфира"
+      ],
+      "titleAliases": [
+        "ПММЛ"
+      ],
+      "era": "2000s",
+      "approximateYear": 2000,
+      "recognizability": "recognizable",
+      "selectionPreference": "priority-include",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2001",
+        "sourceUrl": "https://www.youtube.com/watch?v=xoncYzVaO3U"
+      },
+      "youtube": {
+        "videoId": "6iGpdkgr57g",
+        "title": "Земфира — ПММЛ (Official Video)",
+        "channel": "zemfira",
+        "viewCount": 31560827,
+        "durationSeconds": 212,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 35,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "ПРОСТИ МЕНЯ МОЯ ЛЮБОВЬ",
+          "kind": "album",
+          "year": 2000,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/ca/d0/bbcad0b1-109b-f19b-e4f4-18a35e526ab4/3610154399133.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/6iGpdkgr57g/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=6iGpdkgr57g",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Земфира",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1913",
+      "songId": "pool-128d46828794",
+      "poolId": "pool-1095",
+      "artist": "ВИА Сливки",
+      "title": "Куда уходит детство",
+      "artistIds": [
+        "viaslivki"
+      ],
+      "artistAliases": [
+        "ВИА Сливки"
+      ],
+      "titleAliases": [
+        "Куда уходит детство"
+      ],
+      "era": "2000s",
+      "approximateYear": 2001,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2001",
+        "sourceUrl": "https://www.youtube.com/watch?v=xoncYzVaO3U"
+      },
+      "youtube": {
+        "videoId": "WOGMyUqJuzU",
+        "title": "ВИА Сливки - Куда уходит детство",
+        "channel": "StarPro",
+        "viewCount": 6284458,
+        "durationSeconds": 258,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 39,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Первая весна",
+          "kind": "album",
+          "year": 2001,
+          "releaseGroupMbid": "181b887c-933d-4d76-b575-2d193ac31354",
+          "coverUrl": "https://coverartarchive.org/release/becb5444-1a2d-4104-95fd-34f4d5800223/33900096527-500.jpg",
+          "sourceUrl": "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/WOGMyUqJuzU/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=WOGMyUqJuzU",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "ВИА Сливки",
+            "musicBrainzArtistId": "97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://musicbrainz.org/recording/9afd37d2-aa59-4f97-879c-db43abdf1f69",
+          "https://musicbrainz.org/artist/97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+          "https://www.wikidata.org/wiki/Q4423413"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2154",
+      "songId": "pool-989f4613b615",
+      "poolId": "pool-1197",
+      "artist": "Reflex",
+      "title": "Падали звёзды",
+      "artistIds": [
+        "reflex"
+      ],
+      "artistAliases": [
+        "Reflex"
+      ],
+      "titleAliases": [
+        "Падали звёзды"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2003",
+        "sourceUrl": "https://www.youtube.com/watch?v=roDOHklQsQ8"
+      },
+      "youtube": {
+        "videoId": "d5WpgXVR_2s",
+        "title": "REFLEX — Падали звёзды (Official Video)",
+        "channel": "REFLEXMUSIC",
+        "viewCount": 5945589,
+        "durationSeconds": 234,
+        "selectedBy": "editorial-replacement"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Падали звёзды",
+          "kind": "album",
+          "year": 2014,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ff25e9a15324f2f8ded64fcd24877d02/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/7827697",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/d5WpgXVR_2s/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "REFLEX",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/78703570"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2247",
+      "songId": "pool-c1a6d9123a57",
+      "poolId": "pool-1199",
+      "artist": "Валерия",
+      "title": "Часики",
+      "artistIds": [
+        "valeriya"
+      ],
+      "artistAliases": [
+        "Валерия"
+      ],
+      "titleAliases": [
+        "Часики"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2003",
+        "sourceUrl": "https://www.youtube.com/watch?v=roDOHklQsQ8"
+      },
+      "youtube": {
+        "videoId": "3rAQLk8zDmY",
+        "title": "Валерия - Часики",
+        "channel": "valeriyaofficial",
+        "viewCount": 1354649,
+        "durationSeconds": 188,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 27,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Страна любви",
+          "kind": "album",
+          "year": 2003,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8e5cbb2976ca589c77b5cddaed13438e/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/10615272",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/3rAQLk8zDmY/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=3rAQLk8zDmY",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Valeriya",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/102212050"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2368",
+      "songId": "pool-2a3e179cf638",
+      "poolId": "pool-1201",
+      "artist": "Катя Лель",
+      "title": "Мой мармеладный",
+      "artistIds": [
+        "katyalel"
+      ],
+      "artistAliases": [
+        "Катя Лель"
+      ],
+      "titleAliases": [
+        "Мой мармеладный"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2003",
+        "sourceUrl": "https://www.youtube.com/watch?v=roDOHklQsQ8"
+      },
+      "youtube": {
+        "videoId": "rsXJ7KApMU8",
+        "title": "Катя Лель - Мой мармеладный",
+        "channel": "Katya Lel",
+        "viewCount": 3572971,
+        "durationSeconds": 201,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Джага-джага",
+          "kind": "album",
+          "year": 2004,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/be8b7e49d2d3449cba2aeb9787249977/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/1002357081",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/rsXJ7KApMU8/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=rsXJ7KApMU8",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Катя Лель",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/4077363861"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2410",
+      "songId": "pool-11ab87245ec0",
+      "poolId": "pool-0363",
+      "artist": "Баста",
+      "title": "Мама",
+      "artistIds": [
+        "basta"
+      ],
+      "artistAliases": [
+        "Баста"
+      ],
+      "titleAliases": [
+        "Мама"
+      ],
+      "era": "2000s",
+      "approximateYear": 2006,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=SUT03iBzl4c"
+      },
+      "youtube": {
+        "videoId": "_-pIVd4lGMw",
+        "title": "Баста - Мама",
+        "channel": "GAZ LIVE",
+        "viewCount": 49271826,
+        "durationSeconds": 254,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 48,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Баста 1",
+          "kind": "album",
+          "year": 2006,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8a/be/69/8abe69be-d10a-587c-0e70-ad25b9f18731/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/_-pIVd4lGMw/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=_-pIVd4lGMw",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [
+          {
+            "name": "Баста",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2614",
+      "songId": "pool-eee8e4601088",
+      "poolId": "pool-1507",
+      "artist": "Елена Ваенга",
+      "title": "Шопен",
+      "artistIds": [
+        "elenavaenga"
+      ],
+      "artistAliases": [
+        "Елена Ваенга"
+      ],
+      "titleAliases": [
+        "Шопен"
+      ],
+      "era": "2000s",
+      "approximateYear": 2006,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "golden-gramophone",
+        "sourceName": "Золотой граммофон",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Список_лауреатов_премии_«Золотой_граммофон»"
+      },
+      "youtube": {
+        "videoId": "EFwioOg_9yw",
+        "title": "Елена Ваенга Шопен",
+        "channel": "Deniza Moon",
+        "viewCount": 5692459,
+        "durationSeconds": 237,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 43,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Шопен",
+          "kind": "album",
+          "year": 2012,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/26a4f10d58e73f102b066c89a80456d5/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/6395592",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/EFwioOg_9yw/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=EFwioOg_9yw",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Елена Ваенга",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/65250949"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2797",
+      "songId": "pool-a054b56a7942",
+      "poolId": "pool-1612",
+      "artist": "Нюша",
+      "title": "Наедине",
+      "artistIds": [
+        "nyusha"
+      ],
+      "artistAliases": [
+        "Нюша"
+      ],
+      "titleAliases": [
+        "Наедине"
+      ],
+      "era": "2010s",
+      "approximateYear": 2013,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "golden-gramophone",
+        "sourceName": "Золотой граммофон",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Список_лауреатов_премии_«Золотой_граммофон»"
+      },
+      "youtube": {
+        "videoId": "iFzccToF9rk",
+        "title": "Нюша - Наедине",
+        "channel": "StarPro",
+        "viewCount": 447998,
+        "durationSeconds": 236,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Объединение",
+          "kind": "album",
+          "year": 2014,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9b/0c/a6/9b0ca651-8799-85c8-31d1-bee24cce5f3a/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/iFzccToF9rk/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=iFzccToF9rk",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "NYUSHA",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2919",
+      "songId": "pool-23a6c1460c9d",
+      "poolId": "pool-1661",
+      "artist": "Фабрика",
+      "title": "Не родись красивой",
+      "artistIds": [
+        "fabrika"
+      ],
+      "artistAliases": [
+        "Фабрика"
+      ],
+      "titleAliases": [
+        "Не родись красивой",
+        "Не Родись Красивой"
+      ],
+      "era": "2010s",
+      "approximateYear": 2013,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "golden-gramophone",
+        "sourceName": "Золотой граммофон",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Список_лауреатов_премии_«Золотой_граммофон»"
+      },
+      "youtube": {
+        "videoId": "HuSf1UcFRq0",
+        "title": "ФАБРИКА - Не родись красивой",
+        "channel": "Matvey Music",
+        "viewCount": 149109383,
+        "durationSeconds": 259,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 53,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Не родись красивой",
+          "kind": "album",
+          "year": 2013,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b2/74/1c/b2741cad-3e2d-a73a-e785-f5fe6a8a8e1d/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/HuSf1UcFRq0/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=HuSf1UcFRq0",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Фабрика",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-3011",
+      "songId": "avtoradio-20d993e657e9",
+      "poolId": "avtoradio-b77c3334954a",
+      "artist": "Серебро",
+      "title": "Перепутала",
+      "artistIds": [
+        "serebro"
+      ],
+      "artistAliases": [
+        "Серебро",
+        "SEREBRO"
+      ],
+      "titleAliases": [
+        "Перепутала"
+      ],
+      "era": "2010s",
+      "approximateYear": 2015,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "avtoradio-live-catalog",
+        "sourceName": "Авторадио — живые выступления",
+        "sourceUrl": "https://www.youtube.com/watch?v=JbCIRxA-60A"
+      },
+      "youtube": {
+        "videoId": "IDixJgx8my4",
+        "title": "SEREBRO – ПЕРЕПУТАЛА",
+        "channel": "МАКСИМ ФАДЕЕВ",
+        "viewCount": 84605415,
+        "durationSeconds": 236,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 47,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Сила трёх",
+          "kind": "album",
+          "year": 2015,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/26/4a/9d/264a9dab-f431-3a10-adc4-0ca34b1147c0/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/IDixJgx8my4/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=IDixJgx8my4",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "SEREBRO",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0305",
+      "songId": "pool-8a08e137b62d",
+      "poolId": "pool-0691",
+      "artist": "Анна Бутурлина",
+      "title": "Отпусти и забудь",
+      "artistIds": [
+        "annabuturlina"
+      ],
+      "artistAliases": [
+        "Анна Бутурлина"
+      ],
+      "titleAliases": [
+        "Отпусти и забудь"
+      ],
+      "era": "2010s",
+      "approximateYear": 2013,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=-MXyUdTm4ik"
+      },
+      "youtube": {
+        "videoId": "Hu1Ynl2rRos",
+        "title": "Анна Бутурлина - Отпусти и забудь (OST \"Холодное Сердце\")",
+        "channel": "Анна Бутурлина",
+        "viewCount": 32648857,
+        "durationSeconds": 222,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Холодное сердце (Оригинальный саундтрек к фильму)",
+          "kind": "album",
+          "year": 2013,
+          "releaseGroupMbid": "7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+          "coverUrl": "https://coverartarchive.org/release/3767c556-b9d9-41be-a6d2-f3980f227a82/30746667630-500.jpg",
+          "sourceUrl": "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/Hu1Ynl2rRos/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=Hu1Ynl2rRos",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Анна Бутурлина",
+            "musicBrainzArtistId": "ab95bf2c-d9de-415b-8455-bf2113382222",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89",
+          "https://musicbrainz.org/artist/ab95bf2c-d9de-415b-8455-bf2113382222"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0758",
+      "songId": "pool-0b3e3a5f099f",
+      "poolId": "pool-0960",
+      "artist": "Amirchik",
+      "title": "Эта любовь",
+      "artistIds": [
+        "amirchik"
+      ],
+      "artistAliases": [
+        "Amirchik"
+      ],
+      "titleAliases": [
+        "Эта любовь",
+        "Эта Любовь"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "m7CTD_WZFqY",
+        "title": "Amirchik - Эта любовь/Cinta Ini (Official video, 2022)",
+        "channel": "Amirchik",
+        "viewCount": 211906355,
+        "durationSeconds": 146,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 27,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Эта любовь",
+          "kind": "single",
+          "year": 2022,
+          "coverUrl": "https://api.deezer.com/album/727051861/image",
+          "sourceUrl": "https://www.deezer.com/track/3277467521",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/m7CTD_WZFqY/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=m7CTD_WZFqY",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [
+          {
+            "name": "Amirchik",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/3277467521"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0857",
+      "songId": "chart-00138",
+      "poolId": "pool-2097",
+      "artist": "HENSY",
+      "title": "Поболело и прошло",
+      "artistIds": [
+        "hensy"
+      ],
+      "artistAliases": [
+        "HENSY"
+      ],
+      "titleAliases": [
+        "Поболело и прошло",
+        "Поболело и Прошло"
+      ],
+      "era": "2020s",
+      "approximateYear": 2020,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "russian-chart-cyrillic-or-high-confidence",
+        "sourceName": "Spotify Daily Chart — Russia",
+        "sourceUrl": "https://kworb.net/spotify/country/ru_daily_totals.html"
+      },
+      "youtube": {
+        "videoId": "vIw8R8ezJrA",
+        "title": "HENSY - Поболело и прошло",
+        "channel": "GOLDEN SOUND",
+        "viewCount": 92753409,
+        "durationSeconds": 190,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Поболело и прошло",
+          "kind": "album",
+          "year": 2020,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/07d6f5838df995607a7de355b5d1f74b/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/150766282",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/vIw8R8ezJrA/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [
+          {
+            "name": "Hensy",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/971830452"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0809",
+      "songId": "pool-4d45f4f2ba9b",
+      "poolId": "pool-1999",
+      "artist": "Хабиб",
+      "title": "Ой, какая ты!",
+      "artistIds": [
+        "habib"
+      ],
+      "artistAliases": [
+        "Хабиб"
+      ],
+      "titleAliases": [
+        "Ой, какая ты!"
+      ],
+      "era": "2020s",
+      "approximateYear": 2023,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "golden-gramophone",
+        "sourceName": "Золотой граммофон",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Список_лауреатов_премии_«Золотой_граммофон»"
+      },
+      "youtube": {
+        "videoId": "7xTmaOqL5UE",
+        "title": "ХАБИБ - Ой какая ты (Премьера клипа, 2023)",
+        "channel": "ХАБИБ",
+        "viewCount": 20278226,
+        "durationSeconds": 139,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 27,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Ой какая ты",
+          "kind": "single",
+          "year": 2023,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/73/37/35/733735a8-b089-e5f7-683c-a0c8b41c2647/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/7xTmaOqL5UE/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=7xTmaOqL5UE",
+          "attribution": "Кадр официального музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [
+          {
+            "name": "Хабиб",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    }
+  ]
+}

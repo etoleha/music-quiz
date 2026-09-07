@@ -2669,6 +2669,2982 @@
           "fragment-position"
         ]
       }
+    },
+    "pool-35827af275a5": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Песняры",
+        "artistAliases": [
+          "Песняры"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0/1571509825?i=1571510113&uo=4",
+            "https://music.yandex.com/album/5925840/track/44236791",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Вологда_(песня)",
+            "https://ru.wikipedia.org/wiki/Песняры",
+            "https://www.youtube.com/watch?v=TRodzcQvxq0",
+            "https://music.yandex.com/artist/2611761",
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0/1571509825?i=1571510113&uo=4",
+            "https://music.yandex.com/album/5925840/track/44236791",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Вологда_(песня)",
+            "https://ru.wikipedia.org/wiki/Песняры",
+            "https://www.youtube.com/watch?v=TRodzcQvxq0",
+            "https://music.yandex.com/artist/2611761",
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0/1571509825?i=1571510113&uo=4",
+            "https://music.yandex.com/album/5925840/track/44236791",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Вологда_(песня)",
+            "https://ru.wikipedia.org/wiki/Песняры",
+            "https://www.youtube.com/watch?v=TRodzcQvxq0",
+            "https://music.yandex.com/artist/2611761",
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0/1571509825?i=1571510113&uo=4",
+            "https://music.yandex.com/album/5925840/track/44236791",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Вологда_(песня)",
+            "https://ru.wikipedia.org/wiki/Песняры",
+            "https://www.youtube.com/watch?v=TRodzcQvxq0",
+            "https://music.yandex.com/artist/2611761",
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0/1571509825?i=1571510113&uo=4",
+            "https://music.yandex.com/album/5925840/track/44236791",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Вологда_(песня)",
+            "https://ru.wikipedia.org/wiki/Песняры",
+            "https://www.youtube.com/watch?v=TRodzcQvxq0",
+            "https://music.yandex.com/artist/2611761",
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0/1571509825?i=1571510113&uo=4",
+            "https://music.yandex.com/album/5925840/track/44236791",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Вологда_(песня)",
+            "https://ru.wikipedia.org/wiki/Песняры",
+            "https://www.youtube.com/watch?v=TRodzcQvxq0",
+            "https://music.yandex.com/artist/2611761",
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0/1571509825?i=1571510113&uo=4",
+            "https://music.yandex.com/album/5925840/track/44236791",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Вологда_(песня)",
+            "https://ru.wikipedia.org/wiki/Песняры",
+            "https://www.youtube.com/watch?v=TRodzcQvxq0",
+            "https://music.yandex.com/artist/2611761",
+            "https://www.youtube.com/watch?v=G8CRfd6Fnf8"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1976,
+        "versionYear": 2019,
+        "album": {
+          "title": "«Вологда» — архивное телеисполнение",
+          "kind": "archive",
+          "year": 1976,
+          "coverUrl": "https://i.ytimg.com/vi/TRodzcQvxq0/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=TRodzcQvxq0"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/99892/bb05ddcb.a.5925840-1/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2611761",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "pesnyary",
+          "vladimirmulyavin",
+          "anatoliykasheparov",
+          "leonidbortkevich"
+        ],
+        "lineup": [
+          {
+            "name": "Владимир Мулявин",
+            "role": "руководитель, гитара · ключевой",
+            "highlighted": true
+          },
+          {
+            "name": "Анатолий Кашепаров",
+            "role": "вокал · солист песни",
+            "highlighted": true
+          },
+          {
+            "name": "Леонид Борткевич",
+            "role": "вокал",
+            "highlighted": false
+          },
+          {
+            "name": "Владислав Мисевич",
+            "role": "духовые",
+            "highlighted": false
+          },
+          {
+            "name": "Леонид Тышко",
+            "role": "бас-гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Александр Демешко",
+            "role": "ударные",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Вологда_(песня)"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Борис Мокроусов"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Михаил Матусовский"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Знаменитая песня ВИА, но короткий фрагмент требует вспомнить именно коллектив.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-ce99c7b7eb00": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "ВИА «Синяя птица»",
+        "artistAliases": [
+          "ВИА «Синяя птица»"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/17044112/track/72818859",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)",
+            "https://www.km.ru/muzyka/encyclopedia/sinyaya-ptitsa",
+            "https://music.yandex.com/artist/2717598",
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/17044112/track/72818859",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)",
+            "https://www.km.ru/muzyka/encyclopedia/sinyaya-ptitsa",
+            "https://music.yandex.com/artist/2717598",
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/17044112/track/72818859",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)",
+            "https://www.km.ru/muzyka/encyclopedia/sinyaya-ptitsa",
+            "https://music.yandex.com/artist/2717598",
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/17044112/track/72818859",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)",
+            "https://www.km.ru/muzyka/encyclopedia/sinyaya-ptitsa",
+            "https://music.yandex.com/artist/2717598",
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/17044112/track/72818859",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)",
+            "https://www.km.ru/muzyka/encyclopedia/sinyaya-ptitsa",
+            "https://music.yandex.com/artist/2717598",
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/17044112/track/72818859",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)",
+            "https://www.km.ru/muzyka/encyclopedia/sinyaya-ptitsa",
+            "https://music.yandex.com/artist/2717598",
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/17044112/track/72818859",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)",
+            "https://www.km.ru/muzyka/encyclopedia/sinyaya-ptitsa",
+            "https://music.yandex.com/artist/2717598",
+            "https://www.youtube.com/watch?v=IhxkoPeR6aY"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1975,
+        "versionYear": 2007,
+        "album": {
+          "title": "«Клён» — запись ВИА «Синяя птица»",
+          "kind": "archive",
+          "year": 1975,
+          "coverUrl": "https://i.ytimg.com/vi/IhxkoPeR6aY/hqdefault.jpg",
+          "sourceUrl": "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/3226792/589c1714.a.12570582-1/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2717598",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "viasinyayaptitsa",
+          "robertbolotny",
+          "sergeydrozdov"
+        ],
+        "lineup": [
+          {
+            "name": "Роберт Болотный",
+            "role": "основатель · ключевой",
+            "highlighted": true
+          },
+          {
+            "name": "Михаил Болотный",
+            "role": "клавишные, вокал",
+            "highlighted": false
+          },
+          {
+            "name": "Сергей Дроздов",
+            "role": "бас, вокал · солист песни",
+            "highlighted": true
+          },
+          {
+            "name": "Борис Белоцерковский",
+            "role": "ударные",
+            "highlighted": false
+          },
+          {
+            "name": "Евгения Завьялова",
+            "role": "вокал",
+            "highlighted": false
+          },
+          {
+            "name": "Юрий Метёлкин",
+            "role": "гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Юрий Янин",
+            "role": "гитара",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Синяя_птица_(ансамбль)"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Юрий Акулов"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Людмила Шишко"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Один из главных хитов советских ВИА; сложность средняя из-за необходимости назвать коллектив.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-c225e1b9d6de": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Нэнси",
+        "artistAliases": [
+          "Нэнси"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://ru.wikipedia.org/wiki/Нэнси_(группа)",
+            "https://radioshanson.ru/artist/nensi",
+            "https://www.youtube.com/watch?v=5qsjsrgbTzM",
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://ru.wikipedia.org/wiki/Нэнси_(группа)",
+            "https://radioshanson.ru/artist/nensi",
+            "https://www.youtube.com/watch?v=5qsjsrgbTzM",
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://ru.wikipedia.org/wiki/Нэнси_(группа)",
+            "https://radioshanson.ru/artist/nensi",
+            "https://www.youtube.com/watch?v=5qsjsrgbTzM",
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://ru.wikipedia.org/wiki/Нэнси_(группа)",
+            "https://radioshanson.ru/artist/nensi",
+            "https://www.youtube.com/watch?v=5qsjsrgbTzM",
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://ru.wikipedia.org/wiki/Нэнси_(группа)",
+            "https://radioshanson.ru/artist/nensi",
+            "https://www.youtube.com/watch?v=5qsjsrgbTzM",
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://ru.wikipedia.org/wiki/Нэнси_(группа)",
+            "https://radioshanson.ru/artist/nensi",
+            "https://www.youtube.com/watch?v=5qsjsrgbTzM",
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://ru.wikipedia.org/wiki/Нэнси_(группа)",
+            "https://radioshanson.ru/artist/nensi",
+            "https://www.youtube.com/watch?v=5qsjsrgbTzM",
+            "https://www.youtube.com/watch?v=7ECJcEyWWeg"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1993,
+        "versionYear": 1993,
+        "album": {
+          "title": "Дым сигарет с ментолом",
+          "kind": "album",
+          "year": 1993,
+          "coverUrl": "https://i.ytimg.com/vi/5qsjsrgbTzM/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=5qsjsrgbTzM"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/7ECJcEyWWeg/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=7ECJcEyWWeg",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "nensi",
+          "anatoliybondarenko",
+          "andreykostenko"
+        ],
+        "lineup": [
+          {
+            "name": "Анатолий Бондаренко",
+            "role": "вокал, автор, лидер · ключевой",
+            "highlighted": true
+          },
+          {
+            "name": "Андрей Костенко",
+            "role": "клавишные, вокал",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://radioshanson.ru/artist/nensi"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова версии группы",
+          "names": [
+            "Анатолий Бондаренко"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 28,
+        "explanation": "Широко известная песня с высокой общей узнаваемостью; фрагмент не должен сразу произносить название.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-8b2d81c70d70": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Demo",
+        "artistAliases": [
+          "Demo"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+            "https://ru.wikipedia.org/wiki/Демо_(группа)",
+            "https://ru.wikipedia.org/wiki/Солнышко_(альбом)",
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+            "https://ru.wikipedia.org/wiki/Демо_(группа)",
+            "https://ru.wikipedia.org/wiki/Солнышко_(альбом)",
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+            "https://ru.wikipedia.org/wiki/Демо_(группа)",
+            "https://ru.wikipedia.org/wiki/Солнышко_(альбом)",
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+            "https://ru.wikipedia.org/wiki/Демо_(группа)",
+            "https://ru.wikipedia.org/wiki/Солнышко_(альбом)",
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+            "https://ru.wikipedia.org/wiki/Демо_(группа)",
+            "https://ru.wikipedia.org/wiki/Солнышко_(альбом)",
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+            "https://ru.wikipedia.org/wiki/Демо_(группа)",
+            "https://ru.wikipedia.org/wiki/Солнышко_(альбом)",
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+            "https://ru.wikipedia.org/wiki/Демо_(группа)",
+            "https://ru.wikipedia.org/wiki/Солнышко_(альбом)",
+            "https://www.youtube.com/watch?v=ATDDDw1N_VU"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1999,
+        "versionYear": 1999,
+        "album": {
+          "title": "Солнышко",
+          "kind": "album",
+          "year": 1999,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e4/55/c3/e455c357-dd1d-fd7d-2064-e93dac23d63e/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/2000-%D0%BB%D0%B5%D1%82/1717429049?i=1717429058&uo=4",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/ATDDDw1N_VU/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=ATDDDw1N_VU",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "demo",
+          "sashazvereva",
+          "vadimpolyakov",
+          "dmitriypostovalov"
+        ],
+        "lineup": [
+          {
+            "name": "Александра Зверева",
+            "role": "вокал · фронтвумен",
+            "highlighted": true
+          },
+          {
+            "name": "Вадим Поляков",
+            "role": "автор, продюсер",
+            "highlighted": false
+          },
+          {
+            "name": "Дмитрий Постовалов",
+            "role": "автор, продюсер",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Демо_(группа)"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Вадим Поляков",
+            "Дмитрий Постовалов"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Большой танцевальный хит 1999 года, но менее очевидный, чем главная визитная карточка группы.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-a23bc4e4f2c4": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Лицей",
+        "artistAliases": [
+          "Лицей"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+            "https://ru.wikipedia.org/wiki/Лицей_(группа)",
+            "https://ru.wikipedia.org/wiki/Макаревич,_Алексей_Лазаревич",
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+            "https://ru.wikipedia.org/wiki/Лицей_(группа)",
+            "https://ru.wikipedia.org/wiki/Макаревич,_Алексей_Лазаревич",
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+            "https://ru.wikipedia.org/wiki/Лицей_(группа)",
+            "https://ru.wikipedia.org/wiki/Макаревич,_Алексей_Лазаревич",
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+            "https://ru.wikipedia.org/wiki/Лицей_(группа)",
+            "https://ru.wikipedia.org/wiki/Макаревич,_Алексей_Лазаревич",
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+            "https://ru.wikipedia.org/wiki/Лицей_(группа)",
+            "https://ru.wikipedia.org/wiki/Макаревич,_Алексей_Лазаревич",
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+            "https://ru.wikipedia.org/wiki/Лицей_(группа)",
+            "https://ru.wikipedia.org/wiki/Макаревич,_Алексей_Лазаревич",
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+            "https://ru.wikipedia.org/wiki/Лицей_(группа)",
+            "https://ru.wikipedia.org/wiki/Макаревич,_Алексей_Лазаревич",
+            "https://www.youtube.com/watch?v=cGgbQFOK_L4"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1995,
+        "versionYear": 1995,
+        "album": {
+          "title": "Открытый занавес",
+          "kind": "album",
+          "year": 1996,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/b5/60/c5b56019-935c-05f7-55f1-c62306bc5d18/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BE%D1%81%D0%B5%D0%BD%D1%8C/1845102255?i=1845102259&uo=4",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/cGgbQFOK_L4/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=cGgbQFOK_L4",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "litsei",
+          "anastasiyamakarevich",
+          "elenaperova",
+          "izoldaiskhanishvili"
+        ],
+        "lineup": [
+          {
+            "name": "Анастасия Макаревич",
+            "role": "вокал, гитара · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Елена Перова",
+            "role": "вокал, гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Изольда Ишханишвили",
+            "role": "вокал, гитара",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Лицей_(группа)"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Алексей Макаревич"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 28,
+        "explanation": "Широко известная песня с высокой общей узнаваемостью; фрагмент не должен сразу произносить название.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-9820471f6ead": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Алсу",
+        "artistAliases": [
+          "Алсу"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/2030030277",
+            "https://www.youtube.com/watch?v=HqeQMg7iLnc",
+            "https://ru.wikipedia.org/wiki/Алсу_(альбом)",
+            "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157",
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/2030030277",
+            "https://www.youtube.com/watch?v=HqeQMg7iLnc",
+            "https://ru.wikipedia.org/wiki/Алсу_(альбом)",
+            "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157",
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/2030030277",
+            "https://www.youtube.com/watch?v=HqeQMg7iLnc",
+            "https://ru.wikipedia.org/wiki/Алсу_(альбом)",
+            "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157",
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/2030030277",
+            "https://www.youtube.com/watch?v=HqeQMg7iLnc",
+            "https://ru.wikipedia.org/wiki/Алсу_(альбом)",
+            "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157",
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/2030030277",
+            "https://www.youtube.com/watch?v=HqeQMg7iLnc",
+            "https://ru.wikipedia.org/wiki/Алсу_(альбом)",
+            "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157",
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/2030030277",
+            "https://www.youtube.com/watch?v=HqeQMg7iLnc",
+            "https://ru.wikipedia.org/wiki/Алсу_(альбом)",
+            "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157",
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/2030030277",
+            "https://www.youtube.com/watch?v=HqeQMg7iLnc",
+            "https://ru.wikipedia.org/wiki/Алсу_(альбом)",
+            "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157",
+            "https://www.youtube.com/watch?v=nMyBRkBHVLA"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1999,
+        "versionYear": 1999,
+        "album": {
+          "title": "Алсу",
+          "kind": "album",
+          "year": 1999,
+          "coverUrl": "https://coverartarchive.org/release/3519dd8a-1c65-448f-acc9-a06046904157/front-500",
+          "sourceUrl": "https://musicbrainz.org/release/3519dd8a-1c65-448f-acc9-a06046904157"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/nMyBRkBHVLA/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=nMyBRkBHVLA",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "alsu"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://www.youtube.com/watch?v=HqeQMg7iLnc"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Александр Шевченко"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 28,
+        "explanation": "Широко известная песня с высокой общей узнаваемостью; фрагмент не должен сразу произносить название.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-dd48777bcfb2": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Земфира",
+        "artistAliases": [
+          "Земфира"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+            "https://ru.wikipedia.org/wiki/Прости_меня_моя_любовь",
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+            "https://ru.wikipedia.org/wiki/Прости_меня_моя_любовь",
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+            "https://ru.wikipedia.org/wiki/Прости_меня_моя_любовь",
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+            "https://ru.wikipedia.org/wiki/Прости_меня_моя_любовь",
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+            "https://ru.wikipedia.org/wiki/Прости_меня_моя_любовь",
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+            "https://ru.wikipedia.org/wiki/Прости_меня_моя_любовь",
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+            "https://ru.wikipedia.org/wiki/Прости_меня_моя_любовь",
+            "https://www.youtube.com/watch?v=6iGpdkgr57g"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2000,
+        "versionYear": 2000,
+        "album": {
+          "title": "ПРОСТИ МЕНЯ МОЯ ЛЮБОВЬ",
+          "kind": "album",
+          "year": 2000,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/ca/d0/bbcad0b1-109b-f19b-e4f4-18a35e526ab4/3610154399133.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BF-%D0%BC-%D0%BC-%D0%BB/1589963740?i=1589963816&uo=4",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/6iGpdkgr57g/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=6iGpdkgr57g",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "zemfira"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Прости_меня_моя_любовь"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Земфира Рамазанова"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 28,
+        "explanation": "Широко известная песня с высокой общей узнаваемостью; фрагмент не должен сразу произносить название.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-128d46828794": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "ВИА Сливки",
+        "artistAliases": [
+          "ВИА Сливки"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/9afd37d2-aa59-4f97-879c-db43abdf1f69",
+            "https://musicbrainz.org/artist/97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+            "https://www.wikidata.org/wiki/Q4423413",
+            "https://ru.wikipedia.org/wiki/Сливки_(группа)",
+            "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/9afd37d2-aa59-4f97-879c-db43abdf1f69",
+            "https://musicbrainz.org/artist/97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+            "https://www.wikidata.org/wiki/Q4423413",
+            "https://ru.wikipedia.org/wiki/Сливки_(группа)",
+            "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/9afd37d2-aa59-4f97-879c-db43abdf1f69",
+            "https://musicbrainz.org/artist/97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+            "https://www.wikidata.org/wiki/Q4423413",
+            "https://ru.wikipedia.org/wiki/Сливки_(группа)",
+            "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/9afd37d2-aa59-4f97-879c-db43abdf1f69",
+            "https://musicbrainz.org/artist/97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+            "https://www.wikidata.org/wiki/Q4423413",
+            "https://ru.wikipedia.org/wiki/Сливки_(группа)",
+            "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/9afd37d2-aa59-4f97-879c-db43abdf1f69",
+            "https://musicbrainz.org/artist/97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+            "https://www.wikidata.org/wiki/Q4423413",
+            "https://ru.wikipedia.org/wiki/Сливки_(группа)",
+            "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/9afd37d2-aa59-4f97-879c-db43abdf1f69",
+            "https://musicbrainz.org/artist/97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+            "https://www.wikidata.org/wiki/Q4423413",
+            "https://ru.wikipedia.org/wiki/Сливки_(группа)",
+            "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/9afd37d2-aa59-4f97-879c-db43abdf1f69",
+            "https://musicbrainz.org/artist/97fed49d-157b-4ab1-a7cf-8e11bb1ca18e",
+            "https://www.wikidata.org/wiki/Q4423413",
+            "https://ru.wikipedia.org/wiki/Сливки_(группа)",
+            "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+            "https://www.youtube.com/watch?v=WOGMyUqJuzU"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2001,
+        "versionYear": 2001,
+        "album": {
+          "title": "Первая весна",
+          "kind": "album",
+          "year": 2001,
+          "releaseGroupMbid": "181b887c-933d-4d76-b575-2d193ac31354",
+          "coverUrl": "https://coverartarchive.org/release/becb5444-1a2d-4104-95fd-34f4d5800223/33900096527-500.jpg",
+          "sourceUrl": "https://musicbrainz.org/release-group/181b887c-933d-4d76-b575-2d193ac31354",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/WOGMyUqJuzU/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=WOGMyUqJuzU",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "viaslivki",
+          "karinakoks",
+          "daryaermolaeva",
+          "irinavasilyeva"
+        ],
+        "lineup": [
+          {
+            "name": "Карина Кокс",
+            "role": "вокал · фронтвумен",
+            "highlighted": true
+          },
+          {
+            "name": "Дарья Ермолаева",
+            "role": "вокал",
+            "highlighted": false
+          },
+          {
+            "name": "Ирина Васильева",
+            "role": "вокал",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Сливки_(группа)"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Александр Зацепин"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Леонид Дербенёв"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Песня знакома широкой аудитории, но конкретный фрагмент или исполнитель требуют небольшого усилия.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-989f4613b615": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Reflex",
+        "artistAliases": [
+          "Reflex"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/78703570",
+            "https://irinanelson.com/video/reflex",
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+            "https://www.deezer.com/album/7827697"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/78703570",
+            "https://irinanelson.com/video/reflex",
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+            "https://www.deezer.com/album/7827697"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/78703570",
+            "https://irinanelson.com/video/reflex",
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+            "https://www.deezer.com/album/7827697"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/78703570",
+            "https://irinanelson.com/video/reflex",
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+            "https://www.deezer.com/album/7827697"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/78703570",
+            "https://irinanelson.com/video/reflex",
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+            "https://www.deezer.com/album/7827697"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/78703570",
+            "https://irinanelson.com/video/reflex",
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+            "https://www.deezer.com/album/7827697"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/78703570",
+            "https://irinanelson.com/video/reflex",
+            "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+            "https://www.deezer.com/album/7827697"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2003,
+        "versionYear": 2003,
+        "album": {
+          "title": "Падали звёзды",
+          "kind": "album",
+          "year": 2014,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ff25e9a15324f2f8ded64fcd24877d02/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/7827697",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/d5WpgXVR_2s/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=d5WpgXVR_2s",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "reflex",
+          "irinanelson",
+          "alenatorganova",
+          "djsilver"
+        ],
+        "lineup": [
+          {
+            "name": "Ирина Нельсон",
+            "role": "вокал · фронтвумен",
+            "highlighted": true
+          },
+          {
+            "name": "Алёна Торганова",
+            "role": "вокал, танцы",
+            "highlighted": false
+          },
+          {
+            "name": "DJ Silver",
+            "role": "музыкант, DJ",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://irinanelson.com/video/reflex"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Вячеслав Тюрин"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Леона Войналович",
+            "Глеб Кальпурний",
+            "Наталья Тимченко"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Песня знакома широкой аудитории, но конкретный фрагмент или исполнитель требуют небольшого усилия.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-c1a6d9123a57": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Валерия",
+        "artistAliases": [
+          "Валерия"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/102212050",
+            "https://www.km.ru/music/d434ea01c64c407fbc71848e3f0b01af",
+            "https://www.deezer.com/album/10615272",
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/102212050",
+            "https://www.km.ru/music/d434ea01c64c407fbc71848e3f0b01af",
+            "https://www.deezer.com/album/10615272",
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/102212050",
+            "https://www.km.ru/music/d434ea01c64c407fbc71848e3f0b01af",
+            "https://www.deezer.com/album/10615272",
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/102212050",
+            "https://www.km.ru/music/d434ea01c64c407fbc71848e3f0b01af",
+            "https://www.deezer.com/album/10615272",
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/102212050",
+            "https://www.km.ru/music/d434ea01c64c407fbc71848e3f0b01af",
+            "https://www.deezer.com/album/10615272",
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/102212050",
+            "https://www.km.ru/music/d434ea01c64c407fbc71848e3f0b01af",
+            "https://www.deezer.com/album/10615272",
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/102212050",
+            "https://www.km.ru/music/d434ea01c64c407fbc71848e3f0b01af",
+            "https://www.deezer.com/album/10615272",
+            "https://www.youtube.com/watch?v=3rAQLk8zDmY"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2003,
+        "versionYear": 2003,
+        "album": {
+          "title": "Страна любви",
+          "kind": "album",
+          "year": 2003,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8e5cbb2976ca589c77b5cddaed13438e/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/10615272",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/3rAQLk8zDmY/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=3rAQLk8zDmY",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "valeriya"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://www.km.ru/music/d434ea01c64c407fbc71848e3f0b01af"
+      },
+      "credits": [
+        {
+          "role": "Автор песни",
+          "names": [
+            "Виктор Дробыш"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 28,
+        "explanation": "Широко известная песня с высокой общей узнаваемостью; фрагмент не должен сразу произносить название.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-2a3e179cf638": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Катя Лель",
+        "artistAliases": [
+          "Катя Лель"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/4077363861",
+            "https://ru.wikipedia.org/wiki/Мой_мармеладный_(Я_не_права)",
+            "https://www.deezer.com/album/1002357081",
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/4077363861",
+            "https://ru.wikipedia.org/wiki/Мой_мармеладный_(Я_не_права)",
+            "https://www.deezer.com/album/1002357081",
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/4077363861",
+            "https://ru.wikipedia.org/wiki/Мой_мармеладный_(Я_не_права)",
+            "https://www.deezer.com/album/1002357081",
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/4077363861",
+            "https://ru.wikipedia.org/wiki/Мой_мармеладный_(Я_не_права)",
+            "https://www.deezer.com/album/1002357081",
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/4077363861",
+            "https://ru.wikipedia.org/wiki/Мой_мармеладный_(Я_не_права)",
+            "https://www.deezer.com/album/1002357081",
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/4077363861",
+            "https://ru.wikipedia.org/wiki/Мой_мармеладный_(Я_не_права)",
+            "https://www.deezer.com/album/1002357081",
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/4077363861",
+            "https://ru.wikipedia.org/wiki/Мой_мармеладный_(Я_не_права)",
+            "https://www.deezer.com/album/1002357081",
+            "https://www.youtube.com/watch?v=rsXJ7KApMU8"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2003,
+        "versionYear": 2003,
+        "album": {
+          "title": "Джага-джага",
+          "kind": "album",
+          "year": 2004,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/be8b7e49d2d3449cba2aeb9787249977/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/1002357081",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/rsXJ7KApMU8/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=rsXJ7KApMU8",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "katyalel"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Мой_мармеладный_(Я_не_права)"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Максим Фадеев"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 28,
+        "explanation": "Широко известная песня с высокой общей узнаваемостью; фрагмент не должен сразу произносить название.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-11ab87245ec0": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Баста",
+        "artistAliases": [
+          "Баста"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+            "https://ru.wikipedia.org/wiki/Баста_1",
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+            "https://ru.wikipedia.org/wiki/Баста_1",
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+            "https://ru.wikipedia.org/wiki/Баста_1",
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+            "https://ru.wikipedia.org/wiki/Баста_1",
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+            "https://ru.wikipedia.org/wiki/Баста_1",
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+            "https://ru.wikipedia.org/wiki/Баста_1",
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+            "https://ru.wikipedia.org/wiki/Баста_1",
+            "https://www.youtube.com/watch?v=_-pIVd4lGMw"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2006,
+        "versionYear": 2006,
+        "album": {
+          "title": "Баста 1",
+          "kind": "album",
+          "year": 2006,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8a/be/69/8abe69be-d10a-587c-0e70-ad25b9f18731/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BC%D0%B0%D0%BC%D0%B0/6796288656?i=6796288662&uo=4",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/_-pIVd4lGMw/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=_-pIVd4lGMw",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "basta",
+          "vasiliyvakulenko",
+          "noggano",
+          "nintendo"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Баста_1"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Василий Вакуленко"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Единственная явная рэп-позиция выпуска: известный артист, но не самый очевидный массовый трек.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-eee8e4601088": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Елена Ваенга",
+        "artistAliases": [
+          "Елена Ваенга"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/65250949",
+            "https://www.shazam.com/ru-ru/song/587863602/шопен",
+            "https://ru.wikipedia.org/wiki/Ваенга,_Елена_Владимировна",
+            "https://www.deezer.com/album/6395592",
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/65250949",
+            "https://www.shazam.com/ru-ru/song/587863602/шопен",
+            "https://ru.wikipedia.org/wiki/Ваенга,_Елена_Владимировна",
+            "https://www.deezer.com/album/6395592",
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/65250949",
+            "https://www.shazam.com/ru-ru/song/587863602/шопен",
+            "https://ru.wikipedia.org/wiki/Ваенга,_Елена_Владимировна",
+            "https://www.deezer.com/album/6395592",
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/65250949",
+            "https://www.shazam.com/ru-ru/song/587863602/шопен",
+            "https://ru.wikipedia.org/wiki/Ваенга,_Елена_Владимировна",
+            "https://www.deezer.com/album/6395592",
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/65250949",
+            "https://www.shazam.com/ru-ru/song/587863602/шопен",
+            "https://ru.wikipedia.org/wiki/Ваенга,_Елена_Владимировна",
+            "https://www.deezer.com/album/6395592",
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/65250949",
+            "https://www.shazam.com/ru-ru/song/587863602/шопен",
+            "https://ru.wikipedia.org/wiki/Ваенга,_Елена_Владимировна",
+            "https://www.deezer.com/album/6395592",
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/65250949",
+            "https://www.shazam.com/ru-ru/song/587863602/шопен",
+            "https://ru.wikipedia.org/wiki/Ваенга,_Елена_Владимировна",
+            "https://www.deezer.com/album/6395592",
+            "https://www.youtube.com/watch?v=EFwioOg_9yw"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2006,
+        "versionYear": 2006,
+        "album": {
+          "title": "Шопен",
+          "kind": "album",
+          "year": 2012,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/26a4f10d58e73f102b066c89a80456d5/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/6395592",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/EFwioOg_9yw/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=EFwioOg_9yw",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "elenavaenga"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://www.shazam.com/ru-ru/song/587863602/шопен"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Елена Ваенга"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Известная песня, но не универсальный поп-хит: средняя сложность для смешанного квиза.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-a054b56a7942": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Нюша",
+        "artistAliases": [
+          "Нюша"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+            "https://www.youtube.com/watch?v=Ewdap2FX-uE",
+            "https://ru.wikipedia.org/wiki/Наедине",
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+            "https://www.youtube.com/watch?v=Ewdap2FX-uE",
+            "https://ru.wikipedia.org/wiki/Наедине",
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+            "https://www.youtube.com/watch?v=Ewdap2FX-uE",
+            "https://ru.wikipedia.org/wiki/Наедине",
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+            "https://www.youtube.com/watch?v=Ewdap2FX-uE",
+            "https://ru.wikipedia.org/wiki/Наедине",
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+            "https://www.youtube.com/watch?v=Ewdap2FX-uE",
+            "https://ru.wikipedia.org/wiki/Наедине",
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+            "https://www.youtube.com/watch?v=Ewdap2FX-uE",
+            "https://ru.wikipedia.org/wiki/Наедине",
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+            "https://www.youtube.com/watch?v=Ewdap2FX-uE",
+            "https://ru.wikipedia.org/wiki/Наедине",
+            "https://www.youtube.com/watch?v=iFzccToF9rk"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2013,
+        "versionYear": 2013,
+        "album": {
+          "title": "Объединение",
+          "kind": "album",
+          "year": 2014,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9b/0c/a6/9b0ca651-8799-85c8-31d1-bee24cce5f3a/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5/1080279508?i=1080280143&uo=4",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/iFzccToF9rk/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=iFzccToF9rk",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "nyusha"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://www.youtube.com/watch?v=Ewdap2FX-uE"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Нюша Шурочкина"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 72,
+        "explanation": "Не самый очевидный сингл популярной исполнительницы; для тебя это более глубокая позиция.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-23a6c1460c9d": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Фабрика",
+        "artistAliases": [
+          "Фабрика"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+            "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2013,
+        "versionYear": 2013,
+        "album": {
+          "title": "Не родись красивой",
+          "kind": "album",
+          "year": 2013,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b2/74/1c/b2741cad-3e2d-a73a-e785-f5fe6a8a8e1d/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BD%D0%B5-%D1%80%D0%BE%D0%B4%D0%B8%D1%81%D1%8C-%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%BE%D0%B9/1606102671?i=1606102681&uo=4",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/HuSf1UcFRq0/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=HuSf1UcFRq0",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "fabrika",
+          "irinatoneva",
+          "alexandrasavelyeva",
+          "ekaterinali"
+        ],
+        "lineup": [
+          {
+            "name": "Ирина Тонева",
+            "role": "вокал · ключевая участница",
+            "highlighted": false
+          },
+          {
+            "name": "Александра Савельева",
+            "role": "вокал",
+            "highlighted": false
+          },
+          {
+            "name": "Екатерина Ли",
+            "role": "вокал",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://www.youtube.com/watch?v=HuSf1UcFRq0"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Игорь Матвиенко"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Диана Поллыева",
+            "Игорь Матвиенко"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Песня знакома широкой аудитории, но конкретный фрагмент или исполнитель требуют небольшого усилия.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "avtoradio-20d993e657e9": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Серебро",
+        "artistAliases": [
+          "Серебро",
+          "SEREBRO"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+            "https://ru.wikipedia.org/wiki/Serebro",
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+            "https://ru.wikipedia.org/wiki/Serebro",
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+            "https://ru.wikipedia.org/wiki/Serebro",
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+            "https://ru.wikipedia.org/wiki/Serebro",
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+            "https://ru.wikipedia.org/wiki/Serebro",
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+            "https://ru.wikipedia.org/wiki/Serebro",
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+            "https://ru.wikipedia.org/wiki/Serebro",
+            "https://www.youtube.com/watch?v=IDixJgx8my4"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2015,
+        "versionYear": 2015,
+        "album": {
+          "title": "Сила трёх",
+          "kind": "album",
+          "year": 2015,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/26/4a/9d/264a9dab-f431-3a10-adc4-0ca34b1147c0/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D0%BB%D0%B0/1193212013?i=1193212022&uo=4",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/IDixJgx8my4/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=IDixJgx8my4",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "serebro",
+          "olgaseryabkina",
+          "polinafavorskaya",
+          "daryashashina"
+        ],
+        "lineup": [
+          {
+            "name": "Ольга Серябкина",
+            "role": "вокал, автор · ключевая",
+            "highlighted": false
+          },
+          {
+            "name": "Полина Фаворская",
+            "role": "вокал",
+            "highlighted": false
+          },
+          {
+            "name": "Дарья Шашина",
+            "role": "вокал",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Serebro"
+      },
+      "credits": [
+        {
+          "role": "Авторы",
+          "names": [
+            "Максим Фадеев",
+            "Ольга Серябкина"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 52,
+        "explanation": "Песня знакома широкой аудитории, но конкретный фрагмент или исполнитель требуют небольшого усилия.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-8a08e137b62d": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Анна Бутурлина",
+        "artistAliases": [
+          "Анна Бутурлина"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89",
+            "https://musicbrainz.org/artist/ab95bf2c-d9de-415b-8455-bf2113382222",
+            "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89",
+            "https://musicbrainz.org/artist/ab95bf2c-d9de-415b-8455-bf2113382222",
+            "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89",
+            "https://musicbrainz.org/artist/ab95bf2c-d9de-415b-8455-bf2113382222",
+            "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89",
+            "https://musicbrainz.org/artist/ab95bf2c-d9de-415b-8455-bf2113382222",
+            "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89",
+            "https://musicbrainz.org/artist/ab95bf2c-d9de-415b-8455-bf2113382222",
+            "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89",
+            "https://musicbrainz.org/artist/ab95bf2c-d9de-415b-8455-bf2113382222",
+            "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89",
+            "https://musicbrainz.org/artist/ab95bf2c-d9de-415b-8455-bf2113382222",
+            "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+            "https://www.youtube.com/watch?v=Hu1Ynl2rRos"
+          ]
+        },
+        "soundtrack": {
+          "state": "verified",
+          "sources": [
+            "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2013,
+        "versionYear": 2013,
+        "album": {
+          "title": "Холодное сердце (Оригинальный саундтрек к фильму)",
+          "kind": "album",
+          "year": 2013,
+          "releaseGroupMbid": "7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+          "coverUrl": "https://coverartarchive.org/release/3767c556-b9d9-41be-a6d2-f3980f227a82/30746667630-500.jpg",
+          "sourceUrl": "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/Hu1Ynl2rRos/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=Hu1Ynl2rRos",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "annabuturlina"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://musicbrainz.org/recording/7c62ffc3-e369-4bd7-9a63-86d1bebf5f89"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Кристен Андерсон-Лопес",
+            "Роберт Лопес"
+          ]
+        }
+      ],
+      "soundtrack": {
+        "title": "Холодное сердце",
+        "kind": "анимационный фильм",
+        "year": 2013,
+        "sourceUrl": "https://musicbrainz.org/release-group/7f8c1b27-8a5b-44c9-9707-c6bc9953959c"
+      },
+      "difficulty": {
+        "band": "recognizable",
+        "score": 28,
+        "explanation": "Широко известная песня с высокой общей узнаваемостью; фрагмент не должен сразу произносить название.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-0b3e3a5f099f": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Amirchik",
+        "artistAliases": [
+          "Amirchik"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3277467521",
+            "https://ru.wikipedia.org/wiki/Эта_любовь_(сингл)",
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3277467521",
+            "https://ru.wikipedia.org/wiki/Эта_любовь_(сингл)",
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3277467521",
+            "https://ru.wikipedia.org/wiki/Эта_любовь_(сингл)",
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3277467521",
+            "https://ru.wikipedia.org/wiki/Эта_любовь_(сингл)",
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3277467521",
+            "https://ru.wikipedia.org/wiki/Эта_любовь_(сингл)",
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3277467521",
+            "https://ru.wikipedia.org/wiki/Эта_любовь_(сингл)",
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3277467521",
+            "https://ru.wikipedia.org/wiki/Эта_любовь_(сингл)",
+            "https://www.youtube.com/watch?v=m7CTD_WZFqY"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2022,
+        "versionYear": 2022,
+        "album": {
+          "title": "Эта любовь",
+          "kind": "single",
+          "year": 2022,
+          "coverUrl": "https://api.deezer.com/album/727051861/image",
+          "sourceUrl": "https://www.deezer.com/track/3277467521",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/m7CTD_WZFqY/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=m7CTD_WZFqY",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "amirchik"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Эта_любовь_(сингл)"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Амирхан Батабаев",
+            "Алекс Давия",
+            "Алимжан"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 72,
+        "explanation": "Современный международный хит, но для слушателя вне коротких видео это сложная позиция.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "chart-00138": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "HENSY",
+        "artistAliases": [
+          "HENSY"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/971830452",
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+            "https://ipex.ru/catalog/music/pobolelo-i-proshlo-1",
+            "https://www.deezer.com/album/150766282"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/971830452",
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+            "https://ipex.ru/catalog/music/pobolelo-i-proshlo-1",
+            "https://www.deezer.com/album/150766282"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/971830452",
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+            "https://ipex.ru/catalog/music/pobolelo-i-proshlo-1",
+            "https://www.deezer.com/album/150766282"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/971830452",
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+            "https://ipex.ru/catalog/music/pobolelo-i-proshlo-1",
+            "https://www.deezer.com/album/150766282"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/971830452",
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+            "https://ipex.ru/catalog/music/pobolelo-i-proshlo-1",
+            "https://www.deezer.com/album/150766282"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/971830452",
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+            "https://ipex.ru/catalog/music/pobolelo-i-proshlo-1",
+            "https://www.deezer.com/album/150766282"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/971830452",
+            "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+            "https://ipex.ru/catalog/music/pobolelo-i-proshlo-1",
+            "https://www.deezer.com/album/150766282"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2020,
+        "versionYear": 2020,
+        "album": {
+          "title": "Поболело и прошло",
+          "kind": "album",
+          "year": 2020,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/07d6f5838df995607a7de355b5d1f74b/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/150766282",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/vIw8R8ezJrA/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=vIw8R8ezJrA",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "hensy"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://www.youtube.com/watch?v=vIw8R8ezJrA"
+      },
+      "credits": [
+        {
+          "role": "Автор",
+          "names": [
+            "HENSY"
+          ]
+        },
+        {
+          "role": "Музыка",
+          "names": [
+            "Азиз Закиев"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 28,
+        "explanation": "Широко известная песня с высокой общей узнаваемостью; фрагмент не должен сразу произносить название.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-4d45f4f2ba9b": {
+      "selectedForQuiz": "new-rules-test-02",
+      "publishedAt": "2026-09-06T23:30:55.633Z",
+      "identity": {
+        "artist": "Хабиб",
+        "artistAliases": [
+          "Хабиб"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4",
+            "https://www.youtube.com/watch?v=7xTmaOqL5UE"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4",
+            "https://www.youtube.com/watch?v=7xTmaOqL5UE"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4",
+            "https://www.youtube.com/watch?v=7xTmaOqL5UE"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4",
+            "https://www.youtube.com/watch?v=7xTmaOqL5UE"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=7xTmaOqL5UE"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=7xTmaOqL5UE"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4",
+            "https://www.youtube.com/watch?v=7xTmaOqL5UE"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4",
+            "https://www.youtube.com/watch?v=7xTmaOqL5UE"
+          ]
+        },
+        "credits": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 2023,
+        "versionYear": 2023,
+        "album": {
+          "title": "Ой какая ты",
+          "kind": "single",
+          "year": 2023,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/73/37/35/733735a8-b089-e5f7-683c-a0c8b41c2647/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://i.ytimg.com/vi/7xTmaOqL5UE/hqdefault.jpg",
+        "sourceUrl": "https://www.youtube.com/watch?v=7xTmaOqL5UE",
+        "attribution": "Кадр официального музыкального видео",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "habib"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.apple.com/ru/album/%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D1%82%D1%8B/1670064940?i=1670064941&uo=4"
+      },
+      "credits": [],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 72,
+        "explanation": "Современная поп-песня с меньшей привычностью для твоего профиля.",
+        "basis": [
+          "personal-genre-feedback",
+          "catalog-popularity",
+          "fragment-position"
+        ]
+      }
     }
   }
 }
