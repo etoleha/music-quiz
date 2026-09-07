@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { publicationReport, validatePublicationVerification } from "./publication-verification.mjs";
+import { publicationReport, sealPublicationVerification, validatePublicationVerification } from "./publication-verification.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const pool = JSON.parse(fs.readFileSync(path.join(root, "data", "quiz-ready-songs.json"), "utf8"));
@@ -110,7 +110,7 @@ const tracks = selected.map(([songId, band, artistForm]) => {
   const checks = Object.fromEntries(["identity", "release", "artwork", "artistImage", "youtube", "fragment", "relationships", "difficulty"].map((name) => [name, { state: "verified", sources: name === "youtube" || name === "fragment" ? [youtubeUrl] : sourceUrls }]));
   checks.credits = { state: extra.credits?.length ? "verified" : "not-applicable", sources: extra.credits?.length ? sourceUrls : [] };
   checks.soundtrack = { state: extra.soundtrack ? "verified" : "not-applicable", sources: extra.soundtrack ? [extra.soundtrack.sourceUrl] : [] };
-  verification.songs[songId] = {
+  verification.songs[songId] = sealPublicationVerification(song, {
     selectedForQuiz: quizId,
     publishedAt,
     identity: { artist: song.artist, artistAliases: song.artistAliases, artistForm },
@@ -121,7 +121,7 @@ const tracks = selected.map(([songId, band, artistForm]) => {
     credits: extra.credits || [],
     soundtrack: extra.soundtrack || null,
     difficulty: { band, score: band === "recognizable" ? 28 : band === "middle" ? 52 : 72, explanation: extra.note || defaultDifficulty[band], basis: ["personal-genre-feedback", "catalog-popularity", "fragment-position"] },
-  };
+  }, publishedAt);
   return song;
 });
 

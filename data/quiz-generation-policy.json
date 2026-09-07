@@ -28,6 +28,29 @@
       "showDifficultyScore": true,
       "showDifficultyExplanation": false,
       "standaloneDashCountsAsWord": false
+    },
+    "materialChanges": {
+      "invalidateAllPreviousChecks": true,
+      "requireFullReverification": true,
+      "trackedFields": [
+        "artist",
+        "artistAliases",
+        "artistForm",
+        "title",
+        "titleAliases",
+        "releaseYear",
+        "versionYear",
+        "album",
+        "artistImage",
+        "performers",
+        "credits",
+        "soundtrack",
+        "originalRecording",
+        "youtube",
+        "clip",
+        "difficulty",
+        "audio"
+      ]
     }
   },
   "notes": [
@@ -37,6 +60,7 @@
     "Громкость измеряется на точном фрагменте; браузер применяет безопасный общий уровень и индивидуальную поправку.",
     "Первое исполнение песни проверяется отдельно от даты цифрового переиздания; для кавера обязательны исполнитель и ссылка на оригинал.",
     "Форма исполнителя подтверждается вручную и не наследуется вслепую из внешнего каталога.",
-    "Объяснение редакционного выбора сложности хранится внутри базы, но не показывается игроку."
+    "Объяснение редакционного выбора сложности хранится внутри базы, но не показывается игроку.",
+    "Любое изменение существенного поля меняет цифровой отпечаток карточки и требует полной повторной проверки всех пунктов перед публикацией."
   ]
 }

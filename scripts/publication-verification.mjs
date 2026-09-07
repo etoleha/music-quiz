@@ -1,3 +1,5 @@
+import crypto from "node:crypto";
+
 export const CHECK_STATES = new Set(["missing", "automatic", "verified", "failed", "stale", "not-applicable"]);
 
 export const REQUIRED_PUBLICATION_CHECKS = [
@@ -14,6 +16,58 @@ export const REQUIRED_PUBLICATION_CHECKS = [
 ];
 
 const objectOrNull = (value) => value && typeof value === "object" && !Array.isArray(value);
+const stableValue = (value) => Array.isArray(value)
+  ? value.map(stableValue)
+  : objectOrNull(value)
+    ? Object.fromEntries(Object.entries(value).filter(([, item]) => item !== undefined).sort(([left], [right]) => left.localeCompare(right)).map(([key, item]) => [key, stableValue(item)]))
+    : value;
+
+const materialSnapshot = (song = {}, record = {}) => ({
+  song: {
+    artist: song.artist,
+    title: song.title,
+    artistAliases: song.artistAliases,
+    titleAliases: song.titleAliases,
+    artistIds: song.artistIds,
+    approximateYear: song.approximateYear,
+    recognizability: song.recognizability,
+    youtube: song.youtube,
+    clip: song.clip,
+    optionalMetadata: {
+      artistForm: song.optionalMetadata?.artistForm,
+      album: song.optionalMetadata?.album,
+      artistImage: song.optionalMetadata?.artistImage,
+      performers: song.optionalMetadata?.performers,
+      facts: song.optionalMetadata?.facts,
+      audio: song.optionalMetadata?.audio,
+    },
+  },
+  verification: {
+    identity: record.identity,
+    release: record.release,
+    artistImage: record.artistImage,
+    relationships: record.relationships,
+    credits: record.credits,
+    soundtrack: record.soundtrack,
+    originalRecording: record.originalRecording,
+    difficulty: record.difficulty,
+    audio: record.audio,
+  },
+});
+
+export const publicationSourceFingerprint = (song, record) => crypto.createHash("sha256")
+  .update(JSON.stringify(stableValue(materialSnapshot(song, record))))
+  .digest("hex");
+
+export const sealPublicationVerification = (song, record, verifiedAt = new Date().toISOString()) => ({
+  ...record,
+  verificationSchemaVersion: 2,
+  sourceFingerprint: publicationSourceFingerprint(song, record),
+  lastFullyVerifiedAt: verifiedAt,
+});
+
+export const publicationVerificationIsCurrent = (song, record = {}) => !record.sourceFingerprint
+  || record.sourceFingerprint === publicationSourceFingerprint(song, record);
 
 export function validatePublicationVerification(document) {
   if (!objectOrNull(document) || !objectOrNull(document.songs)) {
@@ -21,6 +75,9 @@ export function validatePublicationVerification(document) {
   }
   for (const [songId, record] of Object.entries(document.songs)) {
     if (!objectOrNull(record.checks)) throw new Error(`${songId}: checks are required`);
+    if (record.verificationSchemaVersion >= 2 && !/^[a-f0-9]{64}$/u.test(record.sourceFingerprint || "")) {
+      throw new Error(`${songId}: sourceFingerprint is required for verification schema 2`);
+    }
     for (const [name, check] of Object.entries(record.checks)) {
       if (!objectOrNull(check) || !CHECK_STATES.has(check.state)) {
         throw new Error(`${songId}.${name}: invalid check state`);
@@ -94,7 +151,10 @@ export const conflictEntityIdsFor = (song, verificationDocument) => {
 };
 
 export function publicationReport(song, record) {
-  const blockers = blockingPublicationChecks(record);
+  const blockers = [...new Set([
+    ...(publicationVerificationIsCurrent(song, record) ? [] : ["fullReverification"]),
+    ...blockingPublicationChecks(record),
+  ])];
   return {
     songId: song.songId || song.id,
     artist: song.artist,

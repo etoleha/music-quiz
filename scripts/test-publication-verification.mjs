@@ -5,6 +5,8 @@ import {
   blockingPublicationChecks,
   conflictEntityIdsFor,
   lifecycleFor,
+  publicationReport,
+  sealPublicationVerification,
   validatePublicationVerification,
 } from "./publication-verification.mjs";
 
@@ -35,4 +37,29 @@ assert.deepEqual(blockingPublicationChecks(cover), []);
 const loudnessPending = structuredClone(record);
 loudnessPending.checks.audioLoudness = { state: "automatic" };
 assert.deepEqual(blockingPublicationChecks(loudnessPending), ["audioLoudness"]);
+const song = {
+  songId: "test",
+  artist: "Группа",
+  title: "Песня",
+  artistAliases: ["Группа"],
+  titleAliases: ["Песня"],
+  artistIds: ["group"],
+  approximateYear: 2001,
+  recognizability: "middle",
+  youtube: { videoId: "abcdefghijk" },
+  clip: { start: 30, duration: 11 },
+  optionalMetadata: { artistForm: "Группа", album: { title: "Альбом", year: 2001 } },
+};
+const sealed = sealPublicationVerification(song, record, "2026-09-07T12:00:00Z");
+validatePublicationVerification({ version: 2, songs: { test: sealed } });
+assert.equal(publicationReport(song, sealed).passed, true);
+const changedForm = structuredClone(song);
+changedForm.optionalMetadata.artistForm = "Исполнитель";
+assert.deepEqual(publicationReport(changedForm, sealed).blockers, ["fullReverification"]);
+const changedAlbum = structuredClone(song);
+changedAlbum.optionalMetadata.album.title = "Другой альбом";
+assert.deepEqual(publicationReport(changedAlbum, sealed).blockers, ["fullReverification"]);
+const changedVideo = structuredClone(song);
+changedVideo.youtube.videoId = "lmnopqrstuv";
+assert.deepEqual(publicationReport(changedVideo, sealed).blockers, ["fullReverification"]);
 console.log("publication verification tests passed");
