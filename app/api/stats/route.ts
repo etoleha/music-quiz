@@ -1,4 +1,5 @@
 import { getLocalDb } from "../../../server/local-db";
+import { difficultyCalibration } from "../../../server/difficulty-calibration.ts";
 
 export const runtime = "nodejs";
 
@@ -24,7 +25,7 @@ export async function GET() {
       FROM mistake_mastery WHERE active = 1
       ORDER BY successes ASC, misses DESC, last_error_at DESC, artist ASC`).all();
 
-    return Response.json({ attempts, weakTracks });
+    return Response.json({ attempts, weakTracks, difficulty: difficultyCalibration(database) });
   } catch (error) {
     console.error("stats unavailable", error);
     return Response.json({ error: "Статистика временно недоступна" }, { status: 500 });

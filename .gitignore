@@ -66,6 +66,7 @@ next-env.d.ts
 !/data/quiz-ready-songs.json
 !/data/song-publication-verification.json
 !/data/song-golden-reserve.json
+!/data/quiz-release-draft-*.json
 !/data/quiz-release-new-rules.json
 !/data/quiz-release-new-rules-validation.json
 !/data/quiz-release-new-rules-02.json

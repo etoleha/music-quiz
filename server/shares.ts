@@ -1,6 +1,7 @@
 import { randomBytes } from "node:crypto";
 import { getUnresolvedFragmentReportKeys } from "./feedback";
 import { getLocalDb } from "./local-db";
+import { artistScoreWeight, titleScoreWeight, trackMaxScore } from "../shared/score-policy.ts";
 
 export type GuestComparison = {
   score: number;
@@ -41,7 +42,7 @@ export function getGuestShare(token: string) {
   if (attempt) {
     const answers = database.prepare(`SELECT track_key AS trackKey,
       artist_answer AS artistAnswer, title_answer AS titleAnswer,
-      artist_point + title_point AS points, load_failed AS loadFailed
+      artist_point * ${artistScoreWeight} + title_point * ${titleScoreWeight} AS points, load_failed AS loadFailed
       FROM attempt_answers WHERE attempt_id = ?`).all(attempt.id) as Array<{
         trackKey: string;
         artistAnswer: string;
@@ -57,7 +58,7 @@ export function getGuestShare(token: string) {
         ? visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : answer.points), 0)
         : attempt.score,
       maxScore: visibleAnswers.length
-        ? visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : 2), 0)
+        ? visibleAnswers.reduce((sum, answer) => sum + (answer.loadFailed ? 0 : trackMaxScore), 0)
         : attempt.maxScore,
       answers: visibleAnswers,
     };

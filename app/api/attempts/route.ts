@@ -2,6 +2,7 @@ import { getQuiz, quizzes, type Track } from "../../quiz-data";
 import { isAccepted, isArtistAccepted } from "../../scoring";
 import { getLocalDb, inTransaction } from "../../../server/local-db";
 import { applyMistakeResult, rebuildMistakeMasteryForTrack } from "../../../server/mistake-mastery";
+import { scoreToAnswerPoints, trackMaxScore, weightedAnswerScore } from "../../../shared/score-policy.ts";
 
 export const runtime = "nodejs";
 
@@ -53,8 +54,8 @@ export async function POST(request: Request) {
     });
 
     const skipped = reviewed.filter((item) => item.loadFailed).length;
-    const score = reviewed.reduce((sum, item) => sum + item.artistPoint + item.titlePoint, 0);
-    const maxScore = (quiz.tracks.length - skipped) * 2;
+    const score = reviewed.reduce((sum, item) => sum + weightedAnswerScore(item.artistPoint, item.titlePoint), 0);
+    const maxScore = (quiz.tracks.length - skipped) * trackMaxScore;
     const attemptId = crypto.randomUUID();
     const database = getLocalDb();
 
@@ -123,8 +124,8 @@ export async function PATCH(request: Request) {
     if (!body.attemptId || !body.trackKey || (body.points === undefined && body.annulled === undefined)) {
       return Response.json({ error: "Некорректное исправление" }, { status: 400 });
     }
-    if (body.points !== undefined && ![0, 1, 2].includes(body.points)) {
-      return Response.json({ error: "Баллы должны быть от 0 до 2" }, { status: 400 });
+    if (body.points !== undefined && ![0, 1, 2, 3].includes(body.points)) {
+      return Response.json({ error: "Баллы должны быть от 0 до 3" }, { status: 400 });
     }
     const attemptId = body.attemptId;
     const trackKey = body.trackKey;
@@ -138,8 +139,7 @@ export async function PATCH(request: Request) {
 
     const result = inTransaction(database, () => {
       if (body.points !== undefined) {
-        const artistPoint = Math.min(body.points, 1);
-        const titlePoint = Math.max(body.points - 1, 0);
+        const { artistPoint, titlePoint } = scoreToAnswerPoints(body.points);
         database.prepare(`UPDATE attempt_answers
           SET artist_point = ?, title_point = ?, load_failed = 0 WHERE id = ?`)
           .run(artistPoint, titlePoint, ownedAnswer.id);
@@ -149,8 +149,8 @@ export async function PATCH(request: Request) {
       }
 
       const totals = database.prepare(`SELECT
-        COALESCE(SUM(CASE WHEN load_failed = 0 THEN artist_point + title_point ELSE 0 END), 0) AS score,
-        COALESCE(SUM(CASE WHEN load_failed = 0 THEN 2 ELSE 0 END), 0) AS maxScore,
+        COALESCE(SUM(CASE WHEN load_failed = 0 THEN artist_point * 2 + title_point ELSE 0 END), 0) AS score,
+        COALESCE(SUM(CASE WHEN load_failed = 0 THEN 3 ELSE 0 END), 0) AS maxScore,
         COALESCE(SUM(CASE WHEN load_failed = 1 THEN 1 ELSE 0 END), 0) AS skipped
         FROM attempt_answers WHERE attempt_id = ?`).get(attemptId) as {
           score: number;

@@ -26,9 +26,9 @@ insert.run("attempt", "correct", 1, 1);
 assert.deepEqual(applyBadFragmentScoreRule(database, "attempt", "wrong"), { loadFailed: true, autoAnnulled: true });
 assert.deepEqual(applyBadFragmentScoreRule(database, "attempt", "empty"), { loadFailed: true, autoAnnulled: true });
 assert.deepEqual(applyBadFragmentScoreRule(database, "attempt", "correct"), { loadFailed: false, autoAnnulled: false });
-assert.deepEqual({ ...attemptTotals(database, "attempt") }, { score: 2, maxScore: 2, skipped: 2 });
+assert.deepEqual({ ...attemptTotals(database, "attempt") }, { score: 3, maxScore: 3, skipped: 2 });
 
 restoreAutoAnnulledAnswer(database, "attempt", "wrong");
-assert.deepEqual({ ...attemptTotals(database, "attempt") }, { score: 3, maxScore: 4, skipped: 1 });
+assert.deepEqual({ ...attemptTotals(database, "attempt") }, { score: 5, maxScore: 6, skipped: 1 });
 
 console.log("feedback scoring tests passed");

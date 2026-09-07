@@ -8,6 +8,7 @@ import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getQuiz, quizzes, type Quiz, type Track } from "./quiz-data";
 import { isAccepted, isArtistAccepted } from "./scoring";
+import { scoreToAnswerPoints, trackMaxScore, weightedAnswerScore } from "../shared/score-policy.ts";
 
 type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void };
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean; loadErrorCode?: number };
@@ -433,8 +434,8 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       return { ...answer, track, artistPoint: answer.loadFailed ? 0 : Number(isArtistAccepted(answer.artistAnswer, track.artistAliases, track.artistForm)), titlePoint: answer.loadFailed ? 0 : Number(isAccepted(answer.titleAnswer, track.titleAliases)) };
     });
     const skipped = localReview.filter((item) => item.loadFailed).length;
-    const value = localReview.reduce((sum, item) => sum + item.artistPoint + item.titlePoint, 0);
-    const max = (order.length - skipped) * 2;
+    const value = localReview.reduce((sum, item) => sum + weightedAnswerScore(item.artistPoint, item.titlePoint), 0);
+    const max = (order.length - skipped) * trackMaxScore;
     setReview(localReview); setReviewIndex(0); setReviewPlayingKey(null); setScore({ value, max, skipped }); setCurrentAttemptId(null); setScreen("result");
     if (guestMode) {
       setSaveState("idle");
@@ -459,8 +460,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       if (item.trackKey !== trackKey) return item;
       if (change.points !== undefined) return {
         ...item,
-        artistPoint: Math.min(change.points, 1),
-        titlePoint: Math.max(change.points - 1, 0),
+        ...scoreToAnswerPoints(change.points),
         loadFailed: false,
       };
       return { ...item, loadFailed: Boolean(change.annulled) };
@@ -468,8 +468,8 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     const optimisticSkipped = optimisticReview.filter((item) => item.loadFailed).length;
     setReview(optimisticReview);
     setScore({
-      value: optimisticReview.reduce((sum, item) => sum + (item.loadFailed ? 0 : item.artistPoint + item.titlePoint), 0),
-      max: (optimisticReview.length - optimisticSkipped) * 2,
+      value: optimisticReview.reduce((sum, item) => sum + (item.loadFailed ? 0 : weightedAnswerScore(item.artistPoint, item.titlePoint)), 0),
+      max: (optimisticReview.length - optimisticSkipped) * trackMaxScore,
       skipped: optimisticSkipped,
     });
     if (guestMode) {
@@ -510,8 +510,8 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         setReview(previousReview);
         const previousSkipped = previousReview.filter((item) => item.loadFailed).length;
         setScore({
-          value: previousReview.reduce((sum, item) => sum + (item.loadFailed ? 0 : item.artistPoint + item.titlePoint), 0),
-          max: (previousReview.length - previousSkipped) * 2,
+          value: previousReview.reduce((sum, item) => sum + (item.loadFailed ? 0 : weightedAnswerScore(item.artistPoint, item.titlePoint)), 0),
+          max: (previousReview.length - previousSkipped) * trackMaxScore,
           skipped: previousSkipped,
         });
       }
@@ -670,24 +670,24 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         {!guestMode && saveState === "error" && <p className="save-state error">Не удалось сохранить изменение</p>}
         {!guestMode && fragmentFeedbackError && <p className="save-state error">Не удалось сохранить отметку о фрагменте</p>}
         <div className="review-list">{review.map((item, itemIndex) => {
-          const points = item.artistPoint + item.titlePoint;
+          const points = weightedAnswerScore(item.artistPoint, item.titlePoint);
           const ownerAnswer = ownerAnswers.get(item.track.key);
           const isPlaying = reviewPlayingKey === item.track.key;
           const info = artistInfo[item.track.key];
           return <article className={`review-row ${item.loadFailed ? "is-annulled" : ""} ${reviewIndex === itemIndex ? "is-selected" : ""}`} key={item.track.key}>
             <b>{String(itemIndex + 1).padStart(2, "0")}</b>
             <div className="review-track"><div className="track-answer-heading"><strong>{item.track.artist}</strong><span>{item.track.title}</span></div>{comparison ? <div className="answer-comparison">
-              <div className={`answer-card ${item.loadFailed ? "is-annulled" : ""}`}><span>Ты</span><small>{item.loadFailed ? `Аннулирован · ${youtubeErrorLabel(item.loadErrorCode)}` : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small><b className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/2`}</b></div>
-              <div className={`answer-card ${ownerAnswer?.loadFailed ? "is-annulled" : ""}`}><span>Алексей</span><small>{ownerAnswer?.loadFailed ? "Аннулирован" : ownerAnswer ? `${ownerAnswer.artistAnswer || "—"} · ${ownerAnswer.titleAnswer || "—"}` : "Нет данных по этому вопросу"}</small><b className={ownerAnswer?.loadFailed ? "void" : ownerAnswer?.points ? "points" : "zero"}>{ownerAnswer?.loadFailed ? "—" : ownerAnswer ? `${ownerAnswer.points}/2` : "—"}</b></div>
+              <div className={`answer-card ${item.loadFailed ? "is-annulled" : ""}`}><span>Ты</span><small>{item.loadFailed ? `Аннулирован · ${youtubeErrorLabel(item.loadErrorCode)}` : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small><b className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/${trackMaxScore}`}</b></div>
+              <div className={`answer-card ${ownerAnswer?.loadFailed ? "is-annulled" : ""}`}><span>Алексей</span><small>{ownerAnswer?.loadFailed ? "Аннулирован" : ownerAnswer ? `${ownerAnswer.artistAnswer || "—"} · ${ownerAnswer.titleAnswer || "—"}` : "Нет данных по этому вопросу"}</small><b className={ownerAnswer?.loadFailed ? "void" : ownerAnswer?.points ? "points" : "zero"}>{ownerAnswer?.loadFailed ? "—" : ownerAnswer ? `${ownerAnswer.points}/${trackMaxScore}` : "—"}</b></div>
             </div> : <small>{item.loadFailed ? `Аннулирован · ${youtubeErrorLabel(item.loadErrorCode)}` : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small>}</div>
-            {!comparison && <div className="row-scores"><span className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/2`}</span></div>}
+            {!comparison && <div className="row-scores"><span className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/${trackMaxScore}`}</span></div>}
             <div className="review-controls">
               <Button ref={(element) => { reviewPlayButtons.current[itemIndex] = element; }} size="sm" variant="outline" className="review-play" disabled={!playerReady} aria-label={`Прослушать фрагмент ${item.track.artist} — ${item.track.title}`} onFocus={() => setReviewIndex(itemIndex)} onClick={() => { setReviewIndex(itemIndex); playReviewClip(item.track); }}><Volume2 /> {isPlaying ? "…" : `${item.track.duration} сек.`}</Button>
               {clipPlayback?.trackKey === item.track.key && clipPlayback.context === "review" && <ClipTimeline playback={clipPlayback} duration={item.track.duration} compact />}
               <a className="youtube-link" href={`https://www.youtube.com/watch?v=${item.track.youtubeId}`} target="_blank" rel="noreferrer" aria-label={`Открыть ${item.track.artist} — ${item.track.title} на YouTube`}><ExternalLink /> YouTube</a>
               <a className="spotify-link" href={spotifyArtistUrl(item.track.artist)} target="_blank" rel="noreferrer" aria-label={`Найти ${item.track.artist} в Spotify`}><Music2 /> Spotify</a>
               {!guestMode && <Button size="sm" variant="ghost" className={`bad-fragment-button ${badFragments.has(item.trackKey) ? "is-reported" : ""}`} disabled={!currentAttemptId || fragmentFeedbackPending.has(item.trackKey)} aria-pressed={badFragments.has(item.trackKey)} onClick={() => void toggleBadFragment(item.trackKey)}><Flag /> {badFragments.has(item.trackKey) ? "Отмечено" : "Плохой фрагмент"}</Button>}
-              <Button size="sm" variant="ghost" disabled={!currentAttemptId && !guestMode} onClick={() => void correctResult(item.trackKey, { annulled: !item.loadFailed })}>{item.loadFailed ? "Вернуть" : "Аннулировать"}</Button><div className="score-picker" role="group" aria-label={`Баллы за ${item.track.artist} — ${item.track.title}`}>{[0, 1, 2].map((value) => <button type="button" key={value} className={!item.loadFailed && points === value ? "is-selected" : ""} aria-pressed={!item.loadFailed && points === value} disabled={!currentAttemptId && !guestMode} onClick={() => void correctResult(item.trackKey, { points: value })}>{value}</button>)}</div>
+              <Button size="sm" variant="ghost" disabled={!currentAttemptId && !guestMode} onClick={() => void correctResult(item.trackKey, { annulled: !item.loadFailed })}>{item.loadFailed ? "Вернуть" : "Аннулировать"}</Button><div className="score-picker" role="group" aria-label={`Баллы за ${item.track.artist} — ${item.track.title}. Исполнитель — 2, название — 1.`}>{[0, 1, 2, 3].map((value) => <button type="button" key={value} title={value === 1 ? "Только название" : value === 2 ? "Только исполнитель" : value === 3 ? "Исполнитель и название" : "Ничего"} className={!item.loadFailed && points === value ? "is-selected" : ""} aria-pressed={!item.loadFailed && points === value} disabled={!currentAttemptId && !guestMode} onClick={() => void correctResult(item.trackKey, { points: value })}>{value}</button>)}</div>
             </div>
             <TrackReferenceCard info={info} track={item.track} />
           </article>;

@@ -1,4 +1,5 @@
 import type { DatabaseSync } from "node:sqlite";
+import { artistScoreWeight, titleScoreWeight, trackMaxScore } from "../shared/score-policy.ts";
 
 export function applyBadFragmentScoreRule(database: DatabaseSync, attemptId: string, trackKey: string) {
   const answer = database.prepare(`SELECT id, artist_point AS artistPoint,
@@ -22,8 +23,8 @@ export function restoreAutoAnnulledAnswer(database: DatabaseSync, attemptId: str
 
 export function attemptTotals(database: DatabaseSync, attemptId: string) {
   return database.prepare(`SELECT
-    COALESCE(SUM(CASE WHEN load_failed = 0 THEN artist_point + title_point ELSE 0 END), 0) AS score,
-    COALESCE(SUM(CASE WHEN load_failed = 0 THEN 2 ELSE 0 END), 0) AS maxScore,
+    COALESCE(SUM(CASE WHEN load_failed = 0 THEN artist_point * ${artistScoreWeight} + title_point * ${titleScoreWeight} ELSE 0 END), 0) AS score,
+    COALESCE(SUM(CASE WHEN load_failed = 0 THEN ${trackMaxScore} ELSE 0 END), 0) AS maxScore,
     COALESCE(SUM(CASE WHEN load_failed = 1 THEN 1 ELSE 0 END), 0) AS skipped
     FROM attempt_answers WHERE attempt_id = ?`).get(attemptId) as {
       score: number;
