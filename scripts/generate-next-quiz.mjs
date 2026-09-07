@@ -32,6 +32,11 @@ const maxPriorityArtists = 2;
 const artistSelectionPolicy = loadArtistSelectionPolicy(repoRoot);
 
 const pool = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
+const goldenReservePath = path.join(repoRoot, "data", "song-golden-reserve.json");
+const goldenReserve = fs.existsSync(goldenReservePath)
+  ? JSON.parse(fs.readFileSync(goldenReservePath, "utf8"))
+  : { songs: [] };
+const goldenSongIds = new Set(goldenReserve.songs.map(({ songId }) => songId));
 const publicationVerificationPath = path.join(repoRoot, "data", "song-publication-verification.json");
 const publicationVerification = fs.existsSync(publicationVerificationPath)
   ? validatePublicationVerification(JSON.parse(fs.readFileSync(publicationVerificationPath, "utf8")))
@@ -56,10 +61,10 @@ const hasArtistOverlap = (song, selected) => selected.some((other) =>
   conflictEntityIdsFor(song, publicationVerification).some((left) =>
     conflictEntityIdsFor(other, publicationVerification).includes(left)));
 
-const candidates = pool.songs
+const candidates = [...goldenReserve.songs, ...pool.songs.filter(({ songId }) => !goldenSongIds.has(songId))]
   .filter((song) => song.readyForQuiz)
   .filter((song) => !isArtistBlocked(song, artistSelectionPolicy))
-  .filter((song) => !preflightSongIds || preflightSongIds.has(song.songId))
+  .filter((song) => song.reserveTier === "golden" || !preflightSongIds || preflightSongIds.has(song.songId))
   .filter((song) => !strictPublication || publicationReport(song, publicationVerification.songs[song.songId]).passed)
   .filter((song) => allowPreviouslyUsedArtists || song.artistNovelty === "new-artist")
   .filter((song) => eraTargets[song.era] !== undefined)
@@ -73,7 +78,8 @@ const candidates = pool.songs
       optionalMetadata: verified?.identity?.artistForm ? { ...song.optionalMetadata, artistForm: verified.identity.artistForm } : song.optionalMetadata,
     };
   })
-  .sort((left, right) => Number(isArtistPrioritized(right, artistSelectionPolicy))
+  .sort((left, right) => Number(right.reserveTier === "golden") - Number(left.reserveTier === "golden")
+    || Number(isArtistPrioritized(right, artistSelectionPolicy))
     - Number(isArtistPrioritized(left, artistSelectionPolicy))
     || stableRank(left).localeCompare(stableRank(right)));
 
@@ -226,6 +232,7 @@ const releaseCandidate = {
     artistStopListApplied: true,
     priorityArtistPreferenceApplied: true,
     maxPriorityArtists,
+    goldenReservePreferred: true,
   },
   validation: {
     passed: true,
@@ -242,6 +249,7 @@ const releaseCandidate = {
     eras: Object.fromEntries(Object.keys(eraTargets).map((era) => [era, ordered.filter((song) => song.era === era).length])),
     recognition: Object.fromEntries(Object.keys(recognitionTargets).map((band) => [band, ordered.filter((song) => song.recognizability === band).length])),
     minimumViews: Math.min(...ordered.map((song) => song.youtube.viewCount || 0)),
+    goldenReserveSongs: ordered.filter((song) => song.reserveTier === "golden").length,
   },
   tracks: ordered,
 };

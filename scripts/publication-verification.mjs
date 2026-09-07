@@ -41,6 +41,22 @@ export const blockingPublicationChecks = (record = {}) => REQUIRED_PUBLICATION_C
   return state !== "verified" && state !== "not-applicable";
 });
 
+export const REQUIRED_GOLDEN_RESERVE_CHECKS = [
+  "identity",
+  "release",
+  "artwork",
+  "artistImage",
+  "youtube",
+  "difficulty",
+  "credits",
+  "soundtrack",
+];
+
+export const blockingGoldenReserveChecks = (record = {}) => REQUIRED_GOLDEN_RESERVE_CHECKS.filter((name) => {
+  const state = record.checks?.[name]?.state;
+  return state !== "verified" && state !== "not-applicable";
+});
+
 export function lifecycleFor(record = {}) {
   if (record.disposition === "rejected") return "rejected";
   if (record.disposition === "quarantined" || Object.values(record.checks || {}).some((check) => check?.state === "failed")) return "quarantined";
@@ -48,10 +64,22 @@ export function lifecycleFor(record = {}) {
   if (record.publishedAt && blockers.length === 0) return "published";
   if (record.selectedForQuiz && blockers.length === 0) return "verified";
   if (record.selectedForQuiz) return "selected";
+  if (record.goldenReserve?.approvedAt && blockingGoldenReserveChecks(record).length === 0) return "golden";
+  if (record.goldenReserve?.approvedAt) return "golden-review";
   const technical = ["identity", "youtube", "fragment"].every((name) => ["verified", "not-applicable"].includes(record.checks?.[name]?.state));
   if (technical) return "technical-ready";
   const enriched = ["release", "artwork", "artistImage"].some((name) => ["automatic", "verified"].includes(record.checks?.[name]?.state));
   return enriched ? "enriched" : "catalogued";
+}
+
+export function goldenReserveReport(song, record) {
+  const blockers = blockingGoldenReserveChecks(record);
+  return {
+    songId: song.songId || song.id,
+    lifecycle: lifecycleFor(record),
+    blockers,
+    passed: Boolean(record?.goldenReserve?.approvedAt) && blockers.length === 0,
+  };
 }
 
 export const conflictEntityIdsFor = (song, verificationDocument) => {
