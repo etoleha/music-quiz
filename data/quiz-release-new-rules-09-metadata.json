@@ -1,0 +1,3298 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-07T11:19:46.542Z",
+  "quizId": "soviet-hard-02",
+  "songs": {
+    "pool-c294e7732a49": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Аквариум",
+        "artistAliases": [
+          "Аквариум"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/476810/track/4209976",
+            "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%82%D0%B8_%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F",
+            "https://music.yandex.com/artist/188963",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/476810/track/4209976",
+            "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%82%D0%B8_%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F",
+            "https://music.yandex.com/artist/188963",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/476810/track/4209976"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/188963",
+            "https://music.yandex.com/album/476810/track/4209976",
+            "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%82%D0%B8_%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=vACwrTbSOYs"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=vACwrTbSOYs"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/476810/track/4209976",
+            "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%82%D0%B8_%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F",
+            "https://music.yandex.com/artist/188963",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/476810/track/4209976",
+            "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%82%D0%B8_%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F",
+            "https://music.yandex.com/artist/188963",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/476810/track/4209976",
+            "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%82%D0%B8_%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F",
+            "https://music.yandex.com/artist/188963",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1986,
+        "versionYear": 1986,
+        "album": {
+          "title": "Дети Декабря",
+          "kind": "album",
+          "year": 1986,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/34131/8d667067.a.476810-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/476810/track/4209976",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/108289/6c4059f1.p.188963/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/188963",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "akvarium",
+          "person:борис-гребенщиков",
+          "person:александр-титов",
+          "person:всеволод-гаккель",
+          "person:андрей-романов",
+          "person:михаил-васильев"
+        ],
+        "lineup": [
+          {
+            "name": "Борис Гребенщиков",
+            "role": "вокал, гитара, автор · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Александр Титов",
+            "role": "бас-гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Всеволод Гаккель",
+            "role": "виолончель",
+            "highlighted": false
+          },
+          {
+            "name": "Андрей Романов",
+            "role": "флейта, клавишные",
+            "highlighted": false
+          },
+          {
+            "name": "Михаил Васильев",
+            "role": "перкуссия",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://music.yandex.com/album/476810/track/4209976"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Борис Гребенщиков"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Глубокая альбомная позиция из позднего советского периода группы.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-b75cc6d347e6": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Александр Барыкин",
+        "artistAliases": [
+          "Александр Барыкин"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/16293823/track/85404652",
+            "https://music.yandex.com/artist/2731018",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/16293823/track/85404652",
+            "https://music.yandex.com/artist/2731018",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/16293823/track/85404652"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/2731018",
+            "https://music.yandex.com/album/16293823/track/85404652",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oB-LOyNkFu0"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oB-LOyNkFu0"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/16293823/track/85404652",
+            "https://music.yandex.com/artist/2731018",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/16293823/track/85404652",
+            "https://music.yandex.com/artist/2731018",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/16293823/track/85404652",
+            "https://music.yandex.com/artist/2731018",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1987,
+        "versionYear": 2009,
+        "album": {
+          "title": "Букет",
+          "kind": "album",
+          "year": 1987,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/5234847/982bd254.a.16293823-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/16293823/track/85404652",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/10960834/74dc2d95.p.2731018/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2731018",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "aleksandrbarykin"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/16293823/track/85404652"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Александр Барыкин"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Маргарита Пушкина"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "В квизе звучит позднее концертное исполнение; год исходной песни и версия разделены.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-5612cbcf4fee": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Александр Новиков",
+        "artistAliases": [
+          "Александр Новиков"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/59725/track/557018",
+            "https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B7%D0%B8_%D0%BC%D0%B5%D0%BD%D1%8F,_%D0%B8%D0%B7%D0%B2%D0%BE%D0%B7%D1%87%D0%B8%D0%BA",
+            "https://music.yandex.com/artist/160527",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/59725/track/557018",
+            "https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B7%D0%B8_%D0%BC%D0%B5%D0%BD%D1%8F,_%D0%B8%D0%B7%D0%B2%D0%BE%D0%B7%D1%87%D0%B8%D0%BA",
+            "https://music.yandex.com/artist/160527",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/59725/track/557018"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/160527",
+            "https://music.yandex.com/album/59725/track/557018",
+            "https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B7%D0%B8_%D0%BC%D0%B5%D0%BD%D1%8F,_%D0%B8%D0%B7%D0%B2%D0%BE%D0%B7%D1%87%D0%B8%D0%BA",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=61W3hPz14M4"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=61W3hPz14M4"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/59725/track/557018",
+            "https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B7%D0%B8_%D0%BC%D0%B5%D0%BD%D1%8F,_%D0%B8%D0%B7%D0%B2%D0%BE%D0%B7%D1%87%D0%B8%D0%BA",
+            "https://music.yandex.com/artist/160527",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/59725/track/557018",
+            "https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B7%D0%B8_%D0%BC%D0%B5%D0%BD%D1%8F,_%D0%B8%D0%B7%D0%B2%D0%BE%D0%B7%D1%87%D0%B8%D0%BA",
+            "https://music.yandex.com/artist/160527",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/59725/track/557018",
+            "https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B7%D0%B8_%D0%BC%D0%B5%D0%BD%D1%8F,_%D0%B8%D0%B7%D0%B2%D0%BE%D0%B7%D1%87%D0%B8%D0%BA",
+            "https://music.yandex.com/artist/160527",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1984,
+        "versionYear": 1984,
+        "album": {
+          "title": "Вези меня, извозчик (оригинальная запись)",
+          "kind": "album",
+          "year": 1984,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/41288/6abe2bfa.a.59725-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/59725/track/557018",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/2811629/862b1354.p.160527/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/160527",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "aleksandrnovikov"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/59725/track/557018"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Александр Новиков"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Оригинальная запись авторской песни 1984 года.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-1196e870d676": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Алиса",
+        "artistAliases": [
+          "Алиса"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.alisa.ru/diskografiya/albomy/blok-ada/",
+            "https://music.yandex.com/album/2003166/track/18079444",
+            "https://music.yandex.com/artist/167401",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.alisa.ru/diskografiya/albomy/blok-ada/",
+            "https://music.yandex.com/album/2003166/track/18079444",
+            "https://music.yandex.com/artist/167401",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/2003166/track/18079444",
+            "https://www.alisa.ru/diskografiya/albomy/blok-ada/"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/167401",
+            "https://www.alisa.ru/diskografiya/albomy/blok-ada/",
+            "https://music.yandex.com/album/2003166/track/18079444",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=OFe5kRn1Adk"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=OFe5kRn1Adk"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.alisa.ru/diskografiya/albomy/blok-ada/",
+            "https://music.yandex.com/album/2003166/track/18079444",
+            "https://music.yandex.com/artist/167401",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.alisa.ru/diskografiya/albomy/blok-ada/",
+            "https://music.yandex.com/album/2003166/track/18079444",
+            "https://music.yandex.com/artist/167401",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.alisa.ru/diskografiya/albomy/blok-ada/",
+            "https://music.yandex.com/album/2003166/track/18079444",
+            "https://music.yandex.com/artist/167401",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1987,
+        "versionYear": 1987,
+        "album": {
+          "title": "Блок Ада",
+          "kind": "album",
+          "year": 1987,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15682289/366203b2.a.2003166-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/2003166/track/18079444",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/114728/2f9d6227.p.167401/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/167401",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "alisa",
+          "person:константин-кинчев",
+          "person:петр-самойлов",
+          "person:андрей-шаталин",
+          "person:павел-кондратенко",
+          "person:михаил-нефедов"
+        ],
+        "lineup": [
+          {
+            "name": "Константин Кинчев",
+            "role": "вокал, автор · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Пётр Самойлов",
+            "role": "бас-гитара, вокал",
+            "highlighted": false
+          },
+          {
+            "name": "Андрей Шаталин",
+            "role": "гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Павел Кондратенко",
+            "role": "клавишные",
+            "highlighted": false
+          },
+          {
+            "name": "Михаил Нефёдов",
+            "role": "ударные",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://www.alisa.ru/diskografiya/albomy/blok-ada/"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Константин Кинчев"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Известная группа, но не самая простая для угадывания позиция и фрагмент без мгновенной подсказки.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-9d2130159109": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Алиса Фрейндлих & ВИА «Солнце»",
+        "artistAliases": [
+          "Алиса Фрейндлих & ВИА «Солнце»",
+          "Алиса Фрейндлих",
+          "ВИА Солнце",
+          "Вокально-инструментальный ансамбль Солнце",
+          "Алиса Фрейндлих & Вокально-инструментальный ансамбль \"Солнце\""
+        ],
+        "artistForm": "Исполнительница + группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/2475736/track/21605759",
+            "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD",
+            "https://music.yandex.com/artist/233577",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/2475736/track/21605759",
+            "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD",
+            "https://music.yandex.com/artist/233577",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/2475736/track/21605759"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/233577",
+            "https://music.yandex.com/album/2475736/track/21605759",
+            "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=tuaBmouk2rU"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=tuaBmouk2rU"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/2475736/track/21605759",
+            "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD",
+            "https://music.yandex.com/artist/233577",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/2475736/track/21605759",
+            "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD",
+            "https://music.yandex.com/artist/233577",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/2475736/track/21605759",
+            "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD",
+            "https://music.yandex.com/artist/233577",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/2475736/track/21605759",
+            "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD",
+            "https://music.yandex.com/artist/233577",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1977,
+        "versionYear": 1977,
+        "album": {
+          "title": "Поёт Алиса Фрейндлих",
+          "kind": "album",
+          "year": 1979,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16406615/a0dcf6d8.a.2475736-3/400x400",
+          "sourceUrl": "https://music.yandex.com/album/2475736/track/21605759",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/12799091/aaffe1f8.a.33932667-1/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/233577",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "alisafreindlih",
+          "vokalnoinstrumentalnyiansamblsolntse",
+          "person:алиса-фрейндлих",
+          "person:виа-солнце"
+        ],
+        "lineup": [
+          {
+            "name": "Алиса Фрейндлих",
+            "role": "вокал",
+            "highlighted": true
+          },
+          {
+            "name": "ВИА «Солнце»",
+            "role": "инструментальное сопровождение",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://music.yandex.com/album/2475736/track/21605759"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Андрей Петров"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Роберт Бёрнс",
+            "Самуил Маршак (перевод)"
+          ]
+        }
+      ],
+      "soundtrack": {
+        "title": "Служебный роман",
+        "kind": "фильм",
+        "year": 1977,
+        "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD"
+      },
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Год фильма и первой известной версии отделён от альбомного издания 1979 года; отмечен OST.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-8bf2d637e579": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Альянс",
+        "artistAliases": [
+          "Альянс"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F",
+            "https://alliance87.bandcamp.com/track/--6",
+            "https://music.yandex.com/album/9004807/track/58981995",
+            "https://music.yandex.com/artist/2650418",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F",
+            "https://alliance87.bandcamp.com/track/--6",
+            "https://music.yandex.com/album/9004807/track/58981995",
+            "https://music.yandex.com/artist/2650418",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/9004807/track/58981995",
+            "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/2650418",
+            "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F",
+            "https://alliance87.bandcamp.com/track/--6",
+            "https://music.yandex.com/album/9004807/track/58981995",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=UZG8FITVeko"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=UZG8FITVeko"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F",
+            "https://alliance87.bandcamp.com/track/--6",
+            "https://music.yandex.com/album/9004807/track/58981995",
+            "https://music.yandex.com/artist/2650418",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F",
+            "https://alliance87.bandcamp.com/track/--6",
+            "https://music.yandex.com/album/9004807/track/58981995",
+            "https://music.yandex.com/artist/2650418",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F",
+            "https://alliance87.bandcamp.com/track/--6",
+            "https://music.yandex.com/album/9004807/track/58981995",
+            "https://music.yandex.com/artist/2650418",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1987,
+        "versionYear": 2018,
+        "album": {
+          "title": "На заре. Part 1",
+          "kind": "album",
+          "year": 1987,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/149669/84fe350b.a.9004807-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/9004807/track/58981995",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/14082060/2f0ae045.p.2650418/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2650418",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "alyans",
+          "person:игорь-журавлев",
+          "person:андрей-туманов",
+          "person:константин-гаврилов",
+          "person:олег-парастаев"
+        ],
+        "lineup": [
+          {
+            "name": "Игорь Журавлёв",
+            "role": "вокал, гитара, автор · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Андрей Туманов",
+            "role": "бас-гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Константин Гаврилов",
+            "role": "клавишные",
+            "highlighted": false
+          },
+          {
+            "name": "Олег Парастаев",
+            "role": "клавишные, электронные ударные",
+            "highlighted": true
+          }
+        ],
+        "sourceUrl": "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Игорь Журавлёв"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Песня 1987 года; в квизе используется официальная публикация восстановленной версии 2018 года.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-21acc5efd357": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Анна Герман",
+        "artistAliases": [
+          "Анна Герман"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24146505/track/109085349",
+            "https://music.yandex.com/artist/668651",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24146505/track/109085349",
+            "https://music.yandex.com/artist/668651",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24146505/track/109085349"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/668651",
+            "https://music.yandex.com/album/24146505/track/109085349",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=b6nYu950A8M"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=b6nYu950A8M"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24146505/track/109085349",
+            "https://music.yandex.com/artist/668651",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24146505/track/109085349",
+            "https://music.yandex.com/artist/668651",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24146505/track/109085349",
+            "https://music.yandex.com/artist/668651",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1977,
+        "versionYear": 1977,
+        "album": {
+          "title": "Когда цвели сады",
+          "kind": "album",
+          "year": 1977,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/5576540/aec627da.a.24146505-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/24146505/track/109085349",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/34131/3e604e61.p.668651/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/668651",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "annagerman"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/24146505/track/109085349"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Владимир Шаинский"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Александр Жигарев"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Альбомная версия 1977 года, сложность повышена выбором не вступительного хука.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-198cf60fca4a": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Ария",
+        "artistAliases": [
+          "Ария"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://aria.ru/albums/s-kem-ty",
+            "https://music.yandex.com/album/61488/track/575080",
+            "https://music.yandex.com/artist/164354",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://aria.ru/albums/s-kem-ty",
+            "https://music.yandex.com/album/61488/track/575080",
+            "https://music.yandex.com/artist/164354",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/61488/track/575080",
+            "https://aria.ru/albums/s-kem-ty"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/164354",
+            "https://aria.ru/albums/s-kem-ty",
+            "https://music.yandex.com/album/61488/track/575080",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=Q-seWfVk7Cc"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=Q-seWfVk7Cc"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://aria.ru/albums/s-kem-ty",
+            "https://music.yandex.com/album/61488/track/575080",
+            "https://music.yandex.com/artist/164354",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://aria.ru/albums/s-kem-ty",
+            "https://music.yandex.com/album/61488/track/575080",
+            "https://music.yandex.com/artist/164354",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://aria.ru/albums/s-kem-ty",
+            "https://music.yandex.com/album/61488/track/575080",
+            "https://music.yandex.com/artist/164354",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1986,
+        "versionYear": 1986,
+        "album": {
+          "title": "С кем ты?",
+          "kind": "album",
+          "year": 1986,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/63210/b82f9dff.a.61488-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/61488/track/575080",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/16334817/2d26bc44.p.164354/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/164354",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "ariya",
+          "person:валерий-кипелов",
+          "person:владимир-холстинин",
+          "person:андрей-большаков",
+          "person:алик-грановский",
+          "person:кирилл-покровский",
+          "person:игорь-молчанов"
+        ],
+        "lineup": [
+          {
+            "name": "Валерий Кипелов",
+            "role": "вокал",
+            "highlighted": true
+          },
+          {
+            "name": "Владимир Холстинин",
+            "role": "гитара",
+            "highlighted": true
+          },
+          {
+            "name": "Андрей Большаков",
+            "role": "гитара, музыка",
+            "highlighted": false
+          },
+          {
+            "name": "Алик Грановский",
+            "role": "бас-гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Кирилл Покровский",
+            "role": "клавишные",
+            "highlighted": false
+          },
+          {
+            "name": "Игорь Молчанов",
+            "role": "ударные",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://aria.ru/albums/s-kem-ty"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Андрей Большаков"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Александр Елин"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Альбомная композиция 1986 года; состав привязан к записи альбома.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-3374f8788b6c": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "АукцЫон",
+        "artistAliases": [
+          "АукцЫон"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/298445/track/19670848",
+            "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA_%D1%8F_%D1%81%D1%82%D0%B0%D0%BB_%D0%BF%D1%80%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%BC",
+            "https://music.yandex.com/artist/587013"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/298445/track/19670848",
+            "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA_%D1%8F_%D1%81%D1%82%D0%B0%D0%BB_%D0%BF%D1%80%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%BC",
+            "https://music.yandex.com/artist/587013"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/298445/track/19670848"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/587013",
+            "https://music.yandex.com/album/298445/track/19670848",
+            "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA_%D1%8F_%D1%81%D1%82%D0%B0%D0%BB_%D0%BF%D1%80%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%BC"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=LBOphWtK9KE"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=LBOphWtK9KE"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/298445/track/19670848",
+            "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA_%D1%8F_%D1%81%D1%82%D0%B0%D0%BB_%D0%BF%D1%80%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%BC",
+            "https://music.yandex.com/artist/587013"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/298445/track/19670848",
+            "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA_%D1%8F_%D1%81%D1%82%D0%B0%D0%BB_%D0%BF%D1%80%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%BC",
+            "https://music.yandex.com/artist/587013"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/298445/track/19670848",
+            "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA_%D1%8F_%D1%81%D1%82%D0%B0%D0%BB_%D0%BF%D1%80%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%BC",
+            "https://music.yandex.com/artist/587013"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1988,
+        "versionYear": 1988,
+        "album": {
+          "title": "Как я стал предателем",
+          "kind": "album",
+          "year": 1989,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14651289/f712e856.a.298445-4/400x400",
+          "sourceUrl": "https://music.yandex.com/album/298445/track/19670848",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/49876/16a58754.p.587013/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/587013",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "auktsyon",
+          "person:леонид-федоров",
+          "person:олег-гаркуша",
+          "person:дмитрий-озерский",
+          "person:николай-рубанов",
+          "person:виктор-бондарик",
+          "person:игорь-черидник"
+        ],
+        "lineup": [
+          {
+            "name": "Леонид Фёдоров",
+            "role": "вокал, гитара, музыка · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Олег Гаркуша",
+            "role": "вокал, перформанс",
+            "highlighted": true
+          },
+          {
+            "name": "Дмитрий Озерский",
+            "role": "клавишные, тексты",
+            "highlighted": false
+          },
+          {
+            "name": "Николай Рубанов",
+            "role": "саксофон",
+            "highlighted": false
+          },
+          {
+            "name": "Виктор Бондарик",
+            "role": "бас-гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Игорь Черидник",
+            "role": "ударные",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://music.yandex.com/album/298445/track/19670848"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Леонид Фёдоров"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Дмитрий Озерский"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Материал записан в 1988 году и издан на альбоме в 1989-м; оба года сохранены.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-1c4de38840d7": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Валерий Леонтьев",
+        "artistAliases": [
+          "Валерий Леонтьев"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html",
+            "https://music.yandex.com/album/23775970/track/108039579",
+            "https://music.yandex.com/artist/2605880",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html",
+            "https://music.yandex.com/album/23775970/track/108039579",
+            "https://music.yandex.com/artist/2605880",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/23775970/track/108039579",
+            "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/2605880",
+            "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html",
+            "https://music.yandex.com/album/23775970/track/108039579",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=lwpo6MqeXaU"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=lwpo6MqeXaU"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html",
+            "https://music.yandex.com/album/23775970/track/108039579",
+            "https://music.yandex.com/artist/2605880",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html",
+            "https://music.yandex.com/album/23775970/track/108039579",
+            "https://music.yandex.com/artist/2605880",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html",
+            "https://music.yandex.com/album/23775970/track/108039579",
+            "https://music.yandex.com/artist/2605880",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "verified",
+          "sources": [
+            "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html",
+            "https://music.yandex.com/album/23775970/track/108039579",
+            "https://music.yandex.com/artist/2605880",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1983,
+        "versionYear": 1983,
+        "album": {
+          "title": "Муза",
+          "kind": "album",
+          "year": 1983,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/7548376/262bee69.a.23775970-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/23775970/track/108039579",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/34131/c61277d9.p.2605880/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2605880",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "valeriileontev"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Эдуард Артемьев"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Николай Зиновьев"
+          ]
+        }
+      ],
+      "soundtrack": {
+        "title": "Родня",
+        "kind": "фильм — исходная инструментальная тема",
+        "year": 1981,
+        "sourceUrl": "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html"
+      },
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Песня 1983 года выросла из темы Эдуарда Артемьева к фильму «Родня»; связь с кино отражена отдельно.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-3567e7536a5b": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "ВИА «Голубые гитары» feat. Вячеслав Малежик & Роксана Бабаян",
+        "artistAliases": [
+          "ВИА «Голубые гитары» feat. Вячеслав Малежик & Роксана Бабаян",
+          "ВИА Голубые гитары",
+          "Голубые гитары",
+          "Вячеслав Малежик",
+          "Роксана Бабаян",
+          "ВИА «Голубые гитары» & Вячеслав Малежик & Роксана Бабаян"
+        ],
+        "artistForm": "Группа + исполнитель + исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://yandex.ru/video/preview/9646960525119979699",
+            "https://music.yandex.com/album/33800326/track/132399533",
+            "https://music.yandex.com/artist/2775259"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://yandex.ru/video/preview/9646960525119979699",
+            "https://music.yandex.com/album/33800326/track/132399533",
+            "https://music.yandex.com/artist/2775259"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/33800326/track/132399533",
+            "https://yandex.ru/video/preview/9646960525119979699"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/2775259",
+            "https://yandex.ru/video/preview/9646960525119979699",
+            "https://music.yandex.com/album/33800326/track/132399533"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=jl5fnkPpq7k"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=jl5fnkPpq7k"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://yandex.ru/video/preview/9646960525119979699",
+            "https://music.yandex.com/album/33800326/track/132399533",
+            "https://music.yandex.com/artist/2775259"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://yandex.ru/video/preview/9646960525119979699",
+            "https://music.yandex.com/album/33800326/track/132399533",
+            "https://music.yandex.com/artist/2775259"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://yandex.ru/video/preview/9646960525119979699",
+            "https://music.yandex.com/album/33800326/track/132399533",
+            "https://music.yandex.com/artist/2775259"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1976,
+        "versionYear": 1976,
+        "album": {
+          "title": "Первый поцелуй",
+          "kind": "single",
+          "year": 1976,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/13911897/40a7cf29.a.33800326-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/33800326/track/132399533",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/5314916/5633e155.p.2775259/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2775259",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "viagolubyegitary",
+          "vyacheslavmalezhik",
+          "roksanababayan",
+          "person:вячеслав-малежик",
+          "person:роксана-бабаян",
+          "person:игорь-гранов"
+        ],
+        "lineup": [
+          {
+            "name": "Вячеслав Малежик",
+            "role": "вокал",
+            "highlighted": true
+          },
+          {
+            "name": "Роксана Бабаян",
+            "role": "вокал",
+            "highlighted": true
+          },
+          {
+            "name": "Игорь Гранов",
+            "role": "руководитель ансамбля, музыка",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://yandex.ru/video/preview/9646960525119979699"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Игорь Гранов"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Леонид Дербенёв"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Телевизионное исполнение 1976 года с двумя солистами; авторы сверены отдельно.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-2755f6a44c3f": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "ВИА «Лейся, песня!»",
+        "artistAliases": [
+          "ВИА «Лейся, песня!»"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/25427632/track/112800993",
+            "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%89%D0%B0%D0%B9_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F_%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%BD%D0%B8%D0%BD%D0%B0)",
+            "https://music.yandex.com/artist/5548071",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/25427632/track/112800993",
+            "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%89%D0%B0%D0%B9_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F_%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%BD%D0%B8%D0%BD%D0%B0)",
+            "https://music.yandex.com/artist/5548071",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/25427632/track/112800993"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/5548071",
+            "https://music.yandex.com/album/25427632/track/112800993",
+            "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%89%D0%B0%D0%B9_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F_%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%BD%D0%B8%D0%BD%D0%B0)",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=kZy4IsxiVDE"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=kZy4IsxiVDE"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/25427632/track/112800993",
+            "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%89%D0%B0%D0%B9_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F_%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%BD%D0%B8%D0%BD%D0%B0)",
+            "https://music.yandex.com/artist/5548071",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/25427632/track/112800993",
+            "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%89%D0%B0%D0%B9_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F_%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%BD%D0%B8%D0%BD%D0%B0)",
+            "https://music.yandex.com/artist/5548071",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/25427632/track/112800993",
+            "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%89%D0%B0%D0%B9_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F_%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%BD%D0%B8%D0%BD%D0%B0)",
+            "https://music.yandex.com/artist/5548071",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1975,
+        "versionYear": 1975,
+        "album": {
+          "title": "Прощай",
+          "kind": "single",
+          "year": 1975,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/8096180/81942733.a.25427632-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/25427632/track/112800993",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/7548376/fb39b514.a.23757731-1/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/5548071",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "pesnya",
+          "vialeisya",
+          "person:игорь-иванов"
+        ],
+        "lineup": [
+          {
+            "name": "Игорь Иванов",
+            "role": "первый солист записи",
+            "highlighted": true
+          }
+        ],
+        "sourceUrl": "https://music.yandex.com/album/25427632/track/112800993"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Вячеслав Добрынин"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Леонид Дербенёв"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Год исправлен с цифрового переиздания на исходную песню 1975 года.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-d111d884f38f": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Вилли Токарев",
+        "artistAliases": [
+          "Вилли Токарев"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/35114606/track/135483474",
+            "https://willietokarev.bandcamp.com/",
+            "https://music.yandex.com/artist/218300",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/35114606/track/135483474",
+            "https://willietokarev.bandcamp.com/",
+            "https://music.yandex.com/artist/218300",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/35114606/track/135483474"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/218300",
+            "https://music.yandex.com/album/35114606/track/135483474",
+            "https://willietokarev.bandcamp.com/",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=3c4uqXYsETw"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=3c4uqXYsETw"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/35114606/track/135483474",
+            "https://willietokarev.bandcamp.com/",
+            "https://music.yandex.com/artist/218300",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/35114606/track/135483474",
+            "https://willietokarev.bandcamp.com/",
+            "https://music.yandex.com/artist/218300",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/35114606/track/135483474",
+            "https://willietokarev.bandcamp.com/",
+            "https://music.yandex.com/artist/218300",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1981,
+        "versionYear": 1981,
+        "album": {
+          "title": "В шумном балагане",
+          "kind": "album",
+          "year": 1981,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14707562/600f7edf.a.35114606-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/35114606/track/135483474",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/38044/f0082352.p.218300/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/218300",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "villitokarev"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/35114606/track/135483474"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Вилли Токарев"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Авторская песня с одноимённого альбома 1981 года.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-17c90384902b": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "КИНО",
+        "artistAliases": [
+          "КИНО"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10562/track/28397938",
+            "https://ru.wikipedia.org/wiki/45_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/artist/41075",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10562/track/28397938",
+            "https://ru.wikipedia.org/wiki/45_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/artist/41075",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10562/track/28397938"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/41075",
+            "https://music.yandex.com/album/10562/track/28397938",
+            "https://ru.wikipedia.org/wiki/45_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=w5jU_lVQt4o"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=w5jU_lVQt4o"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10562/track/28397938",
+            "https://ru.wikipedia.org/wiki/45_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/artist/41075",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10562/track/28397938",
+            "https://ru.wikipedia.org/wiki/45_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/artist/41075",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10562/track/28397938",
+            "https://ru.wikipedia.org/wiki/45_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/artist/41075",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1982,
+        "versionYear": 1982,
+        "album": {
+          "title": "45",
+          "kind": "album",
+          "year": 1982,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/98892/985319cc.a.10562-3/400x400",
+          "sourceUrl": "https://music.yandex.com/album/10562/track/28397938",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/33216/c6d507c7.p.41075/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/41075",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "kino",
+          "person:виктор-цой",
+          "person:алексей-рыбин"
+        ],
+        "lineup": [
+          {
+            "name": "Виктор Цой",
+            "role": "вокал, гитара, автор · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Алексей Рыбин",
+            "role": "гитара",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://music.yandex.com/album/10562/track/28397938"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Виктор Цой"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Ранняя альбомная запись 1982 года; известный артист компенсирован не самым очевидным фрагментом.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-1bacc6066938": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Комбинация",
+        "artistAliases": [
+          "Комбинация"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/album/35311721/track/135923197",
+            "https://music.yandex.com/artist/2067883"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/album/35311721/track/135923197",
+            "https://music.yandex.com/artist/2067883"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/35311721/track/135923197",
+            "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/2067883",
+            "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/album/35311721/track/135923197"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=NFKTXuykXBI"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=NFKTXuykXBI"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/album/35311721/track/135923197",
+            "https://music.yandex.com/artist/2067883"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/album/35311721/track/135923197",
+            "https://music.yandex.com/artist/2067883"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+            "https://music.yandex.com/album/35311721/track/135923197",
+            "https://music.yandex.com/artist/2067883"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1988,
+        "versionYear": 1988,
+        "album": {
+          "title": "Ход конём",
+          "kind": "album",
+          "year": 1988,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14707562/0e732b47.a.35311721-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/35311721/track/135923197",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/13663712/d0200dc5.p.2067883/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2067883",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "kombinatsiya",
+          "person:алена-апина",
+          "person:татьяна-иванова",
+          "person:виталий-окороков",
+          "person:александр-шишинин"
+        ],
+        "lineup": [
+          {
+            "name": "Алёна Апина",
+            "role": "вокал",
+            "highlighted": true
+          },
+          {
+            "name": "Татьяна Иванова",
+            "role": "вокал",
+            "highlighted": true
+          },
+          {
+            "name": "Виталий Окороков",
+            "role": "композитор, клавишные",
+            "highlighted": false
+          },
+          {
+            "name": "Александр Шишинин",
+            "role": "продюсер, автор текста",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Виталий Окороков"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Александр Шишинин"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Дебютная запись 1988 года; авторы конкретного трека сверены по трек-листу альбома.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-8769fa81b955": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Красные Маки",
+        "artistAliases": [
+          "Красные Маки"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://ok.ru/video/7596604526970",
+            "https://music.yandex.com/album/13194983/track/75211144",
+            "https://music.yandex.com/artist/10557233",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://ok.ru/video/7596604526970",
+            "https://music.yandex.com/album/13194983/track/75211144",
+            "https://music.yandex.com/artist/10557233",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/13194983/track/75211144",
+            "https://ok.ru/video/7596604526970"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/10557233",
+            "https://ok.ru/video/7596604526970",
+            "https://music.yandex.com/album/13194983/track/75211144",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=1qlquvg0cZ4"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=1qlquvg0cZ4"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://ok.ru/video/7596604526970",
+            "https://music.yandex.com/album/13194983/track/75211144",
+            "https://music.yandex.com/artist/10557233",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://ok.ru/video/7596604526970",
+            "https://music.yandex.com/album/13194983/track/75211144",
+            "https://music.yandex.com/artist/10557233",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://ok.ru/video/7596604526970",
+            "https://music.yandex.com/album/13194983/track/75211144",
+            "https://music.yandex.com/artist/10557233",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1978,
+        "versionYear": 1978,
+        "album": {
+          "title": "Скажет девчонка",
+          "kind": "EP",
+          "year": 1980,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16616584/061614c2.a.13194983-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/13194983/track/75211144",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/6296749/cb598188.p.10557233/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/10557233",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "krasnyemaki",
+          "person:александр-лосев"
+        ],
+        "lineup": [
+          {
+            "name": "Александр Лосев",
+            "role": "вокал",
+            "highlighted": true
+          }
+        ],
+        "sourceUrl": "https://ok.ru/video/7596604526970"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Вячеслав Добрынин",
+            "Виталий Кретов"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Игорь Шаферан"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Запись относится к 1978 году, а каталоговый релиз — к 1980-му; годы разделены.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-f950611c46f9": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Крематорий",
+        "artistAliases": [
+          "Крематорий"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://reproduktor.net/gruppa-krematorij/leprozorij/",
+            "https://music.yandex.com/album/495720/track/49235719",
+            "https://music.yandex.com/artist/170650",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://reproduktor.net/gruppa-krematorij/leprozorij/",
+            "https://music.yandex.com/album/495720/track/49235719",
+            "https://music.yandex.com/artist/170650",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/495720/track/49235719",
+            "https://reproduktor.net/gruppa-krematorij/leprozorij/"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/170650",
+            "https://reproduktor.net/gruppa-krematorij/leprozorij/",
+            "https://music.yandex.com/album/495720/track/49235719",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=qePWrMKaGik"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=qePWrMKaGik"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://reproduktor.net/gruppa-krematorij/leprozorij/",
+            "https://music.yandex.com/album/495720/track/49235719",
+            "https://music.yandex.com/artist/170650",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://reproduktor.net/gruppa-krematorij/leprozorij/",
+            "https://music.yandex.com/album/495720/track/49235719",
+            "https://music.yandex.com/artist/170650",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://reproduktor.net/gruppa-krematorij/leprozorij/",
+            "https://music.yandex.com/album/495720/track/49235719",
+            "https://music.yandex.com/artist/170650",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1984,
+        "versionYear": 1988,
+        "album": {
+          "title": "Живые и мёртвые",
+          "kind": "album",
+          "year": 1988,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/17699177/db598611.a.495720-5/400x400",
+          "sourceUrl": "https://music.yandex.com/album/495720/track/49235719",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/17696724/57a0a0f1.p.170650/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/170650",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "krematorii",
+          "person:армен-григорян",
+          "person:михаил-россовский",
+          "person:андрей-сараев"
+        ],
+        "lineup": [
+          {
+            "name": "Армен Григорян",
+            "role": "вокал, гитара, автор · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Михаил Россовский",
+            "role": "скрипка",
+            "highlighted": false
+          },
+          {
+            "name": "Андрей Сараев",
+            "role": "ударные",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://reproduktor.net/gruppa-krematorij/leprozorij/"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Армен Григорян"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Песня впервые записана в 1984-м; в карточке отдельно указана тяжёлая альбомная версия 1988 года.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-a8841bf92583": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Машина времени",
+        "artistAliases": [
+          "Машина времени"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oh9zVobf1lk",
+            "https://music.yandex.com/album/1165928/track/10747678",
+            "https://music.yandex.com/artist/1652733",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oh9zVobf1lk",
+            "https://music.yandex.com/album/1165928/track/10747678",
+            "https://music.yandex.com/artist/1652733",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/1165928/track/10747678",
+            "https://www.youtube.com/watch?v=oh9zVobf1lk"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/1652733",
+            "https://www.youtube.com/watch?v=oh9zVobf1lk",
+            "https://music.yandex.com/album/1165928/track/10747678",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=IZTVqQwESRI"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=IZTVqQwESRI"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oh9zVobf1lk",
+            "https://music.yandex.com/album/1165928/track/10747678",
+            "https://music.yandex.com/artist/1652733",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oh9zVobf1lk",
+            "https://music.yandex.com/album/1165928/track/10747678",
+            "https://music.yandex.com/artist/1652733",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oh9zVobf1lk",
+            "https://music.yandex.com/album/1165928/track/10747678",
+            "https://music.yandex.com/artist/1652733",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oh9zVobf1lk",
+            "https://music.yandex.com/album/1165928/track/10747678",
+            "https://music.yandex.com/artist/1652733",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1978,
+        "versionYear": 1980,
+        "album": {
+          "title": "В добрый час",
+          "kind": "album",
+          "year": 1986,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/49707/f4f872f1.a.1165928-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/1165928/track/10747678",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/142001/259be0df.p.1652733/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/1652733",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "mashinavremeni",
+          "person:андрей-макаревич",
+          "person:александр-кутиков",
+          "person:петр-подгородецкий",
+          "person:валерий-ефремов"
+        ],
+        "lineup": [
+          {
+            "name": "Андрей Макаревич",
+            "role": "вокал, клавишные, автор · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Александр Кутиков",
+            "role": "бас-гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Пётр Подгородецкий",
+            "role": "клавишные",
+            "highlighted": false
+          },
+          {
+            "name": "Валерий Ефремов",
+            "role": "ударные",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://www.youtube.com/watch?v=oh9zVobf1lk"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Андрей Макаревич"
+          ]
+        }
+      ],
+      "soundtrack": {
+        "title": "Начни сначала",
+        "kind": "фильм",
+        "year": 1985,
+        "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B5%D1%87%D0%B0_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)"
+      },
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Песня написана в 1978-м, студийная версия записана в 1980-м и официально вошла в альбом 1986 года; отмечен фильм.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-756ec1235409": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Мегаполис",
+        "artistAliases": [
+          "Мегаполис"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8",
+            "https://snob.ru/music/oleg-nesterov-ob-albome-utro-elochnom-bazare-i-novoi-muzyke/",
+            "https://music.yandex.com/album/480631/track/69981594",
+            "https://music.yandex.com/artist/218282",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8",
+            "https://snob.ru/music/oleg-nesterov-ob-albome-utro-elochnom-bazare-i-novoi-muzyke/",
+            "https://music.yandex.com/album/480631/track/69981594",
+            "https://music.yandex.com/artist/218282",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/480631/track/69981594",
+            "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/218282",
+            "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8",
+            "https://snob.ru/music/oleg-nesterov-ob-albome-utro-elochnom-bazare-i-novoi-muzyke/",
+            "https://music.yandex.com/album/480631/track/69981594",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=NuC2nHia0MU"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=NuC2nHia0MU"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8",
+            "https://snob.ru/music/oleg-nesterov-ob-albome-utro-elochnom-bazare-i-novoi-muzyke/",
+            "https://music.yandex.com/album/480631/track/69981594",
+            "https://music.yandex.com/artist/218282",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8",
+            "https://snob.ru/music/oleg-nesterov-ob-albome-utro-elochnom-bazare-i-novoi-muzyke/",
+            "https://music.yandex.com/album/480631/track/69981594",
+            "https://music.yandex.com/artist/218282",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8",
+            "https://snob.ru/music/oleg-nesterov-ob-albome-utro-elochnom-bazare-i-novoi-muzyke/",
+            "https://music.yandex.com/album/480631/track/69981594",
+            "https://music.yandex.com/artist/218282",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1987,
+        "versionYear": 1987,
+        "album": {
+          "title": "Утро",
+          "kind": "album",
+          "year": 1987,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15682289/b4e3565d.a.480631-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/480631/track/69981594",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/14247687/1c230fd5.p.218282/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/218282",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "megapolis",
+          "person:олег-нестеров",
+          "person:андрей-белов",
+          "person:михаил-алесин",
+          "person:александр-суздалев",
+          "person:аркадий-мартыненко",
+          "person:игорь-жигунов"
+        ],
+        "lineup": [
+          {
+            "name": "Олег Нестеров",
+            "role": "вокал, гитара, автор · лидер",
+            "highlighted": true
+          },
+          {
+            "name": "Андрей Белов",
+            "role": "бас-гитара",
+            "highlighted": false
+          },
+          {
+            "name": "Михаил Алесин",
+            "role": "ударные",
+            "highlighted": false
+          },
+          {
+            "name": "Александр Суздалев",
+            "role": "клавишные",
+            "highlighted": false
+          },
+          {
+            "name": "Аркадий Мартыненко",
+            "role": "клавишные",
+            "highlighted": false
+          },
+          {
+            "name": "Игорь Жигунов",
+            "role": "перкуссия",
+            "highlighted": false
+          }
+        ],
+        "sourceUrl": "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8"
+      },
+      "credits": [
+        {
+          "role": "Музыка и слова",
+          "names": [
+            "Олег Нестеров",
+            "Александр Бараш"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Дебютный магнитоальбом 1987 года; полный ранний состав указан в карточке.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    },
+    "pool-8077e773c0f1": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-07T11:19:46.542Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "selectedForQuiz": "soviet-hard-02",
+      "publishedAt": "2026-09-07T11:19:46.542Z",
+      "identity": {
+        "artist": "Михаил Боярский",
+        "artistAliases": [
+          "Михаил Боярский"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.amazon.com/tracks/B0GV4DBXYG",
+            "https://music.yandex.com/album/41360620/track/149749955",
+            "https://music.yandex.com/artist/218246",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.amazon.com/tracks/B0GV4DBXYG",
+            "https://music.yandex.com/album/41360620/track/149749955",
+            "https://music.yandex.com/artist/218246",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/41360620/track/149749955",
+            "https://music.amazon.com/tracks/B0GV4DBXYG"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/218246",
+            "https://music.amazon.com/tracks/B0GV4DBXYG",
+            "https://music.yandex.com/album/41360620/track/149749955",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=RcbwYXA0g-Q"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=RcbwYXA0g-Q"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.amazon.com/tracks/B0GV4DBXYG",
+            "https://music.yandex.com/album/41360620/track/149749955",
+            "https://music.yandex.com/artist/218246",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.amazon.com/tracks/B0GV4DBXYG",
+            "https://music.yandex.com/album/41360620/track/149749955",
+            "https://music.yandex.com/artist/218246",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.amazon.com/tracks/B0GV4DBXYG",
+            "https://music.yandex.com/album/41360620/track/149749955",
+            "https://music.yandex.com/artist/218246",
+            "https://boosty.to/quizpartynakhate/media/all"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        }
+      },
+      "release": {
+        "releaseYear": 1985,
+        "versionYear": 1985,
+        "album": {
+          "title": "Робинзон",
+          "kind": "single",
+          "year": 1985,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/20855185/a229a9bd.a.41360620-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/41360620/track/149749955",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/10703962/985866e4.a.28516734-1/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/218246",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "mihailboyarskii"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.amazon.com/tracks/B0GV4DBXYG"
+      },
+      "credits": [
+        {
+          "role": "Музыка",
+          "names": [
+            "Вячеслав Добрынин"
+          ]
+        },
+        {
+          "role": "Слова",
+          "names": [
+            "Леонид Дербенёв"
+          ]
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Оригинальный сингл 1985 года; авторы сверены по дискографии исполнителя.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      }
+    }
+  }
+}

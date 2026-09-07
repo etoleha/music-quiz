@@ -1,0 +1,1650 @@
+{
+  "version": 2,
+  "generatedAt": "2026-09-07T11:19:46.542Z",
+  "status": "verified",
+  "quiz": {
+    "id": "soviet-hard-02",
+    "title": "Советский квиз — ещё сложнее",
+    "level": "экспертный",
+    "published": "7 сентября 2026"
+  },
+  "policy": {
+    "trackCount": 20,
+    "uniqueSongs": true,
+    "uniqueYouTubeVideos": true,
+    "relationshipConflicts": true,
+    "strictMetadataGate": true,
+    "scoring": {
+      "artist": 2,
+      "title": 1,
+      "maximumPerTrack": 3
+    }
+  },
+  "stats": {
+    "eras": {
+      "soviet": 20
+    },
+    "recognition": {
+      "deep": 11,
+      "middle": 9
+    },
+    "rapTracks": 0
+  },
+  "tracks": [
+    {
+      "id": "ready-3777",
+      "songId": "pool-c294e7732a49",
+      "poolId": "quiz-answer-c294e7732a49",
+      "artist": "Аквариум",
+      "title": "Танцы на грани весны",
+      "artistIds": [
+        "akvarium"
+      ],
+      "artistAliases": [
+        "Аквариум"
+      ],
+      "titleAliases": [
+        "Танцы на грани весны"
+      ],
+      "era": "soviet",
+      "approximateYear": 1986,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "vACwrTbSOYs",
+        "title": "Аквариум -Танцы На Грани Весны (Official Video)",
+        "channel": "Аквариум I БГ+",
+        "viewCount": 237845,
+        "durationSeconds": 204,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 42,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Дети Декабря",
+          "kind": "album",
+          "year": 1986,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/34131/8d667067.a.476810-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/476810/track/4209976",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/108289/6c4059f1.p.188963/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/188963",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/476810/track/4209976",
+          "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%82%D0%B8_%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F",
+          "https://music.yandex.com/artist/188963",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=vACwrTbSOYs"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3778",
+      "songId": "pool-b75cc6d347e6",
+      "poolId": "quiz-answer-b75cc6d347e6",
+      "artist": "Александр Барыкин",
+      "title": "20:00",
+      "artistIds": [
+        "aleksandrbarykin"
+      ],
+      "artistAliases": [
+        "Александр Барыкин"
+      ],
+      "titleAliases": [
+        "20:00"
+      ],
+      "era": "soviet",
+      "approximateYear": 1987,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "oB-LOyNkFu0",
+        "title": "Александр Барыкин - 20:00, 2009",
+        "channel": "АЛЕКСАНДР БАРЫКИН",
+        "viewCount": 248865,
+        "durationSeconds": 240,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 45,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Букет",
+          "kind": "album",
+          "year": 1987,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/5234847/982bd254.a.16293823-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/16293823/track/85404652",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/10960834/74dc2d95.p.2731018/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2731018",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/16293823/track/85404652",
+          "https://www.youtube.com/watch?v=oB-LOyNkFu0",
+          "https://music.yandex.com/artist/2731018",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3780",
+      "songId": "pool-5612cbcf4fee",
+      "poolId": "quiz-answer-5612cbcf4fee",
+      "artist": "Александр Новиков",
+      "title": "Вези меня, извозчик",
+      "artistIds": [
+        "aleksandrnovikov"
+      ],
+      "artistAliases": [
+        "Александр Новиков"
+      ],
+      "titleAliases": [
+        "Вези меня, извозчик"
+      ],
+      "era": "soviet",
+      "approximateYear": 1984,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "61W3hPz14M4",
+        "title": "Александр Новиков — Вези меня, извозчик",
+        "channel": "Александр Новиков",
+        "viewCount": 16294,
+        "durationSeconds": 329,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 58,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Вези меня, извозчик (оригинальная запись)",
+          "kind": "album",
+          "year": 1984,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/41288/6abe2bfa.a.59725-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/59725/track/557018",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/2811629/862b1354.p.160527/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/160527",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/59725/track/557018",
+          "https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B7%D0%B8_%D0%BC%D0%B5%D0%BD%D1%8F,_%D0%B8%D0%B7%D0%B2%D0%BE%D0%B7%D1%87%D0%B8%D0%BA",
+          "https://music.yandex.com/artist/160527",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=61W3hPz14M4"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3797",
+      "songId": "pool-1196e870d676",
+      "poolId": "quiz-answer-1196e870d676",
+      "artist": "Алиса",
+      "title": "Красное на чёрном",
+      "artistIds": [
+        "alisa"
+      ],
+      "artistAliases": [
+        "Алиса"
+      ],
+      "titleAliases": [
+        "Красное на чёрном"
+      ],
+      "era": "soviet",
+      "approximateYear": 1987,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — первый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "OFe5kRn1Adk",
+        "title": "алиса - красное на черном",
+        "channel": "frnkvat",
+        "viewCount": 519210,
+        "durationSeconds": 292,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 49,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Блок Ада",
+          "kind": "album",
+          "year": 1987,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15682289/366203b2.a.2003166-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/2003166/track/18079444",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/114728/2f9d6227.p.167401/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/167401",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://www.alisa.ru/diskografiya/albomy/blok-ada/",
+          "https://music.yandex.com/album/2003166/track/18079444",
+          "https://music.yandex.com/artist/167401",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=OFe5kRn1Adk"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3800",
+      "songId": "pool-9d2130159109",
+      "poolId": "quiz-answer-9d2130159109",
+      "artist": "Алиса Фрейндлих & ВИА «Солнце»",
+      "title": "В моей душе покоя нет",
+      "artistIds": [
+        "alisafreindlih",
+        "vokalnoinstrumentalnyiansamblsolntse"
+      ],
+      "artistAliases": [
+        "Алиса Фрейндлих & ВИА «Солнце»",
+        "Алиса Фрейндлих",
+        "ВИА Солнце",
+        "Вокально-инструментальный ансамбль Солнце",
+        "Алиса Фрейндлих & Вокально-инструментальный ансамбль \"Солнце\""
+      ],
+      "titleAliases": [
+        "В моей душе покоя нет"
+      ],
+      "era": "soviet",
+      "approximateYear": 1977,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "tuaBmouk2rU",
+        "title": "Алиса Фрейндлих  и ВИА \"Солнце\" \"Моей душе покоя нет\"",
+        "channel": "Георгий Медведев",
+        "viewCount": 340,
+        "durationSeconds": 199,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 42,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Поёт Алиса Фрейндлих",
+          "kind": "album",
+          "year": 1979,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16406615/a0dcf6d8.a.2475736-3/400x400",
+          "sourceUrl": "https://music.yandex.com/album/2475736/track/21605759",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/12799091/aaffe1f8.a.33932667-1/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/233577",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница + группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/2475736/track/21605759",
+          "https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D1%80%D0%BE%D0%BC%D0%B0%D0%BD",
+          "https://music.yandex.com/artist/233577",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=tuaBmouk2rU"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3801",
+      "songId": "pool-8bf2d637e579",
+      "poolId": "quiz-answer-8bf2d637e579",
+      "artist": "Альянс",
+      "title": "Дайте огня",
+      "artistIds": [
+        "alyans"
+      ],
+      "artistAliases": [
+        "Альянс"
+      ],
+      "titleAliases": [
+        "Дайте огня"
+      ],
+      "era": "soviet",
+      "approximateYear": 1987,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "UZG8FITVeko",
+        "title": "Альянс — «Дайте огня» (2018)",
+        "channel": "Группа АЛЬЯНС",
+        "viewCount": 1208,
+        "durationSeconds": 288,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 54,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "На заре. Part 1",
+          "kind": "album",
+          "year": 1987,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/149669/84fe350b.a.9004807-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/9004807/track/58981995",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/14082060/2f0ae045.p.2650418/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2650418",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://www.shazam.com/song/1596684351/%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BE%D0%B3%D0%BD%D1%8F",
+          "https://alliance87.bandcamp.com/track/--6",
+          "https://music.yandex.com/album/9004807/track/58981995",
+          "https://music.yandex.com/artist/2650418",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=UZG8FITVeko"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3873",
+      "songId": "pool-21acc5efd357",
+      "poolId": "quiz-answer-21acc5efd357",
+      "artist": "Анна Герман",
+      "title": "А он мне нравится",
+      "artistIds": [
+        "annagerman"
+      ],
+      "artistAliases": [
+        "Анна Герман"
+      ],
+      "titleAliases": [
+        "А он мне нравится"
+      ],
+      "era": "soviet",
+      "approximateYear": 1977,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "b6nYu950A8M",
+        "title": "Анна Герман \"А он мне нравится\"",
+        "channel": "Sevil2001",
+        "viewCount": 2798732,
+        "durationSeconds": 189,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Когда цвели сады",
+          "kind": "album",
+          "year": 1977,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/5576540/aec627da.a.24146505-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/24146505/track/109085349",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/34131/3e604e61.p.668651/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/668651",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/24146505/track/109085349",
+          "https://www.youtube.com/watch?v=b6nYu950A8M",
+          "https://music.yandex.com/artist/668651",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3875",
+      "songId": "pool-198cf60fca4a",
+      "poolId": "quiz-answer-198cf60fca4a",
+      "artist": "Ария",
+      "title": "Воля и разум",
+      "artistIds": [
+        "ariya"
+      ],
+      "artistAliases": [
+        "Ария"
+      ],
+      "titleAliases": [
+        "Воля и разум"
+      ],
+      "era": "soviet",
+      "approximateYear": 1986,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "Q-seWfVk7Cc",
+        "title": "Воля и Разум (Ария)",
+        "channel": "Lihoradkarus",
+        "viewCount": 618481,
+        "durationSeconds": 273,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 54,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "С кем ты?",
+          "kind": "album",
+          "year": 1986,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/63210/b82f9dff.a.61488-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/61488/track/575080",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/16334817/2d26bc44.p.164354/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/164354",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://aria.ru/albums/s-kem-ty",
+          "https://music.yandex.com/album/61488/track/575080",
+          "https://music.yandex.com/artist/164354",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=Q-seWfVk7Cc"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3877",
+      "songId": "pool-3374f8788b6c",
+      "poolId": "quiz-answer-3374f8788b6c",
+      "artist": "АукцЫон",
+      "title": "Осколки",
+      "artistIds": [
+        "auktsyon"
+      ],
+      "artistAliases": [
+        "АукцЫон"
+      ],
+      "titleAliases": [
+        "Осколки"
+      ],
+      "era": "soviet",
+      "approximateYear": 1988,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/298445/track/19670848"
+      },
+      "youtube": {
+        "videoId": "LBOphWtK9KE",
+        "title": "Аукцыон- Осколки",
+        "channel": "ЛУКМЕДИА",
+        "viewCount": 168005,
+        "durationSeconds": 465,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 81,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Как я стал предателем",
+          "kind": "album",
+          "year": 1989,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14651289/f712e856.a.298445-4/400x400",
+          "sourceUrl": "https://music.yandex.com/album/298445/track/19670848",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/49876/16a58754.p.587013/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/587013",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/298445/track/19670848",
+          "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA_%D1%8F_%D1%81%D1%82%D0%B0%D0%BB_%D0%BF%D1%80%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%BC",
+          "https://music.yandex.com/artist/587013",
+          "https://www.youtube.com/watch?v=LBOphWtK9KE"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3880",
+      "songId": "pool-1c4de38840d7",
+      "poolId": "quiz-answer-1c4de38840d7",
+      "artist": "Валерий Леонтьев",
+      "title": "Полёт на дельтаплане",
+      "artistIds": [
+        "valeriileontev"
+      ],
+      "artistAliases": [
+        "Валерий Леонтьев"
+      ],
+      "titleAliases": [
+        "Полёт на дельтаплане"
+      ],
+      "era": "soviet",
+      "approximateYear": 1983,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "lwpo6MqeXaU",
+        "title": "Валерий Леонтьев \"Полет на дельтаплане\" (1983)",
+        "channel": "Советское телевидение. ГОСТЕЛЕРАДИОФОНД",
+        "viewCount": 2574034,
+        "durationSeconds": 230,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 47,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Муза",
+          "kind": "album",
+          "year": 1983,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/7548376/262bee69.a.23775970-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/23775970/track/108039579",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/34131/c61277d9.p.2605880/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2605880",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://www.valeryleontiev.ru/p/valerij-leontev-deltaplan.html",
+          "https://music.yandex.com/album/23775970/track/108039579",
+          "https://music.yandex.com/artist/2605880",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=lwpo6MqeXaU"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3881",
+      "songId": "pool-3567e7536a5b",
+      "poolId": "quiz-answer-79e41b9b7660",
+      "artist": "ВИА «Голубые гитары» feat. Вячеслав Малежик & Роксана Бабаян",
+      "title": "Первый поцелуй",
+      "artistIds": [
+        "viagolubyegitary",
+        "vyacheslavmalezhik",
+        "roksanababayan"
+      ],
+      "artistAliases": [
+        "ВИА «Голубые гитары» feat. Вячеслав Малежик & Роксана Бабаян",
+        "ВИА Голубые гитары",
+        "Голубые гитары",
+        "Вячеслав Малежик",
+        "Роксана Бабаян",
+        "ВИА «Голубые гитары» & Вячеслав Малежик & Роксана Бабаян"
+      ],
+      "titleAliases": [
+        "Первый поцелуй"
+      ],
+      "era": "soviet",
+      "approximateYear": 1976,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/33800326/track/132399533"
+      },
+      "youtube": {
+        "videoId": "jl5fnkPpq7k",
+        "title": "ВИА \"Голубые гитары\" - ПЕРВЫЙ ПОЦЕЛУЙ #1 (1976) | Солисты Вячеслав Малежик и Роксана Бабаян",
+        "channel": "ВИА \"ГОЛУБЫЕ ГИТАРЫ\"",
+        "viewCount": 156173,
+        "durationSeconds": 202,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Первый поцелуй",
+          "kind": "single",
+          "year": 1976,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/13911897/40a7cf29.a.33800326-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/33800326/track/132399533",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/5314916/5633e155.p.2775259/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2775259",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа + исполнитель + исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://yandex.ru/video/preview/9646960525119979699",
+          "https://music.yandex.com/album/33800326/track/132399533",
+          "https://music.yandex.com/artist/2775259",
+          "https://www.youtube.com/watch?v=jl5fnkPpq7k"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3883",
+      "songId": "pool-2755f6a44c3f",
+      "poolId": "quiz-answer-35c4a561d0ef",
+      "artist": "ВИА «Лейся, песня!»",
+      "title": "Прощай",
+      "artistIds": [
+        "pesnya",
+        "vialeisya"
+      ],
+      "artistAliases": [
+        "ВИА «Лейся, песня!»"
+      ],
+      "titleAliases": [
+        "Прощай"
+      ],
+      "era": "soviet",
+      "approximateYear": 1975,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "kZy4IsxiVDE",
+        "title": "Прощай",
+        "channel": "ВИА \"Лейся Песня\" - Topic",
+        "viewCount": 222186,
+        "durationSeconds": 287,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 45,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Прощай",
+          "kind": "single",
+          "year": 1975,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/8096180/81942733.a.25427632-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/25427632/track/112800993",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/7548376/fb39b514.a.23757731-1/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/5548071",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/25427632/track/112800993",
+          "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%89%D0%B0%D0%B9_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F_%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%BD%D0%B8%D0%BD%D0%B0)",
+          "https://music.yandex.com/artist/5548071",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=kZy4IsxiVDE"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3886",
+      "songId": "pool-d111d884f38f",
+      "poolId": "quiz-answer-d111d884f38f",
+      "artist": "Вилли Токарев",
+      "title": "В шумном балагане",
+      "artistIds": [
+        "villitokarev"
+      ],
+      "artistAliases": [
+        "Вилли Токарев"
+      ],
+      "titleAliases": [
+        "В шумном балагане"
+      ],
+      "era": "soviet",
+      "approximateYear": 1981,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "3c4uqXYsETw",
+        "title": "Вилли Токарев - В шумном балагане",
+        "channel": "maratv3",
+        "viewCount": 70915,
+        "durationSeconds": 142,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 32,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "В шумном балагане",
+          "kind": "album",
+          "year": 1981,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14707562/600f7edf.a.35114606-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/35114606/track/135483474",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/38044/f0082352.p.218300/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/218300",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/35114606/track/135483474",
+          "https://willietokarev.bandcamp.com/",
+          "https://music.yandex.com/artist/218300",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=3c4uqXYsETw"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3887",
+      "songId": "pool-17c90384902b",
+      "poolId": "quiz-answer-17c90384902b",
+      "artist": "КИНО",
+      "title": "Восьмиклассница",
+      "artistIds": [
+        "kino"
+      ],
+      "artistAliases": [
+        "КИНО"
+      ],
+      "titleAliases": [
+        "Восьмиклассница"
+      ],
+      "era": "soviet",
+      "approximateYear": 1982,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — первый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "w5jU_lVQt4o",
+        "title": "Кино - Восьмиклассница",
+        "channel": "Владислав Люкс",
+        "viewCount": 17028051,
+        "durationSeconds": 164,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "45",
+          "kind": "album",
+          "year": 1982,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/98892/985319cc.a.10562-3/400x400",
+          "sourceUrl": "https://music.yandex.com/album/10562/track/28397938",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/33216/c6d507c7.p.41075/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/41075",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/10562/track/28397938",
+          "https://ru.wikipedia.org/wiki/45_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+          "https://music.yandex.com/artist/41075",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=w5jU_lVQt4o"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3888",
+      "songId": "pool-1bacc6066938",
+      "poolId": "quiz-answer-1bacc6066938",
+      "artist": "Комбинация",
+      "title": "Ход конем",
+      "artistIds": [
+        "kombinatsiya"
+      ],
+      "artistAliases": [
+        "Комбинация"
+      ],
+      "titleAliases": [
+        "Ход конем"
+      ],
+      "era": "soviet",
+      "approximateYear": 1988,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/35311721/track/135923197"
+      },
+      "youtube": {
+        "videoId": "NFKTXuykXBI",
+        "title": "Ход конем",
+        "channel": "Комбинация - Topic",
+        "viewCount": 7385660,
+        "durationSeconds": 228,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Ход конём",
+          "kind": "album",
+          "year": 1988,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14707562/0e732b47.a.35311721-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/35311721/track/135923197",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/13663712/d0200dc5.p.2067883/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2067883",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://ru.ruwiki.ru/wiki/%D0%A5%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%91%D0%BC_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+          "https://music.yandex.com/album/35311721/track/135923197",
+          "https://music.yandex.com/artist/2067883",
+          "https://www.youtube.com/watch?v=NFKTXuykXBI"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3889",
+      "songId": "pool-8769fa81b955",
+      "poolId": "quiz-answer-8769fa81b955",
+      "artist": "Красные Маки",
+      "title": "Всё, что было",
+      "artistIds": [
+        "krasnyemaki"
+      ],
+      "artistAliases": [
+        "Красные Маки"
+      ],
+      "titleAliases": [
+        "Всё, что было",
+        "Все, Что Было"
+      ],
+      "era": "soviet",
+      "approximateYear": 1978,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "1qlquvg0cZ4",
+        "title": "Всё, что было",
+        "channel": "ВИА Красные маки - Topic",
+        "viewCount": 80198,
+        "durationSeconds": 244,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 47,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Скажет девчонка",
+          "kind": "EP",
+          "year": 1980,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16616584/061614c2.a.13194983-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/13194983/track/75211144",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/6296749/cb598188.p.10557233/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/10557233",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://ok.ru/video/7596604526970",
+          "https://music.yandex.com/album/13194983/track/75211144",
+          "https://music.yandex.com/artist/10557233",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=1qlquvg0cZ4"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3890",
+      "songId": "pool-f950611c46f9",
+      "poolId": "quiz-answer-f950611c46f9",
+      "artist": "Крематорий",
+      "title": "Лепрозорий",
+      "artistIds": [
+        "krematorii"
+      ],
+      "artistAliases": [
+        "Крематорий"
+      ],
+      "titleAliases": [
+        "Лепрозорий"
+      ],
+      "era": "soviet",
+      "approximateYear": 1984,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "qePWrMKaGik",
+        "title": "Крематорий - Лепрозорий",
+        "channel": "Turr Nutricula",
+        "viewCount": 543067,
+        "durationSeconds": 249,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Живые и мёртвые",
+          "kind": "album",
+          "year": 1988,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/17699177/db598611.a.495720-5/400x400",
+          "sourceUrl": "https://music.yandex.com/album/495720/track/49235719",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17696724/57a0a0f1.p.170650/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/170650",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://reproduktor.net/gruppa-krematorij/leprozorij/",
+          "https://music.yandex.com/album/495720/track/49235719",
+          "https://music.yandex.com/artist/170650",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=qePWrMKaGik"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3891",
+      "songId": "pool-a8841bf92583",
+      "poolId": "quiz-answer-a8841bf92583",
+      "artist": "Машина времени",
+      "title": "Пока горит свеча",
+      "artistIds": [
+        "mashinavremeni"
+      ],
+      "artistAliases": [
+        "Машина времени"
+      ],
+      "titleAliases": [
+        "Пока горит свеча",
+        "Свеча",
+        "Пока Горит Свеча"
+      ],
+      "era": "soviet",
+      "approximateYear": 1978,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "IZTVqQwESRI",
+        "title": "Машина Времени - Пока горит свеча",
+        "channel": "Машина Времени",
+        "viewCount": 9132721,
+        "durationSeconds": 258,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 50,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "В добрый час",
+          "kind": "album",
+          "year": 1986,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/49707/f4f872f1.a.1165928-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/1165928/track/10747678",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/142001/259be0df.p.1652733/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/1652733",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://www.youtube.com/watch?v=oh9zVobf1lk",
+          "https://music.yandex.com/album/1165928/track/10747678",
+          "https://music.yandex.com/artist/1652733",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=IZTVqQwESRI"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3892",
+      "songId": "pool-756ec1235409",
+      "poolId": "quiz-answer-9f7e8ca06186",
+      "artist": "Мегаполис",
+      "title": "Москвички",
+      "artistIds": [
+        "megapolis"
+      ],
+      "artistAliases": [
+        "Мегаполис"
+      ],
+      "titleAliases": [
+        "Москвички"
+      ],
+      "era": "soviet",
+      "approximateYear": 1987,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "NuC2nHia0MU",
+        "title": "Мегаполис — Москвички (Official Music Video)",
+        "channel": "megapolisband",
+        "viewCount": 120459,
+        "durationSeconds": 258,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 47,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Утро",
+          "kind": "album",
+          "year": 1987,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15682289/b4e3565d.a.480631-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/480631/track/69981594",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/14247687/1c230fd5.p.218282/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/218282",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://www.shazam.com/ru-ru/song/1175120575/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B8%D1%87%D0%BA%D0%B8",
+          "https://snob.ru/music/oleg-nesterov-ob-albome-utro-elochnom-bazare-i-novoi-muzyke/",
+          "https://music.yandex.com/album/480631/track/69981594",
+          "https://music.yandex.com/artist/218282",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=NuC2nHia0MU"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3893",
+      "songId": "pool-8077e773c0f1",
+      "poolId": "quiz-answer-8077e773c0f1",
+      "artist": "Михаил Боярский",
+      "title": "Робинзон",
+      "artistIds": [
+        "mihailboyarskii"
+      ],
+      "artistAliases": [
+        "Михаил Боярский"
+      ],
+      "titleAliases": [
+        "Робинзон"
+      ],
+      "era": "soviet",
+      "approximateYear": 1985,
+      "recognizability": "deep",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "RcbwYXA0g-Q",
+        "title": "Робинзон",
+        "channel": "Михаил Боярский - Topic",
+        "viewCount": 8355,
+        "durationSeconds": 205,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 37,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Робинзон",
+          "kind": "single",
+          "year": 1985,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/20855185/a229a9bd.a.41360620-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/41360620/track/149749955",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/10703962/985866e4.a.28516734-1/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/218246",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.amazon.com/tracks/B0GV4DBXYG",
+          "https://music.yandex.com/album/41360620/track/149749955",
+          "https://music.yandex.com/artist/218246",
+          "https://boosty.to/quizpartynakhate/media/all",
+          "https://www.youtube.com/watch?v=RcbwYXA0g-Q"
+        ]
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    }
+  ],
+  "publication": [
+    {
+      "songId": "pool-c294e7732a49",
+      "artist": "Аквариум",
+      "title": "Танцы на грани весны",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-b75cc6d347e6",
+      "artist": "Александр Барыкин",
+      "title": "20:00",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-5612cbcf4fee",
+      "artist": "Александр Новиков",
+      "title": "Вези меня, извозчик",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-1196e870d676",
+      "artist": "Алиса",
+      "title": "Красное на чёрном",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-9d2130159109",
+      "artist": "Алиса Фрейндлих & ВИА «Солнце»",
+      "title": "В моей душе покоя нет",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-8bf2d637e579",
+      "artist": "Альянс",
+      "title": "Дайте огня",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-21acc5efd357",
+      "artist": "Анна Герман",
+      "title": "А он мне нравится",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-198cf60fca4a",
+      "artist": "Ария",
+      "title": "Воля и разум",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-3374f8788b6c",
+      "artist": "АукцЫон",
+      "title": "Осколки",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-1c4de38840d7",
+      "artist": "Валерий Леонтьев",
+      "title": "Полёт на дельтаплане",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-3567e7536a5b",
+      "artist": "ВИА «Голубые гитары» feat. Вячеслав Малежик & Роксана Бабаян",
+      "title": "Первый поцелуй",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-2755f6a44c3f",
+      "artist": "ВИА «Лейся, песня!»",
+      "title": "Прощай",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-d111d884f38f",
+      "artist": "Вилли Токарев",
+      "title": "В шумном балагане",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-17c90384902b",
+      "artist": "КИНО",
+      "title": "Восьмиклассница",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-1bacc6066938",
+      "artist": "Комбинация",
+      "title": "Ход конем",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-8769fa81b955",
+      "artist": "Красные Маки",
+      "title": "Всё, что было",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-f950611c46f9",
+      "artist": "Крематорий",
+      "title": "Лепрозорий",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-a8841bf92583",
+      "artist": "Машина времени",
+      "title": "Пока горит свеча",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-756ec1235409",
+      "artist": "Мегаполис",
+      "title": "Москвички",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-8077e773c0f1",
+      "artist": "Михаил Боярский",
+      "title": "Робинзон",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    }
+  ]
+}

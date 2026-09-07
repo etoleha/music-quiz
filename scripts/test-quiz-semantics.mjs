@@ -25,6 +25,7 @@ for (const [artist, form] of [
   ["Фактор-2", "Исполнитель + исполнитель"],
   ["Непара", "Исполнитель + исполнительница"],
   ["Tanir & Tyomcha", "Дуэт"],
+  ["Гости из будущего", "Группа"],
 ]) {
   const expression = new RegExp(`"${artist.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}":\\s*"${form.replaceAll("+", "\\+")}"`);
   assert.ok(expression.test(`${base}\n${extra}`), `неверная форма: ${artist}`);
@@ -38,4 +39,10 @@ assert.equal([...sovietQuiz[1].matchAll(/extraTrack\(/g)].length, 20, "в сов
 const familiarSovietQuiz = extra.match(/id: "soviet-familiar-01",[\s\S]*?tracks: \[([\s\S]*?)\r?\n\s*\],\r?\n\s*},/);
 assert.ok(familiarSovietQuiz, "нужен отдельный советский квиз средней сложности");
 assert.equal([...familiarSovietQuiz[1].matchAll(/extraTrack\(/g)].length, 20, "в среднем советском квизе должно быть 20 песен");
+const harderSovietQuiz = JSON.parse(fs.readFileSync(new URL("../data/quiz-release-new-rules-09.json", import.meta.url), "utf8"));
+assert.equal(harderSovietQuiz.quiz.id, "soviet-hard-02", "нужен второй сложный советский квиз");
+assert.equal(harderSovietQuiz.tracks.length, 20, "в новом сложном советском квизе должно быть 20 песен");
+assert.deepEqual(harderSovietQuiz.stats.eras, { soviet: 20 }, "новый советский квиз не должен содержать постсоветские песни");
+assert.equal(harderSovietQuiz.stats.recognition.recognizable || 0, 0, "в более сложном советском квизе не должно быть простых опор");
+assert.ok(harderSovietQuiz.stats.recognition.deep >= 11, "большинство нового советского квиза должно быть глубокими позициями");
 console.log("quiz semantic tests passed");
