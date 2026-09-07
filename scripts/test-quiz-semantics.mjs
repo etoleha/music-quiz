@@ -26,6 +26,7 @@ for (const [artist, form] of [
   ["Непара", "Исполнитель + исполнительница"],
   ["Tanir & Tyomcha", "Дуэт"],
   ["Гости из будущего", "Группа"],
+  ["Аквариум", "Группа"],
 ]) {
   const expression = new RegExp(`"${artist.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}":\\s*"${form.replaceAll("+", "\\+")}"`);
   assert.ok(expression.test(`${base}\n${extra}`), `неверная форма: ${artist}`);
@@ -45,6 +46,8 @@ assert.equal(harderSovietQuiz.tracks.length, 20, "в новом сложном �
 assert.deepEqual(harderSovietQuiz.stats.eras, { soviet: 20 }, "новый советский квиз не должен содержать постсоветские песни");
 assert.equal(harderSovietQuiz.stats.recognition.recognizable || 0, 0, "в более сложном советском квизе не должно быть простых опор");
 assert.ok(harderSovietQuiz.stats.recognition.deep >= 11, "большинство нового советского квиза должно быть глубокими позициями");
+const aquarium = harderSovietQuiz.tracks.find(({ songId }) => songId === "pool-c294e7732a49");
+assert.equal(aquarium?.optionalMetadata.artistForm, "Группа", "«Аквариум» должен отображаться как группа");
 const release26 = JSON.parse(fs.readFileSync(new URL("../data/quiz-release-new-rules-04.json", import.meta.url), "utf8"));
 const palina = release26.tracks.find(({ songId }) => songId === "pool-f22147669508");
 assert.equal(palina?.approximateYear, 2012, "год песни Palina должен отражать исходную публикацию, а не цифровой перевыпуск");
