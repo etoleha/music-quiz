@@ -39,7 +39,6 @@ const materialSnapshot = (song = {}, record = {}) => ({
       artistImage: song.optionalMetadata?.artistImage,
       performers: song.optionalMetadata?.performers,
       facts: song.optionalMetadata?.facts,
-      audio: song.optionalMetadata?.audio,
     },
   },
   verification: {
@@ -51,7 +50,6 @@ const materialSnapshot = (song = {}, record = {}) => ({
     soundtrack: record.soundtrack,
     originalRecording: record.originalRecording,
     difficulty: record.difficulty,
-    audio: record.audio,
   },
 });
 

@@ -62,4 +62,7 @@ assert.deepEqual(publicationReport(changedAlbum, sealed).blockers, ["fullReverif
 const changedVideo = structuredClone(song);
 changedVideo.youtube.videoId = "lmnopqrstuv";
 assert.deepEqual(publicationReport(changedVideo, sealed).blockers, ["fullReverification"]);
+const changedVolume = structuredClone(song);
+changedVolume.optionalMetadata.audio = { playbackVolume: 54, integratedLufs: -20.1 };
+assert.equal(publicationReport(changedVolume, sealed).passed, true);
 console.log("publication verification tests passed");
