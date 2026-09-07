@@ -163,7 +163,7 @@ for (const definition of definitions) {
       uniqueSongsAcrossBatch: true,
       uniqueYouTubeVideosAcrossBatch: true,
       uniqueArtistEntitiesWithinQuiz: true,
-      publicationRequiredChecks: ["youtube-refresh", "fragment-listening", "relationship-review", "credits-and-ost-review"],
+      publicationRequiredChecks: ["youtube-refresh", "fragment-listening", "clip-loudness-measurement", "artist-form-review", "first-performance-review", "original-recording-if-cover", "relationship-review", "credits-and-ost-review"],
       answerDifficultyFeedbackApplied: artistDifficulty.size > 0,
       difficultyFeedbackFetchedAt: feedback?.fetchedAt || null,
     },

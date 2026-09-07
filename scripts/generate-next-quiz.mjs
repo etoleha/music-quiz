@@ -233,6 +233,10 @@ const releaseCandidate = {
     priorityArtistPreferenceApplied: true,
     maxPriorityArtists,
     goldenReservePreferred: true,
+    clipLoudnessMeasurementRequired: true,
+    artistFormReviewRequired: true,
+    firstPerformanceReviewRequired: true,
+    originalRecordingRequiredForCovers: true,
   },
   validation: {
     passed: true,
@@ -243,6 +247,8 @@ const releaseCandidate = {
       "При обычной сборке используется свежая семидневная проверка, чтобы лимит YouTube 429 не считался поломкой ролика.",
       "В выпуск попадают только карточки, прошедшие актуальный предрелизный отчёт.",
       "Границы фрагментов выбраны эвристикой; перед публикацией остаётся короткое прослушивание.",
+      "Перед публикацией громкость каждого фрагмента измеряется и получает индивидуальную коррекцию к общему безопасному уровню.",
+      "Форма исполнителя и первое известное исполнение проверяются отдельно; для кавера сохраняются исполнитель и ссылка на оригинал.",
     ],
   },
   stats: {

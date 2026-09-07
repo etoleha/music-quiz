@@ -5,6 +5,14 @@ const normalize = (value: string) =>
     .replace(/[^a-zа-я0-9]+/g, " ")
     .trim();
 
+export function countTitleWords(value: string) {
+  return (value || "")
+    .trim()
+    .split(/\s+/u)
+    .filter((word) => word && !/^[-‐‑‒–—―]+$/u.test(word))
+    .length;
+}
+
 const translit = (value: string) => {
   const map: Record<string, string> = {
     а: "a", б: "b", в: "v", г: "g", д: "d", е: "e", ж: "zh", з: "z",

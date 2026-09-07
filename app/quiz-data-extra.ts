@@ -484,6 +484,7 @@ const verifiedReleaseTrack = (song: VerifiedReleaseTrack): Track => ({
   titleAliases: unique([song.title, ...song.titleAliases]),
   start: song.clip.start,
   duration: song.clip.duration,
+  playbackVolume: Math.max(35, Math.min(85, Number((song.optionalMetadata as { audio?: { playbackVolume?: number } }).audio?.playbackVolume) || 70)),
   releaseYear: song.approximateYear,
   album: song.optionalMetadata.album ? {
     title: song.optionalMetadata.album.title,

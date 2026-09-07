@@ -58,6 +58,7 @@ type PublicationVerification = {
     relationships?: { lineup?: Array<{ name: string; role?: string; highlighted?: boolean }>; sourceUrl?: string };
     credits?: Array<{ role: string; names: string[] }>;
     soundtrack?: { title: string; kind?: string; year?: number; sourceUrl?: string } | null;
+    originalRecording?: { artist: string; title?: string; year?: number; sourceUrl: string } | null;
     difficulty?: { band: "recognizable" | "middle" | "deep"; score: number; explanation: string; basis?: string[] };
     publishedAt?: string;
   }>;
@@ -128,6 +129,7 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
       members: verified?.relationships?.lineup || [],
       credits: verified?.credits || [],
       soundtrack: verified?.soundtrack || undefined,
+      originalRecording: verified?.originalRecording || undefined,
       difficulty: verified?.difficulty,
       verification: verified ? { status: verified.publishedAt ? "published" : "verified", verifiedChecks: verifiedCount, totalChecks: Object.keys(verified.checks || {}).length } : undefined,
       sources: [...new Set([...(song.enrichment?.sources || []), ...verifiedSources])].map((url) => ({ provider: "source", url })),
@@ -178,6 +180,7 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
     album: verified?.release?.album || album,
     credits: verified?.credits || [],
     soundtrack: verified?.soundtrack || undefined,
+    originalRecording: verified?.originalRecording || undefined,
     difficulty: verified?.difficulty,
     verification: verified ? { status: verified.publishedAt ? "published" : "verified", verifiedChecks: verifiedCount, totalChecks: Object.keys(verified.checks || {}).length } : undefined,
     sources: [

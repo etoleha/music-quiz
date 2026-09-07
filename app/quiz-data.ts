@@ -20,6 +20,7 @@ export type Track = {
   titleAliases: string[];
   start: number;
   duration: number;
+  playbackVolume?: number;
   releaseYear?: number;
   versionYear?: number;
   album?: { title: string; year?: number; coverUrl?: string };

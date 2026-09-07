@@ -39,7 +39,13 @@ export function validatePublicationVerification(document) {
 export const blockingPublicationChecks = (record = {}) => REQUIRED_PUBLICATION_CHECKS.filter((name) => {
   const state = record.checks?.[name]?.state;
   return state !== "verified" && state !== "not-applicable";
-});
+}).concat([
+  ...(record.release?.versionType === "cover" ? ["originalRecording"] : []),
+  ...(record.checks?.audioLoudness ? ["audioLoudness"] : []),
+].filter((name) => {
+  const state = record.checks?.[name]?.state;
+  return state !== "verified" && state !== "not-applicable";
+}));
 
 export const REQUIRED_GOLDEN_RESERVE_CHECKS = [
   "identity",

@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getQuiz, quizzes, type Quiz, type Track } from "./quiz-data";
-import { isAccepted, isArtistAccepted } from "./scoring";
+import { countTitleWords, isAccepted, isArtistAccepted } from "./scoring";
 import { scoreToAnswerPoints, trackMaxScore, weightedAnswerScore } from "../shared/score-policy.ts";
 
-type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void };
+type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void; setVolume(volume: number): void };
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean; loadErrorCode?: number };
 type Review = Answer & { track: Track; artistPoint: number; titlePoint: number };
 type Attempt = { id: string; quizId: string; quizTitle: string; score: number; maxScore: number; skipped: number; createdAt: string };
@@ -32,6 +32,7 @@ type ArtistInfo = {
   facts?: Array<{ text: string; sourceUrl?: string }>;
   credits?: Array<{ role: string; names: string[] }>;
   soundtrack?: { title: string; kind?: string; year?: number; sourceUrl?: string };
+  originalRecording?: { artist: string; title?: string; year?: number; sourceUrl: string };
   difficulty?: { band: "recognizable" | "middle" | "deep"; score: number; explanation: string; basis?: string[] };
   verification?: { status: "verified" | "published"; verifiedChecks: number; totalChecks: number };
   sources?: Array<{ provider: string; url: string }>;
@@ -52,8 +53,6 @@ const shuffle = <T,>(items: T[]) => {
   }
   return result;
 };
-
-const titleWordCount = (title: string) => title.trim().split(/\s+/).filter(Boolean).length;
 
 const wordForm = (count: number) => {
   const lastTwo = count % 100;
@@ -88,8 +87,8 @@ function TrackReferenceCard({ info, track }: { info?: ArtistInfo; track: Track }
   const yearLine = info.releaseYear || track.releaseYear;
   return <div className="artist-info ready">
     <div className="reference-media">
-      {info.image?.url && <figure>{info.image.sourceUrl ? <a className="reference-image-link" href={info.image.sourceUrl} target="_blank" rel="noreferrer"><img src={info.image.url} alt={`Фото: ${track.artist}`} loading="lazy" /><span>Фото исполнителя <ExternalLink /></span></a> : <><img src={info.image.url} alt={`Фото: ${track.artist}`} loading="lazy" /><span>Фото исполнителя</span></>}</figure>}
-      {info.album?.coverUrl && <figure>{info.album.sourceUrl ? <a className="reference-image-link" href={info.album.sourceUrl} target="_blank" rel="noreferrer"><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><span>{releaseKindLabel(info.album.kind)} <ExternalLink /></span></a> : <><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><span>{releaseKindLabel(info.album.kind)}</span></>}</figure>}
+      {info.image?.url && <figure className="artist-reference-image">{info.image.sourceUrl ? <a className="reference-image-link" href={info.image.sourceUrl} target="_blank" rel="noreferrer"><img src={info.image.url} alt={`Фото: ${track.artist}`} loading="lazy" /><span>Фото исполнителя <ExternalLink /></span></a> : <><img src={info.image.url} alt={`Фото: ${track.artist}`} loading="lazy" /><span>Фото исполнителя</span></>}</figure>}
+      {info.album?.coverUrl && <figure className="album-reference-image">{info.album.sourceUrl ? <a className="reference-image-link" href={info.album.sourceUrl} target="_blank" rel="noreferrer"><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><span>{releaseKindLabel(info.album.kind)} <ExternalLink /></span></a> : <><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><span>{releaseKindLabel(info.album.kind)}</span></>}</figure>}
     </div>
     <div className="reference-content">
       <div className="reference-topline">
@@ -101,8 +100,8 @@ function TrackReferenceCard({ info, track }: { info?: ArtistInfo; track: Track }
         {info.members?.length ? <section className="lineup-section"><h4><UsersRound /> Участники</h4><div className="lineup-list">{info.members.map((member) => <span className={member.highlighted ? "is-highlighted" : ""} key={`${member.name}-${member.role || member.roles?.join()}`}><b>{member.name}</b>{member.role || member.roles?.join(", ") ? <small>{member.role || member.roles?.join(", ")}</small> : null}</span>)}</div></section> : null}
         {info.credits?.length ? <section><h4><Sparkles /> Авторы</h4>{info.credits.map((credit) => <p key={`${credit.role}-${credit.names.join()}`}><b>{credit.role}:</b> {credit.names.join(", ")}</p>)}</section> : null}
         {info.soundtrack ? <section><h4><Music2 /> OST</h4><p>{info.soundtrack.sourceUrl ? <a href={info.soundtrack.sourceUrl} target="_blank" rel="noreferrer">{info.soundtrack.title} <ExternalLink /></a> : info.soundtrack.title}{info.soundtrack.year ? ` · ${info.soundtrack.year}` : ""}</p></section> : null}
+        {info.originalRecording ? <section><h4><History /> Оригинал</h4><p><a href={info.originalRecording.sourceUrl} target="_blank" rel="noreferrer">{info.originalRecording.artist}{info.originalRecording.title ? ` — ${info.originalRecording.title}` : ""} <ExternalLink /></a>{info.originalRecording.year ? ` · ${info.originalRecording.year}` : ""}</p></section> : null}
       </div>
-      {info.difficulty && <p className="difficulty-explanation">Почему так: {info.difficulty.explanation}</p>}
       {info.facts?.map((fact) => <p className="artist-fact" key={fact.text}>{fact.text}{fact.sourceUrl && <a href={fact.sourceUrl} target="_blank" rel="noreferrer" aria-label="Источник факта"><ExternalLink /></a>}</p>)}
       {(sources.length || info.artistUrl) ? <div className="reference-sources"><span>Источники:</span>{sources.map((source, index) => <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.provider === "verification" ? `проверка ${index + 1}` : `источник ${index + 1}`} <ExternalLink /></a>)}{!sources.length && info.artistUrl && <a href={info.artistUrl} target="_blank" rel="noreferrer">профиль исполнителя <ExternalLink /></a>}</div> : null}
     </div>
@@ -254,7 +253,10 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       height: "135", width: "240",
       playerVars: { controls: 0, disablekb: 1, fs: 0, playsinline: 1, rel: 0 },
       events: {
-        onReady: () => setPlayerReady(true),
+        onReady: () => {
+          player.current?.setVolume(70);
+          setPlayerReady(true);
+        },
         onStateChange: (event: { data: number }) => {
           if (event.data === window.YT?.PlayerState.PLAYING) {
             playingRef.current = true;
@@ -289,6 +291,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     stopClipClock();
     activeClip.current = { trackKey: current.key, start: current.start, elapsed: 0, duration: current.duration, context: "quiz", started: false };
     setClipPlayback({ trackKey: current.key, elapsed: 0, duration: current.duration, context: "quiz" });
+    player.current.setVolume(current.playbackVolume ?? 70);
     player.current.loadVideoById({ videoId: current.youtubeId, startSeconds: current.start });
   }, [current, playerReady, stopClipClock]);
 
@@ -300,6 +303,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     stopClipClock();
     activeClip.current = { trackKey: track.key, start: track.start, elapsed: 0, duration: track.duration, context: "review", started: false };
     setClipPlayback({ trackKey: track.key, elapsed: 0, duration: track.duration, context: "review" });
+    player.current.setVolume(track.playbackVolume ?? 70);
     player.current.loadVideoById({ videoId: track.youtubeId, startSeconds: track.start });
   }, [playerReady, stopClipClock]);
 
@@ -658,7 +662,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
           <p className="listen-count">Осталось прослушиваний: {tries} · Ctrl + пробел — повторить</p>
         </div>
         <div className="answer-zone"><p>Enter — перейти к названию и отправить ответ. Можно писать транслитом и с опечатками.</p>
-          <div className="answer-fields"><label>{current.artistForm}<input ref={artistInput} value={artist} onChange={(event) => setArtist(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && !event.repeat) { event.preventDefault(); titleInput.current?.focus(); } }} autoComplete="off" placeholder="Кто поёт?" /></label><label>Название — {titleWordCount(current.title)} {wordForm(titleWordCount(current.title))}<input ref={titleInput} value={title} onChange={(event) => setTitle(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && !event.repeat) { event.preventDefault(); submit(); } }} autoComplete="off" placeholder="Что за песня?" /></label></div>
+          <div className="answer-fields"><label>{current.artistForm}<input ref={artistInput} value={artist} onChange={(event) => setArtist(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && !event.repeat) { event.preventDefault(); titleInput.current?.focus(); } }} autoComplete="off" placeholder="Кто поёт?" /></label><label>Название — {countTitleWords(current.title)} {wordForm(countTitleWords(current.title))}<input ref={titleInput} value={title} onChange={(event) => setTitle(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && !event.repeat) { event.preventDefault(); submit(); } }} autoComplete="off" placeholder="Что за песня?" /></label></div>
           <div className="quiz-actions"><div><Button variant="ghost" onClick={() => submit({ artistAnswer: "", titleAnswer: "" })}>Не знаю · Alt+N</Button><Button variant="ghost" className="load-failed" onClick={() => submit({ loadFailed: true })}>Не загрузилось · Alt+L</Button></div><Button onClick={() => submit()}>Следующая · Enter <ChevronRight /></Button></div>
         </div>
       </section>

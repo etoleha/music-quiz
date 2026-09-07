@@ -5,9 +5,38 @@
   "uniqueSongsAcrossQuizzes": true,
   "participantRule": "any-participant-blocks-credit-within-quiz",
   "unknownParticipantRule": "manual-review",
+  "publicationRequirements": {
+    "audio": {
+      "measureExactClip": true,
+      "targetIntegratedLufs": -16,
+      "maximumTruePeakDb": -1,
+      "defaultPlaybackVolume": 70,
+      "perTrackPlaybackVolumeRange": [35, 85],
+      "blockPublicationWhenMeasuredValueIsMissing": true
+    },
+    "releaseHistory": {
+      "verifyFirstKnownPerformance": true,
+      "doNotUseReissueYearAsOriginalYear": true,
+      "forCoverRequireOriginalArtist": true,
+      "forCoverRequireOriginalSourceUrl": true
+    },
+    "artistForm": {
+      "manualReviewRequired": true,
+      "doNotInferSoloArtistFromCatalogProfile": true
+    },
+    "presentation": {
+      "showDifficultyScore": true,
+      "showDifficultyExplanation": false,
+      "standaloneDashCountsAsWord": false
+    }
+  },
   "notes": [
     "Исполнители и группы из прошлых выпусков могут появляться снова с другой песней.",
     "Одна и та же песня не публикуется повторно, а внутри одного квиза исполнительские сущности не повторяются.",
-    "Постоянная группа или дуэт считается одной самостоятельной исполнительской сущностью."
+    "Постоянная группа или дуэт считается одной самостоятельной исполнительской сущностью.",
+    "Громкость измеряется на точном фрагменте; браузер применяет безопасный общий уровень и индивидуальную поправку.",
+    "Первое исполнение песни проверяется отдельно от даты цифрового переиздания; для кавера обязательны исполнитель и ссылка на оригинал.",
+    "Форма исполнителя подтверждается вручную и не наследуется вслепую из внешнего каталога.",
+    "Объяснение редакционного выбора сложности хранится внутри базы, но не показывается игроку."
   ]
 }
