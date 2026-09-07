@@ -3247,7 +3247,9 @@
       "identity": {
         "artist": "Palina",
         "artistAliases": [
-          "Palina"
+          "Palina",
+          "Республика Полина",
+          "Паліна Рэспубліка"
         ],
         "artistForm": "Исполнительница"
       },
@@ -3266,6 +3268,9 @@
         "release": {
           "state": "verified",
           "sources": [
+            "https://soundcloud.com/repolinare/respublikapolina-sarafan",
+            "https://www.shazam.com/ru-ru/song/1437328383/%D1%81%D0%B0%D1%80%D0%B0%D1%84%D0%B0%D0%BD",
+            "https://music.mts.ru/album/24854794/track/111305231",
             "https://music.apple.com/us/song/1739293134",
             "https://www.shazam.com/song/1739293134/я-б-уплыла-в-океан",
             "https://music.yandex.com/album/30464065/track/124285580",
@@ -3343,7 +3348,7 @@
         }
       },
       "release": {
-        "releaseYear": 2024,
+        "releaseYear": 2012,
         "versionYear": 2024,
         "album": {
           "title": "Я б уплыла в океан",
@@ -3380,7 +3385,7 @@
       "difficulty": {
         "band": "middle",
         "score": 58,
-        "explanation": "Сингл вышел 12 апреля 2024 года; официальные метаданные указывают Полину Полонейчик-Городнову автором.",
+        "explanation": "Песня опубликована автором как «Сарафан» в апреле 2012 года, вошла в «Бясконцы Красавік» в 2015-м и была заново выпущена под текущим названием в 2024-м; в квизе звучит версия 2024 года.",
         "basis": [
           "personal-feedback",
           "source-quiz-complexity",

@@ -34,8 +34,8 @@
       "soviet": 0,
       "1990s": 6,
       "2000s": 8,
-      "2010s": 2,
-      "2020s": 4
+      "2010s": 3,
+      "2020s": 3
     },
     "recognition": {
       "recognizable": 4,
@@ -2202,13 +2202,18 @@
         "palina"
       ],
       "artistAliases": [
-        "Palina"
+        "Palina",
+        "Республика Полина",
+        "Паліна Рэспубліка"
       ],
       "titleAliases": [
-        "Я б уплыла в океан"
+        "Я б уплыла в океан",
+        "Сарафан",
+        "Красный сарафан",
+        "Я б уплыла в океан (Красный сарафан)"
       ],
-      "era": "2020s",
-      "approximateYear": 2024,
+      "era": "2010s",
+      "approximateYear": 2012,
       "recognizability": "middle",
       "selectionPreference": "standard",
       "artistNovelty": "previously-used-artist",
@@ -2253,6 +2258,9 @@
         "performers": [],
         "facts": [],
         "sources": [
+          "https://soundcloud.com/repolinare/respublikapolina-sarafan",
+          "https://www.shazam.com/ru-ru/song/1437328383/%D1%81%D0%B0%D1%80%D0%B0%D1%84%D0%B0%D0%BD",
+          "https://music.mts.ru/album/24854794/track/111305231",
           "https://music.apple.com/us/song/1739293134",
           "https://www.shazam.com/song/1739293134/я-б-уплыла-в-океан",
           "https://www.youtube.com/watch?v=kXqxBUK00ck",
