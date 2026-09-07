@@ -22,14 +22,18 @@ export function applyMistakeResult(database: DatabaseSync, result: MistakeResult
   const correct = result.artistPoint + result.titlePoint === 2;
   const current = currentMastery(database, result.trackKey);
   if (!correct) {
+    const artistMiss = result.artistPoint ? 0 : 1;
+    const titleMiss = result.titlePoint ? 0 : 1;
     database.prepare(`INSERT INTO mistake_mastery
-      (track_key, artist, title, successes, required_successes, misses, active, last_error_at, updated_at)
-      VALUES (?, ?, ?, 0, ?, 1, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+      (track_key, artist, title, successes, required_successes, misses, artist_misses, title_misses, active, last_error_at, updated_at)
+      VALUES (?, ?, ?, 0, ?, 1, ?, ?, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
       ON CONFLICT(track_key) DO UPDATE SET
         artist = excluded.artist,
         title = excluded.title,
         successes = 0,
         misses = mistake_mastery.misses + 1,
+        artist_misses = mistake_mastery.artist_misses + excluded.artist_misses,
+        title_misses = mistake_mastery.title_misses + excluded.title_misses,
         active = 1,
         last_error_at = CURRENT_TIMESTAMP,
         updated_at = CURRENT_TIMESTAMP`).run(
@@ -37,6 +41,8 @@ export function applyMistakeResult(database: DatabaseSync, result: MistakeResult
           result.artist,
           result.title,
           requiredMistakeSuccesses,
+          artistMiss,
+          titleMiss,
         );
     return;
   }

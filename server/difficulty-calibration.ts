@@ -7,13 +7,21 @@ type AggregateRow = {
   attempts: number;
   artistSuccesses: number;
   titleSuccesses: number;
+  bothCorrect: number;
+  artistOnly: number;
+  titleOnly: number;
+  neither: number;
 };
 
 const aggregate = (database: DatabaseSync, groupExpression: string, labelExpression: string) =>
   database.prepare(`SELECT ${groupExpression} AS key, ${labelExpression} AS label,
     COUNT(*) AS attempts,
     SUM(aa.artist_point) AS artistSuccesses,
-    SUM(aa.title_point) AS titleSuccesses
+    SUM(aa.title_point) AS titleSuccesses,
+    SUM(CASE WHEN aa.artist_point = 1 AND aa.title_point = 1 THEN 1 ELSE 0 END) AS bothCorrect,
+    SUM(CASE WHEN aa.artist_point = 1 AND aa.title_point = 0 THEN 1 ELSE 0 END) AS artistOnly,
+    SUM(CASE WHEN aa.artist_point = 0 AND aa.title_point = 1 THEN 1 ELSE 0 END) AS titleOnly,
+    SUM(CASE WHEN aa.artist_point = 0 AND aa.title_point = 0 THEN 1 ELSE 0 END) AS neither
     FROM attempt_answers aa JOIN attempts a ON a.id = aa.attempt_id
     WHERE a.user_id = 'owner' AND aa.load_failed = 0
       AND NOT EXISTS (

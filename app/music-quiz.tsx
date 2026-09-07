@@ -14,7 +14,7 @@ type Player = { loadVideoById(options: { videoId: string; startSeconds: number }
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean; loadErrorCode?: number };
 type Review = Answer & { track: Track; artistPoint: number; titlePoint: number };
 type Attempt = { id: string; quizId: string; quizTitle: string; score: number; maxScore: number; skipped: number; createdAt: string };
-type WeakTrack = { trackKey: string; artist: string; title: string; successes: number; requiredSuccesses: number; misses: number };
+type WeakTrack = { trackKey: string; artist: string; title: string; successes: number; requiredSuccesses: number; misses: number; artistMisses: number; titleMisses: number };
 type ClipPlayback = { trackKey: string; elapsed: number; duration: number; context: "quiz" | "review" };
 type ActiveClip = ClipPlayback & { start: number; started: boolean };
 type ArtistInfo = {
@@ -394,6 +394,8 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         const leftProgress = mistakeProgressByKey.get(left.key);
         const rightProgress = mistakeProgressByKey.get(right.key);
         return (leftProgress?.successes ?? 0) - (rightProgress?.successes ?? 0)
+          || ((rightProgress?.artistMisses ?? 0) * 2 + (rightProgress?.titleMisses ?? 0))
+            - ((leftProgress?.artistMisses ?? 0) * 2 + (leftProgress?.titleMisses ?? 0))
           || (rightProgress?.misses ?? 0) - (leftProgress?.misses ?? 0);
       })
       .slice(0, 30);
@@ -708,7 +710,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         <p className="collection-note">Новые подборки будут появляться здесь отдельными квизами. Старые результаты сохраняются. <a href="/catalog">Открыть общую базу песен →</a></p>
       </TabsContent>
       <TabsContent value="stats" className="tab-content"><div className="section-heading"><div><p className="eyebrow">За всё время</p><h1>Твоя музыкальная форма</h1></div></div><div className="stats-grid"><article className="stat-card accent"><strong>{percentage}%</strong><span>точность</span></article><article className="stat-card"><strong>{attempts.length}</strong><span>квизов пройдено</span></article><article className="stat-card"><strong>{totalPoints}</strong><span>баллов набрано</span></article></div>
-        <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title} · ошибок: {item.misses}</small></div><Badge variant="outline">зачётов: {item.successes}/{item.requiredSuccesses}</Badge></div>) : <p className="empty-copy">Очередь пуста: все ошибочные песни угаданы два раза подряд.</p>}</section></div>
+        <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => { const gap = item.artistMisses && item.titleMisses ? "не узнаны исполнитель и название" : item.artistMisses ? "не узнан исполнитель" : "не вспомнено название"; return <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title} · {gap} · ошибок: {item.misses}</small></div><Badge variant="outline">зачётов: {item.successes}/{item.requiredSuccesses}</Badge></div>; }) : <p className="empty-copy">Очередь пуста: все ошибочные песни угаданы два раза подряд.</p>}</section></div>
       </TabsContent></Tabs>
   </main>;
 }

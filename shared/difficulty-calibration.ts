@@ -2,6 +2,10 @@ export type DifficultyEvidence = {
   attempts: number;
   artistSuccesses: number;
   titleSuccesses: number;
+  bothCorrect?: number;
+  artistOnly?: number;
+  titleOnly?: number;
+  neither?: number;
 };
 
 export type DifficultyCalibration = DifficultyEvidence & {
@@ -10,6 +14,12 @@ export type DifficultyCalibration = DifficultyEvidence & {
   weightedAccuracy: number;
   difficulty: number;
   confidence: number;
+  outcomes: {
+    bothCorrect: number;
+    artistOnly: number;
+    titleOnly: number;
+    neither: number;
+  };
 };
 
 export function calibrateDifficulty(
@@ -35,5 +45,11 @@ export function calibrateDifficulty(
     weightedAccuracy: Number(weightedAccuracy.toFixed(4)),
     difficulty: Math.round((1 - weightedAccuracy) * 100),
     confidence: Number((attempts / denominator || 0).toFixed(4)),
+    outcomes: {
+      bothCorrect: evidence.bothCorrect ?? 0,
+      artistOnly: evidence.artistOnly ?? 0,
+      titleOnly: evidence.titleOnly ?? 0,
+      neither: evidence.neither ?? 0,
+    },
   };
 }

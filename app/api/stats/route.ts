@@ -21,9 +21,10 @@ export async function GET() {
       score, max_score AS maxScore, skipped, created_at AS createdAt
       FROM attempts WHERE user_id = 'owner' ORDER BY created_at DESC`).all();
     const weakTracks = database.prepare(`SELECT track_key AS trackKey, artist, title,
-      successes, required_successes AS requiredSuccesses, misses
+      successes, required_successes AS requiredSuccesses, misses,
+      artist_misses AS artistMisses, title_misses AS titleMisses
       FROM mistake_mastery WHERE active = 1
-      ORDER BY successes ASC, misses DESC, last_error_at DESC, artist ASC`).all();
+      ORDER BY successes ASC, (artist_misses * 2 + title_misses) DESC, misses DESC, last_error_at DESC, artist ASC`).all();
 
     return Response.json({ attempts, weakTracks, difficulty: difficultyCalibration(database) });
   } catch (error) {

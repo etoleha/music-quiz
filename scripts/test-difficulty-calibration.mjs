@@ -26,6 +26,14 @@ database.exec(`
 const report = difficultyCalibration(database);
 assert.equal(report.tracks.length, 1);
 assert.equal(report.tracks[0].attempts, 2);
+assert.deepEqual(report.tracks[0].outcomes, { bothCorrect: 0, artistOnly: 1, titleOnly: 0, neither: 1 });
 assert.equal(report.artists[0].artistKey, "елка");
 assert.equal(report.policy.artistWeight, 2);
+
+database.prepare("UPDATE attempt_answers SET artist_point = 1, title_point = 1 WHERE attempt_id = 'a2' AND track_key = 'track'").run();
+const correctedReport = difficultyCalibration(database);
+assert.equal(correctedReport.tracks[0].artistSuccesses, 2);
+assert.equal(correctedReport.tracks[0].titleSuccesses, 1);
+assert.deepEqual(correctedReport.tracks[0].outcomes, { bothCorrect: 1, artistOnly: 1, titleOnly: 0, neither: 0 });
+assert.ok(correctedReport.tracks[0].difficulty < report.tracks[0].difficulty);
 console.log("difficulty calibration tests passed");

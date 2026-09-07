@@ -1,7 +1,7 @@
 import { mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { backfillMistakeMastery } from "./mistake-mastery";
+import { backfillMistakeMastery, rebuildMistakeMasteryForTrack } from "./mistake-mastery";
 
 declare global {
   var musicQuizDatabase: DatabaseSync | undefined;
@@ -80,6 +80,8 @@ function createDatabase() {
       successes INTEGER NOT NULL DEFAULT 0,
       required_successes INTEGER NOT NULL DEFAULT 2,
       misses INTEGER NOT NULL DEFAULT 0,
+      artist_misses INTEGER NOT NULL DEFAULT 0,
+      title_misses INTEGER NOT NULL DEFAULT 0,
       active INTEGER NOT NULL DEFAULT 1,
       last_error_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
       updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -111,7 +113,23 @@ function createDatabase() {
   if (!attemptAnswerColumns.some(({ name }) => name === "load_error_code")) {
     database.exec("ALTER TABLE attempt_answers ADD COLUMN load_error_code INTEGER");
   }
+  const mistakeColumns = database.prepare("PRAGMA table_info(mistake_mastery)").all() as Array<{ name: string }>;
+  let rebuildMistakeBreakdown = false;
+  if (!mistakeColumns.some(({ name }) => name === "artist_misses")) {
+    database.exec("ALTER TABLE mistake_mastery ADD COLUMN artist_misses INTEGER NOT NULL DEFAULT 0");
+    rebuildMistakeBreakdown = true;
+  }
+  if (!mistakeColumns.some(({ name }) => name === "title_misses")) {
+    database.exec("ALTER TABLE mistake_mastery ADD COLUMN title_misses INTEGER NOT NULL DEFAULT 0");
+    rebuildMistakeBreakdown = true;
+  }
   backfillMistakeMastery(database);
+  if (rebuildMistakeBreakdown) {
+    const trackKeys = database.prepare(`SELECT DISTINCT aa.track_key AS trackKey
+      FROM attempt_answers aa JOIN attempts a ON a.id = aa.attempt_id
+      WHERE a.user_id = 'owner'`).all() as Array<{ trackKey: string }>;
+    for (const { trackKey } of trackKeys) rebuildMistakeMasteryForTrack(database, trackKey);
+  }
   return database;
 }
 
