@@ -1,0 +1,1407 @@
+{
+  "version": 2,
+  "generatedAt": "2026-09-07T00:18:06.491Z",
+  "status": "verified",
+  "quiz": {
+    "id": "new-rules-test-03",
+    "title": "Квиз XXV · мягкая калибровка",
+    "level": "средний",
+    "published": "7 сентября 2026"
+  },
+  "policy": {
+    "trackCount": 20,
+    "uniqueSongs": true,
+    "uniqueYouTubeVideos": true,
+    "relationshipConflicts": true,
+    "strictMetadataGate": true,
+    "personalization": {
+      "sovietViasRequired": false,
+      "rapTracksAllowed": [
+        0,
+        1,
+        2
+      ],
+      "rapTracksSelected": 1,
+      "popularArtistTopThreeAvoidedWherePractical": true
+    }
+  },
+  "stats": {
+    "eras": {
+      "soviet": 2,
+      "1990s": 4,
+      "2000s": 7,
+      "2010s": 4,
+      "2020s": 3
+    },
+    "recognition": {
+      "recognizable": 8,
+      "middle": 9,
+      "deep": 3
+    },
+    "rapTracks": 1,
+    "sovietViaTracks": 0
+  },
+  "tracks": [
+    {
+      "id": "ready-1828",
+      "songId": "pool-3943f5f6301a",
+      "poolId": "soviet-0027",
+      "artist": "Людмила Зыкина",
+      "title": "Течёт река Волга",
+      "artistIds": [
+        "lyudmilazykina"
+      ],
+      "artistAliases": [
+        "Людмила Зыкина"
+      ],
+      "titleAliases": [
+        "Течёт река Волга"
+      ],
+      "era": "soviet",
+      "approximateYear": 1963,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Советская_эстрада"
+      },
+      "youtube": {
+        "videoId": "dYz5c8KphJQ",
+        "title": "Людмила Зыкина - Течёт река Волга",
+        "channel": "venats",
+        "viewCount": 8564646,
+        "durationSeconds": 368,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 68,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "«Течёт река Волга» — архивная запись",
+          "kind": "archive",
+          "year": 1963,
+          "coverUrl": "https://i.ytimg.com/vi/dYz5c8KphJQ/hqdefault.jpg",
+          "sourceUrl": "https://music-museum.ru/about/news/k-95-letiyu-so-dnya-rozhdeniya-lyudmilyi-zyikinoj.html",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/dYz5c8KphJQ/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=dYz5c8KphJQ",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Людмила Зыкина",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/1830475347"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1770",
+      "songId": "pool-b11addc0dee2",
+      "poolId": "soviet-0034",
+      "artist": "Лариса Мондрус",
+      "title": "Проснись и пой",
+      "artistIds": [
+        "larisamondrus"
+      ],
+      "artistAliases": [
+        "Лариса Мондрус"
+      ],
+      "titleAliases": [
+        "Проснись и пой"
+      ],
+      "era": "soviet",
+      "approximateYear": 1970,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Советская эстрада",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Советская_эстрада"
+      },
+      "youtube": {
+        "videoId": "tcu1Q-WW8Gg",
+        "title": "Лариса Мондрус \"Проснись и пой\"",
+        "channel": "IRa Gochachko",
+        "viewCount": 2862659,
+        "durationSeconds": 147,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 27,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "«Проснись и пой» — запись из фильма",
+          "kind": "soundtrack",
+          "year": 1971,
+          "coverUrl": "https://i.ytimg.com/vi/tcu1Q-WW8Gg/hqdefault.jpg",
+          "sourceUrl": "https://ru.wikipedia.org/wiki/Проснись_и_пой!",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/tcu1Q-WW8Gg/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=tcu1Q-WW8Gg",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": []
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1792",
+      "songId": "pool-580722db53cb",
+      "poolId": "avtoradio-3dfa33548e94",
+      "artist": "Сплин",
+      "title": "Выхода нет",
+      "artistIds": [
+        "splin"
+      ],
+      "artistAliases": [
+        "Сплин"
+      ],
+      "titleAliases": [
+        "Выхода нет",
+        "Выхода Нет"
+      ],
+      "era": "1990s",
+      "approximateYear": 1998,
+      "recognizability": "recognizable",
+      "selectionPreference": "priority-include",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "avtoradio-live-catalog",
+        "sourceName": "Авторадио — живые выступления",
+        "sourceUrl": "https://www.youtube.com/watch?v=m1j43RfcJr0"
+      },
+      "youtube": {
+        "videoId": "SDTD4pL0mLc",
+        "title": "СПЛИН - Выхода нет [Клип]",
+        "channel": "Официальный канал группы Сплин",
+        "viewCount": 87414238,
+        "durationSeconds": 231,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 38,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Гранатовый альбом",
+          "kind": "album",
+          "year": 1998,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/29/8e/d5/298ed5aa-1cc7-1303-8157-50adb3e77643/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B0-%D0%BD%D0%B5%D1%82/1345371898?i=1345372354&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/SDTD4pL0mLc/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=SDTD4pL0mLc",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Сплин",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B0-%D0%BD%D0%B5%D1%82/1345371898?i=1345372354&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2144",
+      "songId": "pool-474ae5fa17e3",
+      "poolId": "quiz-answer-474ae5fa17e3",
+      "artist": "Браво",
+      "title": "Дорога в облака",
+      "artistIds": [
+        "bravo"
+      ],
+      "artistAliases": [
+        "Браво"
+      ],
+      "titleAliases": [
+        "Дорога в облака"
+      ],
+      "era": "1990s",
+      "approximateYear": 1994,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "VyS9GKNUsWI",
+        "title": "Браво \"Дорога в облака\"",
+        "channel": "Браво | Bravo",
+        "viewCount": 8319266,
+        "durationSeconds": 202,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 32,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Дорога в облака",
+          "kind": "album",
+          "year": 1994,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/13529784/534c606d.a.32851240-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/32851240/track/130038609",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/41288/5ff67932.p.188974/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/188974",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/32851240/track/130038609",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2337",
+      "songId": "pool-c9ab57d241e7",
+      "poolId": "quiz-answer-4cce077fe796",
+      "artist": "Чиж & Co",
+      "title": "Фантом",
+      "artistIds": [
+        "chizhco"
+      ],
+      "artistAliases": [
+        "Чиж & Co"
+      ],
+      "titleAliases": [
+        "Фантом"
+      ],
+      "era": "1990s",
+      "approximateYear": 1998,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "9XewOH8co2o",
+        "title": "Чиж & Co - Фантом",
+        "channel": "Sturm-152",
+        "viewCount": 17368020,
+        "durationSeconds": 242,
+        "selectedBy": "editorial-replacement"
+      },
+      "clip": {
+        "start": 48,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Новый Иерусалим",
+          "kind": "album",
+          "year": 1998,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/6021799/8be0f804.a.22517447-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/22517447/track/17887613",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/192707/81cd8df2.p.2905482/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2905482",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/22517447/track/17887613",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0027",
+      "songId": "pool-8fc2e5bf0d9b",
+      "poolId": "quiz-answer-8fc2e5bf0d9b",
+      "artist": "Вячеслав Быков",
+      "title": "Любимая моя",
+      "artistIds": [
+        "vyacheslavbykov"
+      ],
+      "artistAliases": [
+        "Вячеслав Быков"
+      ],
+      "titleAliases": [
+        "Любимая моя"
+      ],
+      "era": "1990s",
+      "approximateYear": 1996,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "c1sBLK_hjhs",
+        "title": "Вячеслав Быков - Любимая моя (Official video)",
+        "channel": "Вячеслав Быков",
+        "viewCount": 70133666,
+        "durationSeconds": 243,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 37,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Любимая моя",
+          "kind": "album",
+          "year": 1996,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/10126140/6527128a.a.31800029-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/31800029/track/71696574",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/14350511/e3114443.p.2971741/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2971741",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/31800029/track/71696574",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2017",
+      "songId": "pool-a4e9c86d0a47",
+      "poolId": "pool-1447",
+      "artist": "A`Studio",
+      "title": "Так же как все",
+      "artistIds": [
+        "astudio"
+      ],
+      "artistAliases": [
+        "A'Studio",
+        "A`Studio"
+      ],
+      "titleAliases": [
+        "Так же как все",
+        "Так Же Как Все"
+      ],
+      "era": "2000s",
+      "approximateYear": 2009,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2009",
+        "sourceUrl": "https://www.youtube.com/watch?v=omACSwlI8Zw"
+      },
+      "youtube": {
+        "videoId": "iNtzNICrVfA",
+        "title": "A`Studio — Так же как все",
+        "channel": "A'Studio Official",
+        "viewCount": 58769888,
+        "durationSeconds": 231,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Волны",
+          "kind": "album",
+          "year": 2010,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/90/7e/aa/907eaaab-d587-24a1-61b1-e02bc9523fd4/0.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D1%82%D0%B0%D0%BA-%D0%B6%D0%B5-%D0%BA%D0%B0%D0%BA-%D0%B2%D1%81%D0%B5/1579543267?i=1579543275&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/iNtzNICrVfA/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=iNtzNICrVfA",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "А'Студио",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D1%82%D0%B0%D0%BA-%D0%B6%D0%B5-%D0%BA%D0%B0%D0%BA-%D0%B2%D1%81%D0%B5/1579543267?i=1579543275&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1847",
+      "songId": "pool-6b763cdcb2e3",
+      "poolId": "avtoradio-d32351c22603",
+      "artist": "МакSим",
+      "title": "На радиоволнах",
+      "artistIds": [
+        "maksim"
+      ],
+      "artistAliases": [
+        "МакSим"
+      ],
+      "titleAliases": [
+        "На радиоволнах",
+        "На Радиоволнах"
+      ],
+      "era": "2000s",
+      "approximateYear": 2009,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "avtoradio-live-catalog",
+        "sourceName": "Авторадио — живые выступления",
+        "sourceUrl": "https://www.youtube.com/watch?v=TlMdioCRZWM"
+      },
+      "youtube": {
+        "videoId": "QZqgUOsj1z0",
+        "title": "МакSим - На радиоволнах (аудио)",
+        "channel": "Maksim",
+        "viewCount": 536196,
+        "durationSeconds": 231,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Одиночка",
+          "kind": "album",
+          "year": 2009,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/99/b2/9a/99b29a6e-f7aa-d480-32a6-ba6025c591f2/825646520329.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BD%D0%B0-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D0%B2%D0%BE%D0%BB%D0%BD%D0%B0%D1%85/582865389?i=582865392&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/QZqgUOsj1z0/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=QZqgUOsj1z0",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "МакSим",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BD%D0%B0-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D0%B2%D0%BE%D0%BB%D0%BD%D0%B0%D1%85/582865389?i=582865392&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1970",
+      "songId": "pool-973a19b01114",
+      "poolId": "pool-0534",
+      "artist": "Горячий Шоколад",
+      "title": "Береги",
+      "artistIds": [
+        "goryachiishokolad"
+      ],
+      "artistAliases": [
+        "Горячий Шоколад"
+      ],
+      "titleAliases": [
+        "Береги"
+      ],
+      "era": "2000s",
+      "approximateYear": 2009,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=omACSwlI8Zw"
+      },
+      "youtube": {
+        "videoId": "dT_Mm-bUzCg",
+        "title": "Горячий Шоколад - Береги | Official Video",
+        "channel": "Moon Records",
+        "viewCount": 28385062,
+        "durationSeconds": 236,
+        "selectedBy": "editorial-replacement"
+      },
+      "clip": {
+        "start": 44,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Hit Singles",
+          "kind": "album",
+          "year": 2010,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ef66ab1e595e20c66b7bcb876da6eae0/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/714827",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/dT_Mm-bUzCg/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=dT_Mm-bUzCg",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Горячий Шоколад",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/7742989"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-3313",
+      "songId": "pool-1da222662ba3",
+      "poolId": "quiz-answer-1da222662ba3",
+      "artist": "Пикник",
+      "title": "Королевство кривых",
+      "artistIds": [
+        "piknik"
+      ],
+      "artistAliases": [
+        "Пикник"
+      ],
+      "titleAliases": [
+        "Королевство кривых"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "3pMSSqKlGF4",
+        "title": "Пикник - Королевство кривых",
+        "channel": "Пикник",
+        "viewCount": 44524943,
+        "durationSeconds": 287,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 48,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Королевство кривых",
+          "kind": "album",
+          "year": 2005,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14728505/07dcc855.a.35298263-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/35298263/track/135886410",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/10960834/df3bde47.p.218073/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/218073",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/35298263/track/135886410",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1850",
+      "songId": "avtoradio-c90898020198",
+      "poolId": "avtoradio-7b19ddb93092",
+      "artist": "Юлия Савичева",
+      "title": "Корабли",
+      "artistIds": [
+        "yuliyasavicheva"
+      ],
+      "artistAliases": [
+        "Юлия Савичева"
+      ],
+      "titleAliases": [
+        "Корабли"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "avtoradio-live-catalog",
+        "sourceName": "Авторадио — живые выступления",
+        "sourceUrl": "https://www.youtube.com/watch?v=N4mekMW99hs"
+      },
+      "youtube": {
+        "videoId": "P4mWkJUWO54",
+        "title": "Юлия Савичева - Корабли",
+        "channel": "МАКСИМ ФАДЕЕВ",
+        "viewCount": 13646218,
+        "durationSeconds": 264,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 46,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Фабрика звёзд 2",
+          "kind": "album",
+          "year": 2002,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b5/61/f5/b561f521-1fa9-bf4f-7898-dfd6fe136997/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B8/1470249814?i=1470249828&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/P4mWkJUWO54/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=P4mWkJUWO54",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Юлия Савичева",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B8/1470249814?i=1470249828&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-3572",
+      "songId": "pool-cb0abeb6b572",
+      "poolId": "quiz-answer-cb0abeb6b572",
+      "artist": "Дельфин",
+      "title": "Весна",
+      "artistIds": [
+        "delfin"
+      ],
+      "artistAliases": [
+        "Дельфин"
+      ],
+      "titleAliases": [
+        "Весна"
+      ],
+      "era": "2000s",
+      "approximateYear": 2004,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "P47V4SASwGc",
+        "title": "Дельфин - Весна",
+        "channel": "Дельфин",
+        "viewCount": 14973424,
+        "durationSeconds": 292,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 47,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Звезда",
+          "kind": "album",
+          "year": 2004,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/118603/5c966ec6.a.3879329-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/3879329/track/31920278",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17659805/00637e01.p.160530/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/160530",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/3879329/track/31920278",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-1921",
+      "songId": "pool-7da7768e8d19",
+      "poolId": "avtoradio-66cb0ef89948",
+      "artist": "Звери",
+      "title": "Дожди-пистолеты",
+      "artistIds": [
+        "zveri"
+      ],
+      "artistAliases": [
+        "Звери"
+      ],
+      "titleAliases": [
+        "Дожди-пистолеты"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "avtoradio-live-catalog",
+        "sourceName": "Авторадио — живые выступления",
+        "sourceUrl": "https://www.youtube.com/watch?v=uFrc8AQrQEc"
+      },
+      "youtube": {
+        "videoId": "CTQxNgCejVg",
+        "title": "Звери - Дожди-пистолеты",
+        "channel": "Группа Звери",
+        "viewCount": 22244379,
+        "durationSeconds": 218,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Голод",
+          "kind": "album",
+          "year": 2003,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/04a9e0feac8655dc1bfb0b3c8409eda4/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/528117672",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/CTQxNgCejVg/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=CTQxNgCejVg",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Звери",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/2599679082"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0335",
+      "songId": "pool-b5c1d85a20cf",
+      "poolId": "pool-1950",
+      "artist": "Артур Пирожков",
+      "title": "Она решила сдаться",
+      "artistIds": [
+        "arturpirozhkov"
+      ],
+      "artistAliases": [
+        "Артур Пирожков"
+      ],
+      "titleAliases": [
+        "Она решила сдаться"
+      ],
+      "era": "2010s",
+      "approximateYear": 2019,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2019",
+        "sourceUrl": "https://www.youtube.com/watch?v=A9ojAUFIQZ8"
+      },
+      "youtube": {
+        "videoId": "bUPWUSCrog4",
+        "title": "Артур Пирожков - Она решила сдаться. Премьера клипа 2019.",
+        "channel": "Александр Ревва",
+        "viewCount": 79917294,
+        "durationSeconds": 421,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 73,
+        "duration": 15,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Всё о любви",
+          "kind": "album",
+          "year": 2020,
+          "coverUrl": "https://i.ytimg.com/vi/bUPWUSCrog4/hqdefault.jpg",
+          "sourceUrl": "https://www.shazam.com/ru-ru/song/1496188344/она-решила-сдаться",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/bUPWUSCrog4/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=bUPWUSCrog4",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": []
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-3077",
+      "songId": "avtoradio-33d606bc1826",
+      "poolId": "avtoradio-dc7c2af0d2f5",
+      "artist": "Лолита",
+      "title": "На Титанике",
+      "artistIds": [
+        "lolita"
+      ],
+      "artistAliases": [
+        "Лолита"
+      ],
+      "titleAliases": [
+        "На Титанике"
+      ],
+      "era": "2010s",
+      "approximateYear": 2016,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "avtoradio-live-catalog",
+        "sourceName": "Авторадио — живые выступления",
+        "sourceUrl": "https://www.youtube.com/watch?v=EvuDjN06Dg0"
+      },
+      "youtube": {
+        "videoId": "GsJPph70ytY",
+        "title": "Лолита - На Титанике",
+        "channel": "Лолита Милявская",
+        "viewCount": 103925831,
+        "durationSeconds": 246,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 47,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "И этим всё сказано",
+          "kind": "album",
+          "year": 2016,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7e/d9/e2/7ed9e265-71dd-0026-cc74-a576bb75c063/cover.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BD%D0%B0-%D1%82%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%BA%D0%B5/1714980979?i=1714980986&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/GsJPph70ytY/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=GsJPph70ytY",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Лолита",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BD%D0%B0-%D1%82%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%BA%D0%B5/1714980979?i=1714980986&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2825",
+      "songId": "pool-45de8bbc70fa",
+      "poolId": "quiz-answer-45de8bbc70fa",
+      "artist": "Дима Билан",
+      "title": "Задыхаюсь",
+      "artistIds": [
+        "dimabilan"
+      ],
+      "artistAliases": [
+        "Дима Билан"
+      ],
+      "titleAliases": [
+        "Задыхаюсь"
+      ],
+      "era": "2010s",
+      "approximateYear": 2011,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — первый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "h3gQJYPiN8c",
+        "title": "Дима Билан - Задыхаюсь [Official video] HD",
+        "channel": "bilanofficial",
+        "viewCount": 10695759,
+        "durationSeconds": 255,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 53,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Мечтатель",
+          "kind": "album",
+          "year": 2011,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/19035207/b5933a77.a.225699-7/400x400",
+          "sourceUrl": "https://music.yandex.com/album/225699/track/29146028",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/14247687/32c9fb40.p.41110/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/41110",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/225699/track/29146028",
+          "https://boosty.to/quizpartynakhate/media/all"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0463",
+      "songId": "pool-5159a849239d",
+      "poolId": "quiz-answer-5159a849239d",
+      "artist": "Каспийский Груз",
+      "title": "Табор уходит в небо",
+      "artistIds": [
+        "kaspiiskiigruz"
+      ],
+      "artistAliases": [
+        "Каспийский Груз"
+      ],
+      "titleAliases": [
+        "Табор уходит в небо"
+      ],
+      "era": "2010s",
+      "approximateYear": 2015,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/13160850/track/46951657"
+      },
+      "youtube": {
+        "videoId": "srGCQfzh1OI",
+        "title": "Каспийский Груз - Табор уходит в небо",
+        "channel": "Каспийский Груз",
+        "viewCount": 165298236,
+        "durationSeconds": 215,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Сторона А сторона Б",
+          "kind": "album",
+          "year": 2015,
+          "coverUrl": "https://i.ytimg.com/vi/srGCQfzh1OI/hqdefault.jpg",
+          "sourceUrl": "https://www.shazam.com/song/1544956661/табор-уходит-в-небо",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17784780/b0b28c8f.p.2765185/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/2765185",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/13160850/track/46951657"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0833",
+      "songId": "chart-00135",
+      "poolId": "pool-2095",
+      "artist": "DEAD BLONDE",
+      "title": "Бесприданница",
+      "artistIds": [
+        "deadblonde"
+      ],
+      "artistAliases": [
+        "DEAD BLONDE"
+      ],
+      "titleAliases": [
+        "Бесприданница"
+      ],
+      "era": "2020s",
+      "approximateYear": 2021,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "russian-chart-cyrillic-or-high-confidence",
+        "sourceName": "Spotify Daily Chart — Russia",
+        "sourceUrl": "https://kworb.net/spotify/country/ru_daily_totals.html"
+      },
+      "youtube": {
+        "videoId": "mfCo1zp1sVU",
+        "title": "Бесприданница",
+        "channel": "DEAD BLONDE - Topic",
+        "viewCount": 48253374,
+        "durationSeconds": 181,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 36,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Княжна из хрущёвки",
+          "kind": "album",
+          "year": 2021,
+          "coverUrl": "https://i.ytimg.com/vi/mfCo1zp1sVU/hqdefault.jpg",
+          "sourceUrl": "https://www.shazam.com/en-us/song/1573269531/бесприданница",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/mfCo1zp1sVU/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=mfCo1zp1sVU",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "DEAD BLONDE",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/1358948552"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-0754",
+      "songId": "pool-364239afe81a",
+      "poolId": "pool-0959",
+      "artist": "XOLIDAYBOY",
+      "title": "Моя Хулиганка",
+      "artistIds": [
+        "xolidayboy"
+      ],
+      "artistAliases": [
+        "XOLIDAYBOY"
+      ],
+      "titleAliases": [
+        "Моя Хулиганка"
+      ],
+      "era": "2020s",
+      "approximateYear": 2022,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=P0InykfBTYE"
+      },
+      "youtube": {
+        "videoId": "u-gaETffwYM",
+        "title": "XOLIDAYBOY - Моя Хулиганка (Official Video)",
+        "channel": "XOLIDAYBOY",
+        "viewCount": 63915494,
+        "durationSeconds": 191,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 31,
+        "duration": 7,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Моя хулиганка",
+          "kind": "album",
+          "year": 2022,
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/34b32ae5e84baee687707355da438366/1000x1000-000000-80-0-0.jpg",
+          "sourceUrl": "https://www.deezer.com/album/363204557",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/u-gaETffwYM/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=u-gaETffwYM",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [
+          {
+            "name": "Xolidayboy",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://www.deezer.com/track/1947879107"
+        ]
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "ready-2029",
+      "songId": "avtoradio-d2cc3ce48d5c",
+      "poolId": "avtoradio-659a4d643797",
+      "artist": "Ани Лорак",
+      "title": "Наполовину",
+      "artistIds": [
+        "anilorak"
+      ],
+      "artistAliases": [
+        "Ани Лорак"
+      ],
+      "titleAliases": [
+        "Наполовину"
+      ],
+      "era": "2020s",
+      "approximateYear": 2021,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "avtoradio-live-catalog",
+        "sourceName": "Авторадио — живые выступления",
+        "sourceUrl": "https://www.youtube.com/watch?v=Tj_z1LP0p78"
+      },
+      "youtube": {
+        "videoId": "uPQyzWF2-14",
+        "title": "Ани Лорак — Наполовину",
+        "channel": "Ани Лорак",
+        "viewCount": 108767572,
+        "durationSeconds": 200,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 43,
+        "duration": 11,
+        "selectedBy": "automatic-verse-biased-heuristic",
+        "review": "automatic"
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Я Жива",
+          "kind": "album",
+          "year": 2021,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fa/f5/3e/faf53e6a-c6bb-7804-5e78-8d631f7fe7c6/190296400704.jpg/600x600bb.jpg",
+          "sourceUrl": "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%BF%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%BD%D1%83/1590850444?i=1590850662&uo=4",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://i.ytimg.com/vi/uPQyzWF2-14/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=uPQyzWF2-14",
+          "attribution": "Кадр музыкального видео",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [
+          {
+            "name": "Ани Лорак",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.apple.com/ru/album/%D0%BD%D0%B0%D0%BF%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%BD%D1%83/1590850444?i=1590850662&uo=4"
+        ]
+      },
+      "readyForQuiz": true
+    }
+  ]
+}
