@@ -84,9 +84,19 @@ function load() {
   const database = JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
   const enrichment = JSON.parse(fs.readFileSync(path.join(dataDirectory, "song-enrichment-auto.json"), "utf8"));
   const verificationPath = path.join(dataDirectory, "song-publication-verification.json");
-  const verification = fs.existsSync(verificationPath)
+  const baseVerification: PublicationVerification = fs.existsSync(verificationPath)
     ? JSON.parse(fs.readFileSync(verificationPath, "utf8"))
     : { songs: {} };
+  const releaseSongs = fs.readdirSync(dataDirectory)
+    .filter((name) => /^quiz-release-new-rules-\d+-metadata\.json$/u.test(name))
+    .sort()
+    .reduce<Record<string, PublicationVerification["songs"][string]>>((songs, name) => {
+      const release = JSON.parse(fs.readFileSync(path.join(dataDirectory, name), "utf8")) as PublicationVerification;
+      return Object.assign(songs, release.songs || {});
+    }, {});
+  const verification: PublicationVerification = {
+    songs: { ...baseVerification.songs, ...releaseSongs },
+  };
   loaded = { songs: database.songs, enrichment, verification };
   return loaded;
 }
