@@ -291,7 +291,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   const media = guest ? `/g/video-media/${episode.id}?share=${encodeURIComponent(shareToken!)}` : `/api/video-media/${episode.id}`;
   const needsComment = dialog?.kind === "report" || dialog?.annulled !== undefined || correctionReason === "other";
   return <section className="vq-game" ref={gameRef}>
-    <div className="vq-game-heading"><button className="vq-back" onClick={() => void leave()}><ArrowLeft size={17} /> К выпускам</button><span className="vq-pill">{review ? `Просмотр · ${attempt.name}` : attempt.name}</span>{review && <span className="vq-review-hint">Можно перематывать · результаты сохранены</span>}</div>
+    <div className="vq-game-heading"><button className="vq-back" onClick={() => void leave()}><ArrowLeft size={17} /> К выпускам</button><span className="vq-pill">{review ? `Просмотр · ${attempt.name}` : attempt.name}</span></div>
     {alerts}
     <div className="vq-play-workspace" ref={workspaceRef}>
     <div ref={playerRef} className="vq-player-layout">

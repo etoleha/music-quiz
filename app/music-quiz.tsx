@@ -91,6 +91,8 @@ type MusicQuizProps = {
 export default function MusicQuiz({ initialQuizId, guestMode = false, comparison = null, excludedTrackKeys = [] }: MusicQuizProps = {}) {
   const [screen, setScreen] = useState<"home" | "quiz" | "result">("home");
   const [homeTab, setHomeTab] = useState("quizzes");
+  const [historyLoading, setHistoryLoading] = useState<string | null>(null);
+  const [historyError, setHistoryError] = useState("");
   const initializedQuestion = useRef<Track | null>(null);
   const resumeClipAt = useRef<number | null>(null);
   const sessionVersion = useRef(0);
@@ -291,6 +293,43 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     setReviewPlayingKey(null);
     setHomeTab(section);
     setScreen("home");
+  };
+
+  const openSavedResult = async (attemptId: string) => {
+    if (historyLoading) return;
+    if (activeQuiz && order.length && !review.length && !window.confirm("Открыть сохранённый разбор? Незаконченные ответы текущего квиза будут потеряны.")) return;
+    setHistoryLoading(attemptId);
+    setHistoryError("");
+    const loadingSession = sessionVersion.current;
+    try {
+      const response = await fetch(`/api/attempts?attemptId=${encodeURIComponent(attemptId)}`);
+      const data = await response.json() as { error?: string; attemptId: string; quizId: string; quizTitle: string; score: number; maxScore: number; skipped: number; review: Review[] };
+      if (!response.ok) throw new Error(data.error || "Не удалось открыть разбор.");
+      if (sessionVersion.current !== loadingSession) return;
+      stopClipClock();
+      player.current?.stopVideo();
+      playingRef.current = false;
+      setPlaying(false);
+      sessionVersion.current += 1;
+      pendingCorrections.current = 0;
+      requestedTrackInfo.current.clear();
+      setArtistInfo({});
+      setActiveQuiz(getQuiz(data.quizId) ?? {id:data.quizId, title:data.quizTitle, level:"", published:"", tracks:data.review.map(item=>item.track)});
+      setOrder(data.review.map(item=>item.track));
+      setReview(data.review);
+      setReviewIndex(0);
+      setReviewPlayingKey(null);
+      setCurrentAttemptId(data.attemptId);
+      setScore({value:data.score,max:data.maxScore,skipped:data.skipped});
+      setBadFragments(new Set());
+      setFragmentFeedbackPending(new Set());
+      setFragmentFeedbackError(false);
+      setSaveState("saved");
+      setScreen("result");
+      window.scrollTo({top:0});
+    } catch (error) {
+      if (sessionVersion.current === loadingSession) setHistoryError(error instanceof Error ? error.message : "Не удалось открыть разбор.");
+    } finally { setHistoryLoading(null); }
   };
 
   const begin = (quiz: Quiz) => {
@@ -707,6 +746,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   }
 
   return <main className="shell site-shell"><SiteHeader active={activeSection} onNavigate={guestMode ? undefined : navigateSection} guest={guestMode} separateCatalog={Boolean(activeQuiz && !review.length)} />
+    {historyError && <p className="history-error" role="alert">{historyError}</p>}
     <Tabs value={homeTab} onValueChange={setHomeTab} className="workspace">
       <TabsContent value="quizzes" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Коллекция</p><h1>Музыкальные квизы</h1></div><div className="library-total">{quizzes.length}<small>квиза</small></div></div>
         {activeQuiz && order.length > 0 && <div className="session-resume"><div><strong>{activeQuiz.title}</strong><span>{review.length ? "Разбор последнего прохождения" : `Вопрос ${index + 1} из ${order.length}`}</span></div><Button onClick={() => setScreen(review.length ? "result" : "quiz")}>{review.length ? "Открыть разбор" : "Продолжить"} <ChevronRight /></Button></div>}
@@ -714,9 +754,9 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         <p className="collection-note">Новые подборки будут появляться здесь отдельными квизами. Старые результаты сохраняются. <a href="/catalog" target={activeQuiz && !review.length ? "_blank" : undefined} rel="noreferrer">Открыть общую базу песен →</a></p>
       </TabsContent>
       <TabsContent value="video" className="tab-content"><VideoQuiz /></TabsContent>
-      <TabsContent value="history" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Твои прохождения</p><h1>История</h1></div></div><section className="history-card">{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><p className="collection-note"><button onClick={() => setHomeTab("video")}>История видеоквизов →</button></p></TabsContent>
+      <TabsContent value="history" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Твои прохождения</p><h1>История</h1></div></div><section className="history-card">{attempts.length ? attempts.map((attempt) => <button type="button" className="history-row" key={attempt.id} disabled={!!historyLoading} onClick={() => void openSavedResult(attempt.id)} aria-label={`Открыть результат ${attempt.quizTitle}: ${attempt.score} из ${attempt.maxScore}`}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore} <ChevronRight size={16} /></b></button>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><p className="collection-note"><button onClick={() => setHomeTab("video")}>История видеоквизов →</button></p></TabsContent>
       <TabsContent value="stats" className="tab-content"><div className="section-heading"><div><p className="eyebrow">За всё время</p><h1>Твоя музыкальная форма</h1></div></div><div className="stats-grid"><article className="stat-card accent"><strong>{percentage}%</strong><span>точность</span></article><article className="stat-card"><strong>{attempts.length}</strong><span>квизов пройдено</span></article><article className="stat-card"><strong>{totalPoints}</strong><span>баллов набрано</span></article></div>
-        <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => { const gap = item.artistMisses && item.titleMisses ? "не узнаны исполнитель и название" : item.artistMisses ? "не узнан исполнитель" : "не вспомнено название"; return <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title} · {gap} · ошибок: {item.misses}</small></div><Badge variant="outline">зачётов: {item.successes}/{item.requiredSuccesses}</Badge></div>; }) : <p className="empty-copy">Очередь пуста: все ошибочные песни угаданы два раза подряд.</p>}</section></div>
+        <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <button type="button" className="history-row" key={attempt.id} disabled={!!historyLoading} onClick={() => void openSavedResult(attempt.id)} aria-label={`Открыть результат ${attempt.quizTitle}: ${attempt.score} из ${attempt.maxScore}`}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore} <ChevronRight size={16} /></b></button>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => { const gap = item.artistMisses && item.titleMisses ? "не узнаны исполнитель и название" : item.artistMisses ? "не узнан исполнитель" : "не вспомнено название"; return <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title} · {gap} · ошибок: {item.misses}</small></div><Badge variant="outline">зачётов: {item.successes}/{item.requiredSuccesses}</Badge></div>; }) : <p className="empty-copy">Очередь пуста: все ошибочные песни угаданы два раза подряд.</p>}</section></div>
       </TabsContent></Tabs>
   </main>;
 }

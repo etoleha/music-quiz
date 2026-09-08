@@ -14,6 +14,49 @@ type SubmittedAnswer = {
   loadErrorCode?: number;
 };
 
+export async function GET(request: Request) {
+  const ids = new URL(request.url).searchParams.getAll("attemptId");
+  if (ids.length !== 1 || !/^[a-zA-Z0-9_-]{1,160}$/.test(ids[0])) {
+    return Response.json({ error: "Некорректный идентификатор прохождения" }, { status: 400 });
+  }
+  try {
+    const database = getLocalDb();
+    const attempt = database.prepare(`SELECT id AS attemptId, quiz_id AS quizId,
+      quiz_title AS quizTitle, score, max_score AS maxScore, skipped
+      FROM attempts WHERE id = ? AND user_id = 'owner'`).get(ids[0]) as {
+        attemptId: string; quizId: string; quizTitle: string;
+        score: number; maxScore: number; skipped: number;
+      } | undefined;
+    if (!attempt) return Response.json({ error: "Прохождение не найдено" }, { status: 404 });
+
+    const answers = database.prepare(`SELECT track_key AS trackKey,
+      artist_answer AS artistAnswer, title_answer AS titleAnswer,
+      artist_point AS artistPoint, title_point AS titlePoint,
+      load_failed AS loadFailed, load_error_code AS loadErrorCode
+      FROM attempt_answers WHERE attempt_id = ? ORDER BY id`).all(attempt.attemptId) as Array<{
+        trackKey: string; artistAnswer: string; titleAnswer: string;
+        artistPoint: number; titlePoint: number; loadFailed: number; loadErrorCode: number | null;
+      }>;
+    if (!answers.length) return Response.json({ error: "Подробные ответы этого прохождения не сохранились" }, { status: 404 });
+
+    const tracks = new Map(quizzes.flatMap(quiz => quiz.tracks).map(track => [track.key, track]));
+    for (const track of getQuiz(attempt.quizId)?.tracks || []) tracks.set(track.key, track);
+    if (answers.some(answer => !tracks.has(answer.trackKey))) {
+      return Response.json({ error: "Данные одной из песен этого прохождения недоступны" }, { status: 404 });
+    }
+    const review = answers.map(answer => ({
+      ...answer,
+      loadFailed: Boolean(answer.loadFailed),
+      loadErrorCode: answer.loadErrorCode ?? undefined,
+      track: tracks.get(answer.trackKey)!,
+    }));
+    return Response.json({ ...attempt, review }, { headers: { "Cache-Control": "private, no-store" } });
+  } catch (error) {
+    console.error("attempt read failed", error);
+    return Response.json({ error: "Не удалось загрузить результат" }, { status: 500 });
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const body = (await request.json()) as { quizId?: string; answers?: SubmittedAnswer[] };
