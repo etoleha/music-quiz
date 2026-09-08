@@ -42,3 +42,14 @@
 .vq-reason select{display:block;width:100%;border:1px solid var(--vq-line);border-radius:9px;background:white;padding:12px;margin-top:8px;font-size:15px}
 @media(max-width:600px){.vq-player-layout{top:0;border-radius:10px}.vq-player video{max-height:42svh}.vq-player-layout.is-pinned video{max-height:30svh}.vq-jump-controls{gap:6px;padding:8px}.vq-jump-controls button{font-size:12px;padding:8px}.vq-compact-score{font-size:14px}.vq-player-controls{font-size:13px;padding:8px}.vq-answer-row{padding:18px 12px}.vq-fields label{font-size:14px}.vq-game .vq-fields input{font-size:17px}.vq-reveal>small{font-size:14px}.vq-game-heading .vq-pill,.vq-save{font-size:13px}.vq-question-number{font-size:13px}.vq-sheet-heading h2{font-size:25px}}
 @media(prefers-reduced-motion:reduce){.vq-player video{transition:none}}
+
+/* Size the entire pinned player, never letterbox the frame inside a wider video element. */
+.vq-player-layout .vq-player video{width:100%;height:auto;max-height:none;aspect-ratio:16/9;object-fit:contain;transition:none}
+.vq-player-layout{width:100%;margin-inline:auto}
+.vq-player-layout.is-pinned{width:min(100%,calc(48svh * 16 / 9))}
+.vq-player-layout.is-pinned .vq-round-nav{display:flex;overflow-x:auto}
+.vq-player-layout.is-pinned .vq-round-nav button{flex-shrink:0;flex-direction:row;white-space:nowrap;font-size:12px}
+.vq-player-layout.is-pinned .vq-round-nav button svg{position:static}
+.vq-fields input{margin-top:0}
+.vq-question-number,.vq-row-points{padding-top:10px}
+@media(max-width:600px){.vq-player-layout.is-pinned{width:100%}}

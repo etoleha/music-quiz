@@ -1,6 +1,6 @@
 export type VideoField = { key: "artist" | "title"; label: string };
 export type VideoQuestion = {
-  id: string; number: number; start: number; close: number; reveal: number;
+  id: string; number: number; start: number; close: number; reveal: number; answerStart?: number;
   fields: VideoField[]; chances: Array<{ start: number; end: number; points: number }>;
 };
 export type VideoRound = { number: number; title: string; start: number; close: number; reveal: number; questions: VideoQuestion[] };

@@ -33,11 +33,11 @@ const loader = `
  }`;
 register('data:text/javascript,' + encodeURIComponent(loader), import.meta.url);
 const draft = (artist = '', title = '') => ({ artist, title });
-const baseQuestion = { start: 2, close: 30, reveal: 35, chances: [], aliases: { artist: [], title: [] }, artistParts: [], correct: draft('Северный ветер', 'Тестовая мелодия') };
+const baseQuestion = { start: 2, close: 30, reveal: 35, answerStart: 35, chances: [], aliases: { artist: [], title: [] }, artistParts: [], correct: draft('Северный ветер', 'Тестовая мелодия') };
 const pair = { ...baseQuestion, id: 'pair', number: 1, fields: [{ key: 'artist', label: 'Исполнители' }, { key: 'title', label: 'Песня' }], correct: draft('Северный ветер и Медная луна', 'Тестовая мелодия'), artistParts: [['Северный ветер'], ['Медная луна']] };
-const solo = { ...baseQuestion, id: 'solo', number: 2, start: 10, fields: [{ key: 'artist', label: 'Исполнитель' }] };
-const title = { ...baseQuestion, id: 'title', number: 3, start: 20, fields: [{ key: 'title', label: 'Песня' }] };
-const chance = { ...baseQuestion, id: 'chance', number: 1, start: 40, close: 70, reveal: 71, fields: [{ key: 'artist', label: 'Исполнитель' }], chances: [{ start: 40, end: 50, points: 2 }, { start: 50, end: 60, points: 1 }, { start: 60, end: 70, points: .5 }] };
+const solo = { ...baseQuestion, id: 'solo', number: 2, start: 10, answerStart: 36, fields: [{ key: 'artist', label: 'Исполнитель' }] };
+const title = { ...baseQuestion, id: 'title', number: 3, start: 20, answerStart: 38, fields: [{ key: 'title', label: 'Песня' }] };
+const chance = { ...baseQuestion, id: 'chance', number: 1, start: 40, close: 70, reveal: 71, answerStart: 71, fields: [{ key: 'artist', label: 'Исполнитель' }], chances: [{ start: 40, end: 50, points: 2 }, { start: 50, end: 60, points: 1 }, { start: 60, end: 70, points: .5 }] };
 const fixture = { id: 'qa-episode', title: 'Synthetic test episode', revision: 'test-v1', mediaFile: 'fixture.mp4', duration: 80, rounds: [{ number: 1, title: 'Synthetic normal', start: 0, close: 30, reveal: 35, questions: [pair, solo, title] }, { number: 7, title: 'Synthetic chances', start: 40, close: 70, reveal: 71, questions: [chance] }] };
 const fixturePath = join(temporary, 'server/video-data/prosto-v3.json');
 const saveFixture = () => writeFileSync(fixturePath, JSON.stringify(fixture));
@@ -147,6 +147,67 @@ try {
   const a = fresh(), before = JSON.stringify(core.getVideoAttempt(a.id, guestA.id));
   for (const target of [-1, NaN, Infinity, 81, 30, 45, 35.01]) assert.throws(() => core.jumpVideoAttempt(a.id, guestA.id, target, { pair: pair.correct }, 2000), e => e.status === 400);
   assert.equal(JSON.stringify(core.getVideoAttempt(a.id, guestA.id)), before);
+ });
+ await test('each answer has its own public navigation start, independent of round reveal', () => {
+  const e = core.publicEpisode(core.episodeById(fixture.id));
+  assert.deepEqual(e.rounds[0].questions.map(q => q.answerStart), [35, 36, 38]);
+  assert.deepEqual(e.rounds[0].questions.map(q => q.reveal), [35, 35, 35]);
+  const a = fresh();
+  for (const target of [35, 36, 38]) assert.equal(core.jumpVideoAttempt(a.id, guestA.id, target, {}, 2000).position, target);
+ });
+ await test('next question saves ordinary draft but does not close the round form early', () => {
+  const a = fresh();
+  const next = core.jumpVideoAttempt(a.id, guestA.id, 10, { pair: draft('Черновик') }, 2000);
+  assert.equal(next.answers.pair.locked, false); assert.equal(next.answers.pair.submitted, false); assert.equal(next.answers.pair.draft.artist, 'Черновик');
+  const third = core.jumpVideoAttempt(a.id, guestA.id, 20, { pair: pair.correct }, 2001);
+  assert.equal(third.answers.pair.locked, false); assert.deepEqual(third.answers.pair.draft, pair.correct);
+  const closed = core.jumpVideoAttempt(a.id, guestA.id, 35, {}, 2002);
+  assert.equal(closed.answers.pair.locked, true); assert.equal(closed.answers.pair.points, 1.5);
+ });
+ await test('R7 next musical fragment never submits a draft, and skipped question expires without score', () => {
+  const a = fresh();
+  for (const target of [40, 50, 60]) {
+   const next = core.jumpVideoAttempt(a.id, guestA.id, target, { chance: chance.correct }, 2000);
+   assert.equal(next.answers.chance.submitted, false); assert.equal(next.answers.chance.locked, false);
+  }
+  const answer = core.jumpVideoAttempt(a.id, guestA.id, 71, {}, 2001);
+  assert.equal(answer.answers.chance.locked, true); assert.equal(answer.answers.chance.submitted, false); assert.equal(answer.answers.chance.points, 0);
+ });
+ await test('old snapshot receives navigation only, keeping its own keys, fields, scoring and stored JSON', () => {
+  const old = JSON.parse(JSON.stringify(fixture)); old.revision = 'navigation-old';
+  for (const r of old.rounds) for (const q of r.questions) delete q.answerStart;
+  writeFileSync(fixturePath, JSON.stringify(old));
+  let a;
+  try {
+   a = fresh();
+   const before = db.prepare('SELECT payload_json FROM video_episode_versions WHERE quiz_id=? AND revision=?').get(old.id, old.revision).payload_json;
+   const latest = JSON.parse(JSON.stringify(fixture)); latest.revision = old.revision;
+   latest.rounds[0].questions[0].correct = draft('Другой исполнитель', 'Другая песня');
+   latest.rounds[0].questions[0].fields = [{ key: 'title', label: 'Другие правила' }];
+   latest.rounds[1].questions[0].chances[0].points = 9;
+   writeFileSync(fixturePath, JSON.stringify(latest));
+   const navigation = core.attemptEpisode(a.id, guestA.id);
+   assert.deepEqual(navigation.rounds[0].questions.map(q => q.answerStart), [35, 36, 38]);
+   assert.deepEqual(navigation.rounds[0].questions[0].fields, old.rounds[0].questions[0].fields);
+   assert.equal(navigation.rounds[1].questions[0].chances[0].points, 2);
+   const answer = core.jumpVideoAttempt(a.id, guestA.id, 36, { pair: pair.correct }, 2000);
+   assert.deepEqual(answer.answers.pair.correct, pair.correct); assert.equal(answer.answers.pair.points, 1.5);
+   assert.equal(db.prepare('SELECT payload_json FROM video_episode_versions WHERE quiz_id=? AND revision=?').get(old.id, old.revision).payload_json, before);
+  } finally { saveFixture(); }
+ });
+ await test('navigation enrichment rejects changed identity, revision, duration or existing timing', () => {
+  const old = JSON.parse(JSON.stringify(fixture)); old.revision = 'navigation-guard';
+  for (const r of old.rounds) for (const q of r.questions) delete q.answerStart;
+  writeFileSync(fixturePath, JSON.stringify(old));
+  try {
+   const a = fresh();
+   const mutations = [e => { e.id = 'different'; }, e => { e.revision = 'different'; }, e => { e.duration += 1; }, ...['start', 'close', 'reveal'].map(key => e => { e.rounds[0][key] += 1; }), ...['start', 'close', 'reveal'].map(key => e => { e.rounds[0].questions[0][key] += 1; })];
+   for (const mutate of mutations) {
+    const changed = JSON.parse(JSON.stringify(fixture)); changed.revision = old.revision; mutate(changed);
+    writeFileSync(fixturePath, JSON.stringify(changed));
+    assert.equal(core.attemptEpisode(a.id, guestA.id).rounds[0].questions[1].answerStart, undefined);
+   }
+  } finally { saveFixture(); }
  });
  await test('jump honors ownership before any answer, position or scoring mutation', () => {
   const a = fresh(guestB.id), before = JSON.stringify(core.getVideoAttempt(a.id, guestB.id));

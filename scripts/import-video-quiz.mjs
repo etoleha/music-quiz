@@ -21,7 +21,7 @@ for (const r of manifest.rounds) {
     const fields = target === 'both' ? [{ key: 'artist', label: artistLabel }, { key: 'title', label: 'Название песни' }] : [{ key: target === 'title' ? 'title' : 'artist', label: target === 'title' ? 'Название песни' : artistLabel }];
     return { id: q.id, number: i + 1, start: qs[0].start,
       close: r.number === 7 ? qs.at(-1).start + qs.at(-1).duration : close,
-      reveal: r.number === 7 ? a.start : reveal, fields,
+      reveal: r.number === 7 ? a.start : reveal, answerStart: a.start, fields,
       chances: r.number === 7 ? qs.map((s, j) => ({ start: s.start, end: s.start + s.duration, points: [2, 1, .5][j] })) : [],
       correct: { artist: target === 'surname' || (r.number === 6 && target !== 'title') ? q.answer : q.artist, title: r.number === 6 && target === 'title' ? q.answer : q.title || '' },
       aliases: { artist: [q.artist, ...(q.accepted_artist_answers || [])], title: [q.title || q.answer || ''] },

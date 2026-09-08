@@ -16,7 +16,7 @@ export function episodes(): PrivateEpisode[] {
 }
 export function episodeById(id: string) { const e = episodes().find(e => e.id === id); if (!e) throw new VideoError("Выпуск не найден", 404); return e; }
 export function publicEpisode(e: PrivateEpisode): VideoEpisode {
-  return { id: e.id, title: e.title, duration: e.duration, revision: e.revision, rounds: e.rounds.map(r => ({ number: r.number, title: r.title, start: r.start, close: r.close, reveal: r.reveal, questions: r.questions.map(q => ({ id: q.id, number: q.number, start: q.start, close: q.close, reveal: q.reveal, fields: q.fields, chances: q.chances })) })) };
+  return { id: e.id, title: e.title, duration: e.duration, revision: e.revision, rounds: e.rounds.map(r => ({ number: r.number, title: r.title, start: r.start, close: r.close, reveal: r.reveal, questions: r.questions.map(q => ({ id: q.id, number: q.number, start: q.start, close: q.close, reveal: q.reveal, answerStart: q.answerStart, fields: q.fields, chances: q.chances })) })) };
 }
 export class VideoError extends Error { constructor(message: string, public status = 400) { super(message); } }
 const hash = (value: string) => createHash("sha256").update(value).digest("hex");
@@ -66,7 +66,25 @@ function ownAttempt(db: DatabaseSync, id: string, player: string, admin = false)
 }
 function episodeForAttempt(db: DatabaseSync, a: AttemptRow): PrivateEpisode {
   const row = db.prepare("SELECT payload_json FROM video_episode_versions WHERE quiz_id=? AND revision=?").get(a.quiz_id, a.revision) as { payload_json: string } | undefined;
-  if (row) return JSON.parse(row.payload_json);
+  if (row) {
+    const saved: PrivateEpisode = JSON.parse(row.payload_json);
+    const current = episodes().find(e => e.id === saved.id && e.revision === saved.revision);
+    const sameTimes = (left: VideoQuestion | PrivateEpisode["rounds"][number], right: VideoQuestion | PrivateEpisode["rounds"][number]) =>
+      left.start === right.start && left.close === right.close && left.reveal === right.reveal;
+    const compatible = current && current.duration === saved.duration && current.rounds.length === saved.rounds.length && saved.rounds.every(r => {
+      const latest = current.rounds.find(candidate => candidate.number === r.number);
+      return latest && sameTimes(r, latest) && latest.questions.length === r.questions.length && r.questions.every(q => {
+        const next = latest.questions.find(candidate => candidate.id === q.id);
+        return next && sameTimes(q, next);
+      });
+    });
+    if (compatible) for (const r of saved.rounds) for (const q of r.questions) {
+      const next = current.rounds.find(candidate => candidate.number === r.number)!.questions.find(candidate => candidate.id === q.id)!;
+      // Navigation-only enrichment: never replace a snapshot's keys, rules or existing timings.
+      if (q.answerStart === undefined && Number.isFinite(next.answerStart) && next.answerStart! >= q.reveal && next.answerStart! <= saved.duration) q.answerStart = next.answerStart;
+    }
+    return saved;
+  }
   const current = episodeById(a.quiz_id);
   if (current.revision !== a.revision) throw new VideoError("Версия этого прохождения не найдена", 409);
   return current;
@@ -132,9 +150,9 @@ function advanceVideoAttempt(id: string, player: string, requestedPosition: numb
     const a = ownAttempt(db, id, player), e = episodeForAttempt(db, a);
     if (!Number.isFinite(requestedPosition) || requestedPosition < 0 || requestedPosition > e.duration + .5) throw new VideoError("Неверный таймкод");
     if (jump) {
-      const targets = [0, e.duration, ...e.rounds.flatMap(r => [r.start, r.reveal, ...r.questions.map(q => q.reveal)])];
+      const targets = [0, e.duration, ...e.rounds.flatMap(r => [r.start, r.reveal, ...r.questions.flatMap(q => [q.start, q.reveal, ...(q.answerStart === undefined ? [] : [q.answerStart]), ...q.chances.map(chance => chance.start)])])];
       const target = targets.find(value => Math.abs(value - requestedPosition) <= .001);
-      if (target === undefined) throw new VideoError("Выберите начало раунда, раскрытие ответов или конец", 400);
+      if (target === undefined) throw new VideoError("Выберите начало раунда, вопроса, ответа или конец", 400);
       requestedPosition = target;
     } else if (requestedPosition > a.position + Math.max(0, now - a.updated_ms) / 1000 + 1) {
       // Explicit chapter jumps establish a new playback baseline; ordinary sync cannot jump ahead.
