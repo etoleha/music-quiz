@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Play, Pause, Film, LockKeyhole, Check, Flag, Share2, ArrowLeft, Users, Trophy, Clock3, Send, X, RotateCcw } from "lucide-react";
+import { Play, Pause, Film, LockKeyhole, Check, Share2, ArrowLeft, Users, Trophy, Clock3, Send, X, RotateCcw } from "lucide-react";
 import { chanceAt, questionMaximum, roundAt, nextAnswerAt, type VideoEpisode, type VideoAttempt, type VideoDraft, type VideoHistory, type VideoReport } from "../shared/video-quiz";
 import "./video-quiz.css";
 
@@ -27,6 +27,8 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   const [review, setReview] = useState(false);
   const [dialog, setDialog] = useState<Dialog | null>(null);
   const [dialogSaving, setDialogSaving] = useState(false);
+  const [correctingPoints, setCorrectingPoints] = useState(false);
+  const pointUpdateBusy = useRef(false);
   const [correctionReason, setCorrectionReason] = useState("accepted-answer");
   const [jumping, setJumping] = useState(false);
   const dialogSubmitting = useRef(false);
@@ -116,7 +118,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
       const player = playerRef.current, workspace = workspaceRef.current;
       if (!player || !workspace) return;
       gameRef.current?.style.setProperty("--vq-player-space", `${player.offsetHeight + 20}px`);
-      const controls = [".vq-round-nav", ".vq-player-controls", ".vq-jump-controls"].reduce((height, selector) => height + (player.querySelector<HTMLElement>(selector)?.offsetHeight || 0), 20);
+      const controls = [".vq-round-nav", ".vq-jump-controls"].reduce((height, selector) => height + (player.querySelector<HTMLElement>(selector)?.offsetHeight || 0), 20);
       gameRef.current?.style.setProperty("--vq-fit-width", `${Math.max(60, workspace.clientHeight - controls) * 16 / 9}px`);
       const field = document.activeElement;
       if (field instanceof HTMLInputElement && field.closest(".vq-fields")) requestAnimationFrame(() => keepFieldVisible(field));
@@ -192,7 +194,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     debounce.current = setTimeout(() => { void sync(video.current?.currentTime ?? position).catch(() => {}); }, 400);
   }
   function progress() {
-    const v = video.current; if (!v || !episode || review || boundaryBusy.current) return;
+    const v = video.current; if (!v || !episode || review || boundaryBusy.current || v.seeking) return;
     const at = v.currentTime;
     // Stop at a deadline until the latest draft is safely frozen. No internal breaks in the blitz.
     const crossings = episode.rounds.flatMap(r => r.questions).filter(q => !attemptRef.current?.answers[q.id]?.locked && q.close > highWater.current && q.close <= at);
@@ -213,6 +215,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   async function jump(at: number) {
     const a = attemptRef.current, v = video.current;
     if (!a || !v || boundaryBusy.current || dialogSubmitting.current) return;
+    if (!review && at < Math.max(highWater.current, a.position, v.currentTime) - .05) return;
     if (debounce.current) clearTimeout(debounce.current);
     const resume = playIntent.current;
     boundaryBusy.current = true; setJumping(true); v.pause();
@@ -247,6 +250,19 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     finally { dialogSubmitting.current = false; setDialogSaving(false); }
   }
 
+  function changePoints(questionId: string, value: number) {
+    const a = attemptRef.current;
+    if (!a || guest || pointUpdateBusy.current || boundaryBusy.current || dialogSubmitting.current) return;
+    pointUpdateBusy.current = true; setCorrectingPoints(true);
+    const pending = queue.current.catch(() => {}).then(async () => {
+      if (attemptRef.current?.id !== a.id) return;
+      const data = await request({ action: "correct", attemptId: a.id, questionId, points: value, reasonCode: "accepted-answer" });
+      if (attemptRef.current?.id === a.id) applyAttempt(data.attempt);
+    });
+    queue.current = pending.catch(() => {});
+    void pending.catch(e => { if (attemptRef.current?.id === a.id) setError((e as Error).message); }).finally(() => { pointUpdateBusy.current = false; setCorrectingPoints(false); });
+  }
+
   const alerts = <>{error && <div className="vq-alert" role="alert">{error}{attempt && !review && <button onClick={() => void sync(video.current?.currentTime ?? position).catch(() => {})}>Повторить сохранение</button>}</div>}{notice && <div className="vq-notice" role="status">{notice}<button aria-label="Скрыть уведомление" onClick={() => setNotice("")}><X size={16} /></button></div>}</>;
   if (!attempt || !episode || !round) return <section className="vq-library">
     {alerts}<div className="section-heading"><div><p className="eyebrow">Смотри · вспоминай · отвечай</p><h1>Квиз на большом экране</h1></div><span className="vq-pill"><Film size={16} /> Видеоквизы</span></div>
@@ -268,9 +284,9 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     {alerts}
     <div className="vq-play-workspace" ref={workspaceRef}>
     <div ref={playerRef} className="vq-player-layout">
-    <nav className="vq-round-nav" aria-label="Бланки раундов">{episode.rounds.map(r => <button key={r.number} title={`Раунд ${r.number} · ${r.title}`} aria-label={`Раунд ${r.number} · ${r.title}`} aria-current={r.number === round.number ? "step" : undefined} className={r.number === round.number ? "active" : ""} disabled={jumping} onClick={() => void jump(r.start)}><span>{r.number}</span>{r.title}{attempt.answers[r.questions[0].id]?.points !== undefined && <Check size={13} />}</button>)}</nav>
-    <div className="vq-player"><video key={attempt.id} ref={video} src={media} preload="metadata" playsInline onLoadedMetadata={() => { if (video.current) video.current.currentTime = attempt.position; }} onTimeUpdate={progress} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onSeeking={() => { const v = video.current; if (v && !review && v.currentTime > highWater.current + .3) v.currentTime = highWater.current; }} onRateChange={() => { if (video.current) video.current.playbackRate = 1; }} onEnded={() => { setPlaying(false); void sync(episode.duration).catch(() => {}); }} onError={() => setError("Видео недоступно. Проверьте загрузку файла на сервер и соединение.")} aria-label={episode.title} />
-      <div className="vq-player-controls"><button className="vq-play" disabled={review || saving && boundaryBusy.current} onClick={togglePlayback} aria-label={playing ? "Пауза · F2" : "Воспроизвести · F2"}>{playing ? <Pause /> : <Play />}</button><span>{time(position)} <small>/ {time(episode.duration)}</small></span><input type="range" aria-label="Перемотка по просмотренной части" min={0} max={episode.duration} step={.04} value={position} disabled={review} onChange={e => { const v = video.current; if (v) { v.currentTime = Math.min(Number(e.target.value), highWater.current); setPosition(v.currentTime); } }} /><kbd>F2 — пауза</kbd></div>
+    <nav className="vq-round-nav" aria-label="Бланки раундов">{episode.rounds.map(r => <button key={r.number} title={`Раунд ${r.number} · ${r.title}`} aria-label={`Раунд ${r.number} · ${r.title}`} aria-current={r.number === round.number ? "step" : undefined} className={r.number === round.number ? "active" : ""} disabled={jumping || !review && r.start < Math.max(position, attempt.position, highWater.current) - .05} onClick={() => void jump(r.start)}><span>{r.number}</span>{r.title}{attempt.answers[r.questions[0].id]?.points !== undefined && <Check size={13} />}</button>)}</nav>
+    <div className="vq-player"><video key={attempt.id} ref={video} src={media} preload="metadata" playsInline onLoadedMetadata={() => { if (video.current) video.current.currentTime = attempt.position; }} onTimeUpdate={progress} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onSeeking={() => { const v = video.current; if (v && !review && Math.abs(v.currentTime - highWater.current) > .3) v.currentTime = highWater.current; }} onRateChange={() => { if (video.current) video.current.playbackRate = 1; }} onEnded={() => { setPlaying(false); void sync(episode.duration).catch(() => {}); }} onError={() => setError("Видео недоступно. Проверьте загрузку файла на сервер и соединение.")} aria-label={episode.title} />
+      <div className="vq-player-controls"><button className="vq-play" disabled={review || saving && boundaryBusy.current} onClick={togglePlayback} aria-label={playing ? "Пауза · F2" : "Воспроизвести · F2"}>{playing ? <Pause /> : <Play />}</button><span>{time(position)} <small>/ {time(episode.duration)}</small></span><kbd>F2</kbd></div>
     </div><div className="vq-jump-controls"><span className="vq-compact-score"><Trophy size={17} /> {points(attempt.score)} / {points(attempt.maxScore)}</span><button disabled={jumping || questionTime === undefined} onClick={() => questionTime !== undefined && void jump(questionTime)}><Play size={17} /> Следующий вопрос</button><button disabled={jumping || answerTime === undefined} onClick={() => answerTime !== undefined && void jump(answerTime)}><Check size={17} /> Следующий ответ</button>{attempt.completed && <button onClick={() => void begin(episode.id, true)}><RotateCcw size={15} /> Заново</button>}</div>
     </div>
     <section className="vq-sheet-panel" ref={sheetRef} aria-label={`Бланк раунда ${round.number}`}>
@@ -285,7 +301,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
       const currentChance = chanceAt(q, Math.max(position, attempt.position, highWater.current));
       return <article id={`video-question-${q.id}`} key={q.id} className={`vq-answer-row ${active ? "is-active" : ""} ${revealed ? "is-revealed" : ""}`}><span className="vq-question-number">{String(q.number).padStart(2, "0")}</span><div className="vq-answer-content"><div className="vq-fields">{q.fields.map(field => <label key={field.key}><input autoComplete="off" spellCheck={false} maxLength={160} aria-label={`Вопрос ${q.number}: ${field.label}`} value={drafts[q.id]?.[field.key] || ""} disabled={locked || !!q.chances.length && !active} onFocus={e => { const input = e.currentTarget; requestAnimationFrame(() => keepFieldVisible(input)); }} onChange={e => change(q.id, field.key, e.target.value)} placeholder={field.label} /></label>)}</div>
         {q.chances.length > 0 && !revealed && <div className="vq-chance-line"><span>{answer.submitted ? `Отправлено на ${time(answer.submittedAt || 0)}` : locked ? "Ответ не отправлен" : currentChance ? `Сейчас можно получить ${points(currentChance.points)} балл${currentChance.points === 1 ? "" : "а"}` : "Ожидает своего фрагмента"}</span><button className="vq-primary" disabled={locked || !active || saving || !drafts[q.id]?.artist.trim()} onClick={() => void submit(q.id)}><Send size={14} /> Отправить</button></div>}
-        {revealed && <div className="vq-reveal"><strong>{q.fields.map(f => answer.correct?.[f.key]).filter(Boolean).join(" — ")}</strong>{answer.coverArtist && <small>Кавер: {answer.coverArtist}</small>}<div className="vq-row-tools"><button onClick={() => { openDialog({ kind: "report", questionId: q.id }); setComment(""); }}><Flag size={14} /> Сообщить о проблеме</button>{!guest && <><select aria-label={`Исправить баллы за вопрос ${q.number}`} value={answer.points} onChange={e => { openDialog({ kind: "correct", questionId: q.id, points: Number(e.target.value) }); setComment(""); }}>{Array.from({ length: questionMaximum(q) * 2 + 1 }, (_, i) => i / 2).map(n => <option value={n} key={n}>{points(n)} балла</option>)}</select><button onClick={() => { openDialog({ kind: "correct", questionId: q.id, annulled: !answer.annulled }); setComment(""); }}>{answer.annulled ? "Вернуть вопрос" : "Аннулировать"}</button></>}</div></div>}
+        {revealed && <div className="vq-reveal"><strong>{q.fields.map(f => answer.correct?.[f.key]).filter(Boolean).join(" — ")}</strong>{answer.coverArtist && <small>Кавер: {answer.coverArtist}</small>}{!guest && <div className="vq-row-tools"><select aria-label={`Исправить баллы за вопрос ${q.number}`} disabled={correctingPoints || jumping} value={answer.points} onChange={e => changePoints(q.id, Number(e.target.value))}>{Array.from({ length: questionMaximum(q) * 2 + 1 }, (_, i) => i / 2).map(n => <option value={n} key={n}>{points(n)} балла</option>)}</select><button disabled={correctingPoints || jumping} onClick={() => { openDialog({ kind: "correct", questionId: q.id, annulled: !answer.annulled }); setComment(""); }}>{answer.annulled ? "Вернуть вопрос" : "Аннулировать"}</button></div>}</div>}
       </div><span className={`vq-row-points ${answer.annulled ? "void" : ""}`}>{revealed ? answer.annulled ? "×" : points(answer.points!) : locked ? <LockKeyhole size={16} /> : "·"}</span></article>;
     })}</div>
     </section>

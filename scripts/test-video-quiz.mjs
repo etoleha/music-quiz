@@ -254,10 +254,20 @@ try {
   assert.equal(core.getVideoAttempt(a.id, guestA.id).position, 42);
   assert.equal(core.syncVideoAttempt(a.id, guestA.id, 43, {}, undefined, 3100).position, 43);
  });
- await test('backward chapter jump never reopens answers, hides earned score or changes completion', () => {
+ await test('backward chapter jump is rejected without changing scores or completion', () => {
   const a = fresh(); const end = core.jumpVideoAttempt(a.id, guestA.id, 80, { pair: pair.correct }, 2000);
-  const back = core.jumpVideoAttempt(a.id, guestA.id, 0, { pair: draft('Wrong') }, 2100);
+  assert.throws(() => core.jumpVideoAttempt(a.id, guestA.id, 0, { pair: draft('Wrong') }, 2100), e => e.status === 409);
+  const back = core.getVideoAttempt(a.id, guestA.id);
   assert.equal(back.position, 80); assert.equal(back.completed, true); assert.equal(back.score, end.score); assert.deepEqual(back.answers, end.answers);
+ });
+ await test('R7 cannot jump back to an earlier chance or earlier round', () => {
+  const a = fresh(); core.jumpVideoAttempt(a.id, guestA.id, 60, { chance: draft('Первый черновик') }, 2000);
+  for (const target of [0,35,40,50]) assert.throws(() => core.jumpVideoAttempt(a.id, guestA.id, target, { chance: chance.correct }, 2100), e => e.status === 409);
+  const current = core.getVideoAttempt(a.id, guestA.id);
+  assert.equal(current.position,60);assert.equal(current.answers.chance.draft.artist,'Первый черновик');
+  const submitted = core.syncVideoAttempt(a.id,guestA.id,60,{chance:chance.correct},'chance',2200);
+  assert.equal(submitted.answers.chance.submittedAt,60);
+  assert.equal(core.jumpVideoAttempt(a.id,guestA.id,71,{},2300).answers.chance.points,.5);
  });
  await test('R7 button remains usable after jump, and a later jump preserves its original score', () => {
   const a = fresh(); core.jumpVideoAttempt(a.id, guestA.id, 40, { chance: chance.correct }, 2000);

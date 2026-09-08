@@ -158,6 +158,7 @@ function advanceVideoAttempt(id: string, player: string, requestedPosition: numb
       const targets = [0, e.duration, ...e.rounds.flatMap(r => [r.start, r.reveal, ...r.questions.flatMap(q => [q.start, q.reveal, ...(q.answerStart === undefined ? [] : [q.answerStart]), ...q.chances.map(chance => chance.start)])])];
       const target = targets.find(value => Math.abs(value - requestedPosition) <= .001);
       if (target === undefined) throw new VideoError("Выберите начало раунда, вопроса, ответа или конец", 400);
+      if (target < a.position - .001) throw new VideoError("Во время прохождения нельзя возвращаться назад", 409);
       requestedPosition = target;
     } else if (requestedPosition > a.position + Math.max(0, now - a.updated_ms) / 1000 + 1) {
       // Explicit chapter jumps establish a new playback baseline; ordinary sync cannot jump ahead.
