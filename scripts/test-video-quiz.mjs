@@ -6,7 +6,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { register } from 'node:module';
 
 // Tests load the actual TS server modules, while fixtures and SQLite live only
-// in an owned temporary directory. No production manifest or DB is imported.
+// in an owned temporary directory. Published timelines are read only for pure
+// navigation checks; production databases are never opened.
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const previousCwd = process.cwd(), previousDb = process.env.QUIZ_DB_PATH, previousMedia = process.env.VIDEO_QUIZ_MEDIA_DIR;
 const temporary = mkdtempSync(join(tmpdir(), 'music-video-quiz-test-'));
@@ -52,7 +53,7 @@ async function test(name, action) {
 try {
  core = await import(pathToFileURL(join(root, 'server/video-quizzes.ts')).href);
  http = await import(pathToFileURL(join(root, 'server/video-http.ts')).href);
- const { questionMaximum } = await import(pathToFileURL(join(root, 'shared/video-quiz.ts')).href);
+ const { questionMaximum, nextAnswerAt } = await import(pathToFileURL(join(root, 'shared/video-quiz.ts')).href);
  db = core.videoDb();
  const guestA = core.createGuest('Guest A'), guestB = core.createGuest('Guest B');
  const share = core.shareFor(fixture.id);
@@ -67,6 +68,23 @@ try {
   assert.equal(db.prepare('PRAGMA database_list').get().file, process.env.QUIZ_DB_PATH);
   assert.equal(db.prepare('PRAGMA quick_check').get().quick_check, 'ok');
   assert(db.prepare("SELECT name FROM sqlite_schema WHERE name='attempts'").get());
+ });
+ await test('next answer stays inside the playing round, including its final answer', () => {
+  assert.equal(nextAnswerAt(fixture, 2), 35);
+  assert.equal(nextAnswerAt(fixture, 35), 36);
+  assert.equal(nextAnswerAt(fixture, 36), 38);
+  assert.equal(nextAnswerAt(fixture, 38), undefined);
+  assert.equal(nextAnswerAt(fixture, 39.99), undefined);
+  assert.equal(nextAnswerAt(fixture, 40), 71);
+  assert.equal(nextAnswerAt(fixture, 71), undefined);
+  for (const version of [3, 4]) {
+   const real = JSON.parse(readFileSync(join(root, `server/video-data/prosto-v${version}.json`), 'utf8'));
+   for (const round of real.rounds) {
+    const last = round.questions.at(-1).answerStart;
+    assert.equal(nextAnswerAt(real, last), undefined, `${real.id} round ${round.number}`);
+    assert.equal(nextAnswerAt(real, round.start), round.questions[0].answerStart);
+   }
+  }
  });
  await test('guest identity persists by hashed secret, not display name', () => {
   assert.equal(core.guestIdentity(guestA.secret).id, guestA.id);

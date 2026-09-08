@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Play, Pause, Film, LockKeyhole, Check, Flag, Share2, ArrowLeft, Users, Trophy, Clock3, Send, X, RotateCcw } from "lucide-react";
-import { chanceAt, questionMaximum, roundAt, type VideoEpisode, type VideoAttempt, type VideoDraft, type VideoHistory, type VideoReport } from "../shared/video-quiz";
+import { chanceAt, questionMaximum, roundAt, nextAnswerAt, type VideoEpisode, type VideoAttempt, type VideoDraft, type VideoHistory, type VideoReport } from "../shared/video-quiz";
 import "./video-quiz.css";
 
 const time = (n: number) => `${Math.floor(n / 60)}:${String(Math.floor(n % 60)).padStart(2, "0")}`;
@@ -244,7 +244,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
 
   const activeChanceQuestion = round.questions.find(q => position >= q.start && position < q.close);
   const questionTime = episode.rounds.flatMap(r => r.questions.map(q => q.start)).find(at => at > position + .05);
-  const answerTime = episode.rounds.flatMap(r => r.questions.map(q => q.answerStart ?? q.reveal)).find(at => at > position + .05);
+  const answerTime = nextAnswerAt(episode, position);
   const media = guest ? `/g/video-media/${episode.id}?share=${encodeURIComponent(shareToken!)}` : `/api/video-media/${episode.id}`;
   const needsComment = dialog?.kind === "report" || dialog?.annulled !== undefined || correctionReason === "other";
   return <section className="vq-game" ref={gameRef}>

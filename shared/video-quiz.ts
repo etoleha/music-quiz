@@ -20,3 +20,8 @@ export function chanceAt(q: VideoQuestion, position: number) { return q.chances.
 export function roundAt(episode: VideoEpisode, position: number) {
   return [...episode.rounds].reverse().find(r => position >= r.start) ?? episode.rounds[0];
 }
+export function nextAnswerAt(episode: VideoEpisode, position: number) {
+  return roundAt(episode, position)?.questions
+    .map(q => q.answerStart ?? q.reveal)
+    .find(at => at > position + .05);
+}
