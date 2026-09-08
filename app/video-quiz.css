@@ -12,3 +12,33 @@
 @media(max-width:950px){.vq-player-layout{grid-template-columns:1fr}.vq-score{display:flex;align-items:center;gap:20px;padding:15px 20px;flex-wrap:wrap}.vq-score>strong{margin:0;font-size:28px}.vq-score>div,.vq-score>small{display:none}.vq-score p{margin:0;max-width:220px}.vq-intro{grid-template-columns:1fr 180px;padding:30px}.vq-record{width:180px;height:180px}.vq-record span{width:110px;height:110px}.vq-record i{bottom:31px}}
 @media(max-width:600px){.vq-intro{grid-template-columns:1fr;padding:26px}.vq-intro h2{font-size:30px}.vq-record{display:none}.vq-intro-tags{gap:12px;flex-wrap:wrap}.vq-episode{padding:18px;gap:12px;flex-wrap:wrap}.vq-episode-icon{width:44px;height:44px}.vq-episode h2{font-size:16px}.vq-actions{width:100%;margin:0}.vq-actions .vq-primary{flex:1}.vq-stat-grid{gap:8px}.vq-stat-grid article{padding:14px}.vq-stat-grid span{font-size:10px}.vq-stat-grid strong{font-size:24px}.vq-stat-grid svg{display:none}.vq-player-controls{gap:8px;padding:10px}.vq-player-controls kbd{display:none}.vq-sheet-heading{align-items:flex-start;flex-direction:column;gap:12px}.vq-answer-row{gap:10px;padding:16px 12px}.vq-fields{grid-template-columns:1fr;gap:10px}.vq-fields label:only-child{grid-column:auto}.vq-question-number{min-width:17px;font-size:10px}.vq-row-points{min-width:25px;font-size:18px}.vq-round-nav{margin-right:-5px}.vq-name{flex-direction:column;align-items:flex-start}.vq-name input{width:100%}.vq-history{padding:18px}.vq-history-row small{font-size:10px}.vq-game-heading{gap:8px;flex-wrap:wrap}.vq-game-heading .vq-pill{font-size:10px}.vq-save{font-size:10px}.vq-score>.vq-kicker{display:none}.vq-score p{font-size:11px}.vq-chance-line{align-items:flex-start;flex-direction:column}.vq-chance-line button{align-self:flex-end}}
 @media(prefers-reduced-motion:reduce){.vq-answer-row{transition:none}}
+
+/* Keep the film visible while the answer sheet moves underneath it. */
+.vq-game{font-size:16px;--vq-player-space:55vh}
+.vq-player-sentinel{height:1px}
+.vq-player-layout{display:block;position:sticky;top:8px;z-index:30;background:#f8faf7;border-radius:16px;box-shadow:0 8px 24px #15263814}
+.vq-player video{max-height:64svh;object-fit:contain;transition:max-height .2s ease}
+.vq-player-layout.is-pinned video{max-height:42svh}
+.vq-player-controls{font-size:15px;padding:12px 18px}
+.vq-player-controls kbd{font-size:13px}.vq-play{width:40px;height:40px}
+.vq-jump-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 16px;border:1px solid var(--vq-line);border-top:0;border-radius:0 0 16px 16px;background:#f8faf7}
+.vq-jump-controls button{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid var(--vq-line);border-radius:8px;padding:9px 13px;background:white;font-size:14px;min-height:40px}
+.vq-player-layout .vq-round-nav{padding:6px 12px 10px;margin:0}.vq-player-layout .vq-round-nav button{padding:8px 11px}.vq-player-layout .vq-jump-controls{border-radius:0;border-bottom:0}
+@media(min-width:800px){.vq-player-layout .vq-round-nav{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;overflow:visible}.vq-player-layout .vq-round-nav button{position:relative;flex-direction:column;justify-content:flex-start;white-space:normal;text-align:center;line-height:1.2;padding:7px 4px;font-size:12px}.vq-player-layout .vq-round-nav button svg{position:absolute;top:7px;right:5px;width:11px}}
+.vq-compact-score{display:flex;align-items:center;gap:8px;margin-right:auto;font-weight:650;font-size:17px;font-variant-numeric:tabular-nums}
+.vq-game .vq-kicker{font-size:12px}.vq-game .vq-pill,.vq-save{font-size:14px}
+.vq-round-nav button{font-size:14px;padding:11px 14px}.vq-round-nav button span{font-size:13px;width:24px;height:24px}
+.vq-sheet-heading p,.vq-navigation-note,.vq-rules-note{font-size:15px;line-height:1.6;color:var(--vq-muted)}
+.vq-navigation-note{margin:0 0 20px}
+.vq-answer-row{scroll-margin-top:var(--vq-player-space);padding:22px 24px}
+.vq-fields label{font-size:14px;font-weight:550;letter-spacing:0}
+.vq-game .vq-fields input{font-size:18px;font-weight:500;min-height:48px;padding:11px 14px}
+.vq-fields input::placeholder{color:#87939d;font-weight:400;opacity:1}
+.vq-question-number{font-size:15px;padding-top:37px}.vq-row-points{padding-top:35px}
+.vq-reveal>strong{font-size:18px}.vq-reveal>small{font-size:15px}
+.vq-row-tools button,.vq-row-tools select{font-size:14px;padding:8px 4px;min-height:36px}
+.vq-chance-line,.vq-chance-line button{font-size:15px}.vq-chance-line button{padding:10px 16px}
+.vq-modal p,.vq-modal textarea,.vq-checkbox{font-size:16px}.vq-reason{display:block;font-size:15px;margin:18px 0 22px}
+.vq-reason select{display:block;width:100%;border:1px solid var(--vq-line);border-radius:9px;background:white;padding:12px;margin-top:8px;font-size:15px}
+@media(max-width:600px){.vq-player-layout{top:0;border-radius:10px}.vq-player video{max-height:42svh}.vq-player-layout.is-pinned video{max-height:30svh}.vq-jump-controls{gap:6px;padding:8px}.vq-jump-controls button{font-size:12px;padding:8px}.vq-compact-score{font-size:14px}.vq-player-controls{font-size:13px;padding:8px}.vq-answer-row{padding:18px 12px}.vq-fields label{font-size:14px}.vq-game .vq-fields input{font-size:17px}.vq-reveal>small{font-size:14px}.vq-game-heading .vq-pill,.vq-save{font-size:13px}.vq-question-number{font-size:13px}.vq-sheet-heading h2{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.vq-player video{transition:none}}

@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { randomBytes, randomUUID, createHash } from "node:crypto";
 import type { DatabaseSync } from "node:sqlite";
 import { getLocalDb, inTransaction } from "./local-db.ts";
-import { isAccepted } from "../app/scoring.ts";
+import { isAccepted, isArtistAccepted } from "../app/scoring.ts";
 import { chanceAt, questionMaximum, type VideoEpisode, type VideoQuestion, type VideoDraft, type VideoAttempt, type VideoAnswer } from "../shared/video-quiz.ts";
 
 export type PrivateQuestion = VideoQuestion & { correct: VideoDraft; aliases: { artist: string[]; title: string[] }; artistParts: string[][]; album?: string; year?: number; coverArtist?: string };
@@ -73,12 +73,16 @@ function episodeForAttempt(db: DatabaseSync, a: AttemptRow): PrivateEpisode {
 }
 export function attemptEpisode(id: string, player: string, admin = false) { const db = videoDb(); return publicEpisode(episodeForAttempt(db, ownAttempt(db, id, player, admin))); }
 export function scoreVideoAnswer(q: PrivateQuestion, draft: VideoDraft, position: number): number {
-  if (q.chances.length) return isAccepted(draft.artist, [q.correct.artist, ...q.aliases.artist]) ? chanceAt(q, position)?.points ?? 0 : 0;
-  let artist = Number(isAccepted(draft.artist, [q.correct.artist, ...q.aliases.artist]));
+  const artistForm = q.fields.find(field => field.key === "artist")?.label || "";
+  let artist = Number(isArtistAccepted(draft.artist, [q.correct.artist, ...q.aliases.artist], artistForm));
   if (q.artistParts.length >= 2) {
-    const hits = q.artistParts.filter(part => isAccepted(draft.artist, part)).length;
+    const forms = artistForm.split(/\s*\+\s*/);
+    // Short surnames and short band names must also work in a combined answer.
+    const candidates = [draft.artist, ...draft.artist.split(/\s+(?:feat\.?|ft\.?|and|и|x)\s+|\s*[+&,/]\s*/i)];
+    const hits = q.artistParts.filter((part, index) => candidates.some(value => isArtistAccepted(value, part, forms[index] || ""))).length;
     artist = hits === q.artistParts.length ? 1 : hits > 0 ? .5 : 0;
   }
+  if (q.chances.length) return artist === 1 ? chanceAt(q, position)?.points ?? 0 : 0;
   const title = Number(isAccepted(draft.title, [q.correct.title, ...q.aliases.title]));
   return q.fields.length === 1 ? q.fields[0].key === "artist" ? artist : title : artist + title * .5;
 }
@@ -105,21 +109,37 @@ export function getVideoAttempt(id: string, player: string, admin = false): Vide
     const row = rows.find(x => x.question_id === q.id)!;
     const visible = a.position >= q.reveal;
     const annulled = !!row.annulled || voids.has(q.id);
-    const points = annulled ? 0 : row.override_points ?? row.automatic_points;
+    // Re-evaluate submitted historical drafts with the current, more generous matcher.
+    // Existing awards never decrease, and explicit overrides/annulments still take precedence.
+    const automaticPoints = row.submitted ? Math.max(row.automatic_points, scoreVideoAnswer(q, { artist: row.artist, title: row.title }, row.submitted_at ?? q.close)) : 0;
+    const points = annulled ? 0 : row.override_points ?? automaticPoints;
     if (visible && !annulled) { score += points; maxScore += questionMaximum(q); }
     answers[q.id] = { draft: { artist: row.artist, title: row.title }, locked: !!row.locked, submitted: !!row.submitted, submittedAt: row.submitted_at, possible: questionMaximum(q),
-      ...(visible ? { points, automaticPoints: row.automatic_points, annulled, correct: q.correct, album: q.album, year: q.year, coverArtist: q.coverArtist } : {}) };
+      ...(visible ? { points, automaticPoints, annulled, correct: q.correct, album: q.album, year: q.year, coverArtist: q.coverArtist } : {}) };
   }
   const p = db.prepare("SELECT name FROM video_players WHERE id=?").get(a.player_id) as { name: string } | undefined;
   return { id, quizId: a.quiz_id, name: p?.name || "Ведущий", position: a.position, score, maxScore, completed: !!a.completed, answers };
 }
 export function syncVideoAttempt(id: string, player: string, requestedPosition: number, drafts: Record<string, VideoDraft>, submitQuestion?: string, now = Date.now()) {
+  return advanceVideoAttempt(id, player, requestedPosition, drafts, submitQuestion, now, false);
+}
+export function jumpVideoAttempt(id: string, player: string, target: number, drafts: Record<string, VideoDraft>, now = Date.now()) {
+  return advanceVideoAttempt(id, player, target, drafts, undefined, now, true);
+}
+function advanceVideoAttempt(id: string, player: string, requestedPosition: number, drafts: Record<string, VideoDraft>, submitQuestion: string | undefined, now: number, jump: boolean) {
   const db = videoDb();
   inTransaction(db, () => {
     const a = ownAttempt(db, id, player), e = episodeForAttempt(db, a);
     if (!Number.isFinite(requestedPosition) || requestedPosition < 0 || requestedPosition > e.duration + .5) throw new VideoError("Неверный таймкод");
-    // A seek or forged request cannot reveal the entire key immediately. This is a paused personal game, not a proctored exam.
-    if (requestedPosition > (now - a.created_ms) / 1000 + 1) throw new VideoError("Нельзя перейти к ещё не просмотренному моменту", 409);
+    if (jump) {
+      const targets = [0, e.duration, ...e.rounds.flatMap(r => [r.start, r.reveal, ...r.questions.map(q => q.reveal)])];
+      const target = targets.find(value => Math.abs(value - requestedPosition) <= .001);
+      if (target === undefined) throw new VideoError("Выберите начало раунда, раскрытие ответов или конец", 400);
+      requestedPosition = target;
+    } else if (requestedPosition > a.position + Math.max(0, now - a.updated_ms) / 1000 + 1) {
+      // Explicit chapter jumps establish a new playback baseline; ordinary sync cannot jump ahead.
+      throw new VideoError("Нельзя перейти к ещё не просмотренному моменту", 409);
+    }
     const position = Math.max(a.position, Math.min(e.duration, requestedPosition));
     const questions = e.rounds.flatMap(r => r.questions);
     if (submitQuestion) {
@@ -177,19 +197,21 @@ export function reportVideoQuestion(id: string, player: string, questionId: stri
 export function videoReports() {
   return videoDb().prepare(`SELECT r.id,r.attempt_id AS attemptId,r.question_id AS questionId,r.comment,r.category,r.conclusion,r.status,r.created_at AS createdAt,COALESCE(p.name,'Ведущий') AS name FROM video_reports r JOIN video_attempts a ON a.id=r.attempt_id LEFT JOIN video_players p ON p.id=a.player_id ORDER BY r.created_at DESC LIMIT 300`).all();
 }
-export function correctVideoAnswer(id: string, questionId: string, changes: { points?: number; annulled?: boolean; global?: boolean; reason: string }) {
+export function correctVideoAnswer(id: string, questionId: string, changes: { points?: number; annulled?: boolean; global?: boolean; reason?: string; reasonCode?: string }) {
   const db = videoDb(), a = ownAttempt(db, id, "owner", true), q = episodeForAttempt(db, a).rounds.flatMap(r => r.questions).find(q => q.id === questionId);
-  if (!q || !changes.reason?.trim()) throw new VideoError("Нужны вопрос и причина исправления");
+  const acceptedAnswer = changes.reasonCode === "accepted-answer" && changes.points !== undefined && changes.annulled === undefined && !changes.global;
+  const reason = String(changes.reason || "").trim() || (acceptedAnswer ? "Ответ принят ведущим" : "");
+  if (!q || !reason) throw new VideoError("Нужны вопрос и причина исправления");
   if (changes.points !== undefined && (!Number.isFinite(changes.points) || changes.points < 0 || changes.points > questionMaximum(q) || !Number.isInteger(changes.points * 2))) throw new VideoError("Недопустимые баллы");
   if (a.position < q.reveal) throw new VideoError("Баллы можно править после раскрытия", 409);
   inTransaction(db, () => {
     const before = db.prepare("SELECT * FROM video_answers WHERE attempt_id=? AND question_id=?").get(id, questionId);
     if (changes.global) {
-      if (changes.annulled) db.prepare("INSERT OR REPLACE INTO video_voids VALUES(?,?,?)").run(a.quiz_id, questionId, changes.reason.slice(0, 1000));
+      if (changes.annulled) db.prepare("INSERT OR REPLACE INTO video_voids VALUES(?,?,?)").run(a.quiz_id, questionId, reason.slice(0, 1000));
       else db.prepare("DELETE FROM video_voids WHERE quiz_id=? AND question_id=?").run(a.quiz_id, questionId);
     } else if (changes.points !== undefined) db.prepare("UPDATE video_answers SET override_points=?,annulled=0 WHERE attempt_id=? AND question_id=?").run(changes.points, id, questionId);
     else db.prepare("UPDATE video_answers SET annulled=? WHERE attempt_id=? AND question_id=?").run(Number(!!changes.annulled), id, questionId);
-    db.prepare("INSERT INTO video_audit(id,actor,attempt_id,question_id,before_json,after_json,reason) VALUES(?,'owner',?,?,?,?,?)").run(randomUUID(), id, questionId, JSON.stringify(before), JSON.stringify(changes), changes.reason.slice(0, 1000));
+    db.prepare("INSERT INTO video_audit(id,actor,attempt_id,question_id,before_json,after_json,reason) VALUES(?,'owner',?,?,?,?,?)").run(randomUUID(), id, questionId, JSON.stringify(before), JSON.stringify({ ...changes, reason }), reason.slice(0, 1000));
   });
   return getVideoAttempt(id, "owner", true);
 }

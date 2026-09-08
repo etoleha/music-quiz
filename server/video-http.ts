@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { Readable } from "node:stream";
-import { attemptEpisode } from "./video-quizzes";
+import { attemptEpisode, jumpVideoAttempt } from "./video-quizzes";
 import { VideoError, episodes, publicEpisode, sharedEpisode, guestIdentity, createGuest, startVideoAttempt, syncVideoAttempt, getVideoAttempt, videoHistory, shareFor, reportVideoQuestion, correctVideoAnswer, videoReports, episodeById, videoDb } from "./video-quizzes";
 
 function secret(request: Request) { return request.headers.get("cookie")?.split(";").map(s => s.trim()).find(s => s.startsWith("vq_guest="))?.slice(9); }
@@ -47,10 +47,14 @@ export async function videoApi(request: Request, guest: boolean) {
         const a = attempt();
         result = { attempt: syncVideoAttempt(a.id, player!, Number(body.position), body.drafts && typeof body.drafts === "object" ? body.drafts : {}, body.action === "submit" ? String(body.questionId) : undefined) }; break;
       }
+      case "jump": {
+        const a = attempt();
+        result = { attempt: jumpVideoAttempt(a.id, player!, Number(body.position), body.drafts && typeof body.drafts === "object" ? body.drafts : {}) }; break;
+      }
       case "report": { const a = attempt(); result = reportVideoQuestion(a.id, player!, String(body.questionId), String(body.comment || "")); break; }
       case "share": if (guest) throw new VideoError("Только ведущий", 403); result = { token: shareFor(String(body.quizId)) }; break;
       case "review": if (guest) throw new VideoError("Только ведущий", 403); result = { attempt: getVideoAttempt(String(body.attemptId), "owner", true), episode: attemptEpisode(String(body.attemptId), "owner", true) }; break;
-      case "correct": if (guest) throw new VideoError("Только ведущий", 403); result = { attempt: correctVideoAnswer(String(body.attemptId), String(body.questionId), { points: body.points, annulled: body.annulled, global: body.global, reason: String(body.reason || "") }) }; break;
+      case "correct": if (guest) throw new VideoError("Только ведущий", 403); result = { attempt: correctVideoAnswer(String(body.attemptId), String(body.questionId), { points: body.points, annulled: body.annulled, global: body.global, reason: String(body.reason || ""), reasonCode: body.reasonCode }) }; break;
       case "resolveReport": if (guest) throw new VideoError("Только ведущий", 403); videoDb().prepare("UPDATE video_reports SET status='resolved' WHERE id=?").run(String(body.reportId)); result = { ok: true }; break;
       default: throw new VideoError("Неизвестное действие");
     }

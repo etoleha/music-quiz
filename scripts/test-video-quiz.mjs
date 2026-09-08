@@ -58,7 +58,8 @@ try {
  const share = core.shareFor(fixture.id);
  let epoch = 1000;
  const fresh = (player = guestA.id) => core.startVideoAttempt(player, fixture.id, true, epoch++);
- const sync = (a, at, drafts = {}, submit = undefined, player = guestA.id) => core.syncVideoAttempt(a.id, player, at, drafts, submit, 1000000);
+ let playbackClock = 1000000;
+ const sync = (a, at, drafts = {}, submit = undefined, player = guestA.id) => core.syncVideoAttempt(a.id, player, at, drafts, submit, playbackClock += 100000);
  const row = (id, qid) => db.prepare('SELECT * FROM video_answers WHERE attempt_id=? AND question_id=?').get(id, qid);
  const api = (body, identity = guestA, extra = {}) => http.videoApi(new Request('https://quiz.test/g/video-api?share=' + share, { method: 'POST', headers: { host: 'quiz.test', origin: 'https://quiz.test', 'content-type': 'application/json', ...(identity ? { cookie: 'vq_guest=' + identity.secret } : {}), ...extra }, body: JSON.stringify(body) }), true);
 
@@ -85,6 +86,144 @@ try {
   assert.equal(core.scoreVideoAnswer(solo, solo.correct, 30), 1);
   assert.equal(core.scoreVideoAnswer(title, title.correct, 30), 1);
   assert.equal(questionMaximum(pair), 1.5); assert.equal(questionMaximum(chance), 2);
+ });
+ await test('personal artist accepts surname, transliteration and typo, including Plus1 and R7', () => {
+  const singer = { ...solo, correct: draft('Григорий Лепс') };
+  for (const value of ['Лепс', 'Leps', 'Григорий Лепс', 'Grigoriy Leps']) assert.equal(core.scoreVideoAnswer(singer, draft(value), 30), 1);
+  const plusOne = { ...solo, id: 'r6q10', correct: draft('Денис Майданов') };
+  for (const value of ['Майданов', 'Maydanov', 'Майдановв']) assert.equal(core.scoreVideoAnswer(plusOne, draft(value), 30), 1);
+  assert.equal(core.scoreVideoAnswer({ ...chance, correct: draft('Григорий Лепс') }, draft('Лепс'), 45), 2);
+  assert.equal(core.scoreVideoAnswer(singer, draft('Киркоров'), 30), 0);
+ });
+ await test('band names do not acquire personal surname aliases', () => {
+  for (const [name, partial] of [['Агата Кристи', 'Кристи'], ['Братья Грим', 'Грим']]) {
+   const group = { ...solo, fields: [{ key: 'artist', label: 'Группа' }], correct: draft(name) };
+   assert.equal(core.scoreVideoAnswer(group, draft(partial), 30), 0);
+   assert.equal(core.scoreVideoAnswer(group, draft(name), 30), 1);
+  }
+ });
+ await test('collaboration credits surname separately and both short artists in either order', () => {
+  const mixed = { ...pair, fields: [{ key: 'artist', label: 'Группа + исполнитель' }, pair.fields[1]], correct: draft('Би-2 и Григорий Лепс', pair.correct.title), artistParts: [['Би-2'], ['Григорий Лепс']] };
+  assert.equal(core.scoreVideoAnswer(mixed, draft('Лепс'), 30), .5);
+  assert.equal(core.scoreVideoAnswer(mixed, draft('Би-2'), 30), .5);
+  for (const value of ['Би-2 и Лепс', 'Leps + Bi-2', 'Лепс, Би-2']) assert.equal(core.scoreVideoAnswer(mixed, draft(value, pair.correct.title), 30), 1.5);
+  assert.equal(core.scoreVideoAnswer(mixed, draft('Лепс и Лепс'), 30), .5);
+ });
+ await test('two short synthetic band names earn full artist credit across collaboration separators', () => {
+  const shortBands = { ...pair, fields: [{ key: 'artist', label: 'Группа + группа' }, pair.fields[1]], correct: draft('Лад и Нота', pair.correct.title), artistParts: [['Лад'], ['Нота']] };
+  for (const separator of [' и ', ' + ', ' feat. ', ' ft. ', ' & ', ', ', ' / ', ' x ', ' and ']) {
+   assert.equal(core.scoreVideoAnswer(shortBands, draft(`Лад${separator}Нота`), 30), 1, separator);
+   assert.equal(core.scoreVideoAnswer(shortBands, draft(`Нота${separator}Лад`, pair.correct.title), 30), 1.5, separator);
+  }
+  for (const value of ['Лад', 'Нота', 'Лад + Лад', 'Нота и Нота', 'Лад + Иной']) assert.equal(core.scoreVideoAnswer(shortBands, draft(value), 30), .5, value);
+  assert.equal(core.scoreVideoAnswer(shortBands, draft('Иной + Чужой'), 30), 0);
+ });
+ await test('short synthetic band plus personal surname retains separate participant forms', () => {
+  const mixed = { ...pair, fields: [{ key: 'artist', label: 'Группа + исполнитель' }, pair.fields[1]], correct: draft('Такт feat. Антон Липов', pair.correct.title), artistParts: [['Такт'], ['Антон Липов']] };
+  for (const value of ['Такт и Липов', 'Такт + Липов', 'Такт feat. Антон Липов', 'Lipov & Takt', 'Липов, Такт']) assert.equal(core.scoreVideoAnswer(mixed, draft(value), 30), 1, value);
+  for (const value of ['Липов', 'Такт', 'Липов и Липов']) assert.equal(core.scoreVideoAnswer(mixed, draft(value), 30), .5, value);
+  assert.equal(core.scoreVideoAnswer(mixed, draft('Такт', pair.correct.title), 30), 1);
+ });
+ await test('two synthetic personal surnames receive full credit only when both participants are present', () => {
+  const singers = { ...pair, fields: [{ key: 'artist', label: 'Исполнитель + исполнительница' }, pair.fields[1]], correct: draft('Антон Липов и Мария Кедрова', pair.correct.title), artistParts: [['Антон Липов'], ['Мария Кедрова']] };
+  for (const value of ['Липов и Кедрова', 'Кедрова + Липов', 'Lipov feat. Kedrova']) assert.equal(core.scoreVideoAnswer(singers, draft(value), 30), 1, value);
+  assert.equal(core.scoreVideoAnswer(singers, draft('Липов'), 30), .5);
+  assert.equal(core.scoreVideoAnswer(singers, draft('Кедрова'), 30), .5);
+  assert.equal(core.scoreVideoAnswer(singers, draft('Липов feat. Липов'), 30), .5);
+ });
+ await test('explicit jump freezes crossed ordinary drafts, reveals at canonical chapter and keeps R7 manual', () => {
+  const a = fresh();
+  const first = core.jumpVideoAttempt(a.id, guestA.id, 35, { pair: pair.correct }, 2000);
+  assert.equal(first.position, 35); assert.equal(first.answers.pair.locked, true); assert.equal(first.answers.pair.points, 1.5);
+  const end = core.jumpVideoAttempt(a.id, guestA.id, 80, { pair: draft('Wrong'), chance: chance.correct }, 2100);
+  assert.equal(end.completed, true); assert.equal(end.answers.pair.points, 1.5);
+  assert.equal(end.answers.chance.locked, true); assert.equal(end.answers.chance.submitted, false); assert.equal(end.answers.chance.points, 0);
+ });
+ await test('jump accepts chapter boundaries only and invalid targets leave attempt untouched', () => {
+  for (const target of [0, 35, 40, 71, 80, 35.0005]) {
+   const a = fresh(); const result = core.jumpVideoAttempt(a.id, guestA.id, target, {}, 2000);
+   assert.equal(result.position, target === 35.0005 ? 35 : target);
+  }
+  const a = fresh(), before = JSON.stringify(core.getVideoAttempt(a.id, guestA.id));
+  for (const target of [-1, NaN, Infinity, 81, 30, 45, 35.01]) assert.throws(() => core.jumpVideoAttempt(a.id, guestA.id, target, { pair: pair.correct }, 2000), e => e.status === 400);
+  assert.equal(JSON.stringify(core.getVideoAttempt(a.id, guestA.id)), before);
+ });
+ await test('jump honors ownership before any answer, position or scoring mutation', () => {
+  const a = fresh(guestB.id), before = JSON.stringify(core.getVideoAttempt(a.id, guestB.id));
+  assert.throws(() => core.jumpVideoAttempt(a.id, guestA.id, 80, { pair: pair.correct }, 2000), e => e.status === 404);
+  assert.throws(() => core.jumpVideoAttempt(a.id, 'owner', 80, {}, 2000), e => e.status === 404);
+  assert.equal(JSON.stringify(core.getVideoAttempt(a.id, guestB.id)), before);
+ });
+ await test('ordinary playback continues after jump using updated baseline, further implicit skip fails', () => {
+  const a = core.startVideoAttempt(guestA.id, fixture.id, true, 1000);
+  core.jumpVideoAttempt(a.id, guestA.id, 40, {}, 1100);
+  assert.equal(core.syncVideoAttempt(a.id, guestA.id, 42, {}, undefined, 2100).position, 42);
+  assert.throws(() => core.syncVideoAttempt(a.id, guestA.id, 71, {}, undefined, 2200), e => e.status === 409);
+  assert.equal(core.getVideoAttempt(a.id, guestA.id).position, 42);
+  assert.equal(core.syncVideoAttempt(a.id, guestA.id, 43, {}, undefined, 3100).position, 43);
+ });
+ await test('backward chapter jump never reopens answers, hides earned score or changes completion', () => {
+  const a = fresh(); const end = core.jumpVideoAttempt(a.id, guestA.id, 80, { pair: pair.correct }, 2000);
+  const back = core.jumpVideoAttempt(a.id, guestA.id, 0, { pair: draft('Wrong') }, 2100);
+  assert.equal(back.position, 80); assert.equal(back.completed, true); assert.equal(back.score, end.score); assert.deepEqual(back.answers, end.answers);
+ });
+ await test('R7 button remains usable after jump, and a later jump preserves its original score', () => {
+  const a = fresh(); core.jumpVideoAttempt(a.id, guestA.id, 40, { chance: chance.correct }, 2000);
+  core.syncVideoAttempt(a.id, guestA.id, 40, { chance: draft('Северный ветер') }, 'chance', 2000);
+  const end = core.jumpVideoAttempt(a.id, guestA.id, 80, { chance: draft('Wrong') }, 2001);
+  assert.equal(end.answers.chance.points, 2); assert.equal(end.answers.chance.submittedAt, 40);
+ });
+ await test('jump validates the stored attempt revision rather than newly published chapter positions', () => {
+  const a = fresh(); const next = JSON.parse(JSON.stringify(fixture)); next.revision = 'jump-v2'; next.rounds[1].start = 41;
+  writeFileSync(fixturePath, JSON.stringify(next));
+  try {
+   assert.throws(() => core.jumpVideoAttempt(a.id, guestA.id, 41, {}, 2000), e => e.status === 400);
+   assert.equal(core.jumpVideoAttempt(a.id, guestA.id, 40, {}, 2000).position, 40);
+  } finally { saveFixture(); }
+ });
+ await test('accepted-answer shortcut requires explicit code plus points and writes a readable audit reason', () => {
+  const a = fresh(); core.jumpVideoAttempt(a.id, guestA.id, 35, {}, 2000);
+  const result = core.correctVideoAnswer(a.id, 'pair', { points: 1.5, reasonCode: 'accepted-answer' });
+  assert.equal(result.answers.pair.points, 1.5); assert.equal(result.answers.pair.automaticPoints, 0);
+  const audit = db.prepare('SELECT reason,after_json FROM video_audit WHERE attempt_id=?').get(a.id);
+  assert.equal(audit.reason, 'Ответ принят ведущим'); assert.equal(JSON.parse(audit.after_json).reasonCode, 'accepted-answer');
+  assert.equal(JSON.parse(audit.after_json).reason, audit.reason);
+ });
+ await test('accepted-answer cannot bypass annulment, global, numeric or reveal validation', () => {
+  const a = fresh(); core.jumpVideoAttempt(a.id, guestA.id, 35, {}, 2000);
+  for (const changes of [{ points: 1 }, { points: 1, reasonCode: 'other' }, { reasonCode: 'accepted-answer' }, { annulled: true, reasonCode: 'accepted-answer' }, { global: true, points: 1, reasonCode: 'accepted-answer' }, { annulled: false, points: 1, reasonCode: 'accepted-answer' }, { points: .25, reasonCode: 'accepted-answer' }, { points: NaN, reasonCode: 'accepted-answer' }, { points: 2, reasonCode: 'accepted-answer' }]) assert.throws(() => core.correctVideoAnswer(a.id, 'pair', changes));
+  const hidden = fresh(); assert.throws(() => core.correctVideoAnswer(hidden.id, 'pair', { points: 1, reasonCode: 'accepted-answer' }), e => e.status === 409);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM video_audit WHERE attempt_id=?').get(a.id).n, 0);
+ });
+ await test('historical strict zero gains surname credit on read/history while preserving override and annulment', () => {
+  const historical = JSON.parse(JSON.stringify(fixture)); historical.revision = 'historical-surname'; historical.rounds[0].questions[1].correct = draft('Денис Майданов');
+  writeFileSync(fixturePath, JSON.stringify(historical));
+  let a;
+  try { a = fresh(); core.jumpVideoAttempt(a.id, guestA.id, 35, { solo: draft('Майданов') }, 2000); }
+  finally { saveFixture(); }
+  // Simulate the persisted result from the previously stricter scorer.
+  db.prepare('UPDATE video_answers SET automatic_points=0 WHERE attempt_id=? AND question_id=?').run(a.id, 'solo');
+  const read = core.getVideoAttempt(a.id, guestA.id);
+  assert.equal(read.answers.solo.automaticPoints, 1); assert.equal(read.answers.solo.points, 1);
+  assert.equal(core.videoHistory(guestA.id).find(h => h.id === a.id).score, 1);
+  assert.equal(row(a.id, 'solo').automatic_points, 0); // Reading is not a destructive migration.
+  const manual = core.correctVideoAnswer(a.id, 'solo', { points: .5, reason: 'Сохраняем ручной зачёт' });
+  assert.equal(manual.answers.solo.automaticPoints, 1); assert.equal(manual.answers.solo.points, .5);
+  const annulled = core.correctVideoAnswer(a.id, 'solo', { annulled: true, reason: 'Личная отмена' });
+  assert.equal(annulled.answers.solo.automaticPoints, 1); assert.equal(annulled.answers.solo.points, 0);
+  const restored = core.correctVideoAnswer(a.id, 'solo', { annulled: false, reason: 'Возвращаем' });
+  assert.equal(restored.answers.solo.points, .5);
+  core.correctVideoAnswer(a.id, 'solo', { global: true, annulled: true, reason: 'Общая отмена' });
+  assert.equal(core.getVideoAttempt(a.id, guestA.id).answers.solo.points, 0);
+  core.correctVideoAnswer(a.id, 'solo', { global: true, annulled: false, reason: 'Возвращаем общий' });
+  assert.equal(core.getVideoAttempt(a.id, guestA.id).answers.solo.points, .5);
+ });
+ await test('historical reevaluation never lowers awarded score or awards an unsubmitted R7 draft', () => {
+  const a = fresh(); core.jumpVideoAttempt(a.id, guestA.id, 80, { chance: chance.correct }, 2000);
+  db.prepare('UPDATE video_answers SET automatic_points=1,artist=? WHERE attempt_id=? AND question_id=?').run('Другой ответ', a.id, 'solo');
+  const read = core.getVideoAttempt(a.id, guestA.id);
+  assert.equal(read.answers.solo.automaticPoints, 1); assert.equal(read.answers.solo.points, 1);
+  assert.equal(read.answers.chance.automaticPoints, 0); assert.equal(read.answers.chance.points, 0); assert.equal(read.answers.chance.submitted, false);
  });
  await test('ordinary drafts auto-lock at close and remain invisible until reveal', () => {
   const a = fresh(); const before = sync(a, 29.99, { pair: pair.correct });
@@ -164,7 +303,7 @@ try {
  await test('guest HTTP forbids review/correct/share/resolveReport actions', async () => {
   const a = fresh(); sync(a, 35);
   for (const action of ['review', 'correct', 'share', 'resolveReport']) {
-   const response = await api({ action, attemptId: a.id, questionId: 'pair', points: 1.5, reason: 'QA', quizId: fixture.id }); assert.equal(response.status, 403);
+   const response = await api({ action, attemptId: a.id, questionId: 'pair', points: 1.5, reasonCode: 'accepted-answer', quizId: fixture.id }); assert.equal(response.status, 403);
   }
  });
  await test('HTTP JSON errors and foreign Origin are rejected', async () => {
