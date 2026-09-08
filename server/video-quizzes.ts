@@ -141,7 +141,7 @@ export function getVideoAttempt(id: string, player: string, admin = false): Vide
       ...(visible ? { points, automaticPoints, annulled, correct: q.correct, album: q.album, year: q.year, coverArtist: q.coverArtist } : {}) };
   }
   const p = db.prepare("SELECT name FROM video_players WHERE id=?").get(a.player_id) as { name: string } | undefined;
-  return { id, quizId: a.quiz_id, name: p?.name || "Ведущий", position: a.position, score, maxScore, completed: !!a.completed, answers };
+  return { id, quizId: a.quiz_id, name: a.player_id === "owner" ? "Алексей" : p?.name || "Гость", position: a.position, score, maxScore, completed: !!a.completed, answers };
 }
 export function syncVideoAttempt(id: string, player: string, requestedPosition: number, drafts: Record<string, VideoDraft>, submitQuestion?: string, now = Date.now()) {
   return advanceVideoAttempt(id, player, requestedPosition, drafts, submitQuestion, now, false);
@@ -219,7 +219,7 @@ export function reportVideoQuestion(id: string, player: string, questionId: stri
   return { id: reportId, ...result, status: "review" };
 }
 export function videoReports() {
-  return videoDb().prepare(`SELECT r.id,r.attempt_id AS attemptId,r.question_id AS questionId,r.comment,r.category,r.conclusion,r.status,r.created_at AS createdAt,COALESCE(p.name,'Ведущий') AS name FROM video_reports r JOIN video_attempts a ON a.id=r.attempt_id LEFT JOIN video_players p ON p.id=a.player_id ORDER BY r.created_at DESC LIMIT 300`).all();
+  return videoDb().prepare(`SELECT r.id,r.attempt_id AS attemptId,r.question_id AS questionId,r.comment,r.category,r.conclusion,r.status,r.created_at AS createdAt,CASE WHEN a.player_id='owner' THEN 'Алексей' ELSE COALESCE(p.name,'Гость') END AS name FROM video_reports r JOIN video_attempts a ON a.id=r.attempt_id LEFT JOIN video_players p ON p.id=a.player_id ORDER BY r.created_at DESC LIMIT 300`).all();
 }
 export function correctVideoAnswer(id: string, questionId: string, changes: { points?: number; annulled?: boolean; global?: boolean; reason?: string; reasonCode?: string }) {
   const db = videoDb(), a = ownAttempt(db, id, "owner", true), q = episodeForAttempt(db, a).rounds.flatMap(r => r.questions).find(q => q.id === questionId);

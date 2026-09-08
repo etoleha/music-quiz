@@ -20,7 +20,7 @@ export async function videoApi(request: Request, guest: boolean) {
       if (!body || Array.isArray(body) || typeof body !== "object") throw new VideoError("Ожидается объект запроса");
     }
     const share = guest ? sharedEpisode(String(url.searchParams.get("share") || "")) : null;
-    let identity = guest ? guestIdentity(secret(request)) : { id: "owner", name: "Ведущий" };
+    let identity = guest ? guestIdentity(secret(request)) : { id: "owner", name: "Алексей" };
     let newSecret: string | undefined;
     if (guest && !identity && request.method === "POST" && body.action === "start") {
       const created = createGuest(String(body.name || "Гость")); identity = created; newSecret = created.secret;
