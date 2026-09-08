@@ -117,7 +117,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
       if (!player || !workspace) return;
       gameRef.current?.style.setProperty("--vq-player-space", `${player.offsetHeight + 20}px`);
       const controls = [".vq-round-nav", ".vq-player-controls", ".vq-jump-controls"].reduce((height, selector) => height + (player.querySelector<HTMLElement>(selector)?.offsetHeight || 0), 20);
-      gameRef.current?.style.setProperty("--vq-fit-width", `${Math.max(160, workspace.clientHeight - controls) * 16 / 9}px`);
+      gameRef.current?.style.setProperty("--vq-fit-width", `${Math.max(60, workspace.clientHeight - controls) * 16 / 9}px`);
       const field = document.activeElement;
       if (field instanceof HTMLInputElement && field.closest(".vq-fields")) requestAnimationFrame(() => keepFieldVisible(field));
     };
