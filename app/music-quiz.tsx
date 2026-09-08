@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getQuiz, quizzes, type Quiz, type Track } from "./quiz-data";
 import { countTitleWords, isAccepted, isArtistAccepted } from "./scoring";
 import { scoreToAnswerPoints, trackMaxScore, weightedAnswerScore } from "../shared/score-policy.ts";
+import VideoQuiz from "./video-quiz";
 
 type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void; setVolume(volume: number): void };
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean; loadErrorCode?: number };
@@ -137,6 +138,7 @@ type MusicQuizProps = {
 
 export default function MusicQuiz({ initialQuizId, guestMode = false, comparison = null, excludedTrackKeys = [] }: MusicQuizProps = {}) {
   const [screen, setScreen] = useState<"home" | "quiz" | "result">("home");
+  const [homeTab, setHomeTab] = useState("quizzes");
   const [activeQuiz, setActiveQuiz] = useState<Quiz | null>(null);
   const [order, setOrder] = useState<Track[]>([]);
   const [index, setIndex] = useState(0);
@@ -595,7 +597,8 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     const handler = (event: KeyboardEvent) => {
       if (event.repeat) return;
       const tag = (document.activeElement as HTMLElement | null)?.tagName;
-      const typing = tag === "INPUT" || tag === "TEXTAREA";
+      const typing = tag === "INPUT" || tag === "TEXTAREA" || (document.activeElement as HTMLElement | null)?.isContentEditable;
+      if (screen === "home" && (homeTab !== "quizzes" || typing)) return;
 
       if (screen === "quiz") {
         if (event.code === "Space" && (event.ctrlKey || !typing)) {
@@ -643,7 +646,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     };
     document.addEventListener("keydown", handler);
     return () => document.removeEventListener("keydown", handler);
-  }, [activeQuiz, artist, guestMode, index, leaveResults, mistakeTracks, order.length, playClip, playReviewClip, review, reviewIndex, screen, title]);
+  }, [activeQuiz, artist, guestMode, homeTab, index, leaveResults, mistakeTracks, order.length, playClip, playReviewClip, review, reviewIndex, screen, title]);
 
   const totalPoints = useMemo(() => attempts.reduce((sum, attempt) => sum + attempt.score, 0), [attempts]);
   const totalMax = useMemo(() => attempts.reduce((sum, attempt) => sum + attempt.maxScore, 0), [attempts]);
@@ -708,11 +711,12 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   }
 
   return <main className="shell"><header className="topbar"><div className="wordmark">НЕ ПО ПРИПЕВУ</div><Badge variant="outline">личная коллекция</Badge></header>
-    <Tabs defaultValue="quizzes" className="workspace"><TabsList className="nav-tabs"><TabsTrigger value="quizzes"><Library /> Квизы</TabsTrigger><TabsTrigger value="stats"><BarChart3 /> Статистика</TabsTrigger></TabsList>
+    <Tabs value={homeTab} onValueChange={setHomeTab} className="workspace"><TabsList className="nav-tabs"><TabsTrigger value="quizzes"><Library /> Квизы</TabsTrigger><TabsTrigger value="video"><CirclePlay /> Видеоквизы</TabsTrigger><TabsTrigger value="stats"><BarChart3 /> Статистика</TabsTrigger></TabsList>
       <TabsContent value="quizzes" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Коллекция</p><h1>Выбери следующий заход</h1></div><div className="library-total">{quizzes.length}<small>квиза</small></div></div>
         <div className="quiz-grid"><article className="quiz-card mistakes-card"><div className="card-index">↻</div><div className="card-badges"><Badge>персональный</Badge><Badge variant="outline">до 30 треков</Badge></div><h2>Работа над ошибками</h2><p>{mistakeTracks.length ? `${mistakeTracks.length} песен ждут повторения.` : "Ошибок для повторения нет — все проблемные песни уже закреплены."} Чтобы закрыть ошибку, нужно полностью угадать песню два раза подряд.</p><div className="card-meta"><span><RotateCcw /> Сначала песни без успешного повтора</span></div><Button size="lg" disabled={!mistakeTracks.length} onClick={beginMistakes}>Начать · 0 <ChevronRight /></Button></article>{quizzes.map((quiz, quizIndex) => { const latest = attempts.find((attempt) => attempt.quizId === quiz.id); const min = Math.min(...quiz.tracks.map((item) => item.duration)); const max = Math.max(...quiz.tracks.map((item) => item.duration)); return <article className="quiz-card" key={quiz.id}><div className="card-index">{String(quizzes.length - quizIndex).padStart(2, "0")}</div><div className="card-badges"><Badge>{quiz.level}</Badge><Badge variant="outline">{quiz.tracks.length} трека</Badge></div><h2>{quiz.title}</h2><div className="card-meta"><span><Headphones /> {min}–{max} сек.</span>{latest && <span><Check /> Последний: {latest.score}/{latest.maxScore}</span>}</div><div className="card-actions"><Button size="lg" onClick={() => begin(quiz)}>Начать · {quizIndex + 1} <ChevronRight /></Button><Button size="icon" variant="outline" aria-label={`Поделиться квизом ${quiz.title}`} title="Поделиться" onClick={() => void shareQuiz(quiz)}>{sharedQuizId === quiz.id ? <Check /> : <Share2 />}</Button></div></article>; })}</div>
         <p className="collection-note">Новые подборки будут появляться здесь отдельными квизами. Старые результаты сохраняются. <a href="/catalog">Открыть общую базу песен →</a></p>
       </TabsContent>
+      <TabsContent value="video" className="tab-content"><VideoQuiz /></TabsContent>
       <TabsContent value="stats" className="tab-content"><div className="section-heading"><div><p className="eyebrow">За всё время</p><h1>Твоя музыкальная форма</h1></div></div><div className="stats-grid"><article className="stat-card accent"><strong>{percentage}%</strong><span>точность</span></article><article className="stat-card"><strong>{attempts.length}</strong><span>квизов пройдено</span></article><article className="stat-card"><strong>{totalPoints}</strong><span>баллов набрано</span></article></div>
         <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => { const gap = item.artistMisses && item.titleMisses ? "не узнаны исполнитель и название" : item.artistMisses ? "не узнан исполнитель" : "не вспомнено название"; return <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title} · {gap} · ошибок: {item.misses}</small></div><Badge variant="outline">зачётов: {item.successes}/{item.requiredSuccesses}</Badge></div>; }) : <p className="empty-copy">Очередь пуста: все ошибочные песни угаданы два раза подряд.</p>}</section></div>
       </TabsContent></Tabs>

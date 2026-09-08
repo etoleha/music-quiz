@@ -10,6 +10,22 @@ git pull --ff-only origin main
 commit_sha=$(git rev-parse HEAD)
 release_dir="$releases_dir/$commit_sha"
 
+# Video is staged separately from Git. Verify it before publishing the matching UI.
+if [ -f deploy/video-media.sha256 ]; then
+  install -d -m 755 /opt/music-quiz/media
+  while read -r expected_hash media_name; do
+    [[ "$expected_hash" =~ ^[a-f0-9]{64}$ && "$media_name" =~ ^[a-zA-Z0-9_-]+\.mp4$ ]] || exit 1
+    destination="/opt/music-quiz/media/$media_name"
+    if ! printf '%s  %s\n' "$expected_hash" "$destination" | sha256sum --check --status 2>/dev/null; then
+      staged="/var/tmp/music-quiz-upload/$media_name"
+      printf '%s  %s\n' "$expected_hash" "$staged" | sha256sum --check --status
+      install -m 644 "$staged" "$destination.pending"
+      printf '%s  %s\n' "$expected_hash" "$destination.pending" | sha256sum --check --status
+      mv -f "$destination.pending" "$destination"
+    fi
+  done < deploy/video-media.sha256
+fi
+
 if [ -f "$release_dir/server.js" ]; then
   exit 0
 fi

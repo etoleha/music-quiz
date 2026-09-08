@@ -3,6 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "standalone",
   outputFileTracingIncludes: {
+    "/api/video-*": ["./server/video-data/*.json"],
+    "/g/video-*": ["./server/video-data/*.json"],
     "/catalog": [
       "./data/song-database.json",
       "./data/song-database.json.gz",
