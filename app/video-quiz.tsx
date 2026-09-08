@@ -97,12 +97,23 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     attemptRef.current = null;
   };
   function openDialog(value: Dialog) { dialogOrigin.current = document.activeElement as HTMLElement; setCorrectionReason("accepted-answer"); setDialog(value); }
+  function keepFieldVisible(field: HTMLInputElement) {
+    if (document.activeElement !== field) return;
+    const rect = field.getBoundingClientRect();
+    const top = Math.min((playerRef.current?.getBoundingClientRect().bottom ?? 0) + 12, window.innerHeight - rect.height - 12);
+    if (rect.top < top) window.scrollBy({ top: rect.top - top, behavior: "instant" });
+    else if (rect.bottom > window.innerHeight - 12) window.scrollBy({ top: rect.bottom - window.innerHeight + 12, behavior: "instant" });
+  }
   useEffect(() => {
     if (!attempt?.id || !playerRef.current || !sentinelRef.current) return;
     setPinned(false); window.scrollTo({ top: 0, behavior: "instant" });
     const observer = new IntersectionObserver(([entry]) => setPinned(!entry.isIntersecting && entry.boundingClientRect.top < 8), { rootMargin: "-8px 0px 0px 0px" });
     observer.observe(sentinelRef.current);
-    const size = new ResizeObserver(([entry]) => gameRef.current?.style.setProperty("--vq-player-space", `${entry.borderBoxSize?.[0]?.blockSize + 28 || playerRef.current!.offsetHeight + 28}px`));
+    const size = new ResizeObserver(([entry]) => {
+      gameRef.current?.style.setProperty("--vq-player-space", `${entry.borderBoxSize?.[0]?.blockSize + 28 || playerRef.current!.offsetHeight + 28}px`);
+      const field = document.activeElement;
+      if (field instanceof HTMLInputElement && field.closest(".vq-fields")) requestAnimationFrame(() => keepFieldVisible(field));
+    });
     size.observe(playerRef.current);
     return () => { observer.disconnect(); size.disconnect(); };
   }, [attempt?.id]);
@@ -254,9 +265,9 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
       const questionEnd = round.questions[q.number]?.start ?? round.close;
       const active = q.chances.length ? activeChanceQuestion?.id === q.id : position >= q.start && position < questionEnd;
       const currentChance = chanceAt(q, Math.max(position, attempt.position, highWater.current));
-      return <article id={`video-question-${q.id}`} key={q.id} className={`vq-answer-row ${active ? "is-active" : ""} ${revealed ? "is-revealed" : ""}`}><span className="vq-question-number">{String(q.number).padStart(2, "0")}</span><div className="vq-answer-content"><div className="vq-fields">{q.fields.map(field => <label key={field.key}><input autoComplete="off" spellCheck={false} maxLength={160} aria-label={`Вопрос ${q.number}: ${field.label}`} value={drafts[q.id]?.[field.key] || ""} disabled={locked || !!q.chances.length && !active} onChange={e => change(q.id, field.key, e.target.value)} placeholder={field.label} /></label>)}</div>
+      return <article id={`video-question-${q.id}`} key={q.id} className={`vq-answer-row ${active ? "is-active" : ""} ${revealed ? "is-revealed" : ""}`}><span className="vq-question-number">{String(q.number).padStart(2, "0")}</span><div className="vq-answer-content"><div className="vq-fields">{q.fields.map(field => <label key={field.key}><input autoComplete="off" spellCheck={false} maxLength={160} aria-label={`Вопрос ${q.number}: ${field.label}`} value={drafts[q.id]?.[field.key] || ""} disabled={locked || !!q.chances.length && !active} onFocus={e => { const input = e.currentTarget; requestAnimationFrame(() => keepFieldVisible(input)); }} onChange={e => change(q.id, field.key, e.target.value)} placeholder={field.label} /></label>)}</div>
         {q.chances.length > 0 && !revealed && <div className="vq-chance-line"><span>{answer.submitted ? `Отправлено на ${time(answer.submittedAt || 0)}` : locked ? "Ответ не отправлен" : currentChance ? `Сейчас можно получить ${points(currentChance.points)} балл${currentChance.points === 1 ? "" : "а"}` : "Ожидает своего фрагмента"}</span><button className="vq-primary" disabled={locked || !active || saving || !drafts[q.id]?.artist.trim()} onClick={() => void submit(q.id)}><Send size={14} /> Отправить</button></div>}
-        {revealed && <div className="vq-reveal"><strong>{q.fields.map(f => answer.correct?.[f.key]).filter(Boolean).join(" — ")}</strong><small>{[answer.year ? `Год песни: ${answer.year}` : "", answer.album ? `Альбом: ${answer.album}` : "", answer.coverArtist ? `Кавер: ${answer.coverArtist}` : ""].filter(Boolean).join(" · ")}</small><div className="vq-row-tools"><button onClick={() => { openDialog({ kind: "report", questionId: q.id }); setComment(""); }}><Flag size={14} /> Сообщить о проблеме</button>{!guest && <><select aria-label={`Исправить баллы за вопрос ${q.number}`} value={answer.points} onChange={e => { openDialog({ kind: "correct", questionId: q.id, points: Number(e.target.value) }); setComment(""); }}>{Array.from({ length: questionMaximum(q) * 2 + 1 }, (_, i) => i / 2).map(n => <option value={n} key={n}>{points(n)} балла</option>)}</select><button onClick={() => { openDialog({ kind: "correct", questionId: q.id, annulled: !answer.annulled }); setComment(""); }}>{answer.annulled ? "Вернуть вопрос" : "Аннулировать"}</button></>}</div></div>}
+        {revealed && <div className="vq-reveal"><strong>{q.fields.map(f => answer.correct?.[f.key]).filter(Boolean).join(" — ")}</strong>{answer.coverArtist && <small>Кавер: {answer.coverArtist}</small>}<div className="vq-row-tools"><button onClick={() => { openDialog({ kind: "report", questionId: q.id }); setComment(""); }}><Flag size={14} /> Сообщить о проблеме</button>{!guest && <><select aria-label={`Исправить баллы за вопрос ${q.number}`} value={answer.points} onChange={e => { openDialog({ kind: "correct", questionId: q.id, points: Number(e.target.value) }); setComment(""); }}>{Array.from({ length: questionMaximum(q) * 2 + 1 }, (_, i) => i / 2).map(n => <option value={n} key={n}>{points(n)} балла</option>)}</select><button onClick={() => { openDialog({ kind: "correct", questionId: q.id, annulled: !answer.annulled }); setComment(""); }}>{answer.annulled ? "Вернуть вопрос" : "Аннулировать"}</button></>}</div></div>}
       </div><span className={`vq-row-points ${answer.annulled ? "void" : ""}`}>{revealed ? answer.annulled ? "×" : points(answer.points!) : locked ? <LockKeyhole size={16} /> : "·"}</span></article>;
     })}</div>
     {dialog && <div className="vq-modal-backdrop" onClick={() => { if (!dialogSubmitting.current) setDialog(null); }}>

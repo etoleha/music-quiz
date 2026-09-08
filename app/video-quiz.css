@@ -53,3 +53,12 @@
 .vq-fields input{margin-top:0}
 .vq-question-number,.vq-row-points{padding-top:10px}
 @media(max-width:600px){.vq-player-layout.is-pinned{width:100%}}
+
+.vq-answer-row{padding:10px 14px;gap:12px}
+.vq-game .vq-fields input{min-height:40px;padding:6px 11px;border-radius:6px;line-height:1.5}
+.vq-fields{gap:12px}.vq-question-number,.vq-row-points{padding-top:5px}
+.vq-reveal{display:flex;align-items:center;gap:8px 16px;flex-wrap:wrap;padding-top:5px}
+.vq-reveal>strong{font-size:16px;line-height:1.4}.vq-reveal>small{font-size:13px;margin:0}
+.vq-row-tools{margin:0 0 0 auto;gap:12px}.vq-row-tools button,.vq-row-tools select{font-size:13px;padding:3px 4px;min-height:28px}
+.vq-chance-line{margin-top:5px}.vq-chance-line button{padding:6px 12px}
+@media(max-width:600px){.vq-answer-row{padding:9px 10px}.vq-fields{gap:6px}.vq-row-tools{margin-left:0;gap:8px}}
