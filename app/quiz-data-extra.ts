@@ -10,6 +10,7 @@ import verifiedRelease08 from "../data/quiz-release-new-rules-08.json";
 import verifiedRelease09 from "../data/quiz-release-new-rules-09.json";
 import verifiedRelease10 from "../data/quiz-release-new-rules-10.json";
 import verifiedRelease11 from "../data/quiz-release-new-rules-11.json";
+import verifiedRelease12 from "../data/quiz-release-new-rules-12.json";
 
 const performerForms: Partial<Record<string, Track["artistForm"]>> = {
   "Александр Барыкин": "Исполнитель",
@@ -475,7 +476,7 @@ const extraTrack = (youtubeId: string, artist: string, title: string, start: num
   };
 };
 
-type VerifiedReleaseTrack = (typeof verifiedRelease.tracks)[number] | (typeof verifiedRelease02.tracks)[number] | (typeof verifiedRelease03.tracks)[number] | (typeof verifiedRelease04.tracks)[number] | (typeof verifiedRelease05.tracks)[number] | (typeof verifiedRelease06.tracks)[number] | (typeof verifiedRelease07.tracks)[number] | (typeof verifiedRelease08.tracks)[number] | (typeof verifiedRelease09.tracks)[number] | (typeof verifiedRelease10.tracks)[number] | (typeof verifiedRelease11.tracks)[number];
+type VerifiedReleaseTrack = (typeof verifiedRelease.tracks)[number] | (typeof verifiedRelease02.tracks)[number] | (typeof verifiedRelease03.tracks)[number] | (typeof verifiedRelease04.tracks)[number] | (typeof verifiedRelease05.tracks)[number] | (typeof verifiedRelease06.tracks)[number] | (typeof verifiedRelease07.tracks)[number] | (typeof verifiedRelease08.tracks)[number] | (typeof verifiedRelease09.tracks)[number] | (typeof verifiedRelease10.tracks)[number] | (typeof verifiedRelease11.tracks)[number] | (typeof verifiedRelease12.tracks)[number];
 const verifiedReleaseTrack = (song: VerifiedReleaseTrack): Track => ({
   key: `${song.artist}—${song.title}`.toLocaleLowerCase("ru-RU"),
   youtubeId: song.youtube.videoId,
@@ -500,6 +501,13 @@ const verifiedReleaseTrack = (song: VerifiedReleaseTrack): Track => ({
 });
 
 export const extraQuizzes: Quiz[] = [
+  {
+    id: verifiedRelease12.quiz.id,
+    title: verifiedRelease12.quiz.title,
+    level: verifiedRelease12.quiz.level,
+    published: verifiedRelease12.quiz.published,
+    tracks: verifiedRelease12.tracks.map(verifiedReleaseTrack),
+  },
   {
     id: verifiedRelease11.quiz.id,
     title: verifiedRelease11.quiz.title,
