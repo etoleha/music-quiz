@@ -5,11 +5,14 @@ import { BarChart3, Check, ChevronRight, CirclePlay, Disc3, ExternalLink, Flag, 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { getQuiz, quizzes, type Quiz, type Track } from "./quiz-data";
 import { countTitleWords, isAccepted, isArtistAccepted } from "./scoring";
 import { scoreToAnswerPoints, trackMaxScore, weightedAnswerScore } from "../shared/score-policy.ts";
 import VideoQuiz from "./video-quiz";
+import SiteHeader, { type SiteSection } from "./site-header";
+import TrackReferenceCard, { type ArtistInfo } from "./track-reference-card";
+import "./site-design.css";
 
 type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void; setVolume(volume: number): void };
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean; loadErrorCode?: number };
@@ -18,26 +21,6 @@ type Attempt = { id: string; quizId: string; quizTitle: string; score: number; m
 type WeakTrack = { trackKey: string; artist: string; title: string; successes: number; requiredSuccesses: number; misses: number; artistMisses: number; titleMisses: number };
 type ClipPlayback = { trackKey: string; elapsed: number; duration: number; context: "quiz" | "review" };
 type ActiveClip = ClipPlayback & { start: number; started: boolean };
-type ArtistInfo = {
-  status: "loading" | "ready" | "error";
-  name?: string;
-  country?: string;
-  activeYears?: string;
-  artistUrl?: string;
-  releaseYear?: number;
-  releaseYearStatus?: "candidate" | "verified";
-  versionYear?: number;
-  album?: { title: string; kind?: string; year?: number; coverUrl?: string; sourceUrl?: string };
-  members?: Array<{ name: string; roles?: string[]; role?: string; since?: string; highlighted?: boolean }>;
-  image?: { url: string; attribution?: string; license?: string; licenseUrl?: string; sourceUrl?: string };
-  facts?: Array<{ text: string; sourceUrl?: string }>;
-  credits?: Array<{ role: string; names: string[] }>;
-  soundtrack?: { title: string; kind?: string; year?: number; sourceUrl?: string };
-  originalRecording?: { artist: string; title?: string; year?: number; sourceUrl: string };
-  difficulty?: { band: "recognizable" | "middle" | "deep"; score: number; explanation: string; basis?: string[] };
-  verification?: { status: "verified" | "published"; verifiedChecks: number; totalChecks: number };
-  sources?: Array<{ provider: string; url: string }>;
-};
 
 declare global {
   interface Window {
@@ -78,37 +61,6 @@ const formatClipTime = (seconds: number) => {
   return `${Math.floor(safeSeconds / 60)}:${String(safeSeconds % 60).padStart(2, "0")}`;
 };
 
-const difficultyLabel = { recognizable: "знакомая", middle: "средняя", deep: "сложная" } as const;
-const releaseKindLabel = (kind?: string) => ({ album: "альбом", single: "сингл", soundtrack: "саундтрек", archive: "архивная запись", release: "релиз" }[kind || ""] || "релиз");
-
-function TrackReferenceCard({ info, track }: { info?: ArtistInfo; track: Track }) {
-  if (!info || info.status === "loading") return <div className="artist-info loading"><span className="artist-info-placeholder">Собираю проверенную карточку песни…</span></div>;
-  if (info.status === "error") return <div className="artist-info error"><span className="artist-info-placeholder">Дополнительная справка для этой песни пока готовится.</span></div>;
-  const sources = [...new Map((info.sources || []).map((source) => [source.url, source])).values()].slice(0, 4);
-  const yearLine = info.releaseYear || track.releaseYear;
-  return <div className="artist-info ready">
-    <div className="reference-media">
-      {info.image?.url && <figure className="artist-reference-image">{info.image.sourceUrl ? <a className="reference-image-link" href={info.image.sourceUrl} target="_blank" rel="noreferrer"><img src={info.image.url} alt={`Фото: ${track.artist}`} loading="lazy" /><span>Фото исполнителя <ExternalLink /></span></a> : <><img src={info.image.url} alt={`Фото: ${track.artist}`} loading="lazy" /><span>Фото исполнителя</span></>}</figure>}
-      {info.album?.coverUrl && <figure className="album-reference-image">{info.album.sourceUrl ? <a className="reference-image-link" href={info.album.sourceUrl} target="_blank" rel="noreferrer"><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><span>{releaseKindLabel(info.album.kind)} <ExternalLink /></span></a> : <><img src={info.album.coverUrl} alt={`Обложка релиза ${info.album.title}`} loading="lazy" /><span>{releaseKindLabel(info.album.kind)}</span></>}</figure>}
-    </div>
-    <div className="reference-content">
-      <div className="reference-topline">
-        {info.verification && <span className="verified-mark"><ShieldCheck /> Проверено {info.verification.verifiedChecks}/{info.verification.totalChecks}</span>}
-        {info.difficulty && <span className={`difficulty-mark is-${info.difficulty.band}`}><Gauge /> {difficultyLabel[info.difficulty.band]} · {info.difficulty.score}/100</span>}
-      </div>
-      <div className="reference-grid">
-        <section><h4><Disc3 /> Релиз</h4><p>{yearLine ? <>{info.releaseYearStatus === "candidate" ? "Около " : ""}<strong>{yearLine}</strong> год</> : "Год уточняется"}{info.versionYear && info.versionYear !== yearLine ? <> · звучит версия <strong>{info.versionYear}</strong> года</> : null}</p>{info.album && <p>{releaseKindLabel(info.album.kind)} «{info.album.title}»{info.album.year && info.album.year !== yearLine ? ` · ${info.album.year}` : ""}</p>}</section>
-        {info.members?.length ? <section className="lineup-section"><h4><UsersRound /> Участники</h4><div className="lineup-list">{info.members.map((member) => <span className={member.highlighted ? "is-highlighted" : ""} key={`${member.name}-${member.role || member.roles?.join()}`}><b>{member.name}</b>{member.role || member.roles?.join(", ") ? <small>{member.role || member.roles?.join(", ")}</small> : null}</span>)}</div></section> : null}
-        {info.credits?.length ? <section><h4><Sparkles /> Авторы</h4>{info.credits.map((credit) => <p key={`${credit.role}-${credit.names.join()}`}><b>{credit.role}:</b> {credit.names.join(", ")}</p>)}</section> : null}
-        {info.soundtrack ? <section><h4><Music2 /> OST</h4><p>{info.soundtrack.sourceUrl ? <a href={info.soundtrack.sourceUrl} target="_blank" rel="noreferrer">{info.soundtrack.title} <ExternalLink /></a> : info.soundtrack.title}{info.soundtrack.year ? ` · ${info.soundtrack.year}` : ""}</p></section> : null}
-        {info.originalRecording ? <section><h4><History /> Оригинал</h4><p><a href={info.originalRecording.sourceUrl} target="_blank" rel="noreferrer">{info.originalRecording.artist}{info.originalRecording.title ? ` — ${info.originalRecording.title}` : ""} <ExternalLink /></a>{info.originalRecording.year ? ` · ${info.originalRecording.year}` : ""}</p></section> : null}
-      </div>
-      {info.facts?.map((fact) => <p className="artist-fact" key={fact.text}>{fact.text}{fact.sourceUrl && <a href={fact.sourceUrl} target="_blank" rel="noreferrer" aria-label="Источник факта"><ExternalLink /></a>}</p>)}
-      {(sources.length || info.artistUrl) ? <div className="reference-sources"><span>Источники:</span>{sources.map((source, index) => <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.provider === "verification" ? `проверка ${index + 1}` : `источник ${index + 1}`} <ExternalLink /></a>)}{!sources.length && info.artistUrl && <a href={info.artistUrl} target="_blank" rel="noreferrer">профиль исполнителя <ExternalLink /></a>}</div> : null}
-    </div>
-  </div>;
-}
-
 function ClipTimeline({ playback, duration, compact = false }: { playback?: ClipPlayback; duration: number; compact?: boolean }) {
   const elapsed = Math.min(duration, playback?.elapsed ?? 0);
   const remaining = Math.max(0, duration - elapsed);
@@ -139,6 +91,13 @@ type MusicQuizProps = {
 export default function MusicQuiz({ initialQuizId, guestMode = false, comparison = null, excludedTrackKeys = [] }: MusicQuizProps = {}) {
   const [screen, setScreen] = useState<"home" | "quiz" | "result">("home");
   const [homeTab, setHomeTab] = useState("quizzes");
+  const initializedQuestion = useRef<Track | null>(null);
+  const resumeClipAt = useRef<number | null>(null);
+  const sessionVersion = useRef(0);
+  useEffect(() => {
+    const section = new URLSearchParams(window.location.search).get("section");
+    if (section && ["quizzes", "video", "history", "stats"].includes(section)) setHomeTab(section);
+  }, []);
   const [activeQuiz, setActiveQuiz] = useState<Quiz | null>(null);
   const [order, setOrder] = useState<Track[]>([]);
   const [index, setIndex] = useState(0);
@@ -285,8 +244,10 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   }, [ready, stopClipClock]);
 
   const playClip = useCallback(() => {
-    if (!current || !player.current || !playerReady || triesRef.current < 1 || playingRef.current) return;
-    triesRef.current -= 1;
+    if (!current || !player.current || !playerReady || (triesRef.current < 1 && resumeClipAt.current === null) || playingRef.current) return;
+    const startSeconds = resumeClipAt.current ?? current.start;
+    if (resumeClipAt.current === null) triesRef.current -= 1;
+    resumeClipAt.current = null;
     setTries(triesRef.current);
     playingRef.current = true;
     setPlaying(true);
@@ -294,7 +255,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     activeClip.current = { trackKey: current.key, start: current.start, elapsed: 0, duration: current.duration, context: "quiz", started: false };
     setClipPlayback({ trackKey: current.key, elapsed: 0, duration: current.duration, context: "quiz" });
     player.current.setVolume(current.playbackVolume ?? 70);
-    player.current.loadVideoById({ videoId: current.youtubeId, startSeconds: current.start });
+    player.current.loadVideoById({ videoId: current.youtubeId, startSeconds });
   }, [current, playerReady, stopClipClock]);
 
   const playReviewClip = useCallback((track: Track) => {
@@ -319,7 +280,25 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     setScreen("home");
   }, [stopClipClock]);
 
+  const navigateSection = (section: SiteSection) => {
+    if (screen === "quiz" && current && activeClip.current?.context === "quiz") {
+      resumeClipAt.current = Math.min(current.start + current.duration, Math.max(current.start, player.current?.getCurrentTime() ?? current.start));
+    }
+    stopClipClock();
+    player.current?.pauseVideo();
+    playingRef.current = false;
+    setPlaying(false);
+    setReviewPlayingKey(null);
+    setHomeTab(section);
+    setScreen("home");
+  };
+
   const begin = (quiz: Quiz) => {
+    if (activeQuiz && order.length && !review.length && !guestMode && !window.confirm("Начать новый квиз? Незаконченные ответы текущего квиза будут потеряны.")) return;
+    sessionVersion.current += 1;
+    pendingCorrections.current = 0;
+    initializedQuestion.current = null;
+    resumeClipAt.current = null;
     stopClipClock();
     player.current?.stopVideo();
     playingRef.current = false; triesRef.current = 2; answersRef.current = [];
@@ -415,7 +394,9 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   };
 
   useEffect(() => {
-    if (screen !== "quiz" || !current) return;
+    if (screen !== "quiz" || !current || initializedQuestion.current === current) return;
+    initializedQuestion.current = current;
+    resumeClipAt.current = null;
     stopClipClock();
     player.current?.stopVideo();
     playingRef.current = false;
@@ -436,6 +417,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
 
   const finish = async (finalAnswers: Answer[]) => {
     if (!activeQuiz) return;
+    const savingSession = sessionVersion.current;
     player.current?.stopVideo(); stopClipClock();
     const localReview = order.map((track) => {
       const answer = finalAnswers.find((item) => item.trackKey === track.key) ?? { trackKey: track.key, artistAnswer: "", titleAnswer: "", loadFailed: false };
@@ -454,13 +436,15 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       const response = await fetch("/api/attempts", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ quizId: activeQuiz.id, answers: finalAnswers }) });
       if (!response.ok) throw new Error("save failed");
       const data = await response.json() as { attemptId: string };
+      if (sessionVersion.current !== savingSession) { await loadStats(); return; }
       setCurrentAttemptId(data.attemptId);
       setSaveState("saved"); await loadStats();
-    } catch { setSaveState("error"); }
+    } catch { if (sessionVersion.current === savingSession) setSaveState("error"); }
   };
 
   const correctResult = async (trackKey: string, change: { points?: number; annulled?: boolean }) => {
     if (!currentAttemptId && !guestMode) return;
+    const correctingSession = sessionVersion.current;
     const previousReview = review;
     const version = (correctionVersions.current[trackKey] ?? 0) + 1;
     correctionVersions.current[trackKey] = version;
@@ -502,6 +486,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         titlePoint: number;
         loadFailed: boolean;
       };
+      if (sessionVersion.current !== correctingSession) return;
       if (correctionVersions.current[trackKey] === version) {
         setReview((items) => items.map((item) => item.trackKey === trackKey ? {
           ...item,
@@ -513,6 +498,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       if (statsRefreshTimer.current) clearTimeout(statsRefreshTimer.current);
       statsRefreshTimer.current = setTimeout(() => void loadStats(), 500);
     } catch {
+      if (sessionVersion.current !== correctingSession) return;
       failed = true;
       if (correctionVersions.current[trackKey] === version) {
         setReview(previousReview);
@@ -525,13 +511,16 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       }
       setSaveState("error");
     } finally {
-      pendingCorrections.current -= 1;
-      if (pendingCorrections.current === 0 && !failed) setSaveState("saved");
+      if (sessionVersion.current === correctingSession) {
+        pendingCorrections.current -= 1;
+        if (pendingCorrections.current === 0 && !failed) setSaveState("saved");
+      }
     }
   };
 
   const toggleBadFragment = async (trackKey: string) => {
     if (!currentAttemptId || fragmentFeedbackPending.has(trackKey)) return;
+    const feedbackSession = sessionVersion.current;
     const wasReported = badFragments.has(trackKey);
     setFragmentFeedbackError(false);
     setBadFragments((items) => {
@@ -553,6 +542,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         skipped?: number;
         loadFailed?: boolean;
       };
+      if (sessionVersion.current !== feedbackSession) return;
       if (typeof data.loadFailed === "boolean") {
         setReview((items) => items.map((item) => item.trackKey === trackKey
           ? { ...item, loadFailed: data.loadFailed as boolean }
@@ -563,6 +553,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       }
       await loadStats();
     } catch {
+      if (sessionVersion.current !== feedbackSession) return;
       setBadFragments((items) => {
         const next = new Set(items);
         if (wasReported) next.add(trackKey); else next.delete(trackKey);
@@ -570,11 +561,13 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       });
       setFragmentFeedbackError(true);
     } finally {
-      setFragmentFeedbackPending((items) => {
-        const next = new Set(items);
-        next.delete(trackKey);
-        return next;
-      });
+      if (sessionVersion.current === feedbackSession) {
+        setFragmentFeedbackPending((items) => {
+          const next = new Set(items);
+          next.delete(trackKey);
+          return next;
+        });
+      }
     }
   };
 
@@ -652,16 +645,19 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   const totalMax = useMemo(() => attempts.reduce((sum, attempt) => sum + attempt.maxScore, 0), [attempts]);
   const percentage = totalMax ? Math.round(totalPoints / totalMax * 100) : 0;
 
+  const activeSection = screen === "home" ? homeTab : "quizzes";
+
   if (screen === "quiz" && activeQuiz && current) {
-    return <main className="shell quiz-shell">
-      <header className="topbar">{guestMode ? <div className="wordmark">НЕ ПО ПРИПЕВУ</div> : <button className="wordmark" onClick={() => setScreen("home")}>НЕ ПО ПРИПЕВУ</button>}<Badge variant="outline">{activeQuiz.title}</Badge></header>
+    return <main className="shell site-shell quiz-shell">
+      <SiteHeader active={activeSection} onNavigate={guestMode ? undefined : navigateSection} guest={guestMode} separateCatalog={Boolean(activeQuiz && !review.length)} />
+      <div className="session-heading"><span>{activeQuiz.title}</span><span>Вопрос {index + 1} из {order.length}</span></div>
       <Progress value={(index + 1) / order.length * 100} className="quiz-progress" />
       <section className="quiz-panel">
         <div className={`play-zone ${playing ? "is-playing" : ""}`}>
           <span className="question-number">{String(index + 1).padStart(2, "0")} / {order.length}</span><span className="clip-length">{current.duration} сек.</span>
-          <div className="record" aria-hidden="true"><span /></div><div className="equalizer" aria-hidden="true">{Array.from({ length: 9 }).map((_, i) => <i key={i} />)}</div>
+          <div className="audio-emblem" aria-hidden="true"><Headphones /></div>
           <ClipTimeline playback={clipPlayback?.trackKey === current.key && clipPlayback.context === "quiz" ? clipPlayback : undefined} duration={current.duration} />
-          <Button size="lg" className="play-button" onClick={playClip} disabled={tries < 1 || playing}><CirclePlay /> {playing ? "Играет…" : tries === 1 ? "Включить ещё раз" : tries === 0 ? "Фрагмент прослушан" : `Включить ${current.duration} секунд`}</Button>
+          <Button size="lg" className="play-button" onClick={playClip} disabled={(tries < 1 && resumeClipAt.current === null) || playing}><CirclePlay /> {playing ? "Играет…" : resumeClipAt.current !== null ? "Дослушать фрагмент" : tries === 1 ? "Включить ещё раз" : tries === 0 ? "Фрагмент прослушан" : `Включить ${current.duration} секунд`}</Button>
           <p className="listen-count">Осталось прослушиваний: {tries} · Ctrl + пробел — повторить</p>
         </div>
         <div className="answer-zone"><p>Enter — перейти к названию и отправить ответ. Можно писать транслитом и с опечатками.</p>
@@ -674,7 +670,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
 
   if (screen === "result") {
     const ownerAnswers = new Map(comparison?.answers.map((answer) => [answer.trackKey, answer]));
-    return <main className="shell"><header className="topbar">{guestMode ? <div className="wordmark">НЕ ПО ПРИПЕВУ</div> : <button className="wordmark" onClick={() => setScreen("home")}>НЕ ПО ПРИПЕВУ</button>}<Badge variant="outline">результат</Badge></header>
+    return <main className="shell site-shell"><SiteHeader active={activeSection} onNavigate={guestMode ? undefined : navigateSection} guest={guestMode} separateCatalog={Boolean(activeQuiz && !review.length)} />
       <section className="result-card"><div className={`result-summary ${comparison ? "has-comparison" : ""}`}><div><small>{comparison ? "Ты" : ""}</small><div className="result-score">{score.value} <span>/ {score.max}</span></div></div>{comparison && <div className="owner-result"><small>Алексей</small><strong>{comparison.score} <span>/ {comparison.maxScore}</span></strong></div>}</div>
         {!guestMode && saveState === "error" && <p className="save-state error">Не удалось сохранить изменение</p>}
         {!guestMode && fragmentFeedbackError && <p className="save-state error">Не удалось сохранить отметку о фрагменте</p>}
@@ -707,16 +703,18 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   }
 
   if (guestMode) {
-    return <main className="shell guest-loading"><header className="topbar"><div className="wordmark">НЕ ПО ПРИПЕВУ</div><Badge variant="outline">гостевой квиз</Badge></header><section><p className="eyebrow">Гостевой режим</p><h1>Открываю квиз…</h1></section></main>;
+    return <main className="shell site-shell guest-loading"><SiteHeader active={activeSection} onNavigate={guestMode ? undefined : navigateSection} guest={guestMode} separateCatalog={Boolean(activeQuiz && !review.length)} /><section><p className="eyebrow">Гостевой режим</p><h1>Открываю квиз…</h1></section></main>;
   }
 
-  return <main className="shell"><header className="topbar"><div className="wordmark">НЕ ПО ПРИПЕВУ</div><Badge variant="outline">личная коллекция</Badge></header>
-    <Tabs value={homeTab} onValueChange={setHomeTab} className="workspace"><TabsList className="nav-tabs"><TabsTrigger value="quizzes"><Library /> Квизы</TabsTrigger><TabsTrigger value="video"><CirclePlay /> Видеоквизы</TabsTrigger><TabsTrigger value="stats"><BarChart3 /> Статистика</TabsTrigger></TabsList>
-      <TabsContent value="quizzes" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Коллекция</p><h1>Выбери следующий заход</h1></div><div className="library-total">{quizzes.length}<small>квиза</small></div></div>
+  return <main className="shell site-shell"><SiteHeader active={activeSection} onNavigate={guestMode ? undefined : navigateSection} guest={guestMode} separateCatalog={Boolean(activeQuiz && !review.length)} />
+    <Tabs value={homeTab} onValueChange={setHomeTab} className="workspace">
+      <TabsContent value="quizzes" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Коллекция</p><h1>Музыкальные квизы</h1></div><div className="library-total">{quizzes.length}<small>квиза</small></div></div>
+        {activeQuiz && order.length > 0 && <div className="session-resume"><div><strong>{activeQuiz.title}</strong><span>{review.length ? "Разбор последнего прохождения" : `Вопрос ${index + 1} из ${order.length}`}</span></div><Button onClick={() => setScreen(review.length ? "result" : "quiz")}>{review.length ? "Открыть разбор" : "Продолжить"} <ChevronRight /></Button></div>}
         <div className="quiz-grid"><article className="quiz-card mistakes-card"><div className="card-index">↻</div><div className="card-badges"><Badge>персональный</Badge><Badge variant="outline">до 30 треков</Badge></div><h2>Работа над ошибками</h2><p>{mistakeTracks.length ? `${mistakeTracks.length} песен ждут повторения.` : "Ошибок для повторения нет — все проблемные песни уже закреплены."} Чтобы закрыть ошибку, нужно полностью угадать песню два раза подряд.</p><div className="card-meta"><span><RotateCcw /> Сначала песни без успешного повтора</span></div><Button size="lg" disabled={!mistakeTracks.length} onClick={beginMistakes}>Начать · 0 <ChevronRight /></Button></article>{quizzes.map((quiz, quizIndex) => { const latest = attempts.find((attempt) => attempt.quizId === quiz.id); const min = Math.min(...quiz.tracks.map((item) => item.duration)); const max = Math.max(...quiz.tracks.map((item) => item.duration)); return <article className="quiz-card" key={quiz.id}><div className="card-index">{String(quizzes.length - quizIndex).padStart(2, "0")}</div><div className="card-badges"><Badge>{quiz.level}</Badge><Badge variant="outline">{quiz.tracks.length} трека</Badge></div><h2>{quiz.title}</h2><div className="card-meta"><span><Headphones /> {min}–{max} сек.</span>{latest && <span><Check /> Последний: {latest.score}/{latest.maxScore}</span>}</div><div className="card-actions"><Button size="lg" onClick={() => begin(quiz)}>Начать · {quizIndex + 1} <ChevronRight /></Button><Button size="icon" variant="outline" aria-label={`Поделиться квизом ${quiz.title}`} title="Поделиться" onClick={() => void shareQuiz(quiz)}>{sharedQuizId === quiz.id ? <Check /> : <Share2 />}</Button></div></article>; })}</div>
-        <p className="collection-note">Новые подборки будут появляться здесь отдельными квизами. Старые результаты сохраняются. <a href="/catalog">Открыть общую базу песен →</a></p>
+        <p className="collection-note">Новые подборки будут появляться здесь отдельными квизами. Старые результаты сохраняются. <a href="/catalog" target={activeQuiz && !review.length ? "_blank" : undefined} rel="noreferrer">Открыть общую базу песен →</a></p>
       </TabsContent>
       <TabsContent value="video" className="tab-content"><VideoQuiz /></TabsContent>
+      <TabsContent value="history" className="tab-content"><div className="section-heading"><div><p className="eyebrow">Твои прохождения</p><h1>История</h1></div></div><section className="history-card">{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><p className="collection-note"><button onClick={() => setHomeTab("video")}>История видеоквизов →</button></p></TabsContent>
       <TabsContent value="stats" className="tab-content"><div className="section-heading"><div><p className="eyebrow">За всё время</p><h1>Твоя музыкальная форма</h1></div></div><div className="stats-grid"><article className="stat-card accent"><strong>{percentage}%</strong><span>точность</span></article><article className="stat-card"><strong>{attempts.length}</strong><span>квизов пройдено</span></article><article className="stat-card"><strong>{totalPoints}</strong><span>баллов набрано</span></article></div>
         <div className="stats-columns"><section className="history-card"><h2><History /> История</h2>{attempts.length ? attempts.map((attempt) => <div className="history-row" key={attempt.id}><div><strong>{attempt.quizTitle}</strong><small>{new Date(`${attempt.createdAt.replace(" ", "T")}Z`).toLocaleDateString("ru-RU")}</small></div><b>{attempt.score}/{attempt.maxScore}</b></div>) : <p className="empty-copy">Первый результат появится после квиза.</p>}</section><section className="history-card"><h2><TriangleAlert /> На повторение</h2>{weakTracks.length ? weakTracks.slice(0, 12).map((item) => { const gap = item.artistMisses && item.titleMisses ? "не узнаны исполнитель и название" : item.artistMisses ? "не узнан исполнитель" : "не вспомнено название"; return <div className="weak-row" key={item.trackKey}><div><strong>{item.artist}</strong><small>{item.title} · {gap} · ошибок: {item.misses}</small></div><Badge variant="outline">зачётов: {item.successes}/{item.requiredSuccesses}</Badge></div>; }) : <p className="empty-copy">Очередь пуста: все ошибочные песни угаданы два раза подряд.</p>}</section></div>
       </TabsContent></Tabs>

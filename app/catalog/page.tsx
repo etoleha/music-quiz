@@ -1,3 +1,5 @@
+import SiteHeader from "../site-header";
+import "../site-design.css";
 import Link from "next/link";
 import { getCatalogPage, type CatalogFilters } from "../../server/song-catalog";
 
@@ -17,8 +19,8 @@ export default async function CatalogPage({ searchParams }: { searchParams: Prom
     params.set("page", String(page));
     return `/catalog?${params}`;
   };
-  return <main className="catalog-shell">
-    <header className="catalog-header"><div><Link href="/" className="catalog-back">← К квизам</Link><h1>Общая база песен</h1><p>Отбор, проверка годов и подготовка следующих квизов</p></div><div className="catalog-count">{result.total.toLocaleString("ru-RU")}<small>по фильтру</small></div></header>
+  return <main className="catalog-shell site-shell">
+    <SiteHeader active="catalog" /><header className="catalog-header"><div><Link href="/" className="catalog-back">← К квизам</Link><h1>Общая база песен</h1><p>Отбор, проверка годов и подготовка следующих квизов</p></div><div className="catalog-count">{result.total.toLocaleString("ru-RU")}<small>по фильтру</small></div></header>
     <section className="catalog-stats">
       <article><strong>{Number(result.stats.songs).toLocaleString("ru-RU")}</strong><span>всего песен</span></article>
       <article><strong>{Number(result.stats.readyForCuration).toLocaleString("ru-RU")}</strong><span>готовы к отбору</span></article>
