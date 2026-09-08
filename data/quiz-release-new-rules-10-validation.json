@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-08T13:51:25.289Z",
+  "quizId": "hard-31",
+  "passed": true,
+  "checks": {
+    "strictPublicationGenerator": "passed",
+    "youtubeAvailability": "20/20 passed",
+    "duplicateSongs": "passed",
+    "duplicateVideos": "passed",
+    "previousQuizRelationships": "passed",
+    "editorialFragments": "20/20 verified",
+    "clipLoudness": "20/20 measured",
+    "metadataFingerprints": "20/20 sealed"
+  },
+  "playbackChecks": [
+    {
+      "songId": "pool-22284a75702b",
+      "videoId": "dGPRnzQY11U",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-a769fe7b9838",
+      "videoId": "b8Ow3933RaM",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-0d8c1b01d5a4",
+      "videoId": "lYQamQEKuk4",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-b5b1e0867e4a",
+      "videoId": "A2mS0kLbQf8",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-bf0b8c576971",
+      "videoId": "AXO2i4Edl1c",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-0a0ffa1424bb",
+      "videoId": "sC5NUunV-Tk",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-ab4676205394",
+      "videoId": "-Z5FSdPpQ98",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-3d8f548aa99f",
+      "videoId": "ccdHspHSJQ8",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-3baa076f5936",
+      "videoId": "oxaBlsipgpI",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-912a817aaa8c",
+      "videoId": "j5cNhjG6iGs",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-450d25ac5f2d",
+      "videoId": "OzqyAo-N1i8",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-79188e52588f",
+      "videoId": "S-TVb_GqFXk",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-ff0cf8cfb2b1",
+      "videoId": "llmateaAOd0",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-065656478a15",
+      "videoId": "Y0l9y20Tjx8",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-73bb0f54368d",
+      "videoId": "O-0RprsSmto",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-807d3821a196",
+      "videoId": "GpzauNN4R-M",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-16bd8a5ba3d7",
+      "videoId": "cC70b0MJwAA",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-e8eb5fe6040e",
+      "videoId": "_WlxgzU4Mnw",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-e5373a0a8c1b",
+      "videoId": "rVeyZv-i1Qw",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    },
+    {
+      "songId": "pool-d9f61f40d6cf",
+      "videoId": "saB9Jqx6vPY",
+      "status": "passed",
+      "reason": "watch-page-playable"
+    }
+  ]
+}

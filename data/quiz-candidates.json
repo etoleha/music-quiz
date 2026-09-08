@@ -1,26 +1,87 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-06T21:12:15.851Z",
+  "generatedAt": "2026-09-08T04:24:45.209Z",
   "policy": {
     "version": 1,
     "allowPreviouslyUsedArtists": true,
     "uniqueArtistsWithinQuiz": true,
     "uniqueSongsAcrossQuizzes": true,
+    "reserveEraPolicy": {
+      "sovietPriority": true,
+      "readyReserveTargetShare": 0.15,
+      "goldenReserveMustContainSovietSongs": true,
+      "sovietCandidatesProcessedBeforeOtherFreshCandidates": true
+    },
     "participantRule": "any-participant-blocks-credit-within-quiz",
     "unknownParticipantRule": "manual-review",
+    "publicationRequirements": {
+      "audio": {
+        "measureExactClip": true,
+        "targetIntegratedLufs": -16,
+        "maximumTruePeakDb": -1,
+        "defaultPlaybackVolume": 70,
+        "perTrackPlaybackVolumeRange": [
+          35,
+          85
+        ],
+        "blockPublicationWhenMeasuredValueIsMissing": true
+      },
+      "releaseHistory": {
+        "verifyFirstKnownPerformance": true,
+        "doNotUseReissueYearAsOriginalYear": true,
+        "forCoverRequireOriginalArtist": true,
+        "forCoverRequireOriginalSourceUrl": true
+      },
+      "artistForm": {
+        "manualReviewRequired": true,
+        "doNotInferSoloArtistFromCatalogProfile": true
+      },
+      "presentation": {
+        "showDifficultyScore": true,
+        "showDifficultyExplanation": false,
+        "standaloneDashCountsAsWord": false
+      },
+      "materialChanges": {
+        "invalidateAllPreviousChecks": true,
+        "requireFullReverification": true,
+        "trackedFields": [
+          "artist",
+          "artistAliases",
+          "artistForm",
+          "title",
+          "titleAliases",
+          "releaseYear",
+          "versionYear",
+          "album",
+          "artistImage",
+          "performers",
+          "credits",
+          "soundtrack",
+          "originalRecording",
+          "youtube",
+          "clip",
+          "difficulty"
+        ]
+      }
+    },
     "notes": [
       "Исполнители и группы из прошлых выпусков могут появляться снова с другой песней.",
       "Одна и та же песня не публикуется повторно, а внутри одного квиза исполнительские сущности не повторяются.",
-      "Постоянная группа или дуэт считается одной самостоятельной исполнительской сущностью."
+      "Постоянная группа или дуэт считается одной самостоятельной исполнительской сущностью.",
+      "Громкость измеряется на точном фрагменте; браузер применяет безопасный общий уровень и индивидуальную поправку.",
+      "Первое исполнение песни проверяется отдельно от даты цифрового переиздания; для кавера обязательны исполнитель и ссылка на оригинал.",
+      "Форма исполнителя подтверждается вручную и не наследуется вслепую из внешнего каталога.",
+      "Объяснение редакционного выбора сложности хранится внутри базы, но не показывается игроку.",
+      "Любое изменение существенного поля меняет цифровой отпечаток карточки и требует полной повторной проверки всех пунктов перед публикацией; регулировка громкости является техническим исключением и требует только проверки звука."
     ]
   },
   "stats": {
-    "totalSongs": 19287,
-    "readyForCuration": 8886,
-    "uniqueArtistCandidates": 8793,
+    "totalSongs": 19288,
+    "readyForCuration": 8887,
+    "uniqueArtistCandidates": 8794,
     "selectedWithoutArtistRepeats": 500,
     "reservedArtistEntities": 546,
-    "readyForPublication": 1822
+    "readyForPublication": 1948
   },
   "candidates": [
     {
@@ -106,7 +167,7 @@
       "candidateYears": [
         {
           "year": 2019,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -115,17 +176,15 @@
       "externalIds": {
         "spotify": [
           "08pVm2BCyMSevBLXYLysqi"
+        ],
+        "youtube": [
+          "Ko_uNj61qIs"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 4,
@@ -137,25 +196,28 @@
       ],
       "candidateScore": 125.79,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2000,
+      "candidateYears": [
+        {
+          "year": 2000,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "4wwqUoX7OweabhkpP2kaTS"
+        ],
+        "youtube": [
+          "xpJ_fYyAeYk"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 5,
@@ -240,25 +302,28 @@
       ],
       "candidateScore": 111.21,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2000,
+      "candidateYears": [
+        {
+          "year": 2000,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "7a2tITrS5LZtlefeZscRFf"
+        ],
+        "youtube": [
+          "1u7WN2zBEDc"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 8,
@@ -298,10 +363,10 @@
       ],
       "candidateScore": 58.97,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -359,24 +424,27 @@
       ],
       "candidateScore": 48.7,
       "language": "russian",
-      "releaseYear": 2018,
+      "releaseYear": 2005,
       "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2018,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "Pugewp5ROCk"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 12,
@@ -427,16 +495,13 @@
       "externalIds": {
         "yandexMusic": [
           "20165363"
+        ],
+        "youtube": [
+          "UYvupkJA_YM"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
       "rank": 14,
@@ -512,17 +577,15 @@
       "externalIds": {
         "yandexMusic": [
           "3693798"
+        ],
+        "youtube": [
+          "nYi9dc8IFck"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 17,
@@ -759,13 +822,8 @@
       ],
       "candidateScore": 308.89,
       "language": "russian",
-      "releaseYear": 2026,
-      "candidateYears": [
-        {
-          "year": 2026,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "apple-music-ru",
         "shazam-ru",
@@ -774,15 +832,17 @@
       "externalIds": {
         "apple-music-ru": [
           "1575451599"
-        ],
-        "youtube": [
-          "Mq9uVFWKIGE"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 24,
@@ -879,15 +939,17 @@
         ],
         "isrc": [
           "RUB421400040"
-        ],
-        "youtube": [
-          "T4JeTFUM1j4"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 27,
@@ -948,13 +1010,16 @@
       "externalIds": {
         "tophit": [
           "242672"
-        ],
-        "youtube": [
-          "eqBIbSEJDA0"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 29,
@@ -1071,15 +1136,17 @@
         ],
         "isrc": [
           "RUA582104352"
-        ],
-        "youtube": [
-          "pnTsPwYehP4"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 32,
@@ -1216,15 +1283,17 @@
         ],
         "isrc": [
           "RUB421500047"
-        ],
-        "youtube": [
-          "TGBb2lg656A"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 36,
@@ -2004,17 +2073,15 @@
         ],
         "isrc": [
           "RUA591200263"
+        ],
+        "youtube": [
+          "djIAgcCnFmE"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 59,
@@ -2026,25 +2093,21 @@
       ],
       "candidateScore": 153.46,
       "language": "russian",
-      "releaseYear": 2019,
-      "candidateYears": [
-        {
-          "year": 2019,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {
-        "youtube": [
-          "5R6BYT176Bk"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 60,
@@ -2093,9 +2156,34 @@
       "candidateYears": [
         {
           "year": 2017,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "externalIds": {
+        "youtube": [
+          "jBGQtHbqYh0"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
+    },
+    {
+      "rank": 62,
+      "id": "chart-03164",
+      "artist": "Burito",
+      "title": "Штрихи",
+      "artistIds": [
+        "burito"
+      ],
+      "candidateScore": 149.73,
+      "language": "russian",
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "europa-plus-annual"
       ],
@@ -2109,36 +2197,6 @@
         "playable-fragment"
       ],
       "publicationProgress": 0.25
-    },
-    {
-      "rank": 62,
-      "id": "chart-03164",
-      "artist": "Burito",
-      "title": "Штрихи",
-      "artistIds": [
-        "burito"
-      ],
-      "candidateScore": 149.73,
-      "language": "russian",
-      "releaseYear": 2017,
-      "candidateYears": [
-        {
-          "year": 2017,
-          "source": "quiz-ready-pool"
-        }
-      ],
-      "sourceIds": [
-        "europa-plus-annual"
-      ],
-      "externalIds": {
-        "youtube": [
-          "kn6LXpEcRp8"
-        ]
-      },
-      "blockers": [
-        "artist-already-used"
-      ],
-      "publicationProgress": 0.875
     },
     {
       "rank": 63,
@@ -2184,7 +2242,7 @@
       "candidateYears": [
         {
           "year": 2017,
-          "source": "quiz-ready-pool"
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [
@@ -2194,15 +2252,17 @@
       "externalIds": {
         "spotify": [
           "3BnMwtFr961gmt2ybIFTDH"
-        ],
-        "youtube": [
-          "CB0DEcaPwhw"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 65,
@@ -2279,8 +2339,12 @@
       ],
       "candidateScore": 143.61,
       "language": "russian",
-      "releaseYear": 2008,
+      "releaseYear": 2007,
       "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2008,
           "source": "musicbrainz-search"
@@ -2289,16 +2353,15 @@
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "B3YdBMznODI"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 68,
@@ -2310,28 +2373,25 @@
       ],
       "candidateScore": 141.7,
       "language": "russian",
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "2b5Fq8pe5UI6pYRGMv0wNn"
-        ],
-        "youtube": [
-          "0Oq3r294UlY"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 69,
@@ -2517,10 +2577,10 @@
       ],
       "candidateScore": 131.49,
       "language": "russian",
-      "releaseYear": 2026,
+      "releaseYear": 2025,
       "candidateYears": [
         {
-          "year": 2026,
+          "year": 2025,
           "source": "quiz-ready-pool"
         }
       ],
@@ -2616,17 +2676,15 @@
       "externalIds": {
         "tophit": [
           "7782"
+        ],
+        "youtube": [
+          "AQNYqhcHKPo"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 78,
@@ -2700,10 +2758,10 @@
       ],
       "candidateScore": 128.63,
       "language": "russian",
-      "releaseYear": 2012,
+      "releaseYear": 2013,
       "candidateYears": [
         {
-          "year": 2012,
+          "year": 2013,
           "source": "quiz-ready-pool"
         }
       ],
@@ -2765,7 +2823,7 @@
       "candidateYears": [
         {
           "year": 2017,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -2774,17 +2832,15 @@
       "externalIds": {
         "spotify": [
           "2sgyUEjvzSW0l6NgFBZ4Dt"
+        ],
+        "youtube": [
+          "ryotss9iX4U"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 83,
@@ -2874,7 +2930,7 @@
       "candidateYears": [
         {
           "year": 2019,
-          "source": "quiz-ready-pool"
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [
@@ -2883,15 +2939,17 @@
       "externalIds": {
         "spotify": [
           "3sSags381KPFiIz546e0GK"
-        ],
-        "youtube": [
-          "6Od0EEbmvZs"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 86,
@@ -2929,10 +2987,10 @@
       ],
       "candidateScore": 123.95,
       "language": "russian",
-      "releaseYear": 1998,
+      "releaseYear": 2026,
       "candidateYears": [
         {
-          "year": 1998,
+          "year": 2026,
           "source": "quiz-ready-pool"
         }
       ],
@@ -2986,23 +3044,20 @@
       ],
       "candidateScore": 123.71,
       "language": "russian",
-      "releaseYear": 2011,
-      "candidateYears": [
-        {
-          "year": 2011,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {
-        "youtube": [
-          "7vqyymczKpc"
-        ]
-      },
-      "blockers": [],
-      "publicationProgress": 1
+      "externalIds": {},
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 90,
@@ -3014,25 +3069,21 @@
       ],
       "candidateScore": 122.95,
       "language": "russian",
-      "releaseYear": 2007,
-      "candidateYears": [
-        {
-          "year": 2007,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "europa-plus-annual"
       ],
-      "externalIds": {
-        "youtube": [
-          "-23D7HnjHWw"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 91,
@@ -3124,15 +3175,17 @@
         ],
         "isrc": [
           "RUB731422802"
-        ],
-        "youtube": [
-          "mQtBaJ1Arwo"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 94,
@@ -3374,43 +3427,8 @@
       ],
       "candidateScore": 116.49,
       "language": "russian",
-      "releaseYear": 2007,
-      "candidateYears": [
-        {
-          "year": 2007,
-          "source": "quiz-ready-pool"
-        }
-      ],
-      "sourceIds": [
-        "europa-plus-annual"
-      ],
-      "externalIds": {
-        "youtube": [
-          "xcybM8OY06s"
-        ]
-      },
-      "blockers": [
-        "artist-already-used"
-      ],
-      "publicationProgress": 0.875
-    },
-    {
-      "rank": 102,
-      "id": "chart-03629",
-      "artist": "Элджей",
-      "title": "Минимал",
-      "artistIds": [
-        "eldzhei"
-      ],
-      "candidateScore": 116.42,
-      "language": "russian",
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "musicbrainz-search"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "europa-plus-annual"
       ],
@@ -3426,6 +3444,36 @@
       "publicationProgress": 0.25
     },
     {
+      "rank": 102,
+      "id": "chart-03629",
+      "artist": "Элджей",
+      "title": "Минимал",
+      "artistIds": [
+        "eldzhei"
+      ],
+      "candidateScore": 116.42,
+      "language": "russian",
+      "releaseYear": 2018,
+      "candidateYears": [
+        {
+          "year": 2018,
+          "source": "quiz-ready-pool"
+        }
+      ],
+      "sourceIds": [
+        "europa-plus-annual"
+      ],
+      "externalIds": {
+        "youtube": [
+          "YBFDYb5GCrI"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
+    },
+    {
       "rank": 103,
       "id": "chart-00378",
       "artist": "FEDUK",
@@ -3439,7 +3487,7 @@
       "candidateYears": [
         {
           "year": 2019,
-          "source": "quiz-ready-pool"
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [
@@ -3448,15 +3496,17 @@
       "externalIds": {
         "spotify": [
           "1SccjD8RvJ6vegZLFdgy5a"
-        ],
-        "youtube": [
-          "iHkrcNf01X4"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 104,
@@ -3678,15 +3728,17 @@
         ],
         "isrc": [
           "USRE50200157"
-        ],
-        "youtube": [
-          "lgWFmKGphxU"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 111,
@@ -3890,10 +3942,10 @@
       ],
       "candidateScore": 110.92,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2019,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2019,
           "source": "quiz-ready-pool"
         },
         {
@@ -4085,28 +4137,25 @@
       ],
       "candidateScore": 109.93,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "50H8ewgWjuwx22LiLeKrIm"
-        ],
-        "youtube": [
-          "tWRZSD8i8Vk"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 124,
@@ -4187,28 +4236,25 @@
       ],
       "candidateScore": 108.89,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "0m2GGIVcV80IfKDg1oCULj"
-        ],
-        "youtube": [
-          "oIVrkETbZas"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 127,
@@ -4283,28 +4329,25 @@
       ],
       "candidateScore": 108.03,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "5M2su06vvCxNYWkYktVmwC"
-        ],
-        "youtube": [
-          "NR57D2UVqm4"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 130,
@@ -4316,10 +4359,10 @@
       ],
       "candidateScore": 107.94,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2022,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2022,
           "source": "quiz-ready-pool"
         }
       ],
@@ -4351,7 +4394,7 @@
       "candidateYears": [
         {
           "year": 2018,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -4360,17 +4403,15 @@
       "externalIds": {
         "spotify": [
           "0Y84vLtyOj2demvSdJ2l7N"
+        ],
+        "youtube": [
+          "c_tSDJD1Jf8"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 132,
@@ -4414,28 +4455,25 @@
       ],
       "candidateScore": 107.23,
       "language": "russian",
-      "releaseYear": 2022,
-      "candidateYears": [
-        {
-          "year": 2022,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "5cFZNFr6cEYpUFn4N8BmZf"
-        ],
-        "youtube": [
-          "Expq6fmXLUM"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 134,
@@ -4478,10 +4516,10 @@
       ],
       "candidateScore": 106.98,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -4556,15 +4594,17 @@
         ],
         "isrc": [
           "RUB421303330"
-        ],
-        "youtube": [
-          "i5twfJ15yEA"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 138,
@@ -4706,10 +4746,10 @@
       ],
       "candidateScore": 105.01,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2019,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2019,
           "source": "quiz-ready-pool"
         }
       ],
@@ -4770,10 +4810,10 @@
       ],
       "candidateScore": 104.53,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2019,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2019,
           "source": "quiz-ready-pool"
         }
       ],
@@ -4805,7 +4845,7 @@
       "candidateYears": [
         {
           "year": 2018,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -4814,17 +4854,15 @@
       "externalIds": {
         "spotify": [
           "5hxOo9pCGL5lYvLP5dMy9y"
+        ],
+        "youtube": [
+          "7dxEKifDFLA"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 146,
@@ -4836,10 +4874,10 @@
       ],
       "candidateScore": 104,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -5025,11 +5063,15 @@
       ],
       "candidateScore": 102.65,
       "language": "russian",
-      "releaseYear": 2004,
+      "releaseYear": 2005,
       "candidateYears": [
         {
           "year": 2004,
           "source": "tophit-ru-monthly-history"
+        },
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -5090,25 +5132,28 @@
       ],
       "candidateScore": 102.36,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "5CQiQFD9ww43uBhi0l56t2"
+        ],
+        "youtube": [
+          "EDI4-son42M"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 155,
@@ -5151,10 +5196,10 @@
       ],
       "candidateScore": 102.12,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -5227,15 +5272,17 @@
         ],
         "isrc": [
           "FR6V82411651"
-        ],
-        "youtube": [
-          "VWJrMkRcXu8"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 159,
@@ -5344,10 +5391,10 @@
       ],
       "candidateScore": 100.77,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -5375,10 +5422,10 @@
       ],
       "candidateScore": 100.5,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -5406,10 +5453,10 @@
       ],
       "candidateScore": 100.45,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -5456,15 +5503,17 @@
         ],
         "isrc": [
           "FR6V81950444"
-        ],
-        "youtube": [
-          "80-0lWcCKcI"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 166,
@@ -5776,10 +5825,10 @@
       ],
       "candidateScore": 97.61,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -5821,15 +5870,17 @@
       "externalIds": {
         "tophit": [
           "81966"
-        ],
-        "youtube": [
-          "SibS1Tc7CvI"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 178,
@@ -5907,10 +5958,10 @@
       ],
       "candidateScore": 97.34,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -5969,26 +6020,24 @@
       ],
       "candidateScore": 96.94,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "5DPilFDJbKv817c18gDynJ"
-        ],
-        "youtube": [
-          "8EwC05SKZrs"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 183,
@@ -6325,10 +6374,10 @@
       ],
       "candidateScore": 95.19,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -6491,15 +6540,11 @@
       ],
       "candidateScore": 94.72,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2022,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2022,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -6614,10 +6659,10 @@
       ],
       "candidateScore": 94.4,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -6645,15 +6690,11 @@
       ],
       "candidateScore": 93.78,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2022,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2022,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -6727,17 +6768,15 @@
         ],
         "isrc": [
           "RUB731518983"
+        ],
+        "youtube": [
+          "7GEN8E1oi3M"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 206,
@@ -6779,25 +6818,23 @@
       "candidateScore": 92.46,
       "language": "russian",
       "releaseYear": 2022,
-      "candidateYears": [
-        {
-          "year": 2022,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "0miDZPhTC5rLUc514v6Pck"
-        ],
-        "youtube": [
-          "N7QHOb5ZYVk"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 208,
@@ -6838,8 +6875,13 @@
       ],
       "candidateScore": 92.13,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2021,
+      "candidateYears": [
+        {
+          "year": 2021,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "deezer-ru",
         "spotify-ru-daily-history"
@@ -6847,17 +6889,15 @@
       "externalIds": {
         "spotify": [
           "0tlLHz2m7UOkdfM9GDH32W"
+        ],
+        "youtube": [
+          "GZ974gpOplE"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 210,
@@ -6869,25 +6909,28 @@
       ],
       "candidateScore": 92.1,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
+      "releaseYear": 2020,
+      "candidateYears": [
+        {
+          "year": 2020,
+          "source": "quiz-ready-pool"
+        }
+      ],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "4Jd9GfH2yRFow8ie5bRWaT"
+        ],
+        "youtube": [
+          "va5m03eJcYU"
         ]
       },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 211,
@@ -6899,15 +6942,11 @@
       ],
       "candidateScore": 92.1,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2021,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -7003,26 +7042,24 @@
       ],
       "candidateScore": 91.21,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "00iRsSA9GeWcSeUtqpad84"
-        ],
-        "youtube": [
-          "77O2OYdQHSs"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 215,
@@ -7106,15 +7143,11 @@
       ],
       "candidateScore": 89.24,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2003,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2003,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -7296,10 +7329,10 @@
       ],
       "candidateScore": 88.02,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -7364,15 +7397,11 @@
       ],
       "candidateScore": 87.76,
       "language": "russian",
-      "releaseYear": 2019,
+      "releaseYear": 2020,
       "candidateYears": [
         {
-          "year": 2019,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2020,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -7399,10 +7428,10 @@
       ],
       "candidateScore": 87.76,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2019,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2019,
           "source": "quiz-ready-pool"
         }
       ],
@@ -7430,10 +7459,10 @@
       ],
       "candidateScore": 87.37,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2017,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2017,
           "source": "quiz-ready-pool"
         }
       ],
@@ -7582,26 +7611,24 @@
       ],
       "candidateScore": 86.69,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "2y9amiNtcZOgJXko2cH1qb"
-        ],
-        "youtube": [
-          "rD9kVHrxan4"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 233,
@@ -7782,10 +7809,10 @@
       ],
       "candidateScore": 85.06,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -7952,10 +7979,10 @@
       ],
       "candidateScore": 84.48,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -8082,28 +8109,25 @@
       ],
       "candidateScore": 84.26,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "70qbqCW6z92WESMZC1opsd"
-        ],
-        "youtube": [
-          "HwBt4UUmtYQ"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 248,
@@ -8115,10 +8139,10 @@
       ],
       "candidateScore": 83.58,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -8146,26 +8170,24 @@
       ],
       "candidateScore": 83.41,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "3HHVtWGKwhMwjUfsQGztzt"
-        ],
-        "youtube": [
-          "aZaSOcGY8q8"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 250,
@@ -8401,26 +8423,24 @@
       ],
       "candidateScore": 82.12,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "7qEZALeVloIwiz6tvX8ZUL"
-        ],
-        "youtube": [
-          "GBs-vSwOTAE"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 258,
@@ -8700,10 +8720,10 @@
       ],
       "candidateScore": 80.5,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2022,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2022,
           "source": "quiz-ready-pool"
         }
       ],
@@ -8970,15 +8990,17 @@
         ],
         "isrc": [
           "FR10S2379791"
-        ],
-        "youtube": [
-          "FC60GJio1vA"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 275,
@@ -9391,10 +9413,10 @@
       ],
       "candidateScore": 77.4,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -9979,10 +10001,10 @@
       ],
       "candidateScore": 74.45,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -10010,28 +10032,25 @@
       ],
       "candidateScore": 74.12,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "1nWPjOyTB3syHbNDiqEgN2"
-        ],
-        "youtube": [
-          "b_poDGWyXmc"
         ]
       },
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 307,
@@ -10080,26 +10099,24 @@
       ],
       "candidateScore": 73.78,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "4N9OqVvhMroM1c9ZiDtlte"
-        ],
-        "youtube": [
-          "LHwFvHkONAs"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 309,
@@ -10177,26 +10194,24 @@
       ],
       "candidateScore": 72.71,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "4lBbG8BHYRvJAJE25bEMIm"
-        ],
-        "youtube": [
-          "Vh5_96gSTOo"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 312,
@@ -10245,26 +10260,24 @@
       ],
       "candidateScore": 72.34,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "4OEFimDOokeMcxvWdmWbuI"
-        ],
-        "youtube": [
-          "AsZ_AT3cWSY"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 314,
@@ -10475,10 +10488,10 @@
       ],
       "candidateScore": 70.74,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -10543,10 +10556,10 @@
       ],
       "candidateScore": 70.31,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2014,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2014,
           "source": "quiz-ready-pool"
         }
       ],
@@ -10603,10 +10616,10 @@
       ],
       "candidateScore": 69.41,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2019,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2019,
           "source": "quiz-ready-pool"
         }
       ],
@@ -10634,11 +10647,15 @@
       ],
       "candidateScore": 69.4,
       "language": "russian",
-      "releaseYear": 2000,
+      "releaseYear": 1999,
       "candidateYears": [
         {
-          "year": 2000,
+          "year": 1999,
           "source": "quiz-ready-pool"
+        },
+        {
+          "year": 2000,
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
@@ -10722,10 +10739,10 @@
       ],
       "candidateScore": 68.94,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -10781,23 +10798,19 @@
       ],
       "candidateScore": 68.8,
       "language": "russian",
-      "releaseYear": 2000,
-      "candidateYears": [
-        {
-          "year": 2000,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "uK4yiDbXphQ"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 331,
@@ -10809,23 +10822,19 @@
       ],
       "candidateScore": 68.8,
       "language": "russian",
-      "releaseYear": 2005,
-      "candidateYears": [
-        {
-          "year": 2005,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "bnUOG2XoKmI"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 332,
@@ -10981,19 +10990,23 @@
       ],
       "candidateScore": 68.2,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2019,
+      "candidateYears": [
+        {
+          "year": 2019,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "yTY9IDSxutM"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
       "rank": 338,
@@ -11069,10 +11082,10 @@
       ],
       "candidateScore": 67.95,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -11100,23 +11113,19 @@
       ],
       "candidateScore": 67.8,
       "language": "russian",
-      "releaseYear": 2004,
-      "candidateYears": [
-        {
-          "year": 2004,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "-j2GK74Sx78"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 342,
@@ -11128,11 +11137,15 @@
       ],
       "candidateScore": 67.7,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 1999,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 1999,
           "source": "quiz-ready-pool"
+        },
+        {
+          "year": 2020,
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
@@ -11279,19 +11292,23 @@
       ],
       "candidateScore": 66.9,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2022,
+      "candidateYears": [
+        {
+          "year": 2022,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "LwxqbivM898"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
       "rank": 348,
@@ -11357,10 +11374,10 @@
       ],
       "candidateScore": 66.88,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2019,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2019,
           "source": "quiz-ready-pool"
         }
       ],
@@ -11389,10 +11406,10 @@
       ],
       "candidateScore": 66.88,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2019,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2019,
           "source": "quiz-ready-pool"
         }
       ],
@@ -11420,19 +11437,23 @@
       ],
       "candidateScore": 66.8,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2006,
+      "candidateYears": [
+        {
+          "year": 2006,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "p9T4MFs5ebs"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
       "rank": 353,
@@ -11444,11 +11465,15 @@
       ],
       "candidateScore": 66.8,
       "language": "russian",
-      "releaseYear": 2016,
+      "releaseYear": 2007,
       "candidateYears": [
         {
-          "year": 2016,
+          "year": 2007,
           "source": "quiz-ready-pool"
+        },
+        {
+          "year": 2016,
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
@@ -11501,19 +11526,23 @@
       ],
       "candidateScore": 66.6,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2005,
+      "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "y0o4j1qnO6Y"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
       "rank": 356,
@@ -11525,6 +11554,34 @@
       ],
       "candidateScore": 66.5,
       "language": "russian",
+      "releaseYear": 2009,
+      "candidateYears": [
+        {
+          "year": 2009,
+          "source": "quiz-ready-pool"
+        }
+      ],
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "qtJwdrKkw0M"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
+    },
+    {
+      "rank": 357,
+      "id": "pool-8349ab506ff3",
+      "artist": "MBAND",
+      "title": "Невыносимая",
+      "artistIds": [
+        "mband"
+      ],
+      "candidateScore": 66.4,
+      "language": "russian",
       "releaseYear": null,
       "candidateYears": [],
       "sourceIds": [],
@@ -11538,34 +11595,6 @@
         "playable-fragment"
       ],
       "publicationProgress": 0.25
-    },
-    {
-      "rank": 357,
-      "id": "pool-8349ab506ff3",
-      "artist": "MBAND",
-      "title": "Невыносимая",
-      "artistIds": [
-        "mband"
-      ],
-      "candidateScore": 66.4,
-      "language": "russian",
-      "releaseYear": 2016,
-      "candidateYears": [
-        {
-          "year": 2016,
-          "source": "quiz-ready-pool"
-        }
-      ],
-      "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "BfgSlE9fE5o"
-        ]
-      },
-      "blockers": [
-        "artist-already-used"
-      ],
-      "publicationProgress": 0.875
     },
     {
       "rank": 358,
@@ -11747,10 +11776,10 @@
       ],
       "candidateScore": 65.73,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -11804,23 +11833,19 @@
       ],
       "candidateScore": 65.5,
       "language": "russian",
-      "releaseYear": 2016,
-      "candidateYears": [
-        {
-          "year": 2016,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "FTZ82aXhHwM"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 367,
@@ -11832,27 +11857,24 @@
       ],
       "candidateScore": 65.3,
       "language": "russian",
-      "releaseYear": 2005,
+      "releaseYear": 2017,
       "candidateYears": [
-        {
-          "year": 2005,
-          "source": "quiz-ready-pool"
-        },
         {
           "year": 2017,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "YeUMsdUkk88"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 368,
@@ -11864,23 +11886,19 @@
       ],
       "candidateScore": 65.3,
       "language": "russian",
-      "releaseYear": 2010,
-      "candidateYears": [
-        {
-          "year": 2010,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "K5bIbHweQpE"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 369,
@@ -11923,10 +11941,10 @@
       ],
       "candidateScore": 65.12,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -12022,19 +12040,23 @@
       ],
       "candidateScore": 64.6,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2015,
+      "candidateYears": [
+        {
+          "year": 2015,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "UstY2pSWVw8"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
       "rank": 374,
@@ -12105,23 +12127,19 @@
       ],
       "candidateScore": 64.4,
       "language": "russian",
-      "releaseYear": 2018,
-      "candidateYears": [
-        {
-          "year": 2018,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "Vbtpm23ucw4"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 377,
@@ -12133,23 +12151,19 @@
       ],
       "candidateScore": 64.3,
       "language": "russian",
-      "releaseYear": 2007,
-      "candidateYears": [
-        {
-          "year": 2007,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "Y_LhRw5bWx8"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 378,
@@ -12237,23 +12251,19 @@
       ],
       "candidateScore": 63.2,
       "language": "russian",
-      "releaseYear": 2016,
-      "candidateYears": [
-        {
-          "year": 2016,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "UCHROqiX0lI"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 382,
@@ -12298,26 +12308,24 @@
       ],
       "candidateScore": 63.1,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "3naDOUjpQLrWSmerZJBjQk"
-        ],
-        "youtube": [
-          "_Gbn-CuuZFk"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 384,
@@ -12422,23 +12430,19 @@
       ],
       "candidateScore": 62.6,
       "language": "russian",
-      "releaseYear": 2009,
-      "candidateYears": [
-        {
-          "year": 2009,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "EVniuJWXHsY"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 388,
@@ -12450,23 +12454,19 @@
       ],
       "candidateScore": 62.6,
       "language": "russian",
-      "releaseYear": 2010,
-      "candidateYears": [
-        {
-          "year": 2010,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "RisKqPxDOek"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 389,
@@ -12572,20 +12572,19 @@
       "candidateYears": [
         {
           "year": 2006,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "GkcFJyE-6KE"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
       "rank": 393,
@@ -12625,10 +12624,10 @@
       ],
       "candidateScore": 61.59,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2022,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2022,
           "source": "quiz-ready-pool"
         }
       ],
@@ -12679,23 +12678,19 @@
       ],
       "candidateScore": 61,
       "language": "russian",
-      "releaseYear": 2005,
-      "candidateYears": [
-        {
-          "year": 2005,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "73hDuXYfM6s"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 397,
@@ -12917,19 +12912,20 @@
       "candidateYears": [
         {
           "year": 2006,
-          "source": "quiz-ready-pool"
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "WDMXcnzlhlM"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 405,
@@ -12941,15 +12937,11 @@
       ],
       "candidateScore": 60.5,
       "language": "russian",
-      "releaseYear": 2002,
+      "releaseYear": 1995,
       "candidateYears": [
         {
-          "year": 2002,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 1995,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [],
@@ -13023,23 +13015,19 @@
       ],
       "candidateScore": 60,
       "language": "russian",
-      "releaseYear": 2005,
-      "candidateYears": [
-        {
-          "year": 2005,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "kV8MuZsytF0"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
       "rank": 409,
@@ -13051,15 +13039,11 @@
       ],
       "candidateScore": 59.89,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2021,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -13148,26 +13132,24 @@
       ],
       "candidateScore": 58.97,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "4hrGpb5Rvxef1AclRgWQob"
-        ],
-        "youtube": [
-          "jKw3n1Gsrtw"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 413,
@@ -13179,10 +13161,10 @@
       ],
       "candidateScore": 58.97,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2022,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2022,
           "source": "quiz-ready-pool"
         }
       ],
@@ -13461,15 +13443,11 @@
       ],
       "candidateScore": 54.5,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2021,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -13497,15 +13475,11 @@
       ],
       "candidateScore": 54.5,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2021,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -13532,10 +13506,10 @@
       ],
       "candidateScore": 54.5,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -13563,8 +13537,12 @@
       ],
       "candidateScore": 53.13,
       "language": "russian",
-      "releaseYear": 2018,
+      "releaseYear": 2019,
       "candidateYears": [
+        {
+          "year": 2019,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2018,
           "source": "musicbrainz-search"
@@ -13576,16 +13554,13 @@
       "externalIds": {
         "spotify": [
           "3BtXgurV7Xz7SuJv2mfBSQ"
+        ],
+        "youtube": [
+          "8Hy6VyjKepI"
         ]
       },
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.375
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
       "rank": 426,
@@ -13658,10 +13633,10 @@
       ],
       "candidateScore": 53.13,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2021,
           "source": "quiz-ready-pool"
         }
       ],
@@ -13786,26 +13761,24 @@
       ],
       "candidateScore": 51.62,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "6C9vK11QaZuy8CQWqoUHk8"
-        ],
-        "youtube": [
-          "UJuMCjsC2qQ"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 433,
@@ -13848,26 +13821,24 @@
       ],
       "candidateScore": 51.62,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "7p65QrEiV0iRt0afL80k9S"
-        ],
-        "youtube": [
-          "oiIw-G9yaFU"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 435,
@@ -13938,26 +13909,24 @@
       ],
       "candidateScore": 51.62,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "53Ih6g5enijnGAIDSKSCXQ"
-        ],
-        "youtube": [
-          "MtdLjKbJOBE"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
       "rank": 438,
@@ -13969,10 +13938,10 @@
       ],
       "candidateScore": 51.62,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2014,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2014,
           "source": "quiz-ready-pool"
         }
       ],
@@ -14029,41 +13998,6 @@
     },
     {
       "rank": 440,
-      "id": "chart-02073",
-      "artist": "Нина Бродская",
-      "title": "Звенит январская вьюга",
-      "artistIds": [
-        "ninabrodskaya"
-      ],
-      "candidateScore": 49.97,
-      "language": "russian",
-      "releaseYear": 2013,
-      "candidateYears": [
-        {
-          "year": 2013,
-          "source": "musicbrainz-search"
-        }
-      ],
-      "sourceIds": [
-        "spotify-ru-daily-history"
-      ],
-      "externalIds": {
-        "spotify": [
-          "1NEI55hYR02EGUOffbHob2"
-        ]
-      },
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
-      ],
-      "publicationProgress": 0.25
-    },
-    {
-      "rank": 441,
       "id": "chart-01502",
       "artist": "Куок",
       "title": "Воздух",
@@ -14072,15 +14006,11 @@
       ],
       "candidateScore": 49.92,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2021,
       "candidateYears": [
         {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        },
-        {
           "year": 2021,
-          "source": "musicbrainz-search"
+          "source": "quiz-ready-pool"
         }
       ],
       "sourceIds": [
@@ -14098,7 +14028,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 442,
+      "rank": 441,
       "id": "chart-05196",
       "artist": "Boris Moiseev & Layma Vaykule",
       "title": "Baltic Romance",
@@ -14137,7 +14067,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 443,
+      "rank": 442,
       "id": "chart-01911",
       "artist": "Egor Nats",
       "title": "Хочу к тебе",
@@ -14146,10 +14076,10 @@
       ],
       "candidateScore": 49.92,
       "language": "russian",
-      "releaseYear": 2020,
+      "releaseYear": 2018,
       "candidateYears": [
         {
-          "year": 2020,
+          "year": 2018,
           "source": "quiz-ready-pool"
         }
       ],
@@ -14168,7 +14098,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 444,
+      "rank": 443,
       "id": "chart-01364",
       "artist": "KURT92",
       "title": "В Потолок",
@@ -14199,7 +14129,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 445,
+      "rank": 444,
       "id": "chart-01562",
       "artist": "OWEEK",
       "title": "Танцуй",
@@ -14208,29 +14138,27 @@
       ],
       "candidateScore": 49.92,
       "language": "russian",
-      "releaseYear": 2020,
-      "candidateYears": [
-        {
-          "year": 2020,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [
         "spotify-ru-daily-history"
       ],
       "externalIds": {
         "spotify": [
           "4RjV70kWPzjxRVhoaYLAR0"
-        ],
-        "youtube": [
-          "icL-vbrff50"
         ]
       },
-      "blockers": [],
-      "publicationProgress": 1
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
-      "rank": 446,
+      "rank": 445,
       "id": "pool-128d46828794",
       "artist": "ВИА Сливки",
       "title": "Куда уходит детство",
@@ -14258,7 +14186,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 447,
+      "rank": 446,
       "id": "pool-c50b6c954054",
       "artist": "Рок-Группа",
       "title": "Попса",
@@ -14281,7 +14209,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 448,
+      "rank": 447,
       "id": "pool-e2af0cf3fa8f",
       "artist": "Юрий Шатунов",
       "title": "Детство",
@@ -14290,26 +14218,22 @@
       ],
       "candidateScore": 49.9,
       "language": "russian",
-      "releaseYear": 2002,
-      "candidateYears": [
-        {
-          "year": 2002,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "aRa4_vfQngw"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 449,
+      "rank": 448,
       "id": "pool-8b2d81c70d70",
       "artist": "Demo",
       "title": "2000 лет",
@@ -14337,7 +14261,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 450,
+      "rank": 449,
       "id": "pool-1ebd3a7029a7",
       "artist": "Lumen",
       "title": "Государство",
@@ -14346,26 +14270,22 @@
       ],
       "candidateScore": 49.9,
       "language": "russian",
-      "releaseYear": 2005,
-      "candidateYears": [
-        {
-          "year": 2005,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "J9fAvi1T-e4"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 451,
+      "rank": 450,
       "id": "pool-973a19b01114",
       "artist": "Горячий Шоколад",
       "title": "Береги",
@@ -14394,7 +14314,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 452,
+      "rank": 451,
       "id": "pool-d23abda574e0",
       "artist": "Разные Люди",
       "title": "Никогда не вернусь",
@@ -14420,7 +14340,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 453,
+      "rank": 452,
       "id": "pool-adb81a3f2ecf",
       "artist": "Смысловые Галлюцинации",
       "title": "Полюса",
@@ -14429,22 +14349,26 @@
       ],
       "candidateScore": 49.7,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2005,
+      "candidateYears": [
+        {
+          "year": 2005,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "DjYs4atrRfk"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 454,
+      "rank": 453,
       "id": "pool-a422278444c5",
       "artist": "DONI feat Сати Казанова",
       "title": "Я украду",
@@ -14473,7 +14397,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 455,
+      "rank": 454,
       "id": "pool-7b309969d1d4",
       "artist": "TOKiO",
       "title": "Кто я без тебя",
@@ -14486,22 +14410,23 @@
       "candidateYears": [
         {
           "year": 2006,
-          "source": "quiz-ready-pool"
+          "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "HA0mwVH10LI"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 456,
+      "rank": 455,
       "id": "pool-600c82b253c8",
       "artist": "VITAS",
       "title": "7-ой элемент",
@@ -14529,7 +14454,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 457,
+      "rank": 456,
       "id": "pool-80819227ce68",
       "artist": "DJ Бойко",
       "title": "Трава",
@@ -14555,7 +14480,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 458,
+      "rank": 457,
       "id": "pool-5673a444c01f",
       "artist": "ПИЛОТ",
       "title": "Ждите солнца",
@@ -14583,7 +14508,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 459,
+      "rank": 458,
       "id": "pool-07b814efb408",
       "artist": "Quest Pistols",
       "title": "Белая стрекоза любви",
@@ -14611,7 +14536,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 460,
+      "rank": 459,
       "id": "pool-cfc19a4fac2a",
       "artist": "Ляпис Трубецкой",
       "title": "Почтальоны",
@@ -14639,7 +14564,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 461,
+      "rank": 460,
       "id": "pool-ad2056f5fd90",
       "artist": "BIFFGUYZ ft. Bovie & Rox",
       "title": "Я тебя Бум Бум Бум",
@@ -14667,7 +14592,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 462,
+      "rank": 461,
       "id": "pool-989f4613b615",
       "artist": "Reflex",
       "title": "Падали звёзды",
@@ -14676,27 +14601,30 @@
       ],
       "candidateScore": 49.3,
       "language": "russian",
-      "releaseYear": 2014,
+      "releaseYear": 2003,
       "candidateYears": [
+        {
+          "year": 2003,
+          "source": "quiz-ready-pool"
+        },
         {
           "year": 2014,
           "source": "musicbrainz-search"
         }
       ],
       "sourceIds": [],
-      "externalIds": {},
+      "externalIds": {
+        "youtube": [
+          "_VTTdrUheIc"
+        ]
+      },
       "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+        "artist-already-used"
       ],
-      "publicationProgress": 0.25
+      "publicationProgress": 0.875
     },
     {
-      "rank": 463,
+      "rank": 462,
       "id": "pool-893c57f1d43d",
       "artist": "Андрей Губин",
       "title": "Девушки, как звёзды",
@@ -14724,7 +14652,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 464,
+      "rank": 463,
       "id": "pool-ecd187364300",
       "artist": "Эльбрус Джанмирзоев и Alexandros Tsopozidis",
       "title": "БРОДЯГА",
@@ -14751,7 +14679,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 465,
+      "rank": 464,
       "id": "pool-e89ce55bf676",
       "artist": "Open Kids ft. Quest Pistols Show",
       "title": "Круче всех",
@@ -14776,7 +14704,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 466,
+      "rank": 465,
       "id": "pool-39e561fe12db",
       "artist": "Остап Парфенов & Nvkrn134",
       "title": "Ты не королева",
@@ -14803,7 +14731,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 467,
+      "rank": 466,
       "id": "pool-6cc5e2a040e8",
       "artist": "Отпетые мошенники",
       "title": "Девушки бывают разные",
@@ -14827,7 +14755,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 468,
+      "rank": 467,
       "id": "pool-cddcc19ebb66",
       "artist": "Tony Igy",
       "title": "Astronomia",
@@ -14853,7 +14781,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 469,
+      "rank": 468,
       "id": "pool-590dcdf62122",
       "artist": "Алиса",
       "title": "Веретено",
@@ -14881,7 +14809,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 470,
+      "rank": 469,
       "id": "pool-740c76211c25",
       "artist": "Бумбокс",
       "title": "Вахтерам",
@@ -14897,7 +14825,7 @@
           "source": "quiz-ready-pool"
         },
         {
-          "year": 2017,
+          "year": 2006,
           "source": "musicbrainz-search"
         }
       ],
@@ -14913,7 +14841,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 471,
+      "rank": 470,
       "id": "pool-e4c53c785c24",
       "artist": "Герр Антон",
       "title": "Одинокии мужчина",
@@ -14939,7 +14867,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 472,
+      "rank": 471,
       "id": "pool-4972bbf44044",
       "artist": "Доминик Джокер",
       "title": "Такая одна",
@@ -14967,7 +14895,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 473,
+      "rank": 472,
       "id": "pool-6c48e0d548ba",
       "artist": "Мара",
       "title": "Чё на чём",
@@ -14995,7 +14923,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 474,
+      "rank": 473,
       "id": "pool-2c10055b4416",
       "artist": "Triplex vs Apocalyptica",
       "title": "Бой с тенью",
@@ -15018,7 +14946,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 475,
+      "rank": 474,
       "id": "pool-31cedd214453",
       "artist": "23_45",
       "title": "Друг без друга",
@@ -15042,7 +14970,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 476,
+      "rank": 475,
       "id": "pool-2a3e179cf638",
       "artist": "Катя Лель",
       "title": "Мой мармеладный",
@@ -15074,7 +15002,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 477,
+      "rank": 476,
       "id": "pool-84f65336c36e",
       "artist": "ЧАЙФ",
       "title": "Время не ждёт",
@@ -15102,7 +15030,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 478,
+      "rank": 477,
       "id": "pool-73a1e6ce9298",
       "artist": "Dan Balan",
       "title": "Лишь до утра",
@@ -15134,7 +15062,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 479,
+      "rank": 478,
       "id": "pool-0ed507078e48",
       "artist": "T-Fest Х Скриптонит",
       "title": "Ламбада",
@@ -15143,21 +15071,24 @@
       ],
       "candidateScore": 48.8,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2017,
+      "candidateYears": [
+        {
+          "year": 2017,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.375
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "TL5leSWjudM"
+        ]
+      },
+      "blockers": [],
+      "publicationProgress": 1
     },
     {
-      "rank": 480,
+      "rank": 479,
       "id": "pool-dc055169f8a0",
       "artist": "Танцы минус",
       "title": "Романтика",
@@ -15189,7 +15120,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 481,
+      "rank": 480,
       "id": "pool-75f5a622f2b1",
       "artist": "Чи",
       "title": "Ли - Любовь - это яд",
@@ -15212,7 +15143,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 482,
+      "rank": 481,
       "id": "pool-9dbb1ebd7d58",
       "artist": "GRIVINA",
       "title": "Я хочу",
@@ -15238,7 +15169,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 483,
+      "rank": 482,
       "id": "pool-5a8e7e239ae5",
       "artist": "Афродита",
       "title": "Валера",
@@ -15264,7 +15195,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 484,
+      "rank": 483,
       "id": "pool-2d7195e0d6c3",
       "artist": "Дельфин",
       "title": "Кокон",
@@ -15273,22 +15204,26 @@
       ],
       "candidateScore": 48.5,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2007,
+      "candidateYears": [
+        {
+          "year": 2007,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "_CJSd4RKBeQ"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 485,
+      "rank": 484,
       "id": "chart-00910",
       "artist": "Niman",
       "title": "Талия - Remix by Karma",
@@ -15317,7 +15252,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 486,
+      "rank": 485,
       "id": "pool-c0b858ea8e1b",
       "artist": "Все Включено",
       "title": "Девочка Столичная",
@@ -15345,7 +15280,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 487,
+      "rank": 486,
       "id": "pool-4e2094a3032d",
       "artist": "Грибы",
       "title": "Копы",
@@ -15354,22 +15289,26 @@
       ],
       "candidateScore": 48.4,
       "language": "russian",
-      "releaseYear": null,
-      "candidateYears": [],
-      "sourceIds": [],
-      "externalIds": {},
-      "blockers": [
-        "artist-already-used",
-        "quiz-eligibility",
-        "approximate-year",
-        "era",
-        "youtube-video",
-        "playable-fragment"
+      "releaseYear": 2016,
+      "candidateYears": [
+        {
+          "year": 2016,
+          "source": "quiz-ready-pool"
+        }
       ],
-      "publicationProgress": 0.25
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "OVqW4tFR-gc"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     },
     {
-      "rank": 488,
+      "rank": 487,
       "id": "pool-13127b6fa937",
       "artist": "Кристина Орбакайте",
       "title": "Май",
@@ -15397,7 +15336,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 489,
+      "rank": 488,
       "id": "pool-a82b9cf65634",
       "artist": "СЕРЕГА",
       "title": "Черный бумер",
@@ -15425,7 +15364,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 490,
+      "rank": 489,
       "id": "pool-83f3a53109ca",
       "artist": "Алена Апина и Лолита",
       "title": "Песня о женской дружбе",
@@ -15450,7 +15389,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 491,
+      "rank": 490,
       "id": "pool-45a9c613e344",
       "artist": "Ивангай ft. TRINERGY",
       "title": "ХАЮХАЙ",
@@ -15477,7 +15416,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 492,
+      "rank": 491,
       "id": "pool-3051a079f421",
       "artist": "Buranovskiye Babushki",
       "title": "Party For Everybody",
@@ -15503,7 +15442,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 493,
+      "rank": 492,
       "id": "pool-09237f2a0092",
       "artist": "Михей",
       "title": "Сука Любовь",
@@ -15512,24 +15451,21 @@
       ],
       "candidateScore": 48.2,
       "language": "russian",
-      "releaseYear": 1999,
-      "candidateYears": [
-        {
-          "year": 1999,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "AccbNbqN2RQ"
-        ]
-      },
-      "blockers": [],
-      "publicationProgress": 1
+      "externalIds": {},
+      "blockers": [
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
+      ],
+      "publicationProgress": 0.375
     },
     {
-      "rank": 494,
+      "rank": 493,
       "id": "pool-39745c07d814",
       "artist": "Ночные Снайперы",
       "title": "Ты дарила мне розы",
@@ -15553,7 +15489,7 @@
       "publicationProgress": 0.25
     },
     {
-      "rank": 495,
+      "rank": 494,
       "id": "pool-ed03bf1ad2ff",
       "artist": "Провода",
       "title": "Про Кино",
@@ -15579,7 +15515,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 496,
+      "rank": 495,
       "id": "pool-22ac25cf322d",
       "artist": "Bad B. Альянс",
       "title": "Надежда На Завтра",
@@ -15602,7 +15538,7 @@
       "publicationProgress": 0.375
     },
     {
-      "rank": 497,
+      "rank": 496,
       "id": "pool-56b3ec5a8466",
       "artist": "Enjoykin",
       "title": "Котлетки с Пюрешкой",
@@ -15628,7 +15564,7 @@
       "publicationProgress": 1
     },
     {
-      "rank": 498,
+      "rank": 497,
       "id": "pool-d44da720740d",
       "artist": "MACHETE",
       "title": "Между Висками",
@@ -15656,7 +15592,7 @@
       "publicationProgress": 0.875
     },
     {
-      "rank": 499,
+      "rank": 498,
       "id": "pool-7cc8f3f1f368",
       "artist": "Джарахов",
       "title": "POKEBALL",
@@ -15665,26 +15601,22 @@
       ],
       "candidateScore": 48.1,
       "language": "russian",
-      "releaseYear": 2016,
-      "candidateYears": [
-        {
-          "year": 2016,
-          "source": "quiz-ready-pool"
-        }
-      ],
+      "releaseYear": null,
+      "candidateYears": [],
       "sourceIds": [],
-      "externalIds": {
-        "youtube": [
-          "6PmrsXPrP0I"
-        ]
-      },
+      "externalIds": {},
       "blockers": [
-        "artist-already-used"
+        "artist-already-used",
+        "quiz-eligibility",
+        "approximate-year",
+        "era",
+        "youtube-video",
+        "playable-fragment"
       ],
-      "publicationProgress": 0.875
+      "publicationProgress": 0.25
     },
     {
-      "rank": 500,
+      "rank": 499,
       "id": "pool-56506dd23b5f",
       "artist": "Pанетки",
       "title": "Это все о ней",
@@ -15705,6 +15637,34 @@
         "playable-fragment"
       ],
       "publicationProgress": 0.375
+    },
+    {
+      "rank": 500,
+      "id": "pool-b6cfb819a03f",
+      "artist": "Милана Хаметова",
+      "title": "Купи Пёсика",
+      "artistIds": [
+        "milanahametova"
+      ],
+      "candidateScore": 48,
+      "language": "russian",
+      "releaseYear": 2022,
+      "candidateYears": [
+        {
+          "year": 2022,
+          "source": "quiz-ready-pool"
+        }
+      ],
+      "sourceIds": [],
+      "externalIds": {
+        "youtube": [
+          "ixidX4_77Bo"
+        ]
+      },
+      "blockers": [
+        "artist-already-used"
+      ],
+      "publicationProgress": 0.875
     }
   ]
 }

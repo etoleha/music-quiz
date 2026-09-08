@@ -53,7 +53,7 @@ async function test(name, action) {
 try {
  core = await import(pathToFileURL(join(root, 'server/video-quizzes.ts')).href);
  http = await import(pathToFileURL(join(root, 'server/video-http.ts')).href);
- const { questionMaximum, nextAnswerAt, chanceClock } = await import(pathToFileURL(join(root, 'shared/video-quiz.ts')).href);
+ const { questionMaximum, nextAnswerAt, chanceClock, historyPlayback } = await import(pathToFileURL(join(root, 'shared/video-quiz.ts')).href);
  db = core.videoDb();
  const guestA = core.createGuest('Guest A'), guestB = core.createGuest('Guest B');
  const share = core.shareFor(fixture.id);
@@ -108,6 +108,35 @@ try {
   assert.deepEqual(chanceClock(q, 155), { points: .5, phase: 'submit', seconds: 5 });
   assert.equal(chanceClock(q, 160), undefined);
   assert.deepEqual(chanceClock(chance, 40), { points: 2, phase: 'chance', seconds: 10 });
+ });
+ await test('completed history starts watching at zero while unfinished guest play resumes its saved cursor', () => {
+  const complete = { completed: true, position: 80 };
+  const ongoing = { completed: false, position: 45 };
+  assert.deepEqual(historyPlayback(complete, true), { review: true, position: 0 });
+  assert.deepEqual(historyPlayback(complete, false), { review: true, position: 0 });
+  assert.deepEqual(historyPlayback(ongoing, true), { review: false, position: 45 });
+  assert.deepEqual(historyPlayback(ongoing, false), { review: true, position: 0 });
+  assert.equal(complete.position, 80); assert.equal(ongoing.position, 45);
+ });
+ await test('review and forward/backward media range reads preserve completed results and saved position', async () => {
+  // Own revision: do not establish the shared snapshot before other fixtures change their keys.
+  const previousRevision = fixture.revision;
+  fixture.revision = 'history-review-v1'; saveFixture();
+  try {
+  const a = fresh(); sync(a, 80, { pair: pair.correct });
+  const before = core.getVideoAttempt(a.id, guestA.id);
+  const historyBefore = core.videoHistory(guestA.id);
+  const ownerReview = await http.videoApi(new Request('https://quiz.test/api/video-quizzes', { method: 'POST', headers: { host: 'quiz.test', origin: 'https://quiz.test', 'content-type': 'application/json' }, body: JSON.stringify({ action: 'review', attemptId: a.id }) }), false);
+  assert.equal(ownerReview.status, 200);
+  const reviewed = await ownerReview.json(); assert.deepEqual(reviewed.attempt, JSON.parse(JSON.stringify(before)));
+  assert.equal(historyPlayback(reviewed.attempt, false).position, 0);
+  for (const [range, expected] of [['bytes=0-3', '0123'], ['bytes=12-15', 'cdef'], ['bytes=4-7', '4567']]) {
+   const response = http.videoMedia(new Request('https://quiz.test/media', { headers: { range } }), fixture.id, false);
+   assert.equal(response.status, 206); assert.equal(await response.text(), expected);
+  }
+  assert.deepEqual(core.getVideoAttempt(a.id, guestA.id), before);
+  assert.deepEqual(core.videoHistory(guestA.id), historyBefore);
+  } finally { fixture.revision = previousRevision; saveFixture(); }
  });
  await test('source and cover links stay private until reveal and refresh existing attempts', () => {
   const previous = pair.links, previousRevision = fixture.revision;

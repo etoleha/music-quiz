@@ -199,10 +199,10 @@
         "selectedBy": "editorial-replacement"
       },
       "clip": {
-        "start": 52,
+        "start": 82,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic"
+        "selectedBy": "editorial-feedback-correction",
+        "review": "verified"
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -330,10 +330,10 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 64,
+        "start": 275,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic"
+        "selectedBy": "editorial-feedback-correction",
+        "review": "verified"
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",

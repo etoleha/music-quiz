@@ -3,6 +3,12 @@
   "allowPreviouslyUsedArtists": true,
   "uniqueArtistsWithinQuiz": true,
   "uniqueSongsAcrossQuizzes": true,
+  "reserveEraPolicy": {
+    "sovietPriority": true,
+    "readyReserveTargetShare": 0.15,
+    "goldenReserveMustContainSovietSongs": true,
+    "sovietCandidatesProcessedBeforeOtherFreshCandidates": true
+  },
   "participantRule": "any-participant-blocks-credit-within-quiz",
   "unknownParticipantRule": "manual-review",
   "publicationRequirements": {

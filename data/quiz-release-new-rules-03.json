@@ -964,10 +964,10 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 73,
+        "start": 245,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic"
+        "selectedBy": "editorial-feedback-correction",
+        "review": "verified"
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",

@@ -157,3 +157,4 @@ body:has(.vq-game){background:#102b49}
 .vq-play-workspace .vq-jump-controls button:hover:not(:disabled){background:#254b70}
 .vq-play-workspace .vq-compact-score{color:#e9f1f8}
 .vq-sheet-panel{background:#fff;border:0;border-radius:8px;padding:14px 12px;color:#253d54}
+.vq-review-hint{font-size:13px;color:#adc4dc}

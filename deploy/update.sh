@@ -32,6 +32,7 @@ fi
 
 npm ci
 npm run build
+node scripts/check-data-artifacts.mjs .next/standalone .
 
 install -d -m 755 "$release_dir"
 cp -a .next/standalone/. "$release_dir/"

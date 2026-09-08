@@ -16,6 +16,12 @@ export type VideoAttempt = { id: string; quizId: string; name: string; position:
 export type VideoReport = { id: string; questionId: string; comment: string; conclusion: string; category: string; status: string; createdAt: string; attemptId: string; name: string };
 export type VideoHistory = { id: string; playerId: string; quizId: string; name: string; score: number; maxScore: number; position: number; completed: boolean; createdAt: string };
 
+// Watching results has its own cursor; it must not reuse or rewind the saved attempt.
+export function historyPlayback(attempt: Pick<VideoAttempt, "completed" | "position">, guest: boolean) {
+  const review = !guest || attempt.completed;
+  return { review, position: review ? 0 : attempt.position };
+}
+
 export function questionMaximum(q: VideoQuestion) { return q.chances.length ? 2 : q.fields.length === 2 ? 1.5 : 1; }
 export function chanceAt(q: VideoQuestion, position: number) { return q.chances.find(c => position >= c.start && position < c.end); }
 export function chanceClock(q: VideoQuestion, position: number) {

@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Play, Pause, Film, LockKeyhole, Check, Share2, ArrowLeft, Users, Trophy, Clock3, Send, X, RotateCcw } from "lucide-react";
-import { chanceAt, chanceClock, questionMaximum, roundAt, nextAnswerAt, type VideoEpisode, type VideoAttempt, type VideoDraft, type VideoHistory, type VideoReport } from "../shared/video-quiz";
+import { chanceAt, chanceClock, questionMaximum, roundAt, nextAnswerAt, historyPlayback, type VideoEpisode, type VideoAttempt, type VideoDraft, type VideoHistory, type VideoReport } from "../shared/video-quiz";
 import "./video-quiz.css";
 
 const time = (n: number) => `${Math.floor(n / 60)}:${String(Math.floor(n % 60)).padStart(2, "0")}`;
@@ -41,6 +41,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   const queue = useRef(Promise.resolve());
   const lastSync = useRef(0), highWater = useRef(0), boundaryBusy = useRef(false);
   const playIntent = useRef(false);
+  const initialPlaybackPosition = useRef(0);
   const debounce = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const modalRef = useRef<HTMLElement>(null), dialogOrigin = useRef<HTMLElement | null>(null);
   const unmountSave = useRef<() => void>(() => {});
@@ -62,13 +63,13 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   useEffect(() => { void refresh(); }, [refresh]);
   useEffect(() => () => { if (debounce.current) clearTimeout(debounce.current); unmountSave.current(); }, []);
 
-  function applyAttempt(a: VideoAttempt, initial = false) {
+  function applyAttempt(a: VideoAttempt, initial = false, playbackPosition = a.position) {
     setAttempt(a); attemptRef.current = a;
     if (initial) {
       let local: Record<string, VideoDraft> = {};
       try { local = JSON.parse(localStorage.getItem(`video-quiz:${a.id}`) || "{}"); } catch { /* browser storage can be disabled */ }
       const next = Object.fromEntries(Object.entries(a.answers).map(([id, answer]) => [id, !answer.locked && local[id] ? local[id] : answer.draft]));
-      setDrafts(next); draftRef.current = next; setPosition(a.position); highWater.current = a.position;
+      setDrafts(next); draftRef.current = next; setPosition(playbackPosition); highWater.current = a.position; initialPlaybackPosition.current = playbackPosition;
     } else {
       setDrafts(old => Object.fromEntries(Object.entries(a.answers).map(([id, answer]) => [id, answer.locked ? answer.draft : old[id] || answer.draft])));
     }
@@ -159,10 +160,10 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   }, [dialogOpen, sync]);
 
   const togglePlayback = useCallback(() => {
-    const v = video.current; if (!v || review) return;
+    const v = video.current; if (!v) return;
     if (boundaryBusy.current) { playIntent.current = false; v.pause(); return; }
     if (v.paused) { playIntent.current = true; setSelectedRound(null); void v.play().catch(() => setError("Нажмите воспроизведение ещё раз")); }
-    else { playIntent.current = false; v.pause(); void sync(v.currentTime).catch(() => {}); }
+    else { playIntent.current = false; v.pause(); if (!review) void sync(v.currentTime).catch(() => {}); }
   }, [review, sync]);
   useEffect(() => {
     const key = (e: KeyboardEvent) => { if (e.key === "F2" && !dialog && !e.repeat) { e.preventDefault(); togglePlayback(); } };
@@ -177,11 +178,14 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     catch (e) { setError((e as Error).message); } finally { setLoading(false); }
   }
   async function openHistory(h: VideoHistory) {
+    if (debounce.current) clearTimeout(debounce.current);
+    playIntent.current = false; video.current?.pause(); setError("");
     try {
       const data = await request({ action: guest ? "open" : "review", attemptId: h.id });
-      setReview(!guest || h.completed);
+      const playback = historyPlayback(data.attempt, guest);
+      setReview(playback.review);
       if (data.episode) setCatalogue(old => old.map(e => e.id === h.quizId ? data.episode : e));
-      applyAttempt(data.attempt, true); setSelectedRound(h.completed || !guest ? 1 : null);
+      applyAttempt(data.attempt, true, playback.position); setSelectedRound(null);
     } catch (e) { setError((e as Error).message); }
   }
   function change(id: string, key: "artist" | "title", value: string) {
@@ -192,7 +196,9 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     debounce.current = setTimeout(() => { void sync(video.current?.currentTime ?? position).catch(() => {}); }, 400);
   }
   function progress() {
-    const v = video.current; if (!v || !episode || review || boundaryBusy.current || v.seeking) return;
+    const v = video.current; if (!v || !episode) return;
+    if (review) { setPosition(v.currentTime); return; }
+    if (boundaryBusy.current || v.seeking) return;
     const at = v.currentTime;
     // Stop at a deadline until the latest draft is safely frozen. No internal breaks in the blitz.
     const crossings = episode.rounds.flatMap(r => r.questions).filter(q => !attemptRef.current?.answers[q.id]?.locked && q.close > highWater.current && q.close <= at);
@@ -206,7 +212,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     if (Date.now() - lastSync.current > 1000) { lastSync.current = Date.now(); void sync(at).catch(() => {}); }
   }
   async function submit(questionId: string) {
-    const v = video.current; if (!v || boundaryBusy.current) return;
+    const v = video.current; if (!v || review || boundaryBusy.current) return;
     const at = v.currentTime, resume = playIntent.current, expectedId = attemptRef.current?.id;
     boundaryBusy.current = true; setSubmittingQuestion(questionId); v.pause();
     if (debounce.current) clearTimeout(debounce.current);
@@ -215,6 +221,11 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   async function jump(at: number) {
     const a = attemptRef.current, v = video.current;
     if (!a || !v || boundaryBusy.current || dialogSubmitting.current) return;
+    if (review) {
+      v.currentTime = Math.max(0, Math.min(at, episode?.duration ?? at));
+      setPosition(v.currentTime); setSelectedRound(null); setError("");
+      return;
+    }
     if (!review && at < Math.max(highWater.current, a.position, v.currentTime) - .05) return;
     if (debounce.current) clearTimeout(debounce.current);
     const resume = playIntent.current;
@@ -270,7 +281,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     {guest && <label className="vq-name">Как тебя записать?<input value={name} maxLength={60} onChange={e => setName(e.target.value)} placeholder="Имя или название команды" /></label>}
     {loading ? <p role="status">Загружаю видеоквизы…</p> : <div className="vq-episodes">{catalogue.map(e => <article className="vq-episode" key={e.id}><div className="vq-episode-icon"><Film /></div><div><span className="vq-kicker">8 РАУНДОВ · 80 ВОПРОСОВ</span><h2>{e.title}</h2><p><Clock3 size={15} /> {time(e.duration)} <span>·</span> до {points(e.rounds.flatMap(r => r.questions).reduce((n, q) => n + questionMaximum(q), 0))} баллов</p></div><div className="vq-actions"><button className="vq-primary" onClick={() => void begin(e.id)}><Play size={17} /> {history.some(h => h.quizId === e.id && !h.completed) ? "Продолжить" : "Начать"}</button>{!guest && <button className="vq-icon-button" aria-label="Пригласить гостя" onClick={() => void share(e.id)}><Share2 size={18} /></button>}</div></article>)}</div>}
     <div className="vq-stat-grid"><article><Trophy /><strong>{points(history.reduce((n, h) => n + h.score, 0))}</strong><span>баллов в видеоквизах</span></article><article><Check /><strong>{history.filter(h => h.completed).length}</strong><span>завершённых прохождений</span></article><article><Users /><strong>{new Set(history.map(h => h.playerId)).size}</strong><span>{guest ? "игрок в этом браузере" : "игроков и команд"}</span></article></div>
-    <section className="vq-history"><h2>Прохождения {guest ? "и результаты" : "всех игроков"}</h2>{history.length ? history.map(h => <button className="vq-history-row" key={h.id} onClick={() => void openHistory(h)}><span><b>{h.name}</b><small>{new Date(h.createdAt).toLocaleString("ru-RU")} · {h.completed ? "Завершён" : `Остановлен на ${time(h.position)}`}</small></span><strong>{points(h.score)} / {points(h.maxScore)}</strong></button>) : <p>Здесь появятся сохранённые результаты и незавершённые игры.</p>}</section>
+    <section className="vq-history"><h2>Прохождения {guest ? "и результаты" : "всех игроков"}</h2>{history.length ? history.map(h => <button className="vq-history-row" key={h.id} onClick={() => void openHistory(h)}><span><b>{h.name}</b><small>{new Date(h.createdAt).toLocaleString("ru-RU")} · {h.completed ? "Завершён" : `Остановлен на ${time(h.position)}`} · {!guest || h.completed ? "Смотреть с начала" : "Продолжить игру"}</small></span><strong>{points(h.score)} / {points(h.maxScore)}</strong></button>) : <p>Здесь появятся сохранённые результаты и незавершённые игры.</p>}</section>
     {!guest && !!reports.length && <section className="vq-history"><h2>Комментарии к вопросам</h2>{reports.map(r => <article className="vq-report" key={r.id}><span className="vq-pill">{r.questionId} · {r.status === "resolved" ? "Обработан" : "Ждёт ведущего"}</span><b>{r.name}</b><p>{r.comment}</p><small>Предварительный авторазбор: {r.conclusion}</small>{r.status !== "resolved" && <button onClick={() => void request({ action: "resolveReport", reportId: r.id }).then(refresh)}>Отметить обработанным</button>}</article>)}</section>}
   </section>;
 
@@ -281,13 +292,13 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   const media = guest ? `/g/video-media/${episode.id}?share=${encodeURIComponent(shareToken!)}` : `/api/video-media/${episode.id}`;
   const needsComment = dialog?.kind === "report" || dialog?.annulled !== undefined || correctionReason === "other";
   return <section className="vq-game" ref={gameRef}>
-    <div className="vq-game-heading"><button className="vq-back" onClick={() => void leave()}><ArrowLeft size={17} /> К выпускам</button><span className="vq-pill">{review ? `Результаты · ${attempt.name}` : attempt.name}</span></div>
+    <div className="vq-game-heading"><button className="vq-back" onClick={() => void leave()}><ArrowLeft size={17} /> К выпускам</button><span className="vq-pill">{review ? `Просмотр · ${attempt.name}` : attempt.name}</span>{review && <span className="vq-review-hint">Можно перематывать · результаты сохранены</span>}</div>
     {alerts}
     <div className="vq-play-workspace" ref={workspaceRef}>
     <div ref={playerRef} className="vq-player-layout">
     <nav className="vq-round-nav" aria-label="Бланки раундов">{episode.rounds.map(r => <button key={r.number} title={`Раунд ${r.number} · ${r.title}`} aria-label={`Раунд ${r.number} · ${r.title}`} aria-current={r.number === round.number ? "step" : undefined} className={r.number === round.number ? "active" : ""} disabled={jumping || !review && r.start < Math.max(position, attempt.position, highWater.current) - .05} onClick={() => void jump(r.start)}><span>{r.number}</span>{r.title}{attempt.answers[r.questions[0].id]?.points !== undefined && <Check size={13} />}</button>)}</nav>
-    <div className="vq-player"><video key={attempt.id} ref={video} src={media} preload="metadata" playsInline onLoadedMetadata={() => { if (video.current) video.current.currentTime = attempt.position; }} onTimeUpdate={progress} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onSeeking={() => { const v = video.current; if (v && !review && Math.abs(v.currentTime - highWater.current) > .3) v.currentTime = highWater.current; }} onRateChange={() => { if (video.current) video.current.playbackRate = 1; }} onEnded={() => { setPlaying(false); void sync(episode.duration).catch(() => {}); }} onError={() => setError("Видео недоступно. Проверьте загрузку файла на сервер и соединение.")} aria-label={episode.title} />
-      <div className="vq-player-controls"><button className="vq-play" disabled={review || submittingQuestion !== null || jumping} onClick={togglePlayback} aria-label={playing ? "Пауза · F2" : "Воспроизвести · F2"}>{playing ? <Pause /> : <Play />}</button><span>{time(position)} <small>/ {time(episode.duration)}</small></span><kbd>F2</kbd></div>
+    <div className="vq-player"><video key={attempt.id} ref={video} src={media} preload="metadata" playsInline controls={review} onLoadedMetadata={() => { if (video.current) video.current.currentTime = initialPlaybackPosition.current; }} onTimeUpdate={progress} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onSeeking={() => { const v = video.current; if (v && !review && Math.abs(v.currentTime - highWater.current) > .3) v.currentTime = highWater.current; }} onRateChange={() => { if (video.current && !review) video.current.playbackRate = 1; }} onEnded={() => { playIntent.current = false; setPlaying(false); setPosition(episode.duration); if (!review) void sync(episode.duration).catch(() => {}); }} onError={() => setError("Видео недоступно. Проверьте загрузку файла на сервер и соединение.")} aria-label={episode.title} />
+      {!review && <div className="vq-player-controls"><button className="vq-play" disabled={submittingQuestion !== null || jumping} onClick={togglePlayback} aria-label={playing ? "Пауза · F2" : "Воспроизвести · F2"}>{playing ? <Pause /> : <Play />}</button><span>{time(position)} <small>/ {time(episode.duration)}</small></span><kbd>F2</kbd></div>}
     </div><div className="vq-jump-controls"><span className="vq-compact-score"><Trophy size={17} /> {points(attempt.score)} / {points(attempt.maxScore)}</span><button disabled={jumping || questionTime === undefined} onClick={() => questionTime !== undefined && void jump(questionTime)}><Play size={17} /> Следующий вопрос</button><button disabled={jumping || answerTime === undefined} onClick={() => answerTime !== undefined && void jump(answerTime)}><Check size={17} /> Следующий ответ</button>{attempt.completed && <button onClick={() => void begin(episode.id, true)}><RotateCcw size={15} /> Заново</button>}</div>
     </div>
     <section className="vq-sheet-panel" ref={sheetRef} aria-label={`Бланк раунда ${round.number}`}>

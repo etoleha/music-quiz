@@ -1,0 +1,3091 @@
+{
+  "version": 2,
+  "generatedAt": "2026-09-08T13:51:25.289Z",
+  "quizId": "hard-31",
+  "songs": {
+    "pool-16bd8a5ba3d7": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Петлюра",
+        "artistAliases": [
+          "Петлюра"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/23691030/track/107784887",
+            "https://www.youtube.com/watch?v=cC70b0MJwAA",
+            "https://music.yandex.com/artist/42645"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/23691030/track/107784887",
+            "https://www.youtube.com/watch?v=cC70b0MJwAA",
+            "https://music.yandex.com/artist/42645"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/23691030/track/107784887"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/42645"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=cC70b0MJwAA"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=cC70b0MJwAA"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/23691030/track/107784887",
+            "https://www.youtube.com/watch?v=cC70b0MJwAA",
+            "https://music.yandex.com/artist/42645"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/23691030/track/107784887",
+            "https://www.youtube.com/watch?v=cC70b0MJwAA",
+            "https://music.yandex.com/artist/42645"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/23691030/track/107784887",
+            "https://www.youtube.com/watch?v=cC70b0MJwAA",
+            "https://music.yandex.com/artist/42645"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=cC70b0MJwAA"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1996,
+        "versionYear": 1996,
+        "album": {
+          "title": "Малолетка",
+          "kind": "album",
+          "year": 1996,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/7548376/3cfc0cd3.a.23691030-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/23691030/track/107784887",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/42108/5b2475ad.p.42645/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/42645",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "petlyura"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/23691030/track/107784887"
+      },
+      "credits": [
+        {
+          "name": "Петлюра",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Знакомая песня или исполнитель, но безопасный фрагмент требует уверенного знания каталога.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "25e84e35cd441fb73fec888d3e6f8418171cead6e7ee1124661c38d70f874df1",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-22284a75702b": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Филипп Киркоров",
+        "artistAliases": [
+          "Филипп Киркоров"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22190946/track/31821393",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=dGPRnzQY11U",
+            "https://music.yandex.com/artist/167049"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22190946/track/31821393",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=dGPRnzQY11U",
+            "https://music.yandex.com/artist/167049"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22190946/track/31821393"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/167049"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=dGPRnzQY11U"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=dGPRnzQY11U"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22190946/track/31821393",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=dGPRnzQY11U",
+            "https://music.yandex.com/artist/167049"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22190946/track/31821393",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=dGPRnzQY11U",
+            "https://music.yandex.com/artist/167049"
+          ]
+        },
+        "credits": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=dGPRnzQY11U"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1995,
+        "versionYear": 1995,
+        "album": {
+          "title": "Скажи солнцу: \"Да!\"",
+          "kind": "album",
+          "year": 1995,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/6296749/0e2e0b51.a.22190946-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/22190946/track/31821393",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/6214856/40c972e1.p.167049/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/167049",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "filippkirkorov"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/22190946/track/31821393"
+      },
+      "credits": [],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 38,
+        "explanation": "Узнаваемая опора сложного выпуска; выбран куплетный фрагмент без названия песни.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "45ac80e8a259dd8f05df758829b67b1c480722a22fd77703be3f50e06af8a04a",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-ab4676205394": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Иосиф Кобзон",
+        "artistAliases": [
+          "Иосиф Кобзон"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3023971031",
+            "https://music.yandex.com/album/4644689/track/36813124",
+            "https://ru.wikipedia.org/wiki/Советская_эстрада",
+            "https://ru.wikipedia.org/wiki/%D0%9C%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D1%8F_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)",
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98",
+            "https://music.yandex.com/artist/233579"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3023971031",
+            "https://music.yandex.com/album/4644689/track/36813124",
+            "https://ru.wikipedia.org/wiki/Советская_эстрада",
+            "https://ru.wikipedia.org/wiki/%D0%9C%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D1%8F_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)",
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98",
+            "https://music.yandex.com/artist/233579"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/4644689/track/36813124"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/233579"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3023971031",
+            "https://music.yandex.com/album/4644689/track/36813124",
+            "https://ru.wikipedia.org/wiki/Советская_эстрада",
+            "https://ru.wikipedia.org/wiki/%D0%9C%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D1%8F_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)",
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98",
+            "https://music.yandex.com/artist/233579"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3023971031",
+            "https://music.yandex.com/album/4644689/track/36813124",
+            "https://ru.wikipedia.org/wiki/Советская_эстрада",
+            "https://ru.wikipedia.org/wiki/%D0%9C%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D1%8F_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)",
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98",
+            "https://music.yandex.com/artist/233579"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3023971031",
+            "https://music.yandex.com/album/4644689/track/36813124",
+            "https://ru.wikipedia.org/wiki/Советская_эстрада",
+            "https://ru.wikipedia.org/wiki/%D0%9C%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D1%8F_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)",
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98",
+            "https://music.yandex.com/artist/233579"
+          ]
+        },
+        "soundtrack": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3023971031",
+            "https://music.yandex.com/album/4644689/track/36813124",
+            "https://ru.wikipedia.org/wiki/Советская_эстрада",
+            "https://ru.wikipedia.org/wiki/%D0%9C%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D1%8F_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)",
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98",
+            "https://music.yandex.com/artist/233579"
+          ]
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=-Z5FSdPpQ98"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1973,
+        "versionYear": 2017,
+        "album": {
+          "title": "Мгновения...",
+          "kind": "album",
+          "year": 2013,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/143117/0f4fdcb0.a.4644689-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/4644689/track/36813124",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/149669/707324fe.a.4644461-1/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/233579",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "iosifkobzon"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D1%8F_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)"
+      },
+      "credits": [
+        {
+          "name": "Микаэл Таривердиев",
+          "role": "музыка"
+        },
+        {
+          "name": "Роберт Рождественский",
+          "role": "слова"
+        }
+      ],
+      "soundtrack": {
+        "title": "Семнадцать мгновений весны",
+        "kind": "телесериал",
+        "year": 1973
+      },
+      "difficulty": {
+        "band": "recognizable",
+        "score": 38,
+        "explanation": "Узнаваемая опора сложного выпуска; выбран куплетный фрагмент без названия песни.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "cd10d6906baf3fe54a078e20a08606b10040033147d3cf8a02adf7607b98ec8a",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-e8eb5fe6040e": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Вадим Усланов",
+        "artistAliases": [
+          "Вадим Усланов"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63105/track/28117998",
+            "https://www.youtube.com/watch?v=_WlxgzU4Mnw",
+            "https://music.yandex.com/artist/167077"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63105/track/28117998",
+            "https://www.youtube.com/watch?v=_WlxgzU4Mnw",
+            "https://music.yandex.com/artist/167077"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63105/track/28117998"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/167077"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=_WlxgzU4Mnw"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=_WlxgzU4Mnw"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63105/track/28117998",
+            "https://www.youtube.com/watch?v=_WlxgzU4Mnw",
+            "https://music.yandex.com/artist/167077"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63105/track/28117998",
+            "https://www.youtube.com/watch?v=_WlxgzU4Mnw",
+            "https://music.yandex.com/artist/167077"
+          ]
+        },
+        "credits": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=_WlxgzU4Mnw"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1998,
+        "versionYear": 1998,
+        "album": {
+          "title": "Ты сделана из огня",
+          "kind": "album",
+          "year": 1998,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/34131/1ddad790.a.63105-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/63105/track/28117998",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/34131/1ddad790.a.63105-1/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/167077",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "vadimuslanov"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/63105/track/28117998"
+      },
+      "credits": [],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Знакомая песня или исполнитель, но безопасный фрагмент требует уверенного знания каталога.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "18ba91f60c336fd4097c4ca24d1feb49df1a1e7efb7883cb7c36581f949ef77c",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-065656478a15": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "NikitA",
+        "artistAliases": [
+          "NikitA"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/194575/track/18172540",
+            "https://ru.wikipedia.org/wiki/NikitA",
+            "https://m1.tv/stars/103-2/",
+            "https://www.youtube.com/watch?v=Y0l9y20Tjx8",
+            "https://music.yandex.com/artist/260044"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/194575/track/18172540",
+            "https://ru.wikipedia.org/wiki/NikitA",
+            "https://m1.tv/stars/103-2/",
+            "https://www.youtube.com/watch?v=Y0l9y20Tjx8",
+            "https://music.yandex.com/artist/260044"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/194575/track/18172540"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/260044"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=Y0l9y20Tjx8"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=Y0l9y20Tjx8"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/194575/track/18172540",
+            "https://ru.wikipedia.org/wiki/NikitA",
+            "https://m1.tv/stars/103-2/",
+            "https://www.youtube.com/watch?v=Y0l9y20Tjx8",
+            "https://music.yandex.com/artist/260044"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/194575/track/18172540",
+            "https://ru.wikipedia.org/wiki/NikitA",
+            "https://m1.tv/stars/103-2/",
+            "https://www.youtube.com/watch?v=Y0l9y20Tjx8",
+            "https://music.yandex.com/artist/260044"
+          ]
+        },
+        "credits": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=Y0l9y20Tjx8"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2009,
+        "versionYear": 2009,
+        "album": {
+          "title": "Машина",
+          "kind": "album",
+          "year": 2009,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16334817/f9f7bf28.a.194575-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/194575/track/18172540",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/33216/9013a417.p.260044/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/260044",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "nikita",
+          "person:даша-астафьева",
+          "person:юлия-кавтарадзе"
+        ],
+        "lineup": [
+          {
+            "name": "Даша Астафьева",
+            "role": "вокал"
+          },
+          {
+            "name": "Юлия Кавтарадзе",
+            "role": "вокал"
+          }
+        ],
+        "sourceUrl": "https://ru.wikipedia.org/wiki/NikitA"
+      },
+      "credits": [],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Знакомая песня или исполнитель, но безопасный фрагмент требует уверенного знания каталога.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "aae327b7f2126ee3725bd5d496dd8732e5917c36cfe1b3a94ed879b7d6696078",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-450d25ac5f2d": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Татьяна Маркова",
+        "artistAliases": [
+          "Татьяна Маркова"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/36234709/track/138217294",
+            "https://www.youtube.com/watch?v=OzqyAo-N1i8",
+            "https://music.yandex.com/artist/2558051"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/36234709/track/138217294",
+            "https://www.youtube.com/watch?v=OzqyAo-N1i8",
+            "https://music.yandex.com/artist/2558051"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/36234709/track/138217294"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/2558051"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=OzqyAo-N1i8"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=OzqyAo-N1i8"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/36234709/track/138217294",
+            "https://www.youtube.com/watch?v=OzqyAo-N1i8",
+            "https://music.yandex.com/artist/2558051"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/36234709/track/138217294",
+            "https://www.youtube.com/watch?v=OzqyAo-N1i8",
+            "https://music.yandex.com/artist/2558051"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/36234709/track/138217294",
+            "https://www.youtube.com/watch?v=OzqyAo-N1i8",
+            "https://music.yandex.com/artist/2558051"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=OzqyAo-N1i8"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2025,
+        "versionYear": 2025,
+        "album": {
+          "title": "Платье белое (Remake)",
+          "kind": "single",
+          "year": 2025,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15317937/7f3f1932.a.36234709-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/36234709/track/138217294",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/15317937/7f3f1932.a.36234709-1/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2558051",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "tatyanamarkova"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/36234709/track/138217294"
+      },
+      "credits": [
+        {
+          "name": "Татьяна Маркова",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Знакомая песня или исполнитель, но безопасный фрагмент требует уверенного знания каталога.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "28929810a08420d490b9c1aa89c6813b6ad74c679c2b295dc1dcc5b421427ff3",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-0a0ffa1424bb": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "София Ротару",
+        "artistAliases": [
+          "София Ротару"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3028130611",
+            "https://music.yandex.com/album/25201733/track/112231280",
+            "https://ru.wikipedia.org/wiki/Песня_года",
+            "https://www.youtube.com/watch?v=sC5NUunV-Tk",
+            "https://music.yandex.com/artist/419250"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3028130611",
+            "https://music.yandex.com/album/25201733/track/112231280",
+            "https://ru.wikipedia.org/wiki/Песня_года",
+            "https://www.youtube.com/watch?v=sC5NUunV-Tk",
+            "https://music.yandex.com/artist/419250"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/25201733/track/112231280"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/419250"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=sC5NUunV-Tk"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=sC5NUunV-Tk"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3028130611",
+            "https://music.yandex.com/album/25201733/track/112231280",
+            "https://ru.wikipedia.org/wiki/Песня_года",
+            "https://www.youtube.com/watch?v=sC5NUunV-Tk",
+            "https://music.yandex.com/artist/419250"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3028130611",
+            "https://music.yandex.com/album/25201733/track/112231280",
+            "https://ru.wikipedia.org/wiki/Песня_года",
+            "https://www.youtube.com/watch?v=sC5NUunV-Tk",
+            "https://music.yandex.com/artist/419250"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://www.deezer.com/track/3028130611",
+            "https://music.yandex.com/album/25201733/track/112231280",
+            "https://ru.wikipedia.org/wiki/Песня_года",
+            "https://www.youtube.com/watch?v=sC5NUunV-Tk",
+            "https://music.yandex.com/artist/419250"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=sC5NUunV-Tk"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1971,
+        "versionYear": 2023,
+        "album": {
+          "title": "Червона рута",
+          "kind": "album",
+          "year": 1972,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/7852894/fd584876.a.25201733-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/25201733/track/112231280",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/38044/834733c8.p.419250/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/419250",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "sofiyarotaru"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://www.deezer.com/track/3028130611"
+      },
+      "credits": [
+        {
+          "name": "Владимир Ивасюк",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 38,
+        "explanation": "Узнаваемая опора сложного выпуска; выбран куплетный фрагмент без названия песни.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "38d73487462f4a56f001dfa6a0d5b38c16955969dab256414b4b7c4f3afcf211",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-ff0cf8cfb2b1": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Ляпис Трубецкой",
+        "artistAliases": [
+          "Ляпис Трубецкой"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10049/track/25373438",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://lyapis.narod.ru/biography.htm",
+            "https://ru.wikipedia.org/wiki/%D0%9B%D1%8F%D0%BF%D0%B8%D1%81_%D0%A2%D1%80%D1%83%D0%B1%D0%B5%D1%86%D0%BA%D0%BE%D0%B9",
+            "https://www.youtube.com/watch?v=llmateaAOd0",
+            "https://music.yandex.com/artist/41166"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10049/track/25373438",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://lyapis.narod.ru/biography.htm",
+            "https://ru.wikipedia.org/wiki/%D0%9B%D1%8F%D0%BF%D0%B8%D1%81_%D0%A2%D1%80%D1%83%D0%B1%D0%B5%D1%86%D0%BA%D0%BE%D0%B9",
+            "https://www.youtube.com/watch?v=llmateaAOd0",
+            "https://music.yandex.com/artist/41166"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10049/track/25373438"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/41166"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=llmateaAOd0"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=llmateaAOd0"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10049/track/25373438",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://lyapis.narod.ru/biography.htm",
+            "https://ru.wikipedia.org/wiki/%D0%9B%D1%8F%D0%BF%D0%B8%D1%81_%D0%A2%D1%80%D1%83%D0%B1%D0%B5%D1%86%D0%BA%D0%BE%D0%B9",
+            "https://www.youtube.com/watch?v=llmateaAOd0",
+            "https://music.yandex.com/artist/41166"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10049/track/25373438",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://lyapis.narod.ru/biography.htm",
+            "https://ru.wikipedia.org/wiki/%D0%9B%D1%8F%D0%BF%D0%B8%D1%81_%D0%A2%D1%80%D1%83%D0%B1%D0%B5%D1%86%D0%BA%D0%BE%D0%B9",
+            "https://www.youtube.com/watch?v=llmateaAOd0",
+            "https://music.yandex.com/artist/41166"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/10049/track/25373438",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://lyapis.narod.ru/biography.htm",
+            "https://ru.wikipedia.org/wiki/%D0%9B%D1%8F%D0%BF%D0%B8%D1%81_%D0%A2%D1%80%D1%83%D0%B1%D0%B5%D1%86%D0%BA%D0%BE%D0%B9",
+            "https://www.youtube.com/watch?v=llmateaAOd0",
+            "https://music.yandex.com/artist/41166"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=llmateaAOd0"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2001,
+        "versionYear": 2001,
+        "album": {
+          "title": "Юность",
+          "kind": "album",
+          "year": 2001,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16154377/6ea6d101.a.10049-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/10049/track/25373438",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/49876/599ae314.p.41166/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/41166",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "lyapistrubetskoi",
+          "person:сергей-михалок",
+          "person:павел-булатников",
+          "person:руслан-владыко",
+          "person:дмитрий-свиридович",
+          "person:алексей-любавин"
+        ],
+        "lineup": [
+          {
+            "name": "Сергей Михалок",
+            "role": "вокал, автор"
+          },
+          {
+            "name": "Павел Булатников",
+            "role": "вокал"
+          },
+          {
+            "name": "Руслан Владыко",
+            "role": "гитара"
+          },
+          {
+            "name": "Дмитрий Свиридович",
+            "role": "бас-гитара"
+          },
+          {
+            "name": "Алексей Любавин",
+            "role": "ударные"
+          }
+        ],
+        "sourceUrl": "https://lyapis.narod.ru/biography.htm"
+      },
+      "credits": [
+        {
+          "name": "Сергей Михалок",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Знакомая песня или исполнитель, но безопасный фрагмент требует уверенного знания каталога.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "220aedc45a50b14c4e6b123df2530fb2c8ca4eeac41580270cd75214babfded8",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-b5b1e0867e4a": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Bahh Tee",
+        "artistAliases": [
+          "Bahh Tee"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/848147/track/32989839",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=A2mS0kLbQf8",
+            "https://music.yandex.com/artist/454026"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/848147/track/32989839",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=A2mS0kLbQf8",
+            "https://music.yandex.com/artist/454026"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/848147/track/32989839"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/454026"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=A2mS0kLbQf8"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=A2mS0kLbQf8"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/848147/track/32989839",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=A2mS0kLbQf8",
+            "https://music.yandex.com/artist/454026"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/848147/track/32989839",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=A2mS0kLbQf8",
+            "https://music.yandex.com/artist/454026"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/848147/track/32989839",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=A2mS0kLbQf8",
+            "https://music.yandex.com/artist/454026"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=A2mS0kLbQf8"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2010,
+        "versionYear": 2010,
+        "album": {
+          "title": "Остаюсь собой",
+          "kind": "album",
+          "year": 2010,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/34131/9e585fb4.a.848147-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/848147/track/32989839",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/9838169/a45f24b8.p.454026/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/454026",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "bahhtee"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/848147/track/32989839"
+      },
+      "credits": [
+        {
+          "name": "Bahh Tee",
+          "role": "слова"
+        },
+        {
+          "name": "Лион & Bestseller",
+          "role": "музыка"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Менее очевидная позиция из проверенного резерва с фрагментом вне главного хука.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "a17832aa5ab85e777bf91e9aa036275e930a6e5dcaa204fb6003c67d5062ac7b",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-79188e52588f": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Стас Намин и группа «Цветы»",
+        "artistAliases": [
+          "Стас Намин и группа «Цветы»"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/13460287/track/76245090",
+            "https://flowersrock.ru/",
+            "https://www.youtube.com/watch?v=S-TVb_GqFXk",
+            "https://music.yandex.com/artist/3199048"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/13460287/track/76245090",
+            "https://flowersrock.ru/",
+            "https://www.youtube.com/watch?v=S-TVb_GqFXk",
+            "https://music.yandex.com/artist/3199048"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/13460287/track/76245090"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/3199048"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=S-TVb_GqFXk"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=S-TVb_GqFXk"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/13460287/track/76245090",
+            "https://flowersrock.ru/",
+            "https://www.youtube.com/watch?v=S-TVb_GqFXk",
+            "https://music.yandex.com/artist/3199048"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/13460287/track/76245090",
+            "https://flowersrock.ru/",
+            "https://www.youtube.com/watch?v=S-TVb_GqFXk",
+            "https://music.yandex.com/artist/3199048"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/13460287/track/76245090",
+            "https://flowersrock.ru/",
+            "https://www.youtube.com/watch?v=S-TVb_GqFXk",
+            "https://music.yandex.com/artist/3199048"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=S-TVb_GqFXk"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2009,
+        "versionYear": 2009,
+        "album": {
+          "title": "Назад в СССР",
+          "kind": "album",
+          "year": 2009,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/4477012/dca31eba.a.13460287-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/13460287/track/76245090",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/5576540/751b89a2.p.3199048/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/3199048",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "gruppatsvety",
+          "stasnamin",
+          "person:стас-намин",
+          "person:олег-предтеченский",
+          "person:валерий-диордица",
+          "person:александр-грецинин",
+          "person:юрий-вильнин",
+          "person:алан-асламазов"
+        ],
+        "lineup": [
+          {
+            "name": "Стас Намин",
+            "role": "руководитель, гитара"
+          },
+          {
+            "name": "Олег Предтеченский",
+            "role": "вокал, гитара"
+          },
+          {
+            "name": "Валерий Диордица",
+            "role": "вокал, клавишные"
+          },
+          {
+            "name": "Александр Грецинин",
+            "role": "вокал, бас-гитара"
+          },
+          {
+            "name": "Юрий Вильнин",
+            "role": "гитара"
+          },
+          {
+            "name": "Алан Асламазов",
+            "role": "клавишные, вокал, саксофон"
+          }
+        ],
+        "sourceUrl": "https://flowersrock.ru/"
+      },
+      "credits": [
+        {
+          "name": "Александра Пахмутова",
+          "role": "музыка"
+        },
+        {
+          "name": "Николай Добронравов",
+          "role": "слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Знакомая песня или исполнитель, но безопасный фрагмент требует уверенного знания каталога.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "15ae555665e66a7cc9d89a6665e5f48fbc11efbef82cfaeff79aced3ef1f0de9",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-d9f61f40d6cf": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Александр Маршал",
+        "artistAliases": [
+          "Александр Маршал"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/26656665/track/25854515",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=saB9Jqx6vPY",
+            "https://music.yandex.com/artist/948820"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/26656665/track/25854515",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=saB9Jqx6vPY",
+            "https://music.yandex.com/artist/948820"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/26656665/track/25854515"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/948820"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=saB9Jqx6vPY"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=saB9Jqx6vPY"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/26656665/track/25854515",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=saB9Jqx6vPY",
+            "https://music.yandex.com/artist/948820"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/26656665/track/25854515",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=saB9Jqx6vPY",
+            "https://music.yandex.com/artist/948820"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/26656665/track/25854515",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=saB9Jqx6vPY",
+            "https://music.yandex.com/artist/948820"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=saB9Jqx6vPY"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2000,
+        "versionYear": 2000,
+        "album": {
+          "title": "Ливень",
+          "kind": "album",
+          "year": 2000,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/10092855/7b2d064c.a.26656665-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/26656665/track/25854515",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/4489759/215bcee8.p.948820/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/948820",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "aleksandrmarshal"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/26656665/track/25854515"
+      },
+      "credits": [
+        {
+          "name": "Александр Маршал",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Менее очевидная позиция из проверенного резерва с фрагментом вне главного хука.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "bd9632c7db8ff824ded7d9e6c430bc06eee7a49ed119673b45046875dae0da45",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-807d3821a196": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Земфира",
+        "artistAliases": [
+          "Земфира"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/81431/track/732407",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=GpzauNN4R-M",
+            "https://music.yandex.com/artist/218099"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/81431/track/732407",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=GpzauNN4R-M",
+            "https://music.yandex.com/artist/218099"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/81431/track/732407"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/218099"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=GpzauNN4R-M"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=GpzauNN4R-M"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/81431/track/732407",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=GpzauNN4R-M",
+            "https://music.yandex.com/artist/218099"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/81431/track/732407",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=GpzauNN4R-M",
+            "https://music.yandex.com/artist/218099"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/81431/track/732407",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=GpzauNN4R-M",
+            "https://music.yandex.com/artist/218099"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=GpzauNN4R-M"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2000,
+        "versionYear": 2000,
+        "album": {
+          "title": "ПРОСТИ МЕНЯ МОЯ ЛЮБОВЬ",
+          "kind": "album",
+          "year": 2000,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/18172800/e893dd2c.a.81431-3/400x400",
+          "sourceUrl": "https://music.yandex.com/album/81431/track/732407",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/9838169/02171d0d.p.218099/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/218099",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "zemfira"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/81431/track/732407"
+      },
+      "credits": [
+        {
+          "name": "Земфира Рамазанова",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Менее очевидная позиция из проверенного резерва с фрагментом вне главного хука.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "7f5e95ac51921616c219a791d797c47f7ddb1f8a1771ffc18d3eada4d42ccbef",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-a769fe7b9838": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Аркадий Укупник",
+        "artistAliases": [
+          "Аркадий Укупник"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/39857978/track/83527775",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=b8Ow3933RaM",
+            "https://music.yandex.com/artist/1488960"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/39857978/track/83527775",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=b8Ow3933RaM",
+            "https://music.yandex.com/artist/1488960"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/39857978/track/83527775"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/1488960"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=b8Ow3933RaM"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=b8Ow3933RaM"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/39857978/track/83527775",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=b8Ow3933RaM",
+            "https://music.yandex.com/artist/1488960"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/39857978/track/83527775",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=b8Ow3933RaM",
+            "https://music.yandex.com/artist/1488960"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/39857978/track/83527775",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=b8Ow3933RaM",
+            "https://music.yandex.com/artist/1488960"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=b8Ow3933RaM"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 1998,
+        "versionYear": 1998,
+        "album": {
+          "title": "Поплавок",
+          "kind": "album",
+          "year": 1998,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16464214/033d3860.a.39857978-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/39857978/track/83527775",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/4489759/07fa6136.p.1488960/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/1488960",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "arkadiiukupnik"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/39857978/track/83527775"
+      },
+      "credits": [
+        {
+          "name": "Аркадий Укупник",
+          "role": "музыка"
+        },
+        {
+          "name": "Герман Витке",
+          "role": "слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Менее очевидная позиция из проверенного резерва с фрагментом вне главного хука.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "4291b88c4cd5565814d078e08f124b84fed1ce22cce10ec1e60c05f3193e4f77",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-3baa076f5936": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Kamazz",
+        "artistAliases": [
+          "Kamazz"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/6990571/track/42204948",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=oxaBlsipgpI",
+            "https://music.yandex.com/artist/2932324"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/6990571/track/42204948",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=oxaBlsipgpI",
+            "https://music.yandex.com/artist/2932324"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/6990571/track/42204948"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/2932324"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oxaBlsipgpI"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oxaBlsipgpI"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/6990571/track/42204948",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=oxaBlsipgpI",
+            "https://music.yandex.com/artist/2932324"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/6990571/track/42204948",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=oxaBlsipgpI",
+            "https://music.yandex.com/artist/2932324"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/6990571/track/42204948",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=oxaBlsipgpI",
+            "https://music.yandex.com/artist/2932324"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=oxaBlsipgpI"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2019,
+        "versionYear": 2019,
+        "album": {
+          "title": "Останови планету",
+          "kind": "album",
+          "year": 2019,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16616584/3464ce98.a.6990571-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/6990571/track/42204948",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/14715139/6e89e2ca.p.2932324/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2932324",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "kamazz"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/6990571/track/42204948"
+      },
+      "credits": [
+        {
+          "name": "BazzBeat",
+          "role": "музыка"
+        },
+        {
+          "name": "Kamazz",
+          "role": "слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 38,
+        "explanation": "Узнаваемая опора сложного выпуска; выбран куплетный фрагмент без названия песни.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "0b70937a0e4162fa49d70ba3626bc7019ec2c7235b942f6668127a3def0fba88",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-912a817aaa8c": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "MACAN",
+        "artistAliases": [
+          "MACAN"
+        ],
+        "artistForm": "Исполнитель"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22935619/track/105726576",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=j5cNhjG6iGs",
+            "https://music.yandex.com/artist/3892062"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22935619/track/105726576",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=j5cNhjG6iGs",
+            "https://music.yandex.com/artist/3892062"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22935619/track/105726576"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/3892062"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=j5cNhjG6iGs"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=j5cNhjG6iGs"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22935619/track/105726576",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=j5cNhjG6iGs",
+            "https://music.yandex.com/artist/3892062"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22935619/track/105726576",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=j5cNhjG6iGs",
+            "https://music.yandex.com/artist/3892062"
+          ]
+        },
+        "credits": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=j5cNhjG6iGs"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2022,
+        "versionYear": 2022,
+        "album": {
+          "title": "Останься образом",
+          "kind": "single",
+          "year": 2022,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/17659805/91435d1c.a.22935619-3/400x400",
+          "sourceUrl": "https://music.yandex.com/album/22935619/track/105726576",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/14304155/77471f61.p.3892062/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/3892062",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "macan"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/22935619/track/105726576"
+      },
+      "credits": [],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Знакомая песня или исполнитель, но безопасный фрагмент требует уверенного знания каталога.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "bc2ace4e18dc96c53a0bc648015d8ad44ebd2c6198ca8d9395fae64869386ac9",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-3d8f548aa99f": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Пошлая Молли",
+        "artistAliases": [
+          "Пошлая Молли"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/41529434/track/150142627",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=ccdHspHSJQ8",
+            "https://music.yandex.com/artist/4952161"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/41529434/track/150142627",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=ccdHspHSJQ8",
+            "https://music.yandex.com/artist/4952161"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/41529434/track/150142627"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/4952161"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=ccdHspHSJQ8"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=ccdHspHSJQ8"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/41529434/track/150142627",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=ccdHspHSJQ8",
+            "https://music.yandex.com/artist/4952161"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/41529434/track/150142627",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=ccdHspHSJQ8",
+            "https://music.yandex.com/artist/4952161"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/41529434/track/150142627",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=ccdHspHSJQ8",
+            "https://music.yandex.com/artist/4952161"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=ccdHspHSJQ8"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2018,
+        "versionYear": 2018,
+        "album": {
+          "title": "Грустная девчонка с глазами как у собаки",
+          "kind": "album",
+          "year": 2018,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16508792/111f8a72.a.41529434-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/41529434/track/150142627",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/14299670/141fe9ac.p.4952161/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/4952161",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "poshlayamolli",
+          "person:кирилл-бледный"
+        ],
+        "lineup": [
+          {
+            "name": "Кирилл Бледный",
+            "role": "вокал, автор"
+          }
+        ],
+        "sourceUrl": "https://music.yandex.com/album/41529434/track/150142627"
+      },
+      "credits": [
+        {
+          "name": "Кирилл Тимошенко",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "recognizable",
+        "score": 38,
+        "explanation": "Узнаваемая опора сложного выпуска; выбран куплетный фрагмент без названия песни.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "de4d542b249daa4602064aaa281ce6fa655aa72629dd10523ab417cc94cfd942",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-bf0b8c576971": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "INSTASAMKA",
+        "artistAliases": [
+          "INSTASAMKA"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24945899/track/111556054",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.shazam.com/en-gb/song/1670621831/d0bed182d0bad0bbd18ed187d0b0d18e-d182d0b5d0bbd0b5d184d0bed0bd",
+            "https://www.youtube.com/watch?v=AXO2i4Edl1c",
+            "https://music.yandex.com/artist/7461723"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24945899/track/111556054",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.shazam.com/en-gb/song/1670621831/d0bed182d0bad0bbd18ed187d0b0d18e-d182d0b5d0bbd0b5d184d0bed0bd",
+            "https://www.youtube.com/watch?v=AXO2i4Edl1c",
+            "https://music.yandex.com/artist/7461723"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24945899/track/111556054"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/7461723"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=AXO2i4Edl1c"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=AXO2i4Edl1c"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24945899/track/111556054",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.shazam.com/en-gb/song/1670621831/d0bed182d0bad0bbd18ed187d0b0d18e-d182d0b5d0bbd0b5d184d0bed0bd",
+            "https://www.youtube.com/watch?v=AXO2i4Edl1c",
+            "https://music.yandex.com/artist/7461723"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24945899/track/111556054",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.shazam.com/en-gb/song/1670621831/d0bed182d0bad0bbd18ed187d0b0d18e-d182d0b5d0bbd0b5d184d0bed0bd",
+            "https://www.youtube.com/watch?v=AXO2i4Edl1c",
+            "https://music.yandex.com/artist/7461723"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/24945899/track/111556054",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.shazam.com/en-gb/song/1670621831/d0bed182d0bad0bbd18ed187d0b0d18e-d182d0b5d0bbd0b5d184d0bed0bd",
+            "https://www.youtube.com/watch?v=AXO2i4Edl1c",
+            "https://music.yandex.com/artist/7461723"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=AXO2i4Edl1c"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2023,
+        "versionYear": 2023,
+        "album": {
+          "title": "Отключаю телефон",
+          "kind": "single",
+          "year": 2023,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/7852894/e79bcac6.a.24945899-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/24945899/track/111556054",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/12799091/15603077.p.7461723/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/7461723",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "instasamka"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://www.shazam.com/en-gb/song/1670621831/d0bed182d0bad0bbd18ed187d0b0d18e-d182d0b5d0bbd0b5d184d0bed0bd"
+      },
+      "credits": [
+        {
+          "name": "Дарья Зотеева",
+          "role": "автор, вокал"
+        },
+        {
+          "name": "Олег MONEYKEN Еропкин",
+          "role": "музыка, продюсирование"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Менее очевидная позиция из проверенного резерва с фрагментом вне главного хука.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "61c1276b6c299bef4f2cec46d63010c3a482e5bed4894d8dcff0581c59f89528",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-73bb0f54368d": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Каста",
+        "artistAliases": [
+          "Каста",
+          "Каста & Влади"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63757/track/597231",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://kasta.world/artists/",
+            "https://www.youtube.com/watch?v=O-0RprsSmto",
+            "https://music.yandex.com/artist/41126"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63757/track/597231",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://kasta.world/artists/",
+            "https://www.youtube.com/watch?v=O-0RprsSmto",
+            "https://music.yandex.com/artist/41126"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63757/track/597231"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/41126"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=O-0RprsSmto"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=O-0RprsSmto"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63757/track/597231",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://kasta.world/artists/",
+            "https://www.youtube.com/watch?v=O-0RprsSmto",
+            "https://music.yandex.com/artist/41126"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63757/track/597231",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://kasta.world/artists/",
+            "https://www.youtube.com/watch?v=O-0RprsSmto",
+            "https://music.yandex.com/artist/41126"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/63757/track/597231",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://kasta.world/artists/",
+            "https://www.youtube.com/watch?v=O-0RprsSmto",
+            "https://music.yandex.com/artist/41126"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=O-0RprsSmto"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2008,
+        "versionYear": 2014,
+        "album": {
+          "title": "Быль в глаза",
+          "kind": "album",
+          "year": 2008,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16469857/53a1dafe.a.63757-5/400x400",
+          "sourceUrl": "https://music.yandex.com/album/63757/track/597231",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/2114230/b45489db.p.41126/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/41126",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "kasta",
+          "vladi",
+          "person:влади",
+          "person:шым",
+          "person:хамиль",
+          "person:змей"
+        ],
+        "lineup": [
+          {
+            "name": "Влади",
+            "role": "вокал, автор"
+          },
+          {
+            "name": "Шым",
+            "role": "вокал"
+          },
+          {
+            "name": "Хамиль",
+            "role": "вокал"
+          },
+          {
+            "name": "Змей",
+            "role": "вокал"
+          }
+        ],
+        "sourceUrl": "https://kasta.world/artists/"
+      },
+      "credits": [
+        {
+          "name": "Влади",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Менее очевидная позиция из проверенного резерва с фрагментом вне главного хука.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "4363a95e8401776e71f44c8a38d0061479d516a91c806738f2b5525923289f25",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-0d8c1b01d5a4": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Операция Пластилин",
+        "artistAliases": [
+          "Операция Пластилин"
+        ],
+        "artistForm": "Группа"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/3865309/track/31820968",
+            "https://opg.ltd/audio/",
+            "https://www.youtube.com/watch?v=lYQamQEKuk4",
+            "https://music.yandex.com/artist/2882652"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/3865309/track/31820968",
+            "https://opg.ltd/audio/",
+            "https://www.youtube.com/watch?v=lYQamQEKuk4",
+            "https://music.yandex.com/artist/2882652"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/3865309/track/31820968"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/2882652"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=lYQamQEKuk4"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=lYQamQEKuk4"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/3865309/track/31820968",
+            "https://opg.ltd/audio/",
+            "https://www.youtube.com/watch?v=lYQamQEKuk4",
+            "https://music.yandex.com/artist/2882652"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/3865309/track/31820968",
+            "https://opg.ltd/audio/",
+            "https://www.youtube.com/watch?v=lYQamQEKuk4",
+            "https://music.yandex.com/artist/2882652"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/3865309/track/31820968",
+            "https://opg.ltd/audio/",
+            "https://www.youtube.com/watch?v=lYQamQEKuk4",
+            "https://music.yandex.com/artist/2882652"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=lYQamQEKuk4"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2016,
+        "versionYear": 2016,
+        "album": {
+          "title": "Волна. Акустический альбом, Часть 2",
+          "kind": "album",
+          "year": 2016,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/114728/0c0c3fab.a.3865309-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/3865309/track/31820968",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/14082060/875b5280.p.2882652/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/2882652",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "operatsiyaplastilin",
+          "person:анатолий-царев",
+          "person:иван-клюшин",
+          "person:михаил-бушуев",
+          "person:сергей-зимарин",
+          "person:екатерина-цион-княжева"
+        ],
+        "lineup": [
+          {
+            "name": "Анатолий Царёв",
+            "role": "вокал, автор"
+          },
+          {
+            "name": "Иван Клюшин",
+            "role": "гитара"
+          },
+          {
+            "name": "Михаил Бушуев",
+            "role": "бас-гитара"
+          },
+          {
+            "name": "Сергей Зимарин",
+            "role": "ударные"
+          },
+          {
+            "name": "Екатерина Цион-Княжева",
+            "role": "скрипка, вокал"
+          }
+        ],
+        "sourceUrl": "https://opg.ltd/audio/"
+      },
+      "credits": [
+        {
+          "name": "Анатолий Царёв",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "middle",
+        "score": 63,
+        "explanation": "Знакомая песня или исполнитель, но безопасный фрагмент требует уверенного знания каталога.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "31fe772786d2713d24af0fcf1be82a0e417f0a4170fb932fc882912f878e2706",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    },
+    "pool-e5373a0a8c1b": {
+      "goldenReserve": {
+        "approvedAt": "2026-09-08T04:24:27.484Z",
+        "reserveVersion": 1,
+        "recheckAtPublication": [
+          "youtube",
+          "fragment",
+          "relationships"
+        ]
+      },
+      "identity": {
+        "artist": "Лера Массква",
+        "artistAliases": [
+          "Лера Массква"
+        ],
+        "artistForm": "Исполнительница"
+      },
+      "checks": {
+        "identity": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22542342/track/104630009",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=rVeyZv-i1Qw",
+            "https://music.yandex.com/artist/41082"
+          ]
+        },
+        "release": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22542342/track/104630009",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=rVeyZv-i1Qw",
+            "https://music.yandex.com/artist/41082"
+          ]
+        },
+        "artwork": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22542342/track/104630009"
+          ]
+        },
+        "artistImage": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/artist/41082"
+          ]
+        },
+        "youtube": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=rVeyZv-i1Qw"
+          ]
+        },
+        "fragment": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=rVeyZv-i1Qw"
+          ]
+        },
+        "relationships": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22542342/track/104630009",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=rVeyZv-i1Qw",
+            "https://music.yandex.com/artist/41082"
+          ]
+        },
+        "difficulty": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22542342/track/104630009",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=rVeyZv-i1Qw",
+            "https://music.yandex.com/artist/41082"
+          ]
+        },
+        "credits": {
+          "state": "verified",
+          "sources": [
+            "https://music.yandex.com/album/22542342/track/104630009",
+            "https://boosty.to/quizpartynakhate/media/all",
+            "https://www.youtube.com/watch?v=rVeyZv-i1Qw",
+            "https://music.yandex.com/artist/41082"
+          ]
+        },
+        "soundtrack": {
+          "state": "not-applicable",
+          "sources": []
+        },
+        "audioLoudness": {
+          "state": "verified",
+          "sources": [
+            "https://www.youtube.com/watch?v=rVeyZv-i1Qw"
+          ]
+        }
+      },
+      "release": {
+        "releaseYear": 2007,
+        "versionYear": 2022,
+        "album": {
+          "title": "Разные",
+          "kind": "album",
+          "year": 2007,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/5966316/c97482e1.a.22542342-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/22542342/track/104630009",
+          "rightsStatus": "contextual-only"
+        }
+      },
+      "artistImage": {
+        "url": "https://avatars.yandex.net/get-music-content/95061/e749c20f.p.41082/400x400",
+        "sourceUrl": "https://music.yandex.com/artist/41082",
+        "attribution": "Яндекс Музыка",
+        "rightsStatus": "contextual-only"
+      },
+      "relationships": {
+        "conflictEntityIds": [
+          "leramasskva"
+        ],
+        "lineup": [],
+        "sourceUrl": "https://music.yandex.com/album/22542342/track/104630009"
+      },
+      "credits": [
+        {
+          "name": "Лера Массква",
+          "role": "музыка и слова"
+        }
+      ],
+      "soundtrack": null,
+      "difficulty": {
+        "band": "deep",
+        "score": 82,
+        "explanation": "Менее очевидная позиция из проверенного резерва с фрагментом вне главного хука.",
+        "basis": [
+          "personal-feedback",
+          "source-quiz-complexity",
+          "catalog-position",
+          "fragment-position"
+        ]
+      },
+      "selectedForQuiz": "hard-31",
+      "verificationSchemaVersion": 2,
+      "sourceFingerprint": "82b3730b60d1a21fb5011c51357faf1ae94ccc304c76f9447aef3d26e53cd8eb",
+      "lastFullyVerifiedAt": "2026-09-08T13:51:25.289Z",
+      "publishedAt": "2026-09-08T13:51:25.289Z"
+    }
+  }
+}
