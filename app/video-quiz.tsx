@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Play, Pause, Film, LockKeyhole, Check, Share2, ArrowLeft, Users, Trophy, Clock3, Send, X, RotateCcw } from "lucide-react";
-import { chanceAt, questionMaximum, roundAt, nextAnswerAt, type VideoEpisode, type VideoAttempt, type VideoDraft, type VideoHistory, type VideoReport } from "../shared/video-quiz";
+import { chanceAt, chanceClock, questionMaximum, roundAt, nextAnswerAt, type VideoEpisode, type VideoAttempt, type VideoDraft, type VideoHistory, type VideoReport } from "../shared/video-quiz";
 import "./video-quiz.css";
 
 const time = (n: number) => `${Math.floor(n / 60)}:${String(Math.floor(n % 60)).padStart(2, "0")}`;
@@ -21,7 +21,7 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [playing, setPlaying] = useState(false);
-  const [saving, setSaving] = useState(false);
+  const [submittingQuestion, setSubmittingQuestion] = useState<string | null>(null);
   const [position, setPosition] = useState(0);
   const [selectedRound, setSelectedRound] = useState<number | null>(null);
   const [review, setReview] = useState(false);
@@ -78,12 +78,10 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     const captured = { ...draftRef.current };
     const run = async () => {
       if (attemptRef.current?.id !== a.id) return;
-      setSaving(true);
       try {
         const data = await request({ action: questionId ? "submit" : "sync", attemptId: a.id, position: at, drafts: captured, questionId });
         if (attemptRef.current?.id === a.id) { applyAttempt(data.attempt); setError(""); }
       } catch (e) { if (attemptRef.current?.id === a.id) { playIntent.current = false; video.current?.pause(); setError((e as Error).message); } throw e; }
-      finally { setSaving(false); }
     };
     const pending = queue.current.catch(() => {}).then(run);
     queue.current = pending.catch(() => {});
@@ -208,9 +206,11 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
     if (Date.now() - lastSync.current > 1000) { lastSync.current = Date.now(); void sync(at).catch(() => {}); }
   }
   async function submit(questionId: string) {
-    const v = video.current; if (!v) return;
-    const at = v.currentTime, resume = playIntent.current, expectedId = attemptRef.current?.id; boundaryBusy.current = true; v.pause();
-    try { await sync(at, questionId); setNotice("Ответ отправлен. Баллы появятся при раскрытии."); if (resume && playIntent.current && attemptRef.current?.id === expectedId) await v.play(); } catch { /* keep the player paused for retry */ } finally { boundaryBusy.current = false; }
+    const v = video.current; if (!v || boundaryBusy.current) return;
+    const at = v.currentTime, resume = playIntent.current, expectedId = attemptRef.current?.id;
+    boundaryBusy.current = true; setSubmittingQuestion(questionId); v.pause();
+    if (debounce.current) clearTimeout(debounce.current);
+    try { await sync(at, questionId); if (resume && playIntent.current && attemptRef.current?.id === expectedId) await v.play(); } catch { /* keep the player paused for retry */ } finally { boundaryBusy.current = false; setSubmittingQuestion(null); }
   }
   async function jump(at: number) {
     const a = attemptRef.current, v = video.current;
@@ -275,22 +275,23 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   </section>;
 
   const activeChanceQuestion = round.questions.find(q => position >= q.start && position < q.close);
+  const clock = activeChanceQuestion && chanceClock(activeChanceQuestion, position);
   const questionTime = episode.rounds.flatMap(r => r.questions.map(q => q.start)).find(at => at > position + .05);
   const answerTime = nextAnswerAt(episode, position);
   const media = guest ? `/g/video-media/${episode.id}?share=${encodeURIComponent(shareToken!)}` : `/api/video-media/${episode.id}`;
   const needsComment = dialog?.kind === "report" || dialog?.annulled !== undefined || correctionReason === "other";
   return <section className="vq-game" ref={gameRef}>
-    <div className="vq-game-heading"><button className="vq-back" onClick={() => void leave()}><ArrowLeft size={17} /> К выпускам</button><span className="vq-pill">{review ? `Результаты · ${attempt.name}` : attempt.name}</span><span className="vq-save" role="status">{saving ? "Сохраняю…" : error ? "Не сохранено" : "Сохранено"}</span></div>
+    <div className="vq-game-heading"><button className="vq-back" onClick={() => void leave()}><ArrowLeft size={17} /> К выпускам</button><span className="vq-pill">{review ? `Результаты · ${attempt.name}` : attempt.name}</span></div>
     {alerts}
     <div className="vq-play-workspace" ref={workspaceRef}>
     <div ref={playerRef} className="vq-player-layout">
     <nav className="vq-round-nav" aria-label="Бланки раундов">{episode.rounds.map(r => <button key={r.number} title={`Раунд ${r.number} · ${r.title}`} aria-label={`Раунд ${r.number} · ${r.title}`} aria-current={r.number === round.number ? "step" : undefined} className={r.number === round.number ? "active" : ""} disabled={jumping || !review && r.start < Math.max(position, attempt.position, highWater.current) - .05} onClick={() => void jump(r.start)}><span>{r.number}</span>{r.title}{attempt.answers[r.questions[0].id]?.points !== undefined && <Check size={13} />}</button>)}</nav>
     <div className="vq-player"><video key={attempt.id} ref={video} src={media} preload="metadata" playsInline onLoadedMetadata={() => { if (video.current) video.current.currentTime = attempt.position; }} onTimeUpdate={progress} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onSeeking={() => { const v = video.current; if (v && !review && Math.abs(v.currentTime - highWater.current) > .3) v.currentTime = highWater.current; }} onRateChange={() => { if (video.current) video.current.playbackRate = 1; }} onEnded={() => { setPlaying(false); void sync(episode.duration).catch(() => {}); }} onError={() => setError("Видео недоступно. Проверьте загрузку файла на сервер и соединение.")} aria-label={episode.title} />
-      <div className="vq-player-controls"><button className="vq-play" disabled={review || saving && boundaryBusy.current} onClick={togglePlayback} aria-label={playing ? "Пауза · F2" : "Воспроизвести · F2"}>{playing ? <Pause /> : <Play />}</button><span>{time(position)} <small>/ {time(episode.duration)}</small></span><kbd>F2</kbd></div>
+      <div className="vq-player-controls"><button className="vq-play" disabled={review || submittingQuestion !== null || jumping} onClick={togglePlayback} aria-label={playing ? "Пауза · F2" : "Воспроизвести · F2"}>{playing ? <Pause /> : <Play />}</button><span>{time(position)} <small>/ {time(episode.duration)}</small></span><kbd>F2</kbd></div>
     </div><div className="vq-jump-controls"><span className="vq-compact-score"><Trophy size={17} /> {points(attempt.score)} / {points(attempt.maxScore)}</span><button disabled={jumping || questionTime === undefined} onClick={() => questionTime !== undefined && void jump(questionTime)}><Play size={17} /> Следующий вопрос</button><button disabled={jumping || answerTime === undefined} onClick={() => answerTime !== undefined && void jump(answerTime)}><Check size={17} /> Следующий ответ</button>{attempt.completed && <button onClick={() => void begin(episode.id, true)}><RotateCcw size={15} /> Заново</button>}</div>
     </div>
     <section className="vq-sheet-panel" ref={sheetRef} aria-label={`Бланк раунда ${round.number}`}>
-    <div className="vq-sheet-heading"><div><span className="vq-kicker">РАУНД {round.number}</span><h2>{round.title}</h2></div><span className="vq-pill">{position >= round.close ? <><LockKeyhole size={15} /> Приём закрыт</> : `До сдачи ${time(Math.max(0, round.close - position))}`}</span></div>
+    <div className="vq-sheet-heading"><div><span className="vq-kicker">РАУНД {round.number}</span><h2>{round.title}</h2></div><span className="vq-pill vq-deadline">{round.number === 7 ? clock ? <>{clock.phase === "music" ? "Музыка" : "На отправку"} · {time(clock.seconds)} · {points(clock.points)} б.</> : position < round.questions[0].start ? "Скоро первый шанс" : position < round.close ? "Ответ" : <><LockKeyhole size={15} /> Приём закрыт</> : position >= round.close ? <><LockKeyhole size={15} /> Приём закрыт</> : `До сдачи ${time(Math.max(0, Math.ceil(round.close - position)))}`}</span></div>
     {round.number === 7 && <p className="vq-navigation-note">Один ответ. Отправь кнопкой на выбранном шансе.</p>}
     {round.number === 7 && episode.id === "prosto-v3" && <p className="vq-rules-note">Шкала на сайте: 2 / 1 / 0,5. Озвучка в этом ролике относится к прежним правилам.</p>}
     <div className="vq-answer-sheet">{round.questions.map(q => {
@@ -299,9 +300,9 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
       const questionEnd = round.questions[q.number]?.start ?? round.close;
       const active = q.chances.length ? activeChanceQuestion?.id === q.id : position >= q.start && position < questionEnd;
       const currentChance = chanceAt(q, Math.max(position, attempt.position, highWater.current));
-      return <article id={`video-question-${q.id}`} key={q.id} className={`vq-answer-row ${active ? "is-active" : ""} ${revealed ? "is-revealed" : ""}`}><span className="vq-question-number">{String(q.number).padStart(2, "0")}</span><div className="vq-answer-content"><div className="vq-fields">{q.fields.map(field => <label key={field.key}><input autoComplete="off" spellCheck={false} maxLength={160} aria-label={`Вопрос ${q.number}: ${field.label}`} value={drafts[q.id]?.[field.key] || ""} disabled={locked || !!q.chances.length && !active} onFocus={e => { const input = e.currentTarget; requestAnimationFrame(() => keepFieldVisible(input)); }} onChange={e => change(q.id, field.key, e.target.value)} placeholder={field.label} /></label>)}</div>
-        {q.chances.length > 0 && !revealed && <div className="vq-chance-line"><span>{answer.submitted ? `Отправлено на ${time(answer.submittedAt || 0)}` : locked ? "Ответ не отправлен" : currentChance ? `Сейчас можно получить ${points(currentChance.points)} балл${currentChance.points === 1 ? "" : "а"}` : "Ожидает своего фрагмента"}</span><button className="vq-primary" disabled={locked || !active || saving || !drafts[q.id]?.artist.trim()} onClick={() => void submit(q.id)}><Send size={14} /> Отправить</button></div>}
-        {revealed && <div className="vq-reveal"><strong>{q.fields.map(f => answer.correct?.[f.key]).filter(Boolean).join(" — ")}</strong>{answer.coverArtist && <small>Кавер: {answer.coverArtist}</small>}{!guest && <div className="vq-row-tools"><select aria-label={`Исправить баллы за вопрос ${q.number}`} disabled={correctingPoints || jumping} value={answer.points} onChange={e => changePoints(q.id, Number(e.target.value))}>{Array.from({ length: questionMaximum(q) * 2 + 1 }, (_, i) => i / 2).map(n => <option value={n} key={n}>{points(n)} балла</option>)}</select><button disabled={correctingPoints || jumping} onClick={() => { openDialog({ kind: "correct", questionId: q.id, annulled: !answer.annulled }); setComment(""); }}>{answer.annulled ? "Вернуть вопрос" : "Аннулировать"}</button></div>}</div>}
+      return <article id={`video-question-${q.id}`} key={q.id} className={`vq-answer-row ${active ? "is-active" : ""} ${revealed ? "is-revealed" : ""}`}><span className="vq-question-number">{String(q.number).padStart(2, "0")}</span><div className="vq-answer-content"><div className="vq-fields">{q.fields.map(field => <label key={field.key}><input autoComplete="off" spellCheck={false} maxLength={160} aria-label={`Вопрос ${q.number}: ${field.label}`} value={drafts[q.id]?.[field.key] || ""} disabled={locked || !!q.chances.length && !active} readOnly={submittingQuestion === q.id} onFocus={e => { const input = e.currentTarget; requestAnimationFrame(() => keepFieldVisible(input)); }} onChange={e => change(q.id, field.key, e.target.value)} placeholder={field.label} /></label>)}</div>
+        {q.chances.length > 0 && !revealed && <div className="vq-chance-line"><span>{answer.submitted ? `Отправлено на ${time(answer.submittedAt || 0)}` : locked ? "Ответ не отправлен" : currentChance ? `Сейчас можно получить ${points(currentChance.points)} балл${currentChance.points === 1 ? "" : "а"}` : "Ожидает своего фрагмента"}</span>{!locked && <button className="vq-primary" disabled={!active || submittingQuestion !== null || !drafts[q.id]?.artist.trim()} aria-busy={submittingQuestion === q.id} onClick={() => void submit(q.id)}><Send size={14} /> Отправить</button>}</div>}
+        {revealed && <div className="vq-reveal"><strong>{q.fields.map(f => answer.correct?.[f.key]).filter(Boolean).join(" — ")}</strong>{answer.coverArtist && <small>Кавер: {answer.coverArtist}</small>}{!!answer.links?.length && <span className="vq-source-links">{answer.links.map(link => <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" onClick={() => { playIntent.current = false; video.current?.pause(); }}>{link.label} ↗</a>)}</span>}{!guest && <div className="vq-row-tools"><select aria-label={`Исправить баллы за вопрос ${q.number}`} disabled={correctingPoints || jumping} value={answer.points} onChange={e => changePoints(q.id, Number(e.target.value))}>{Array.from({ length: questionMaximum(q) * 2 + 1 }, (_, i) => i / 2).map(n => <option value={n} key={n}>{points(n)} балла</option>)}</select><button disabled={correctingPoints || jumping} onClick={() => { openDialog({ kind: "correct", questionId: q.id, annulled: !answer.annulled }); setComment(""); }}>{answer.annulled ? "Вернуть вопрос" : "Аннулировать"}</button></div>}</div>}
       </div><span className={`vq-row-points ${answer.annulled ? "void" : ""}`}>{revealed ? answer.annulled ? "×" : points(answer.points!) : locked ? <LockKeyhole size={16} /> : "·"}</span></article>;
     })}</div>
     </section>

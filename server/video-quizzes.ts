@@ -6,7 +6,10 @@ import { getLocalDb, inTransaction } from "./local-db.ts";
 import { isAccepted, isArtistAccepted } from "../app/scoring.ts";
 import { chanceAt, questionMaximum, type VideoEpisode, type VideoQuestion, type VideoDraft, type VideoAttempt, type VideoAnswer } from "../shared/video-quiz.ts";
 
-export type PrivateQuestion = VideoQuestion & { correct: VideoDraft; aliases: { artist: string[]; title: string[] }; artistParts: string[][]; album?: string; year?: number; coverArtist?: string };
+export type PrivateQuestion = VideoQuestion & { correct: VideoDraft; aliases: { artist: string[]; title: string[] }; artistParts: string[][]; album?: string; year?: number; coverArtist?: string; links?: Array<{ label: string; url: string }> };
+function safeAnswerLinks(links: PrivateQuestion["links"]) {
+  return links?.filter(link => typeof link.label === "string" && typeof link.url === "string" && /^https:\/\/www\.youtube\.com\/watch\?v=[A-Za-z0-9_-]{11}(?:&t=\d+s?)?$/.test(link.url)).map(({ label, url }) => ({ label, url }));
+}
 export type PrivateEpisode = Omit<VideoEpisode, "rounds"> & { mediaFile: string; rounds: Array<Omit<VideoEpisode["rounds"][number], "questions"> & { questions: PrivateQuestion[] }> };
 export function episodes(): PrivateEpisode[] {
   const directory = join(process.cwd(), "server/video-data");
@@ -85,8 +88,13 @@ function episodeForAttempt(db: DatabaseSync, a: AttemptRow): PrivateEpisode {
     });
     if (compatible) for (const r of saved.rounds) for (const q of r.questions) {
       const next = current.rounds.find(candidate => candidate.number === r.number)!.questions.find(candidate => candidate.id === q.id)!;
-      // Navigation-only enrichment: never replace a snapshot's keys, rules or existing timings.
+      // Navigation/media enrichment: never replace a snapshot's keys, rules or existing timings.
       if (q.answerStart === undefined && Number.isFinite(next.answerStart) && next.answerStart! >= q.reveal && next.answerStart! <= saved.duration) q.answerStart = next.answerStart;
+      q.links = safeAnswerLinks(next.links);
+      for (const chance of q.chances) {
+        const latest = next.chances.find(c => c.start === chance.start && c.end === chance.end && c.points === chance.points);
+        if (latest && Number.isFinite(latest.musicEnd) && latest.musicEnd! >= chance.start && latest.musicEnd! <= chance.end) chance.musicEnd = latest.musicEnd;
+      }
     }
     return saved;
   }
@@ -138,7 +146,7 @@ export function getVideoAttempt(id: string, player: string, admin = false): Vide
     const points = annulled ? 0 : row.override_points ?? automaticPoints;
     if (visible && !annulled) { score += points; maxScore += questionMaximum(q); }
     answers[q.id] = { draft: { artist: row.artist, title: row.title }, locked: !!row.locked, submitted: !!row.submitted, submittedAt: row.submitted_at, possible: questionMaximum(q),
-      ...(visible ? { points, automaticPoints, annulled, correct: q.correct, album: q.album, year: q.year, coverArtist: q.coverArtist } : {}) };
+      ...(visible ? { points, automaticPoints, annulled, correct: q.correct, album: q.album, year: q.year, coverArtist: q.coverArtist, links: safeAnswerLinks(q.links) } : {}) };
   }
   const p = db.prepare("SELECT name FROM video_players WHERE id=?").get(a.player_id) as { name: string } | undefined;
   return { id, quizId: a.quiz_id, name: a.player_id === "owner" ? "Алексей" : p?.name || "Гость", position: a.position, score, maxScore, completed: !!a.completed, answers };

@@ -61,6 +61,9 @@
 .vq-reveal>strong{font-size:16px;line-height:1.4}.vq-reveal>small{font-size:13px;margin:0}
 .vq-row-tools{margin:0 0 0 auto;gap:12px}.vq-row-tools button,.vq-row-tools select{font-size:13px;padding:3px 4px;min-height:28px}
 .vq-chance-line{margin-top:5px}.vq-chance-line button{padding:6px 12px}
+.vq-deadline{font-variant-numeric:tabular-nums;white-space:nowrap}
+.vq-source-links{display:inline-flex;gap:12px;flex-wrap:wrap;font-size:13px}
+.vq-source-links a{color:#315e83;text-underline-offset:3px}
 @media(max-width:600px){.vq-answer-row{padding:9px 10px}.vq-fields{gap:6px}.vq-row-tools{margin-left:0;gap:8px}}
 
 /* The film stays beside the scrolling answer sheet. */

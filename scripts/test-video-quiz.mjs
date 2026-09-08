@@ -53,7 +53,7 @@ async function test(name, action) {
 try {
  core = await import(pathToFileURL(join(root, 'server/video-quizzes.ts')).href);
  http = await import(pathToFileURL(join(root, 'server/video-http.ts')).href);
- const { questionMaximum, nextAnswerAt } = await import(pathToFileURL(join(root, 'shared/video-quiz.ts')).href);
+ const { questionMaximum, nextAnswerAt, chanceClock } = await import(pathToFileURL(join(root, 'shared/video-quiz.ts')).href);
  db = core.videoDb();
  const guestA = core.createGuest('Guest A'), guestB = core.createGuest('Guest B');
  const share = core.shareFor(fixture.id);
@@ -94,8 +94,34 @@ try {
  });
  await test('public episode excludes keys, aliases and editorial metadata', () => {
   const publicJson = JSON.stringify(core.publicEpisode(core.episodeById(fixture.id)));
-  for (const field of ['correct', 'aliases', 'artistParts', 'album', 'mediaFile']) assert(!publicJson.includes('"' + field + '"'));
+  for (const field of ['correct', 'aliases', 'artistParts', 'album', 'mediaFile', 'links']) assert(!publicJson.includes('"' + field + '"'));
   assert(!publicJson.includes(pair.correct.artist));
+ });
+ await test('chance clock follows music and submission deadlines, never the entire round', () => {
+  const q = { ...chance, chances: [2, 1, .5].map((points, i) => ({ start: 100 + i * 20, musicEnd: 115 + i * 20, end: 120 + i * 20, points })) };
+  assert.equal(chanceClock(q, 99.9), undefined);
+  assert.deepEqual(chanceClock(q, 100), { points: 2, phase: 'music', seconds: 15 });
+  assert.deepEqual(chanceClock(q, 114.99), { points: 2, phase: 'music', seconds: 1 });
+  assert.deepEqual(chanceClock(q, 115), { points: 2, phase: 'submit', seconds: 5 });
+  assert.deepEqual(chanceClock(q, 119.99), { points: 2, phase: 'submit', seconds: 1 });
+  assert.deepEqual(chanceClock(q, 120), { points: 1, phase: 'music', seconds: 15 });
+  assert.deepEqual(chanceClock(q, 155), { points: .5, phase: 'submit', seconds: 5 });
+  assert.equal(chanceClock(q, 160), undefined);
+  assert.deepEqual(chanceClock(chance, 40), { points: 2, phase: 'chance', seconds: 10 });
+ });
+ await test('source and cover links stay private until reveal and refresh existing attempts', () => {
+  const previous = pair.links, previousRevision = fixture.revision;
+  try {
+   fixture.revision = 'links-test-v1';
+   pair.links = [{ label: 'Видео', url: 'https://www.youtube.com/watch?v=abcdefghijk&t=10' }]; saveFixture();
+   const a = fresh();
+   assert.equal(a.answers.pair.links, undefined);
+   assert.equal(sync(a, 30, { pair: pair.correct }).answers.pair.links, undefined);
+   assert(!JSON.stringify(core.publicEpisode(core.episodeById(fixture.id))).includes('youtube.com'));
+   pair.links = [...pair.links, { label: 'Кавер', url: 'https://www.youtube.com/watch?v=lmnopqrstuv&t=20' }]; saveFixture();
+   assert.deepEqual(sync(a, 35).answers.pair.links, pair.links);
+   assert.equal(core.getVideoAttempt(a.id, guestA.id).answers.pair.points, 1.5);
+  } finally { fixture.revision = previousRevision; if (previous) pair.links = previous; else delete pair.links; saveFixture(); }
  });
  await test('server derives half points, artist collaboration and single-field maxima', () => {
   assert.equal(core.scoreVideoAnswer(pair, draft('Северный ветер'), 30), .5);
