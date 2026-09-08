@@ -39,14 +39,20 @@ const distance = (left: string, right: string) => {
 
 export function isAccepted(value: string, aliases: string[]) {
   const candidate = translit(value);
+  const nativeCandidate = normalize(value).replace(/\s+/g, "");
   if (!candidate) return false;
   return aliases.some((alias) => {
+    // Count a Cyrillic typo before transliteration can expand one letter (я → ya).
+    const nativeExpected = normalize(alias).replace(/\s+/g, "");
+    const nativeLength = Math.max(nativeCandidate.length, nativeExpected.length);
+    const nativeAllowance = nativeLength >= 12 ? 2 : nativeLength >= 7 ? 1 : 0;
+    if (distance(nativeCandidate, nativeExpected) <= nativeAllowance) return true;
     const expected = translit(alias);
     if (candidate === expected) return true;
     const longest = Math.max(candidate.length, expected.length);
     const shortest = Math.min(candidate.length, expected.length);
     if (shortest >= 7 && (candidate.includes(expected) || expected.includes(candidate))) return true;
-    const allowance = longest >= 16 ? 2 : longest >= 7 ? 1 : 0;
+    const allowance = longest >= 12 ? 2 : longest >= 7 ? 1 : 0;
     return distance(candidate, expected) <= allowance;
   });
 }

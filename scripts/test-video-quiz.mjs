@@ -120,6 +120,19 @@ try {
    assert.equal(core.scoreVideoAnswer(group, draft(name), 30), 1);
   }
  });
+ await test('title inflection typo counts as one Cyrillic edit and restores an old zero', () => {
+  const song = { ...title, correct: draft('', 'Капли абсента') };
+  assert.equal(core.scoreVideoAnswer(song, draft('', 'Капля абсента'), 30), 1);
+  assert.equal(core.scoreVideoAnswer(song, draft('', 'Капля абсинта'), 30), 1);
+  assert.equal(core.scoreVideoAnswer({ ...pair, correct: draft(pair.correct.artist, 'Капли абсента') }, draft('', 'Капля абсента'), 30), .5);
+  const originalTitle = title.correct;
+  try {
+   title.correct = song.correct; saveFixture();
+   const a = fresh(); sync(a, 35, { title: draft('', 'Капля абсента') });
+   db.prepare('UPDATE video_answers SET automatic_points=0 WHERE attempt_id=? AND question_id=?').run(a.id, 'title');
+   assert.equal(core.getVideoAttempt(a.id, guestA.id).answers.title.points, 1);
+  } finally { title.correct = originalTitle; saveFixture(); }
+ });
  await test('collaboration credits surname separately and both short artists in either order', () => {
   const mixed = { ...pair, fields: [{ key: 'artist', label: 'Группа + исполнитель' }, pair.fields[1]], correct: draft('Би-2 и Григорий Лепс', pair.correct.title), artistParts: [['Би-2'], ['Григорий Лепс']] };
   assert.equal(core.scoreVideoAnswer(mixed, draft('Лепс'), 30), .5);

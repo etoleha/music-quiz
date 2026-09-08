@@ -6,6 +6,16 @@ assert.equal(isArtistAccepted("Пугачёва", ["Алла Пугачёва"],
 assert.equal(isArtistAccepted("Корж", ["Макс Корж", "Максим Корж"], "Исполнитель"), true);
 assert.equal(isArtistAccepted("Шут", ["Король и Шут"], "Группа"), false);
 assert.equal(isAccepted("Якутяночка", ["Якутяночка ft. Варвара Визбор"]), true);
+assert.equal(isAccepted("капля абсента", ["Капли абсента"]), true);
+assert.equal(isAccepted("капля абсинта", ["Капли абсента"]), true);
+assert.equal(isAccepted("копля абсинта", ["Капли абсента"]), false);
+assert.equal(isAccepted("капли абсента", ["Капля абсента"]), true);
+assert.equal(isAccepted("Лыби меня", ["Люби меня"]), true);
+assert.equal(isAccepted("Kapli absenta", ["Капли абсента"]), true);
+assert.equal(isAccepted("Капля абсента", ["Капли дождя"]), false);
+assert.equal(isAccepted("Мама", ["Папа"]), false);
+assert.equal(isAccepted("Лето", ["Тело"]), false);
+assert.equal(isAccepted("", ["Капли абсента"]), false);
 assert.equal(countTitleWords("Я — это ты"), 3);
 assert.equal(countTitleWords("Любовь-морковь"), 1);
 assert.equal(countTitleWords("— Танцы —"), 1);

@@ -62,3 +62,69 @@
 .vq-row-tools{margin:0 0 0 auto;gap:12px}.vq-row-tools button,.vq-row-tools select{font-size:13px;padding:3px 4px;min-height:28px}
 .vq-chance-line{margin-top:5px}.vq-chance-line button{padding:6px 12px}
 @media(max-width:600px){.vq-answer-row{padding:9px 10px}.vq-fields{gap:6px}.vq-row-tools{margin-left:0;gap:8px}}
+
+/* White workspace: the film stays beside the scrolling answer sheet. */
+body:has(.vq-game){background:#fff}
+.shell:has(.vq-game){width:min(1500px,100%)}
+.shell:has(.vq-game)>.topbar,.workspace:has(.vq-game)>.nav-tabs{display:none}
+.shell:has(.vq-game){padding:16px 20px}
+.workspace:has(.vq-game){grid-template-columns:minmax(0,1fr)}
+.tab-content:has(.vq-game){min-width:0}
+.vq-game{background:#fff}
+.vq-play-workspace{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:start}
+.vq-sheet-panel{min-width:0}
+.vq-play-workspace .vq-player-layout{display:flex;flex-direction:column;gap:10px;background:#fff;box-shadow:none;border-radius:0;min-width:0}
+.vq-play-workspace .vq-player{width:100%;border-radius:10px}
+.vq-play-workspace .vq-round-nav{display:flex;flex-wrap:wrap;overflow:visible;padding:0;margin:0;gap:5px;width:100%}
+.vq-play-workspace .vq-round-nav button{flex:1;min-width:34px;flex-direction:row;justify-content:center;position:relative;padding:7px 5px;font-size:12px;white-space:nowrap}
+.vq-play-workspace .vq-round-nav button span{background:transparent;width:auto;height:auto;font-size:14px}
+.vq-play-workspace .vq-round-nav button svg{display:none}
+.vq-play-workspace .vq-round-nav button{font-size:0}
+.vq-play-workspace .vq-round-nav .active{background:#eaf1fb;color:#25496e;border-color:#c1d1e3}
+.vq-play-workspace .vq-round-nav .active span{background:transparent}
+.vq-play-workspace .vq-jump-controls{border:0;border-radius:0;background:#fff;padding:0;gap:7px;width:100%}
+.vq-play-workspace .vq-jump-controls button{font-size:13px;padding:8px 10px;min-height:38px}
+.vq-play-workspace .vq-compact-score{font-size:15px}
+.vq-sheet-panel .vq-sheet-heading{margin:0 0 8px;gap:10px;flex-direction:row;align-items:center}
+.vq-sheet-panel .vq-sheet-heading h2{font-size:22px;margin:4px 0 0}
+.vq-sheet-panel .vq-pill{font-size:12px;padding:6px 9px}
+.vq-sheet-panel .vq-navigation-note,.vq-sheet-panel .vq-rules-note{font-size:13px;line-height:1.5;margin:0 0 12px}
+.vq-sheet-panel .vq-answer-sheet{border:0;border-radius:0}
+.vq-sheet-panel .vq-answer-row{padding:10px 4px;gap:8px}
+.vq-sheet-panel .vq-answer-row.is-active{background:#f5f8fc;box-shadow:inset 2px 0 #799bbb}
+.vq-sheet-panel .vq-question-number{min-width:20px;font-size:13px}
+.vq-sheet-panel .vq-row-points{min-width:25px;font-size:18px}
+.vq-sheet-panel .vq-fields input{font-size:16px;border-color:#d8dfe6;background:#fff;font-weight:400}
+.vq-sheet-panel .vq-fields input:disabled{background:#f6f7f9}
+.vq-sheet-panel .vq-fields input::placeholder{color:#74808d}
+.vq-sheet-panel .vq-row-tools{margin-left:0;gap:8px}
+.vq-sheet-panel .vq-row-tools button,.vq-sheet-panel .vq-row-tools select{font-size:12px}
+@media(min-width:1050px){
+  .vq-game{height:calc(100svh - 32px);display:flex;flex-direction:column}
+  .vq-game-heading{flex-shrink:0;margin-bottom:12px}
+  .vq-play-workspace{flex:1;min-height:0}
+  .vq-play-workspace{grid-template-columns:minmax(0,1fr) clamp(340px,29vw,420px);gap:26px}
+  .vq-play-workspace .vq-player-layout{position:static;width:min(100%,var(--vq-fit-width,100%));margin-inline:0;align-self:start}
+  .vq-sheet-panel{border-left:1px solid #e7ebef;padding-left:22px;height:100%;min-height:0;overflow-y:auto;scrollbar-gutter:stable;overscroll-behavior-y:contain;scroll-padding-block:10px}
+  .vq-sheet-panel .vq-fields{grid-template-columns:1fr;gap:6px}
+  .vq-sheet-panel .vq-fields label:only-child{grid-column:auto}
+  .vq-sheet-panel .vq-answer-row{scroll-margin-top:20px}
+  .vq-sheet-panel .vq-chance-line{align-items:flex-start;flex-direction:column;gap:6px;font-size:13px}
+  .vq-sheet-panel .vq-chance-line button{align-self:flex-end}
+}
+@media(min-width:1400px){
+  .vq-play-workspace .vq-round-nav button{font-size:11px;gap:5px;white-space:normal}
+}
+@media(max-width:1049px){
+  .vq-play-workspace{display:block}
+  .vq-sheet-panel{margin-top:20px}
+  .vq-play-workspace .vq-player-controls{padding:8px 12px}
+}
+@media(max-width:600px){
+  .workspace:has(.vq-game) .nav-tabs{max-width:100%;width:100%}
+  .workspace:has(.vq-game) .nav-tabs button{min-width:0;font-size:13px;padding-inline:8px;gap:4px}
+  .vq-play-workspace{gap:16px}
+  .vq-play-workspace .vq-jump-controls button{font-size:12px;padding:6px 8px;min-height:36px}
+  .vq-play-workspace .vq-player-controls kbd{display:none}
+  .vq-sheet-panel .vq-sheet-heading h2{font-size:20px}
+}

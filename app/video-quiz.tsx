@@ -29,13 +29,12 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   const [dialogSaving, setDialogSaving] = useState(false);
   const [correctionReason, setCorrectionReason] = useState("accepted-answer");
   const [jumping, setJumping] = useState(false);
-  const [pinned, setPinned] = useState(false);
   const dialogSubmitting = useRef(false);
   const dialogOpen = !!dialog;
   const [comment, setComment] = useState("");
   const [drafts, setDrafts] = useState<Record<string, VideoDraft>>({});
   const video = useRef<HTMLVideoElement>(null);
-  const gameRef = useRef<HTMLElement>(null), playerRef = useRef<HTMLDivElement>(null), sentinelRef = useRef<HTMLDivElement>(null);
+  const gameRef = useRef<HTMLElement>(null), playerRef = useRef<HTMLDivElement>(null), workspaceRef = useRef<HTMLDivElement>(null), sheetRef = useRef<HTMLElement>(null);
   const draftRef = useRef(drafts), attemptRef = useRef(attempt);
   const queue = useRef(Promise.resolve());
   const lastSync = useRef(0), highWater = useRef(0), boundaryBusy = useRef(false);
@@ -99,32 +98,49 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   function openDialog(value: Dialog) { dialogOrigin.current = document.activeElement as HTMLElement; setCorrectionReason("accepted-answer"); setDialog(value); }
   function keepFieldVisible(field: HTMLInputElement) {
     if (document.activeElement !== field) return;
+    if (sheetRef.current && getComputedStyle(sheetRef.current).overflowY === "auto") {
+      field.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "instant" });
+      return;
+    }
     const rect = field.getBoundingClientRect();
-    const top = Math.min((playerRef.current?.getBoundingClientRect().bottom ?? 0) + 12, window.innerHeight - rect.height - 12);
+    const player = playerRef.current?.getBoundingClientRect();
+    const overlapsPlayer = player && rect.left < player.right && rect.right > player.left;
+    const top = Math.min(overlapsPlayer ? player.bottom + 12 : 12, window.innerHeight - rect.height - 12);
     if (rect.top < top) window.scrollBy({ top: rect.top - top, behavior: "instant" });
     else if (rect.bottom > window.innerHeight - 12) window.scrollBy({ top: rect.bottom - window.innerHeight + 12, behavior: "instant" });
   }
   useEffect(() => {
-    if (!attempt?.id || !playerRef.current || !sentinelRef.current) return;
-    setPinned(false); window.scrollTo({ top: 0, behavior: "instant" });
-    const observer = new IntersectionObserver(([entry]) => setPinned(!entry.isIntersecting && entry.boundingClientRect.top < 8), { rootMargin: "-8px 0px 0px 0px" });
-    observer.observe(sentinelRef.current);
-    const size = new ResizeObserver(([entry]) => {
-      gameRef.current?.style.setProperty("--vq-player-space", `${entry.borderBoxSize?.[0]?.blockSize + 28 || playerRef.current!.offsetHeight + 28}px`);
+    if (!attempt?.id || !playerRef.current || !workspaceRef.current) return;
+    window.scrollTo({ top: 0, behavior: "instant" });
+    const updateSize = () => {
+      const player = playerRef.current, workspace = workspaceRef.current;
+      if (!player || !workspace) return;
+      gameRef.current?.style.setProperty("--vq-player-space", `${player.offsetHeight + 20}px`);
+      const controls = [".vq-round-nav", ".vq-player-controls", ".vq-jump-controls"].reduce((height, selector) => height + (player.querySelector<HTMLElement>(selector)?.offsetHeight || 0), 20);
+      gameRef.current?.style.setProperty("--vq-fit-width", `${Math.max(160, workspace.clientHeight - controls) * 16 / 9}px`);
       const field = document.activeElement;
       if (field instanceof HTMLInputElement && field.closest(".vq-fields")) requestAnimationFrame(() => keepFieldVisible(field));
-    });
-    size.observe(playerRef.current);
-    return () => { observer.disconnect(); size.disconnect(); };
+    };
+    const size = new ResizeObserver(updateSize);
+    size.observe(playerRef.current); size.observe(workspaceRef.current);
+    updateSize();
+    return () => size.disconnect();
   }, [attempt?.id]);
+  useEffect(() => { if (sheetRef.current) sheetRef.current.scrollTop = 0; }, [round?.number]);
   const activeQuestionId = round?.questions.find((q, i) => position >= q.start && position < (round.questions[i + 1]?.start ?? round.close))?.id;
   useEffect(() => {
-    if (!pinned || !playing || selectedRound !== null || !activeQuestionId || document.activeElement?.matches("input,textarea,select")) return;
+    if (!playing || selectedRound !== null || !activeQuestionId || document.activeElement?.matches("input,textarea,select")) return;
     const row = document.getElementById(`video-question-${activeQuestionId}`);
     if (!row || !playerRef.current) return;
-    const rect = row.getBoundingClientRect(), bottom = playerRef.current.getBoundingClientRect().bottom;
+    if (sheetRef.current && getComputedStyle(sheetRef.current).overflowY === "auto") {
+      const rect = row.getBoundingClientRect(), panel = sheetRef.current.getBoundingClientRect();
+      if (rect.top < panel.top || rect.bottom > panel.bottom) row.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "instant" });
+      return;
+    }
+    const rect = row.getBoundingClientRect(), player = playerRef.current.getBoundingClientRect();
+    const bottom = rect.left < player.right && rect.right > player.left ? player.bottom : 0;
     if (rect.top < bottom + 12 || rect.bottom > window.innerHeight - 16) row.scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
-  }, [activeQuestionId, playing, selectedRound, pinned]);
+  }, [activeQuestionId, playing, selectedRound]);
   useEffect(() => {
     if (!dialogOpen) return;
     playIntent.current = false; video.current?.pause();
@@ -250,15 +266,17 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
   return <section className="vq-game" ref={gameRef}>
     <div className="vq-game-heading"><button className="vq-back" onClick={() => void leave()}><ArrowLeft size={17} /> К выпускам</button><span className="vq-pill">{review ? `Результаты · ${attempt.name}` : attempt.name}</span><span className="vq-save" role="status">{saving ? "Сохраняю…" : error ? "Не сохранено" : "Сохранено"}</span></div>
     {alerts}
-    <div ref={sentinelRef} className="vq-player-sentinel" />
-    <div ref={playerRef} className={`vq-player-layout ${pinned ? "is-pinned" : ""}`}><div className="vq-player"><video key={attempt.id} ref={video} src={media} preload="metadata" playsInline onLoadedMetadata={() => { if (video.current) video.current.currentTime = attempt.position; }} onTimeUpdate={progress} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onSeeking={() => { const v = video.current; if (v && !review && v.currentTime > highWater.current + .3) v.currentTime = highWater.current; }} onRateChange={() => { if (video.current) video.current.playbackRate = 1; }} onEnded={() => { setPlaying(false); void sync(episode.duration).catch(() => {}); }} onError={() => setError("Видео недоступно. Проверьте загрузку файла на сервер и соединение.")} aria-label={episode.title} />
+    <div className="vq-play-workspace" ref={workspaceRef}>
+    <div ref={playerRef} className="vq-player-layout">
+    <nav className="vq-round-nav" aria-label="Бланки раундов">{episode.rounds.map(r => <button key={r.number} title={`Раунд ${r.number} · ${r.title}`} aria-label={`Раунд ${r.number} · ${r.title}`} aria-current={r.number === round.number ? "step" : undefined} className={r.number === round.number ? "active" : ""} disabled={jumping} onClick={() => void jump(r.start)}><span>{r.number}</span>{r.title}{attempt.answers[r.questions[0].id]?.points !== undefined && <Check size={13} />}</button>)}</nav>
+    <div className="vq-player"><video key={attempt.id} ref={video} src={media} preload="metadata" playsInline onLoadedMetadata={() => { if (video.current) video.current.currentTime = attempt.position; }} onTimeUpdate={progress} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onSeeking={() => { const v = video.current; if (v && !review && v.currentTime > highWater.current + .3) v.currentTime = highWater.current; }} onRateChange={() => { if (video.current) video.current.playbackRate = 1; }} onEnded={() => { setPlaying(false); void sync(episode.duration).catch(() => {}); }} onError={() => setError("Видео недоступно. Проверьте загрузку файла на сервер и соединение.")} aria-label={episode.title} />
       <div className="vq-player-controls"><button className="vq-play" disabled={review || saving && boundaryBusy.current} onClick={togglePlayback} aria-label={playing ? "Пауза · F2" : "Воспроизвести · F2"}>{playing ? <Pause /> : <Play />}</button><span>{time(position)} <small>/ {time(episode.duration)}</small></span><input type="range" aria-label="Перемотка по просмотренной части" min={0} max={episode.duration} step={.04} value={position} disabled={review} onChange={e => { const v = video.current; if (v) { v.currentTime = Math.min(Number(e.target.value), highWater.current); setPosition(v.currentTime); } }} /><kbd>F2 — пауза</kbd></div>
     </div><div className="vq-jump-controls"><span className="vq-compact-score"><Trophy size={17} /> {points(attempt.score)} / {points(attempt.maxScore)}</span><button disabled={jumping || questionTime === undefined} onClick={() => questionTime !== undefined && void jump(questionTime)}><Play size={17} /> Следующий вопрос</button><button disabled={jumping || answerTime === undefined} onClick={() => answerTime !== undefined && void jump(answerTime)}><Check size={17} /> Следующий ответ</button>{attempt.completed && <button onClick={() => void begin(episode.id, true)}><RotateCcw size={15} /> Заново</button>}</div>
-    <nav className="vq-round-nav" aria-label="Бланки раундов">{episode.rounds.map(r => <button key={r.number} className={r.number === round.number ? "active" : ""} disabled={jumping} onClick={() => void jump(r.start)}><span>{r.number}</span>{r.title}{attempt.answers[r.questions[0].id]?.points !== undefined && <Check size={13} />}</button>)}</nav>
     </div>
-    <div className="vq-sheet-heading"><div><span className="vq-kicker">РАУНД {round.number}</span><h2>{round.title}</h2><p>{round.number === 7 ? "Один ответ на исполнителя. Отправь кнопкой на выбранном шансе; без отправки баллов нет." : "Бланк отправится автоматически, когда закончится время раунда."}</p></div><span className="vq-pill">{position >= round.close ? <><LockKeyhole size={15} /> Приём закрыт</> : `До закрытия ${time(Math.max(0, round.close - position))}`}</span></div>
-    <p className="vq-navigation-note">Переход вперёд закрывает пропущенные бланки. В «Трёх шансах» засчитываются только ответы, отправленные кнопкой.</p>
-    {round.number === 7 && <p className="vq-rules-note">В этом прохождении действует новая шкала: 2 / 1 / 0,5. Цифры и озвучка внутри ролика относятся к прежним правилам.</p>}
+    <section className="vq-sheet-panel" ref={sheetRef} aria-label={`Бланк раунда ${round.number}`}>
+    <div className="vq-sheet-heading"><div><span className="vq-kicker">РАУНД {round.number}</span><h2>{round.title}</h2></div><span className="vq-pill">{position >= round.close ? <><LockKeyhole size={15} /> Приём закрыт</> : `До сдачи ${time(Math.max(0, round.close - position))}`}</span></div>
+    {round.number === 7 && <p className="vq-navigation-note">Один ответ. Отправь кнопкой на выбранном шансе.</p>}
+    {round.number === 7 && episode.id === "prosto-v3" && <p className="vq-rules-note">Шкала на сайте: 2 / 1 / 0,5. Озвучка в этом ролике относится к прежним правилам.</p>}
     <div className="vq-answer-sheet">{round.questions.map(q => {
       const answer = attempt.answers[q.id]; const revealed = answer.points !== undefined;
       const locked = review || answer.locked || Math.max(position, attempt.position) >= q.close;
@@ -270,6 +288,8 @@ export default function VideoQuiz({ shareToken }: { shareToken?: string }) {
         {revealed && <div className="vq-reveal"><strong>{q.fields.map(f => answer.correct?.[f.key]).filter(Boolean).join(" — ")}</strong>{answer.coverArtist && <small>Кавер: {answer.coverArtist}</small>}<div className="vq-row-tools"><button onClick={() => { openDialog({ kind: "report", questionId: q.id }); setComment(""); }}><Flag size={14} /> Сообщить о проблеме</button>{!guest && <><select aria-label={`Исправить баллы за вопрос ${q.number}`} value={answer.points} onChange={e => { openDialog({ kind: "correct", questionId: q.id, points: Number(e.target.value) }); setComment(""); }}>{Array.from({ length: questionMaximum(q) * 2 + 1 }, (_, i) => i / 2).map(n => <option value={n} key={n}>{points(n)} балла</option>)}</select><button onClick={() => { openDialog({ kind: "correct", questionId: q.id, annulled: !answer.annulled }); setComment(""); }}>{answer.annulled ? "Вернуть вопрос" : "Аннулировать"}</button></>}</div></div>}
       </div><span className={`vq-row-points ${answer.annulled ? "void" : ""}`}>{revealed ? answer.annulled ? "×" : points(answer.points!) : locked ? <LockKeyhole size={16} /> : "·"}</span></article>;
     })}</div>
+    </section>
+    </div>
     {dialog && <div className="vq-modal-backdrop" onClick={() => { if (!dialogSubmitting.current) setDialog(null); }}>
       <section ref={modalRef} className="vq-modal" role="dialog" aria-modal="true" aria-labelledby="vq-dialog-title" onClick={e => e.stopPropagation()}>
         <button className="vq-modal-close" aria-label="Закрыть" disabled={dialogSaving} onClick={() => { if (!dialogSubmitting.current) setDialog(null); }}><X /></button>
