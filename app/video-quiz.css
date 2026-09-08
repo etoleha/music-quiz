@@ -63,17 +63,17 @@
 .vq-chance-line{margin-top:5px}.vq-chance-line button{padding:6px 12px}
 @media(max-width:600px){.vq-answer-row{padding:9px 10px}.vq-fields{gap:6px}.vq-row-tools{margin-left:0;gap:8px}}
 
-/* White workspace: the film stays beside the scrolling answer sheet. */
-body:has(.vq-game){background:#fff}
+/* The film stays beside the scrolling answer sheet. */
+body:has(.vq-game){background:#102b49}
 .shell:has(.vq-game){width:100%}
 .shell:has(.vq-game)>.topbar,.workspace:has(.vq-game)>.nav-tabs{display:none}
 .shell:has(.vq-game){padding:12px 10px}
 .workspace:has(.vq-game){grid-template-columns:minmax(0,1fr)}
 .tab-content:has(.vq-game){min-width:0}
-.vq-game{background:#fff}
+.vq-game{background:#102b49}
 .vq-play-workspace{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:start}
 .vq-sheet-panel{min-width:0}
-.vq-play-workspace .vq-player-layout{display:flex;flex-direction:column;gap:10px;background:#fff;box-shadow:none;border-radius:0;min-width:0}
+.vq-play-workspace .vq-player-layout{display:flex;flex-direction:column;gap:10px;background:transparent;box-shadow:none;border-radius:0;min-width:0}
 .vq-play-workspace .vq-player{width:100%;border-radius:10px}
 .vq-play-workspace .vq-round-nav{display:flex;flex-wrap:wrap;overflow:visible;padding:0;margin:0;gap:5px;width:100%}
 .vq-play-workspace .vq-round-nav button{flex:1;min-width:34px;flex-direction:row;justify-content:center;position:relative;padding:7px 5px;font-size:12px;white-space:nowrap}
@@ -82,7 +82,7 @@ body:has(.vq-game){background:#fff}
 .vq-play-workspace .vq-round-nav button{font-size:0}
 .vq-play-workspace .vq-round-nav .active{background:#eaf1fb;color:#25496e;border-color:#c1d1e3}
 .vq-play-workspace .vq-round-nav .active span{background:transparent}
-.vq-play-workspace .vq-jump-controls{border:0;border-radius:0;background:#fff;padding:0;gap:7px;width:100%}
+.vq-play-workspace .vq-jump-controls{border:0;border-radius:0;background:transparent;padding:0;gap:7px;width:100%}
 .vq-play-workspace .vq-jump-controls button{font-size:13px;padding:8px 10px;min-height:38px}
 .vq-play-workspace .vq-compact-score{font-size:15px}
 .vq-sheet-panel .vq-sheet-heading{margin:0 0 8px;gap:10px;flex-direction:row;align-items:center}
@@ -144,3 +144,13 @@ body:has(.vq-game){background:#fff}
 .vq-play-workspace .vq-jump-controls button:hover:not(:disabled){background:#f3f5f7}
 @media(hover:none){.vq-play-workspace .vq-player-controls{opacity:1;pointer-events:auto}}
 @media(prefers-reduced-motion:reduce){.vq-play-workspace .vq-player-controls{transition:none}}
+
+/* Selected palette: deep blue surroundings and a white answer sheet. */
+.vq-game-heading,.vq-game-heading .vq-save{color:#adc4dc}
+.vq-game-heading .vq-pill{background:transparent;color:#e9f1f8;border-color:#3a5673}
+.vq-play-workspace .vq-round-nav button{background:transparent;color:#adc4dc}
+.vq-play-workspace .vq-round-nav .active,.vq-play-workspace .vq-round-nav .active:disabled{background:#254b70;color:#e9f1f8}
+.vq-play-workspace .vq-jump-controls button{background:transparent;color:#e9f1f8}
+.vq-play-workspace .vq-jump-controls button:hover:not(:disabled){background:#254b70}
+.vq-play-workspace .vq-compact-score{color:#e9f1f8}
+.vq-sheet-panel{background:#fff;border:0;border-radius:8px;padding:14px 12px;color:#253d54}
