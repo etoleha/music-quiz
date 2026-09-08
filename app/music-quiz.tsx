@@ -66,7 +66,7 @@ function ClipTimeline({ playback, duration, compact = false }: { playback?: Clip
   const remaining = Math.max(0, duration - elapsed);
   const percentage = duration ? elapsed / duration * 100 : 0;
   return <div className={`clip-timeline ${compact ? "is-compact" : ""}`} role="progressbar" aria-label="Ход музыкального фрагмента" aria-valuemin={0} aria-valuemax={duration} aria-valuenow={Math.round(elapsed)}>
-    <div className="clip-timeline-track"><span style={{ width: `${percentage}%` }} /></div>
+    <div className="clip-timeline-track"><span style={{ width: "100%", transform: `scaleX(${percentage / 100})`, transformOrigin: "left", transition: "none" }} /></div>
     <div className="clip-timeline-times"><span>Прошло {formatClipTime(elapsed)}</span><span>Осталось {formatClipTime(remaining)}</span></div>
   </div>;
 }
