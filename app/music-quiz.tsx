@@ -12,9 +12,10 @@ import { scoreToAnswerPoints, trackMaxScore, weightedAnswerScore } from "../shar
 import VideoQuiz from "./video-quiz";
 import SiteHeader, { type SiteSection } from "./site-header";
 import TrackReferenceCard, { type ArtistInfo } from "./track-reference-card";
+import { createClipAudioPlayer, type ClipPlayer } from "./clip-audio-player";
 import "./site-design.css";
 
-type Player = { loadVideoById(options: { videoId: string; startSeconds: number }): void; getCurrentTime(): number; pauseVideo(): void; stopVideo(): void; setVolume(volume: number): void };
+type Player = ClipPlayer;
 type Answer = { trackKey: string; artistAnswer: string; titleAnswer: string; loadFailed: boolean; loadErrorCode?: number };
 type Review = Answer & { track: Track; artistPoint: number; titlePoint: number };
 type Attempt = { id: string; quizId: string; quizTitle: string; score: number; maxScore: number; skipped: number; createdAt: string };
@@ -55,6 +56,7 @@ const youtubeErrorLabel = (code?: number) => ({
   101: "автор запретил встраивание",
   150: "ролик нельзя встроить",
   153: "YouTube не принял встроенный плеер",
+  200: "не удалось загрузить аудиофрагмент",
 }[code || 0] || (code ? `ошибка YouTube ${code}` : "причина не определена"));
 const formatClipTime = (seconds: number) => {
   const safeSeconds = Math.max(0, Math.ceil(seconds));
@@ -125,6 +127,8 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   const [fragmentFeedbackError, setFragmentFeedbackError] = useState(false);
   const [clipPlayback, setClipPlayback] = useState<ClipPlayback | null>(null);
   const player = useRef<Player | null>(null);
+  const youtubePlayer = useRef<Player | null>(null);
+  const audioPlayer = useRef<ReturnType<typeof createClipAudioPlayer> | null>(null);
   const clipAnimationFrame = useRef<number | null>(null);
   const activeClip = useRef<ActiveClip | null>(null);
   const triesRef = useRef(2);
@@ -179,6 +183,8 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
 
   useEffect(() => () => {
     if (clipAnimationFrame.current !== null) cancelAnimationFrame(clipAnimationFrame.current);
+    audioPlayer.current?.dispose();
+    youtubePlayer.current?.stopVideo();
   }, []);
 
   const loadStats = useCallback(async () => {
@@ -204,7 +210,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   }, []);
 
   useEffect(() => {
-    if (!ready || player.current || !window.YT) return;
+    if (!ready || youtubePlayer.current || !window.YT) return;
     let host = document.getElementById("youtube-player-host");
     if (!host) {
       host = document.createElement("div");
@@ -212,15 +218,16 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
       host.className = "youtube-player";
       document.body.appendChild(host);
     }
-    player.current = new window.YT.Player("youtube-player-host", {
+    youtubePlayer.current = new window.YT.Player("youtube-player-host", {
       height: "135", width: "240",
       playerVars: { controls: 0, disablekb: 1, fs: 0, playsinline: 1, rel: 0 },
       events: {
         onReady: () => {
-          player.current?.setVolume(70);
+          youtubePlayer.current?.setVolume(70);
           setPlayerReady(true);
         },
         onStateChange: (event: { data: number }) => {
+          if (player.current !== youtubePlayer.current) return;
           if (event.data === window.YT?.PlayerState.PLAYING) {
             playingRef.current = true;
             setPlaying(true);
@@ -234,6 +241,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
           }
         },
         onError: (event: { data: number }) => {
+          if (player.current !== youtubePlayer.current) return;
           stopClipClock();
           playingRef.current = false;
           pendingLoadErrorCode.current = Number.isInteger(event.data) ? event.data : undefined;
@@ -243,11 +251,66 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
         },
       },
     });
-  }, [ready, stopClipClock]);
+  }, [ready, startClipClock, stopClipClock]);
+
+  const loadPlayback = useCallback((track: Track, startSeconds: number, resume: boolean, context: ClipPlayback["context"]) => {
+    const previous = player.current;
+    player.current = null; // Ignore events from the source being stopped.
+    previous?.stopVideo();
+    audioPlayer.current?.dispose();
+    audioPlayer.current = null;
+    if (track.clipAudioUrl) {
+      const local = createClipAudioPlayer(track.clipAudioUrl, track.start, {
+        playing: () => {
+          if (player.current !== local) return;
+          const clip = activeClip.current;
+          if (clip && !clip.started) startClipClock(clip.trackKey, clip.start, clip.duration, clip.context);
+        },
+        ended: () => {
+          if (player.current !== local) return;
+          stopClipClock(true);
+          playingRef.current = false;
+          setPlaying(false);
+          setReviewPlayingKey(null);
+        },
+        error: () => {
+          if (player.current !== local) return;
+          stopClipClock();
+          playingRef.current = false;
+          setPlaying(false);
+          setReviewPlayingKey(null);
+          if (context === "quiz") {
+            pendingLoadErrorCode.current = 200;
+            triesRef.current = 0;
+            setTries(0);
+          }
+        },
+        blocked: () => {
+          if (player.current !== local) return;
+          stopClipClock();
+          playingRef.current = false;
+          setPlaying(false);
+          setReviewPlayingKey(null);
+          if (context === "quiz") {
+            if (resume) resumeClipAt.current = startSeconds;
+            else triesRef.current = Math.min(2, triesRef.current + 1);
+            setTries(triesRef.current);
+          }
+        },
+      });
+      audioPlayer.current = local;
+      player.current = local;
+    } else {
+      player.current = youtubePlayer.current;
+      player.current?.setVolume(track.playbackVolume ?? 70);
+    }
+    player.current?.loadVideoById({ videoId: track.youtubeId, startSeconds });
+  }, [startClipClock, stopClipClock]);
 
   const playClip = useCallback(() => {
-    if (!current || !player.current || !playerReady || (triesRef.current < 1 && resumeClipAt.current === null) || playingRef.current) return;
+    if (!current || (!current.clipAudioUrl && (!youtubePlayer.current || !playerReady)) || (triesRef.current < 1 && resumeClipAt.current === null) || playingRef.current) return;
     const startSeconds = resumeClipAt.current ?? current.start;
+    const resume = resumeClipAt.current !== null;
     if (resumeClipAt.current === null) triesRef.current -= 1;
     resumeClipAt.current = null;
     setTries(triesRef.current);
@@ -256,21 +319,19 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
     stopClipClock();
     activeClip.current = { trackKey: current.key, start: current.start, elapsed: 0, duration: current.duration, context: "quiz", started: false };
     setClipPlayback({ trackKey: current.key, elapsed: 0, duration: current.duration, context: "quiz" });
-    player.current.setVolume(current.playbackVolume ?? 70);
-    player.current.loadVideoById({ videoId: current.youtubeId, startSeconds });
-  }, [current, playerReady, stopClipClock]);
+    loadPlayback(current, startSeconds, resume, "quiz");
+  }, [current, playerReady, stopClipClock, loadPlayback]);
 
   const playReviewClip = useCallback((track: Track) => {
-    if (!player.current || !playerReady) return;
+    if (!track.clipAudioUrl && (!youtubePlayer.current || !playerReady)) return;
     playingRef.current = true;
     setPlaying(true);
     setReviewPlayingKey(track.key);
     stopClipClock();
     activeClip.current = { trackKey: track.key, start: track.start, elapsed: 0, duration: track.duration, context: "review", started: false };
     setClipPlayback({ trackKey: track.key, elapsed: 0, duration: track.duration, context: "review" });
-    player.current.setVolume(track.playbackVolume ?? 70);
-    player.current.loadVideoById({ videoId: track.youtubeId, startSeconds: track.start });
-  }, [playerReady, stopClipClock]);
+    loadPlayback(track, track.start, false, "review");
+  }, [playerReady, stopClipClock, loadPlayback]);
 
   const leaveResults = useCallback(() => {
     stopClipClock();
@@ -448,7 +509,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
   }, [current, screen, stopClipClock]);
 
   useEffect(() => {
-    if (screen !== "quiz" || !current || !playerReady || autoplayedTrack.current === current.key) return;
+    if (screen !== "quiz" || !current || (!current.clipAudioUrl && !playerReady) || autoplayedTrack.current === current.key) return;
     autoplayedTrack.current = current.key;
     const autoplayTimer = setTimeout(() => playClip(), 0);
     return () => clearTimeout(autoplayTimer);
@@ -726,7 +787,7 @@ export default function MusicQuiz({ initialQuizId, guestMode = false, comparison
             </div> : <small>{item.loadFailed ? `Аннулирован · ${youtubeErrorLabel(item.loadErrorCode)}` : `${item.artistAnswer || "—"} · ${item.titleAnswer || "—"}`}</small>}</div>
             {!comparison && <div className="row-scores"><span className={item.loadFailed ? "void" : points ? "points" : "zero"}>{item.loadFailed ? "—" : `${points}/${trackMaxScore}`}</span></div>}
             <div className="review-controls">
-              <Button ref={(element) => { reviewPlayButtons.current[itemIndex] = element; }} size="sm" variant="outline" className="review-play" disabled={!playerReady} aria-label={`Прослушать фрагмент ${item.track.artist} — ${item.track.title}`} onFocus={() => setReviewIndex(itemIndex)} onClick={() => { setReviewIndex(itemIndex); playReviewClip(item.track); }}><Volume2 /> {isPlaying ? "…" : `${item.track.duration} сек.`}</Button>
+              <Button ref={(element) => { reviewPlayButtons.current[itemIndex] = element; }} size="sm" variant="outline" className="review-play" disabled={!item.track.clipAudioUrl && !playerReady} aria-label={`Прослушать фрагмент ${item.track.artist} — ${item.track.title}`} onFocus={() => setReviewIndex(itemIndex)} onClick={() => { setReviewIndex(itemIndex); playReviewClip(item.track); }}><Volume2 /> {isPlaying ? "…" : `${item.track.duration} сек.`}</Button>
               {clipPlayback?.trackKey === item.track.key && clipPlayback.context === "review" && <ClipTimeline playback={clipPlayback} duration={item.track.duration} compact />}
               <a className="youtube-link" href={`https://www.youtube.com/watch?v=${item.track.youtubeId}`} target="_blank" rel="noreferrer" aria-label={`Открыть ${item.track.artist} — ${item.track.title} на YouTube`}><ExternalLink /> YouTube</a>
               <a className="spotify-link" href={spotifyArtistUrl(item.track.artist)} target="_blank" rel="noreferrer" aria-label={`Найти ${item.track.artist} в Spotify`}><Music2 /> Spotify</a>

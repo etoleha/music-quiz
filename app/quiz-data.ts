@@ -21,6 +21,8 @@ export type Track = {
   start: number;
   duration: number;
   playbackVolume?: number;
+  /** Ready, normalized excerpt; playback starts at zero in this file. */
+  clipAudioUrl?: string;
   releaseYear?: number;
   versionYear?: number;
   album?: { title: string; year?: number; coverUrl?: string };

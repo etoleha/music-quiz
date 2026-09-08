@@ -9,6 +9,7 @@ import verifiedRelease07 from "../data/quiz-release-new-rules-07.json";
 import verifiedRelease08 from "../data/quiz-release-new-rules-08.json";
 import verifiedRelease09 from "../data/quiz-release-new-rules-09.json";
 import verifiedRelease10 from "../data/quiz-release-new-rules-10.json";
+import verifiedRelease11 from "../data/quiz-release-new-rules-11.json";
 
 const performerForms: Partial<Record<string, Track["artistForm"]>> = {
   "Александр Барыкин": "Исполнитель",
@@ -474,7 +475,7 @@ const extraTrack = (youtubeId: string, artist: string, title: string, start: num
   };
 };
 
-type VerifiedReleaseTrack = (typeof verifiedRelease.tracks)[number] | (typeof verifiedRelease02.tracks)[number] | (typeof verifiedRelease03.tracks)[number] | (typeof verifiedRelease04.tracks)[number] | (typeof verifiedRelease05.tracks)[number] | (typeof verifiedRelease06.tracks)[number] | (typeof verifiedRelease07.tracks)[number] | (typeof verifiedRelease08.tracks)[number] | (typeof verifiedRelease09.tracks)[number] | (typeof verifiedRelease10.tracks)[number];
+type VerifiedReleaseTrack = (typeof verifiedRelease.tracks)[number] | (typeof verifiedRelease02.tracks)[number] | (typeof verifiedRelease03.tracks)[number] | (typeof verifiedRelease04.tracks)[number] | (typeof verifiedRelease05.tracks)[number] | (typeof verifiedRelease06.tracks)[number] | (typeof verifiedRelease07.tracks)[number] | (typeof verifiedRelease08.tracks)[number] | (typeof verifiedRelease09.tracks)[number] | (typeof verifiedRelease10.tracks)[number] | (typeof verifiedRelease11.tracks)[number];
 const verifiedReleaseTrack = (song: VerifiedReleaseTrack): Track => ({
   key: `${song.artist}—${song.title}`.toLocaleLowerCase("ru-RU"),
   youtubeId: song.youtube.videoId,
@@ -485,8 +486,12 @@ const verifiedReleaseTrack = (song: VerifiedReleaseTrack): Track => ({
   titleAliases: unique([song.title, ...song.titleAliases]),
   start: song.clip.start,
   duration: song.clip.duration,
+  clipAudioUrl: "clipAudioUrl" in song.optionalMetadata && typeof song.optionalMetadata.clipAudioUrl === "string" ? song.optionalMetadata.clipAudioUrl : undefined,
   playbackVolume: Math.max(35, Math.min(85, Number((song.optionalMetadata as { audio?: { playbackVolume?: number } }).audio?.playbackVolume) || 70)),
-  releaseYear: song.approximateYear,
+  releaseYear: "releaseYear" in song.optionalMetadata
+    ? song.optionalMetadata.releaseYear ?? undefined
+    : song.approximateYear,
+  versionYear: "versionYear" in song.optionalMetadata ? song.optionalMetadata.versionYear ?? undefined : undefined,
   album: song.optionalMetadata.album ? {
     title: song.optionalMetadata.album.title,
     year: song.optionalMetadata.album.year ?? undefined,
@@ -495,6 +500,13 @@ const verifiedReleaseTrack = (song: VerifiedReleaseTrack): Track => ({
 });
 
 export const extraQuizzes: Quiz[] = [
+  {
+    id: verifiedRelease11.quiz.id,
+    title: verifiedRelease11.quiz.title,
+    level: verifiedRelease11.quiz.level,
+    published: verifiedRelease11.quiz.published,
+    tracks: verifiedRelease11.tracks.map(verifiedReleaseTrack),
+  },
   {
     id: verifiedRelease10.quiz.id,
     title: verifiedRelease10.quiz.title,

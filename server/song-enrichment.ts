@@ -51,9 +51,10 @@ type CatalogSong = {
 };
 
 type PublicationVerification = {
+  catalogSongs?: CatalogSong[];
   songs: Record<string, {
     checks?: Record<string, { state: string; sources?: string[] }>;
-    release?: { releaseYear?: number; versionYear?: number; album?: CatalogSong["release"] extends infer R ? R extends { album?: infer A } ? A : never : never };
+    release?: { releaseYear?: number | null; versionYear?: number; album?: CatalogSong["release"] extends infer R ? R extends { album?: infer A } ? A : never : never };
     artistImage?: AutoArtist["photo"];
     relationships?: { lineup?: Array<{ name: string; role?: string; highlighted?: boolean }>; sourceUrl?: string };
     credits?: Array<{ role: string; names: string[] }>;
@@ -88,17 +89,29 @@ function load() {
   const baseVerification: PublicationVerification = fs.existsSync(verificationPath)
     ? JSON.parse(fs.readFileSync(verificationPath, "utf8"))
     : { songs: {} };
+  const catalogSongs = new Map<string, CatalogSong>(database.songs.map((song: CatalogSong) => [song.id, song]));
   const releaseSongs = fs.readdirSync(dataDirectory)
     .filter((name) => /^quiz-release-new-rules-\d+-metadata\.json$/u.test(name))
-    .sort()
+    .sort((left, right) => left.localeCompare(right, "en", { numeric: true }))
     .reduce<Record<string, PublicationVerification["songs"][string]>>((songs, name) => {
       const release = JSON.parse(fs.readFileSync(path.join(dataDirectory, name), "utf8")) as PublicationVerification;
+      for (const song of release.catalogSongs || []) {
+        if (!song.id || !song.artist || !song.title) throw new Error(`Invalid catalog song in ${name}`);
+        const previous = catalogSongs.get(song.id);
+        catalogSongs.set(song.id, {
+          ...previous, ...song,
+          artistAliases: song.artistAliases || previous?.artistAliases || [],
+          titleAliases: song.titleAliases || previous?.titleAliases || [],
+          release: { ...previous?.release, ...song.release },
+          enrichment: { ...previous?.enrichment, ...song.enrichment },
+        });
+      }
       return Object.assign(songs, release.songs || {});
     }, {});
   const verification: PublicationVerification = {
     songs: { ...baseVerification.songs, ...releaseSongs },
   };
-  loaded = { songs: database.songs, enrichment, verification };
+  loaded = { songs: [...catalogSongs.values()], enrichment, verification };
   return loaded;
 }
 
@@ -113,6 +126,8 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
       && [item.title, ...(item.titleAliases || [])].some((value) => fingerprint(value) === titleKey));
   if (!song) return null;
   const verified = data.verification.songs[song.id];
+  const hasVerifiedSongYear = Object.prototype.hasOwnProperty.call(verified?.release || {}, "releaseYear");
+  const explicitlyMissingSongYear = hasVerifiedSongYear && verified?.release?.releaseYear === null;
   const enrichment = data.enrichment.songs[song.id];
   if (!enrichment || enrichment.status !== "matched") {
     const verifiedSources = Object.values(verified?.checks || {}).flatMap((check) => check.sources || []);
@@ -122,9 +137,9 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
       artistForm: song.enrichment?.artistForm || undefined,
       image: verified?.artistImage || song.enrichment?.artistImage || undefined,
       facts: (song.enrichment?.facts || []).filter((fact) => fact.state !== "candidate").slice(0, 3),
-      releaseYear: verified?.release?.releaseYear || song.release?.releaseYear || undefined,
+      releaseYear: hasVerifiedSongYear ? verified?.release?.releaseYear ?? undefined : song.release?.releaseYear || undefined,
       versionYear: verified?.release?.versionYear || undefined,
-      releaseYearStatus: verified?.checks?.release?.state === "verified" || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
+      releaseYearStatus: explicitlyMissingSongYear ? "missing" : verified?.checks?.release?.state === "verified" || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
       album: verified?.release?.album || (song.release?.album ? { ...song.release.album, kind: song.release.album.kind || "album" } : undefined),
       members: verified?.relationships?.lineup || [],
       credits: verified?.credits || [],
@@ -174,9 +189,9 @@ export function getPersistedTrackInfo(artist: string, title: string, youtubeId?:
     ].filter((fact) => fact.state === "verified").slice(0, 3),
     artistUrl,
     recordingTitle: enrichment.recordingTitle,
-    releaseYear: verified?.release?.releaseYear || releaseYear,
+    releaseYear: hasVerifiedSongYear ? verified?.release?.releaseYear ?? undefined : releaseYear,
     versionYear: verified?.release?.versionYear || undefined,
-    releaseYearStatus: verified?.checks?.release?.state === "verified" || verifiedEnrichmentYear || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
+    releaseYearStatus: explicitlyMissingSongYear ? "missing" : verified?.checks?.release?.state === "verified" || verifiedEnrichmentYear || song.release?.releaseYearStatus === "verified" ? "verified" : "candidate",
     album: verified?.release?.album || album,
     credits: verified?.credits || [],
     soundtrack: verified?.soundtrack || undefined,

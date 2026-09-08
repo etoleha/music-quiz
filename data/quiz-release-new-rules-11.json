@@ -1,0 +1,1939 @@
+{
+  "version": 2,
+  "generatedAt": "2026-09-08T16:57:24.088Z",
+  "status": "verified",
+  "quiz": {
+    "id": "via-01",
+    "title": "Советские ВИА",
+    "level": "сложный",
+    "published": "8 сентября 2026"
+  },
+  "policy": {
+    "trackCount": 20,
+    "theme": "Советские вокально-инструментальные ансамбли",
+    "uniqueArtistsWithinQuiz": true,
+    "uniqueSongsAcrossQuizzes": true,
+    "scoring": {
+      "artist": 2,
+      "title": 1,
+      "maxPerTrack": 3
+    },
+    "eraDistributionOverride": "Тематический выпуск: только советские ВИА"
+  },
+  "stats": {
+    "eras": {
+      "soviet": 20
+    },
+    "recognition": {
+      "recognizable": 5,
+      "middle": 8,
+      "deep": 7
+    }
+  },
+  "tracks": [
+    {
+      "id": "via-ready-1",
+      "songId": "pool-c50c9159f90c",
+      "artist": "Весёлые ребята",
+      "title": "Автомобили",
+      "artistIds": [
+        "via:веселыеребята"
+      ],
+      "artistAliases": [
+        "Весёлые ребята",
+        "ВИА Весёлые ребята",
+        "ВИА «Весёлые ребята»",
+        "Веселые ребята",
+        "Veselye rebyata"
+      ],
+      "titleAliases": [
+        "Автомобили"
+      ],
+      "era": "soviet",
+      "approximateYear": 1986,
+      "recognizability": "recognizable",
+      "youtube": {
+        "videoId": "zjX5vIdaj1g",
+        "title": "Весёлые ребята — Автомобили",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 58.8,
+        "duration": 11.25,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/450ae3ffe89336a9a13e.mp3",
+        "releaseYear": 1986,
+        "releaseYearStatus": "verified",
+        "versionYear": 1986,
+        "album": {
+          "title": "Минуточку!!!",
+          "kind": "release",
+          "year": 1987,
+          "coverUrl": "/quiz-assets/via-01/cd6f0af5ea6e4b4a26f2.jpg",
+          "originalCoverUrl": "https://tunnel.ru/thumb/images/2021-10/post/154902/1___keepration_300x300.jpg",
+          "sourceUrl": "https://tunnel.ru/post-veselye-rebyata-minutochku-1986",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/56df96a215f584b2d2c1.jpg",
+          "originalUrl": "https://i.ytimg.com/vi/zjX5vIdaj1g/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=zjX5vIdaj1g",
+          "attribution": "архивный кадр группы из номера",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://www.youtube.com/watch?v=zjX5vIdaj1g",
+          "https://tunnel.ru/post-veselye-rebyata-minutochku-1986"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -14.44,
+            "input_tp": -2.65,
+            "input_lra": 0.8,
+            "input_thresh": -24.44
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.26",
+            "input_tp": "-4.49",
+            "input_lra": "0.70",
+            "input_thresh": "-26.26",
+            "output_i": "-15.78",
+            "output_tp": "-4.10",
+            "output_lra": "0.70",
+            "output_thresh": "-25.78",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.22"
+          },
+          "normalizedSha256": "8f219a7cd8b265d824f1fe4374f453e224649c27056b49f6fa5d390d2e043269",
+          "measuredStart": 58.8,
+          "measuredDuration": 11.25,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-2",
+      "songId": "pool-9289c54d919e",
+      "artist": "Поющие сердца",
+      "title": "Облака в реке",
+      "artistIds": [
+        "via:поющиесердца"
+      ],
+      "artistAliases": [
+        "Поющие сердца",
+        "ВИА Поющие сердца",
+        "ВИА «Поющие сердца»",
+        "Poyushchie serdtsa"
+      ],
+      "titleAliases": [
+        "Облака в реке",
+        "В реку смотрятся облака"
+      ],
+      "era": "soviet",
+      "approximateYear": 1976,
+      "recognizability": "deep",
+      "youtube": {
+        "videoId": "ik1IP1Z-nEs",
+        "title": "Поющие сердца — Облака в реке",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 35.9,
+        "duration": 14.75,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/c31eacf75b98c8dfa8af.mp3",
+        "releaseYear": 1976,
+        "releaseYearStatus": "verified",
+        "versionYear": 1976,
+        "album": {
+          "title": "Песни Анатолия Днепрова на стихи Игоря Кохановского",
+          "kind": "release",
+          "year": 1976,
+          "coverUrl": "/quiz-assets/via-01/3611194bb59b9af5ae30.jpg",
+          "originalCoverUrl": "https://records.su/pics47/5469032361104445prev.jpg",
+          "sourceUrl": "https://records.su/album/10909",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/c09ed17d5d47281c6ea3.jpg",
+          "originalUrl": "https://www.bigcitystar.ru/wp-content/uploads/2026/08/bcs-29494-6932.jpg",
+          "sourceUrl": "https://www.bigcitystar.ru/catalog/pojushhie-serdca/",
+          "attribution": "архивная групповая фотография в карточке концертного агента",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://records.su/album/10909",
+          "https://records.su/album/17444",
+          "https://open.spotify.com/track/4eh8Kardu3mX6qjFDo6T73",
+          "https://kprf.ru/activity/culture/125884.html",
+          "https://www.bigcitystar.ru/catalog/pojushhie-serdca/",
+          "https://www.youtube.com/watch?v=ik1IP1Z-nEs"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -13.86,
+            "input_tp": -4.12,
+            "input_lra": 1.1,
+            "input_thresh": -23.86
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.25",
+            "input_tp": "-5.95",
+            "input_lra": "1.10",
+            "input_thresh": "-26.25",
+            "output_i": "-15.84",
+            "output_tp": "-5.45",
+            "output_lra": "0.80",
+            "output_thresh": "-25.84",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.16"
+          },
+          "normalizedSha256": "ae526e25359b19963bfaddc6399a6a7a344f2f142af00d56ccb28db720b4681b",
+          "measuredStart": 35.9,
+          "measuredDuration": 14.75,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-3",
+      "songId": "pool-8c608bc19f28",
+      "artist": "Самоцветы",
+      "title": "Всё, что в жизни есть у меня",
+      "artistIds": [
+        "via:самоцветы"
+      ],
+      "artistAliases": [
+        "Самоцветы",
+        "ВИА Самоцветы",
+        "ВИА «Самоцветы»",
+        "Samotsvety",
+        "Samocvety"
+      ],
+      "titleAliases": [
+        "Всё, что в жизни есть у меня",
+        "Всё, что есть у меня"
+      ],
+      "era": "soviet",
+      "approximateYear": 1976,
+      "recognizability": "recognizable",
+      "youtube": {
+        "videoId": "SWjEXLIPlgQ",
+        "title": "Самоцветы — Всё, что в жизни есть у меня",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 54.6,
+        "duration": 8.7,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/b43c342f4d178cddd4e2.mp3",
+        "releaseYear": 1976,
+        "releaseYearStatus": "verified",
+        "versionYear": 1976,
+        "album": {
+          "title": "Вячеслав Добрынин. Старый альбом",
+          "kind": "release",
+          "year": 2015,
+          "coverUrl": "/quiz-assets/via-01/8f9aa197d7a2b858b995.jpg",
+          "originalCoverUrl": "https://melody.su/upload/iblock/aeb/aeb25e1f459535a397d8f4fd5977987f.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/34066/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/4c10a752bde41476e4f7.jpg",
+          "originalUrl": "https://cdn.7days.ru/pic/6a6/45B8390640E2C67AC325854B00311DC2/525343/86.jpg",
+          "sourceUrl": "https://7days.ru/caravan/2020/5/yuriy-malikov-vtoraya-molodost.htm",
+          "attribution": "архивный групповой снимок",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://otr-online.ru/programmy/pesnya-ostayotsya-s-chelovekom/vse-chto-v-zhizni-est-u-menya-59384.html",
+          "https://www.youtube.com/watch?v=SWjEXLIPlgQ",
+          "https://music.yandex.com/album/40204148/track/147203511",
+          "https://melody.su/catalog/estrade/34066/",
+          "https://7days.ru/caravan/2020/5/yuriy-malikov-vtoraya-molodost.htm"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -12.25,
+            "input_tp": -1.62,
+            "input_lra": 1.6,
+            "input_thresh": -22.29
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.27",
+            "input_tp": "-5.62",
+            "input_lra": "1.60",
+            "input_thresh": "-26.30",
+            "output_i": "-15.88",
+            "output_tp": "-5.04",
+            "output_lra": "0.90",
+            "output_thresh": "-25.88",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.12"
+          },
+          "normalizedSha256": "7ecf14be4219a2d9ad2d1863ba758b3bec563ddd2a8156a32e3d2cd1f89870de",
+          "measuredStart": 54.6,
+          "measuredDuration": 8.7,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-4",
+      "songId": "pool-65a5ef35f1c6",
+      "artist": "Ариэль",
+      "title": "Заповедные места",
+      "artistIds": [
+        "via:ариэль"
+      ],
+      "artistAliases": [
+        "Ариэль",
+        "ВИА Ариэль",
+        "ВИА «Ариэль»",
+        "Ариель",
+        "Ariel"
+      ],
+      "titleAliases": [
+        "Заповедные места"
+      ],
+      "era": "soviet",
+      "approximateYear": 1987,
+      "recognizability": "middle",
+      "youtube": {
+        "videoId": "tgYnUXp6avE",
+        "title": "Ариэль — Заповедные места",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 25.65,
+        "duration": 12,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/d20a4e7bc810d4a8d5ea.mp3",
+        "releaseYear": null,
+        "releaseYearStatus": "missing",
+        "versionYear": 1987,
+        "album": {
+          "title": "Заповедные места",
+          "kind": "release",
+          "year": 1985,
+          "coverUrl": "/quiz-assets/via-01/6162a802a8b8d97bd33f.jpg",
+          "originalCoverUrl": "https://yarushin.com/netcat_files/7/6/album29.jpg",
+          "sourceUrl": "https://yarushin.com/albomy/albomy_23.html",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/55f1db1ee48626b1bd61.jpg",
+          "originalUrl": "https://yarushin.com/netcat_files/6/4/1974_Laureaty_1_premii_ARIEL_.jpg",
+          "sourceUrl": "https://yarushin.com/biografiya/",
+          "attribution": "официальная архивная фотография ансамбля, 1974",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [
+          {
+            "text": "На официальном сайте ВИА песня открывает альбом «Заповедные места» 1985 года. Телезапись Гостелерадиофонда — 1987.",
+            "sourceUrl": "https://yarushin.com/albomy/albomy_23.html",
+            "state": "verified"
+          },
+          {
+            "text": "Запись 1987 года. Точный год первого выхода песни не установлен.",
+            "sourceUrl": "https://www.youtube.com/watch?v=tgYnUXp6avE",
+            "state": "verified"
+          }
+        ],
+        "sources": [
+          "https://yarushin.com/albomy/albomy_23.html",
+          "https://yarushin.com/book/chast-1/chast-1_18.html",
+          "https://www.youtube.com/watch?v=tgYnUXp6avE",
+          "https://yarushin.com/biografiya/"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -21.23,
+            "input_tp": -4.59,
+            "input_lra": 4.1,
+            "input_thresh": -31.48
+          },
+          "normalizedMeasurement": {
+            "input_i": "-15.81",
+            "input_tp": "-1.76",
+            "input_lra": "3.60",
+            "input_thresh": "-26.01",
+            "output_i": "-15.05",
+            "output_tp": "-1.50",
+            "output_lra": "3.20",
+            "output_thresh": "-25.19",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.95"
+          },
+          "normalizedSha256": "d27ec8f8e4bbdfccd7168329a452b9844f63f96a4a057017015bdb70d35726b2",
+          "measuredStart": 25.65,
+          "measuredDuration": 12,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-5",
+      "songId": "via-kalinka",
+      "artist": "Калинка",
+      "title": "Бархатный сезон",
+      "artistIds": [
+        "via:калинка"
+      ],
+      "artistAliases": [
+        "Калинка",
+        "ВИА Калинка",
+        "ВИА «Калинка»",
+        "Kalinka"
+      ],
+      "titleAliases": [
+        "Бархатный сезон"
+      ],
+      "era": "soviet",
+      "approximateYear": 1976,
+      "recognizability": "deep",
+      "youtube": {
+        "videoId": "sAm6i9Ka3uU",
+        "title": "Калинка — Бархатный сезон",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 49.1,
+        "duration": 9.3,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/3370e650d7f3abe7af76.mp3",
+        "releaseYear": 1976,
+        "releaseYearStatus": "verified",
+        "versionYear": 1976,
+        "album": {
+          "title": "ВИА «Калинка»",
+          "kind": "release",
+          "year": 2008,
+          "coverUrl": "/quiz-assets/via-01/87a3246936a9112879ff.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/926/2048_2048_1/9269e06df87f1f7ad13b08bd8fe70dd3.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/580/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/f0f16bab79e70b78f78a.jpg",
+          "originalUrl": "https://abrgen.ru/attachments/Image/VIA-Kalinka-7.jpg",
+          "sourceUrl": "https://abrgen.ru/muzika/luchshie_otechest/kalinka/",
+          "attribution": "отдельная архивная фотография ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://melody.su/catalog/estrade/580/",
+          "https://www.youtube.com/watch?v=sAm6i9Ka3uU",
+          "https://www.sssrviapesni.info/kalinkadisk.html",
+          "https://www.records.su/tag/Калинка/page/1",
+          "https://abrgen.ru/muzika/luchshie_otechest/kalinka/"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -9.42,
+            "input_tp": 0.65,
+            "input_lra": 2.3,
+            "input_thresh": -19.42
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.27",
+            "input_tp": "-6.18",
+            "input_lra": "2.30",
+            "input_thresh": "-26.27",
+            "output_i": "-15.78",
+            "output_tp": "-5.37",
+            "output_lra": "2.10",
+            "output_thresh": "-25.78",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.22"
+          },
+          "normalizedSha256": "566a0bc92c02f6867eefa5508a279148b40f0ee53d3b2bc7fdf5d3440415743f",
+          "measuredStart": 49.1,
+          "measuredDuration": 9.3,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-6",
+      "songId": "via-syabry",
+      "artist": "Сябры",
+      "title": "Девушка из Полесья",
+      "artistIds": [
+        "via:сябры"
+      ],
+      "artistAliases": [
+        "Сябры",
+        "ВИА Сябры",
+        "ВИА «Сябры»",
+        "Syabry",
+        "Siabry"
+      ],
+      "titleAliases": [
+        "Девушка из Полесья",
+        "Алеся",
+        "Олеся"
+      ],
+      "era": "soviet",
+      "approximateYear": 1978,
+      "recognizability": "middle",
+      "youtube": {
+        "videoId": "NaqTQTmFkWo",
+        "title": "Сябры — Девушка из Полесья",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 61,
+        "duration": 10.15,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/f312931f73e2531a6692.mp3",
+        "releaseYear": 1978,
+        "releaseYearStatus": "verified",
+        "versionYear": 1981,
+        "album": {
+          "title": "ВИА «Сябры»",
+          "kind": "release",
+          "year": 2008,
+          "coverUrl": "/quiz-assets/via-01/82b9b0807f54ad2033d8.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/931/1024_99999_1/9313d48c9badf10c4b50cc256134d083.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/594/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/ecd2c410056dec54340e.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/%D0%91%D1%80%D0%B0%D1%82%D1%8C%D1%8F_%D1%84%D0%B5%D1%81%D1%82_%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D1%80%D1%82_2010.jpg",
+          "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%A1%D1%8F%D0%B1%D1%80%D1%8B",
+          "attribution": "концертная фотография ансамбля в 2010 году; не состав телезаписи 1981 года",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://ru.wikipedia.org/wiki/Сябры",
+          "https://melody.su/catalog/estrade/594/",
+          "https://www.youtube.com/watch?v=NaqTQTmFkWo",
+          "https://ru.wikipedia.org/wiki/%D0%A1%D1%8F%D0%B1%D1%80%D1%8B"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -11.32,
+            "input_tp": 0.33,
+            "input_lra": 5.3,
+            "input_thresh": -21.46
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.28",
+            "input_tp": "-4.61",
+            "input_lra": "5.20",
+            "input_thresh": "-26.41",
+            "output_i": "-14.89",
+            "output_tp": "-2.79",
+            "output_lra": "3.10",
+            "output_thresh": "-25.02",
+            "normalization_type": "dynamic",
+            "target_offset": "-1.11"
+          },
+          "normalizedSha256": "5f0fbca399389661a257497796f8a075a76c3fe38274e41ae6f52e5a7de97011",
+          "measuredStart": 61,
+          "measuredDuration": 10.15,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-7",
+      "songId": "pool-cefee4d79c12",
+      "artist": "Здравствуй, песня",
+      "title": "Не обещай",
+      "artistIds": [
+        "via:здравствуйпесня"
+      ],
+      "artistAliases": [
+        "Здравствуй, песня",
+        "ВИА Здравствуй, песня",
+        "ВИА «Здравствуй, песня»",
+        "Здравствуй песня",
+        "Zdravstvuy pesnya"
+      ],
+      "titleAliases": [
+        "Не обещай",
+        "Прошу тебя"
+      ],
+      "era": "soviet",
+      "approximateYear": 1979,
+      "recognizability": "middle",
+      "youtube": {
+        "videoId": "M_XvtEMQn28",
+        "title": "Здравствуй, песня — Не обещай",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 35.7,
+        "duration": 12.15,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/cae91f1673b7d4823513.mp3",
+        "releaseYear": null,
+        "releaseYearStatus": "missing",
+        "versionYear": 1979,
+        "album": {
+          "title": "Мы любим диско",
+          "kind": "release",
+          "year": null,
+          "coverUrl": "/quiz-assets/via-01/fc0f0a4da9abb3fac47d.webp",
+          "originalCoverUrl": "https://retro-oboz.ru/wp-content/uploads/zdravstvyi_pesnya_3.webp",
+          "sourceUrl": "https://retro-oboz.ru/via-zdr-pesnya/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/ca42277516795abf09f1.jpg",
+          "originalUrl": "https://i.ytimg.com/vi/M_XvtEMQn28/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=M_XvtEMQn28",
+          "attribution": "общий архивный кадр ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [
+          {
+            "text": "Запись из музыкального фильма ТО «Экран» 1979 года.",
+            "sourceUrl": "https://www.youtube.com/watch?v=M_XvtEMQn28",
+            "state": "verified"
+          },
+          {
+            "text": "Запись 1979 года. Точный год первого выхода песни не установлен.",
+            "sourceUrl": "https://www.youtube.com/watch?v=M_XvtEMQn28",
+            "state": "verified"
+          }
+        ],
+        "sources": [
+          "https://www.youtube.com/watch?v=M_XvtEMQn28",
+          "https://records.su/tag/Рычков_Борис",
+          "https://retro-oboz.ru/via-zdr-pesnya/",
+          "https://www.km.ru/muzyka/encyclopedia/zdravstvui-pesnya",
+          "https://open.spotify.com/track/6MtgCyQDE1PX0dMccxWhNW"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -16.64,
+            "input_tp": -0.67,
+            "input_lra": 2.6,
+            "input_thresh": -26.64
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.32",
+            "input_tp": "-1.76",
+            "input_lra": "2.70",
+            "input_thresh": "-26.32",
+            "output_i": "-16.57",
+            "output_tp": "-1.99",
+            "output_lra": "3.00",
+            "output_thresh": "-26.57",
+            "normalization_type": "dynamic",
+            "target_offset": "0.57"
+          },
+          "normalizedSha256": "78970e48f28f09adbedc7ced8a7d77aab71589bc60fcc30765817a3353e104ad",
+          "measuredStart": 35.7,
+          "measuredDuration": 12.15,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-8",
+      "songId": "via-guitars",
+      "artist": "Голубые гитары",
+      "title": "О чём плачут гитары",
+      "artistIds": [
+        "via:голубыегитары"
+      ],
+      "artistAliases": [
+        "Голубые гитары",
+        "ВИА Голубые гитары",
+        "ВИА «Голубые гитары»",
+        "Golubye gitary"
+      ],
+      "titleAliases": [
+        "О чём плачут гитары",
+        "Почему в семнадцать лет",
+        "Плачут гитары"
+      ],
+      "era": "soviet",
+      "approximateYear": 1971,
+      "recognizability": "deep",
+      "youtube": {
+        "videoId": "srQnQrTGzCM",
+        "title": "Голубые гитары — О чём плачут гитары",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 53.9,
+        "duration": 12.5,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/aaaf860d4490eeb8bda4.mp3",
+        "releaseYear": 1971,
+        "releaseYearStatus": "verified",
+        "versionYear": 1971,
+        "album": {
+          "title": "Вокально-инструментальный ансамбль «Голубые гитары»",
+          "kind": "release",
+          "year": 2023,
+          "coverUrl": "/quiz-assets/via-01/4805a057c0d9284a5d07.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/8c1/2048_2048_1/8c1baa09b4c003a3474f20e6c83f1727.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/74108/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/bd0a832bef2714506196.jpg",
+          "originalUrl": "https://pavelbabakov.narod.ru/images/gol_git1_big.jpg",
+          "sourceUrl": "https://malezhik.ru/people/голубые_гитары",
+          "attribution": "отдельная архивная фотография ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://melody.su/catalog/estrade/74108/",
+          "https://www.youtube.com/watch?v=srQnQrTGzCM",
+          "https://malezhik.ru/people/голубые_гитары"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -9.28,
+            "input_tp": 0.22,
+            "input_lra": 0.7,
+            "input_thresh": -19.28
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.25",
+            "input_tp": "-5.85",
+            "input_lra": "0.60",
+            "input_thresh": "-26.25",
+            "output_i": "-16.02",
+            "output_tp": "-5.72",
+            "output_lra": "0.70",
+            "output_thresh": "-26.02",
+            "normalization_type": "dynamic",
+            "target_offset": "0.02"
+          },
+          "normalizedSha256": "9f8a2b2576f1a0043492888d8bf68c50e72fde3aedbdda5bb7f9c6c770746a23",
+          "measuredStart": 53.9,
+          "measuredDuration": 12.5,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-9",
+      "songId": "via-maki",
+      "artist": "Красные маки",
+      "title": "Давай помолчим",
+      "artistIds": [
+        "via:красныемаки"
+      ],
+      "artistAliases": [
+        "Красные маки",
+        "ВИА Красные маки",
+        "ВИА «Красные маки»",
+        "Krasnye maki"
+      ],
+      "titleAliases": [
+        "Давай помолчим"
+      ],
+      "era": "soviet",
+      "approximateYear": 1981,
+      "recognizability": "deep",
+      "youtube": {
+        "videoId": "wwl4TrND3sI",
+        "title": "Красные маки — Давай помолчим",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 58.5,
+        "duration": 13.8,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/b4514bc3c290a7d7e62e.mp3",
+        "releaseYear": 1981,
+        "releaseYearStatus": "verified",
+        "versionYear": 1981,
+        "album": {
+          "title": "Давай помолчим",
+          "kind": "release",
+          "year": 1981,
+          "coverUrl": "/quiz-assets/via-01/793b4a7a5026bdbff71e.jpg",
+          "originalCoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d2/a9/63/d2a96342-baaa-b261-e7f5-f228956ddaf6/cover.jpg/600x600bf-60.jpg",
+          "sourceUrl": "https://music.apple.com/us/album/1544826002",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/d7da2e5bf2f5763f01c5.jpg",
+          "originalUrl": "https://www.sssrviapesni.info/img1/kmtitul.jpg",
+          "sourceUrl": "https://www.sssrviapesni.info/krasnyemaki.html",
+          "attribution": "архивная групповая фотография ВИА Красные маки; не поздняя группа Маки 1987 года",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://via-era.narod.ru/Ansambli/KM/discograf_km/discograf_km_4.htm",
+          "https://music.apple.com/us/album/1544826002",
+          "https://www.youtube.com/watch?v=wwl4TrND3sI",
+          "https://www.sssrviapesni.info/krasnyemaki.html"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -15.79,
+            "input_tp": -1.66,
+            "input_lra": 6.6,
+            "input_thresh": -25.79
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.26",
+            "input_tp": "-2.17",
+            "input_lra": "6.60",
+            "input_thresh": "-26.26",
+            "output_i": "-15.08",
+            "output_tp": "-1.53",
+            "output_lra": "4.70",
+            "output_thresh": "-25.08",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.92"
+          },
+          "normalizedSha256": "a6f322f82fc5214a872e848f0ebbe626d75b15614f0b93ec918551f2fda1041d",
+          "measuredStart": 58.5,
+          "measuredDuration": 13.8,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-10",
+      "songId": "pool-26e90d6cea40",
+      "artist": "Поющие гитары",
+      "title": "Нет тебя прекрасней",
+      "artistIds": [
+        "via:поющиегитары"
+      ],
+      "artistAliases": [
+        "Поющие гитары",
+        "ВИА Поющие гитары",
+        "ВИА «Поющие гитары»",
+        "Poyushchie gitary"
+      ],
+      "titleAliases": [
+        "Нет тебя прекрасней",
+        "Для меня нет тебя прекрасней",
+        "Не умирай, любовь"
+      ],
+      "era": "soviet",
+      "approximateYear": 1970,
+      "recognizability": "middle",
+      "youtube": {
+        "videoId": "PekRDLjxUk4",
+        "title": "Поющие гитары — Нет тебя прекрасней",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 26.8,
+        "duration": 12.2,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/8f14e97b1d706643f787.mp3",
+        "releaseYear": null,
+        "releaseYearStatus": "missing",
+        "versionYear": 1970,
+        "album": {
+          "title": "Проводы",
+          "kind": "release",
+          "year": null,
+          "coverUrl": "/quiz-assets/via-01/5446d753f5fa5aef5afb.png",
+          "originalCoverUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEjR5PrIJWG8kXp2jFHyzxzUZgiMGaE9ShFQZEavtk1kFbDQjfIGHk1tpHgw3_jP3iIe_gvNv9z-h82kwXVRiJxOHOVRHYFCKeMB3wCq7Xw2F1guw9r4e-MBPDgs1hZNrlAbG1eAoKzpt5ea8QhbLWYlZsUliflaYyCJJuTSvS09RV60yxrwipE3UaE3=w640-h640",
+          "sourceUrl": "https://gennadiileonidovich.blogspot.com/2020/02/blog-post_27.html",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/74ade345eefc6fcd935d.jpg",
+          "originalUrl": "https://avatars.yandex.net/get-music-content/9837520/1d651446.p.42562/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/42562",
+          "attribution": "фото современного ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [
+          {
+            "text": "Песня написана в 1969 году; первая запись ансамбля относится к 1970 году.",
+            "sourceUrl": "https://www.mokupchino.ru/files/gazeta/Vestnik--137.pdf",
+            "state": "verified"
+          },
+          {
+            "text": "Запись 1970 года. Точный год первого выхода песни не установлен.",
+            "sourceUrl": "https://www.youtube.com/watch?v=PekRDLjxUk4",
+            "state": "verified"
+          }
+        ],
+        "sources": [
+          "https://www.mokupchino.ru/files/gazeta/Vestnik--137.pdf",
+          "https://gennadiileonidovich.blogspot.com/2020/02/blog-post_27.html",
+          "https://ru.wikipedia.org/wiki/Нет_тебя_прекрасней",
+          "https://music.yandex.com/artist/42562",
+          "https://www.youtube.com/watch?v=PekRDLjxUk4"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -7.59,
+            "input_tp": 0.55,
+            "input_lra": 2,
+            "input_thresh": -17.59
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.26",
+            "input_tp": "-8.14",
+            "input_lra": "2.00",
+            "input_thresh": "-26.26",
+            "output_i": "-15.62",
+            "output_tp": "-7.26",
+            "output_lra": "1.70",
+            "output_thresh": "-25.62",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.38"
+          },
+          "normalizedSha256": "69b26c557ea2f157eaf1e95d38bfc4a0e3c82b9e9779f8b93cc7a152d039a3ee",
+          "measuredStart": 26.8,
+          "measuredDuration": 12.2,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-11",
+      "songId": "via-orizont",
+      "artist": "Оризонт",
+      "title": "Калина",
+      "artistIds": [
+        "via:оризонт"
+      ],
+      "artistAliases": [
+        "Оризонт",
+        "ВИА Оризонт",
+        "ВИА «Оризонт»",
+        "Orizont"
+      ],
+      "titleAliases": [
+        "Калина"
+      ],
+      "era": "soviet",
+      "approximateYear": 1977,
+      "recognizability": "middle",
+      "youtube": {
+        "videoId": "12nmuPFllRU",
+        "title": "Оризонт — Калина",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 29.3,
+        "duration": 10.85,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/19d84c1652af0101e4b4.mp3",
+        "releaseYear": 1977,
+        "releaseYearStatus": "verified",
+        "versionYear": 1977,
+        "album": {
+          "title": "Фанк! Самая откровенная музыка в СССР",
+          "kind": "release",
+          "year": 2005,
+          "coverUrl": "/quiz-assets/via-01/fcaeaae7bf2a7cded32e.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/573/2048_2048_1/573e91ae5cad7e67703d2b949633cbc9.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/1084/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/b1efc6686d382054b87c.jpg",
+          "originalUrl": "https://24smi.org/public/media/celebrity/2021/02/09/uywqsapwmrak-orizont.jpg",
+          "sourceUrl": "https://24smi.org/celebrity/149009-orizont.html",
+          "attribution": "отдельная архивная фотография ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://melody.su/catalog/estrade/1084/",
+          "https://www.youtube.com/watch?v=12nmuPFllRU",
+          "https://24smi.org/celebrity/149009-orizont.html"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -16.6,
+            "input_tp": -0.66,
+            "input_lra": 0.7,
+            "input_thresh": -26.6
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.29",
+            "input_tp": "-1.44",
+            "input_lra": "0.50",
+            "input_thresh": "-26.29",
+            "output_i": "-15.94",
+            "output_tp": "-1.50",
+            "output_lra": "0.30",
+            "output_thresh": "-25.94",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.06"
+          },
+          "normalizedSha256": "208101c877a9671f7dd4b32e2ab9c1b9d28d6d52abfb5a1ed284f60e0a78506e",
+          "measuredStart": 29.3,
+          "measuredDuration": 10.85,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-12",
+      "songId": "pool-d027637ec84e",
+      "artist": "Синяя птица",
+      "title": "Знаешь ты",
+      "artistIds": [
+        "via:синяяптица"
+      ],
+      "artistAliases": [
+        "Синяя птица",
+        "ВИА Синяя птица",
+        "ВИА «Синяя птица»",
+        "Sinyaya ptitsa"
+      ],
+      "titleAliases": [
+        "Знаешь ты"
+      ],
+      "era": "soviet",
+      "approximateYear": 1981,
+      "recognizability": "middle",
+      "youtube": {
+        "videoId": "3WTJAmhfK44",
+        "title": "Синяя птица — Знаешь ты",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 44.05,
+        "duration": 11.95,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/5a830172f09d53038e07.mp3",
+        "releaseYear": 1981,
+        "releaseYearStatus": "verified",
+        "versionYear": 1980,
+        "album": {
+          "title": "Знаешь ты",
+          "kind": "release",
+          "year": 1981,
+          "coverUrl": "/quiz-assets/via-01/16941306e89d31c2e8dc.png",
+          "originalCoverUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEjGzsJe8wduEVlx44lxdANI0FRKoIp78ixZSzRJQ2P7qYSyRoQO3JxV2qJN77ISBpsDG0HQPJR2douUywzGZtozEQ8fz6XZopWnkSMOKh3PtCzoFoXvAb-ImZwfGF35HZ-EqFbAxHIWJHfcdG62uFJBH9Jqn5H_ZNvylLJaISM0UkXzW3dIAUgxBus2=w640-h640",
+          "sourceUrl": "https://gennadiileonidovich.blogspot.com/2021/11/1981-ep_29.html",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/58bd2a8da710e41db6dc.jpg",
+          "originalUrl": "https://svidetel.su/audiopics/002223.jpg",
+          "sourceUrl": "https://svidetel.su/audio/3147",
+          "attribution": "архивное фото Михаила Болотного, Юрия Метёлкина и Сергея Дроздова, концерт1976",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://gennadiileonidovich.blogspot.com/2021/11/1981-ep_29.html",
+          "https://melody.su/en/catalog/estrade/922/",
+          "https://svidetel.su/audio/3147",
+          "https://www.youtube.com/watch?v=3WTJAmhfK44"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -14.58,
+            "input_tp": -1.9,
+            "input_lra": 0.3,
+            "input_thresh": -24.58
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.26",
+            "input_tp": "-3.59",
+            "input_lra": "0.30",
+            "input_thresh": "-26.26",
+            "output_i": "-15.92",
+            "output_tp": "-3.31",
+            "output_lra": "0.30",
+            "output_thresh": "-25.92",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.08"
+          },
+          "normalizedSha256": "60834dae66bddc2fb8a5e8b4ee2bf3088c3706612648c5881f5d5586a93977c1",
+          "measuredStart": 44.05,
+          "measuredDuration": 11.95,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-13",
+      "songId": "via-akvareli",
+      "artist": "Акварели",
+      "title": "Потеряешь — я найду",
+      "artistIds": [
+        "via:акварели"
+      ],
+      "artistAliases": [
+        "Акварели",
+        "ВИА Акварели",
+        "ВИА «Акварели»",
+        "Akvareli"
+      ],
+      "titleAliases": [
+        "Потеряешь — я найду",
+        "Потеряешь, я найду"
+      ],
+      "era": "soviet",
+      "approximateYear": 1974,
+      "recognizability": "deep",
+      "youtube": {
+        "videoId": "vwjeAhfiklE",
+        "title": "Акварели — Потеряешь — я найду",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 65,
+        "duration": 12.3,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/6df050396d1a61f2ac71.mp3",
+        "releaseYear": 1974,
+        "releaseYearStatus": "verified",
+        "versionYear": 1974,
+        "album": {
+          "title": "Вокально-инструментальный ансамбль «Акварели»",
+          "kind": "release",
+          "year": 1975,
+          "coverUrl": "/quiz-assets/via-01/4b53c05d5551c7f611d0.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/3b6/2048_2048_1/3b6d8e158050a5910f338bbf86a6f985.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/73982/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/13488311b16e2814529e.jpg",
+          "originalUrl": "https://www.sssrviapesni.info/img5/aquetitul.jpg",
+          "sourceUrl": "https://www.sssrviapesni.info/aqua.html",
+          "attribution": "отдельная архивная фотография ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://melody.su/catalog/estrade/73982/",
+          "https://www.youtube.com/watch?v=vwjeAhfiklE",
+          "https://www.sssrviapesni.info/aquadisk.html",
+          "https://www.sssrviapesni.info/aqua.html"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -10.08,
+            "input_tp": 0.21,
+            "input_lra": 2.3,
+            "input_thresh": -20.08
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.26",
+            "input_tp": "-5.99",
+            "input_lra": "2.30",
+            "input_thresh": "-26.26",
+            "output_i": "-15.71",
+            "output_tp": "-4.90",
+            "output_lra": "2.10",
+            "output_thresh": "-25.71",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.29"
+          },
+          "normalizedSha256": "3c7e03ad1ab8e46fe6ac28cdb25790643ceb37b78649af918b053e1f757b56ff",
+          "measuredStart": 65,
+          "measuredDuration": 12.3,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-14",
+      "songId": "pool-d593815ed2bf",
+      "artist": "Верасы",
+      "title": "Малиновка",
+      "artistIds": [
+        "via:верасы"
+      ],
+      "artistAliases": [
+        "Верасы",
+        "ВИА Верасы",
+        "ВИА «Верасы»",
+        "Verasy"
+      ],
+      "titleAliases": [
+        "Малиновка",
+        "Малиновки заслыша голосок",
+        "Малиновки заслышав голосок"
+      ],
+      "era": "soviet",
+      "approximateYear": 1980,
+      "recognizability": "recognizable",
+      "youtube": {
+        "videoId": "Ev8IXRfrLbw",
+        "title": "Верасы — Малиновка",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 55.5,
+        "duration": 12.4,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/e6bdd5e263cd12427dcd.mp3",
+        "releaseYear": null,
+        "releaseYearStatus": "missing",
+        "versionYear": 1980,
+        "album": {
+          "title": "Застольные песни по-русски",
+          "kind": "release",
+          "year": 2013,
+          "coverUrl": "/quiz-assets/via-01/45f9d4c032fbf8877215.jpg",
+          "originalCoverUrl": "https://avatars.yandex.net/get-music-content/142001/45e03fe0.a.4773756-1/400x400",
+          "sourceUrl": "https://music.yandex.com/album/4773756/track/36816555",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/ee1937a4cc7727c6fec4.jpg",
+          "originalUrl": "https://i.ytimg.com/vi/gMuZ_P41t1Q/hqdefault.jpg",
+          "sourceUrl": "https://www.youtube.com/watch?v=gMuZ_P41t1Q",
+          "attribution": "Групповой архивный кадр четырёх вокалисток ВИА Верасы, музыкальный фильм1975",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [
+          {
+            "text": "Архивная телезапись — «Песня-80», 1980 год.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Ev8IXRfrLbw",
+            "state": "verified"
+          },
+          {
+            "text": "Запись 1980 года. Точный год первого выхода песни не установлен.",
+            "sourceUrl": "https://www.youtube.com/watch?v=Ev8IXRfrLbw",
+            "state": "verified"
+          }
+        ],
+        "sources": [
+          "https://www.youtube.com/watch?v=Ev8IXRfrLbw",
+          "https://www.kp.ru/daily/26637/3655851/",
+          "https://records.su/tag/Верасы",
+          "https://via-era.narod.ru/Ansambli/verasy/discograf_ver/discograf_ver_5.htm",
+          "https://music.yandex.com/album/4773756/track/36816555",
+          "https://www.youtube.com/watch?v=gMuZ_P41t1Q"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -14.77,
+            "input_tp": -3.03,
+            "input_lra": 2.1,
+            "input_thresh": -24.99
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.27",
+            "input_tp": "-4.53",
+            "input_lra": "2.10",
+            "input_thresh": "-26.49",
+            "output_i": "-15.44",
+            "output_tp": "-3.36",
+            "output_lra": "1.90",
+            "output_thresh": "-25.57",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.56"
+          },
+          "normalizedSha256": "64c7b33a831981bc59e3b4a4105a87621c51cfd61eb6b5c4b03de0bbd9a9a4ed",
+          "measuredStart": 55.5,
+          "measuredDuration": 12.4,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-15",
+      "songId": "via-добрымолодцы",
+      "artist": "Добры молодцы",
+      "title": "Белая фата",
+      "artistIds": [
+        "via:добрымолодцы"
+      ],
+      "artistAliases": [
+        "Добры молодцы",
+        "ВИА Добры молодцы",
+        "ВИА «Добры молодцы»",
+        "Добрые молодцы",
+        "Dobry molodtsy"
+      ],
+      "titleAliases": [
+        "Белая фата"
+      ],
+      "era": "soviet",
+      "approximateYear": 1980,
+      "recognizability": "deep",
+      "youtube": {
+        "videoId": "YbW7-w49fgI",
+        "title": "Добры молодцы — Белая фата",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 39.6,
+        "duration": 9.85,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/fc2567a514a4f6367ccc.mp3",
+        "releaseYear": 1980,
+        "releaseYearStatus": "verified",
+        "versionYear": 1980,
+        "album": {
+          "title": "Белая фата",
+          "kind": "release",
+          "year": 1980,
+          "coverUrl": "/quiz-assets/via-01/ae9f36cd139c79e8ad1d.jpg",
+          "originalCoverUrl": "https://via-dm.ru/images/discograph_sss/dobmol1980-1.jpg",
+          "sourceUrl": "https://via-dm.ru/index.php?Itemid=49&id=104&option=com_content&task=view",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/82fce8107690fe4d1afb.jpg",
+          "originalUrl": "https://avatars.yandex.net/get-music-content/9837520/efd4fd22.p.1141763/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/1141763",
+          "attribution": "фото современного ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [
+          {
+            "text": "Песня издана на миньоне «Белая фата» фирмы «Мелодия» 1980 года.",
+            "sourceUrl": "https://via-dm.ru/index.php?Itemid=49&id=104&option=com_content&task=view",
+            "state": "verified"
+          }
+        ],
+        "sources": [
+          "https://via-dm.ru/index.php?Itemid=49&id=104&option=com_content&task=view",
+          "https://records.su/albums/catalog/page/2769",
+          "https://melody.su/en/catalog/estrade/570/",
+          "https://www.youtube.com/watch?v=YbW7-w49fgI",
+          "https://music.yandex.com/artist/1141763"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -6.77,
+            "input_tp": 1.6,
+            "input_lra": 0.4,
+            "input_thresh": -16.77
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.26",
+            "input_tp": "-7.90",
+            "input_lra": "0.50",
+            "input_thresh": "-26.26",
+            "output_i": "-15.85",
+            "output_tp": "-7.51",
+            "output_lra": "0.40",
+            "output_thresh": "-25.85",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.15"
+          },
+          "normalizedSha256": "c9a67c4d30c8985438ebdc370bbbba6db9c0971cddef7b2baefc17caf87689bb",
+          "measuredStart": 39.6,
+          "measuredDuration": 9.85,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-16",
+      "songId": "via-leysya-gde-zhe-ty-byla",
+      "artist": "Лейся, песня",
+      "title": "Где же ты была",
+      "artistIds": [
+        "via:лейсяпесня"
+      ],
+      "artistAliases": [
+        "Лейся, песня",
+        "ВИА Лейся, песня",
+        "ВИА «Лейся, песня»",
+        "Лейся песня",
+        "Leisya pesnya"
+      ],
+      "titleAliases": [
+        "Где же ты была"
+      ],
+      "era": "soviet",
+      "approximateYear": 1978,
+      "recognizability": "middle",
+      "youtube": {
+        "videoId": "iYxZnFCwiYs",
+        "title": "Лейся, песня — Где же ты была",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 44.5,
+        "duration": 11.6,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/d2a22eac8c6ac9b8826c.mp3",
+        "releaseYear": 1978,
+        "releaseYearStatus": "verified",
+        "versionYear": 1978,
+        "album": {
+          "title": "ВИА «Лейся, песня»",
+          "kind": "release",
+          "year": 2008,
+          "coverUrl": "/quiz-assets/via-01/77e6db2f923cbaee1d69.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/837/1024_99999_1/83713f83471694287b83f94224b6c2cc.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/910/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/e7bb9a9d473b7bb77d64.jpg",
+          "originalUrl": "https://via-leysia-pesnia.com/wp-content/uploads/2023/03/lp-shufa-773.jpg",
+          "sourceUrl": "https://via-leysia-pesnia.com/history/",
+          "attribution": "архивная групповая фотография периода Михаила Шуфутинского",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://vialeisyapesnya.ru/wp-content/uploads/2016/04/Spisok-pesen-VIA-Leysya-pesnya-1975-1983gg.pdf",
+          "https://melody.su/catalog/estrade/910/",
+          "https://via-era.narod.ru/Ansambli/LP/discograf_lp/discograf_lp_3.htm",
+          "https://www.youtube.com/watch?v=iYxZnFCwiYs",
+          "https://records.su/tag/Лейся,_песня",
+          "https://via-leysia-pesnia.com/history/"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -9.71,
+            "input_tp": 0.51,
+            "input_lra": 1.6,
+            "input_thresh": -19.71
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.26",
+            "input_tp": "-6.07",
+            "input_lra": "1.60",
+            "input_thresh": "-26.26",
+            "output_i": "-16.54",
+            "output_tp": "-6.14",
+            "output_lra": "1.00",
+            "output_thresh": "-26.54",
+            "normalization_type": "dynamic",
+            "target_offset": "0.54"
+          },
+          "normalizedSha256": "7c06e2bea7fb47e53f9112559ca3fa5d91160b7fc42037bd95411ab8692e54a0",
+          "measuredStart": 44.5,
+          "measuredDuration": 11.6,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-17",
+      "songId": "via-nadezhda",
+      "artist": "Надежда",
+      "title": "Ты сама придумала",
+      "artistIds": [
+        "via:надежда"
+      ],
+      "artistAliases": [
+        "Надежда",
+        "ВИА Надежда",
+        "ВИА «Надежда»",
+        "Nadezhda"
+      ],
+      "titleAliases": [
+        "Ты сама придумала"
+      ],
+      "era": "soviet",
+      "approximateYear": 1977,
+      "recognizability": "deep",
+      "youtube": {
+        "videoId": "6mFEcmfaAjA",
+        "title": "Надежда — Ты сама придумала",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 92.5,
+        "duration": 8.65,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/b5c4ebaa3c49cc291660.mp3",
+        "releaseYear": 1977,
+        "releaseYearStatus": "verified",
+        "versionYear": 1977,
+        "album": {
+          "title": "ВИА «Надежда»",
+          "kind": "release",
+          "year": 2008,
+          "coverUrl": "/quiz-assets/via-01/e103957ce57b04160d34.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/502/1024_99999_1/502a287368d12a0680aaf645a0b90aff.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/696/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/6f7800720ee8cc4b3961.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/ru/2/24/%D0%92%D0%98%D0%90_%D0%9D%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0.jpg",
+          "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0_(%D0%B2%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BD%D1%81%D0%B0%D0%BC%D0%B1%D0%BB%D1%8C)",
+          "attribution": "фотография ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://melody.su/catalog/estrade/696/",
+          "https://www.sssrviapesni.info/nadezhdadisk.html",
+          "https://www.youtube.com/watch?v=6mFEcmfaAjA",
+          "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0_(%D0%B2%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BD%D1%81%D0%B0%D0%BC%D0%B1%D0%BB%D1%8C)"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -11.38,
+            "input_tp": -2.71,
+            "input_lra": 0.5,
+            "input_thresh": -21.38
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.26",
+            "input_tp": "-7.10",
+            "input_lra": "0.50",
+            "input_thresh": "-26.26",
+            "output_i": "-15.48",
+            "output_tp": "-6.38",
+            "output_lra": "0.50",
+            "output_thresh": "-25.48",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.52"
+          },
+          "normalizedSha256": "b2a5506b9e65b93fe82327aaa6010cb5a189d75a32fdb90ebed0534dd898018a",
+          "measuredStart": 92.5,
+          "measuredDuration": 8.65,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-18",
+      "songId": "pool-e9ef544c0f7c",
+      "artist": "Песняры",
+      "title": "Белоруссия",
+      "artistIds": [
+        "via:песняры"
+      ],
+      "artistAliases": [
+        "Песняры",
+        "ВИА Песняры",
+        "ВИА «Песняры»",
+        "Pesnyary",
+        "Pesniary"
+      ],
+      "titleAliases": [
+        "Белоруссия",
+        "Молодость моя Белоруссия"
+      ],
+      "era": "soviet",
+      "approximateYear": 1976,
+      "recognizability": "recognizable",
+      "youtube": {
+        "videoId": "e4MHgsK-D8c",
+        "title": "Песняры — Белоруссия",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 34.2,
+        "duration": 14.9,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/746b700800931f02a5df.mp3",
+        "releaseYear": 1976,
+        "releaseYearStatus": "verified",
+        "versionYear": 1976,
+        "album": {
+          "title": "Песняры",
+          "kind": "release",
+          "year": 2007,
+          "coverUrl": "/quiz-assets/via-01/fb1cf7d22ee928cddb23.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/0e0/1024_99999_1/0e047539b7b3b372a883020a3aeebabd.jpg",
+          "sourceUrl": "https://melody.su/en/catalog/estrade/912/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/bc399f2fd9b73441df45.jpg",
+          "originalUrl": "https://www.sssrviapesni.info/img6/pestitul.jpg",
+          "sourceUrl": "https://www.sssrviapesni.info/pesnyary.html",
+          "attribution": "архивная групповая фотография",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://www.youtube.com/watch?v=e4MHgsK-D8c",
+          "https://www.pakhmutova.ru/songs/pesn1976.shtml",
+          "https://melody.su/en/catalog/estrade/912/",
+          "https://www.sssrviapesni.info/pesnyary.html"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -15.26,
+            "input_tp": -1.61,
+            "input_lra": 4.5,
+            "input_thresh": -25.26
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.27",
+            "input_tp": "-2.62",
+            "input_lra": "4.50",
+            "input_thresh": "-26.27",
+            "output_i": "-15.70",
+            "output_tp": "-2.36",
+            "output_lra": "2.90",
+            "output_thresh": "-25.70",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.30"
+          },
+          "normalizedSha256": "d4da882bb48e8195d0c1718cae491057580194562edc47308d9086f811408dcd",
+          "measuredStart": 34.2,
+          "measuredDuration": 14.9,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-19",
+      "songId": "pool-973ab30a5b95",
+      "artist": "Пламя",
+      "title": "Вся жизнь впереди",
+      "artistIds": [
+        "via:пламя"
+      ],
+      "artistAliases": [
+        "Пламя",
+        "ВИА Пламя",
+        "ВИА «Пламя»",
+        "Plamya"
+      ],
+      "titleAliases": [
+        "Вся жизнь впереди",
+        "Не надо печалиться"
+      ],
+      "era": "soviet",
+      "approximateYear": 1974,
+      "recognizability": "middle",
+      "youtube": {
+        "videoId": "7APvOqDZEaA",
+        "title": "Пламя — Вся жизнь впереди",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 45.2,
+        "duration": 11.3,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/69e01a995943c8ccb55b.mp3",
+        "releaseYear": 1974,
+        "releaseYearStatus": "verified",
+        "versionYear": 1975,
+        "album": {
+          "title": "Не надо печалиться",
+          "kind": "release",
+          "year": 1996,
+          "coverUrl": "/quiz-assets/via-01/fd7bfd6c671be9d88288.jpg",
+          "originalCoverUrl": "https://via-plamya.com/images/012/066/872/12066872/1160x/01.jpg",
+          "sourceUrl": "https://via-plamya.com/cd",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/57af66aa1cb963d1f4f4.jpg",
+          "originalUrl": "https://via-plamya.com/images/009/436/598/9436598/1160xnoinc/025%D0%B0.jpg",
+          "sourceUrl": "https://via-plamya.com/photo",
+          "attribution": "архивная групповая фотография с официального сайта ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://via-plamya.com/video",
+          "https://via-plamya.com/cd",
+          "https://www.youtube.com/watch?v=7APvOqDZEaA",
+          "https://www.samotsvety.ru/polnaya-diskografiya-via-samotsvety/",
+          "https://v-dyakonov.ru/samocvety",
+          "https://via-plamya.com/photo"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -22.81,
+            "input_tp": -5.95,
+            "input_lra": 4.1,
+            "input_thresh": -32.99
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.10",
+            "input_tp": "-1.76",
+            "input_lra": "1.00",
+            "input_thresh": "-26.13",
+            "output_i": "-15.41",
+            "output_tp": "-1.50",
+            "output_lra": "1.20",
+            "output_thresh": "-25.41",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.59"
+          },
+          "normalizedSha256": "f8d8b62e4363a0cd81d99438d931612562494f551f0fe8be17a03dcdc1254d9f",
+          "measuredStart": 45.2,
+          "measuredDuration": 11.3,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    },
+    {
+      "id": "via-ready-20",
+      "songId": "via-yalla",
+      "artist": "Ялла",
+      "title": "Три колодца",
+      "artistIds": [
+        "via:ялла"
+      ],
+      "artistAliases": [
+        "Ялла",
+        "ВИА Ялла",
+        "ВИА «Ялла»",
+        "Yalla",
+        "Yala"
+      ],
+      "titleAliases": [
+        "Три колодца",
+        "Учкудук",
+        "Учкудук — три колодца"
+      ],
+      "era": "soviet",
+      "approximateYear": 1981,
+      "recognizability": "recognizable",
+      "youtube": {
+        "videoId": "MXcY2IwMhEo",
+        "title": "Ялла — Три колодца",
+        "selectedBy": "manual-source-review"
+      },
+      "clip": {
+        "start": 27.1,
+        "duration": 11.2,
+        "selectedBy": "manual-phrase-selection",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "artistForm": "Группа",
+        "clipAudioUrl": "/quiz-assets/via-01/audio/f22305c3409f763118cb.mp3",
+        "releaseYear": 1981,
+        "releaseYearStatus": "verified",
+        "versionYear": 1984,
+        "album": {
+          "title": "Ялла",
+          "kind": "release",
+          "year": 2008,
+          "coverUrl": "/quiz-assets/via-01/edd883c3e4a8fda90925.jpg",
+          "originalCoverUrl": "https://melody.su/upload/resize_cache/iblock/259/2048_2048_1/25937a797555467fcf0920cab5fe5530.jpg",
+          "sourceUrl": "https://melody.su/catalog/estrade/709/",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "/quiz-assets/via-01/e6b3480f1dbc71290288.jpg",
+          "originalUrl": "https://www.sssrviapesni.info/img8/yallatitul.jpg",
+          "sourceUrl": "https://www.sssrviapesni.info/yalla.html",
+          "attribution": "отдельная архивная фотография ансамбля",
+          "rightsStatus": "contextual-only"
+        },
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://melody.su/catalog/estrade/709/",
+          "https://www.youtube.com/watch?v=MXcY2IwMhEo",
+          "https://records.su/album/4448",
+          "https://www.sssrviapesni.info/yalla.html"
+        ],
+        "audio": {
+          "playbackVolume": 100,
+          "measurement": {
+            "input_i": -20.67,
+            "input_tp": -6.15,
+            "input_lra": 1.4,
+            "input_thresh": -30.67
+          },
+          "normalizedMeasurement": {
+            "input_i": "-16.12",
+            "input_tp": "-2.05",
+            "input_lra": "1.10",
+            "input_thresh": "-26.12",
+            "output_i": "-15.94",
+            "output_tp": "-1.76",
+            "output_lra": "0.90",
+            "output_thresh": "-25.94",
+            "normalization_type": "dynamic",
+            "target_offset": "-0.06"
+          },
+          "normalizedSha256": "d5695ccd672f11361a34acabc0a69fb48a9233acb94c71fb654faa882f3de663",
+          "measuredStart": 27.1,
+          "measuredDuration": 11.2,
+          "method": "FFmpeg two-pass loudnorm, -16 LUFS / -1.5 dBTP; final MP3 measured after encoding",
+          "review": "verified"
+        }
+      },
+      "readyForQuiz": true
+    }
+  ]
+}
