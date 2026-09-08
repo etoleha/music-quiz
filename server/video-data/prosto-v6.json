@@ -1,0 +1,3504 @@
+{
+  "id": "prosto-v6",
+  "title": "Советская музыка · выпуск 6",
+  "revision": "v6-2026-09-08",
+  "duration": 3173.12,
+  "mediaFile": "prosto-v6.mp4",
+  "rounds": [
+    {
+      "number": 1,
+      "title": "Разминка",
+      "start": 15.68,
+      "close": 215.28,
+      "reveal": 218.04,
+      "questions": [
+        {
+          "id": "r1q1",
+          "number": 1,
+          "start": 21.08,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 218.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=3TFS9Z3kuns&t=46s"
+            }
+          ],
+          "correct": {
+            "artist": "Екатерина Семёнова",
+            "title": "На минутку"
+          },
+          "aliases": {
+            "artist": [
+              "Екатерина Семёнова"
+            ],
+            "title": [
+              "На минутку"
+            ]
+          },
+          "artistParts": [],
+          "year": 1987,
+          "album": "Как назло…"
+        },
+        {
+          "id": "r1q2",
+          "number": 2,
+          "start": 38.48,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 235.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=tgRGdtU-NYM&t=31s"
+            }
+          ],
+          "correct": {
+            "artist": "Эдита Пьеха",
+            "title": "Наш сосед"
+          },
+          "aliases": {
+            "artist": [
+              "Эдита Пьеха"
+            ],
+            "title": [
+              "Наш сосед"
+            ]
+          },
+          "artistParts": [],
+          "year": 1965,
+          "album": "Я иду и пою (Песни 1965–1967 г.)"
+        },
+        {
+          "id": "r1q3",
+          "number": 3,
+          "start": 56.48,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 249.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=KZ8M5tRFzuM&t=26s"
+            }
+          ],
+          "correct": {
+            "artist": "Людмила Сенчина",
+            "title": "Белой акации гроздья душистые"
+          },
+          "aliases": {
+            "artist": [
+              "Людмила Сенчина"
+            ],
+            "title": [
+              "Белой акации гроздья душистые"
+            ]
+          },
+          "artistParts": [],
+          "year": 1976,
+          "album": "Дни Турбиных"
+        },
+        {
+          "id": "r1q4",
+          "number": 4,
+          "start": 76.88,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 267.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=4IfvBmLyhkw&t=81s"
+            }
+          ],
+          "correct": {
+            "artist": "Вячеслав Добрынин",
+            "title": "Не сыпь мне соль на рану"
+          },
+          "aliases": {
+            "artist": [
+              "Вячеслав Добрынин"
+            ],
+            "title": [
+              "Не сыпь мне соль на рану"
+            ]
+          },
+          "artistParts": [],
+          "album": "Синий туман"
+        },
+        {
+          "id": "r1q5",
+          "number": 5,
+          "start": 95.48,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 284.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=0d0dQEb0Dak&t=39s"
+            }
+          ],
+          "correct": {
+            "artist": "Ольга Зарубина",
+            "title": "На теплоходе музыка играет"
+          },
+          "aliases": {
+            "artist": [
+              "Ольга Зарубина"
+            ],
+            "title": [
+              "На теплоходе музыка играет"
+            ]
+          },
+          "artistParts": [],
+          "year": 1987,
+          "album": "Заговорные слова"
+        },
+        {
+          "id": "r1q6",
+          "number": 6,
+          "start": 114.28,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 301.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=M_wzcbyTjiM&t=43s"
+            }
+          ],
+          "correct": {
+            "artist": "Михаил Муромов",
+            "title": "Яблоки на снегу"
+          },
+          "aliases": {
+            "artist": [
+              "Михаил Муромов"
+            ],
+            "title": [
+              "Яблоки на снегу"
+            ]
+          },
+          "artistParts": [],
+          "year": 1987,
+          "album": "№ 1"
+        },
+        {
+          "id": "r1q7",
+          "number": 7,
+          "start": 132.28,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 321.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=oH6o2iat4oY&t=30s"
+            }
+          ],
+          "correct": {
+            "artist": "Александр Серов",
+            "title": "Мадонна"
+          },
+          "aliases": {
+            "artist": [
+              "Александр Серов"
+            ],
+            "title": [
+              "Мадонна"
+            ]
+          },
+          "artistParts": [],
+          "year": 1987,
+          "album": "Мадонна"
+        },
+        {
+          "id": "r1q8",
+          "number": 8,
+          "start": 150.28,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 335.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=Wy3oUNAstE4&t=42s"
+            }
+          ],
+          "correct": {
+            "artist": "Анне Вески",
+            "title": "Позади крутой поворот"
+          },
+          "aliases": {
+            "artist": [
+              "Анне Вески"
+            ],
+            "title": [
+              "Позади крутой поворот"
+            ]
+          },
+          "artistParts": [],
+          "year": 1983,
+          "album": "Я обещаю вам сады"
+        },
+        {
+          "id": "r1q9",
+          "number": 9,
+          "start": 165.68,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 350.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=9VLmLtYKw7A&t=54s"
+            }
+          ],
+          "correct": {
+            "artist": "Женя Белоусов",
+            "title": "Девочка моя синеглазая"
+          },
+          "aliases": {
+            "artist": [
+              "Женя Белоусов"
+            ],
+            "title": [
+              "Девочка моя синеглазая"
+            ]
+          },
+          "artistParts": [],
+          "year": 1988,
+          "album": "Девочка моя синеглазая"
+        },
+        {
+          "id": "r1q10",
+          "number": 10,
+          "start": 184.88,
+          "close": 215.28,
+          "reveal": 218.04,
+          "answerStart": 365.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=HlH7Y-f6ipQ&t=28s"
+            }
+          ],
+          "correct": {
+            "artist": "Игорь Николаев",
+            "title": "Мельница"
+          },
+          "aliases": {
+            "artist": [
+              "Игорь Николаев"
+            ],
+            "title": [
+              "Мельница",
+              "Старая мельница"
+            ]
+          },
+          "artistParts": [],
+          "year": 1986,
+          "album": "Мельница"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Песни из кино",
+      "start": 381.84,
+      "close": 592.2,
+      "reveal": 594.96,
+      "questions": [
+        {
+          "id": "r2q1",
+          "number": 1,
+          "start": 388.32,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 594.96,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=hz0LW-Omnxo&t=17s"
+            }
+          ],
+          "correct": {
+            "artist": "Алиса Фрейндлих",
+            "title": "У природы нет плохой погоды"
+          },
+          "aliases": {
+            "artist": [
+              "Алиса Фрейндлих"
+            ],
+            "title": [
+              "У природы нет плохой погоды"
+            ]
+          },
+          "artistParts": [],
+          "year": 1977,
+          "album": "Служебный роман"
+        },
+        {
+          "id": "r2q2",
+          "number": 2,
+          "start": 408.72,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 611.76,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=Z8VoWTDPVgY&t=0s"
+            }
+          ],
+          "correct": {
+            "artist": "Валентина Пономарёва",
+            "title": "А напоследок я скажу"
+          },
+          "aliases": {
+            "artist": [
+              "Валентина Пономарёва"
+            ],
+            "title": [
+              "А напоследок я скажу"
+            ]
+          },
+          "artistParts": [],
+          "year": 1984,
+          "album": "Жестокий романс"
+        },
+        {
+          "id": "r2q3",
+          "number": 3,
+          "start": 428.92,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 630.96,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=cLWL32hNZAM&t=66s"
+            }
+          ],
+          "correct": {
+            "artist": "Жанна Рождественская",
+            "title": "Позвони мне, позвони"
+          },
+          "aliases": {
+            "artist": [
+              "Жанна Рождественская"
+            ],
+            "title": [
+              "Позвони мне, позвони"
+            ]
+          },
+          "artistParts": [],
+          "year": 1981,
+          "album": "Карнавал"
+        },
+        {
+          "id": "r2q4",
+          "number": 4,
+          "start": 449.92,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 644.96,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=48OH4Kj8AcE&t=74s"
+            }
+          ],
+          "correct": {
+            "artist": "Елена Камбурова",
+            "title": "Любовь и разлука"
+          },
+          "aliases": {
+            "artist": [
+              "Елена Камбурова"
+            ],
+            "title": [
+              "Любовь и разлука"
+            ]
+          },
+          "artistParts": [],
+          "year": 1982,
+          "album": "Нас венчали не в церкви"
+        },
+        {
+          "id": "r2q5",
+          "number": 5,
+          "start": 465.4,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 664.96,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=1wVYMIm5Q_4&t=40s"
+            }
+          ],
+          "correct": {
+            "artist": "Олег Даль",
+            "title": "Купидон"
+          },
+          "aliases": {
+            "artist": [
+              "Олег Даль"
+            ],
+            "title": [
+              "Купидон",
+              "Песня о золотом Купидоне",
+              "Мальчик-Купидон"
+            ]
+          },
+          "artistParts": [],
+          "year": 1975,
+          "album": "Не может быть!"
+        },
+        {
+          "id": "r2q6",
+          "number": 6,
+          "start": 480.4,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 676.56,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=i1yYs2xbudk&t=34s"
+            }
+          ],
+          "correct": {
+            "artist": "Александр Абдулов",
+            "title": "Представь себе"
+          },
+          "aliases": {
+            "artist": [
+              "Александр Абдулов"
+            ],
+            "title": [
+              "Представь себе"
+            ]
+          },
+          "artistParts": [],
+          "year": 1982,
+          "album": "Чародеи"
+        },
+        {
+          "id": "r2q7",
+          "number": 7,
+          "start": 499.8,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 693.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=4wKXhKwuqrQ&t=72s"
+            }
+          ],
+          "correct": {
+            "artist": "Никита Михалков",
+            "title": "Я шагаю по Москве"
+          },
+          "aliases": {
+            "artist": [
+              "Никита Михалков"
+            ],
+            "title": [
+              "Я шагаю по Москве"
+            ]
+          },
+          "artistParts": [],
+          "year": 1963,
+          "album": "Я шагаю по Москве"
+        },
+        {
+          "id": "r2q8",
+          "number": 8,
+          "start": 517.8,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 707.76,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=9G3XkeKJAIY&t=55s"
+            }
+          ],
+          "correct": {
+            "artist": "Светлана Крючкова",
+            "title": "Чёрное и белое"
+          },
+          "aliases": {
+            "artist": [
+              "Светлана Крючкова"
+            ],
+            "title": [
+              "Чёрное и белое",
+              "Мы выбираем"
+            ]
+          },
+          "artistParts": [],
+          "year": 1972,
+          "album": "Большая перемена"
+        },
+        {
+          "id": "r2q9",
+          "number": 9,
+          "start": 538.4,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 727.76,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=VHhBh6wh-LQ&t=48s"
+            }
+          ],
+          "correct": {
+            "artist": "Екатерина Шаврина",
+            "title": "Гляжу в озёра синие"
+          },
+          "aliases": {
+            "artist": [
+              "Екатерина Шаврина"
+            ],
+            "title": [
+              "Гляжу в озёра синие"
+            ]
+          },
+          "artistParts": [],
+          "year": 1971,
+          "album": "Тени исчезают в полдень"
+        },
+        {
+          "id": "r2q10",
+          "number": 10,
+          "start": 559.4,
+          "close": 592.2,
+          "reveal": 594.96,
+          "answerStart": 746.56,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=5viIzp4rxC0&t=16s"
+            }
+          ],
+          "correct": {
+            "artist": "Людмила Гурченко",
+            "title": "Пять минут"
+          },
+          "aliases": {
+            "artist": [
+              "Людмила Гурченко"
+            ],
+            "title": [
+              "Пять минут"
+            ]
+          },
+          "artistParts": [],
+          "year": 1956,
+          "album": "Карнавальная ночь"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Другой звук",
+      "start": 759.76,
+      "close": 963.52,
+      "reveal": 966.28,
+      "questions": [
+        {
+          "id": "r3q1",
+          "number": 1,
+          "start": 765.36,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 966.28,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=7EyoqhuGfbg&t=68s"
+            }
+          ],
+          "correct": {
+            "artist": "Игорь Тальков",
+            "title": "Чистые пруды"
+          },
+          "aliases": {
+            "artist": [
+              "Игорь Тальков"
+            ],
+            "title": [
+              "Чистые пруды"
+            ]
+          },
+          "artistParts": [],
+          "year": 1987,
+          "album": "Электроклуб"
+        },
+        {
+          "id": "r3q2",
+          "number": 2,
+          "start": 785.48,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 979.52,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=xs6bMA9icbA&t=127s"
+            }
+          ],
+          "correct": {
+            "artist": "Евгений Мартынов",
+            "title": "Яблони в цвету"
+          },
+          "aliases": {
+            "artist": [
+              "Евгений Мартынов"
+            ],
+            "title": [
+              "Яблони в цвету"
+            ]
+          },
+          "artistParts": [],
+          "year": 1975,
+          "album": "Поёт Евгений Мартынов"
+        },
+        {
+          "id": "r3q3",
+          "number": 3,
+          "start": 802.2,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 994.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=XZW3VMzWmlk&t=47s"
+            }
+          ],
+          "correct": {
+            "artist": "Мария Пахоменко",
+            "title": "Стоят девчонки"
+          },
+          "aliases": {
+            "artist": [
+              "Мария Пахоменко"
+            ],
+            "title": [
+              "Стоят девчонки"
+            ]
+          },
+          "artistParts": [],
+          "year": 1966,
+          "album": "Песни А. Колкера"
+        },
+        {
+          "id": "r3q4",
+          "number": 4,
+          "start": 822.04,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 1009.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=Hp9AvLtfgO8&t=56s"
+            }
+          ],
+          "correct": {
+            "artist": "Эдуард Хиль",
+            "title": "Как провожают пароходы"
+          },
+          "aliases": {
+            "artist": [
+              "Эдуард Хиль"
+            ],
+            "title": [
+              "Как провожают пароходы"
+            ]
+          },
+          "artistParts": [],
+          "year": 1965
+        },
+        {
+          "id": "r3q5",
+          "number": 5,
+          "start": 839.4,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 1022.72,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=LmICLHhlHzU&t=70s"
+            }
+          ],
+          "correct": {
+            "artist": "Машина времени",
+            "title": "Поворот"
+          },
+          "aliases": {
+            "artist": [
+              "Машина времени"
+            ],
+            "title": [
+              "Поворот"
+            ]
+          },
+          "artistParts": [],
+          "year": 1979
+        },
+        {
+          "id": "r3q6",
+          "number": 6,
+          "start": 859.16,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 1038.96,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=5MQmO3n2GWo&t=53s"
+            }
+          ],
+          "correct": {
+            "artist": "Валентина Легкоступова",
+            "title": "Капля в море"
+          },
+          "aliases": {
+            "artist": [
+              "Валентина Легкоступова"
+            ],
+            "title": [
+              "Капля в море"
+            ]
+          },
+          "artistParts": [],
+          "year": 1988
+        },
+        {
+          "id": "r3q7",
+          "number": 7,
+          "start": 879.16,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 1049.08,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=WFVjdmridf8&t=12s"
+            }
+          ],
+          "correct": {
+            "artist": "Лариса Мондрус",
+            "title": "Проснись и пой"
+          },
+          "aliases": {
+            "artist": [
+              "Лариса Мондрус"
+            ],
+            "title": [
+              "Проснись и пой"
+            ]
+          },
+          "artistParts": [],
+          "year": 1970,
+          "album": "Джентльмены удачи"
+        },
+        {
+          "id": "r3q8",
+          "number": 8,
+          "start": 896.68,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 1059.4,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=T7UMEZyiWCM&t=69s"
+            }
+          ],
+          "correct": {
+            "artist": "Татьяна Доронина",
+            "title": "Солнечный зайчик"
+          },
+          "aliases": {
+            "artist": [
+              "Татьяна Доронина"
+            ],
+            "title": [
+              "Солнечный зайчик"
+            ]
+          },
+          "artistParts": [],
+          "year": 1968,
+          "album": "Ещё раз про любовь"
+        },
+        {
+          "id": "r3q9",
+          "number": 9,
+          "start": 911.76,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 1071.96,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=vxv48DVjIlg&t=30s"
+            }
+          ],
+          "correct": {
+            "artist": "Кола Бельды",
+            "title": "Увезу тебя я в тундру"
+          },
+          "aliases": {
+            "artist": [
+              "Кола Бельды"
+            ],
+            "title": [
+              "Увезу тебя я в тундру"
+            ]
+          },
+          "artistParts": [],
+          "year": 1971
+        },
+        {
+          "id": "r3q10",
+          "number": 10,
+          "start": 930.88,
+          "close": 963.52,
+          "reveal": 966.28,
+          "answerStart": 1082.28,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=p0RMmUzGsT8&t=134s"
+            }
+          ],
+          "correct": {
+            "artist": "Тынис Мяги",
+            "title": "Олимпиада"
+          },
+          "aliases": {
+            "artist": [
+              "Тынис Мяги"
+            ],
+            "title": [
+              "Олимпиада"
+            ]
+          },
+          "artistParts": [],
+          "year": 1980,
+          "album": "Олимпиада-80"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Каверы",
+      "start": 1095.28,
+      "close": 1291.84,
+      "reveal": 1294.6,
+      "questions": [
+        {
+          "id": "r4q1",
+          "number": 1,
+          "start": 1101.36,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1294.6,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=lHwZeyFQuXQ&t=52s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=z180DV_7Tpg&t=25s"
+            }
+          ],
+          "correct": {
+            "artist": "Поющие гитары",
+            "title": "Нет тебя прекрасней"
+          },
+          "aliases": {
+            "artist": [
+              "Поющие гитары"
+            ],
+            "title": [
+              "Нет тебя прекрасней"
+            ]
+          },
+          "artistParts": [],
+          "year": 1969,
+          "album": "Проводы",
+          "coverArtist": "Максим Гейнц"
+        },
+        {
+          "id": "r4q2",
+          "number": 2,
+          "start": 1119.36,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1309.6,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=IhxkoPeR6aY&t=29s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=pXv0zsMz0LU&t=11s"
+            }
+          ],
+          "correct": {
+            "artist": "Синяя птица",
+            "title": "Клён"
+          },
+          "aliases": {
+            "artist": [
+              "Синяя птица"
+            ],
+            "title": [
+              "Клён"
+            ]
+          },
+          "artistParts": [],
+          "year": 1975,
+          "album": "Синяя птица",
+          "coverArtist": "Jazz Systems"
+        },
+        {
+          "id": "r4q3",
+          "number": 3,
+          "start": 1137.36,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1322.2,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=vleXosiftlw&t=30s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=6qOGR3yx70M&t=41s"
+            }
+          ],
+          "correct": {
+            "artist": "Весёлые ребята",
+            "title": "Алёшкина любовь"
+          },
+          "aliases": {
+            "artist": [
+              "Весёлые ребята"
+            ],
+            "title": [
+              "Алёшкина любовь"
+            ]
+          },
+          "artistParts": [],
+          "year": 1970,
+          "album": "Весёлые ребята",
+          "coverArtist": "Виталий Подземный"
+        },
+        {
+          "id": "r4q4",
+          "number": 4,
+          "start": 1152.96,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1332.4,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=Dc1sTzsNIVE&t=107s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=mFZG9rDVyeY&t=48s"
+            }
+          ],
+          "correct": {
+            "artist": "Верасы",
+            "title": "Малиновка"
+          },
+          "aliases": {
+            "artist": [
+              "Верасы"
+            ],
+            "title": [
+              "Малиновка"
+            ]
+          },
+          "artistParts": [],
+          "year": 1980,
+          "album": "Наша дискотека",
+          "coverArtist": "Нагуаль"
+        },
+        {
+          "id": "r4q5",
+          "number": 5,
+          "start": 1170.36,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1345.2,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=Th_pPUluV1Y&t=43s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=HcupY-wlVRk&t=30s"
+            }
+          ],
+          "correct": {
+            "artist": "Самоцветы",
+            "title": "Всё, что в жизни есть у меня"
+          },
+          "aliases": {
+            "artist": [
+              "Самоцветы"
+            ],
+            "title": [
+              "Всё, что в жизни есть у меня"
+            ]
+          },
+          "artistParts": [],
+          "year": 1976,
+          "album": "Всё, что в жизни есть у меня",
+          "coverArtist": "Александр Фефелов"
+        },
+        {
+          "id": "r4q6",
+          "number": 6,
+          "start": 1188.36,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1364.4,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=5hsawKg__6k&t=113s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=erCatd_Eg_Q&t=40s"
+            }
+          ],
+          "correct": {
+            "artist": "Пламя",
+            "title": "Снег кружится"
+          },
+          "aliases": {
+            "artist": [
+              "Пламя"
+            ],
+            "title": [
+              "Снег кружится"
+            ]
+          },
+          "artistParts": [],
+          "year": 1981,
+          "album": "Время «Пик»",
+          "coverArtist": "Song wonsub"
+        },
+        {
+          "id": "r4q7",
+          "number": 7,
+          "start": 1205.16,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1376.6,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=3WHMsj01aik&t=43s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=sXf0WJ2tsdc&t=26s"
+            }
+          ],
+          "correct": {
+            "artist": "Николай Гнатюк",
+            "title": "Танец на барабане"
+          },
+          "aliases": {
+            "artist": [
+              "Николай Гнатюк"
+            ],
+            "title": [
+              "Танец на барабане"
+            ]
+          },
+          "artistParts": [],
+          "year": 1980,
+          "album": "Танец на барабане",
+          "coverArtist": "Buddy King"
+        },
+        {
+          "id": "r4q8",
+          "number": 8,
+          "start": 1223.16,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1390.6,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=-kUTTVT8uAA&t=178s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=rthFn6nnLAo&t=1s"
+            }
+          ],
+          "correct": {
+            "artist": "Валерий Ободзинский",
+            "title": "Восточная песня"
+          },
+          "aliases": {
+            "artist": [
+              "Валерий Ободзинский"
+            ],
+            "title": [
+              "Восточная песня"
+            ]
+          },
+          "artistParts": [],
+          "year": 1968,
+          "album": "Восточная песня",
+          "coverArtist": "Тимур Ведерников"
+        },
+        {
+          "id": "r4q9",
+          "number": 9,
+          "start": 1243.44,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1404.6,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=asEoBgSEGtk&t=88s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=LhWSrqjJmmg&t=32s"
+            }
+          ],
+          "correct": {
+            "artist": "Аида Ведищева",
+            "title": "Помоги мне"
+          },
+          "aliases": {
+            "artist": [
+              "Аида Ведищева"
+            ],
+            "title": [
+              "Помоги мне"
+            ]
+          },
+          "artistParts": [],
+          "year": 1968,
+          "album": "Бриллиантовая рука",
+          "coverArtist": "Ксения Кантор и Los Tangueros"
+        },
+        {
+          "id": "r4q10",
+          "number": 10,
+          "start": 1260.84,
+          "close": 1291.84,
+          "reveal": 1294.6,
+          "answerStart": 1417.6,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=5XhwmbUduJw&t=38s"
+            },
+            {
+              "label": "Кавер",
+              "url": "https://www.youtube.com/watch?v=Xi9y3zimyno&t=91s"
+            }
+          ],
+          "correct": {
+            "artist": "Вадим Мулерман",
+            "title": "Лада"
+          },
+          "aliases": {
+            "artist": [
+              "Вадим Мулерман"
+            ],
+            "title": [
+              "Лада"
+            ]
+          },
+          "artistParts": [],
+          "year": 1968,
+          "album": "Лада. Песни на стихи Михаила Пляцковского",
+          "coverArtist": "Стиляги Band"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Клипы",
+      "start": 1428.4,
+      "close": 1679.24,
+      "reveal": 1682,
+      "questions": [
+        {
+          "id": "r5q1",
+          "number": 1,
+          "start": 1434.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1682,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=TIFCr5OJ0z4&t=81s"
+            }
+          ],
+          "correct": {
+            "artist": "Дюна",
+            "title": "Страна Лимония"
+          },
+          "aliases": {
+            "artist": [
+              "Дюна"
+            ],
+            "title": [
+              "Страна Лимония"
+            ]
+          },
+          "artistParts": [],
+          "year": 1988,
+          "album": "Страна Лимония"
+        },
+        {
+          "id": "r5q2",
+          "number": 2,
+          "start": 1457.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1699.28,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=XkDQ8YOQAVA&t=37s"
+            }
+          ],
+          "correct": {
+            "artist": "Юрий Никулин",
+            "title": "Песня про зайцев"
+          },
+          "aliases": {
+            "artist": [
+              "Юрий Никулин"
+            ],
+            "title": [
+              "Песня про зайцев"
+            ]
+          },
+          "artistParts": [],
+          "year": 1968,
+          "album": "Бриллиантовая рука"
+        },
+        {
+          "id": "r5q3",
+          "number": 3,
+          "start": 1480.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1718.08,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=3tznCxt8QAE&t=32s"
+            }
+          ],
+          "correct": {
+            "artist": "Олег Анофриев",
+            "title": "Есть только миг"
+          },
+          "aliases": {
+            "artist": [
+              "Олег Анофриев"
+            ],
+            "title": [
+              "Есть только миг"
+            ]
+          },
+          "artistParts": [],
+          "year": 1973,
+          "album": "Земля Санникова"
+        },
+        {
+          "id": "r5q4",
+          "number": 4,
+          "start": 1503.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1732.08,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=BCi6h34adNo&t=53s"
+            }
+          ],
+          "correct": {
+            "artist": "Михаил Боярский",
+            "title": "Песня мушкетёров"
+          },
+          "aliases": {
+            "artist": [
+              "Михаил Боярский"
+            ],
+            "title": [
+              "Песня мушкетёров"
+            ]
+          },
+          "artistParts": [],
+          "year": 1978,
+          "album": "Д’Артаньян и три мушкетёра"
+        },
+        {
+          "id": "r5q5",
+          "number": 5,
+          "start": 1526.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1744.4,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=xYOtSzAJbaE&t=136s"
+            }
+          ],
+          "correct": {
+            "artist": "Николай Караченцов",
+            "title": "Кленовый лист"
+          },
+          "aliases": {
+            "artist": [
+              "Николай Караченцов"
+            ],
+            "title": [
+              "Кленовый лист"
+            ]
+          },
+          "artistParts": [],
+          "year": 1984,
+          "album": "Маленькое одолжение"
+        },
+        {
+          "id": "r5q6",
+          "number": 6,
+          "start": 1549.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1757.12,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=Ewvue4Y9vaM&t=147s"
+            }
+          ],
+          "correct": {
+            "artist": "Комбинация",
+            "title": "Бухгалтер"
+          },
+          "aliases": {
+            "artist": [
+              "Комбинация"
+            ],
+            "title": [
+              "Бухгалтер"
+            ]
+          },
+          "artistParts": [],
+          "year": 1991,
+          "album": "Московская прописка"
+        },
+        {
+          "id": "r5q7",
+          "number": 7,
+          "start": 1572.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1773.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=jWiKX6wE9fY&t=84s"
+            }
+          ],
+          "correct": {
+            "artist": "Лариса Долина",
+            "title": "Три белых коня"
+          },
+          "aliases": {
+            "artist": [
+              "Лариса Долина"
+            ],
+            "title": [
+              "Три белых коня"
+            ]
+          },
+          "artistParts": [],
+          "year": 1982,
+          "album": "Чародеи"
+        },
+        {
+          "id": "r5q8",
+          "number": 8,
+          "start": 1595.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1784.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=RW17SlgsG2Y&t=24s"
+            }
+          ],
+          "correct": {
+            "artist": "Владимир Высоцкий",
+            "title": "Песня о друге"
+          },
+          "aliases": {
+            "artist": [
+              "Владимир Высоцкий"
+            ],
+            "title": [
+              "Песня о друге"
+            ]
+          },
+          "artistParts": [],
+          "year": 1966,
+          "album": "Вертикаль"
+        },
+        {
+          "id": "r5q9",
+          "number": 9,
+          "start": 1618.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1799.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=5Hq1cvogh9c&t=90s"
+            }
+          ],
+          "correct": {
+            "artist": "Кар-Мэн",
+            "title": "Отель Сан-Мартино"
+          },
+          "aliases": {
+            "artist": [
+              "Кар-Мэн",
+              "Кар Мэн"
+            ],
+            "title": [
+              "Отель Сан-Мартино",
+              "Отель Сан Мартино"
+            ]
+          },
+          "artistParts": [],
+          "year": 1990,
+          "album": "Вокруг света"
+        },
+        {
+          "id": "r5q10",
+          "number": 10,
+          "start": 1641.24,
+          "close": 1679.24,
+          "reveal": 1682,
+          "answerStart": 1815.16,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=zacy2GOu3TI&t=24s"
+            }
+          ],
+          "correct": {
+            "artist": "Нина Бродская",
+            "title": "Звенит январская вьюга"
+          },
+          "aliases": {
+            "artist": [
+              "Нина Бродская"
+            ],
+            "title": [
+              "Звенит январская вьюга"
+            ]
+          },
+          "artistParts": [],
+          "year": 1972,
+          "album": "Иван Васильевич меняет профессию"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Змейка",
+      "start": 1827.48,
+      "close": 2017.2,
+      "reveal": 2019.96,
+      "questions": [
+        {
+          "id": "r6q1",
+          "number": 1,
+          "start": 1833.84,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2019.96,
+          "fields": [
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=17T3iIp6OCM&t=55s"
+            }
+          ],
+          "correct": {
+            "artist": "Клавдия Шульженко",
+            "title": "Синий платочек"
+          },
+          "aliases": {
+            "artist": [
+              "Клавдия Шульженко"
+            ],
+            "title": [
+              "Синий платочек"
+            ]
+          },
+          "artistParts": [],
+          "year": 1940
+        },
+        {
+          "id": "r6q2",
+          "number": 2,
+          "start": 1854.56,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2033.28,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=fuvkVTRUlAY&t=87s"
+            }
+          ],
+          "correct": {
+            "artist": "Ксения Георгиади",
+            "title": "Поезд юности"
+          },
+          "aliases": {
+            "artist": [
+              "Ксения Георгиади"
+            ],
+            "title": [
+              "Поезд юности"
+            ]
+          },
+          "artistParts": [],
+          "year": 1982
+        },
+        {
+          "id": "r6q3",
+          "number": 3,
+          "start": 1870.52,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2048.08,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=gOm_9sXqrfw&t=4s"
+            }
+          ],
+          "correct": {
+            "artist": "Игорь Скляр",
+            "title": "Комарово"
+          },
+          "aliases": {
+            "artist": [
+              "Игорь Скляр"
+            ],
+            "title": [
+              "Комарово"
+            ]
+          },
+          "artistParts": [],
+          "year": 1984
+        },
+        {
+          "id": "r6q4",
+          "number": 4,
+          "start": 1886.8,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2058.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=Kf5PAaqgK8c&t=61s"
+            }
+          ],
+          "correct": {
+            "artist": "Роксана Бабаян",
+            "title": "Нельзя любить чужого мужа"
+          },
+          "aliases": {
+            "artist": [
+              "Роксана Бабаян"
+            ],
+            "title": [
+              "Нельзя любить чужого мужа"
+            ]
+          },
+          "artistParts": [],
+          "year": 1991,
+          "album": "Чары колдовские"
+        },
+        {
+          "id": "r6q5",
+          "number": 5,
+          "start": 1903.48,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2073,
+          "fields": [
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=e9SWvWzA4So&t=77s"
+            }
+          ],
+          "correct": {
+            "artist": "Вероника Круглова",
+            "title": "Ничего не вижу"
+          },
+          "aliases": {
+            "artist": [
+              "Вероника Круглова"
+            ],
+            "title": [
+              "Ничего не вижу"
+            ]
+          },
+          "artistParts": [],
+          "year": 1966
+        },
+        {
+          "id": "r6q6",
+          "number": 6,
+          "start": 1919.24,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2088.4,
+          "fields": [
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=Qtv5worqJcQ&t=0s"
+            }
+          ],
+          "correct": {
+            "artist": "Клара Румянова",
+            "title": "Улыбка"
+          },
+          "aliases": {
+            "artist": [
+              "Клара Румянова"
+            ],
+            "title": [
+              "Улыбка"
+            ]
+          },
+          "artistParts": [],
+          "year": 1974,
+          "album": "Крошка Енот"
+        },
+        {
+          "id": "r6q7",
+          "number": 7,
+          "start": 1935.32,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2103.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=nS90MLxXtrg&t=65s"
+            }
+          ],
+          "correct": {
+            "artist": "Александр Дольский",
+            "title": "Исполнение желаний"
+          },
+          "aliases": {
+            "artist": [
+              "Александр Дольский"
+            ],
+            "title": [
+              "Исполнение желаний"
+            ]
+          },
+          "artistParts": [],
+          "year": 1962
+        },
+        {
+          "id": "r6q8",
+          "number": 8,
+          "start": 1952.04,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2118.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=4zpYx1zMFEA&t=29s"
+            }
+          ],
+          "correct": {
+            "artist": "Йоала",
+            "title": "Я тебя рисую"
+          },
+          "aliases": {
+            "artist": [
+              "Яак Йоала"
+            ],
+            "title": [
+              "Я тебя рисую"
+            ]
+          },
+          "artistParts": [],
+          "year": 1981,
+          "album": "Яак Йоала"
+        },
+        {
+          "id": "r6q9",
+          "number": 9,
+          "start": 1970.16,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2128.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=krdoTbbtf0w&t=13s"
+            }
+          ],
+          "correct": {
+            "artist": "Анатолий Днепров",
+            "title": "Радовать"
+          },
+          "aliases": {
+            "artist": [
+              "Анатолий Днепров"
+            ],
+            "title": [
+              "Радовать"
+            ]
+          },
+          "artistParts": [],
+          "year": 1979
+        },
+        {
+          "id": "r6q10",
+          "number": 10,
+          "start": 1985.32,
+          "close": 2017.2,
+          "reveal": 2019.96,
+          "answerStart": 2143.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=7F4aC2elEp0&t=70s"
+            }
+          ],
+          "correct": {
+            "artist": "Владимир Трошин",
+            "title": "Подмосковные вечера"
+          },
+          "aliases": {
+            "artist": [
+              "Владимир Трошин"
+            ],
+            "title": [
+              "Подмосковные вечера"
+            ]
+          },
+          "artistParts": [],
+          "year": 1956,
+          "album": "В дни спартакиады"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Три шанса",
+      "start": 2157.48,
+      "close": 2892.84,
+      "reveal": 2226.84,
+      "questions": [
+        {
+          "id": "r7q1",
+          "number": 1,
+          "start": 2166.84,
+          "close": 2226.84,
+          "reveal": 2226.84,
+          "answerStart": 2226.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2166.84,
+              "end": 2186.84,
+              "musicEnd": 2181.84,
+              "points": 2
+            },
+            {
+              "start": 2186.84,
+              "end": 2206.84,
+              "musicEnd": 2201.84,
+              "points": 1
+            },
+            {
+              "start": 2206.84,
+              "end": 2226.84,
+              "musicEnd": 2221.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=I4WQ0cFTrps&t=151s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=iocxQ9IqCWk&t=44s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=OzZ7q7SPAg0&t=130s"
+            }
+          ],
+          "correct": {
+            "artist": "Муслим Магомаев",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Муслим Магомаев"
+            ],
+            "title": [
+              "Муслим Магомаев"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q2",
+          "number": 2,
+          "start": 2240.84,
+          "close": 2300.84,
+          "reveal": 2300.84,
+          "answerStart": 2300.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2240.84,
+              "end": 2260.84,
+              "musicEnd": 2255.84,
+              "points": 2
+            },
+            {
+              "start": 2260.84,
+              "end": 2280.84,
+              "musicEnd": 2275.84,
+              "points": 1
+            },
+            {
+              "start": 2280.84,
+              "end": 2300.84,
+              "musicEnd": 2295.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=OuMIPb6Jf9M&t=5s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=FEEffH4gJMY&t=84s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=Sh8V9uX_sRc&t=7s"
+            }
+          ],
+          "correct": {
+            "artist": "Иосиф Кобзон",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Иосиф Кобзон"
+            ],
+            "title": [
+              "Иосиф Кобзон"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q3",
+          "number": 3,
+          "start": 2314.84,
+          "close": 2374.84,
+          "reveal": 2374.84,
+          "answerStart": 2374.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2314.84,
+              "end": 2334.84,
+              "musicEnd": 2329.84,
+              "points": 2
+            },
+            {
+              "start": 2334.84,
+              "end": 2354.84,
+              "musicEnd": 2349.84,
+              "points": 1
+            },
+            {
+              "start": 2354.84,
+              "end": 2374.84,
+              "musicEnd": 2369.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=HlEhufgahRA&t=3s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=wrUSjlm18L4&t=42s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=Q2CPZw995dY&t=125s"
+            }
+          ],
+          "correct": {
+            "artist": "Марк Бернес",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Марк Бернес"
+            ],
+            "title": [
+              "Марк Бернес"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q4",
+          "number": 4,
+          "start": 2388.84,
+          "close": 2448.84,
+          "reveal": 2448.84,
+          "answerStart": 2448.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2388.84,
+              "end": 2408.84,
+              "musicEnd": 2403.84,
+              "points": 2
+            },
+            {
+              "start": 2408.84,
+              "end": 2428.84,
+              "musicEnd": 2423.84,
+              "points": 1
+            },
+            {
+              "start": 2428.84,
+              "end": 2448.84,
+              "musicEnd": 2443.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=xovnKKTN5Dg&t=25s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=wmU2Gj7D2Z4&t=81s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=iIzjCEB0Nu8&t=123s"
+            }
+          ],
+          "correct": {
+            "artist": "Леонид Утёсов",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Леонид Утёсов"
+            ],
+            "title": [
+              "Леонид Утёсов"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q5",
+          "number": 5,
+          "start": 2462.84,
+          "close": 2522.84,
+          "reveal": 2522.84,
+          "answerStart": 2522.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2462.84,
+              "end": 2482.84,
+              "musicEnd": 2477.84,
+              "points": 2
+            },
+            {
+              "start": 2482.84,
+              "end": 2502.84,
+              "musicEnd": 2497.84,
+              "points": 1
+            },
+            {
+              "start": 2502.84,
+              "end": 2522.84,
+              "musicEnd": 2517.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=IJ3yb0muj_g&t=63s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=2vOVo5WyRBQ&t=28s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=co_66FaNIHw&t=12s"
+            }
+          ],
+          "correct": {
+            "artist": "Майя Кристалинская",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Майя Кристалинская"
+            ],
+            "title": [
+              "Майя Кристалинская"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q6",
+          "number": 6,
+          "start": 2536.84,
+          "close": 2596.84,
+          "reveal": 2596.84,
+          "answerStart": 2596.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2536.84,
+              "end": 2556.84,
+              "musicEnd": 2551.84,
+              "points": 2
+            },
+            {
+              "start": 2556.84,
+              "end": 2576.84,
+              "musicEnd": 2571.84,
+              "points": 1
+            },
+            {
+              "start": 2576.84,
+              "end": 2596.84,
+              "musicEnd": 2591.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=PWy_rRltHUA&t=47s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=PqbnVzeVK38&t=42s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=-eoywpOn9kQ&t=39s"
+            }
+          ],
+          "correct": {
+            "artist": "Анна Герман",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Анна Герман"
+            ],
+            "title": [
+              "Анна Герман"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q7",
+          "number": 7,
+          "start": 2610.84,
+          "close": 2670.84,
+          "reveal": 2670.84,
+          "answerStart": 2670.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2610.84,
+              "end": 2630.84,
+              "musicEnd": 2625.84,
+              "points": 2
+            },
+            {
+              "start": 2630.84,
+              "end": 2650.84,
+              "musicEnd": 2645.84,
+              "points": 1
+            },
+            {
+              "start": 2650.84,
+              "end": 2670.84,
+              "musicEnd": 2665.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=4AM5TtRtrZE&t=96s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=HHUqQc_E6WM&t=107s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=0YQ3zUk4-mQ&t=110s"
+            }
+          ],
+          "correct": {
+            "artist": "Валентина Толкунова",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Валентина Толкунова"
+            ],
+            "title": [
+              "Валентина Толкунова"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q8",
+          "number": 8,
+          "start": 2684.84,
+          "close": 2744.84,
+          "reveal": 2744.84,
+          "answerStart": 2744.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2684.84,
+              "end": 2704.84,
+              "musicEnd": 2699.84,
+              "points": 2
+            },
+            {
+              "start": 2704.84,
+              "end": 2724.84,
+              "musicEnd": 2719.84,
+              "points": 1
+            },
+            {
+              "start": 2724.84,
+              "end": 2744.84,
+              "musicEnd": 2739.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=l-UZVx31LM8&t=62s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=gbDooGXU9_M&t=57s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=SkcsQ-nhiQ4&t=86s"
+            }
+          ],
+          "correct": {
+            "artist": "Александр Градский",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Александр Градский"
+            ],
+            "title": [
+              "Александр Градский"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q9",
+          "number": 9,
+          "start": 2758.84,
+          "close": 2818.84,
+          "reveal": 2818.84,
+          "answerStart": 2818.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2758.84,
+              "end": 2778.84,
+              "musicEnd": 2773.84,
+              "points": 2
+            },
+            {
+              "start": 2778.84,
+              "end": 2798.84,
+              "musicEnd": 2793.84,
+              "points": 1
+            },
+            {
+              "start": 2798.84,
+              "end": 2818.84,
+              "musicEnd": 2813.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=ABT2OX9otVw&t=50s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=V0wO2NEp5gk&t=31s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=pFjnrEyNZ6A&t=0s"
+            }
+          ],
+          "correct": {
+            "artist": "Булат Окуджава",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Булат Окуджава"
+            ],
+            "title": [
+              "Булат Окуджава"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q10",
+          "number": 10,
+          "start": 2832.84,
+          "close": 2892.84,
+          "reveal": 2892.84,
+          "answerStart": 2892.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2832.84,
+              "end": 2852.84,
+              "musicEnd": 2847.84,
+              "points": 2
+            },
+            {
+              "start": 2852.84,
+              "end": 2872.84,
+              "musicEnd": 2867.84,
+              "points": 1
+            },
+            {
+              "start": 2872.84,
+              "end": 2892.84,
+              "musicEnd": 2887.84,
+              "points": 0.5
+            }
+          ],
+          "links": [
+            {
+              "label": "Песня 1",
+              "url": "https://www.youtube.com/watch?v=7Jtgx3c86Ms&t=38s"
+            },
+            {
+              "label": "Песня 2",
+              "url": "https://www.youtube.com/watch?v=yPD2AIeKlR0&t=46s"
+            },
+            {
+              "label": "Песня 3",
+              "url": "https://www.youtube.com/watch?v=09gehjW9sxk&t=46s"
+            }
+          ],
+          "correct": {
+            "artist": "Тамара Миансарова",
+            "title": ""
+          },
+          "aliases": {
+            "artist": [
+              "Тамара Миансарова"
+            ],
+            "title": [
+              "Тамара Миансарова"
+            ]
+          },
+          "artistParts": []
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Блиц",
+      "start": 2906.84,
+      "close": 2999.24,
+      "reveal": 3002,
+      "questions": [
+        {
+          "id": "r8q1",
+          "number": 1,
+          "start": 2914.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3002,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=BQV0TrlB0gA&t=65s"
+            }
+          ],
+          "correct": {
+            "artist": "Алла Пугачёва",
+            "title": "Миллион алых роз"
+          },
+          "aliases": {
+            "artist": [
+              "Алла Пугачёва"
+            ],
+            "title": [
+              "Миллион алых роз"
+            ]
+          },
+          "artistParts": [],
+          "year": 1982,
+          "album": "Миллион роз"
+        },
+        {
+          "id": "r8q2",
+          "number": 2,
+          "start": 2921.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3020,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=_yF6KeIfcJA&t=67s"
+            }
+          ],
+          "correct": {
+            "artist": "Юрий Лоза",
+            "title": "Плот"
+          },
+          "aliases": {
+            "artist": [
+              "Юрий Лоза"
+            ],
+            "title": [
+              "Плот"
+            ]
+          },
+          "artistParts": [],
+          "year": 1982,
+          "album": "Что сказано, то сказано"
+        },
+        {
+          "id": "r8q3",
+          "number": 3,
+          "start": 2928.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3035.6,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=V3l4ByL0mBI&t=104s"
+            }
+          ],
+          "correct": {
+            "artist": "Лев Лещенко",
+            "title": "Прощай"
+          },
+          "aliases": {
+            "artist": [
+              "Лев Лещенко"
+            ],
+            "title": [
+              "Прощай"
+            ]
+          },
+          "artistParts": [],
+          "year": 1975,
+          "album": "Лев Лещенко"
+        },
+        {
+          "id": "r8q4",
+          "number": 4,
+          "start": 2935.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3053.8,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=CTpyz63q-6c&t=110s"
+            }
+          ],
+          "correct": {
+            "artist": "Ласковый май",
+            "title": "Белые розы"
+          },
+          "aliases": {
+            "artist": [
+              "Ласковый май",
+              "Юрий Шатунов",
+              "Шатунов"
+            ],
+            "title": [
+              "Белые розы"
+            ]
+          },
+          "artistParts": [],
+          "year": 1987,
+          "album": "Белые розы"
+        },
+        {
+          "id": "r8q5",
+          "number": 5,
+          "start": 2942.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3071.8,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=WDeqUd6BR4E&t=67s"
+            }
+          ],
+          "correct": {
+            "artist": "Кино",
+            "title": "Звезда по имени Солнце"
+          },
+          "aliases": {
+            "artist": [
+              "Кино",
+              "Виктор Цой",
+              "Цой"
+            ],
+            "title": [
+              "Звезда по имени Солнце"
+            ]
+          },
+          "artistParts": [],
+          "year": 1987,
+          "album": "Звезда по имени Солнце"
+        },
+        {
+          "id": "r8q6",
+          "number": 6,
+          "start": 2949.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3084.2,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=43RDuxe7CzM&t=50s"
+            }
+          ],
+          "correct": {
+            "artist": "Браво",
+            "title": "Вася"
+          },
+          "aliases": {
+            "artist": [
+              "Браво"
+            ],
+            "title": [
+              "Вася"
+            ]
+          },
+          "artistParts": [],
+          "year": 1990,
+          "album": "Стиляги из Москвы"
+        },
+        {
+          "id": "r8q7",
+          "number": 7,
+          "start": 2956.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3101.8,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=TiWEHM-wjWs&t=65s"
+            }
+          ],
+          "correct": {
+            "artist": "Nautilus Pompilius",
+            "title": "Скованные одной цепью"
+          },
+          "aliases": {
+            "artist": [
+              "Nautilus Pompilius",
+              "Наутилус Помпилиус",
+              "Наутилус",
+              "НАУ"
+            ],
+            "title": [
+              "Скованные одной цепью",
+              "Круговая порука"
+            ]
+          },
+          "artistParts": [],
+          "year": 1986,
+          "album": "Разлука"
+        },
+        {
+          "id": "r8q8",
+          "number": 8,
+          "start": 2963.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3116.68,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=m9lUw_NhkEA&t=100s"
+            }
+          ],
+          "correct": {
+            "artist": "София Ротару",
+            "title": "Было, но прошло"
+          },
+          "aliases": {
+            "artist": [
+              "София Ротару"
+            ],
+            "title": [
+              "Было, но прошло"
+            ]
+          },
+          "artistParts": [],
+          "year": 1987,
+          "album": "Было, но прошло"
+        },
+        {
+          "id": "r8q9",
+          "number": 9,
+          "start": 2970.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3133.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=I9euevDmcpk&t=22s"
+            }
+          ],
+          "correct": {
+            "artist": "Юрий Антонов",
+            "title": "Крыша дома твоего"
+          },
+          "aliases": {
+            "artist": [
+              "Юрий Антонов"
+            ],
+            "title": [
+              "Крыша дома твоего"
+            ]
+          },
+          "artistParts": [],
+          "year": 1983,
+          "album": "Крыша дома твоего"
+        },
+        {
+          "id": "r8q10",
+          "number": 10,
+          "start": 2977.24,
+          "close": 2999.24,
+          "reveal": 3002,
+          "answerStart": 3147.08,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "links": [
+            {
+              "label": "Видео",
+              "url": "https://www.youtube.com/watch?v=YO-vb1EUgtE&t=31s"
+            }
+          ],
+          "correct": {
+            "artist": "Валерий Леонтьев",
+            "title": "Зелёный свет"
+          },
+          "aliases": {
+            "artist": [
+              "Валерий Леонтьев"
+            ],
+            "title": [
+              "Зелёный свет"
+            ]
+          },
+          "artistParts": [],
+          "year": 1984,
+          "album": "Диалог"
+        }
+      ]
+    }
+  ]
+}
