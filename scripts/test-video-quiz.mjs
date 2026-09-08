@@ -431,6 +431,22 @@ try {
   try { const old = sync(a, 35); assert.equal(old.answers.pair.points, 1.5); assert.deepEqual(old.answers.pair.correct, pair.correct); assert.equal(core.attemptEpisode(a.id, guestA.id).rounds[0].questions[0].close, 30); }
   finally { saveFixture(); }
  });
+ await test('new episode keeps older attempts, keys, media and album overrides separate', async () => {
+  const older = fresh(); sync(older, 35, { pair: pair.correct });
+  const next = structuredClone(fixture); next.id = 'prosto-v4'; next.mediaFile = 'fixture-v4.mp4'; next.revision = 'four';
+  next.rounds[0].questions[0].correct = draft('Другой дуэт', 'Новая песня'); next.rounds[0].questions[0].album = 'Свой альбом';
+  const added = join(temporary, 'server/video-data/prosto-v4.json');
+  writeFileSync(added, JSON.stringify(next)); writeFileSync(join(process.env.VIDEO_QUIZ_MEDIA_DIR, next.mediaFile), Buffer.from('new-video'));
+  try {
+   assert.deepEqual(core.episodes().map(e => e.id), ['prosto-v4', fixture.id]);
+   assert.equal(core.episodeById('prosto-v4').rounds[0].questions[0].album, 'Свой альбом');
+   const newer = core.startVideoAttempt(guestA.id, 'prosto-v4', true, epoch++);
+   assert.notEqual(newer.id, older.id); assert.equal(newer.score, 0);
+   assert.deepEqual(core.getVideoAttempt(older.id, guestA.id).answers.pair.correct, pair.correct);
+   const response = http.videoMedia(new Request('https://quiz.test/media', { headers: { range: 'bytes=0-2' } }), 'prosto-v4', false);
+   assert.equal(response.status, 206); assert.equal(await response.text(), 'new');
+  } finally { rmSync(added); }
+ });
 } finally {
  try { db?.close(); globalThis.musicQuizDatabase = undefined; } catch {}
  process.chdir(previousCwd);

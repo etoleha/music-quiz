@@ -75,7 +75,8 @@ export function videoMedia(request: Request, id: string, guest: boolean) {
       const share = sharedEpisode(new URL(request.url).searchParams.get("share") || "");
       if (!guestIdentity(secret(request)) || share.id !== e.id) throw new VideoError("Сначала откройте гостевой квиз", 403);
     }
-    const localFile = join(process.cwd(), "work/prosto-quiz-v3/output/Просто квиз — 8 раундов.mp4");
+    const version = /^prosto-v(\d+)$/.exec(e.id)?.[1];
+    const localFile = version ? join(process.cwd(), `work/prosto-quiz-v${version}/output/Просто квиз — 8 раундов.mp4`) : "";
     const file = process.env.VIDEO_QUIZ_MEDIA_DIR ? join(process.env.VIDEO_QUIZ_MEDIA_DIR, e.mediaFile) : existsSync(localFile) ? localFile : join("/opt/music-quiz/media", e.mediaFile);
     if (!existsSync(file)) throw new VideoError("Видео ещё не загружено на сервер", 404);
     const size = statSync(file).size;

@@ -1,0 +1,2910 @@
+{
+  "id": "prosto-v4",
+  "title": "Просто квиз · выпуск 4",
+  "revision": "v4-2026-09-08",
+  "duration": 3151.88,
+  "mediaFile": "prosto-v4.mp4",
+  "rounds": [
+    {
+      "number": 1,
+      "title": "Разминка",
+      "start": 4.24,
+      "close": 199.12,
+      "reveal": 201.88,
+      "questions": [
+        {
+          "id": "r1q1",
+          "number": 1,
+          "start": 9.64,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 201.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Линда",
+            "title": "Цепи и кольца"
+          },
+          "aliases": {
+            "artist": [
+              "Линда"
+            ],
+            "title": [
+              "Цепи и кольца"
+            ]
+          },
+          "artistParts": [],
+          "year": 2003,
+          "album": "АтакА"
+        },
+        {
+          "id": "r1q2",
+          "number": 2,
+          "start": 27.64,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 215.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "МультFильмы",
+            "title": "Яды"
+          },
+          "aliases": {
+            "artist": [
+              "МультFильмы",
+              "Мультфильмы"
+            ],
+            "title": [
+              "Яды"
+            ]
+          },
+          "artistParts": [],
+          "year": 2002,
+          "album": "Суперприз"
+        },
+        {
+          "id": "r1q3",
+          "number": 3,
+          "start": 45.64,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 230.08,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Танцы Минус",
+            "title": "Не меняй меня"
+          },
+          "aliases": {
+            "artist": [
+              "Танцы Минус"
+            ],
+            "title": [
+              "Не меняй меня"
+            ]
+          },
+          "artistParts": [],
+          "year": 2001,
+          "album": "Теряя тень"
+        },
+        {
+          "id": "r1q4",
+          "number": 4,
+          "start": 62.44,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 242.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Ундервуд",
+            "title": "Лавацца"
+          },
+          "aliases": {
+            "artist": [
+              "Ундервуд"
+            ],
+            "title": [
+              "Лавацца"
+            ]
+          },
+          "artistParts": [],
+          "year": 2021,
+          "album": "Лавацца — сингл"
+        },
+        {
+          "id": "r1q5",
+          "number": 5,
+          "start": 78.44,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 254.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Юта",
+            "title": "Хмель и солод"
+          },
+          "aliases": {
+            "artist": [
+              "Юта"
+            ],
+            "title": [
+              "Хмель и солод"
+            ]
+          },
+          "artistParts": [],
+          "year": 2002,
+          "album": "Хмель и солод"
+        },
+        {
+          "id": "r1q6",
+          "number": 6,
+          "start": 96.04,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 270.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Калинов Мост",
+            "title": "Родная"
+          },
+          "aliases": {
+            "artist": [
+              "Калинов Мост"
+            ],
+            "title": [
+              "Родная"
+            ]
+          },
+          "artistParts": [],
+          "year": 1998,
+          "album": "Оружие"
+        },
+        {
+          "id": "r1q7",
+          "number": 7,
+          "start": 116.04,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 285.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Сети",
+            "title": "Smile"
+          },
+          "aliases": {
+            "artist": [
+              "Сети"
+            ],
+            "title": [
+              "Smile",
+              "Смайл"
+            ]
+          },
+          "artistParts": [],
+          "year": 2002,
+          "album": "Небо на земле"
+        },
+        {
+          "id": "r1q8",
+          "number": 8,
+          "start": 132.32,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 297.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Пилот",
+            "title": "Шнурок"
+          },
+          "aliases": {
+            "artist": [
+              "Пилот"
+            ],
+            "title": [
+              "Шнурок"
+            ]
+          },
+          "artistParts": [],
+          "year": 2004,
+          "album": "Рыба, крот и свинья"
+        },
+        {
+          "id": "r1q9",
+          "number": 9,
+          "start": 147.32,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 313.88,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Бумбокс",
+            "title": "Вахтёрам"
+          },
+          "aliases": {
+            "artist": [
+              "Бумбокс"
+            ],
+            "title": [
+              "Вахтёрам"
+            ]
+          },
+          "artistParts": [],
+          "year": 2006,
+          "album": "Family бізнес"
+        },
+        {
+          "id": "r1q10",
+          "number": 10,
+          "start": 166.32,
+          "close": 199.12,
+          "reveal": 201.88,
+          "answerStart": 327.08,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "СЛОТ",
+            "title": "Мёртвые звёзды"
+          },
+          "aliases": {
+            "artist": [
+              "СЛОТ",
+              "Слот"
+            ],
+            "title": [
+              "Мёртвые звёзды"
+            ]
+          },
+          "artistParts": [],
+          "year": 2007,
+          "album": "Тринити"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Имена",
+      "start": 346.88,
+      "close": 535.68,
+      "reveal": 538.44,
+      "questions": [
+        {
+          "id": "r2q1",
+          "number": 1,
+          "start": 354.52,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 538.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Дюна",
+            "title": "Борька-бабник"
+          },
+          "aliases": {
+            "artist": [
+              "Дюна"
+            ],
+            "title": [
+              "Борька-бабник"
+            ]
+          },
+          "artistParts": [],
+          "year": 1991,
+          "album": "А нам — всё равно!"
+        },
+        {
+          "id": "r2q2",
+          "number": 2,
+          "start": 371.72,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 556.64,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Сергей Трофимов",
+            "title": "Алёшка"
+          },
+          "aliases": {
+            "artist": [
+              "Сергей Трофимов"
+            ],
+            "title": [
+              "Алёшка"
+            ]
+          },
+          "artistParts": [],
+          "year": 2004,
+          "album": "Ветер в голове"
+        },
+        {
+          "id": "r2q3",
+          "number": 3,
+          "start": 389.04,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 570.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Нэнси",
+            "title": "Светик мой, Светлана"
+          },
+          "aliases": {
+            "artist": [
+              "Нэнси"
+            ],
+            "title": [
+              "Светик мой, Светлана"
+            ]
+          },
+          "artistParts": [],
+          "year": 1994,
+          "album": "Новые и лучшие песни группы Нэнси"
+        },
+        {
+          "id": "r2q4",
+          "number": 4,
+          "start": 405.84,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 586.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Маша и Медведи",
+            "title": "Любочка"
+          },
+          "aliases": {
+            "artist": [
+              "Маша и Медведи"
+            ],
+            "title": [
+              "Любочка"
+            ]
+          },
+          "artistParts": [],
+          "year": 1997,
+          "album": "Солнцеклёш"
+        },
+        {
+          "id": "r2q5",
+          "number": 5,
+          "start": 421.84,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 605.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Дмитрий Колдун",
+            "title": "Мэрилин Монро"
+          },
+          "aliases": {
+            "artist": [
+              "Дмитрий Колдун"
+            ],
+            "title": [
+              "Мэрилин Монро"
+            ]
+          },
+          "artistParts": [],
+          "year": 2024,
+          "album": "Мэрилин Монро — сингл"
+        },
+        {
+          "id": "r2q6",
+          "number": 6,
+          "start": 438.92,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 621.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Animal ДжаZ",
+            "title": "Таня"
+          },
+          "aliases": {
+            "artist": [
+              "Animal ДжаZ",
+              "Энимал Джаз"
+            ],
+            "title": [
+              "Таня"
+            ]
+          },
+          "artistParts": [],
+          "year": 2024,
+          "album": "Ян"
+        },
+        {
+          "id": "r2q7",
+          "number": 7,
+          "start": 455.32,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 634.64,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "БиС",
+            "title": "Катя"
+          },
+          "aliases": {
+            "artist": [
+              "БиС",
+              "Бис"
+            ],
+            "title": [
+              "Катя"
+            ]
+          },
+          "artistParts": [],
+          "year": 2008,
+          "album": "Двухполярный мир"
+        },
+        {
+          "id": "r2q8",
+          "number": 8,
+          "start": 472.4,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 650.16,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Валентин Стрыкало",
+            "title": "Знаешь, Таня"
+          },
+          "aliases": {
+            "artist": [
+              "Валентин Стрыкало"
+            ],
+            "title": [
+              "Знаешь, Таня"
+            ]
+          },
+          "artistParts": [],
+          "year": 2013,
+          "album": "Часть чего-то большего"
+        },
+        {
+          "id": "r2q9",
+          "number": 9,
+          "start": 488.6,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 663.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Афродита",
+            "title": "Валера"
+          },
+          "aliases": {
+            "artist": [
+              "Афродита"
+            ],
+            "title": [
+              "Валера"
+            ]
+          },
+          "artistParts": [],
+          "year": 2013,
+          "album": "Валера"
+        },
+        {
+          "id": "r2q10",
+          "number": 10,
+          "start": 504.4,
+          "close": 535.68,
+          "reveal": 538.44,
+          "answerStart": 678.56,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Jane Air",
+            "title": "Джульетта"
+          },
+          "aliases": {
+            "artist": [
+              "Jane Air",
+              "Джейн Эйр"
+            ],
+            "title": [
+              "Джульетта"
+            ]
+          },
+          "artistParts": [],
+          "year": 2010,
+          "album": "Weekend Warriors"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Другой звук",
+      "start": 697.68,
+      "close": 894.36,
+      "reveal": 897.12,
+      "questions": [
+        {
+          "id": "r3q1",
+          "number": 1,
+          "start": 704.8,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 897.12,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "25/17",
+            "title": "Жду чуда"
+          },
+          "aliases": {
+            "artist": [
+              "25/17",
+              "Двадцать пять семнадцать"
+            ],
+            "title": [
+              "Жду чуда"
+            ]
+          },
+          "artistParts": [],
+          "year": 2010,
+          "album": "Зебра"
+        },
+        {
+          "id": "r3q2",
+          "number": 2,
+          "start": 722.4,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 909.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Lumen",
+            "title": "Небо в огне"
+          },
+          "aliases": {
+            "artist": [
+              "Lumen",
+              "Люмен"
+            ],
+            "title": [
+              "Небо в огне"
+            ]
+          },
+          "artistParts": [],
+          "year": 2012,
+          "album": "На части"
+        },
+        {
+          "id": "r3q3",
+          "number": 3,
+          "start": 742.12,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 923.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Tracktor Bowling",
+            "title": "Ничья"
+          },
+          "aliases": {
+            "artist": [
+              "Tracktor Bowling",
+              "Трактор Боулинг"
+            ],
+            "title": [
+              "Ничья"
+            ]
+          },
+          "artistParts": [],
+          "year": 2009,
+          "album": "Tracktor Bowling"
+        },
+        {
+          "id": "r3q4",
+          "number": 4,
+          "start": 759.24,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 937.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Tequilajazzz",
+            "title": "Зимнее солнце"
+          },
+          "aliases": {
+            "artist": [
+              "Tequilajazzz",
+              "Текиладжаз"
+            ],
+            "title": [
+              "Зимнее солнце"
+            ]
+          },
+          "artistParts": [],
+          "year": 1998,
+          "album": "Целлулоид"
+        },
+        {
+          "id": "r3q5",
+          "number": 5,
+          "start": 776.72,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 949.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Ирина Салтыкова",
+            "title": "Серые глаза"
+          },
+          "aliases": {
+            "artist": [
+              "Ирина Салтыкова"
+            ],
+            "title": [
+              "Серые глаза"
+            ]
+          },
+          "artistParts": [],
+          "year": 1995,
+          "album": "Серые глаза"
+        },
+        {
+          "id": "r3q6",
+          "number": 6,
+          "start": 795.92,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 968.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Непара",
+            "title": "Беги, беги"
+          },
+          "aliases": {
+            "artist": [
+              "Непара"
+            ],
+            "title": [
+              "Беги, беги"
+            ]
+          },
+          "artistParts": [],
+          "year": 2009,
+          "album": "Обречённые / Обручённые"
+        },
+        {
+          "id": "r3q7",
+          "number": 7,
+          "start": 812.12,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 984.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Бьянка",
+            "title": "Про лето"
+          },
+          "aliases": {
+            "artist": [
+              "Бьянка"
+            ],
+            "title": [
+              "Про лето"
+            ]
+          },
+          "artistParts": [],
+          "year": 2007,
+          "album": "Про лето — сингл"
+        },
+        {
+          "id": "r3q8",
+          "number": 8,
+          "start": 828.24,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 1000.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "TOKiO",
+            "title": "Кто я без тебя"
+          },
+          "aliases": {
+            "artist": [
+              "TOKiO",
+              "Токио"
+            ],
+            "title": [
+              "Кто я без тебя"
+            ]
+          },
+          "artistParts": [],
+          "year": 2006,
+          "album": "Puls 200"
+        },
+        {
+          "id": "r3q9",
+          "number": 9,
+          "start": 845,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 1020.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель + исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Децл feat. Маруся",
+            "title": "Письмо"
+          },
+          "aliases": {
+            "artist": [
+              "Децл feat. Маруся",
+              "Децл и Маруся"
+            ],
+            "title": [
+              "Письмо"
+            ]
+          },
+          "artistParts": [
+            [
+              "Децл"
+            ],
+            [
+              "Маруся"
+            ]
+          ],
+          "year": 2001,
+          "album": "Уличный боец"
+        },
+        {
+          "id": "r3q10",
+          "number": 10,
+          "start": 860.44,
+          "close": 894.36,
+          "reveal": 897.12,
+          "answerStart": 1035.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Город 312",
+            "title": "Вне зоны доступа"
+          },
+          "aliases": {
+            "artist": [
+              "Город 312",
+              "Город триста двенадцать"
+            ],
+            "title": [
+              "Вне зоны доступа"
+            ]
+          },
+          "artistParts": [],
+          "year": 2006,
+          "album": "Вне зоны доступа"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Каверы",
+      "start": 1048.64,
+      "close": 1250.88,
+      "reveal": 1253.64,
+      "questions": [
+        {
+          "id": "r4q1",
+          "number": 1,
+          "start": 1053.88,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1253.64,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Кино",
+            "title": "Группа крови"
+          },
+          "aliases": {
+            "artist": [
+              "Кино"
+            ],
+            "title": [
+              "Группа крови"
+            ]
+          },
+          "artistParts": [],
+          "year": 1988,
+          "album": "Группа крови",
+          "coverArtist": "YB"
+        },
+        {
+          "id": "r4q2",
+          "number": 2,
+          "start": 1072.28,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1268.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Чиж & Co",
+            "title": "О любви"
+          },
+          "aliases": {
+            "artist": [
+              "Чиж & Co",
+              "Чиж и компания"
+            ],
+            "title": [
+              "О любви"
+            ]
+          },
+          "artistParts": [],
+          "year": 1995,
+          "album": "О любви",
+          "coverArtist": "Бом-Бом Тобы"
+        },
+        {
+          "id": "r4q3",
+          "number": 3,
+          "start": 1090.28,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1284.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Браво",
+            "title": "Этот город"
+          },
+          "aliases": {
+            "artist": [
+              "Браво"
+            ],
+            "title": [
+              "Этот город"
+            ]
+          },
+          "artistParts": [],
+          "year": 1995,
+          "album": "На перекрёстках весны",
+          "coverArtist": "SAxAR"
+        },
+        {
+          "id": "r4q4",
+          "number": 4,
+          "start": 1108.28,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1302.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Михаил Круг",
+            "title": "Владимирский централ"
+          },
+          "aliases": {
+            "artist": [
+              "Михаил Круг"
+            ],
+            "title": [
+              "Владимирский централ"
+            ]
+          },
+          "artistParts": [],
+          "year": 1998,
+          "album": "Мадам",
+          "coverArtist": "XENA и ведущие Comedy Radio"
+        },
+        {
+          "id": "r4q5",
+          "number": 5,
+          "start": 1127.48,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1320.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Ленинград",
+            "title": "Мне бы в небо"
+          },
+          "aliases": {
+            "artist": [
+              "Ленинград"
+            ],
+            "title": [
+              "Мне бы в небо"
+            ]
+          },
+          "artistParts": [],
+          "year": 2002,
+          "album": "Пираты XXI века",
+          "coverArtist": "Just Play"
+        },
+        {
+          "id": "r4q6",
+          "number": 6,
+          "start": 1145.48,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1335.32,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Ляпис Трубецкой",
+            "title": "Ау"
+          },
+          "aliases": {
+            "artist": [
+              "Ляпис Трубецкой"
+            ],
+            "title": [
+              "Ау"
+            ]
+          },
+          "artistParts": [],
+          "year": 1996,
+          "album": "Ранетое сердце",
+          "coverArtist": "ROCK PRIVET"
+        },
+        {
+          "id": "r4q7",
+          "number": 7,
+          "start": 1164,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1349.72,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Аквариум",
+            "title": "Поезд в огне"
+          },
+          "aliases": {
+            "artist": [
+              "Аквариум"
+            ],
+            "title": [
+              "Поезд в огне"
+            ]
+          },
+          "artistParts": [],
+          "year": 1988,
+          "album": "Greatest Hits",
+          "coverArtist": "Евгений Алексеев"
+        },
+        {
+          "id": "r4q8",
+          "number": 8,
+          "start": 1182,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1363.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Владимир Кузьмин",
+            "title": "Я не забуду тебя"
+          },
+          "aliases": {
+            "artist": [
+              "Владимир Кузьмин"
+            ],
+            "title": [
+              "Я не забуду тебя"
+            ]
+          },
+          "artistParts": [],
+          "year": 1995,
+          "album": "Небесное притяжение",
+          "coverArtist": "James Lo Scott / Константин Лоскутов"
+        },
+        {
+          "id": "r4q9",
+          "number": 9,
+          "start": 1200,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1374.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "A'Studio",
+            "title": "Нелюбимая"
+          },
+          "aliases": {
+            "artist": [
+              "A'Studio",
+              "А студио"
+            ],
+            "title": [
+              "Нелюбимая"
+            ]
+          },
+          "artistParts": [],
+          "year": 1995,
+          "album": "Нелюбимая",
+          "coverArtist": "Sarkis Edwards"
+        },
+        {
+          "id": "r4q10",
+          "number": 10,
+          "start": 1217.88,
+          "close": 1250.88,
+          "reveal": 1253.64,
+          "answerStart": 1392.12,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа + исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Михей и Джуманджи и Инна Стил",
+            "title": "Туда"
+          },
+          "aliases": {
+            "artist": [
+              "Михей и Джуманджи и Инна Стил"
+            ],
+            "title": [
+              "Туда"
+            ]
+          },
+          "artistParts": [
+            [
+              "Михей и Джуманджи"
+            ],
+            [
+              "Инна Стил"
+            ]
+          ],
+          "year": 1999,
+          "album": "Сука любовь",
+          "coverArtist": "Дарья Данилова и Александр Кузьминых"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Клипы",
+      "start": 1402.44,
+      "close": 1652.6,
+      "reveal": 1655.36,
+      "questions": [
+        {
+          "id": "r5q1",
+          "number": 1,
+          "start": 1407.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1655.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "АИГЕЛ",
+            "title": "Татарин"
+          },
+          "aliases": {
+            "artist": [
+              "АИГЕЛ",
+              "Айгел"
+            ],
+            "title": [
+              "Татарин"
+            ]
+          },
+          "artistParts": [],
+          "year": 2017,
+          "album": "1190"
+        },
+        {
+          "id": "r5q2",
+          "number": 2,
+          "start": 1430.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1667.36,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Алсу",
+            "title": "Зимний сон"
+          },
+          "aliases": {
+            "artist": [
+              "Алсу"
+            ],
+            "title": [
+              "Зимний сон"
+            ]
+          },
+          "artistParts": [],
+          "year": 1999,
+          "album": "Алсу"
+        },
+        {
+          "id": "r5q3",
+          "number": 3,
+          "start": 1453.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1684.16,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Найк Борзов",
+            "title": "Верхом на звезде"
+          },
+          "aliases": {
+            "artist": [
+              "Найк Борзов"
+            ],
+            "title": [
+              "Верхом на звезде"
+            ]
+          },
+          "artistParts": [],
+          "year": 2000,
+          "album": "Супермен"
+        },
+        {
+          "id": "r5q4",
+          "number": 4,
+          "start": 1476.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1699.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Лицей",
+            "title": "Паровозик-облачко"
+          },
+          "aliases": {
+            "artist": [
+              "Лицей"
+            ],
+            "title": [
+              "Паровозик-облачко"
+            ]
+          },
+          "artistParts": [],
+          "year": 1997,
+          "album": "Паровозик-облачко"
+        },
+        {
+          "id": "r5q5",
+          "number": 5,
+          "start": 1499.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1718.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Краски",
+            "title": "Сегодня к маме я приехала домой"
+          },
+          "aliases": {
+            "artist": [
+              "Краски"
+            ],
+            "title": [
+              "Сегодня к маме я приехала домой"
+            ]
+          },
+          "artistParts": [],
+          "year": 2001,
+          "album": "Ты уже взрослый"
+        },
+        {
+          "id": "r5q6",
+          "number": 6,
+          "start": 1522.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1733.16,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Луна",
+            "title": "Грустный дэнс"
+          },
+          "aliases": {
+            "artist": [
+              "Луна"
+            ],
+            "title": [
+              "Грустный дэнс"
+            ]
+          },
+          "artistParts": [],
+          "year": 2016,
+          "album": "Грустный дэнс"
+        },
+        {
+          "id": "r5q7",
+          "number": 7,
+          "start": 1545.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1750.16,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Иван Дорн",
+            "title": "Северное сияние"
+          },
+          "aliases": {
+            "artist": [
+              "Иван Дорн"
+            ],
+            "title": [
+              "Северное сияние"
+            ]
+          },
+          "artistParts": [],
+          "year": 2011,
+          "album": "Co'N'Dorn"
+        },
+        {
+          "id": "r5q8",
+          "number": 8,
+          "start": 1568.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1765.56,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "7Б",
+            "title": "Молодые ветра"
+          },
+          "aliases": {
+            "artist": [
+              "7Б",
+              "Семь Б"
+            ],
+            "title": [
+              "Молодые ветра"
+            ]
+          },
+          "artistParts": [],
+          "year": 2001,
+          "album": "Молодые ветра"
+        },
+        {
+          "id": "r5q9",
+          "number": 9,
+          "start": 1591.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1780.28,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Каста",
+            "title": "Вокруг шум"
+          },
+          "aliases": {
+            "artist": [
+              "Каста"
+            ],
+            "title": [
+              "Вокруг шум"
+            ]
+          },
+          "artistParts": [],
+          "year": 2008,
+          "album": "Быль в глаза"
+        },
+        {
+          "id": "r5q10",
+          "number": 10,
+          "start": 1614.6,
+          "close": 1652.6,
+          "reveal": 1655.36,
+          "answerStart": 1790.28,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Артист"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Оскар",
+            "title": "Между мной и тобой"
+          },
+          "aliases": {
+            "artist": [
+              "Оскар"
+            ],
+            "title": [
+              "Между мной и тобой"
+            ]
+          },
+          "artistParts": [],
+          "year": 2000,
+          "album": "Бег по острию ножа"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Плюс один",
+      "start": 1807.68,
+      "close": 1999.56,
+      "reveal": 2002.32,
+      "questions": [
+        {
+          "id": "r6q1",
+          "number": 1,
+          "start": 1816.76,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2002.32,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Мара",
+            "title": "220V"
+          },
+          "aliases": {
+            "artist": [
+              "Мара"
+            ],
+            "title": [
+              "220V",
+              "Двести двадцать вольт"
+            ]
+          },
+          "artistParts": [],
+          "year": 2005,
+          "album": "220V"
+        },
+        {
+          "id": "r6q2",
+          "number": 2,
+          "start": 1831.76,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2019.32,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Амега",
+            "title": "Ноги"
+          },
+          "aliases": {
+            "artist": [
+              "Амега"
+            ],
+            "title": [
+              "Ноги"
+            ]
+          },
+          "artistParts": [],
+          "year": 1999,
+          "album": "Вверх, Ч. 1"
+        },
+        {
+          "id": "r6q3",
+          "number": 3,
+          "start": 1850.68,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2031.64,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Джанго",
+            "title": "Холодная весна"
+          },
+          "aliases": {
+            "artist": [
+              "Джанго"
+            ],
+            "title": [
+              "Холодная весна"
+            ]
+          },
+          "artistParts": [],
+          "year": 2005,
+          "album": "Была не была"
+        },
+        {
+          "id": "r6q4",
+          "number": 4,
+          "start": 1868.68,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2051.32,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Паскаль",
+            "title": "Шёлковое сердце"
+          },
+          "aliases": {
+            "artist": [
+              "Паскаль"
+            ],
+            "title": [
+              "Шёлковое сердце"
+            ]
+          },
+          "artistParts": [],
+          "year": 2000,
+          "album": "Шёлковое сердце"
+        },
+        {
+          "id": "r6q5",
+          "number": 5,
+          "start": 1883.68,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2061.52,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Мураками",
+            "title": "Нулевой километр"
+          },
+          "aliases": {
+            "artist": [
+              "Мураками"
+            ],
+            "title": [
+              "Нулевой километр"
+            ]
+          },
+          "artistParts": [],
+          "year": 2009,
+          "album": "Телеграмма"
+        },
+        {
+          "id": "r6q6",
+          "number": 6,
+          "start": 1899.88,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2074.72,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Моя Мишель",
+            "title": "Химия"
+          },
+          "aliases": {
+            "artist": [
+              "Моя Мишель"
+            ],
+            "title": [
+              "Химия"
+            ]
+          },
+          "artistParts": [],
+          "year": 2015,
+          "album": "Химия"
+        },
+        {
+          "id": "r6q7",
+          "number": 7,
+          "start": 1918.28,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2086.92,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Иван Купала",
+            "title": "Кострома"
+          },
+          "aliases": {
+            "artist": [
+              "Иван Купала"
+            ],
+            "title": [
+              "Кострома"
+            ]
+          },
+          "artistParts": [],
+          "year": 1999,
+          "album": "Кострома"
+        },
+        {
+          "id": "r6q8",
+          "number": 8,
+          "start": 1936.28,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2103.12,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Лера Массква",
+            "title": "7 этаж"
+          },
+          "aliases": {
+            "artist": [
+              "Лера Массква"
+            ],
+            "title": [
+              "7 этаж",
+              "Седьмой этаж"
+            ]
+          },
+          "artistParts": [],
+          "year": 2005,
+          "album": "Массква"
+        },
+        {
+          "id": "r6q9",
+          "number": 9,
+          "start": 1951.28,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2115.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Ирина Дубцова",
+            "title": "О нём"
+          },
+          "aliases": {
+            "artist": [
+              "Ирина Дубцова"
+            ],
+            "title": [
+              "О нём"
+            ]
+          },
+          "artistParts": [],
+          "year": 2004,
+          "album": "О нём"
+        },
+        {
+          "id": "r6q10",
+          "number": 10,
+          "start": 1969.08,
+          "close": 1999.56,
+          "reveal": 2002.32,
+          "answerStart": 2131.04,
+          "fields": [
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Ария",
+            "title": "Потерянный рай"
+          },
+          "aliases": {
+            "artist": [
+              "Ария"
+            ],
+            "title": [
+              "Потерянный рай"
+            ]
+          },
+          "artistParts": [],
+          "year": 1999,
+          "album": "2000 и одна ночь"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Три шанса",
+      "start": 2143.92,
+      "close": 2892.52,
+      "reveal": 2213.28,
+      "questions": [
+        {
+          "id": "r7q1",
+          "number": 1,
+          "start": 2153.28,
+          "close": 2213.28,
+          "reveal": 2213.28,
+          "answerStart": 2213.28,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2153.28,
+              "end": 2173.28,
+              "points": 2
+            },
+            {
+              "start": 2173.28,
+              "end": 2193.28,
+              "points": 1
+            },
+            {
+              "start": 2193.28,
+              "end": 2213.28,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Филипп Киркоров",
+            "title": "Радио-бейби / Дива / Зайка моя"
+          },
+          "aliases": {
+            "artist": [
+              "Филипп Киркоров"
+            ],
+            "title": [
+              "Радио-бейби / Дива / Зайка моя"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q2",
+          "number": 2,
+          "start": 2228.68,
+          "close": 2288.68,
+          "reveal": 2288.68,
+          "answerStart": 2288.68,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2228.68,
+              "end": 2248.68,
+              "points": 2
+            },
+            {
+              "start": 2248.68,
+              "end": 2268.68,
+              "points": 1
+            },
+            {
+              "start": 2268.68,
+              "end": 2288.68,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Николай Носков",
+            "title": "Белая ночь / Я не модный / Паранойя"
+          },
+          "aliases": {
+            "artist": [
+              "Николай Носков"
+            ],
+            "title": [
+              "Белая ночь / Я не модный / Паранойя"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q3",
+          "number": 3,
+          "start": 2303.32,
+          "close": 2363.32,
+          "reveal": 2363.32,
+          "answerStart": 2363.32,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2303.32,
+              "end": 2323.32,
+              "points": 2
+            },
+            {
+              "start": 2323.32,
+              "end": 2343.32,
+              "points": 1
+            },
+            {
+              "start": 2343.32,
+              "end": 2363.32,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Наталья Ветлицкая",
+            "title": "Здравствуй, грусть / Половинки / Посмотри в глаза"
+          },
+          "aliases": {
+            "artist": [
+              "Наталья Ветлицкая"
+            ],
+            "title": [
+              "Здравствуй, грусть / Половинки / Посмотри в глаза"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q4",
+          "number": 4,
+          "start": 2377.64,
+          "close": 2437.64,
+          "reveal": 2437.64,
+          "answerStart": 2437.64,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2377.64,
+              "end": 2397.64,
+              "points": 2
+            },
+            {
+              "start": 2397.64,
+              "end": 2417.64,
+              "points": 1
+            },
+            {
+              "start": 2417.64,
+              "end": 2437.64,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Витас",
+            "title": "Блаженный гуру / Берега России / Опера № 2"
+          },
+          "aliases": {
+            "artist": [
+              "Витас"
+            ],
+            "title": [
+              "Блаженный гуру / Берега России / Опера № 2"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q5",
+          "number": 5,
+          "start": 2452.64,
+          "close": 2512.64,
+          "reveal": 2512.64,
+          "answerStart": 2512.64,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2452.64,
+              "end": 2472.64,
+              "points": 2
+            },
+            {
+              "start": 2472.64,
+              "end": 2492.64,
+              "points": 1
+            },
+            {
+              "start": 2492.64,
+              "end": 2512.64,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Ирина Аллегрова",
+            "title": "Шаг до любви / Странник / Суженый мой"
+          },
+          "aliases": {
+            "artist": [
+              "Ирина Аллегрова"
+            ],
+            "title": [
+              "Шаг до любви / Странник / Суженый мой"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q6",
+          "number": 6,
+          "start": 2527.04,
+          "close": 2587.04,
+          "reveal": 2587.04,
+          "answerStart": 2587.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2527.04,
+              "end": 2547.04,
+              "points": 2
+            },
+            {
+              "start": 2547.04,
+              "end": 2567.04,
+              "points": 1
+            },
+            {
+              "start": 2567.04,
+              "end": 2587.04,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Корни",
+            "title": "На века / Это ты объявила войну / Ты узнаешь её"
+          },
+          "aliases": {
+            "artist": [
+              "Корни"
+            ],
+            "title": [
+              "На века / Это ты объявила войну / Ты узнаешь её"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q7",
+          "number": 7,
+          "start": 2606.44,
+          "close": 2666.44,
+          "reveal": 2666.44,
+          "answerStart": 2666.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2606.44,
+              "end": 2626.44,
+              "points": 2
+            },
+            {
+              "start": 2626.44,
+              "end": 2646.44,
+              "points": 1
+            },
+            {
+              "start": 2646.44,
+              "end": 2666.44,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Света",
+            "title": "Мечтать не вредно / Сердце моё / Ты не мой"
+          },
+          "aliases": {
+            "artist": [
+              "Света"
+            ],
+            "title": [
+              "Мечтать не вредно / Сердце моё / Ты не мой"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q8",
+          "number": 8,
+          "start": 2682.24,
+          "close": 2742.24,
+          "reveal": 2742.24,
+          "answerStart": 2742.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2682.24,
+              "end": 2702.24,
+              "points": 2
+            },
+            {
+              "start": 2702.24,
+              "end": 2722.24,
+              "points": 1
+            },
+            {
+              "start": 2722.24,
+              "end": 2742.24,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Жасмин",
+            "title": "Боль / Не жалею / Ресничка"
+          },
+          "aliases": {
+            "artist": [
+              "Жасмин"
+            ],
+            "title": [
+              "Боль / Не жалею / Ресничка"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q9",
+          "number": 9,
+          "start": 2756.24,
+          "close": 2816.24,
+          "reveal": 2816.24,
+          "answerStart": 2816.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2756.24,
+              "end": 2776.24,
+              "points": 2
+            },
+            {
+              "start": 2776.24,
+              "end": 2796.24,
+              "points": 1
+            },
+            {
+              "start": 2796.24,
+              "end": 2816.24,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Валерий Леонтьев",
+            "title": "Гиподинамия / Сокровища Чёрного моря / Ночной звонок"
+          },
+          "aliases": {
+            "artist": [
+              "Валерий Леонтьев"
+            ],
+            "title": [
+              "Гиподинамия / Сокровища Чёрного моря / Ночной звонок"
+            ]
+          },
+          "artistParts": []
+        },
+        {
+          "id": "r7q10",
+          "number": 10,
+          "start": 2832.52,
+          "close": 2892.52,
+          "reveal": 2892.52,
+          "answerStart": 2892.52,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            }
+          ],
+          "chances": [
+            {
+              "start": 2832.52,
+              "end": 2852.52,
+              "points": 2
+            },
+            {
+              "start": 2852.52,
+              "end": 2872.52,
+              "points": 1
+            },
+            {
+              "start": 2872.52,
+              "end": 2892.52,
+              "points": 0.5
+            }
+          ],
+          "correct": {
+            "artist": "Юлия Савичева",
+            "title": "Зима / Не до любви / Если в сердце живёт любовь"
+          },
+          "aliases": {
+            "artist": [
+              "Юлия Савичева"
+            ],
+            "title": [
+              "Зима / Не до любви / Если в сердце живёт любовь"
+            ]
+          },
+          "artistParts": []
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Блиц",
+      "start": 2908.12,
+      "close": 3000.88,
+      "reveal": 3003.64,
+      "questions": [
+        {
+          "id": "r8q1",
+          "number": 1,
+          "start": 2915.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3003.64,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Мурат Насыров",
+            "title": "Мальчик хочет в Тамбов"
+          },
+          "aliases": {
+            "artist": [
+              "Мурат Насыров"
+            ],
+            "title": [
+              "Мальчик хочет в Тамбов"
+            ]
+          },
+          "artistParts": [],
+          "year": 1997,
+          "album": "Кто-то простит"
+        },
+        {
+          "id": "r8q2",
+          "number": 2,
+          "start": 2922.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3013.72,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Т9",
+            "title": "Ода нашей любви"
+          },
+          "aliases": {
+            "artist": [
+              "Т9",
+              "Тэ девять"
+            ],
+            "title": [
+              "Ода нашей любви",
+              "Вдох-выдох",
+              "Вдох выдох"
+            ]
+          },
+          "artistParts": [],
+          "year": 2008,
+          "album": "Вдох-выдох"
+        },
+        {
+          "id": "r8q3",
+          "number": 3,
+          "start": 2929.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3027.24,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнительница"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Катя Лель",
+            "title": "Мой мармеладный"
+          },
+          "aliases": {
+            "artist": [
+              "Катя Лель"
+            ],
+            "title": [
+              "Мой мармеладный"
+            ]
+          },
+          "artistParts": [],
+          "year": 2003,
+          "album": "Джага-джага"
+        },
+        {
+          "id": "r8q4",
+          "number": 4,
+          "start": 2936.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3043.04,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Мистер Кредо",
+            "title": "Чудная долина"
+          },
+          "aliases": {
+            "artist": [
+              "Мистер Кредо"
+            ],
+            "title": [
+              "Чудная долина"
+            ]
+          },
+          "artistParts": [],
+          "year": 2002,
+          "album": "Чудная долина"
+        },
+        {
+          "id": "r8q5",
+          "number": 5,
+          "start": 2943.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3057.64,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Шура",
+            "title": "Твори добро"
+          },
+          "aliases": {
+            "artist": [
+              "Шура"
+            ],
+            "title": [
+              "Твори добро"
+            ]
+          },
+          "artistParts": [],
+          "year": 2000,
+          "album": "Благодарю. Второе дыхание"
+        },
+        {
+          "id": "r8q6",
+          "number": 6,
+          "start": 2950.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3072.84,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Dabro",
+            "title": "Юность"
+          },
+          "aliases": {
+            "artist": [
+              "Dabro",
+              "Дабро"
+            ],
+            "title": [
+              "Юность"
+            ]
+          },
+          "artistParts": [],
+          "year": 2020,
+          "album": "Юность"
+        },
+        {
+          "id": "r8q7",
+          "number": 7,
+          "start": 2957.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3089.44,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Jah Khalib",
+            "title": "Медина"
+          },
+          "aliases": {
+            "artist": [
+              "Jah Khalib",
+              "Джа Халиб"
+            ],
+            "title": [
+              "Медина"
+            ]
+          },
+          "artistParts": [],
+          "year": 2018,
+          "album": "E.G.O."
+        },
+        {
+          "id": "r8q8",
+          "number": 8,
+          "start": 2964.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3100.16,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Серёга",
+            "title": "Чёрный бумер"
+          },
+          "aliases": {
+            "artist": [
+              "Серёга"
+            ],
+            "title": [
+              "Чёрный бумер"
+            ]
+          },
+          "artistParts": [],
+          "year": 2004,
+          "album": "Мой двор: Спортивные частушки"
+        },
+        {
+          "id": "r8q9",
+          "number": 9,
+          "start": 2971.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3116.76,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Группа"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Quest Pistols",
+            "title": "Белая стрекоза любви"
+          },
+          "aliases": {
+            "artist": [
+              "Quest Pistols",
+              "Квест Пистолс"
+            ],
+            "title": [
+              "Белая стрекоза любви"
+            ]
+          },
+          "artistParts": [],
+          "year": 2009,
+          "album": "Superklass"
+        },
+        {
+          "id": "r8q10",
+          "number": 10,
+          "start": 2978.88,
+          "close": 3000.88,
+          "reveal": 3003.64,
+          "answerStart": 3129.76,
+          "fields": [
+            {
+              "key": "artist",
+              "label": "Исполнитель"
+            },
+            {
+              "key": "title",
+              "label": "Название песни"
+            }
+          ],
+          "chances": [],
+          "correct": {
+            "artist": "Иракли",
+            "title": "Капли абсента"
+          },
+          "aliases": {
+            "artist": [
+              "Иракли"
+            ],
+            "title": [
+              "Капли абсента"
+            ]
+          },
+          "artistParts": [],
+          "year": 2005,
+          "album": "Сделай шаг"
+        }
+      ]
+    }
+  ]
+}

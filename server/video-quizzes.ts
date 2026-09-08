@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { randomBytes, randomUUID, createHash } from "node:crypto";
 import type { DatabaseSync } from "node:sqlite";
@@ -9,10 +9,15 @@ import { chanceAt, questionMaximum, type VideoEpisode, type VideoQuestion, type 
 export type PrivateQuestion = VideoQuestion & { correct: VideoDraft; aliases: { artist: string[]; title: string[] }; artistParts: string[][]; album?: string; year?: number; coverArtist?: string };
 export type PrivateEpisode = Omit<VideoEpisode, "rounds"> & { mediaFile: string; rounds: Array<Omit<VideoEpisode["rounds"][number], "questions"> & { questions: PrivateQuestion[] }> };
 export function episodes(): PrivateEpisode[] {
-  const e: PrivateEpisode = JSON.parse(readFileSync(join(process.cwd(), "server/video-data/prosto-v3.json"), "utf8"));
-  const albums = JSON.parse(readFileSync(join(process.cwd(), "server/video-data/album-overrides.json"), "utf8"));
-  for (const r of e.rounds) if (r.number !== 7) for (const q of r.questions) if (albums[q.id]?.album) q.album = albums[q.id].album;
-  return [e];
+  const directory = join(process.cwd(), "server/video-data");
+  return readdirSync(directory).filter(name => /^prosto-v\d+\.json$/.test(name)).sort((a, b) => b.localeCompare(a, undefined, { numeric: true })).map(name => {
+    const e: PrivateEpisode = JSON.parse(readFileSync(join(directory, name), "utf8"));
+    if (e.id === "prosto-v3") {
+      const albums = JSON.parse(readFileSync(join(directory, "album-overrides.json"), "utf8"));
+      for (const r of e.rounds) if (r.number !== 7) for (const q of r.questions) if (albums[q.id]?.album) q.album = albums[q.id].album;
+    }
+    return e;
+  });
 }
 export function episodeById(id: string) { const e = episodes().find(e => e.id === id); if (!e) throw new VideoError("Выпуск не найден", 404); return e; }
 export function publicEpisode(e: PrivateEpisode): VideoEpisode {
