@@ -62,13 +62,14 @@ if (process.argv.includes('--links-only')) {
   console.log(`Backfilled links and musicEnd only: ${saved.id}`);
   process.exit(0);
 }
-const forms = { group: 'Группа', male: 'Исполнитель', female: 'Исполнительница' };
+const forms = { group: 'Группа', male: 'Исполнитель', female: 'Исполнительница', mixed: 'Исполнители', duet: 'Исполнители' };
 // Remove pronunciation stress while preserving the breve in й and diaeresis in ё.
 const readable = value => typeof value === 'string' ? value.normalize('NFD').replace(/\u0301/g, '').normalize('NFC').trim() : '';
 const aliases = values => [...new Set(values.map(readable).filter(Boolean))];
 const mixed = { r1q1: 'Группа + исполнительница', r2q5: 'Группа + исполнитель', r5q4: 'Группа + исполнительница', r5q9: 'Группа + группа' };
 const parts = { r5q4: ['Винтаж', 'Елена Корикова'], r5q9: ['Дискотека Авария', 'Моральный кодекс'] };
-const episode = { id: `prosto-v${version}`, title: `Просто квиз · выпуск ${version}`, revision: `v${version}-2026-09-08`, duration: timeline.expected_duration, mediaFile: `prosto-v${version}.mp4`, rounds: [] };
+const releaseDate = process.env.VIDEO_QUIZ_RELEASE_DATE || new Date().toISOString().slice(0, 10);
+const episode = { id: `prosto-v${version}`, title: `Просто квиз · выпуск ${version}`, revision: `v${version}-${releaseDate}`, duration: timeline.expected_duration, mediaFile: `prosto-v${version}.mp4`, rounds: [] };
 for (const r of manifest.rounds) {
   const scenes = timeline.segments.filter(s => s.round === r.number);
   const reveal = Math.min(...scenes.filter(s => s.kind === 'answer').map(s => s.start));

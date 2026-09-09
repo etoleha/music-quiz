@@ -77,7 +77,7 @@ try {
   assert.equal(nextAnswerAt(fixture, 39.99), undefined);
   assert.equal(nextAnswerAt(fixture, 40), 71);
   assert.equal(nextAnswerAt(fixture, 71), undefined);
-  for (const version of [3, 4]) {
+  for (const version of [3, 4, 5, 6, 7]) {
    const real = JSON.parse(readFileSync(join(root, `server/video-data/prosto-v${version}.json`), 'utf8'));
    for (const round of real.rounds) {
     const last = round.questions.at(-1).answerStart;
