@@ -26,6 +26,7 @@ const skipPreflight = args.has("--skip-preflight");
 const offline = args.has("--offline");
 const refreshYouTube = args.has("--refresh-youtube");
 const strictPublication = args.has("--strict-publication");
+const goldenOnly = args.has("--golden-only");
 const eraTargets = { soviet: 2, "1990s": 4, "2000s": 7, "2010s": 4, "2020s": 3 };
 const recognitionTargets = { recognizable: 5, middle: 8, deep: 7 };
 const maxPriorityArtists = 2;
@@ -41,6 +42,15 @@ const publicationVerificationPath = path.join(repoRoot, "data", "song-publicatio
 const publicationVerification = fs.existsSync(publicationVerificationPath)
   ? validatePublicationVerification(JSON.parse(fs.readFileSync(publicationVerificationPath, "utf8")))
   : { songs: {} };
+const publishedReleaseFiles = fs.readdirSync(path.join(repoRoot, "data"))
+  .filter((name) => /^quiz-release-new-rules(?:-\d+)?\.json$/u.test(name));
+const publishedSongs = publishedReleaseFiles.flatMap((name) => {
+  const release = JSON.parse(fs.readFileSync(path.join(repoRoot, "data", name), "utf8"));
+  return release.status === "verified" ? release.tracks || [] : [];
+});
+const publishedSongIds = new Set(publishedSongs.map((song) => song.songId).filter(Boolean));
+const publishedVideoIds = new Set(publishedSongs.map((song) => song.youtube?.videoId).filter(Boolean));
+const publishedSongKeys = new Set(publishedSongs.map((song) => `${song.artist}\0${song.title}`.toLocaleLowerCase("ru-RU")));
 let preflightSongIds = null;
 let preflightPlaybackBySongId = new Map();
 if (!skipPreflight) {
@@ -63,6 +73,11 @@ const hasArtistOverlap = (song, selected) => selected.some((other) =>
 
 const candidates = [...goldenReserve.songs, ...pool.songs.filter(({ songId }) => !goldenSongIds.has(songId))]
   .filter((song) => song.readyForQuiz)
+  .filter((song) => !publicationVerification.songs[song.songId]?.publishedAt)
+  .filter((song) => !publishedSongIds.has(song.songId)
+    && !publishedVideoIds.has(song.youtube?.videoId)
+    && !publishedSongKeys.has(`${song.artist}\0${song.title}`.toLocaleLowerCase("ru-RU")))
+  .filter((song) => !goldenOnly || goldenSongIds.has(song.songId))
   .filter((song) => !isArtistBlocked(song, artistSelectionPolicy))
   .filter((song) => song.reserveTier === "golden" || !preflightSongIds || preflightSongIds.has(song.songId))
   .filter((song) => !strictPublication || publicationReport(song, publicationVerification.songs[song.songId]).passed)

@@ -1,0 +1,2287 @@
+{
+  "version": 2,
+  "generatedAt": "2026-09-10T11:38:23.832Z",
+  "status": "verified",
+  "quiz": {
+    "id": "hard-32",
+    "title": "Квиз XXXII",
+    "level": "сложный",
+    "published": "10 сентября 2026"
+  },
+  "policy": {
+    "trackCount": 20,
+    "uniqueSongs": true,
+    "uniqueYouTubeVideos": true,
+    "relationshipConflicts": true,
+    "strictMetadataGate": true,
+    "scoring": {
+      "artist": 2,
+      "title": 1,
+      "maximumPerTrack": 3
+    }
+  },
+  "stats": {
+    "eras": {
+      "2000s": 7,
+      "2010s": 4,
+      "1990s": 4,
+      "2020s": 3,
+      "soviet": 2
+    },
+    "recognition": {
+      "deep": 7,
+      "recognizable": 5,
+      "middle": 8
+    },
+    "rapTracks": 5
+  },
+  "tracks": [
+    {
+      "id": "ready-0185",
+      "songId": "pool-243612de7fcc",
+      "poolId": "quiz-answer-243612de7fcc",
+      "artist": "Михаил Гребенщиков",
+      "title": "Танцы-обниманцы",
+      "artistIds": [
+        "mihailgrebenschikov",
+        "михаилгребенщиков"
+      ],
+      "artistAliases": [
+        "Михаил Гребенщиков"
+      ],
+      "titleAliases": [
+        "Танцы-обниманцы"
+      ],
+      "era": "2000s",
+      "approximateYear": 2003,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "aPqjd5cUyXQ",
+        "title": "Михаил Гребенщиков - Танцы-обниманцы",
+        "channel": "Михаил Гребенщиков",
+        "viewCount": 3195173,
+        "durationSeconds": 223,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 41,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Попал",
+          "kind": "album",
+          "year": 2003,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/103235/9a9ec394.a.5706281-1/600x600",
+          "sourceUrl": "https://music.yandex.com/album/5706281/track/42992625",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/5457712/4fe1629c.a.18427040-1/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/156416",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/5706281/track/42992625",
+          "https://music.yandex.com/artist/156416",
+          "https://www.youtube.com/watch?v=aPqjd5cUyXQ"
+        ],
+        "versionYear": 2003,
+        "releaseYear": 2003
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "sourceHash": "6ccd09c32777bac7fd4e811b9a01a073d1a7e8c9c93d939436bdcae77a22699f",
+        "checkedAt": "2026-09-07T08:07:10.913Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "42992625",
+          "artistId": "156416",
+          "albumId": "5706281",
+          "artist": "Михаил Гребенщиков",
+          "title": "Танцы-обниманцы",
+          "albumTitle": "Попал",
+          "albumYear": 2003,
+          "genre": "ruspop",
+          "sourceUrl": "https://music.yandex.com/album/5706281/track/42992625",
+          "artistSourceUrl": "https://music.yandex.com/artist/156416"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 4,
+          "monthRank": 948
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-2164",
+      "songId": "chart-07066",
+      "poolId": "pool-0853",
+      "artist": "GAZIROVKA",
+      "title": "Black",
+      "artistIds": [
+        "gazirovka"
+      ],
+      "artistAliases": [
+        "GAZIROVKA",
+        "Gazirovka"
+      ],
+      "titleAliases": [
+        "Black"
+      ],
+      "era": "2010s",
+      "approximateYear": 2017,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=B8m34KMCCfY"
+      },
+      "youtube": {
+        "videoId": "aD1IyIBdqjQ",
+        "title": "GAZIROVKA - Black (Official Video)",
+        "channel": "GAZIROVKA SOUND",
+        "viewCount": 59605615,
+        "durationSeconds": 167,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 33,
+        "duration": 7,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 2017,
+        "album": {
+          "title": "NEBOBLAKA",
+          "kind": "album",
+          "year": 2018,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/13043189/d48fad44.a.5352917-4/600x600",
+          "sourceUrl": "https://music.yandex.com/album/5352917/track/41028883",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/5496390/0a65a7f9.p.5495268/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/5495268",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Проект",
+        "performers": [
+          {
+            "name": "GAZIROVKA",
+            "musicBrainzArtistId": "38d83dc2-1156-4f11-8d87-64eadc9ace08",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/5352917/track/41028883",
+          "https://music.yandex.com/artist/5495268",
+          "https://music.apple.com/us/song/1680457034",
+          "https://www.youtube.com/watch?v=aD1IyIBdqjQ"
+        ],
+        "releaseYear": 2017
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-3097",
+      "songId": "pool-8965f6eaafae",
+      "poolId": "pool-0262",
+      "artist": "Ю.Г.",
+      "title": "Пока никто не умер",
+      "artistIds": [
+        "yug",
+        "юг"
+      ],
+      "artistAliases": [
+        "Ю.Г.",
+        "ЮГ"
+      ],
+      "titleAliases": [
+        "Пока никто не умер"
+      ],
+      "era": "2000s",
+      "approximateYear": 2004,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русская подборка",
+        "sourceUrl": "https://www.youtube.com/watch?v=BOTnzjpbu-o"
+      },
+      "youtube": {
+        "videoId": "-muPNkuG4QI",
+        "title": "Пока Никто Не Умер",
+        "channel": "YU-G - Topic",
+        "viewCount": 151563,
+        "durationSeconds": 232,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 75,
+        "duration": 7,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 2004,
+        "album": {
+          "title": "Пока никто не умер",
+          "kind": "release",
+          "year": 2004,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14270105/6fd0ae89.a.11100-4/600x600",
+          "sourceUrl": "https://music.yandex.com/album/11100/track/25035448",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/14270105/6fd0ae89.a.11100-4/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/41161",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [
+          {
+            "name": "Ю.Г.",
+            "musicBrainzArtistId": "485111e2-a1e8-4a46-bf3e-a073f005b28a",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/11100/track/25035448",
+          "https://music.yandex.com/artist/41161",
+          "https://ru.wikipedia.org/wiki/%D0%AE.%D0%93.",
+          "https://www.youtube.com/watch?v=-muPNkuG4QI"
+        ],
+        "releaseYear": 2004
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-2010",
+      "songId": "pool-259886eda971",
+      "poolId": "quiz-answer-259886eda971",
+      "artist": "Балаган Лимитед",
+      "title": "Гори-гори ясно",
+      "artistIds": [
+        "balaganlimited",
+        "балаганлимитед"
+      ],
+      "artistAliases": [
+        "Балаган Лимитед"
+      ],
+      "titleAliases": [
+        "Гори-гори ясно"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/5855134/track/31230794"
+      },
+      "youtube": {
+        "videoId": "IirFxdU7DkI",
+        "title": "Балаган Лимитед - Гори, гори ясно (Official Video)",
+        "channel": "Балаган Лимитед",
+        "viewCount": 483293,
+        "durationSeconds": 214,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 41,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 2018,
+        "album": {
+          "title": "Танцы по-русски",
+          "kind": "album",
+          "year": 2018,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/193823/63690f1c.a.5855134-1/600x600",
+          "sourceUrl": "https://music.yandex.com/album/5855134/track/31230794",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17681324/7ad942f8.p.158507/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/158507",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/5855134/track/31230794",
+          "https://music.yandex.com/artist/158507",
+          "https://balaganlimited.ru/",
+          "https://www.youtube.com/watch?v=IirFxdU7DkI"
+        ],
+        "releaseYear": 2018
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "13db617fb19af185b34fa3155912c1be698206e64988128db301d945c4752f57",
+        "checkedAt": "2026-09-07T15:09:25.924Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "31230794",
+          "artistId": "158507",
+          "albumId": "5855134",
+          "artist": "Балаган Лимитед",
+          "title": "Гори-гори ясно",
+          "albumTitle": "Танцы по-русски",
+          "albumYear": 2018,
+          "genre": "rusestrada",
+          "sourceUrl": "https://music.yandex.com/album/5855134/track/31230794",
+          "artistSourceUrl": "https://music.yandex.com/artist/158507"
+        },
+        "popularity": {
+          "popularArtist": false,
+          "catalogRank": 4,
+          "monthRank": 3306
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-0136",
+      "songId": "pool-1efebeb0605a",
+      "poolId": "quiz-answer-1efebeb0605a",
+      "artist": "Катя Огонёк",
+      "title": "Катя",
+      "artistIds": [
+        "katyaogonek",
+        "катяогонек"
+      ],
+      "artistAliases": [
+        "Катя Огонёк"
+      ],
+      "titleAliases": [
+        "Катя"
+      ],
+      "era": "2000s",
+      "approximateYear": 2005,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "e-jmw5ld98k",
+        "title": "Катя Огонек - Катя",
+        "channel": "Золото Шансона",
+        "viewCount": 179841,
+        "durationSeconds": 148,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 22,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Катя",
+          "kind": "album",
+          "year": 2005,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16616584/4314fd77.a.81570-2/400x400",
+          "sourceUrl": "https://music.yandex.com/album/81570/track/25218390",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/32236/0b2b5c6e.p.218258/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/218258",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/4058825/track/25218390",
+          "https://music.yandex.com/artist/218258",
+          "https://music.apple.com/us/album/%D0%BA%D0%B0%D1%82%D1%8F/603676223?l=ru",
+          "https://www.youtube.com/watch?v=e-jmw5ld98k"
+        ],
+        "versionYear": 2005,
+        "releaseYear": 2005
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "sourceHash": "020dc772cf50b2dbb8100fa9aef43474bef3621296f3f5d189eb3104221141ed",
+        "checkedAt": "2026-09-07T08:07:09.137Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "25218390",
+          "artistId": "218258",
+          "albumId": "81570",
+          "artist": "Катя Огонёк",
+          "title": "Катя",
+          "albumTitle": "Катя",
+          "albumYear": 2005,
+          "genre": "shanson",
+          "sourceUrl": "https://music.yandex.com/album/81570/track/25218390",
+          "artistSourceUrl": "https://music.yandex.com/artist/218258"
+        },
+        "popularity": {
+          "popularArtist": false,
+          "catalogRank": 3,
+          "monthRank": 3151
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-1767",
+      "songId": "pool-5e6ff87d2846",
+      "poolId": "quiz-answer-5e6ff87d2846",
+      "artist": "Алёна Апина",
+      "title": "Узелки",
+      "artistIds": [
+        "alenaapina",
+        "аленаапина"
+      ],
+      "artistAliases": [
+        "Алёна Апина"
+      ],
+      "titleAliases": [
+        "Узелки"
+      ],
+      "era": "1990s",
+      "approximateYear": 1995,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "-p7JYG9tcnE",
+        "title": "Алёна Апина - \"Узелки\"",
+        "channel": "Алёна Апина",
+        "viewCount": 163450,
+        "durationSeconds": 172,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 65,
+        "duration": 10,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 1995,
+        "album": {
+          "title": "Лимита",
+          "kind": "album",
+          "year": 1995,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15682289/72f86afd.a.20190681-2/600x600",
+          "sourceUrl": "https://music.yandex.com/album/20190681/track/97755361",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/19035207/676c83eb.p.360306/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/360306",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/20190681/track/97755361",
+          "https://music.yandex.com/artist/360306",
+          "https://www.youtube.com/watch?v=-p7JYG9tcnE"
+        ],
+        "releaseYear": 1995
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "3398b311d504fa0eadf8993eb73ea162c98737aa1336f5c66c6c7cc6529a50ae",
+        "checkedAt": "2026-09-07T18:07:09.903Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "97755361",
+          "artistId": "360306",
+          "albumId": "20190681",
+          "artist": "Алёна Апина",
+          "title": "Узелки",
+          "albumTitle": "Лимита",
+          "albumYear": 1995,
+          "genre": "rusestrada",
+          "sourceUrl": "https://music.yandex.com/album/20190681/track/97755361",
+          "artistSourceUrl": "https://music.yandex.com/artist/360306"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 7,
+          "monthRank": 1981
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-2109",
+      "songId": "pool-1b501a86c5f8",
+      "poolId": "pool-1445",
+      "artist": "Григорий Лепс",
+      "title": "Уходи красиво",
+      "artistIds": [
+        "grigoriileps",
+        "григорийлепс"
+      ],
+      "artistAliases": [
+        "Григорий Лепс"
+      ],
+      "titleAliases": [
+        "Уходи красиво"
+      ],
+      "era": "2000s",
+      "approximateYear": 2008,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — 100 лучших русских хитов 2009",
+        "sourceUrl": "https://www.youtube.com/watch?v=omACSwlI8Zw"
+      },
+      "youtube": {
+        "videoId": "dH5pQO2c2BE",
+        "title": "Григорий Лепс   Уходи красиво",
+        "channel": "Григорий Лепс",
+        "viewCount": 35626,
+        "durationSeconds": 225,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 37,
+        "duration": 7,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 2009,
+        "album": {
+          "title": "Водопад",
+          "kind": "release",
+          "year": 2009,
+          "sourceUrl": "https://www.grigoryleps.ru/music/9/vodopad/",
+          "rightsStatus": "contextual-only",
+          "coverStatus": "not-supplied-by-source"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17730916/5d38536b.p.165131/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/165131",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://www.grigoryleps.ru/music/9/vodopad/",
+          "https://music.yandex.com/artist/165131",
+          "https://www.universalmusic.it/popular-music/album/the-quest_30196018919/",
+          "https://rutube.ru/video/5204a0b5f417eef82964f42dd7b7ddfc/",
+          "https://www.youtube.com/watch?v=dH5pQO2c2BE"
+        ],
+        "releaseYear": 2008
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-2877",
+      "songId": "pool-37fb7e4d703a",
+      "poolId": "nineties-0081",
+      "artist": "ДДТ",
+      "title": "Что такое осень",
+      "artistIds": [
+        "ddt",
+        "ддт"
+      ],
+      "artistAliases": [
+        "ДДТ"
+      ],
+      "titleAliases": [
+        "Что такое осень"
+      ],
+      "era": "1990s",
+      "approximateYear": 1992,
+      "recognizability": "recognizable",
+      "selectionPreference": "priority-include",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Lezza TV — русские хиты 90-х",
+        "sourceUrl": "https://www.youtube.com/@LEZZATV/videos"
+      },
+      "youtube": {
+        "videoId": "LvaYk-phy14",
+        "title": "ДДТ — Что такое осень (Official Music Video)",
+        "channel": "officialddt",
+        "viewCount": 44365731,
+        "durationSeconds": 283,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 75,
+        "duration": 7,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 1992,
+        "album": {
+          "title": "Актриса Весна",
+          "kind": "release",
+          "year": 1992,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/34131/73fed284.a.168137-2/600x600",
+          "sourceUrl": "https://music.yandex.com/album/168137/track/1695498",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/5413882/66b91a87.p.358612/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/358612",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/168137/track/1695498",
+          "https://music.yandex.com/artist/358612",
+          "https://kurilev.com/ddt/27-ddt/49-aktrisa-vesna-1992",
+          "https://www.youtube.com/watch?v=LvaYk-phy14"
+        ],
+        "releaseYear": 1992
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    },
+    {
+      "id": "ready-0944",
+      "songId": "pool-74cce56378cc",
+      "poolId": "quiz-answer-74cce56378cc",
+      "artist": "Ева Власова",
+      "title": "Розовый фламинго",
+      "artistIds": [
+        "evavlasova",
+        "евавласова"
+      ],
+      "artistAliases": [
+        "Ева Власова"
+      ],
+      "titleAliases": [
+        "Розовый фламинго"
+      ],
+      "era": "2020s",
+      "approximateYear": 1994,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "0PfJZni2pV8",
+        "title": "Ева Власова - Розовый фламинго | Official Audio | 2024",
+        "channel": "Первое Музыкальное",
+        "viewCount": 207560,
+        "durationSeconds": 206,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 41,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Розовый фламинго",
+          "kind": "single",
+          "year": 2024,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/13911897/3ab31346.a.33689952-1/600x600",
+          "sourceUrl": "https://music.yandex.com/album/33689952/track/132138727",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17722696/065aaaab.p.8300495/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/8300495",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/33689952/track/132138727",
+          "https://music.yandex.com/artist/8300495",
+          "https://music.apple.com/us/song/1774230584",
+          "https://www.youtube.com/watch?v=0PfJZni2pV8"
+        ],
+        "versionYear": 2024,
+        "releaseYear": 1994
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "52eb6a03f588ea4a79f2ae06374d487342940286d21116b33154b20378a8e0ee",
+        "checkedAt": "2026-09-07T09:55:23.099Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "132138727",
+          "artistId": "8300495",
+          "albumId": "33689952",
+          "artist": "Ева Власова",
+          "title": "Розовый фламинго",
+          "albumTitle": "Розовый фламинго",
+          "albumYear": 2024,
+          "genre": "ruspop",
+          "sourceUrl": "https://music.yandex.com/album/33689952/track/132138727",
+          "artistSourceUrl": "https://music.yandex.com/artist/8300495"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 34,
+          "monthRank": 150
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/png"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-0156",
+      "songId": "pool-551ba827dc19",
+      "poolId": "quiz-answer-551ba827dc19",
+      "artist": "Олег Митяев",
+      "title": "Небесный калькулятор",
+      "artistIds": [
+        "olegmityaev",
+        "олегмитяев"
+      ],
+      "artistAliases": [
+        "Олег Митяев"
+      ],
+      "titleAliases": [
+        "Небесный калькулятор"
+      ],
+      "era": "2000s",
+      "approximateYear": 2002,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/2840976/track/24387663"
+      },
+      "youtube": {
+        "videoId": "MwvsbP3gWzY",
+        "title": "Небесный калькулятор",
+        "channel": "Олег Митяев. Официальный канал.",
+        "viewCount": 199024,
+        "durationSeconds": 260,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 51,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "Небесный калькулятор или Ж.З.Л.",
+          "kind": "album",
+          "year": 2002,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/33216/85a7d164.a.2840976-1/600x600",
+          "sourceUrl": "https://music.yandex.com/album/2840976/track/24387663",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/114728/0d8ac103.p.218090/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/218090",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/2840976/track/24387663",
+          "https://music.yandex.com/artist/218090",
+          "https://www.youtube.com/watch?v=MwvsbP3gWzY"
+        ],
+        "versionYear": 2002,
+        "releaseYear": 2002
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "sourceHash": "45254e6eedb6c5fdb495d998e2dda2a65b4cca937ff7ebd058ae548f2c89a3e1",
+        "checkedAt": "2026-09-07T08:07:10.772Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "24387663",
+          "artistId": "218090",
+          "albumId": "2840976",
+          "artist": "Олег Митяев",
+          "title": "Небесный калькулятор",
+          "albumTitle": "Небесный калькулятор или Ж.З.Л.",
+          "albumYear": 2002,
+          "genre": "rusbards",
+          "sourceUrl": "https://music.yandex.com/album/2840976/track/24387663",
+          "artistSourceUrl": "https://music.yandex.com/artist/218090"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 4,
+          "monthRank": 1623
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-2050",
+      "songId": "pool-6eb9d45b5854",
+      "poolId": "quiz-answer-6eb9d45b5854",
+      "artist": "Аквариум",
+      "title": "25 к 10",
+      "artistIds": [
+        "akvarium",
+        "аквариум"
+      ],
+      "artistAliases": [
+        "Аквариум"
+      ],
+      "titleAliases": [
+        "25 к 10"
+      ],
+      "era": "soviet",
+      "approximateYear": 1981,
+      "recognizability": "middle",
+      "selectionPreference": "golden-metadata-replacement",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/2278447/track/20165363"
+      },
+      "youtube": {
+        "videoId": "UYvupkJA_YM",
+        "title": "Аквариум - 25 к 10.",
+        "channel": "Владимир Старк",
+        "viewCount": 71231,
+        "durationSeconds": 168,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 45,
+        "duration": 8,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "История Аквариума, Том 1",
+          "kind": "album",
+          "year": 1982,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/10139807/bc468248.a.2278447-2/600x600",
+          "sourceUrl": "https://music.yandex.com/album/2278447/track/20165363",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/108289/6c4059f1.p.188963/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/188963",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/2278447/track/20165363",
+          "https://music.yandex.com/artist/188963",
+          "https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%83%D1%81%D1%82%D0%B8%D0%BA%D0%B0_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC_%C2%AB%D0%90%D0%BA%D0%B2%D0%B0%D1%80%D0%B8%D1%83%D0%BC%D0%B0%C2%BB)",
+          "https://www.youtube.com/watch?v=UYvupkJA_YM"
+        ],
+        "versionYear": 1981,
+        "releaseYear": 1981
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "5c86ae1937b1c5040c0cd6d7e1fd9fc2ff186e3f4b9698c8ba3c29d15beb5b48",
+        "checkedAt": "2026-09-07T21:45:51.581Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "20165363",
+          "artistId": "188963",
+          "albumId": "2278447",
+          "artist": "Аквариум",
+          "title": "25 к 10",
+          "albumTitle": "История Аквариума, Том 1",
+          "albumYear": 1982,
+          "genre": "rusrock",
+          "sourceUrl": "https://music.yandex.com/album/2278447/track/20165363",
+          "artistSourceUrl": "https://music.yandex.com/artist/188963"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 4,
+          "monthRank": 1338
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-2734",
+      "songId": "pool-deb7b48ff2de",
+      "poolId": "quiz-answer-deb7b48ff2de",
+      "artist": "MONOKINI",
+      "title": "Дотянуться до солнца",
+      "artistIds": [
+        "monokini"
+      ],
+      "artistAliases": [
+        "MONOKINI"
+      ],
+      "titleAliases": [
+        "Дотянуться до солнца"
+      ],
+      "era": "2000s",
+      "approximateYear": 2001,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "Nwl-vtix29c",
+        "title": "Монокини - Дотянуться до солнца",
+        "channel": "МАКСИМ ФАДЕЕВ",
+        "viewCount": 14280464,
+        "durationSeconds": 243,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 40,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 2001,
+        "album": {
+          "title": "Дотянуться до солнца",
+          "kind": "album",
+          "year": 2001,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/10126140/cb9f1c30.a.30545086-1/600x600",
+          "sourceUrl": "https://music.yandex.com/album/30545086/track/124459287",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/6058982/0d463a57.p.21972830/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/21972830",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Проект",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/30545086/track/124459287",
+          "https://music.yandex.com/artist/21972830",
+          "https://www.youtube.com/watch?v=Nwl-vtix29c"
+        ],
+        "releaseYear": 2001
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "sourceHash": "4e6dc29ab2a50bed5b59a8638fe4a432b459f1c7a2f5ca4d8df3cc6b2198572f",
+        "checkedAt": "2026-09-07T00:39:51.310Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "124459287",
+          "artistId": "21972830",
+          "albumId": "30545086",
+          "artist": "MONOKINI",
+          "title": "Дотянуться до солнца",
+          "albumTitle": "Дотянуться до солнца",
+          "albumYear": 2001,
+          "genre": "ruspop",
+          "sourceUrl": "https://music.yandex.com/album/30545086/track/124459287",
+          "artistSourceUrl": "https://music.yandex.com/artist/21972830"
+        },
+        "popularity": {
+          "popularArtist": false,
+          "catalogRank": 1,
+          "monthRank": 3305
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-2134",
+      "songId": "pool-a80d6cdbec9f",
+      "poolId": "quiz-answer-a80d6cdbec9f",
+      "artist": "Звери",
+      "title": "Запомни меня",
+      "artistIds": [
+        "zveri",
+        "звери"
+      ],
+      "artistAliases": [
+        "Звери"
+      ],
+      "titleAliases": [
+        "Запомни меня"
+      ],
+      "era": "2000s",
+      "approximateYear": 2004,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Яндекс Музыка — треки исполнителя по популярности",
+        "sourceUrl": "https://music.yandex.com/album/486805/track/17563787"
+      },
+      "youtube": {
+        "videoId": "4ymR2qz5epY",
+        "title": "Звери - Запомни меня",
+        "channel": "hddkiller662",
+        "viewCount": 383027,
+        "durationSeconds": 209,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 35,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 2004,
+        "album": {
+          "title": "Районы-кварталы",
+          "kind": "album",
+          "year": 2004,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/139444/35d2c500.a.486805-4/600x600",
+          "sourceUrl": "https://music.yandex.com/album/486805/track/17563787",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/17696724/ff983ee0.p.156427/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/156427",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/486805/track/17563787",
+          "https://music.yandex.com/artist/156427",
+          "https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%D1%8B-%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%D1%8B",
+          "https://www.youtube.com/watch?v=4ymR2qz5epY"
+        ],
+        "releaseYear": 2004
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "sourceHash": "9613c456af3890a6343086155092ef080647c59e94f75a7cd8986132d10da7b9",
+        "checkedAt": "2026-09-07T00:39:54.059Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "17563787",
+          "artistId": "156427",
+          "albumId": "486805",
+          "artist": "Звери",
+          "title": "Запомни меня",
+          "albumTitle": "Районы-кварталы",
+          "albumYear": 2004,
+          "genre": "rusrock",
+          "sourceUrl": "https://music.yandex.com/album/486805/track/17563787",
+          "artistSourceUrl": "https://music.yandex.com/artist/156427"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 11,
+          "monthRank": 125
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-1769",
+      "songId": "pool-7143d3db7682",
+      "poolId": "soviet-0019",
+      "artist": "Игорь Корнелюк",
+      "title": "Билет на балет",
+      "artistIds": [
+        "igorkornelyuk",
+        "игорькорнелюк"
+      ],
+      "artistAliases": [
+        "Игорь Корнелюк"
+      ],
+      "titleAliases": [
+        "Билет на балет"
+      ],
+      "era": "soviet",
+      "approximateYear": 1988,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-soviet-collection",
+        "sourceName": "Песня года",
+        "sourceUrl": "https://ru.wikipedia.org/wiki/Корнелюк,_Игорь_Евгеньевич"
+      },
+      "youtube": {
+        "videoId": "vSk14IhKmBc",
+        "title": "Игорь Корнелюк - Билет на балет",
+        "channel": "Сергей К.",
+        "viewCount": 2898431,
+        "durationSeconds": 247,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 90,
+        "duration": 10,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 1988,
+        "album": {
+          "title": "Билет на балет",
+          "kind": "archival-release",
+          "year": 1989,
+          "sourceUrl": "https://igorkorneluk.com/portfolio-item/bilet-na-balet",
+          "rightsStatus": "contextual-only",
+          "archivalMaterial": true
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/38044/9124cdd7.a.1983500-2/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/359478",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [
+          {
+            "name": "Игорь Корнелюк",
+            "joinPhrase": ""
+          }
+        ],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/23955840/track/26353233",
+          "https://music.yandex.com/artist/359478",
+          "https://igorkorneluk.com/portfolio-item/bilet-na-balet",
+          "https://www.youtube.com/watch?v=vSk14IhKmBc"
+        ],
+        "releaseYear": 1988
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "2d6d4b9c4f1370af0db2b3d8b67557a156d094db7d8230aa195bafb8fefa0046",
+        "checkedAt": "2026-09-07T15:08:57.914Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "26353233",
+          "artistId": "359478",
+          "albumId": "23955840",
+          "artist": "Игорь Корнелюк",
+          "title": "Билет на балет",
+          "albumTitle": "Всё лучшее в одном",
+          "albumYear": 2022,
+          "genre": "rusestrada",
+          "sourceUrl": "https://music.yandex.com/album/23955840/track/26353233",
+          "artistSourceUrl": "https://music.yandex.com/artist/359478"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 4,
+          "monthRank": 1373
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-2309",
+      "songId": "pool-40a8a5ff3b37",
+      "poolId": "quiz-answer-40a8a5ff3b37",
+      "artist": "Мурат Насыров",
+      "title": "Южная ночь",
+      "artistIds": [
+        "muratnasyrov",
+        "муратнасыров"
+      ],
+      "artistAliases": [
+        "Мурат Насыров"
+      ],
+      "titleAliases": [
+        "Южная ночь"
+      ],
+      "era": "1990s",
+      "approximateYear": 1998,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "UYtf2hB0iVI",
+        "title": "Мурат Насыров - Южная ночь (Official video)",
+        "channel": "МУЗПАРАД",
+        "viewCount": 662974,
+        "durationSeconds": 194,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 37,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 1998,
+        "album": {
+          "title": "Моя история",
+          "kind": "album",
+          "year": 1998,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/6296749/8ec3f999.a.23758547-1/600x600",
+          "sourceUrl": "https://music.yandex.com/album/23758547/track/107788181",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/41288/5bca1c1f.p.165142/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/165142",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/23758547/track/107788181",
+          "https://music.yandex.com/artist/165142",
+          "https://www.youtube.com/watch?v=UYtf2hB0iVI"
+        ],
+        "releaseYear": 1998
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "4c2305d5e5ce20aebeda9e60be7ad0425886e26fb9d78da9b5a9ab4c70890736",
+        "checkedAt": "2026-09-07T15:09:47.779Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "107788181",
+          "artistId": "165142",
+          "albumId": "23758547",
+          "artist": "Мурат Насыров",
+          "title": "Южная ночь",
+          "albumTitle": "Моя история",
+          "albumYear": 1998,
+          "genre": "rusestrada",
+          "sourceUrl": "https://music.yandex.com/album/23758547/track/107788181",
+          "artistSourceUrl": "https://music.yandex.com/artist/165142"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 8,
+          "monthRank": 968
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-1916",
+      "songId": "pool-2cd39691b37f",
+      "poolId": "quiz-answer-2cd39691b37f",
+      "artist": "Алла Пугачёва",
+      "title": "Примадонна",
+      "artistIds": [
+        "allapugacheva",
+        "аллапугачева"
+      ],
+      "artistAliases": [
+        "Алла Пугачёва"
+      ],
+      "titleAliases": [
+        "Примадонна"
+      ],
+      "era": "1990s",
+      "approximateYear": 1997,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — первый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "GJ_mXXSmue4",
+        "title": "Алла Пугачёва - Примадонна (Official HD Video)",
+        "channel": "Алла Пугачёва",
+        "viewCount": 255444,
+        "durationSeconds": 187,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 60,
+        "duration": 8,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 1997,
+        "album": {
+          "title": "Да!",
+          "kind": "album",
+          "year": 1998,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16616584/efb65ded.a.63001-2/600x600",
+          "sourceUrl": "https://music.yandex.com/album/63001/track/30223613",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/63210/96e60dee.p.167026/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/167026",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнительница",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/63001/track/30223613",
+          "https://music.yandex.com/artist/167026",
+          "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BC%D0%B0%D0%B4%D0%BE%D0%BD%D0%BD%D0%B0_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)",
+          "https://www.youtube.com/watch?v=GJ_mXXSmue4"
+        ],
+        "releaseYear": 1997
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "b77c9ee8ea1188c1627840839862083d58e3e6dcf453c9b22d674d027ca033f2",
+        "checkedAt": "2026-09-07T15:09:31.164Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "30223613",
+          "artistId": "167026",
+          "albumId": "63001",
+          "artist": "Алла Пугачёва",
+          "title": "Примадонна",
+          "albumTitle": "Да!",
+          "albumYear": 1998,
+          "genre": "rusestrada",
+          "sourceUrl": "https://music.yandex.com/album/63001/track/30223613",
+          "artistSourceUrl": "https://music.yandex.com/artist/167026"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 203,
+          "monthRank": 138
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-2583",
+      "songId": "pool-f3f2d8a649bb",
+      "poolId": "quiz-answer-f3f2d8a649bb",
+      "artist": "Макс Корж",
+      "title": "Мотылёк",
+      "artistIds": [
+        "makskorzh",
+        "макскорж"
+      ],
+      "artistAliases": [
+        "Макс Корж"
+      ],
+      "titleAliases": [
+        "Мотылёк"
+      ],
+      "era": "2010s",
+      "approximateYear": 2013,
+      "recognizability": "middle",
+      "selectionPreference": "standard",
+      "artistNovelty": "previously-used-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — первый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "DdXm1DoKolk",
+        "title": "Макс Корж - Мотылек",
+        "channel": "Макс Корж - OFFICIAL FANPAGE",
+        "viewCount": 278525,
+        "durationSeconds": 238,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 43,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 2013,
+        "album": {
+          "title": "Жить в кайф",
+          "kind": "album",
+          "year": 2013,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15317937/a79d3ed6.a.1683700-3/600x600",
+          "sourceUrl": "https://music.yandex.com/album/1683700/track/49809203",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/2399641/5d26d7e5.p.975699/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/975699",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/1683700/track/49809203",
+          "https://music.yandex.com/artist/975699",
+          "https://www.youtube.com/watch?v=DdXm1DoKolk"
+        ],
+        "releaseYear": 2013
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "a54ed6d5a389215f1a80a75fe7f8db75352efefa900ac837b1cdc066db8d5f56",
+        "checkedAt": "2026-09-07T21:12:35.713Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "49809203",
+          "artistId": "975699",
+          "albumId": "1683700",
+          "artist": "Макс Корж",
+          "title": "Мотылёк",
+          "albumTitle": "Жить в кайф",
+          "albumYear": 2013,
+          "genre": "rusrap",
+          "sourceUrl": "https://music.yandex.com/album/1683700/track/49809203",
+          "artistSourceUrl": "https://music.yandex.com/artist/975699"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 10,
+          "monthRank": 13
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-0554",
+      "songId": "pool-871e766e6c75",
+      "poolId": "quiz-answer-871e766e6c75",
+      "artist": "Дурной Вкус",
+      "title": "пластинки",
+      "artistIds": [
+        "durnoivkus",
+        "дурнойвкус"
+      ],
+      "artistAliases": [
+        "Дурной Вкус"
+      ],
+      "titleAliases": [
+        "пластинки"
+      ],
+      "era": "2010s",
+      "approximateYear": 2018,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "ccMHSE3VEqg",
+        "title": "дурной вкус - пластинки",
+        "channel": "Дурной Вкус",
+        "viewCount": 11417854,
+        "durationSeconds": 185,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 32,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "пластинки",
+          "kind": "single",
+          "year": 2018,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/5282321/629b4f09.a.5872052-4/600x600",
+          "sourceUrl": "https://music.yandex.com/album/5872052/track/43945741",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/16485602/adcb4c31.p.6269258/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/6269258",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Группа",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/5872052/track/43945741",
+          "https://music.yandex.com/artist/6269258",
+          "https://www.youtube.com/watch?v=ccMHSE3VEqg"
+        ],
+        "versionYear": 2018,
+        "releaseYear": 2018
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "sourceHash": "eaf6bd058cae2d70a5c75a1fe51f1a3d3e1f68cb90c816e88cc47aede37b3654",
+        "checkedAt": "2026-09-07T08:07:28.808Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "43945741",
+          "artistId": "6269258",
+          "albumId": "5872052",
+          "artist": "Дурной Вкус",
+          "title": "пластинки",
+          "albumTitle": "пластинки",
+          "albumYear": 2018,
+          "genre": "postpunk",
+          "sourceUrl": "https://music.yandex.com/album/5872052/track/43945741",
+          "artistSourceUrl": "https://music.yandex.com/artist/6269258"
+        },
+        "popularity": {
+          "popularArtist": false,
+          "catalogRank": 1,
+          "monthRank": 2992
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-1648",
+      "songId": "pool-51442f666d4a",
+      "poolId": "quiz-answer-51442f666d4a",
+      "artist": "SQWOZ BAB",
+      "title": "ПЫХ-ПЫХ",
+      "artistIds": [
+        "sqwozbab"
+      ],
+      "artistAliases": [
+        "SQWOZ BAB"
+      ],
+      "titleAliases": [
+        "ПЫХ-ПЫХ"
+      ],
+      "era": "2020s",
+      "approximateYear": 2024,
+      "recognizability": "deep",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "trusted-russian-collection",
+        "sourceName": "Музыкальный квиз — новый формат",
+        "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
+      },
+      "youtube": {
+        "videoId": "_ZFEwSIFjjI",
+        "title": "SQWOZ BAB — ПЫХ-ПЫХ (Official audio)",
+        "channel": "SQWOZ BAB",
+        "viewCount": 334202,
+        "durationSeconds": 141,
+        "selectedBy": "automatic-search"
+      },
+      "clip": {
+        "start": 30,
+        "duration": 15,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "album": {
+          "title": "GENERATION ПЫХ",
+          "kind": "album",
+          "year": 2024,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/14715139/db88dd64.a.34188974-2/600x600",
+          "sourceUrl": "https://music.yandex.com/album/34188974/track/132918363",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/15142616/27c86024.p.5688391/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/5688391",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Проект",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/34188974/track/132918363",
+          "https://music.yandex.com/artist/5688391",
+          "https://www.youtube.com/watch?v=_ZFEwSIFjjI"
+        ],
+        "versionYear": 2024,
+        "releaseYear": 2024
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published",
+      "goldenVerification": {
+        "status": "passed",
+        "verifierVersion": 2,
+        "sourceHash": "e507bea14d9b1c8d440dc3cd02e0b68a09b77b04f82f23497ce2c182a412dfb1",
+        "checkedAt": "2026-09-07T10:27:27.807Z",
+        "catalog": {
+          "provider": "Яндекс Музыка",
+          "trackId": "132918363",
+          "artistId": "5688391",
+          "albumId": "34188974",
+          "artist": "SQWOZ BAB",
+          "title": "ПЫХ-ПЫХ",
+          "albumTitle": "GENERATION ПЫХ",
+          "albumYear": 2024,
+          "genre": "rusrap",
+          "sourceUrl": "https://music.yandex.com/album/34188974/track/132918363",
+          "artistSourceUrl": "https://music.yandex.com/artist/5688391"
+        },
+        "popularity": {
+          "popularArtist": true,
+          "catalogRank": 7,
+          "monthRank": 44
+        },
+        "media": {
+          "cover": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/jpeg"
+          },
+          "artistImage": {
+            "passed": true,
+            "status": 200,
+            "contentType": "image/png"
+          },
+          "youtube": {
+            "status": "passed",
+            "reason": "watch-page-playable"
+          }
+        }
+      }
+    },
+    {
+      "id": "ready-2487",
+      "songId": "chart-00157",
+      "poolId": "pool-2111",
+      "artist": "Jamik & PUSSYKILLER",
+      "title": "Франция",
+      "artistIds": [
+        "jamik",
+        "pussykiller"
+      ],
+      "artistAliases": [
+        "Jamik & PUSSYKILLER",
+        "JAMIK",
+        "Jamik",
+        "PUSSYKILLER"
+      ],
+      "titleAliases": [
+        "Франция"
+      ],
+      "era": "2020s",
+      "approximateYear": 2021,
+      "recognizability": "recognizable",
+      "selectionPreference": "standard",
+      "artistNovelty": "new-artist",
+      "eligibility": {
+        "approved": true,
+        "evidence": "russian-chart-cyrillic-or-high-confidence",
+        "sourceName": "Spotify Daily Chart — Russia",
+        "sourceUrl": "https://kworb.net/spotify/country/ru_daily_totals.html"
+      },
+      "youtube": {
+        "videoId": "EL5ytIXft5M",
+        "title": "Jamik & PUSSYKILLER — Франция",
+        "selectedBy": "official-label-video",
+        "durationSeconds": 124
+      },
+      "clip": {
+        "start": 21,
+        "duration": 7,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
+      },
+      "optionalMetadata": {
+        "releaseYearStatus": "verified",
+        "versionYear": 2021,
+        "album": {
+          "title": "Франция",
+          "kind": "release",
+          "year": 2021,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/4489759/4f8f248d.a.14497546-1/600x600",
+          "sourceUrl": "https://music.yandex.com/album/14497546/track/79643890",
+          "rightsStatus": "contextual-only"
+        },
+        "artistImage": {
+          "url": "https://avatars.yandex.net/get-music-content/16334817/8686b38c.p.9185039/400x400",
+          "sourceUrl": "https://music.yandex.com/artist/9185039",
+          "attribution": "Яндекс Музыка",
+          "rightsStatus": "contextual-only"
+        },
+        "artistForm": "Исполнитель + исполнитель",
+        "performers": [],
+        "facts": [],
+        "sources": [
+          "https://music.yandex.com/album/14497546/track/79643890",
+          "https://music.yandex.com/artist/9185039",
+          "https://music.yandex.com/artist/6859073",
+          "https://www.youtube.com/watch?v=EL5ytIXft5M",
+          "https://music.apple.com/us/song/1558120630"
+        ],
+        "releaseYear": 2021
+      },
+      "readyForQuiz": true,
+      "reserveTier": "golden",
+      "goldenStatus": "published"
+    }
+  ],
+  "publication": [
+    {
+      "songId": "pool-243612de7fcc",
+      "artist": "Михаил Гребенщиков",
+      "title": "Танцы-обниманцы",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "chart-07066",
+      "artist": "GAZIROVKA",
+      "title": "Black",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-8965f6eaafae",
+      "artist": "Ю.Г.",
+      "title": "Пока никто не умер",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-259886eda971",
+      "artist": "Балаган Лимитед",
+      "title": "Гори-гори ясно",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-1efebeb0605a",
+      "artist": "Катя Огонёк",
+      "title": "Катя",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-5e6ff87d2846",
+      "artist": "Алёна Апина",
+      "title": "Узелки",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-1b501a86c5f8",
+      "artist": "Григорий Лепс",
+      "title": "Уходи красиво",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-37fb7e4d703a",
+      "artist": "ДДТ",
+      "title": "Что такое осень",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-74cce56378cc",
+      "artist": "Ева Власова",
+      "title": "Розовый фламинго",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-551ba827dc19",
+      "artist": "Олег Митяев",
+      "title": "Небесный калькулятор",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-6eb9d45b5854",
+      "artist": "Аквариум",
+      "title": "25 к 10",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-deb7b48ff2de",
+      "artist": "MONOKINI",
+      "title": "Дотянуться до солнца",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-a80d6cdbec9f",
+      "artist": "Звери",
+      "title": "Запомни меня",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-7143d3db7682",
+      "artist": "Игорь Корнелюк",
+      "title": "Билет на балет",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-40a8a5ff3b37",
+      "artist": "Мурат Насыров",
+      "title": "Южная ночь",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-2cd39691b37f",
+      "artist": "Алла Пугачёва",
+      "title": "Примадонна",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-f3f2d8a649bb",
+      "artist": "Макс Корж",
+      "title": "Мотылёк",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-871e766e6c75",
+      "artist": "Дурной Вкус",
+      "title": "пластинки",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "pool-51442f666d4a",
+      "artist": "SQWOZ BAB",
+      "title": "ПЫХ-ПЫХ",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    },
+    {
+      "songId": "chart-00157",
+      "artist": "Jamik & PUSSYKILLER",
+      "title": "Франция",
+      "lifecycle": "published",
+      "blockers": [],
+      "passed": true
+    }
+  ]
+}
