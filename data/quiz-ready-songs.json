@@ -22723,7 +22723,8 @@
       "artist": "Вадим Усланов",
       "title": "Ты сделана из огня",
       "artistIds": [
-        "vadimuslanov"
+        "vadimuslanov",
+        "вадимусланов"
       ],
       "artistAliases": [
         "Вадим Усланов"
@@ -22753,17 +22754,17 @@
       "clip": {
         "start": 50,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Ты сделана из огня",
-          "kind": "album",
+          "kind": "release",
           "year": 1998,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/34131/1ddad790.a.63105-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/34131/1ddad790.a.63105-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/63105/track/28118003",
           "rightsStatus": "contextual-only"
         },
@@ -22773,18 +22774,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Исполнитель",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/63105/track/28118003",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.yandex.com/artist/167077",
+          "https://www.youtube.com/watch?v=l5sa3jxv0s4",
+          "https://music.apple.com/us/song/1083905300",
+          "https://www.youtube.com/watch?v=qsWNB3eHaq0"
         ],
-        "versionYear": 1998
+        "versionYear": 1998,
+        "releaseYear": 1998,
+        "audio": {
+          "integratedLufs": -8.3,
+          "truePeakDbfs": 2.6,
+          "playbackVolume": 46,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "59ce76a79c6db9b77dac2dc133ec6c97dd1e901e8e689d7256a7addebed0a531",
@@ -27221,17 +27232,17 @@
       "clip": {
         "start": 51,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Stare",
-          "kind": "album",
+          "kind": "release",
           "year": 1996,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/4399834/97974323.a.18439163-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/4399834/97974323.a.18439163-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/18439163/track/91644130",
           "rightsStatus": "contextual-only"
         },
@@ -27241,17 +27252,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/18439163/track/91644130"
+          "https://music.yandex.com/album/18439163/track/91644130",
+          "https://music.yandex.com/artist/232195",
+          "https://en.wikipedia.org/wiki/Stare_(album)",
+          "https://vinyl.com.ua/cd/gorky-park-stare-sojuz-szcd-0631-96-sweden-by-dcm-digipak-348739.html",
+          "https://www.youtube.com/watch?v=p-fVDY8dA9A"
         ],
-        "versionYear": 1996
+        "versionYear": 1996,
+        "releaseYear": 1996,
+        "audio": {
+          "integratedLufs": -21,
+          "truePeakDbfs": -7.5,
+          "playbackVolume": 85,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "b1386d6053c224e41465c838fa710f5f7414635f520f98bdd632faafb90cf903",
@@ -35712,7 +35734,8 @@
       "artist": "НАИВ",
       "title": "Воспоминания о былой любви",
       "artistIds": [
-        "naiv"
+        "naiv",
+        "наив"
       ],
       "artistAliases": [
         "НАИВ"
@@ -35721,7 +35744,7 @@
         "Воспоминания о былой любви"
       ],
       "era": "2000s",
-      "approximateYear": 2007,
+      "approximateYear": 2001,
       "recognizability": "deep",
       "selectionPreference": "standard",
       "artistNovelty": "new-artist",
@@ -35732,27 +35755,27 @@
         "sourceUrl": "https://boosty.to/quizpartynakhate/media/all"
       },
       "youtube": {
-        "videoId": "A7WgZbZenIs",
-        "title": "Наив - Воспоминания о былой любви",
+        "videoId": "JRQv5GA_xgM",
+        "title": "НАИВ — Воспоминания о былой любви",
         "channel": "xmoonlight (xmoonlight)",
         "viewCount": 187538,
-        "durationSeconds": 312,
-        "selectedBy": "automatic-search"
+        "durationSeconds": 303,
+        "selectedBy": "official-topic-audio"
       },
       "clip": {
         "start": 55,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Alter Ego",
-          "kind": "album",
+          "kind": "release",
           "year": 2007,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/2350646/a0db91ee.a.12346875-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/2350646/a0db91ee.a.12346875-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/12346875/track/72054565",
           "rightsStatus": "contextual-only"
         },
@@ -35762,18 +35785,29 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/12346875/track/72054565",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.yandex.com/artist/41068",
+          "https://www.zvuki.ru/S/P/55561/",
+          "https://top-cd.ru/cd/naiv-alter-ego-cd-2",
+          "https://newsmuz.com/news_2_6330.htm",
+          "https://www.youtube.com/watch?v=JRQv5GA_xgM"
         ],
-        "versionYear": 2007
+        "versionYear": 2007,
+        "releaseYear": 2001,
+        "audio": {
+          "integratedLufs": -13.1,
+          "truePeakDbfs": 0,
+          "playbackVolume": 79,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "93318c6960c24479e272bb9cfbc53ae4679781904049c924846c515c3acd2a69",
@@ -37809,19 +37843,19 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 45,
-        "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "start": 20,
+        "duration": 11,
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Первая любовь",
-          "kind": "album",
+          "kind": "release",
           "year": 2008,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/5878680/6a44bcef.a.23671219-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/5878680/6a44bcef.a.23671219-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/23671219/track/107731655",
           "rightsStatus": "contextual-only"
         },
@@ -37831,18 +37865,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Проект",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/23671219/track/107731655",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.yandex.com/artist/226636",
+          "https://www.kp.ru/daily/24367/551279/",
+          "https://www.shazam.com/ru-ru/song/328307934/%D1%82%D1%8B-%D0%B1%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0",
+          "https://www.youtube.com/watch?v=kML2dgepdms"
         ],
-        "versionYear": 2008
+        "versionYear": 2008,
+        "releaseYear": 2008,
+        "audio": {
+          "integratedLufs": -11,
+          "truePeakDbfs": 0.3,
+          "playbackVolume": 62,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "852a725314888a193d7ad61993df2d8f2c5a45d2e1c9fb5bd7b4c338dcbec68f",
@@ -39856,7 +39900,8 @@
       "artist": "Артур Пирожков",
       "title": "#Алкоголичка",
       "artistIds": [
-        "arturpirozhkov"
+        "arturpirozhkov",
+        "артурпирожков"
       ],
       "artistAliases": [
         "Артур Пирожков"
@@ -39866,7 +39911,7 @@
       ],
       "era": "2010s",
       "approximateYear": 2019,
-      "recognizability": "middle",
+      "recognizability": "recognizable",
       "selectionPreference": "standard",
       "artistNovelty": "new-artist",
       "eligibility": {
@@ -39886,17 +39931,17 @@
       "clip": {
         "start": 57,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "#Алкоголичка",
-          "kind": "single",
+          "kind": "release",
           "year": 2019,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/192707/6b252278.a.7941246-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/192707/6b252278.a.7941246-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/7941246/track/54833725",
           "rightsStatus": "contextual-only"
         },
@@ -39906,17 +39951,27 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Исполнитель",
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/7941246/track/54833725"
+          "https://music.yandex.com/album/7941246/track/54833725",
+          "https://music.yandex.com/artist/218107",
+          "https://www.youtube.com/watch?v=47JI4G-qYmc",
+          "https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D1%87%D0%BA%D0%B0_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)"
         ],
-        "versionYear": 2019
+        "versionYear": 2019,
+        "releaseYear": 2019,
+        "audio": {
+          "integratedLufs": -14.4,
+          "truePeakDbfs": 0.5,
+          "playbackVolume": 85,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "83f4b695d8f5c64b67492d95d1fe642db749bd4853a48d357d8faf98fb92c029",
@@ -43559,7 +43614,8 @@
       "artist": "ЗОМБ",
       "title": "Улетали птицами гордыми",
       "artistIds": [
-        "zomb"
+        "zomb",
+        "зомб"
       ],
       "artistAliases": [
         "ЗОМБ"
@@ -43568,8 +43624,8 @@
         "Улетали птицами гордыми"
       ],
       "era": "2010s",
-      "approximateYear": 2017,
-      "recognizability": "middle",
+      "approximateYear": 2016,
+      "recognizability": "deep",
       "selectionPreference": "standard",
       "artistNovelty": "new-artist",
       "eligibility": {
@@ -43589,17 +43645,17 @@
       "clip": {
         "start": 46,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Улетали птицами гордыми",
-          "kind": "single",
+          "kind": "release",
           "year": 2017,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/15018579/65055802.a.4513262-5/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15018579/65055802.a.4513262-5/600x600",
           "sourceUrl": "https://music.yandex.com/album/4513262/track/35988248",
           "rightsStatus": "contextual-only"
         },
@@ -43609,17 +43665,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Исполнитель",
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/4513262/track/35988248"
+          "https://music.yandex.com/album/4513262/track/35988248",
+          "https://music.yandex.com/artist/4764396",
+          "https://music.apple.com/sk/song/1840375705",
+          "https://www.shazam.com/song/1840375705/%D1%83%D0%BB%D0%B5%D1%82%D0%B0%D0%BB%D0%B8-%D0%BF%D1%82%D0%B8%D1%86%D0%B0%D0%BC%D0%B8-%D0%B3%D0%BE%D1%80%D0%B4%D1%8B%D0%BC%D0%B8/music-video",
+          "https://www.youtube.com/watch?v=t1q7JIuZ9iA"
         ],
-        "versionYear": 2017
+        "versionYear": 2017,
+        "releaseYear": 2016,
+        "audio": {
+          "integratedLufs": -6.3,
+          "truePeakDbfs": 1.4,
+          "playbackVolume": 36,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "b2e7ac89bed57612095b259b262b99f28fb059a7403bdc392676bd69be5d40df",
@@ -49809,7 +49876,8 @@
       "artist": "Операция Пластилин",
       "title": "Заткнись и целуй меня",
       "artistIds": [
-        "operatsiyaplastilin"
+        "operatsiyaplastilin",
+        "операцияпластилин"
       ],
       "artistAliases": [
         "Операция Пластилин"
@@ -49819,7 +49887,7 @@
       ],
       "era": "2010s",
       "approximateYear": 2012,
-      "recognizability": "middle",
+      "recognizability": "deep",
       "selectionPreference": "standard",
       "artistNovelty": "new-artist",
       "eligibility": {
@@ -49839,17 +49907,17 @@
       "clip": {
         "start": 30,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Эйфория",
-          "kind": "album",
+          "kind": "release",
           "year": 2012,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/15682289/c9bc3db3.a.1924728-3/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15682289/c9bc3db3.a.1924728-3/600x600",
           "sourceUrl": "https://music.yandex.com/album/1924728/track/31430579",
           "rightsStatus": "contextual-only"
         },
@@ -49859,18 +49927,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/1924728/track/31430579",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.yandex.com/artist/2882652",
+          "https://www.shazam.com/song/1160138854/%D0%B7%D0%B0%D1%82%D0%BA%D0%BD%D0%B8%D1%81%D1%8C-%D0%B8-%D1%86%D0%B5%D0%BB%D1%83%D0%B9-%D0%BC%D0%B5%D0%BD%D1%8F",
+          "https://opg.ltd/about/",
+          "https://www.youtube.com/watch?v=6fUI1JXKOXc"
         ],
-        "versionYear": 2012
+        "versionYear": 2012,
+        "releaseYear": 2012,
+        "audio": {
+          "integratedLufs": -12.2,
+          "truePeakDbfs": 0.3,
+          "playbackVolume": 72,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -61624,7 +61702,7 @@
         "Dream Machine"
       ],
       "era": "2010s",
-      "approximateYear": 2015,
+      "approximateYear": 2013,
       "recognizability": "middle",
       "selectionPreference": "standard",
       "artistNovelty": "new-artist",
@@ -61645,18 +61723,18 @@
       "clip": {
         "start": 53,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
-          "title": "Synthwave, Vol. 2",
+          "title": "The Universe Made of Darkness",
           "kind": "album",
-          "year": 2015,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/16406615/14d79180.a.38134915-1/400x400",
-          "sourceUrl": "https://music.yandex.com/album/38134915/track/26115551",
+          "year": 2013,
+          "coverUrl": "https://avatars.yandex.net/get-music-content/17784780/93148019.a.2130988-2/600x600",
+          "sourceUrl": "https://www.allmusic.com/album/the-universe-made-of-darkness-mw0004030675",
           "rightsStatus": "contextual-only"
         },
         "artistImage": {
@@ -61665,17 +61743,29 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/38134915/track/26115551"
+          "https://music.yandex.com/album/38134915/track/26115551",
+          "https://music.yandex.com/artist/835019",
+          "https://www.allmusic.com/album/the-universe-made-of-darkness-mw0004030675",
+          "https://www.qobuz.com/ca-fr/album/the-universe-made-of-darkness-tesla-boy/l7igufsfdzz2h",
+          "https://monoreel.ru/Tesla_Boy",
+          "https://www.youtube.com/watch?v=Le_EK970vWs"
         ],
-        "versionYear": 2015
+        "versionYear": 2013,
+        "releaseYear": 2013,
+        "audio": {
+          "integratedLufs": -10.5,
+          "truePeakDbfs": 0.8,
+          "playbackVolume": 59,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -145244,7 +145334,8 @@
       "artist": "Валерий Меладзе",
       "title": "Самба белого мотылька",
       "artistIds": [
-        "valeriimeladze"
+        "valeriimeladze",
+        "валериймеладзе"
       ],
       "artistAliases": [
         "Валерий Меладзе"
@@ -145254,7 +145345,7 @@
       ],
       "era": "1990s",
       "approximateYear": 1998,
-      "recognizability": "middle",
+      "recognizability": "recognizable",
       "selectionPreference": "standard",
       "artistNovelty": "previously-used-artist",
       "eligibility": {
@@ -145274,18 +145365,18 @@
       "clip": {
         "start": 45,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "versionYear": 1998,
         "album": {
           "title": "Самба белого мотылька",
-          "kind": "album",
+          "kind": "release",
           "year": 1998,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/16496077/02e64e69.a.10397-2/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16496077/02e64e69.a.10397-2/600x600",
           "sourceUrl": "https://music.yandex.com/album/10397/track/31769158",
           "rightsStatus": "contextual-only"
         },
@@ -145300,12 +145391,20 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/10397/track/31769158",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/41174",
+          "https://www.youtube.com/watch?v=SAUbHAwTJ-Y"
+        ],
+        "releaseYear": 1998,
+        "audio": {
+          "integratedLufs": -12.2,
+          "truePeakDbfs": 0.4,
+          "playbackVolume": 72,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -152051,7 +152150,8 @@
       "artist": "Михей и Джуманджи",
       "title": "Сука Любовь",
       "artistIds": [
-        "miheiidzhumandzhi"
+        "miheiidzhumandzhi",
+        "михейиджуманджи"
       ],
       "artistAliases": [
         "Михей и Джуманджи"
@@ -152060,8 +152160,8 @@
         "Сука Любовь"
       ],
       "era": "1990s",
-      "approximateYear": 1999,
-      "recognizability": "middle",
+      "approximateYear": 1998,
+      "recognizability": "recognizable",
       "selectionPreference": "standard",
       "artistNovelty": "previously-used-artist",
       "eligibility": {
@@ -152081,18 +152181,18 @@
       "clip": {
         "start": 42,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "versionYear": 1999,
         "album": {
           "title": "Сука Любовь",
-          "kind": "album",
+          "kind": "release",
           "year": 1999,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/49707/aa681d29.a.4092164-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/49707/aa681d29.a.4092164-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/4092164/track/33442865",
           "rightsStatus": "contextual-only"
         },
@@ -152102,17 +152202,27 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": "Исполнитель + группа",
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/4092164/track/33442865",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/668808",
+          "https://music.lib.ru/m/mihej_i_dzh/alb1.shtml",
+          "https://ru.wikipedia.org/wiki/%D0%A1%D1%83%D0%BA%D0%B0_%D0%9B%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+          "https://www.youtube.com/watch?v=M4UtiYaOjmg"
+        ],
+        "releaseYear": 1998,
+        "audio": {
+          "integratedLufs": -13.7,
+          "truePeakDbfs": -2.6,
+          "playbackVolume": 85,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -152161,7 +152271,8 @@
       "artist": "Челси",
       "title": "Последний звонок",
       "artistIds": [
-        "chelsi"
+        "chelsi",
+        "челси"
       ],
       "artistAliases": [
         "Челси"
@@ -152191,18 +152302,18 @@
       "clip": {
         "start": 47,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "versionYear": 2006,
         "album": {
           "title": "Челси",
-          "kind": "album",
+          "kind": "release",
           "year": 2006,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/175191/0f2ffaab.a.63018-2/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/175191/0f2ffaab.a.63018-2/600x600",
           "sourceUrl": "https://music.yandex.com/album/63018/track/31180975",
           "rightsStatus": "contextual-only"
         },
@@ -152217,12 +152328,21 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/63018/track/31180975",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/167130",
+          "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BB%D1%81%D0%B8_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)",
+          "https://www.youtube.com/watch?v=A1RfnwIovoQ"
+        ],
+        "releaseYear": 2006,
+        "audio": {
+          "integratedLufs": -12.4,
+          "truePeakDbfs": -0.6,
+          "playbackVolume": 73,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -168711,7 +168831,8 @@
       "artist": "Александр Градский",
       "title": "Как молоды мы были",
       "artistIds": [
-        "aleksandrgradskii"
+        "aleksandrgradskii",
+        "александрградский"
       ],
       "artistAliases": [
         "Александр Градский"
@@ -168741,20 +168862,21 @@
       "clip": {
         "start": 61,
         "duration": 7,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
-        "versionYear": 2018,
+        "versionYear": 1988,
         "album": {
-          "title": "Великие исполнители России XX века: Александр Градский",
-          "kind": "album",
-          "year": 2018,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/2110367/7a67b867.a.9317591-1/400x400",
-          "sourceUrl": "https://music.yandex.com/album/9317591/track/60363095",
-          "rightsStatus": "contextual-only"
+          "title": "Как молоды мы были (телезапись)",
+          "kind": "archival-performance",
+          "year": 1988,
+          "sourceUrl": "https://www.gradsky.com/txt/139.shtml",
+          "rightsStatus": "contextual-only",
+          "coverStatus": "not-supplied-by-source",
+          "archivalMaterial": true
         },
         "artistImage": {
           "url": "https://avatars.yandex.net/get-music-content/2110367/7a67b867.a.9317591-1/400x400",
@@ -168771,14 +168893,23 @@
         ],
         "facts": [],
         "sources": [
-          "https://music.apple.com/ru/album/%D0%BA%D0%B0%D0%BA-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%8B-%D0%BC%D1%8B-%D0%B1%D1%8B%D0%BB%D0%B8/1490007365?i=1490007366&uo=4",
           "https://music.yandex.com/album/9317591/track/60363095",
-          "https://ru.wikipedia.org/wiki/Как_молоды_мы_были"
-        ]
+          "https://music.yandex.com/artist/188964",
+          "https://www.gradsky.com/txt/139.shtml",
+          "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BA_%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%8B_%D0%BC%D1%8B_%D0%B1%D1%8B%D0%BB%D0%B8",
+          "https://www.youtube.com/watch?v=SkcsQ-nhiQ4"
+        ],
+        "releaseYear": 1976,
+        "audio": {
+          "integratedLufs": -12.4,
+          "truePeakDbfs": -1.9,
+          "playbackVolume": 73,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -171403,7 +171534,8 @@
       "artist": "Поющие гитары",
       "title": "Стоят девчонки",
       "artistIds": [
-        "poyuschiegitary"
+        "poyuschiegitary",
+        "поющиегитары"
       ],
       "artistAliases": [
         "Поющие гитары"
@@ -171412,7 +171544,7 @@
         "Стоят девчонки"
       ],
       "era": "soviet",
-      "approximateYear": 1976,
+      "approximateYear": 1966,
       "recognizability": "middle",
       "selectionPreference": "golden-metadata-replacement",
       "artistNovelty": "new-artist",
@@ -171433,17 +171565,17 @@
       "clip": {
         "start": 21,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Добрый день",
-          "kind": "album",
+          "kind": "release",
           "year": 1976,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/16450533/8ad4edee.a.38764535-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/16450533/8ad4edee.a.38764535-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/38764535/track/144251610",
           "rightsStatus": "contextual-only"
         },
@@ -171453,7 +171585,7 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": "Исполнитель",
+        "artistForm": "Группа",
         "performers": [
           {
             "name": "ПОЮЩИЕ ГИТАРЫ",
@@ -171463,13 +171595,23 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/38764535/track/144251610",
-          "https://music.yandex.com/artist/42562"
+          "https://music.yandex.com/artist/42562",
+          "https://records.su/composition/4886",
+          "https://xn----itbjtikddaa.xn--p1ai/lyrics.aspx?songId=648",
+          "https://www.youtube.com/watch?v=B7dyuvZLtQE"
         ],
-        "versionYear": 1976
+        "versionYear": 1976,
+        "releaseYear": 1966,
+        "audio": {
+          "integratedLufs": -16.2,
+          "truePeakDbfs": -3.6,
+          "playbackVolume": 85,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -186602,7 +186744,8 @@
       "artist": "Юлия Савичева",
       "title": "Сияй",
       "artistIds": [
-        "yuliyasavicheva"
+        "yuliyasavicheva",
+        "юлиясавичева"
       ],
       "artistAliases": [
         "Юлия Савичева"
@@ -186632,17 +186775,17 @@
       "clip": {
         "start": 44,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Сияй",
-          "kind": "single",
+          "kind": "release",
           "year": 2021,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/18172800/536cf831.a.13727733-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/18172800/536cf831.a.13727733-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/13727733/track/77431994",
           "rightsStatus": "contextual-only"
         },
@@ -186658,13 +186801,21 @@
         "sources": [
           "https://music.yandex.com/album/13727733/track/77431994",
           "https://music.yandex.com/artist/41079",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://www.shazam.com/ru-ru/song/1657189005/%D1%81%D0%B8%D1%8F%D0%B9?tab=lyrics",
+          "https://www.youtube.com/watch?v=uhq7TvlSVqk"
         ],
-        "versionYear": 2021
+        "versionYear": 2021,
+        "releaseYear": 2021,
+        "audio": {
+          "integratedLufs": -14.3,
+          "truePeakDbfs": 0,
+          "playbackVolume": 85,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -204641,7 +204792,8 @@
       "artist": "Руки Вверх!",
       "title": "Уходи",
       "artistIds": [
-        "rukivverh"
+        "rukivverh",
+        "рукивверх"
       ],
       "artistAliases": [
         "Руки Вверх!"
@@ -204651,7 +204803,7 @@
       ],
       "era": "2000s",
       "approximateYear": 2002,
-      "recognizability": "middle",
+      "recognizability": "recognizable",
       "selectionPreference": "standard",
       "artistNovelty": "previously-used-artist",
       "eligibility": {
@@ -204671,18 +204823,18 @@
       "clip": {
         "start": 45,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "versionYear": 2002,
         "album": {
           "title": "Конец попсе, танцуют все",
-          "kind": "album",
+          "kind": "release",
           "year": 2002,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/113160/759b9445.a.389918-3/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/113160/759b9445.a.389918-3/600x600",
           "sourceUrl": "https://music.yandex.com/album/389918/track/36016763",
           "rightsStatus": "contextual-only"
         },
@@ -204692,17 +204844,27 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": "Исполнитель + исполнитель",
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/389918/track/36016763",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/161247",
+          "https://musicbrainz.org/release/e1f6067c-2586-422a-95ce-1fe29d856e81",
+          "https://www.karaoke.ru/artists/ruki-vverkh/text/ukhodi/",
+          "https://www.youtube.com/watch?v=KX8Mva86Y-I"
+        ],
+        "releaseYear": 2002,
+        "audio": {
+          "integratedLufs": -11.4,
+          "truePeakDbfs": -0.2,
+          "playbackVolume": 65,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -207969,7 +208131,8 @@
       "title": "Берег и море",
       "artistIds": [
         "karandash",
-        "lenin"
+        "lenin",
+        "карандаш"
       ],
       "artistAliases": [
         "Карандаш & Lenin"
@@ -207999,17 +208162,17 @@
       "clip": {
         "start": 52,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Бедные тоже смеются",
-          "kind": "album",
+          "kind": "release",
           "year": 2008,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/163479/9f637c18.a.305475-2/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/163479/9f637c18.a.305475-2/600x600",
           "sourceUrl": "https://music.yandex.com/album/305475/track/41192470",
           "rightsStatus": "contextual-only"
         },
@@ -208025,13 +208188,23 @@
         "sources": [
           "https://music.yandex.com/album/305475/track/41192470",
           "https://music.yandex.com/artist/168070",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.yandex.com/artist/168071",
+          "https://open.spotify.com/track/3zX0TQEwLIZi7RaglPHlss",
+          "https://music.apple.com/us/song/880922153",
+          "https://www.youtube.com/watch?v=Q4FRQc3sHSc"
         ],
-        "versionYear": 2008
+        "versionYear": 2008,
+        "releaseYear": 2008,
+        "audio": {
+          "integratedLufs": -7.9,
+          "truePeakDbfs": 2.1,
+          "playbackVolume": 44,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -211069,7 +211242,8 @@
       "artist": "Павел Воля",
       "title": "Всё будет офигенно",
       "artistIds": [
-        "pavelvolya"
+        "pavelvolya",
+        "павелволя"
       ],
       "artistAliases": [
         "Павел Воля"
@@ -211099,18 +211273,18 @@
       "clip": {
         "start": 28,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "versionYear": 2007,
         "album": {
           "title": "Респект и...",
-          "kind": "album",
+          "kind": "release",
           "year": 2007,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/32236/d5d7de15.a.3208171-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/32236/d5d7de15.a.3208171-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/3208171/track/26895012",
           "rightsStatus": "contextual-only"
         },
@@ -211124,12 +211298,22 @@
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/3208171/track/26895012"
-        ]
+          "https://music.yandex.com/album/3208171/track/26895012",
+          "https://music.yandex.com/artist/167152",
+          "https://www.shazam.com/en-us/song/1076556142/d0b2d181d191-d0b1d183d0b4d0b5d182-d0bed184d0b8d0b3d0b5d0bdd0bdd0be-d0b2d0b5d180d181d0b8d18f-d0b4d0bbd18f-d182d180d183d181d0bed0b2",
+          "https://www.youtube.com/watch?v=NhPGzbsrnAY"
+        ],
+        "releaseYear": 2007,
+        "audio": {
+          "integratedLufs": -10.5,
+          "truePeakDbfs": 0.5,
+          "playbackVolume": 59,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -211730,7 +211914,8 @@
       "artist": "МакSим",
       "title": "ПТИЦЫ",
       "artistIds": [
-        "maksim"
+        "maksim",
+        "макsим"
       ],
       "artistAliases": [
         "МакSим"
@@ -211739,7 +211924,7 @@
         "ПТИЦЫ"
       ],
       "era": "2000s",
-      "approximateYear": 2009,
+      "approximateYear": 2008,
       "recognizability": "middle",
       "selectionPreference": "golden-metadata-replacement",
       "artistNovelty": "previously-used-artist",
@@ -211760,17 +211945,17 @@
       "clip": {
         "start": 37,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "ОДИНОЧКА",
-          "kind": "album",
+          "kind": "release",
           "year": 2009,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/63210/f811c9cb.a.1893046-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/63210/f811c9cb.a.1893046-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/1893046/track/17199020",
           "rightsStatus": "contextual-only"
         },
@@ -211785,13 +211970,23 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/1893046/track/17199020",
-          "https://music.yandex.com/artist/155917"
+          "https://music.yandex.com/artist/155917",
+          "https://www.shazam.com/ru-ru/song/582865399/%D0%BF%D1%82%D0%B8%D1%86%D1%8B",
+          "https://ru.wikipedia.org/wiki/%D0%9E%D0%B4%D0%B8%D0%BD%D0%BE%D1%87%D0%BA%D0%B0_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+          "https://www.youtube.com/watch?v=KTv0aZSxiRU"
         ],
-        "versionYear": 2009
+        "versionYear": 2009,
+        "releaseYear": 2008,
+        "audio": {
+          "integratedLufs": -10.2,
+          "truePeakDbfs": 0.8,
+          "playbackVolume": 57,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -215653,20 +215848,20 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 46,
+        "start": 20,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "versionYear": 2023,
         "album": {
           "title": "Залипательно",
-          "kind": "single",
+          "kind": "release",
           "year": 2023,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/7852894/64b01a28.a.25346433-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/7852894/64b01a28.a.25346433-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/25346433/track/112597540",
           "rightsStatus": "contextual-only"
         },
@@ -215676,17 +215871,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": "Исполнитель + исполнитель",
+        "artistForm": "Группа + исполнительница",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/25346433/track/112597540",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/451523",
+          "https://music.yandex.com/artist/5007577",
+          "https://www.youtube.com/watch?v=0OaRJvG6g38",
+          "https://music.apple.com/us/album/%D0%B7%D0%B0%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-single/1679406083",
+          "https://biographe.ru/char/pizza/"
+        ],
+        "releaseYear": 2023,
+        "audio": {
+          "integratedLufs": -9.4,
+          "truePeakDbfs": 1,
+          "playbackVolume": 52,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -219599,7 +219805,8 @@
       "artist": "Сюзанна",
       "title": "Помоги мне",
       "artistIds": [
-        "syuzanna"
+        "syuzanna",
+        "сюзанна"
       ],
       "artistAliases": [
         "Сюзанна"
@@ -219609,7 +219816,7 @@
       ],
       "era": "2020s",
       "approximateYear": 2025,
-      "recognizability": "middle",
+      "recognizability": "deep",
       "selectionPreference": "golden-metadata-replacement",
       "artistNovelty": "new-artist",
       "eligibility": {
@@ -219627,19 +219834,19 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 27,
+        "start": 40,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
         "album": {
           "title": "Помоги мне",
-          "kind": "single",
+          "kind": "release",
           "year": 2025,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/15042045/48d35815.a.36132184-1/400x400",
+          "coverUrl": "https://avatars.yandex.net/get-music-content/15042045/48d35815.a.36132184-1/600x600",
           "sourceUrl": "https://music.yandex.com/album/36132184/track/137975517",
           "rightsStatus": "contextual-only"
         },
@@ -219649,19 +219856,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": "Исполнитель",
+        "artistForm": "Исполнительница",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/36132184/track/137975517",
           "https://music.yandex.com/artist/2428208",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.apple.com/us/album/%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B8-%D0%BC%D0%BD%D0%B5-single/1805941000",
+          "https://www.shazam.com/en-us/song/1805941155/d0bfd0bed0bcd0bed0b3d0b8-d0bcd0bdd0b5",
+          "https://www.youtube.com/watch?v=75dgG-OwZ-k"
         ],
-        "versionYear": 2025
+        "versionYear": 2025,
+        "releaseYear": 2025,
+        "audio": {
+          "integratedLufs": -8.3,
+          "truePeakDbfs": 1.4,
+          "playbackVolume": 46,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,

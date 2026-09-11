@@ -27,6 +27,7 @@ const offline = args.has("--offline");
 const refreshYouTube = args.has("--refresh-youtube");
 const strictPublication = args.has("--strict-publication");
 const goldenOnly = args.has("--golden-only");
+const selectedForQuiz = valueAfter("--selected-for-quiz", "");
 const eraTargets = { soviet: 2, "1990s": 4, "2000s": 7, "2010s": 4, "2020s": 3 };
 const recognitionTargets = { recognizable: 5, middle: 8, deep: 7 };
 const maxPriorityArtists = 2;
@@ -81,6 +82,7 @@ const candidates = [...goldenReserve.songs, ...pool.songs.filter(({ songId }) =>
   .filter((song) => !isArtistBlocked(song, artistSelectionPolicy))
   .filter((song) => song.reserveTier === "golden" || !preflightSongIds || preflightSongIds.has(song.songId))
   .filter((song) => !strictPublication || publicationReport(song, publicationVerification.songs[song.songId]).passed)
+  .filter((song) => !selectedForQuiz || publicationVerification.songs[song.songId]?.selectedForQuiz === selectedForQuiz)
   .filter((song) => allowPreviouslyUsedArtists || song.artistNovelty === "new-artist")
   .filter((song) => eraTargets[song.era] !== undefined)
   .map((song) => {
@@ -243,6 +245,7 @@ const releaseCandidate = {
     uniqueYouTubeVideos: true,
     preflightRequired: !skipPreflight,
     strictPublication,
+    selectedForQuiz: selectedForQuiz || null,
     youtubeRefreshRequested: refreshYouTube,
     artistStopListApplied: true,
     priorityArtistPreferenceApplied: true,
