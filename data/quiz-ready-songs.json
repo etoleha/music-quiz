@@ -633,11 +633,11 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 48,
+        "start": 80,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -661,12 +661,22 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/23758545/track/107985053",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/165142",
+          "https://101.ru/tracklist/artist/35209/album/33423/track/274640",
+          "https://rusradio.ru/mediateka/1328-murat-nasyrow/2269kto-to-prostit",
+          "https://www.youtube.com/watch?v=ySSupk3JvAg"
+        ],
+        "releaseYear": 1997,
+        "audio": {
+          "integratedLufs": -13.4,
+          "truePeakDbfs": -0.2,
+          "playbackVolume": 82,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "b50407794155b70542a13af1d10b79310aef9a6d408712c9db16cfa37d778f92",
@@ -6315,9 +6325,9 @@
       "clip": {
         "start": 41,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -6341,12 +6351,22 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/10556/track/30214783",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/41134",
+          "https://agata.rip/disco/triller1.php",
+          "https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B8%D0%BB%D0%BB%D0%B5%D1%80._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_1",
+          "https://www.youtube.com/watch?v=aUetD6RdKV8"
+        ],
+        "releaseYear": 2004,
+        "audio": {
+          "integratedLufs": -13.2,
+          "truePeakDbfs": -0.7,
+          "playbackVolume": 80,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "3e5b0d90544d73f3615afacf78e1d662efaf8dd9f3e9059de47d232f66ee1f74",
@@ -9471,11 +9491,11 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 41,
+        "start": 20,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -9498,12 +9518,23 @@
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/1610157/track/14698803"
-        ]
+          "https://music.yandex.com/album/1610157/track/14698803",
+          "https://music.yandex.com/artist/160514",
+          "https://www.karaoke.ru/artists/slot/text/angel-ili-demon/",
+          "https://ru.wikipedia.org/wiki/%D0%A8%D0%B5%D1%81%D1%82%D0%BE%D0%B9_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC)",
+          "https://www.youtube.com/watch?v=vHX8Feimd5s"
+        ],
+        "releaseYear": 2013,
+        "audio": {
+          "integratedLufs": -8.7,
+          "truePeakDbfs": 1.2,
+          "playbackVolume": 48,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "010cdc0e5fb03064d02cfa150777d4553df2eccbf36acd435014333d003c343a",
@@ -29075,7 +29106,7 @@
         "Шмон"
       ],
       "era": "2000s",
-      "approximateYear": 2003,
+      "approximateYear": 2002,
       "recognizability": "middle",
       "selectionPreference": "standard",
       "artistNovelty": "new-artist",
@@ -29094,11 +29125,11 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 33,
+        "start": 100,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -29116,17 +29147,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/4058662/track/33221163"
+          "https://music.yandex.com/album/4058662/track/33221163",
+          "https://music.yandex.com/artist/218241",
+          "https://www.karaoke.ru/artists/vorovajki/text/shmon/",
+          "https://music.apple.com/cn/song/589406582",
+          "https://www.youtube.com/watch?v=KKi5u2XRnq0"
         ],
-        "versionYear": 2003
+        "versionYear": 2002,
+        "releaseYear": 2002,
+        "audio": {
+          "integratedLufs": -11.3,
+          "truePeakDbfs": -1.1,
+          "playbackVolume": 65,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "8319a6cad87ce57b5dc21039d9b44ec82b411dc653e679105fb05aa1e52b5679",
@@ -37300,9 +37342,9 @@
       "clip": {
         "start": 37,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -37320,18 +37362,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/18199571/track/91430065",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.yandex.com/artist/3142189",
+          "https://www.shazam.com/ru-ru/song/1586357675/%D1%81%D0%B8%D0%B3%D0%B0%D1%80%D0%B5%D1%82%D1%8B-%D0%B8-%D0%BA%D0%BE%D1%84%D0%B5",
+          "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F%D0%BD%D0%BE%D1%87%D1%8C%D1%8E",
+          "https://www.youtube.com/watch?v=9Bkmqkq3Rf0"
         ],
-        "versionYear": 2002
+        "versionYear": 2002,
+        "releaseYear": 2002,
+        "audio": {
+          "integratedLufs": -10.8,
+          "truePeakDbfs": 0.3,
+          "playbackVolume": 61,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "9c13710f5ce166d7319479a5b1bfc241cac23fff5488c9e459af8378eea738b7",
@@ -37497,7 +37549,7 @@
         "Герман и Патрик"
       ],
       "era": "2000s",
-      "approximateYear": 2004,
+      "approximateYear": 2003,
       "recognizability": "deep",
       "selectionPreference": "standard",
       "artistNovelty": "new-artist",
@@ -37518,9 +37570,9 @@
       "clip": {
         "start": 43,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -37538,18 +37590,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Исполнитель",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/41195798/track/10055427",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.yandex.com/artist/41187",
+          "https://www.shazam.com/ru-ru/song/1884515876/%D0%B3%D0%B5%D1%80%D0%BC%D0%B0%D0%BD-%D0%B8-%D0%BF%D0%B0%D1%82%D1%80%D0%B8%D0%BA",
+          "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B0-%D1%82%D1%8D",
+          "https://www.youtube.com/watch?v=Cuc3NzSLk74"
         ],
-        "versionYear": 2004
+        "versionYear": 2004,
+        "releaseYear": 2003,
+        "audio": {
+          "integratedLufs": -17.3,
+          "truePeakDbfs": -2.9,
+          "playbackVolume": 100,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "sourceHash": "886076e8552ea57bdf63c3ac21841924f1ae2482f5ce89582d598bccd35a77c7",
@@ -81637,9 +81699,9 @@
       "clip": {
         "start": 41,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -81657,17 +81719,27 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Исполнитель",
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/10400315/track/64645053"
+          "https://music.yandex.com/album/10400315/track/64645053",
+          "https://music.yandex.com/artist/2326802",
+          "https://www.youtube.com/watch?v=xMUTUy-9sm8",
+          "https://www.youtube.com/watch?v=5hTlNZyaGEo"
         ],
-        "versionYear": 2020
+        "versionYear": 2020,
+        "releaseYear": 2020,
+        "audio": {
+          "integratedLufs": -7.8,
+          "truePeakDbfs": 1.9,
+          "playbackVolume": 43,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -104995,9 +105067,9 @@
       "clip": {
         "start": 24,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -105015,18 +105087,27 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": null,
+        "artistForm": "Исполнитель",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/14817247/track/80711073",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://music.yandex.com/artist/2429955",
+          "https://www.shazam.com/de-de/song/1561015260/%D1%81%D1%83%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3",
+          "https://www.youtube.com/watch?v=mSyf8n2ipbA"
         ],
-        "versionYear": 2021
+        "versionYear": 2021,
+        "releaseYear": 2021,
+        "audio": {
+          "integratedLufs": -6,
+          "truePeakDbfs": 1.5,
+          "playbackVolume": 35,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -109171,11 +109252,11 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 28,
+        "start": 45,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -109198,12 +109279,23 @@
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/81432/track/732419"
-        ]
+          "https://music.yandex.com/album/81432/track/732419",
+          "https://music.yandex.com/artist/218099",
+          "https://reproduktor.net/zemfira/kto/",
+          "https://musicbrainz.org/release/9a84dc0b-c8b1-4a9d-bc1e-c2dc8213245d",
+          "https://www.youtube.com/watch?v=-XyFfU6i2YE"
+        ],
+        "releaseYear": 2002,
+        "audio": {
+          "integratedLufs": -16,
+          "truePeakDbfs": -4.6,
+          "playbackVolume": 100,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -112439,7 +112531,7 @@
       ],
       "era": "1990s",
       "approximateYear": 1996,
-      "recognizability": "middle",
+      "recognizability": "recognizable",
       "selectionPreference": "standard",
       "artistNovelty": "previously-used-artist",
       "eligibility": {
@@ -112457,11 +112549,11 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 31,
+        "start": 75,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -112485,12 +112577,22 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/18242222/track/16207595",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/156446",
+          "https://astudio.ru/history/",
+          "https://musicbrainz.org/release/ff179cc7-e1cc-4ac8-ba06-d11f014d9d3c",
+          "https://www.youtube.com/watch?v=0FJA7cuqD6k"
+        ],
+        "releaseYear": 1996,
+        "audio": {
+          "integratedLufs": -20.6,
+          "truePeakDbfs": -8.9,
+          "playbackVolume": 100,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -117601,9 +117703,9 @@
       "clip": {
         "start": 38,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -117627,12 +117729,22 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/12462435/track/72446863",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/168862",
+          "https://www.youtube.com/watch?v=Nw_DF6POnzs",
+          "https://music.apple.com/us/song/1619915994",
+          "https://www.youtube.com/watch?v=9jl8a5djd0c"
+        ],
+        "releaseYear": 2017,
+        "audio": {
+          "integratedLufs": -8.6,
+          "truePeakDbfs": 1.4,
+          "playbackVolume": 47,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -117929,11 +118041,11 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 31,
+        "start": 15,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -117965,12 +118077,23 @@
           }
         ],
         "sources": [
-          "https://music.yandex.com/album/7758340/track/54024897"
-        ]
+          "https://music.yandex.com/album/7758340/track/54024897",
+          "https://music.yandex.com/artist/41131",
+          "https://www.shazam.com/song/1773798417/%D0%BB%D1%83%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B4%D1%80%D1%83%D0%B3%D0%B0",
+          "https://music.apple.com/us/song/1773798417",
+          "https://www.youtube.com/watch?v=3gt61G7-rl0"
+        ],
+        "releaseYear": 2019,
+        "audio": {
+          "integratedLufs": -15.8,
+          "truePeakDbfs": -4.7,
+          "playbackVolume": 100,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -122101,15 +122224,15 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 34,
+        "start": 55,
         "duration": 7,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
-        "versionYear": 2010,
+        "versionYear": 1986,
         "album": {
           "title": "Сделано в СССР. Выпуск 7",
           "kind": "album",
@@ -122129,12 +122252,22 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/13777408/track/15331188",
-          "https://ru.wikipedia.org/wiki/Песня_года"
-        ]
+          "https://music.yandex.com/artist/2557932",
+          "https://www.youtube.com/watch?v=yvH7hVp9vXY",
+          "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D1%91%D0%BD%D0%BE%D0%B2%D0%B0,_%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0_%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4%D0%BE%D0%B2%D0%BD%D0%B0",
+          "https://www.youtube.com/watch?v=0N5JTmTW3EM"
+        ],
+        "releaseYear": 1986,
+        "audio": {
+          "integratedLufs": -26.4,
+          "truePeakDbfs": -14.1,
+          "playbackVolume": 100,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -122424,7 +122557,7 @@
         "Есть только миг"
       ],
       "era": "soviet",
-      "approximateYear": 1972,
+      "approximateYear": 1973,
       "recognizability": "recognizable",
       "selectionPreference": "standard",
       "artistNovelty": "previously-used-artist",
@@ -122445,20 +122578,21 @@
       "clip": {
         "start": 48,
         "duration": 7,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
-        "versionYear": 2017,
+        "versionYear": 1973,
         "album": {
-          "title": "Золотая коллекция",
-          "kind": "album",
-          "year": 2017,
-          "coverUrl": "https://avatars.yandex.net/get-music-content/6296749/c09d5573.a.23757428-1/400x400",
-          "sourceUrl": "https://music.yandex.com/album/23757428/track/107977199",
-          "rightsStatus": "contextual-only"
+          "title": "Земля Санникова (песня из фильма)",
+          "kind": "archival-performance",
+          "year": 1973,
+          "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D1%8F_%D0%A1%D0%B0%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)",
+          "rightsStatus": "contextual-only",
+          "coverStatus": "not-supplied-by-source",
+          "archivalMaterial": true
         },
         "artistImage": {
           "url": "https://avatars.yandex.net/get-music-content/13911897/e267f797.a.33071467-1/400x400",
@@ -122470,13 +122604,23 @@
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/23757428/track/107977199",
-          "https://ru.wikipedia.org/wiki/Советская_эстрада"
-        ]
+          "https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D1%8F_%D0%A1%D0%B0%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)",
+          "https://music.yandex.com/artist/169002",
+          "https://ru.wikipedia.org/wiki/%D0%95%D1%81%D1%82%D1%8C_%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE_%D0%BC%D0%B8%D0%B3",
+          "https://www.domkino.tv/news/10724",
+          "https://www.youtube.com/watch?v=NJ_sgW7JVh8"
+        ],
+        "releaseYear": 1973,
+        "audio": {
+          "integratedLufs": -12.2,
+          "truePeakDbfs": -1.4,
+          "playbackVolume": 72,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -125359,9 +125503,9 @@
       "clip": {
         "start": 44,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -125385,12 +125529,22 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/13788827/track/77655773",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/41133",
+          "https://www.shazam.com/song/1552542227/%D0%B6%D0%B0%D0%BB%D1%8C",
+          "https://life.nv.ua/ukr/art/bumboks-predstaviv-novu-pisnyu-zhal-divitisya-video-50141804.html",
+          "https://www.youtube.com/watch?v=BfkamZYqth8"
+        ],
+        "releaseYear": 2021,
+        "audio": {
+          "integratedLufs": -15.1,
+          "truePeakDbfs": 0,
+          "playbackVolume": 100,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -133698,7 +133852,7 @@
       ],
       "era": "2010s",
       "approximateYear": 2015,
-      "recognizability": "middle",
+      "recognizability": "recognizable",
       "selectionPreference": "standard",
       "artistNovelty": "previously-used-artist",
       "eligibility": {
@@ -133718,9 +133872,9 @@
       "clip": {
         "start": 37,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -133744,12 +133898,22 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/13512917/track/25629266",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/41110",
+          "https://www.shazam.com/song/1860292233/%D0%BD%D0%B5-%D0%BC%D0%BE%D0%BB%D1%87%D0%B8",
+          "https://musicbrainz.org/release/d37f7b2b-9b9a-4e80-b5d8-a26e889da835",
+          "https://www.youtube.com/watch?v=AsZBGpczGQ0"
+        ],
+        "releaseYear": 2015,
+        "audio": {
+          "integratedLufs": -11.3,
+          "truePeakDbfs": 0.8,
+          "playbackVolume": 65,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -140627,9 +140791,9 @@
       "clip": {
         "start": 41,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -140653,12 +140817,22 @@
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/4694357/track/32672612",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/167653",
+          "https://music.apple.com/us/song/1894215608",
+          "https://www.karaoke.ru/artists/malikov-dmitrij/text/eshhe-eshhe/",
+          "https://www.youtube.com/watch?v=7urdTbr079o"
+        ],
+        "releaseYear": 1998,
+        "audio": {
+          "integratedLufs": -12.1,
+          "truePeakDbfs": 0.3,
+          "playbackVolume": 71,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -149764,11 +149938,11 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 51,
+        "start": 80,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -149791,12 +149965,23 @@
         "performers": [],
         "facts": [],
         "sources": [
-          "https://music.yandex.com/album/33455336/track/131547696"
-        ]
+          "https://music.yandex.com/album/33455336/track/131547696",
+          "https://music.yandex.com/artist/359519",
+          "https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D1%82%D0%B0%D0%BF_%D0%B8_%D0%9D%D0%B0%D1%81%D1%82%D1%8F",
+          "https://ru.wikipedia.org/wiki/%D0%9D%D0%B5_%D0%BF%D0%B0%D1%80%D0%B0",
+          "https://www.youtube.com/watch?v=mCSrJAlzCPc"
+        ],
+        "releaseYear": 2008,
+        "audio": {
+          "integratedLufs": -5.5,
+          "truePeakDbfs": 1.6,
+          "playbackVolume": 35,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -159002,7 +159187,7 @@
       ],
       "era": "2000s",
       "approximateYear": 2006,
-      "recognizability": "middle",
+      "recognizability": "recognizable",
       "selectionPreference": "standard",
       "artistNovelty": "previously-used-artist",
       "eligibility": {
@@ -159022,9 +159207,9 @@
       "clip": {
         "start": 35,
         "duration": 11,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -159043,17 +159228,27 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": "Исполнитель + исполнитель",
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/39718786/track/146160087",
-          "https://boosty.to/quizpartynakhate/media/all"
-        ]
+          "https://music.yandex.com/artist/41173",
+          "https://www.shazam.com/song/1860620505/%D0%BF%D1%87%D0%B5%D0%BB%D0%B0",
+          "https://ru.wikipedia.org/wiki/%D0%98%D0%BB%D0%BB%D1%8E%D0%B7%D0%B8%D1%8F_(%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC_%C2%AB%D0%91%D1%80%D0%B0%D1%82%D1%8C%D0%B5%D0%B2_%D0%93%D1%80%D0%B8%D0%BC%C2%BB)",
+          "https://www.youtube.com/watch?v=gelGRQ6tQAI"
+        ],
+        "releaseYear": 2006,
+        "audio": {
+          "integratedLufs": -19.3,
+          "truePeakDbfs": -10.8,
+          "playbackVolume": 100,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
@@ -227343,7 +227538,7 @@
         "Crying in the Rain"
       ],
       "era": "1990s",
-      "approximateYear": 1990,
+      "approximateYear": 1961,
       "recognizability": "deep",
       "selectionPreference": "golden-metadata-replacement",
       "artistNovelty": "new-artist",
@@ -227362,11 +227557,11 @@
         "selectedBy": "automatic-search"
       },
       "clip": {
-        "start": 52,
+        "start": 100,
         "duration": 15,
-        "selectedBy": "automatic-verse-biased-heuristic",
-        "review": "automatic",
-        "requiresPublicationReview": true
+        "selectedBy": "editorial-reviewed-fragment",
+        "review": "verified",
+        "requiresPublicationReview": false
       },
       "optionalMetadata": {
         "releaseYearStatus": "verified",
@@ -227384,19 +227579,28 @@
           "attribution": "Яндекс Музыка",
           "rightsStatus": "contextual-only"
         },
-        "artistForm": "Исполнитель",
+        "artistForm": "Группа",
         "performers": [],
         "facts": [],
         "sources": [
           "https://music.yandex.com/album/155204/track/34174481",
           "https://music.yandex.com/artist/291",
-          "https://boosty.to/quizpartynakhate/media/all"
+          "https://www.caroleking.com/discography/songs-appear-on/c?order=artist_name&sort=asc",
+          "https://musicbrainz.org/release-group/23e04448-cd28-3b52-9247-cb35a3e7e230",
+          "https://www.youtube.com/watch?v=h-WPexVEujg"
         ],
-        "versionYear": 1990
+        "versionYear": 1990,
+        "releaseYear": 1961,
+        "audio": {
+          "integratedLufs": -18.2,
+          "truePeakDbfs": -7.7,
+          "playbackVolume": 100,
+          "method": "EBU R128 selected fragment"
+        }
       },
       "readyForQuiz": true,
       "reserveTier": "golden",
-      "goldenStatus": "preverified",
+      "goldenStatus": "published",
       "goldenVerification": {
         "status": "passed",
         "verifierVersion": 2,
