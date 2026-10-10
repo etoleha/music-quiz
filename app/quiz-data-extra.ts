@@ -14,6 +14,7 @@ import verifiedRelease12 from "../data/quiz-release-new-rules-12.json";
 import verifiedRelease13 from "../data/quiz-release-new-rules-13.json";
 import verifiedRelease14 from "../data/quiz-release-new-rules-14.json";
 import verifiedRelease15 from "../data/quiz-release-new-rules-15.json";
+import verifiedRelease16 from "../data/quiz-release-new-rules-16.json";
 
 const performerForms: Partial<Record<string, Track["artistForm"]>> = {
   "Александр Барыкин": "Исполнитель",
@@ -479,7 +480,7 @@ const extraTrack = (youtubeId: string, artist: string, title: string, start: num
   };
 };
 
-type VerifiedReleaseTrack = (typeof verifiedRelease.tracks)[number] | (typeof verifiedRelease02.tracks)[number] | (typeof verifiedRelease03.tracks)[number] | (typeof verifiedRelease04.tracks)[number] | (typeof verifiedRelease05.tracks)[number] | (typeof verifiedRelease06.tracks)[number] | (typeof verifiedRelease07.tracks)[number] | (typeof verifiedRelease08.tracks)[number] | (typeof verifiedRelease09.tracks)[number] | (typeof verifiedRelease10.tracks)[number] | (typeof verifiedRelease11.tracks)[number] | (typeof verifiedRelease12.tracks)[number] | (typeof verifiedRelease13.tracks)[number] | (typeof verifiedRelease14.tracks)[number] | (typeof verifiedRelease15.tracks)[number];
+type VerifiedReleaseTrack = (typeof verifiedRelease.tracks)[number] | (typeof verifiedRelease02.tracks)[number] | (typeof verifiedRelease03.tracks)[number] | (typeof verifiedRelease04.tracks)[number] | (typeof verifiedRelease05.tracks)[number] | (typeof verifiedRelease06.tracks)[number] | (typeof verifiedRelease07.tracks)[number] | (typeof verifiedRelease08.tracks)[number] | (typeof verifiedRelease09.tracks)[number] | (typeof verifiedRelease10.tracks)[number] | (typeof verifiedRelease11.tracks)[number] | (typeof verifiedRelease12.tracks)[number] | (typeof verifiedRelease13.tracks)[number] | (typeof verifiedRelease14.tracks)[number] | (typeof verifiedRelease15.tracks)[number] | (typeof verifiedRelease16.tracks)[number];
 const verifiedReleaseTrack = (song: VerifiedReleaseTrack): Track => ({
   key: `${song.artist}—${song.title}`.toLocaleLowerCase("ru-RU"),
   youtubeId: song.youtube.videoId,
@@ -504,6 +505,13 @@ const verifiedReleaseTrack = (song: VerifiedReleaseTrack): Track => ({
 });
 
 export const extraQuizzes: Quiz[] = [
+  {
+    id: verifiedRelease16.quiz.id,
+    title: verifiedRelease16.quiz.title,
+    level: verifiedRelease16.quiz.level,
+    published: verifiedRelease16.quiz.published,
+    tracks: verifiedRelease16.tracks.map(verifiedReleaseTrack),
+  },
   {
     id: verifiedRelease15.quiz.id,
     title: verifiedRelease15.quiz.title,
